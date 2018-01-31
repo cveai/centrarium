@@ -42,7 +42,7 @@ Multi-armed bandit. 팔 여러 개 달린 강도란 뜻이다. 카지노의 슬�
 <figcaption>One-armed bandits (사진 출처: <a href="https://commons.wikimedia.org/wiki/File:One-Armed_Bandits_at_Stockmen%27s_Hotel,_Elko,_Nevada_(83581).jpg">Wikipedia</a>)</figcaption>
 </figure>
 
-이제 1부터 10까지 번호가 붙여진 열개의 슬롯머신이 놓여있는 방을 머릿속에 떠올려보자. 기대값이 0이고 분산이 1인 표준정규분포에 따라 숫자 열 개를 추출하자: 
+이제 1부터 10까지 번호가 붙여진 열 개의 슬롯머신이 놓여있는 방을 머릿속에 떠올려보자. 기대값이 0이고 분산이 1인 표준정규분포에 따라 숫자 열 개를 추출하자: 
 $m_1, m_2, \ldots, m_{10}$. 각 슬롯머신의 reward 분포는 기댓값이 $m_i$이고 분산이 1인 정규분포에 따르도록 설정이 된다. 아래 그림에 reward 분포가 도식화되어 있는데 (조금 후에 설명할 어떤 이유로) 그림에서는 $i$번째 머신의 기댓값 $m_i$가 $q_\*(i)$로 표시되어 있다.
 
 <figure>
@@ -50,7 +50,7 @@ $m_1, m_2, \ldots, m_{10}$. 각 슬롯머신의 reward 분포는 기댓값이 $m
 <figcaption>그림 3. (출처: [1], 2장)</figcaption>
 </figure>
 
-Multi-armed bandit (여기서는 구체적으로 10-armed bandit) 문제는 슬롯머신들의 reward distribution을 모르는 상태에서 선택한 하나의 슬롯머신의 "팔"을 당겨 해당 reward를 얻는 시행을 충분히 많은 횟수로 반복하면서 얻게 되는 reward의 총합을 최대화 시키려 하는 문제다. 이 문제를 풀어나가기 위해 수많은 횟수의 시행을 반복하는 힘든 임무를 대신해 줄 주인공을 agent라 부르자. Agent가 각 시점(time step)에 열 개 중 하나의 슬롯머신을 "선택"하여 레버를 당기는 행위를 그 시점에서의 action이라 한다. 선택적 요소가 포함되면서 agent가 어떤 action을 취했을 때 어떤 reward가 주어질 것인지에 대한 “가능성”을 평가 (evaluation) 해나가야 하고 그에 따라 어떤 패턴으로 행동해나가야 하는지 전략을 세워야 함을 알 수 있다. 이 전략을 구체적으로 표현한 함수를 policy라 부른다. 우리말로는 “정책” 정도로 부를 수 있을 것이다. 시점 $t$에서 agent가 취하는 action을 $A_t$, 그로 인해 얻게 되는 reward를 $R_t$로 부르기로 하자. 
+Multi-armed bandit (여기서는 구체적으로 10-armed bandit) 문제는 슬롯머신들의 reward distribution을 모르는 상태에서 선택한 하나의 슬롯머신의 "팔"을 당겨 해당 reward를 얻는 시행을 충분히 많은 횟수로 반복하면서 얻게 되는 reward의 총합을 최대화하는 문제다. 이 문제를 풀어나가기 위해 수많은 횟수의 시행을 반복하는 힘든 임무를 대신해 줄 주인공을 agent라 부르자. Agent가 각 시점(time step)에 열 개 중 하나의 슬롯머신을 "선택"하여 레버를 당기는 행위를 그 시점에서의 action이라 한다. 선택적 요소가 포함되면서 agent가 어떤 action을 취했을 때 얼만큼의 reward가 주어질 것인지에 대한 “가능성”을 평가 (evaluation) 해나가야 하고 그에 따라 어떤 패턴으로 행동해나가야 하는지 전략을 세워야 한다. 이 전략을 구체적으로 표현한 함수를 policy라 부른다. 우리말로는 “정책” 정도로 부를 수 있을 것이다. 시점 $t$에서 agent가 취하는 action을 $A_t$, 그로 인해 얻게 되는 reward를 $R_t$로 부르기로 하자. 
 
 #### Action의 가치를 어떻게 평가할 것인가
 
