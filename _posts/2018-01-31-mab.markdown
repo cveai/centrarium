@@ -42,7 +42,7 @@ Multi-armed bandit. 팔 여러 개 달린 강도란 뜻이다. 카지노의 슬�
 <figcaption>One-armed bandits (사진 출처: <a href="https://commons.wikimedia.org/wiki/File:One-Armed_Bandits_at_Stockmen%27s_Hotel,_Elko,_Nevada_(83581).jpg">Wikipedia</a>)</figcaption>
 </figure>
 
-이제 1부터 10까지 번호가 붙여진 열 개의 슬롯머신이 놓여있는 방을 머릿속에 떠올려보자. 기대값이 0이고 분산이 1인 표준정규분포에 따라 숫자 열 개를 추출하자: 
+이제 1부터 10까지 번호가 붙여진 열 개의 슬롯머신이 놓여있는 방을 머릿속에 떠올려보자. 기댓값이 0이고 분산이 1인 표준정규분포에 따라 숫자 열 개를 추출하자: 
 $m_1, m_2, \ldots, m_{10}$. 각 슬롯머신의 reward 분포는 기댓값이 $m_i$이고 분산이 1인 정규분포에 따르도록 설정이 된다. 아래 그림에 reward 분포가 도식화되어 있는데 (조금 후에 설명할 어떤 이유로) 그림에서는 $i$번째 머신의 기댓값 $m_i$가 $q_\*(i)$로 표시되어 있다.
 
 <figure>
