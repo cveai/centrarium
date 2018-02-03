@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "확률변수를 이해하다"
-date:   2018-02-14 23:47:00
+date:   2018-02-02 23:47:00
 author: 장승환
 categories: 기계학습
 tags: 강화학습 RL
