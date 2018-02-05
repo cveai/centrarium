@@ -26,7 +26,7 @@ $$
 
 
 
-**참고문헌**
+#### 참고문헌
 
 [1] A. Shirayaev (translator: D. Chibisov), *Probability- 1*, third edition (2016), Springer.
 
