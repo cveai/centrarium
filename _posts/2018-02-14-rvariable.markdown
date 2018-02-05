@@ -23,3 +23,14 @@ p(.::) = 1/6  \\
 p(:::) = 1/6.  \\
 $$
 
+
+
+
+## References 
+
+[^prob.1]: A. Shirayaev, (translated by D. Chibisov,) *Probability- 1*, third edition (2016), Springer.
+
+
+
+
+
