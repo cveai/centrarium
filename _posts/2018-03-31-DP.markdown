@@ -16,7 +16,7 @@ tags: 강화학습 RL 동적계획법 DP
 
 벨만 방정식:
 $$
-v_\pi(s) = {\mathbb E}_\pi[R_{t+1}|S_t=s] +\gamma E_\pi[v_\pi(S_{t+1})|S_t=s]
+v_\pi(s) = {\mathbb E}_\pi[R_{t+1}|S_t=s] +\gamma {\mathbb E}_\pi[v_\pi(S_{t+1})|S_t=s]
 $$
 
 
