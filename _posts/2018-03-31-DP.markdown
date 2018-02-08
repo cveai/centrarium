@@ -16,6 +16,10 @@ tags: 강화학습 RL 동적계획법 DP
 동적계획법을 적용할 수 있는 문제 하나를 살펴보자. 당신은 지금부터 어떤 보물창고에 침입한 도둑이다. 보불창고에는 $n$개의 보물들이 있는데 $i$번째 보물은 $s_i$ 파운드의 무게를 가지고 있고 창고를 나온 후에 $v_i$ 달러에 내다 팔 수 있다. 물론 당신은 최대한 값진 보물들로 배낭을 채우고싶을 것이다. 문제는 당신의 배낭은 $s$ 파운드의 무게만 감당할 수 있다. 
 
 
+#### 피보나치 수열
+
+
+
 벨만 방정식:
 $$
 v_\pi(s) = {\mathbb E}_\pi[R_{t+1}|S_t=s] +\gamma {\mathbb E}_\pi[v_\pi(S_{t+1})|S_t=s]
@@ -66,10 +70,10 @@ Multi-armed bandit (MAB) 문제는 강화학습 문제 중에서도 한가지 �
 
 일반화된 강화학습의 개념은 agent와 environment, 그리고 action, state, reward, policy라는 주요소들이 포함된 형태로 정의되는데 수학적으로는 MDP (Markov Decision Process)라는 모델로 기술된다. 
 
-#### 참고문헌
+#### 참고자료
 1.  R. Sutton, A. Barto, *Reinforcement leaning: an introduction*, second edition ([final draft](http://incompleteideas.net/book/the-book-2nd.html)).
-
+2. Introduction to algorithms, lecture 19
 ---
 
 *읽으시다 오류나 부정확한 내용을 발견하시면 꼭 알려주시길 부탁드립니다. 감사합니다.*  
-(권 경모님, 권 휘님, 박 진우님 감사드립니다.)
+
