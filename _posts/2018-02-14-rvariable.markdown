@@ -90,7 +90,13 @@ $${\mathbb E}(aX) = a{\mathbb E}(X)$$
 빛을 발하게 된다. 
 
 
-#### 노테이션 문제
+#### 삼위일체 (표현의 문제)
+
+<figure>
+<img src="/assets/pics/rvariable/trinity.jpg" alt="Trinity">
+<figcaption>Trinity (사진 출처: <a href="https://www.flickr.com/photos/prayitnophotography/4464000634">flickr</a>)
+</figcaption>
+</figure>
 
 확률이야말로 다양하고 상대적으로 통일되지 못한 표기법으로 혼란을 많이 읽으키는 주제이다.
 이문제를 잘 피해가면서 수식이 나타내는 핵심을 빠르게 이해하기 위한 한가지 방편은 다음 세가지가 사실은 한가지 존재에 대한 다른 표현에 지나지 않는다는 것을 인식하는 것이다:
