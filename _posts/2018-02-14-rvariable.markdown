@@ -76,7 +76,9 @@ P[] / Pr[] 의 문제
 확률변수의 장점 중 하나는 확률변수간의 연산을 할 수 있다는 것. 
 
 선형성(linearity):
+
 $${\mathbb E}(X + Y) = {\mathbb E}(X) + {\mathbb E}(Y)$$
+
 $${\mathbb E}(aX) = a{\mathbb E}(X)$$
 
 
