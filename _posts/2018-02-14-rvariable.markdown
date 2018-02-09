@@ -93,7 +93,7 @@ $${\mathbb E}(aX) = a{\mathbb E}(X)$$
 #### 삼위일체 (표현의 문제)
 
 <figure>
-<img src="/assets/pics/rvariable/trinity.jpg" alt="Trinity">
+<img src="/assets/pics/rvariable/trinity.jpg" alt="Trinity" style="width: 50%; height: 50%">
 <figcaption>Trinity (사진 출처: <a href="https://en.wikipedia.org/wiki/Trinity_(The_Matrix)#/media/File:MatrixTrinity.jpg">Wikipedia</a>)
 </figcaption>
 </figure>
