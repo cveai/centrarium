@@ -136,7 +136,7 @@ $$
 요약해보면,  
 
 <figure>
-<img src="/assets/pics/rvariable/trinity.jpg" alt="Trinity" style="width: 50%; height: 50%">
+<img src="/assets/pics/rvariable/trinity.jpg" alt="Trinity" style="width: 35%; height: 35%">
 <figcaption>Trinity (사진 출처: <a href="https://en.wikipedia.org/wiki/Trinity_(The_Matrix)">Wikipedia</a>)
 </figcaption>
 </figure>
