@@ -185,8 +185,7 @@ $$
 
 #### 참고자료
 
-[1] A. Shirayaev (translator: D. Chibisov), *Probability- 1*, third edition (2016), Springer.
-
+[1] A. Shirayaev (translator: D. Chibisov), *Probability- 1*, third edition (2016), Springer.  
 [2] [[확률론의 선과 악] 2. 확률론의 기원](http://tv.naver.com/v/1402550). 
 
 
