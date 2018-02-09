@@ -94,7 +94,7 @@ $${\mathbb E}(aX) = a{\mathbb E}(X)$$
 
 <figure>
 <img src="/assets/pics/rvariable/trinity.jpg" alt="Trinity" style="width: 50%; height: 50%">
-<figcaption>Trinity (사진 출처: <a href="https://en.wikipedia.org/wiki/Trinity_(The_Matrix)#/media/File:MatrixTrinity.jpg">Wikipedia</a>)
+<figcaption>Trinity (사진 출처: <a href="https://en.wikipedia.org/wiki/Trinity_(The_Matrix)">Wikipedia</a>)
 </figcaption>
 </figure>
 
