@@ -90,7 +90,7 @@ $${\mathbb E}(aX) = a{\mathbb E}(X)$$
 빛을 발하게 된다. 
 
 
-#### 삼위일체 (표현의 문제)
+#### 삼위일체 : 확률변수, 확률함수, 확률분포
 
 <figure>
 <img src="/assets/pics/rvariable/trinity.jpg" alt="Trinity" style="width: 50%; height: 50%">
