@@ -92,12 +92,6 @@ $${\mathbb E}(aX) = a{\mathbb E}(X)$$
 
 #### 삼위일체 : 확률변수, 확률함수, 확률분포
 
-<figure>
-<img src="/assets/pics/rvariable/trinity.jpg" alt="Trinity" style="width: 50%; height: 50%">
-<figcaption>Trinity (사진 출처: <a href="https://en.wikipedia.org/wiki/Trinity_(The_Matrix)">Wikipedia</a>)
-</figcaption>
-</figure>
-
 확률이야말로 다양하고 상대적으로 통일되지 못한 표기법으로 불필요한 혼란을 많이 읽으키는 주제이다.
 이문제를 잘 피해가면서 수식이 나타내는 핵심을 빠르게 이해하기 위한 한가지 방편은 다음 세가지가 사실은 한가지 존재에 대한 다른 표현에 지나지 않는다는 것을 인식하는 것이다:
 - 확률분포
@@ -140,6 +134,13 @@ $$
 자 어떤가, 두 확률함수 $p$와 $p_X$는 어떤 관계를 가지는가? 잠시만 들여다 보면 두 확률함수는 본질적으로 같다는 것을 알 수 있을 것이다. 단지 주사위 눈 그림 대신 그에 해당하는 숫자로 표현을 바꿨을 뿐이다.
 
 요약해보면,  
+
+<figure>
+<img src="/assets/pics/rvariable/trinity.jpg" alt="Trinity" style="width: 50%; height: 50%">
+<figcaption>Trinity (사진 출처: <a href="https://en.wikipedia.org/wiki/Trinity_(The_Matrix)">Wikipedia</a>)
+</figcaption>
+</figure>
+
 
 #### 연속의 경우
 
