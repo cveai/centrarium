@@ -123,7 +123,7 @@ $$p_{XY}(x, y) := $P[X=x, Y=y]$$
 
 
 
-#### 삼위일체 : 확률변수, 확률함수, 확률분포
+#### 삼위일체 : 확률변수, 확률함수, 그리고 확률분포
 
 <figure>
 <img src="/assets/pics/rvariable/trinity.jpg" alt="Trinity" style="width: 35%; height: 35%">
@@ -175,6 +175,8 @@ $$
 요약해보면,  
 
 
+#### 확률변수 He is the one.
+
 
 
 #### 연속의 경우
@@ -184,6 +186,7 @@ $$
 #### 참고자료
 
 [1] A. Shirayaev (translator: D. Chibisov), *Probability- 1*, third edition (2016), Springer.
+
 [2] [[확률론의 선과 악] 2. 확률론의 기원](http://tv.naver.com/v/1402550). 
 
 
