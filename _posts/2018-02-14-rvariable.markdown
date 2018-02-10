@@ -27,6 +27,7 @@ tags: 강화학습 RL 확률론 확률 확률변수
 확률에 관련된 논의는 확률이라는 함수로부터 시작하는 것이 좋을 것 같다. "확률"이란 단어는 특정한 성질을 만족하는 함수라는 수학적 개념은 물론 보다 일반적인 의미로도 사용되기 떄문에 이 글에서는 확률함수라는 이름으로 수학적 확률 개념을 지칭하기로 한다.
 **확률함수**는 특정조건을 만족하는 $p: \Omega \rightarrow [0,1]$ 형태의 함수인데 $\Omega$를 표본공간(smaple space), 표본공간의 원소를 표본(sample)이라고 한다. 
 측도론의 관점에서는 확률함수를 확률 질량 함수 (probability mass function, PMF)라 부른다.
+측도론을 이용한 통합적인 접급법은 다음의 동영상을 강의를 추천한다: [3].
 
 일반적으로 주사위를 던져 눈을 관찰하는 경우의 확률론적 모델을 생각해보면 해당되는 확률함수 
 $p:\\{ ⚀, ⚁, ⚂, ⚃, ⚄, ⚅ \\} \rightarrow [0,1]$의 함수값은 다음과 같이 정의될 것이다:
@@ -209,7 +210,8 @@ $$
 #### 참고자료
 
 [1] A. Shirayaev (translator: D. Chibisov), *Probability- 1*, third edition (2016), Springer.  
-[2] 김민형, [확률론의 선과 악: 2. 확률론의 기원](http://tv.naver.com/v/1402550). 
+[2] 김민형, 확률론의 선과 악: 2. 확률론의 기원, ([네이버티비 동영상](http://tv.naver.com/v/1402550)). 
+[3] Mathematical monk, probability theory [유튜브 동영상](https://www.youtube.com/watch?v=Tk4ubu7BlSk&list=PL17567A1A3F5DB5E4).
 
 
 
