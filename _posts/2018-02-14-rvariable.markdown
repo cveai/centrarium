@@ -210,8 +210,8 @@ $$
 #### 참고자료
 
 [1] A. Shirayaev (translator: D. Chibisov), *Probability- 1*, third edition (2016), Springer.  
-[2] 김민형, 확률론의 선과 악: 2. 확률론의 기원, ([네이버티비 동영상](http://tv.naver.com/v/1402550)).  
-[3] Mathematical monk, probability theory [유튜브 동영상](https://www.youtube.com/watch?v=Tk4ubu7BlSk&list=PL17567A1A3F5DB5E4).
+[2] 김민형, 확률론의 선과 악: 2. 확률론의 기원 ([네이버티비 동영상](http://tv.naver.com/v/1402550)).  
+[3] Mathematical monk, probability theory ([유튜브 동영상](https://www.youtube.com/watch?v=Tk4ubu7BlSk&list=PL17567A1A3F5DB5E4)).
 
 
 
