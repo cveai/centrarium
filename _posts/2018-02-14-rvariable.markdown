@@ -193,14 +193,22 @@ E[X] =& \sum_{a \in \{⚀, ⚁, ⚂, ⚃, ⚄, ⚅ \}} p(a)X(a) \\
 $$
 
 
-확률변수들 간에 연산을 할 수 있다는 것을 알았다.
+앞에서 확률변수들 간에 연산을 할 수 있다는 사실을 보았다.
+예를 들면 $X, Y$라는 확률변수에 연산을 적용하여 또다른 확률변수 $X + Y$와 $aX$릏 얻를 수 있다. 
+(여기서 $a \in {\mathbb R}은 상수이다.) 
+새로 얻어진 확률변수들에 대한 기댓값을 구해보면 기존 $X, Y$에 대한 기댓값과 다음의 관계를 가진다. 
+
+$$
+\begin{aligned}
+{\mathbb E}(X + Y) &= {\mathbb E}(X) + {\mathbb E}(Y) \\
+{\mathbb E}(aX) &= a{\mathbb E}(X).
+\end{aligned}
+$$
 
 
 선형성(linearity):
 
-$${\mathbb E}(X + Y) = {\mathbb E}(X) + {\mathbb E}(Y)$$
 
-$${\mathbb E}(aX) = a{\mathbb E}(X)$$
 
 기댓값 정의
 
