@@ -38,7 +38,7 @@ $A \subset \Omega \Leftrightarrow A \in {\mathscr P}(\Omega)$ .
 3. $A, B \in {\mathscr P}(\Omega)$가 교집합이 없으면, $p(A \cup B) = p(A) + p(B)$.
 
 일반적으로 주사위를 던져 눈을 관찰하는 경우의 확률론적 모델을 생각해보면 해당되는 확률함수 
-$p:\\{ \\{⚀\\}, \\{⚁\\}, \\{⚂\\}, \\{⚃\\}, \\{⚄\\}, \\{⚅\\}, \\{⚀, ⚁\\},  \\} \rightarrow [0,1]$의 함수값은 다음과 같이 정의될 것이다:
+$p:\\{ \\{⚀\\}, \\{⚁\\}, \\{⚂\\}, \\{⚃\\}, \\{⚄\\}, \\{⚅\\}, \\{⚀, ⚁\\}, \ldots, \\{⚄, ⚅ \\},   \\} \rightarrow [0,1]$의 함수값은 다음과 같이 정의될 것이다:
 
 $$
 p(⚀) = 1/6,  \\
@@ -236,8 +236,8 @@ $$
 #### 참고자료
 
 [1] A. Shirayaev (translator: D. Chibisov), *Probability- 1*, third edition (2016), Springer.  
-[2] 김민형, 확률론의 선과 악: 2. 확률론의 기원 ([네이버티비 동영상](http://tv.naver.com/v/1402550)).  
-[3] Mathematical monk, Probability primer ([유튜브 동영상](https://www.youtube.com/watch?v=Tk4ubu7BlSk&list=PL17567A1A3F5DB5E4)).  
+[2] 김민형, *확률론의 선과 악: 2. 확률론의 기원* ([네이버티비 동영상](http://tv.naver.com/v/1402550)).  
+[3] Mathematical monk, *Probability primer ([유튜브 동영상](https://www.youtube.com/watch?v=Tk4ubu7BlSk&list=PL17567A1A3F5DB5E4)).  
 [4] PennStae, Eberly College of Science, STAT 414: Probability theory ([온라인 코스](https://onlinecourses.science.psu.edu/stat414/)).
 
 
