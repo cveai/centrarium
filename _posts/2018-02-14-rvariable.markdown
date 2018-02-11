@@ -216,8 +216,10 @@ $$V[X] = E[(X - E(X))^2]$$.
 
 $$
 \begin{aligned}
-V[X] &= E[(X - E[X])^2] = E[X^2 - 2E[X]X + E[X]^2] \\ 
-     &= E[X^2] - 2E[X]E[X] + E[X]^2 = E[X^2] - E[X]^2
+V[X] &= E[(X - E[X])^2] \\
+     &= E[X^2 - 2E[X]X + E[X]^2] \\ 
+     &= E[X^2] - 2E[X]E[X] + E[X]^2 \\
+     &= E[X^2] - E[X]^2
 \end{aligned}
 $$
 
