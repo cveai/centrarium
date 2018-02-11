@@ -265,8 +265,6 @@ $${\mathrm{Pr}[X + W \ge 2]}.$$
 
 <figure>
 <img src="/assets/pics/rvariable/choas.jpg" alt="Chaos" style="width: 35%; height: 35%">
-<figcaption>혼돈
-</figcaption>
 </figure>
 
 사실 이 구체적인 경우 고등학교에서 훈련된 정도로 쉽게 상황을 파악하여 직관적으로 원하는 확률을 구할 수 있다.
