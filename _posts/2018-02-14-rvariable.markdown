@@ -91,8 +91,8 @@ $$p(A) = \sum_{a \in A} f_p(a).$$
 
 $$
 \begin{aligned}
-p(\{⚁, ⚂, ⚄ \}) &= \sum_{a \in \{⚁, ⚂, ⚄ \}} f_p(a) 
-                 &= p(⚁) + p(⚂) + p(⚄) 
+p(\{⚁, ⚂, ⚄ \}) &= \sum_{a \in \{⚁, ⚂, ⚄ \}} f_p(a) \\
+                 &= p(⚁) + p(⚂) + p(⚄) \\
                  &= \frac{1}{6} + \frac{1}{6} + \frac{1}{6} = \frac{1}{2}.
 \end{aligned}
 $$
