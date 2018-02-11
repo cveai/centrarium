@@ -12,9 +12,9 @@ tags: 강화학습 RL 확률론 확률 확률변수
 고맙게도 온라인 상에 동영상이 올라와 있으니 시청을 권한다 [2].
 강연의 내용 중 인상깊었던 것 하나는 확률 개념이 탄생하던 17세기 유럽 그 시대의 석학들에게도 난제였던 문제를
 이 시대 우리들은 고등학생들도 그리 어렵지 않게 해결하는 수준이 되었다는 내용이다. 
-그래서 우리는 자부심을 좀 가져도 된다는.
+그래서 우리는 자부심을 좀 가져도 된다는..
 
-확률론이 엄밀한 학문으로 확립된 것은 Kolmogorov
+확률론이 엄밀한 학문으로 확립된 것은 Kolmogorov 라는 러시아 수학자의 업적으로 ...
 
 
 확률 개념을 본격적으로 살펴보기 전에 먼저 고려해야 하는 것이 **이산**과 **연속**의 구분이다.
@@ -277,8 +277,8 @@ $$
 
 [1] A. Shirayaev (translator: D. Chibisov), *Probability- 1*, third edition (2016), Springer.  
 [2] 김민형, *확률론의 선과 악: 2. 확률론의 기원* ([네이버티비 동영상](http://tv.naver.com/v/1402550)).  
-[3] Mathematical monk, *Probability primer ([유튜브 동영상](https://www.youtube.com/watch?v=Tk4ubu7BlSk&list=PL17567A1A3F5DB5E4)).  
-[4] PennStae, Eberly College of Science, STAT 414: Probability theory ([온라인 코스](https://onlinecourses.science.psu.edu/stat414/)).
+[3] Mathematical monk, *Probability primer* ([유튜브 동영상](https://www.youtube.com/watch?v=Tk4ubu7BlSk&list=PL17567A1A3F5DB5E4)).  
+[4] PennStae, Eberly College of Science, *STAT 414: Probability theory* ([온라인 코스](https://onlinecourses.science.psu.edu/stat414/)).
 
 
 
