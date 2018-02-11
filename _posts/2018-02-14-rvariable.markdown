@@ -263,6 +263,12 @@ $${\mathrm{Pr}[X + W \ge 2]}.$$
 
 다르게 표현하자면 $[X + W \ge 2]$이라는 사건의 어떤 확률함수에 대한 함숫값을 구해야 하는가?
 
+<figure>
+<img src="/assets/pics/rvariable/choas.jpg" alt="Chaos" style="width: 35%; height: 35%">
+<figcaption>혼돈
+</figcaption>
+</figure>
+
 사실 이 구체적인 경우 고등학교에서 훈련된 정도로 쉽게 상황을 파악하여 직관적으로 원하는 확률을 구할 수 있다.
 문제는 관련되는 확률변수의 수가 많아지고 서로의 관계가 복잡하게 얽혀있는 경우다.
 
