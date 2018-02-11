@@ -214,7 +214,12 @@ $$V[X] = E[(X - E(X))^2]$$.
 
 기댓값의 선형성을 이용하면 분산을 다음과 같이 계산할 수 있다.
 
-$$V[X] = E[(X - E[X])^2] = E[X^2 - 2E[X]X + E[X]^2] = E[X^2] - 2E[X]E[X] + E[X]^2$$
+$$
+\begin{aligned}
+V[X] &= E[(X - E[X])^2] = E[X^2 - 2E[X]X + E[X]^2] \\ 
+     &= E[X^2] - 2E[X]E[X] + E[X]^2 = E[X^2] - E[X]^2
+\end{aligned}
+$$
 
 #### 악의 축 : 결합 분포 (Joint distribution)와 주변 분포 (marginal distribution)
 
