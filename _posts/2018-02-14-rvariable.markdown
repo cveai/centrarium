@@ -65,11 +65,10 @@ $$
 
 확률함수를 다음과 같은 테이블로 나타낼 수도 있다.
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| Left-aligned | Center-aligned | Right-aligned |
+| :---         |     :---:      |          ---: |
+| git status   | git status     | git status    |
+| git diff     | git diff       | git diff      |
 
 확률함수라가 나타내는 정보를 한분에 파악하기에 가장 좋은 것은 아무래도 함수의 그래프를 통해서가 아닐까 싶다.
 주사위 실험의 경우를 그래프로 나타내면 다음과 같다.
