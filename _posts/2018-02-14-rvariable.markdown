@@ -65,11 +65,14 @@ $$
 
 확률함수를 다음과 같은 테이블로 나타낼 수도 있다.
 
-|   |   |   |   |   |
-|---|---|---|---|---|
-|   |   |   |   |   |
-|   |   |   |   |   |
-|   |   |   |   |   |
+
+
+| Left-aligned | Center-aligned | Right-aligned |
+| :---         |     :---:      |          ---: |
+| git status   | git status     | git status    |
+| git diff     | git diff       | git diff      |
+
+
 
 
 이 테이블은 사실 다음의 함수를 나타낸 것으로 볼 수 있는데 측도론에 의하면 확률 질량 함수(probability mass function)라 불린다.
