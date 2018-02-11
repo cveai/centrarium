@@ -66,10 +66,9 @@ $$
 
 
 
-| Left-aligned | Center-aligned | Right-aligned |
-| :---         |     :---:      |          ---: |
-| git status   | git status     | git status    |
-| git diff     | git diff       | git diff      |
+|               | ⚀     | Right-aligned |
+| :---          | :---: |          ---: |
+| 확률 $p(\square)$  | 1/6   | git status    |
 
 
 
