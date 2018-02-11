@@ -66,10 +66,10 @@ $$
 
 
 
-|               | ⚀     | Right-aligned |
+| $\square$     | ⚀     | Right-aligned |
 | :---          | :---: |          ---: |
-| 확률 $p(\square)$  | 1/6   | git status    |
-
+| $p(\square)$  | 1/6   | git status    |
+{ width:auto;  }
 
 
 
