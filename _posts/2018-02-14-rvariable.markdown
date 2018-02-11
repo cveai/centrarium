@@ -68,9 +68,9 @@ $$
 
 | $\square$     | ⚀     | Right-aligned |
 | :---          | :---: |          ---: |
-| $p(\square)$  | 1/6   | git status    |
+| $p(\square)$  | 1/6   | git status    |  { width:auto;  }
 
-{ width:auto;  }
+
 
 
 
