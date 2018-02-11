@@ -186,10 +186,10 @@ $$E[X] = \sum_{a \in \Omega} p(a)X(a).$$
 
 $$
 \begin{aligned}
-& & E[X] \\ 
-&=& \sum_{a \in \{⚀, ⚁, ⚂, ⚃, ⚄, ⚅ \}} p(a)X(a) \\
-&=& p(⚀)X(⚀) + p(⚁)X(⚁) + p(⚂)X(⚂) + p(⚃)X(⚃) + p(⚄)X(⚄) + p(⚅)X(⚅) \\
-&=& 1/6\cdot 1 + 1/6\cdot 2 + 1/6\cdot 3 + 1/6\cdot 4 + 1/6\cdot 5 + 1/6\cdot = 21/6.  
+  & E[X] \\ 
+ =& \sum_{a \in \{⚀, ⚁, ⚂, ⚃, ⚄, ⚅ \}} p(a)X(a) \\
+ =& p(⚀)X(⚀) + p(⚁)X(⚁) + p(⚂)X(⚂) + p(⚃)X(⚃) + p(⚄)X(⚄) + p(⚅)X(⚅) \\
+ =& 1/6\cdot 1 + 1/6\cdot 2 + 1/6\cdot 3 + 1/6\cdot 4 + 1/6\cdot 5 + 1/6\cdot = 21/6.  
 \end{aligned}
 $$
 
