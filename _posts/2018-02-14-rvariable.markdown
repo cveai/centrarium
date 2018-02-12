@@ -84,17 +84,6 @@ CSS width:auto
 | $p(\square)$  | 1/6  | 1/6  | 1/6  | 1/6  | 1/6  |1/6   |  
 
 
-table,
-th,
-td {
-  border: 1px solid black;
-  padding: 1rem;
-}
-
-table {
-  // width: 100% 로 바꿔보세요
-  width: auto;
-}
 <table>
   <thead>
     <tr>
