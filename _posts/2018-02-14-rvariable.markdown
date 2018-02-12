@@ -271,7 +271,7 @@ $${\mathrm{Pr}[X + W \ge 2]}.$$
 다르게 표현하자면 $[X + W \ge 2]$이라는 사건의 어떤 확률함수에 대한 함숫값을 구해야 하는가?
 
 <figure>
-<img src="/assets/pics/rvariable/chaos.jpg" alt="Chaos" style="width: 50%; height: 50%">
+<img src="/assets/pics/rvariable/chaos.jpg" alt="Chaos" style="width: 80%; height: 80%">
 </figure>
 
 사실 이 구체적인 경우 고등학교에서 훈련된 정도로 쉽게 상황을 파악하여 직관적으로 원하는 확률을 구할 수 있다.
