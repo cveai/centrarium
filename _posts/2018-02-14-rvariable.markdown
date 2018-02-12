@@ -83,6 +83,18 @@ CSS width:auto
 | :---          | :--: | :--: | :--: | :--: | :--: | :--: |
 | $p(\square)$  | 1/6  | 1/6  | 1/6  | 1/6  | 1/6  |1/6   |  
 
+
+table,
+th,
+td {
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+table {
+  // width: 100% 로 바꿔보세요
+  width: auto;
+}
 <table>
   <thead>
     <tr>
@@ -100,7 +112,7 @@ CSS width:auto
       <td>jdoe</td>
     </tr>
   </tbody>
-</table>ㅗ
+</table>
 
 
 이 테이블은 사실 다음의 함수를 나타낸 것으로 볼 수 있는데 측도론에 의하면 확률 질량 함수(probability mass function)라 불린다.  
