@@ -63,7 +63,13 @@ $$
 충분히 공감가능한 한 기준을 제시해주는 것은 분명하다.
 
 
-#### 확룰분포 (probability distribution, probability distribution function)
+#### 확룰분포 (probability distribution)
+
+내 마음속에 있는 어떤 구체적인 확률함수를 다른 이에게 제시하려면 표본공간에 있는 모든 표본에 대한 함숫값을 알려주면 된다.
+표본의 총 갯수가 $6$인 주사위 실험의 경우는 $2^6 = 64$개의 함숫값을 지정해주면 되었다.
+즉, 확률함수의 총 함숫값의 갯수는 표본공간의 크기에 따라 기하급수적으로 증가한다.
+표본공간의 크기가 훨씬 큰 경우 이를 어떻게 다루는 것이 좋을까?
+
 
 확률함수의 두번째 성질인 덧셈 원리를 이용하면 다음이 성립함을 알 수 있다.
 
@@ -77,6 +83,24 @@ CSS width:auto
 | :---          | :--: | :--: | :--: | :--: | :--: | :--: |
 | $p(\square)$  | 1/6  | 1/6  | 1/6  | 1/6  | 1/6  |1/6   |  
 
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mo Kweon</td>
+      <td>kkweon</td>
+    </tr>
+    <tr>
+      <td>John Doe</td>
+      <td>jdoe</td>
+    </tr>
+  </tbody>
+</table>ㅗ
 
 
 이 테이블은 사실 다음의 함수를 나타낸 것으로 볼 수 있는데 측도론에 의하면 확률 질량 함수(probability mass function)라 불린다.  
