@@ -129,9 +129,7 @@ $$
 확률함수와 확률분포함수 사이의 관계를 다시한번 정리하고 넘어가자.
 확률함수 $p : \mathscr{P}(\Omega) \rightarrow [0,1]$가 주어지면 이대 대응하는 확률분포함수 $f_p$를 정의할 수 있다:
 
-$$f_p : \Omega \rightarrow [0,1], \\
-f_p(a) = p(\{a\})
-$$ 
+$$f_p : \Omega \rightarrow [0,1], f_p(a) = p(\{a\})$$ 
 
 #### 확률변수의 등장
 
