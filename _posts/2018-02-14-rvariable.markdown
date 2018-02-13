@@ -278,8 +278,7 @@ $$.
 
 $$
 \begin{aligned}
-E(X + Y) &= E(X) + E(Y) \\
-E(aX) &= aE(X).
+V[X] = E[(X - E(X))^2]
 \end{aligned}
 $$
 
