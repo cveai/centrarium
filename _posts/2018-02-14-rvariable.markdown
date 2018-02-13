@@ -432,6 +432,7 @@ $\color{blue}{f}$와 $g$라는 함수에 의존해서 정의되는데 표현의 
 
 $ $   
 
+
 #### 참고자료
 
 [1] A. Shirayaev (translator: D. Chibisov), *Probability- 1*, third edition (2016), Springer.  
