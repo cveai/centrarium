@@ -397,10 +397,10 @@ $$
 \begin{aligned}
 \mathrm{Pr}[X + W = 2] &= \mathrm{Pr}[X + W = 2] \\
                        &= \mathrm{Pr}[X = 1, W = 1] + \mathrm{Pr}[X = 2, W = 0] \\
-                       &= .
+                       &= f(⚀)g(H) + f(⚁)g(T) \\
+                       &= 1/6\cdot 1/2 + 1/6\cdot 1/2 =1/6.
 \end{aligned}
 $$
-
 
 
 #### 주변 분포 (marginal distribution)
