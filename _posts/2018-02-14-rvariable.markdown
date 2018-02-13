@@ -370,12 +370,16 @@ $$f_{XY}(x, y) = \mathrm{Pr}[X=x, Y=y]$$
 를 생각하자.
 먼저 확률분포함수 $f$와 $g$를 이용하여 새로운 확률분포함수를 정의한다:
 
-$$f\times g : \Omega\times \Omega' \rightarrow [0,1], \ (f\times g) (a, b) = f(a)g(b).$$
+$$f\times g : \Omega\times \Omega' \rightarrow [0,1], \\
+ (f\times g) (a, b) = f(a)g(b).$$
 
 이를 이용하여 대응되는 확률함수를 정의할 수 있다:
 
-$$p\times q : \mathscr{P}(\Omega\times \Omega') \rightarrow [0,1], \\
- (p\times q) (A) = \sum_{(a, b) \in A} (f\times s)(a, b) = (p\times q) (A) = \sum_{(a, b) \in A} f(a)g(b).$$
+$$p\times q : \mathscr{P}(\Omega\times \Omega') \rightarrow [0,1],$$
+$$\begin{aligned} 
+(p\times q) (A) &= \sum_{(a, b) \in A} (f\times s)(a, b) \\ 
+                &= \sum_{(a, b) \in A} f(a)g(b).
+\end{aligned}$$
 
 
 
