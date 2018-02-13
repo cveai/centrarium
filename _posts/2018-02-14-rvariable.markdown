@@ -350,9 +350,9 @@ $$[X + W \ge 2]$$
 
 두 확률함수 $p, q$에 각각 기반하는 확률변수 $X$와 $Y$에 대한 결합 확률분포함수(joint probability distribution function)는 다음과 같이 정의된다.
 
-$$f_{XY}(x, y) = P[X=x, Y=y]$$
+$$f_{XY}(x, y) = \math{Pr}[X=x, Y=y]$$
 
-이 지점에서 확률에 관한 혼돈이 시작된다. 과연 $[X=x, Y=y]$의 정체는 무엇일까?
+이 지점에서 확률에 관한 혼돈이 시작된다. 과연 $\math{Pr}[X=x, Y=y]$의 정체는 무엇일까?
 
 
 
