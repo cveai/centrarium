@@ -110,12 +110,12 @@ $$
 | :---:           | :--: | :--: | :--: | :--: | :--: | :--: |
 | $f_p(\square)$  | 1/6  | 1/6  | 1/6  | 1/6  | 1/6  |1/6   |  
 
-확률 분포 함수가 나타내는 정보를 한눈에 파악하기 가장 좋은 것은 아무래도 함수의 그래프를 통해서가 아닐까 싶다.
+확률분포함수가 나타내는 정보를 한눈에 파악하기 가장 좋은 것은 아무래도 함수의 그래프를 통해서가 아닐까 싶다.
 위의 확률 분포 함수를 그래프로 나타내면 다음과 같다.
 
 <figure>
 <img src="/assets/pics/rvariable/dice.png" alt="Dice" style="width: 120%; height: 120%">
-<figcaption>$f_p$ (using: <a href="https://www.desmos.com/calculator/2kmx0enkkz">Desmos online calculator</a>)
+<figcaption>확률분포함수 (using: <a href="https://www.desmos.com/calculator/2kmx0enkkz">Desmos online calculator</a>)
 </figcaption>
 </figure>
 
