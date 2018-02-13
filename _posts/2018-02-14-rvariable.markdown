@@ -354,13 +354,15 @@ $$f_{XY}(x, y) = \mathrm{Pr}[X=x, Y=y]$$
 
 이 지점에서 확률에 관한 혼돈이 시작된다. 과연 $\mathrm{Pr}[X=x, Y=y]$의 정체는 무엇일까?
 
-이 혼란을 정리해서 이해하기 위해 확률변수가 하나일 떄의 논의에 맞추어 분석을 해보자.
+이 혼란을 정리해서 이해하기 위해 확률변수가 하나일 때의 논의와 평행선에 놓고 분석을 해보자.
 두 확률분포함수 
 * $f : \Omega \rightarrow [0,1]$,
 * $g : \Omega' \rightarrow [0,1]$
+
 에 각각 대응되는 활률함수 
 * $p : \mathscr{P}(\Omega) \rightarrow [0,1]$
 * $q : \mathscr{P}(\Omega') \rightarrow [0,1]$
+
 에 각각 기반해 정의된 확률변수 
 * $X : \Omega \rightarrow \mathbb{R}$
 * $Y : \Omega' \rightarrow \mathbb{R}$
