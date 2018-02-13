@@ -356,7 +356,7 @@ $$f_{XY}(x, y) = \mathrm{Pr}[X=x, Y=y]$$
 
 이 혼란을 정리해서 이해하기 위해 확률변수가 하나일 때의 논의와 평행선에 놓고 분석을 해보자.
 두 확률분포함수 
-* $f : \Omega \rightarrow [0,1]$,
+* $f : \Omega \rightarrow [0,1]$
 * $g : \Omega' \rightarrow [0,1]$
 
 에 각각 대응되는 활률함수 
@@ -366,7 +366,9 @@ $$f_{XY}(x, y) = \mathrm{Pr}[X=x, Y=y]$$
 에 각각 기반해 정의된 확률변수 
 * $X : \Omega \rightarrow \mathbb{R}$
 * $Y : \Omega' \rightarrow \mathbb{R}$
+
 를 생각하자.
+
 
 #### 노테이션의 문제
 
