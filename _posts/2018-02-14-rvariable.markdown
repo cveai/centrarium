@@ -225,8 +225,9 @@ $$p_X(\mathcal{A}) = \sum_{\alpha \in \mathcal{A}}f_X(\alpha)
 
 그렇다면 다음의 확률을 기존의 확률함수 $p$를 이용하여 어떻게 기술할 수 있을까?
 
-$$p_X(\{\alpha\}) = \sum_{a \in \{\alpha\}}f_X(\alpha) 
-                  = \sum_{a \in [X = \alpha]}f_X(\alpha) .
+$$
+p_X(\{\alpha\}) = \sum_{\alpha' \in \{\alpha\}}f_X(\alpha') 
+                  = f_X(\alpha) = p[X=\alpha].
 $$
 
 유사하게 $X$의 확률함수 $p_X$가 또한 정의할 수 있다:
