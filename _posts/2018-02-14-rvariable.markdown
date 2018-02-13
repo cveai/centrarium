@@ -229,8 +229,11 @@ $$p_X(\{\alpha\}).$$
 어렵지 않게 
 
 $$
-\color{red}{p_X(\{\alpha\})} = \sum_{\alpha' \in \{\alpha\}} f_X(\alpha')
+\begin{aligned}
+\color{red}{p_X(\{\alpha\})} &ㅗ
+= \sum_{\alpha' \in \{\alpha\}} f_X(\alpha')
                   = f_X(\alpha) = \color{red}{p[X=\alpha]}
+\end{aligned}
 $$
 이 됨을 알 수 있다.
 
