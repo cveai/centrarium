@@ -339,10 +339,6 @@ $$[X + W \ge 2]$$
 
 이라는 사건의 어떤 확률함수에 대한 함숫값을 구해야 하는가?
 
-<figure>
-<img src="/assets/pics/rvariable/spiral.jpg" alt="Chaos" style="width: 60%; height: 60%">
-</figure>
-
 사실 이 구체적인 주사위-동전 실험의 경우 기반이되는 확률함수를 엄밀하게 파악하지 않고도 직관적으로 전체 상황을 이해하여 원하는 확률을 구할 수 있다.
 문제는 포함된 확률변수의 수가 많고 서로가 복잡한 관계로 얽혀있는 경우다.
 그런 복잡한 상황을 대비해 사건 $[X + W \ge 2]$의 기반에 있는 확률함수를 구체적으로 찾아내 보자.
@@ -410,6 +406,10 @@ f_Y(x) &= \sum_{x \in \Omega} f_{XY}(x, y).
 $$
 
 혹시 당신은 $f_x = f$이고 $f_y = g$라는 사실을 알아챘는가?
+
+<figure>
+<img src="/assets/pics/rvariable/spiral.jpg" alt="Chaos" style="width: 60%; height: 60%">
+</figure>
 
 
 #### 노테이션의 문제
