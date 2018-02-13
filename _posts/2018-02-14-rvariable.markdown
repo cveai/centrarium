@@ -242,6 +242,7 @@ $$
                   = f_X(\alpha) = \color{red}{p[X=\alpha]}
 \end{aligned}
 $$
+이 됨을 알 수 있다.
 
 #### 기댓값과 분산 : 확률변수들 간의 연산 및 합성함수
 
