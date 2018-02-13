@@ -136,7 +136,7 @@ $$
 
 $$f_p : \Omega \rightarrow [0,1], \ f_p(a) = p(\{a\}).$$ 
 
-반대로 확률분포함수 $f : \Omega \rightarrow [0,1]$가 주어지면 대응되는 확률함수 $p_f$를 정의할 수 있다:
+반대로, 확률분포함수 $f : \Omega \rightarrow [0,1]$가 주어지면 대응되는 확률함수 $p_f$를 정의할 수 있다:
 
 $$p_f : \mathscr{P}(\Omega) \rightarrow [0,1], \ p_f(A) = \sum_{a \in A} f(a).$$ 
 
