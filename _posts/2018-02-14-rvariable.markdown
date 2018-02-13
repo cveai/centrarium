@@ -274,12 +274,6 @@ $$
 \begin{aligned}
 V[X] = E[(X - E(X))^2]
 \end{aligned}
-$$.
-
-$$
-\begin{aligned}
-V[X] = E[(X - E(X))^2]
-\end{aligned}
 $$
 
 기댓값의 선형성을 이용하면 분산을 다음과 같이 계산할 수 있다.
