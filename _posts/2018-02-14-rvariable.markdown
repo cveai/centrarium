@@ -384,8 +384,9 @@ $$\begin{aligned}
 
 우리가 원하는 결합 확률분포함수는 다름아닌 다음의 함수이다:
 
-$$f_{XY}(x, y) = \sum_{a \in [X = x], b \in [Y = y]} (f\times g)(a,b) = \sum_{a \in [X = x], b \in [Y = y]} f(a)g(b).$$
+$$f_{XY}(x, y) = \sum_{a \in [X = x], \ b \in [Y = y]} (f\times g)(a,b) = \sum_{a \in [X = x], \ b \in [Y = y]} f(a)g(b).$$
 
+즉, $\color{red}{\mathrm{Pr}[X=x, Y=y]} = \sum_{a \in [X = x], \ b \in [Y = y]} f(a)g(b)$인 것이다.
 
 #### 노테이션의 문제
 
