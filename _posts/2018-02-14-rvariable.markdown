@@ -222,15 +222,15 @@ $$f_X(\alpha) = p[X=\alpha] = \sum_{a \in [X=\alpha]}f(a).$$
 $$p_X(\mathcal{A}) = \sum_{\alpha \in \mathcal{A}}f_X(\alpha)$$
 
 임을 알 수 있다.
-그렇다면 다음의 확률을 기존의 확률함수 $p$를 이용하여 어떻게 기술할 수 있을까?
+그렇다면 다음의 $\mathcal{A} = \{\alpha\}$인 경우 확률을 기존의 확률함수 $p$를 이용하여 기술하면 어떻게 될까?
 
-$$
-p_X(\{\alpha\}) = \sum_{\alpha' \in \{\alpha\}}f_X(\alpha') 
-                  = f_X(\alpha) = p[X=\alpha].
-$$
+$$p_X(\{\alpha\}).$$
 
+어렵지 않게 
 
-
+$${\color{red} p_X(\{\alpha\})} = \sum_{\alpha' \in \{\alpha\}} f_X(\alpha')
+                  = f_X(\alpha) = {\color{red} p[X=\alpha]}$$
+이 됨을 알 수 있다.
 
 
 
@@ -308,7 +308,11 @@ $$\mathrm{Pr}[X + Y \ge 2] = {\color{red} p}[X + Y \ge 2]$$
 을 의미한다. 왜냐하면 확률함수 $p$에 기반한 두 확률변수 $X, Y$의 합으로 정의된 확률변수 $X+Y$ 역시 $p$에 기반하기 때문이다.
 
 그런데 만일 확률변수 $X, Y$가 각각 다른 확률함수 $p$와 $q$에 기반한다면 문제가 달라진다.
-이것이 바로 **결합 확률변수**(joint random variable)라는 것이다.
+이것이 바로 결합 확률변수(joint random variable)의 이론이다.
+
+
+
+
 
 또한번 주사위 실험에서의 확률함수 $p$와 확률변수 $X$를 떠올리자. 
 이번에는 동전을 던져 앞뒤를 확인하는 실험에 관련된 확률함수
