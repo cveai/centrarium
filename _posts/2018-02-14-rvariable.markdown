@@ -219,7 +219,7 @@ $X$의 확률분포함수 $f_X : \Omega_X \rightarrow [0,1]$의 정의구역,
 
 $$f_X(\alpha) = p[X=\alpha] = \sum_{a \in [X=\alpha]}f(a).$$
 
-확률분포함수와 확률함수의 관계를 이용하면 $\mathcal{A} \in \Omega_X$에 대해서
+확률분포함수와 확률함수의 관계를 이용하면 $\mathcal{A} \subset \Omega_X$에 대해서
 
 $$p_X(\mathcal{A}) = \sum_{\alpha \in \mathcal{A}}f_X(\alpha)$$
 
