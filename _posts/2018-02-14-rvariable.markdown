@@ -119,7 +119,7 @@ $$
 위의 확률 분포 함수를 그래프로 나타내면 다음과 같다.
 
 <figure>
-<img src="/assets/pics/rvariable/dice.png" alt="Dice" style="width: 100%; height: 100%">
+<img src="/assets/pics/rvariable/dice.png" alt="Dice" style="width: 80%; height: 80%">
 <figcaption>확률분포함수 (using: <a href="https://www.desmos.com/calculator/2kmx0enkkz">Desmos online calculator</a>)
 </figcaption>
 </figure>
