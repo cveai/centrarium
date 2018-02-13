@@ -213,11 +213,11 @@ $$p = p_f, \ f = f_p.$$
 
 확률변수 $X$는 자신만의 새로운 확률함수와 확률분포함수를 정의하게 되는데 그 과정을 엄밀하게 살펴보자.
 $X$의 확률분포함수 $f_X : \Omega_X \rightarrow [0,1]$의 정의구역,
-즉 표본공간은 $\Omega_X = \\{X(a) : a \in \Omega\\}$이고 다음과 같이 정의된다:
+즉 표본공간은 $\Omega_X = \\{X(a) : a \in \Omega\\} \subset \mathbb{R}$이고 다음과 같이 정의된다:
 
 $$f_X(\alpha) = p[X=\alpha] = \sum_{a \in [X=\alpha]}f(a).$$
 
-확률분포함수와 확률함수의 관계를 이용하면
+확률분포함수와 확률함수의 관계를 이용하면 $\mathcal{A} \in \Omega_X$에 대해서
 
 $$p_X(\mathcal{A}) = \sum_{\alpha \in \mathcal{A}}f_X(\alpha) 
                    = \sum_{\alpha \in \mathcal{A}}\sum_{a \in [X=\alpha]}f(a)
