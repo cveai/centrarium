@@ -391,8 +391,14 @@ $$
 \end{aligned}
 $$
 
-다시 이 논의가 시작되었던 지점으로 돌아가서 다음 확률을 계산해보자.
-$${\mathrm{Pr}[X + W = 2]}.$$
+다시 이 논의가 시작되었던 지점으로 돌아가서 확률을 계산해보면 다음과 같다.
+
+$$
+\begin{aligned}
+{\mathrm{Pr}[X + W = 2]} &= {\mathrm{Pr}[X + W = 2]}
+                         &= {\mathrm{Pr}[X + W = 2]}.
+\end{aligned}
+$$
 
 
 
