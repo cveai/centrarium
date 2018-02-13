@@ -219,7 +219,8 @@ $$f_X(\alpha) = p[X=\alpha] = \sum_{a \in [X=\alpha]}f(a).$$
 
 확률분포함수와 확률함수의 관계를 이용하면
 
-$$p_X(\Alpha) = \sum_{\alpha \in B}f_X(\alpha) = \sum_{\alpha \in B}\sum_{a \in [X=\alpha]}f(a)
+$$p_X(\mathcal{A}) = \sum_{\alpha \in \mathcal{A}}f_X(\alpha) 
+                   = \sum_{\alpha \in \mathcal{A}}\sum_{a \in [X=\alpha]}f(a)
          = \sum_{X(a) \in A}f(a) .$$
 
 그렇다면 다음의 확률을 기존의 확률함수 $p$를 이용하여 어떻게 기술할 수 있을까?
