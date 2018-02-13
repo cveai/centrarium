@@ -417,7 +417,7 @@ f_Y(x) &= \sum_{x \in \Omega} f_{XY}(x, y).
 \end{aligned}
 $$
 
-혹시 당신은 $f_x = f$이고 $f_y = g$라는 사실을 알아챘는가?
+당신은 $f_x = f$이고 $f_y = g$라는 사실을 알아챘는가?
 
 <figure>
 <img src="/assets/pics/rvariable/spiral.jpg" alt="Chaos" style="width: 60%; height: 60%">
