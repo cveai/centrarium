@@ -220,7 +220,7 @@ $$f_X(\alpha) = p[X=\alpha] = \sum_{a \in [X=\alpha]}f(a).$$
 
 확률분포함수와 확률함수의 관계를 이용하면
 
-$$p_X(A) = \sum_{\alpha \in A}f_X(\alpha) = \sum_{alpha in A}\sum_{a \in [X=\alpha]}f(a).$$
+$$p_X(A) = \sum_{\alpha \in A}f_X(\alpha) = \sum_{\alpha \in A}\sum_{a \in [X=\alpha]}f(a).$$
 
 
 
