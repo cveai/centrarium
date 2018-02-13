@@ -388,7 +388,12 @@ $$f_{XY}(x, y) = \sum_{a \in [X = x], \ b \in [Y = y]} (f\times g)(a,b) = \sum_{
 
 즉,
 
-$$\color{red}{\mathrm{Pr}[X=x, Y=y]} = \sum_{a \in [X = x], \ b \in [Y = y]} f(a)g(b)$$
+$$
+\begin{aligned}
+\color{red}{\mathrm{Pr}[X=x, Y=y]} &= \sum_{a \in [X = x], \ b \in [Y = y]} f(a)g(b) \\
+                                   &= \sum_{X(a) = x, \ Y(b) = y} f(a)g(b) 
+\end{aligned}
+$$
 
 인 것이다.
 
