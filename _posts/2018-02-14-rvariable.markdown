@@ -222,10 +222,9 @@ $$f_X(\alpha) = p[X=\alpha] = \sum_{a \in [X=\alpha]}f(a).$$
 $$p_X(A) = \sum_{\alpha \in A}f_X(\alpha) = \sum_{\alpha \in A}\sum_{a \in [X=\alpha]}f(a)
          = \sum_{X(a) \in A}f(a) .$$
 
-그렇다면 다음의 확률을 확$p$
+그렇다면 다음의 확률을 기존의 확률함수 $p$를 이용하여 어떻게 기술할 수 있을까?
 
-$$p_X([X = \alpha]) = \sum_{\alpha \in A}f_X(\alpha) = \sum_{\alpha \in A}\sum_{a \in [X=\alpha]}f(a)
-         = \sum_{X(a) \in A}f(a) .$$
+$$p_X([X = \alpha]) = \sum_{\alpha \in [X = \alpha]}f_X(\alpha) =  .$$
 
 유사하게 $X$의 확률함수 $p_X$가 또한 정의할 수 있다:
 
@@ -289,7 +288,7 @@ $$
 
 #### 악의 축 : 결합 분포 (Joint distribution)와 주변 분포 (marginal distribution)
 
-여태까지는 오직 하나의 확률분포에 관한 계산만을 해왔다. 
+지금까지는 오직 하나의 확률분포에 관한 계산만을 해왔다. 
 예를 들어 $X+Y$의 기댓값 $E[X+Y]$을 계산하는 경우에도 관련된 두 확률변수 $X, Y$는 모두 공통의 확률함수 $p$에 기반한다.
 즉, 기댓값을 게산하는 과정에서 나타나는 확률함수는 $p$뿐이다. 
 이럴 경우 어떤 사건의 확률을 구할 때 다음과 같은 표현을 종종 사용한다. 
