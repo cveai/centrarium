@@ -219,10 +219,9 @@ $$f_X(\alpha) = p[X=\alpha] = \sum_{a \in [X=\alpha]}f(a).$$
 
 확률분포함수와 확률함수의 관계를 이용하면 $\mathcal{A} \in \Omega_X$에 대해서
 
-$$p_X(\mathcal{A}) = \sum_{\alpha \in \mathcal{A}}f_X(\alpha) 
-                   = \sum_{\alpha \in \mathcal{A}}\sum_{a \in [X=\alpha]}f(a)
-         = \sum_{X(a) \in A}f(a) .$$
+$$p_X(\mathcal{A}) = \sum_{\alpha \in \mathcal{A}}f_X(\alpha)$$
 
+임을 알 수 있다.
 그렇다면 다음의 확률을 기존의 확률함수 $p$를 이용하여 어떻게 기술할 수 있을까?
 
 $$
@@ -230,7 +229,7 @@ p_X(\{\alpha\}) = \sum_{\alpha' \in \{\alpha\}}f_X(\alpha')
                   = f_X(\alpha) = p[X=\alpha].
 $$
 
-유사하게 $X$의 확률함수 $p_X$가 또한 정의할 수 있다:
+
 
 
 
