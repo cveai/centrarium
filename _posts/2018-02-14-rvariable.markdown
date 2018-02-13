@@ -396,7 +396,7 @@ $$
 $$
 \begin{aligned}
 {\mathrm{Pr}[X + W = 2]} &= {\mathrm{Pr}[X + W = 2]} \\
-                         &= {\mathrm{Pr}[X + W = 2]}.
+                         &= {\mathrm{Pr}[X = 1, W = 1] + {\mathrm{Pr}[X = 2, W = 0]}.
 \end{aligned}
 $$
 
