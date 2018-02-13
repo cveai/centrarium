@@ -376,6 +376,7 @@ $$f\times g : \Omega\times \Omega' \rightarrow [0,1], \\
 이를 이용하여 대응되는 확률함수를 정의할 수 있다:
 
 $$p\times q : \mathscr{P}(\Omega\times \Omega') \rightarrow [0,1],$$
+
 $$\begin{aligned} 
 (p\times q) (A) &= \sum_{(a, b) \in A} (f\times s)(a, b) \\ 
                 &= \sum_{(a, b) \in A} f(a)g(b).
