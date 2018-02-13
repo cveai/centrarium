@@ -402,7 +402,12 @@ $$
 분리 확룰분포함수(marginal probability distribution function)
 $f_X : \Omega \rightarrow [0, 1]$와 $f_Y : \Omega' \rightarrow [0,1]$를 다음과 같이 정의한다:
 
-$$f_X(x) = $$
+$$
+\begin{aligned}
+f_X(x) &= \sum_{y \in \Omega'} f_{XY}(x, y) \\
+f_Y(x) &= \sum_{x \in \Omega} f_{XY}(x, y)
+\end{aligned}
+$$
 
 
 #### 노테이션의 문제
