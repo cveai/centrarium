@@ -17,7 +17,7 @@ tags: 강화학습 RL 확률론 확률 확률변수
 확률 개념을 본격적으로 살펴보기 전에 먼저 고려해야 하는 것이 **이산**과 **연속**의 구분이다.
 측도론(measure theory)이라는 수학 이론을 이용하면 이산(discrete)과 연속(continuous)의 확률 개념을
 통합적으로 다루는 것이 가능하지만, 이 포스트에서는 이산의 경우만을 다루기로 한다.
-측도론을 이용한 통합적인 접근법을 이해하기 위해서는 Mathematical Monk의 동영상 강의를 강력히 추천한다: [3].
+측도론을 이용한 통합적인 접근법을 이해하기 위해서는 Mathematical Monk의 동영상 강의를 강력히 추천한다: [[3](https://www.youtube.com/watch?v=Tk4ubu7BlSk&list=PL17567A1A3F5DB5E4){:target="_blank"}].
 측도론을 통하여 확률론이 현대적인 엄밀한 학문으로 확립된 것은 Kolmogorov 라는 러시아 수학자의 업적으로 알려져 있다.
 
 #### 확률함수(probability, probability function)
