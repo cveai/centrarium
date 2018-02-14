@@ -205,42 +205,7 @@ $$
 (사실은 $Z$를 $X - 2Y$의 함수값으로 정의했다.)
 
 
-#### 확률변수는 자신만의 확률분포를 재조직한다
-
-확률함수 $p$ 혹은 그에 대응되는 확률분포함수 $f$에 기반을 둔 확률변수 $X$를 생각하자.
-확률함수와 확률분포함수가 본질에서 같은 정보의 두 가지 다른 표현이라는 것을 상기하면
-두 함수가 다음의 관계를 만족함을 알 수 있다.
-
-$$p = p_f, \ f = f_p.$$
-
-확률변수 $X$는 자신만의 새로운 확률함수와 확률분포함수를 정의하게 되는데 그 과정을 엄밀하게 살펴보자.
-$X$의 확률분포함수 $f_X : \Omega_X \rightarrow [0,1]$의 정의구역,
-즉 표본공간은 $\Omega_X = \\{X(a) : a \in \Omega\\} \subset \mathbb{R}$이고 다음과 같이 정의된다:
-
-$$\color{red}{f_X(\alpha)} = \color{red}{p[X=\alpha]} = \sum_{a \in [X=\alpha]}f(a) = \color{red}{\sum_{X(a) = \alpha}f(a)}.$$
-
-이 관계를 잘 기억해두도록 하자. 확률분포함수와 확률함수의 관계를 이용하면 $\mathcal{A} \subset \Omega_X$에 대해서
-
-$$p_X(\mathcal{A}) = \sum_{\alpha \in \mathcal{A}}f_X(\alpha)$$
-
-임을 알 수 있다.
-그렇다면 다음의 $\mathcal{A} = \\{\alpha\\}$인 경우 확률을 기존의 확률함수 $p$를 이용하여 기술하면 어떻게 될까?
-
-$$p_X(\{\alpha\}).$$
-
-정의를 이용하면
-
-$$
-\begin{aligned}
-p_X(\{\alpha\}) = \sum_{\alpha' \in \{\alpha\}} f_X(\alpha')
-                  = f_X(\alpha) = p[X=\alpha]
-\end{aligned}
-$$
-
-이 됨을 어렵지 않게 알 수 있다. 
-
-
-#### 기댓값과 분산
+#### 확률변수로 할 수 있는 일: 기댓값과 분산의 정의
 
 확률함수 $p : \Omega \rightarrow [0, 1]$가 주어지고 이에 기반을 두는 확률변수 $X : \Omega \rightarrow {\mathbb R}$가 주어지면 
 **기댓값**(expectation)이란 개념을 정의할 수 있다.
@@ -293,6 +258,41 @@ V[X] &= E[(X - E[X])^2] \\
      &= E[X^2] - E[X]^2.
 \end{aligned}
 $$
+
+
+#### 확률변수는 자신만의 확률분포를 재조직한다
+
+확률함수 $p$ 혹은 그에 대응되는 확률분포함수 $f$에 기반을 둔 확률변수 $X$를 생각하자.
+확률함수와 확률분포함수가 본질에서 같은 정보의 두 가지 다른 표현이라는 것을 상기하면
+두 함수가 다음의 관계를 만족함을 알 수 있다.
+
+$$p = p_f, \ f = f_p.$$
+
+확률변수 $X$는 자신만의 새로운 확률함수와 확률분포함수를 정의하게 되는데 그 과정을 엄밀하게 살펴보자.
+$X$의 확률분포함수 $f_X : \Omega_X \rightarrow [0,1]$의 정의구역,
+즉 표본공간은 $\Omega_X = \\{X(a) : a \in \Omega\\} \subset \mathbb{R}$이고 다음과 같이 정의된다:
+
+$$\color{red}{f_X(\alpha)} = \color{red}{p[X=\alpha]} = \sum_{a \in [X=\alpha]}f(a) = \color{red}{\sum_{X(a) = \alpha}f(a)}.$$
+
+이 관계를 잘 기억해두도록 하자. 확률분포함수와 확률함수의 관계를 이용하면 $\mathcal{A} \subset \Omega_X$에 대해서
+
+$$p_X(\mathcal{A}) = \sum_{\alpha \in \mathcal{A}}f_X(\alpha)$$
+
+임을 알 수 있다.
+그렇다면 다음의 $\mathcal{A} = \\{\alpha\\}$인 경우 확률을 기존의 확률함수 $p$를 이용하여 기술하면 어떻게 될까?
+
+$$p_X(\{\alpha\}).$$
+
+정의를 이용하면
+
+$$
+\begin{aligned}
+p_X(\{\alpha\}) = \sum_{\alpha' \in \{\alpha\}} f_X(\alpha')
+                  = f_X(\alpha) = p[X=\alpha]
+\end{aligned}
+$$
+
+이 됨을 어렵지 않게 알 수 있다. 
 
 
 
