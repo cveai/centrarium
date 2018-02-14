@@ -407,7 +407,7 @@ $$
 #### 주변 분포 (marginal distribution)
 
 두 확률변수 $X, Y$에 대한 결합 확률분포함수 $f_{XY} : \Omega\times \Omega' \rightarrow [0,1]$가 주어졌을 때
-주변 확룰분포함수(marginal probability distribution function)
+주변 확률분포함수(marginal probability distribution function)
 $f_X : \Omega \rightarrow [0, 1]$와 $f_Y : \Omega' \rightarrow [0,1]$를 다음과 같이 정의한다:
 
 $$
