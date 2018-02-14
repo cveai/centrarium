@@ -451,7 +451,6 @@ $P[X=x, Y=y]$, $p[X=x, Y=y]$, $\mathrm{Prob}[X=x, Y=y]$ 등의 다양한 표현�
 
 $ $   
 
-
 #### 참고자료
 
 [1] A. Shirayaev (translator: D. Chibisov), *Probability- 1*, third edition (2016), Springer.  
