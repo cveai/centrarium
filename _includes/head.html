@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/{{ site.highlightjs_theme }}.min.css">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css">
-	<script defer type="text/x-mathjax-config">
+	<script type="text/x-mathjax-config">
     MathJax.Hub.Config({
       extensions: ["tex2jax.js"],
       jax: ["input/TeX", "output/HTML-CSS"],
@@ -23,7 +23,9 @@
         displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
         processEscapes: true
       },
-      "HTML-CSS": { availableFonts: ["TeX"] }
+      CommonHTML: { linebreaks: { automatic: true } },
+      "HTML-CSS": { availableFonts: ["TeX"], linebreaks: { automatic: true, width: "100%" } },
+         SVG: { linebreaks: { automatic: true } }
     });
   </script>
   <script async src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
