@@ -319,7 +319,7 @@ $$
 앞서 정의한 확률변수 $X, Y$로 예를 들어보면 다음과 같다.
 
 $$
-f_X : \Omega_X = \{1, 2, 3, 4, 5, 6\} \rightarrow \mathbb{R}, \\
+f_X : \Omega_X = \{1, 2, 3, 4, 5, 6\} \rightarrow [0,1], \\
 f_X(1) = 1/6, \\
 f_X(2) = 1/6, \\
 f_X(3) = 1/6, \\
@@ -329,7 +329,7 @@ f_X(6) = 1/6,
 $$
 
 $$
-f_Y : \Omega_Y = \{0, 1\} \rightarrow \mathbb{R}, \\
+f_Y : \Omega_Y = \{0, 1\} \rightarrow [0,1], \\
 f_Y(0) = 1/2, \\
 f_Y(1) = 1/2.
 $$
