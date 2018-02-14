@@ -322,9 +322,9 @@ f_X(6) = 1/6,
 $$
 
 $$
-f_Y : \Omega_X = \{0, 1\} \rightarrow \mathbb{R}, \\
-f_X(0) = 1/1, \\
-f_X(1) = 1/1.
+f_Y : \Omega_Y = \{0, 1\} \rightarrow \mathbb{R}, \\
+f_Y(0) = 1/1, \\
+f_Y(1) = 1/1.
 $$
 
 $ $   
