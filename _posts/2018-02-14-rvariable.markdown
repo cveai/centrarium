@@ -352,42 +352,43 @@ $$f_{XY}(x, y) = \mathrm{Pr}[X=x, Y=y]$$
 
 이 혼란을 정리해서 이해하기 위해 확률변수가 하나일 때의 논의와 평행선 상에서 분석을 해보자.
 두 확률분포함수 
-* $f : \Omega \rightarrow [0,1]$
-* $g : \Omega' \rightarrow [0,1]$
+* $f_1 : \Omega \rightarrow [0,1]$
+* $f_2 : \Omega' \rightarrow [0,1]$
 
 에 각각 대응되는 확률함수 
-* $p : \mathscr{P}(\Omega) \rightarrow [0,1]$
-* $q : \mathscr{P}(\Omega') \rightarrow [0,1]$
+* $p_1 : \mathscr{P}(\Omega) \rightarrow [0,1]$
+* $p_2 : \mathscr{P}(\Omega') \rightarrow [0,1]$
 
 에 각각 기반해 정의된 확률변수 
 * $X : \Omega \rightarrow \mathbb{R}$
 * $Y : \Omega' \rightarrow \mathbb{R}$
 
 를 생각하자.
-먼저 확률분포함수 $f$와 $g$를 이용하여 새로운 확률분포함수를 정의한다:
+먼저 확률분포함수 $f_1$와 $f_2$를 이용하여 새로운 확률분포함수를 정의한다:
 
-$$f\times g : \Omega\times \Omega' \rightarrow [0,1], \\
- (f\times g) (a, b) = f(a)g(b).$$
+$$f_1 \times f_2 : \Omega\times \Omega' \rightarrow [0,1], \\
+ (f_1 \times f_2) (a, b) = f_1(a)f_2(b).$$
 
 이를 이용하여 대응되는 확률함수를 정의할 수 있다:
 
-$$p\times q : \mathscr{P}(\Omega\times \Omega') \rightarrow [0,1],$$
+$$p_1 \times p_2 : \mathscr{P}(\Omega\times \Omega') \rightarrow [0,1],$$
 
 $$\begin{aligned} 
-(p\times q) (A) &= \sum_{(a, b) \in A} (f\times g)(a, b) \\ 
-                &= \sum_{(a, b) \in A} f(a)g(b).
+(p_1 \times p_2) (A) &= \sum_{(a, b) \in A} (f_1 \times f_2)(a, b) \\ 
+                &= \sum_{(a, b) \in A} f_1(a)f_2(b).
 \end{aligned}$$
 
 우리가 원하는 결합 확률분포함수는 다름아닌 다음의 함수이다:
 
-$$f_{XY}(x, y) = \sum_{a \in [X = x], \ b \in [Y = y]} (f\times g)(a,b) = \sum_{a \in [X = x], \ b \in [Y = y]} f(a)g(b).$$
+$$f_{XY}(x, y) = \sum_{a \in [X = x], \ b \in [Y = y]} (f_1 \times f_2)(a,b) 
+               = \sum_{a \in [X = x], \ b \in [Y = y]} f_1(a)f_2(b).$$
 
 즉, 다음의 결론을 얻게 된다.
 
 $$
 \begin{aligned}
-\color{red}{\mathrm{Pr}[X=x, Y=y]} &= \sum_{a \in [X = x], \ b \in [Y = y]} f(a)g(b) \\
-                                   &= \sum_{X(a) = x, \ Y(b) = y} f(a)g(b) 
+\color{red}{\mathrm{Pr}[X=x, Y=y]} &= \sum_{a \in [X = x], \ b \in [Y = y]} f_1(a)f_2(b) \\
+                                   &= \sum_{X(a) = x, \ Y(b) = y} f_1(a)f_2(b) 
 \end{aligned}
 $$
 
