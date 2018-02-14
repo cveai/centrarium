@@ -112,7 +112,7 @@ $$
 요약하자면, 확률분포함수는 확률함수의 모든 정보를 포함하면서도 보다 간결하게 제시할 수 있는 "경제성"을 가짐을 알 수 있다.
 확률분포함수를 흔히 다음과 같은 테이블로 나타기도 한다.
 
-| $\square$       | ⚀    | ⚁    | ⚂    | ⚃    | ⚄    | ⚅    |
+| <span class="text-lg text-light">$\square$</span> | <span class="text-lg text-light">⚀</span> | <span class="text-lg text-light">⚁</span> | <span class="text-lg text-light">⚂</span> | <span class="text-lg text-light">⚃</span> | <span class="text-lg text-light">⚄</span> | <span class="text-lg text-light">⚅</span> |
 | :---:           | :--: | :--: | :--: | :--: | :--: | :--: |
 | $f_p(\square)$  | 1/6  | 1/6  | 1/6  | 1/6  | 1/6  |1/6   |  
 
