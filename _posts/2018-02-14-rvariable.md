@@ -271,7 +271,7 @@ F(X)(a) = F(X(a)).$$
 즉, $F(X)$는 $F$와 $X$라는 두 함수의 합성함수이다.
 예를 들어, $F(x) = x^3 -x  +1$이면 $F(X) = X^3 - X +1$이고 
 
-$$E[F(X)] = E[X^3 -X + 1] = \sum_{a \in \Omega} p(a)\cdot (a^3 - a +1)$$
+$$E[F(X)] = E[X^3 -X + 1] = \sum_{a \in \Omega} p(a)\cdot (X(a)^3 - X(a) +1)$$
 
 이 된다.
 
