@@ -217,7 +217,7 @@ $$p = p_f, \ f = f_p.$$
 $X$의 확률분포함수 $f_X : \Omega_X \rightarrow [0,1]$의 정의구역,
 즉 표본공간은 $\Omega_X = \\{X(a) : a \in \Omega\\} \subset \mathbb{R}$이고 다음과 같이 정의된다:
 
-$$f_X(\alpha) = p[X=\alpha] = \sum_{a \in [X=\alpha]}f(a).$$
+$$f_X(\alpha) = p[X=\alpha] = \sum_{a \in [X=\alpha]}f(a) = \sum_{X(a) = \alpha]}f(a).$$
 
 확률분포함수와 확률함수의 관계를 이용하면 $\mathcal{A} \subset \Omega_X$에 대해서
 
