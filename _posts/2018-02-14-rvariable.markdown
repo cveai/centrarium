@@ -406,8 +406,8 @@ $$
 
 #### 주변 분포 (marginal distribution)
 
-두 확률변수 $X, Y$에 대한 결합 확률분포함수 $f_XY : \Omega\times \Omega' \rightarrow [0,1]$가 주어졌을 때
-주변 확룰분포함수(marginal probability distribution function)
+두 확률변수 $X, Y$에 대한 결합 확률분포함수 $f_{XY} : \Omega\times \Omega' \rightarrow [0,1]$가 주어졌을 때
+주변 확률분포함수(marginal probability distribution function)
 $f_X : \Omega \rightarrow [0, 1]$와 $f_Y : \Omega' \rightarrow [0,1]$를 다음과 같이 정의한다:
 
 $$
@@ -417,7 +417,7 @@ f_Y(x) &= \sum_{x \in \Omega} f_{XY}(x, y).
 \end{aligned}
 $$
 
-당신은 $f_X = f$이고 $f_Y = g$라는 사실을 알아챘는가?
+만일 $X, Y$가 확률함수 $f_1, f_2$에 각각 기반을 둔다면, $(f_1)_X, (f_2)_Y$와 $f_X, f_Y$ 사이의 관계는 무엇일까?
 
 <figure>
 <img src="/assets/pics/rvariable/spiral.jpg" alt="Chaos" style="width: 60%; height: 60%">
