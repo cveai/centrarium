@@ -432,8 +432,10 @@ $$
 $\mathrm{P}[X = a]$, $\mathrm{p}[X = a]$, $\mathrm{Prob}[X = a]$ 등의 표현이 보이더라도 모두
 $\color{red}{p[X = a]}$로 해석하면 된다. 확률변수가 하나인 경우는 큰 혼란은 없다.
 
-2. 앞서 잠깐 언급되었지만 $\mathrm{Pr}[X=x, Y=y]$ 혹은 여기서 $\mathrm{Pr}$이 $\mathrm{pr}$, $\mathrm{P}$, $\mathrm{p}$, $\mathrm{Prob}$ 등으로 
-대치된 표현들이 나타나면 확률변수 $X, Y$가 기반을 두는 확률분포함수 $f, g$를 각각 찾아내어 $\mathrm{Pr}[X=x, Y=y] = \sum_{X(a) = x, \ Y(b) = y} f(a)g(b)$로
+2. 확률변수가 둘 이상인 경우도 역시 $\mathrm{Pr}[X=x, Y=y]$, $\mathrm{pr}[X=x, Y=y]$, 
+$\mathrm{P}[X=x, Y=y]$, $\mathrm{p}[X=x, Y=y]$, $\mathrm{Prob}[X=x, Y=y]$ 등의 다양한 표현이 혼란을 일으킨다.
+이 경우에는 단순히 $\mathrm{p}[X=x, Y=y]$로 생각하는 것이 해결책을 주지는 않는다.
+확률변수 $X, Y$가 기반을 두는 확률분포함수 $f, g$를 각각 찾아내어 $\mathrm{Pr}[X=x, Y=y] = \sum_{X(a) = x, \ Y(b) = y} f(a)g(b)$로
 인식하는 것이 혼란을 줄이는 접근법이다. 상황에 따라서는 기반 확률분포함수 $f, g$가 불투명하고 그 대신 결합확률분포함수 $f_{XY}$가 주어진 경우 주변 분포함수 $f_X, f_Y$를
 각각 계산하여 $\mathrm{Pr}[X=x, Y=y] = f_X(x)f_Y(y)$로 생각하면 된다.
 
