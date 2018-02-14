@@ -219,7 +219,7 @@ $X$의 확률분포함수 $f_X : \Omega_X \rightarrow [0,1]$의 정의구역,
 
 $$\color{red}{f_X(\alpha)} = \color{red}{p[X=\alpha]} = \sum_{a \in [X=\alpha]}f(a) = \color{red}{\sum_{X(a) = \alpha}f(a)}.$$
 
-확률분포함수와 확률함수의 관계를 이용하면 $\mathcal{A} \subset \Omega_X$에 대해서
+이 관계를 잘 기억해두도록 하자. 확률분포함수와 확률함수의 관계를 이용하면 $\mathcal{A} \subset \Omega_X$에 대해서
 
 $$p_X(\mathcal{A}) = \sum_{\alpha \in \mathcal{A}}f_X(\alpha)$$
 
@@ -232,13 +232,12 @@ $$p_X(\{\alpha\}).$$
 
 $$
 \begin{aligned}
-\color{red}{p_X(\{\alpha\})} = \sum_{\alpha' \in \{\alpha\}} f_X(\alpha')
-                  = f_X(\alpha) = \color{red}{p[X=\alpha]}
+p_X(\{\alpha\}) = \sum_{\alpha' \in \{\alpha\}} f_X(\alpha')
+                  = f_X(\alpha) = p[X=\alpha]
 \end{aligned}
 $$
 
-이 됨을 어렵지 않게 알 수 있다. 확률변수 $X$를 통한 두 확률함수 $p$와 $p_X$ 사이의 이 관계를 기억하도록 하자.
-주사위 실험과 관련하여 정의했었던 확률함수 $X$와 $Y$를 이용하여 이 내용들을 확인해보는 것이 $p_X$와 $p_Y$를 이해하는데 도움이 될 것이다. 
+이 됨을 어렵지 않게 알 수 있다. 
 
 
 #### 기댓값과 분산
