@@ -263,7 +263,7 @@ V[X] &= E[(X - E[X])^2] \\
 \end{aligned}
 $$
 
-보다 일반적으로 $F$가 어떤 함수일 때 $F(X)$라는 새로운 확률변수를 정의할 수 있다:
+보다 일반적으로 함수 $F: \mathbb{R} \rightarrow \mathbb{R}$에 대해 $F(X)$라는 새로운 확률변수를 정의할 수 있다:
 
 $$F(X) : \Omega \rightarrow \mathbb{R}, \
 F(X)(a) = F(X(a)).$$
