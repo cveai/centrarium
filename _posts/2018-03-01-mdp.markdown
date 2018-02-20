@@ -1,33 +1,48 @@
 ---
 layout: post
-title:  "MDP"
+title:  "MDP (Markov Decision Process)"
 date:   2018-03-01 00:00:00
 author: 장승환
 categories: 기계학습
 tags: 강화학습 RL
 ---
 
-이번 포스트의 주제인 MDP에 대해 알아보기전에 지난 포스트에서 살펴보았던 확률변수의 개념에 대해 몇가지 일반화해야 할 사항이 있다.
-사실 [확률변수를 이해하다](https://cveai.github.io/%EA%B8%B0%EA%B3%84%ED%95%99%EC%8A%B5/2018/02/14/rvariable.html)에서는 
-이산 확률분포 중에서도 **유한**(finite)인 경우만을 다루었었다. 
-대부분의 내용의 무한인 이산의 경우로 확장할 수 있는데 달라지는 가장 중요한 포인트는 극한의 개념을 도입해야 한다는 것이다. 
-극한이 자연스럽게 필요하게 되는 이유를 두가지로 생각해볼 수 있을 것 같다. 
+논의를 시작하기 전에 지난번에 살펴보았던 확률변수의 개념에 대해 몇 가지 보충해야 할 사항이 있다.
+사실 지난 포스트 [확률변수를 이해하다](https://cveai.github.io/%EA%B8%B0%EA%B3%84%ED%95%99%EC%8A%B5/2018/02/14/rvariable.html)에서는 
+이산 확률변수 중에서도 (표본공간이) **유한**(finite)인 경우만을 다루었었다. 
+대부분의 내용이 무한이면서 이산인 경우로 확장할 수 있는데 달라지는 가장 중요한 포인트는 극한 개념을 도입해야 한다는 것이다. 
+자연스럽게 극한의 개념이 필요하게 되는 이유를 두가지로 생각해볼 수 있을 것 같다. 
 * 첫째, 확률변수의 기반이 되는 표본공간이 무한일 경우. 
 * 둘째, 새로운 확률변수를 무한개의 확률변수의 합으로 정의할 때.
 
-첫번째 경우는 모든 항 $a_n ge 0$이고 급수의 합이 1인 수열 $a_n$을 제시하는 것과 본질적으로 같다.
-$f(n) = a_n$ 으로 정의하면 Omega = {1, 2, ... }를 표본공간으로 하는 확률분포함수를 주게된다. 
+첫번째 경우는 모든 항 $a_n \ge 0$이고 급수의 합이 1로 수렴하는 수열 $a_n$을 제시하는 것과 본질적으로 같다.
+$f(n) = a_n$ 으로 정의하면 $\Omega = \\{1, 2, ... \\}$를 표본공간으로 하는 확률분포함수를 주게된다. 
 
 두번째의 경우는 MDP의 개념을 이해해가면서 구체적으로 다루기로 하자. 
+
+
+#### 마코프 (Markov)
+
+
+
+#### 마코프 모델 (Markov Model)
+
+
 
 두 주체 간의 게임. 
 던전 키퍼. 
 
-#### 참고문헌
-1.  R. Sutton, A. Barto, *Reinforcement leaning: an introduction*, second edition ([final draft](http://incompleteideas.net/book/the-book-2nd.html)).
+
+
+
 
 
 #### 참고자료
+
+[1]  R. Sutton, A. Barto, *Reinforcement leaning: an introduction*, second edition ([final draft](http://incompleteideas.net/book/the-book-2nd.html)).
+
+
+
 
 [1] A. Shirayaev (translator: D. Chibisov), *Probability- 1*, third edition (2016), Springer.  
 [2] 김민형, *확률론의 선과 악: 2. 확률론의 기원* ([네이버티비 동영상](http://tv.naver.com/v/1402550)).  
