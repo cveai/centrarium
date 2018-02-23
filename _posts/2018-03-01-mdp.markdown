@@ -68,12 +68,12 @@ Action의 경우와 마찬가지로 시점 $t$에 environment가 내놓게 되�
 마찬가지로 $\mathscr{S}$와 $\mathscr{R}$는 각각 가능한 state와 reward의 집합을 나타낸다.
 
 
-#### 던전키퍼
+#### 던전 키퍼
 
-1992년에 출시된 [던전키퍼](https://web.archive.org/web/20020425231256/http://dk2.ea-europe.com/uk/dk1/index.html)라는 조금 철지난 비디오 게임이 있다.
-(철지난 줄 알았는데 앱으로도 나와있네요 [[AppStore](https://itunes.apple.com/kr/app/%EB%8D%98%EC%A0%84-%ED%82%A4%ED%8D%BC/id659212037?mt=8) [Google Play](https://play.google.com/store/apps/details?id=com.ea.game.dungeonkeeper_row&hl=ko)].)
-일반적인 게임과는 달리 이 게임에서 게이머는 영웅의 역할이 아닌 악의 축 역할을 맡게 된다. 게다가 어마어마한 능력을 가진 
-
+1997년에 출시된 [던전 키퍼](https://web.archive.org/web/20020425231256/http://dk2.ea-europe.com/uk/dk1/index.html)라는 조금 철지난 비디오 게임이 있다.
+(철지난 줄 알았는데 모바일 버전으로 나와있네요 [[AppStore](https://itunes.apple.com/kr/app/%EB%8D%98%EC%A0%84-%ED%82%A4%ED%8D%BC/id659212037?mt=8), [Google Play](https://play.google.com/store/apps/details?id=com.ea.game.dungeonkeeper_row&hl=ko)].)
+일반적인 게임과는 달리 이 게임에서 게이머는 영웅이 아닌 악의 축 역할을 맡게 된다. 게다가 어마어마한 마법의 능력을 가진.
+게이머는 엄청난 악의 힘으로 지하 던전을 통제한다. 곳곳에 함정을 놓고 비밀 방을 만들고.. 영웅을 향해 갖가지 시련을 먼들어낸다.
 
 
 
@@ -81,8 +81,8 @@ Action의 경우와 마찬가지로 시점 $t$에 environment가 내놓게 되�
 
 #### 참고자료
 
-[1]  R. Sutton, A. Barto, *Reinforcement leaning: an introduction*, second edition ([final draft](http://incompleteideas.net/book/the-book-2nd.html)).
-
+[1] R. Sutton, A. Barto, *Reinforcement leaning: an introduction*, second edition ([final draft](http://incompleteideas.net/book/the-book-2nd.html)).
+[2] D. Silver, *Lecture 2: Markov Decision Process, RL Course* ([유튜브 비디오](https://youtu.be/lfHX2hHRMVQ))
 
 
 
