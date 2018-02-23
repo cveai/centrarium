@@ -60,11 +60,11 @@ MDP 모델을 조금 쉽게 이해하기 위해 두 주체 간의 게임으로 �
 게임은 이산적인 time step (편의상 시점이라고 부르겠다) 을 따라가며 상호작용이 단계적으로 이루어진다.
 좀 더 정확하게 표현해보면 시점을 나타내는 파라미터 $t$가 $t=0$, $t=1$, $t=2$, $\ldots$ 이렇게 변해가면서
 agent와 environment가 각자의 활동을 하며 상호작용을 이어가게 된다.
-시점이 $t$일 때 agent가 할 수 있는 선택을 action이라고 한다.
-Agent가 이 게임에서 취할 수 있는 모든 가능한 action을 다 모아놓은 집합을 $\mathscr{A}$라고 표시하고, 
-시점 $t$에 취하는 action을 $A_t$라고 표시하자. 그러면 자연스럽게 $A_t \in \mathscr{A}$임을 알 수 있다.
+각 시점에서 agent가 할 수 있는 선택을 action이라고 한다.
+Agent가 게임에서 취할 수 있는 모든 가능한 action을 다 모아놓은 집합을 $\mathscr{A}$라고 하고, 
+시점 $t$에 취하는 action을 $A_t$라고 표시하자. 자연스럽게 $A_t \in \mathscr{A}$임을 알 수 있다.
 반면, 각 시점에서 environment는 두가지 반응으로 agent의 action에 대응하는데 그것이 각각 state와 reward이다.
-Action의 경우와 마찬가지로 시점 $t$dp environment가 내놓게 되는 state를 $S_t$, reward를 $R_t$로 표시한다.
+Action의 경우와 마찬가지로 시점 $t$에 environment가 내놓게 되는 state를 $S_t$, reward를 $R_t$로 표시한다.
 마찬가지로 $\mathscr{S}$와 $\mathscr{R}$는 각각 가능한 state들과 reward들의 집합을 나타낸다.
 
 
