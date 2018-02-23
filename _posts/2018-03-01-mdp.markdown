@@ -65,17 +65,14 @@ Agent가 게임에서 취할 수 있는 모든 가능한 action을 다 모아놓
 시점 $t$에 취하는 action을 $A_t$라고 표시하자. 자연스럽게 $A_t \in \mathscr{A}$임을 알 수 있다.
 반면, 각 시점에서 environment는 두가지 반응으로 agent의 action에 대응하는데 그것이 각각 state와 reward이다.
 Action의 경우와 마찬가지로 시점 $t$에 environment가 내놓게 되는 state를 $S_t$, reward를 $R_t$로 표시한다.
-마찬가지로 $\mathscr{S}$와 $\mathscr{R}$는 각각 가능한 state들과 reward들의 집합을 나타낸다.
+마찬가지로 $\mathscr{S}$와 $\mathscr{R}$는 각각 가능한 state와 reward의 집합을 나타낸다.
 
 
+#### 던전키퍼
 
-
-
-
-#### 환경 (Environment)
-
-1992년에 출시된 [던전키퍼](https://web.archive.org/web/20020425231256/http://dk2.ea-europe.com/uk/dk1/index.html)라는 조금 철이 지난 비디오 게임이 있다.
-
+1992년에 출시된 [던전키퍼](https://web.archive.org/web/20020425231256/http://dk2.ea-europe.com/uk/dk1/index.html)라는 조금 철지난 비디오 게임이 있다.
+(철지난 줄 알았는데 앱으로도 나와있네요 [[AppStore](https://itunes.apple.com/kr/app/%EB%8D%98%EC%A0%84-%ED%82%A4%ED%8D%BC/id659212037?mt=8)[Google Play](https://play.google.com/store/apps/details?id=com.ea.game.dungeonkeeper_row&hl=ko)].)
+일반적인 게임과는 달리 이 게임에서 게이머는 영웅의 역할이 아닌 악의 축 역할을 맡게 된다. 게다가 어마어마한 능력을 가진 
 
 
 
