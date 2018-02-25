@@ -143,7 +143,7 @@ Action의 경우와 마찬가지로 시점 $t$에 environment가 내놓게 되�
 $$
 \begin{aligned}
 \pi : \mathscr{A}\times\mathscr{S} & \rightarrow [0, 1] \\
-(a, s) & \mapsto \pi(a | s)
+(a, s) \,\, & \mapsto \pi(a | s)
 \end{aligned}
 $$
 
