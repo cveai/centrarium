@@ -143,16 +143,16 @@ Action의 경우와 마찬가지로 시점 $t$에 environment가 내놓게 되�
 $$
 \begin{aligned}
 \pi : \mathscr{A}\times\mathscr{S} & \rightarrow [0, 1] \\
-(a, s) \,\, & \mapsto \pi(a | s)
+(a, s) \,\, & \mapsto \pi(a \vert s)
 \end{aligned}
 $$
 
  모든 $s \in \mathscr{S}$에 대해 
  $$
- \pi(\bullet | s) : \mathscr{S \rightarrow [0, 1]
+ \pi(\bullet \vert s) : \mathscr{S \rightarrow [0, 1]
  $$
  는 확률질량함수가 된다.
- 즉, $\sum_{s \in \mathscr{S}} \pi(a | s) = 1$.
+ 즉, $\sum_{s \in \mathscr{S}} \pi(a \vert s) = 1$.
 
 #### 5. 가치함수의 가치
 
