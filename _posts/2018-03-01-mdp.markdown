@@ -142,11 +142,11 @@ Action의 경우와 마찬가지로 시점 $t$에 environment가 내놓게 되�
 
 $$
 \pi : \mathscr{A}\mathscr{S} \rightarrow [0, 1]
-(a, s) \mapsto \pi(s\ver s) 
+(a, s) \mapsto \pi(a | s) 
 $$
 
  모든 $s \in \mathscr{S}$에 대해 $\pi( \cdot \ver s) \rightarrow [0, 1]$ 은 확률질량함수가 된다.
- 즉, $\sum_{s \in \mathscr{S}} \pi(a \ver s) = 1$.
+ 즉, $\sum_{s \in \mathscr{S}} \pi(a \Ver s) = 1$.
 
 #### 5. 가치함수의 가치
 
