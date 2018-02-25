@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "MDP"
+title:  "MDP (Markov Decision Process)"
 date:   2018-03-01 00:00:00
 author: 장승환
 categories: 기계학습
