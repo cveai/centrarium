@@ -17,9 +17,19 @@ tags: 강화학습 RL
 * 확률변수의 기반이 되는 표본공간이 무한일 경우. 
 * 새로운 확률변수를 무한개 확률변수의 합으로 정의할 때.
 
-표본공간이 무한인 이산의 경우는 본질적으로 각 항이 0보다 크거나 같고 ($a_n \ge 0$) 급수가 1로 수렴하는 ($\sum s_n = 1$) 무한수열 $a_n$을 제시하는 것과 동일하다.
+표본공간이 무한인 이산의 경우는 본질적으로 각 항이 0보다 크거나 같고 $(a_n \ge 0)$ 급수가 1로 수렴하는 $(\sum s_n = 1)$ 무한수열 $a_n$을 제시하는 것과 동일하다.
 여기서 $f(n) = a_n$ 으로 정의하면 $\Omega = \\{1, 2, ... \\}$를 표본공간으로 하는 확률분포함수를 얻게된다.
 
+| <span class="text-lg text-light">$\square$</span> | <span class="text-lg text-light">⚀</span> | <span class="text-lg text-light">⚁</span> | <span class="text-lg text-light">⚂</span> | <span class="text-lg text-light">⚃</span> | <span class="text-lg text-light">⚄</span> | <span class="text-lg text-light">⚅</span> |
+| :---:           | :--: | :--: | :--: | :--: | :--: | :--: |
+| $f_p(\square)$  | 1/6  | 1/6  | 1/6  | 1/6  | 1/6  |1/6   |  
+
+
+<figure>
+<img src="/assets/pics/rvariable/dice.png" alt="Dice" style="width: 80%; height: 80%">
+<figcaption>확률분포함수 (using: <a href="https://www.desmos.com/calculator/2kmx0enkkz">Desmos online calculator</a>)
+</figcaption>
+</figure>
 
 무한개의 활률변수를 합하는 경우는 MDP의 개념을 이해해가면서 구체적으로 다루기로 하자. 
 
