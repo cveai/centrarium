@@ -175,7 +175,7 @@ $$
 Action value 함수는 
 
 $$
-q: \mathscr{S\times \mathscr{A} \rightarrow \mathbb{R}
+q: \mathscr{S}\times \mathscr{A} \rightarrow \mathbb{R}
 $$
 
 의 형태인데 agent가 $s$라는 state에 위치에 있는 경우 $a$라는 구체적인 action을 취하는 것의 가치를 나타낸다.
