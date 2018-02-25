@@ -19,7 +19,7 @@ tags: 강화학습 RL
 
 표본공간이 무한인 이산의 경우는 본질적으로 다음과 같은 무한수열 $a_n$을 제시하는 것과 동일하다:
 $$
-begin{aligned}
+\begin{aligned}
 a_n \ge 0 \\
 \sum s_n = 1
 \end{aligned}
