@@ -152,9 +152,10 @@ $$
  $$
  \pi(\,\cdot \, \vert s) : \mathscr{S} \rightarrow [0, 1]
  $$
+ 
  는 확률질량함수가 된다.
  즉, $\sum_{s \in \mathscr{S}} \pi(a \vert s) = 1$.
- 
+
 
 #### 5. 가치함수의 가치
 
