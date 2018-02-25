@@ -166,10 +166,10 @@ Value 함수에는 중요한 두가지 종류가 존재하는데, state value �
 State value 함수는 
 
 $$
-v: \mathscr{S} \rightarrow \mathbb{R}$
+v: \mathscr{S} \rightarrow \mathbb{R}
 $$
 
-형태의 함수인데 $v$는 $s$라는 state의 {\color{red} v}alue(가치 혹은 값어치)를 의미한다.
+형태의 함수인데 $v$는 $s$라는 state의 value(가치 혹은 값어치)를 의미한다.
 다시말해 $s$라는 state에 "위치"하게 되는 것이 어떤 가치인지를 수치로 나타내는 것이 state value 함수의 역할인 것이다.
 
 Action value 함수는 
