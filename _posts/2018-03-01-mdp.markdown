@@ -141,8 +141,9 @@ Action의 경우와 마찬가지로 시점 $t$에 environment가 내놓게 되�
 수학적으로 엄밀하게 말하면 policy는 가능한 각 state에서 어떤 action을 확률적으로 선택할 것인지를 지정해주는 함수이다:
 
 $$
-\pi : \mathscr{A}\times\mathscr{S} \rightarrow [0, 1] \\
-(a, s) \mapsto \pi(a | s) 
+\begin{aligned}
+\pi : \mathscr{A}\times\mathscr{S} & \rightarrow [0, 1] \\
+(a, s) & \mapsto \pi(a | s) 
 $$
 
  모든 $s \in \mathscr{S}$에 대해 $\pi( \cdot | s) \rightarrow [0, 1]$ 은 확률질량함수가 된다.
