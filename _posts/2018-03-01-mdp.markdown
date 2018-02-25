@@ -60,7 +60,7 @@ tags: 강화학습 RL
 "Future is independent of the past, given the present."
 
 좀 더 엄밀하게 말하자면, "현재" 시점을 $t$라고 할 때 "미래" 시점에 확률적으로 형성되는 데이터 $X_{t+1}, X_{t+2}, \ldots$는 단지 현시점의 데이터 $X_t$에만 의존한다.
-즉 $\ldots, X_{t-2}, X_{t-2}$ 와 독립이다.
+즉 $\ldots, X_{t-2}, X_{t-1}$과 독립이다.
  
 
 
@@ -133,11 +133,10 @@ Action의 경우와 마찬가지로 시점 $t$에 environment가 내놓게 되�
 
 
 
-#### 4. Policy, 그리고 MDP에 기반한 강화학습 문제
+#### 4. Policy, value function 그리고 MDP에 기반한 강화학습 문제
 
 이제 MDP 라는 프레임웍을 가지고 어떤 문제를 제시하고 해결할 수 있는지 살펴보기 시작하자.
-어떤 MDP가 주어져있다고 하자.
-이 모델 하에서 agent가 어떤 특정한 방식으로 행동할 것인지를 확률적으로 기술한 것이 policy의 개념이다.
+어떤 MDP가 주어져있다고 할 떄, 이 모델 하에서 agent가 어떤 특정한 방식으로 행동할 것인지를 확률적으로 기술한 것이 policy의 개념이다.
 수학적으로 엄밀하게 말하면 policy는 가능한 각 state에서 어떤 action을 확률적으로 선택할 것인지를 지정해주는 함수이다.
 
 $$
@@ -156,16 +155,14 @@ $$
  는 확률질량함수가 된다.
  즉, $\sum_{s \in \mathscr{S}} \pi(a \vert s) = 1$.
 
-
-#### 5. 가치함수의 가치
-
+ $\mathscr{A}_s$
 
 
-#### 6. 강화학습으로 푸는 MDP 문제
+#### 5. 강화학습으로 푸는 MDP 문제
 
 
 
-#### 7. 그리드 월드 (Grid world) - optional
+#### 6. 그리드 월드 (Grid world) - optional
 
 
 
