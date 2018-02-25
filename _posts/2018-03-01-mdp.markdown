@@ -40,7 +40,7 @@ tags: 강화학습 RL
 * 덧셈 및 합성
 
 
-#### 마코프 모델 (Markov Model)
+#### 2. 마코프 모델 (Markov Model)
 
 이산적으로 진행되는 시간의 변화에 따라 형성된 데이터를 수학적으로 기술할 때 (거의 필수적으로) 사용되는 것이 마코프 모델이다.
 물론 시간순의 데이터를 모델링하는 중요한 이유 중 하나는 (미래에 대한) 예측이다.
@@ -65,7 +65,7 @@ tags: 강화학습 RL
 * MRP
 * MDP  
 
-#### MDP (MArkov Decision Process)
+#### 3. MDP의 요소들
 
 상황설명
 
@@ -74,7 +74,7 @@ tags: 강화학습 RL
 
 
 
-MDP의 개념은 다음의 다섯가지의 기본 요소를 명확히 이해하면 어렵지 않게 머릿속에 그림을 그릴 수 있다.
+MDP의 개념은 다음의 다섯가지의 기본 요소의 역할을 명확히 이해하는 것이 중요하다.
 
 * Agent
 * Environment
@@ -98,7 +98,10 @@ Action의 경우와 마찬가지로 시점 $t$에 environment가 내놓게 되�
 
 
 
-#### MDP (Markov Decision Process)
+
+
+
+#### 4. 확률변수 $A_t, S_t, R_t$
 
 자 이제까지의 내용을 종합하여 정리해보자.
 
@@ -106,31 +109,29 @@ Action의 경우와 마찬가지로 시점 $t$에 environment가 내놓게 되�
 
 
 
-#### 확률변수 $A_t, S_t, R_t$ 그리고 $G_t$
+
+#### 5. MDP에 기반한 강화학습 문제, 그리고 Policy
+
+이제 MDP 라는 프레임웍을 가지고 어떤 문제를 제시하고 해결할 수 있는지 살펴보기 시작하자.
+
+
+#### 6. 가치함수의 가치
 
 
 
-
-
-#### 그리드 월드 (Grid world)
+#### 7. 강화학습으로 푸는 MDP 문제
 
 
 
-#### MDP에 기반한 강화학습 문제
+#### 그리드 월드 (Grid world) - optional
 
 
 
 #### 참고자료
 
-[1] R. Sutton, A. Barto, *Reinforcement leaning: an introduction*, second edition ([final draft](http://incompleteideas.net/book/the-book-2nd.html)).
-[2] D. Silver, *RL Course, Lecture 2: Markov Decision Process* ([유튜브 비디오](https://youtu.be/lfHX2hHRMVQ))
-
-
-
-[1] A. Shirayaev (translator: D. Chibisov), *Probability- 1*, third edition (2016), Springer.  
-[2] 김민형, *확률론의 선과 악: 2. 확률론의 기원* ([네이버티비 동영상](http://tv.naver.com/v/1402550)).  
+[1] R. Sutton, A. Barto, *Reinforcement leaning: an introduction*, second edition ([final draft](http://incompleteideas.net/book/the-book-2nd.html)).  
+[2] D. Silver, *RL Course, Lecture 2: Markov Decision Process* ([유튜브 동영상](https://youtu.be/lfHX2hHRMVQ))   
 [3] Mathematical monk, *Probability primer* ([유튜브 동영상](https://www.youtube.com/watch?v=Tk4ubu7BlSk&list=PL17567A1A3F5DB5E4)).  
-[4] PennStae, Eberly College of Science, *STAT 414: Probability theory* ([온라인 코스](https://onlinecourses.science.psu.edu/stat414/)).
 
 
 ---
