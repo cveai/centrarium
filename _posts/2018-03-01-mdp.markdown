@@ -149,7 +149,7 @@ $$
 
  모든 $s \in \mathscr{S}$에 대해 
  $$
- \pi(\bullet \vert s) : \mathscr{S \rightarrow [0, 1]
+ \pi(\cdot \vert s) : \mathscr{S} \rightarrow [0, 1]
  $$
  는 확률질량함수가 된다.
  즉, $\sum_{s \in \mathscr{S}} \pi(a \vert s) = 1$.
