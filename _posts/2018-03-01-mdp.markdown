@@ -190,7 +190,25 @@ $$
 
 #### 5. 10-amred bandit revisited
 
-아주 간단한 MDP의 예를 하나 생각해보고 글을 마치고자 한다.
+이전 포스트 [/열 개의 팔을 가진 강도/](https://cveai.github.io/%EA%B8%B0%EA%B3%84%ED%95%99%EC%8A%B5/2018/01/31/mab.html)에서
+다루었던 10-armed bandit 문제를 MDP 모델로 기술하는 것으로 이 글을 마치고자 한다.
+
+10-armded bandit 문제에 대한 기억을 떠오려보면 agent가 처한 상황과 그 상황에서 선택할 수 있는 action은 고정되어 있었다.
+즉, agent 앞에는 1번부터 10번까지의 슬롯머신이 놓여져 있고 그 중 하나의 레버를 당기는 action을 선택할 수 있었다.
+이를 MDP의 관점에서 해석하면 state가 오직 하나인 모델이다. 즉, $\mathscr{S} = {s}$ 이고 모든 시점에서
+
+$$
+S_0 = S_1 = S_2 = \cdot = s
+$$
+
+인 것이다.
+이 유일한 state에서 agent가 취할 수 있는 action의 집합은
+
+$$\mathscr{A} = \\{a_1, a_2, \ldots, a_{10}\}}$$
+
+이 되겠다. 여기서 $a_i$는 물론 $i$번째 슬롯머신의 팔을 당기는 선택이다.
+각 시점에서 action을 취한 보상으로 받는 reward는 집합 $\mathsc{R} = \mathbb{R}$에서
+agent가 취한 action에 따라 기댓값이 $q_*(i)$이고 분산이 $1$인 정규분포에 따라서 확률적으로 주어지게 된다.
 
 
 #### 참고자료
