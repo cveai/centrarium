@@ -77,16 +77,6 @@ Mrkov chain의 개념에 action과 reward라는 개념을 추가하면 오늘의
 
 #### 2. MDP의 요소들
 
-상황설명
-
-
-확률변수로 바로 들어감
-
-
-
-
-
-
 MDP의 개념은 다음의 다섯가지의 기본 요소의 역할을 명확히 이해하는 것이 중요하다.
 
 * Agent
@@ -108,11 +98,8 @@ Agent가 게임에서 취할 수 있는 모든 가능한 action을 다 모아놓
 Action의 경우와 마찬가지로 시점 $t$에 environment가 내놓게 되는 state를 $S_t$, reward를 $R_t$로 표시한다.
 마찬가지로 $\mathscr{S}$와 $\mathscr{R}$는 각각 가능한 state와 reward의 집합을 나타낸다.
 
-
-
-
-
-
+Sutton과 Barto의 텍스트에서는 집합 $\mathscr{A}, \mathscr{S}, \mathscr{R}$이 모두 유한집합인 finite MDP만을 다루고 있는데,
+우리도 이것에 따르기로 한다.
 
 #### 3. 확률변수 $A_t, S_t, R_t$
 
