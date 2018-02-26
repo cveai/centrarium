@@ -185,9 +185,10 @@ q: \mathscr{S}\times \mathscr{A} & \rightarrow \mathbb{R} \\
 $$
 
 의 형태인데 agent가 $s$라는 state에 위치에 있는 경우 $a$라는 구체적인 action을 취하는 것의 가치를 나타낸다.
-다른 말로 하면 $q$는 state $s$에서의 action $a$의 "q"uality를 나타내는 수치다 [[5](https://www.quora.com/How-was-the-term-Q-learning-coined)].
+다른 말로 하면 $q$는 state $s$에서의 action $a$의 <span style="color:red">q</span>uality를 나타내는 수치다
+[[5](https://www.quora.com/How-was-the-term-Q-learning-coined)].
 
-<span style="color:red">q</span>
+
 
 그렇다면 대체 이 가치를 어떻게 평가할 것인가?
 이에 대해서 optimal ontrol 이론에서 기인한 잘 정리된 방법론으로 최적의 가치함수와 최적의 policy의 개념을 도입할 수 있는데,
