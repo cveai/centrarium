@@ -131,7 +131,7 @@ $$
 #### Policy, value function 그리고 MDP에 기반한 강화학습 문제
 
 이제 MDP 라는 프레임웍을 가지고 어떤 문제를 제시하고 해결할 수 있는지 살펴보는 작업을 시작해보자.
-어떤 MDP가 주어져있다고 할 떄, 이 모델 하에서 agent가 어떤 특정한 방식으로 행동할 것인지를 확률적으로 기술한 것이 policy의 개념이다.
+어떤 MDP가 주어져있다고 할 때, 이 모델 하에서 agent가 어떤 특정한 방식으로 행동할 것인지를 확률적으로 기술한 것이 policy의 개념이다.
 수학적으로 엄밀하게 말하면 policy는 가능한 각 state에서 어떤 action을 확률적으로 선택할 것인지를 지정해주는 함수이다.
 
 $$
@@ -144,7 +144,9 @@ $$
  모든 $s \in \mathscr{S}$에 대해 
 
  $$
- \pi(\,\cdot \, \vert s) : \mathscr{S} \rightarrow [0, 1]
+ \begin{aligned}
+ \pi(\,\cdot \, \vert s) : & \mathscr{S} \rightarrow [0, 1] \\
+ s & \mapsto \pi(a \vert s)
  $$
   
  는 확률분포함수(확률질량함수)가 된다.
