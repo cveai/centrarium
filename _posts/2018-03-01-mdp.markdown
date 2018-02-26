@@ -98,8 +98,17 @@ Agent가 게임에서 취할 수 있는 모든 가능한 action을 다 모아놓
 Action의 경우와 마찬가지로 시점 $t$에 environment가 내놓게 되는 state를 $S_t$, reward를 $R_t$로 표시한다.
 마찬가지로 $\mathscr{S}$와 $\mathscr{R}$는 각각 가능한 state와 reward의 집합을 나타낸다.
 
+임의의 시점 $t$에서의 agent와 environment 간의 상호작용이 어떤식으로 진행되는지 로컬하게 살펴보자.
+시점 $t$이전까지의 상황에 의하여 현시점 $t$에 agent는 $s$라는 state에 "처해"있다.
+여기서 state는 실제 문제에 따라 agent의 공간적 위치일 수도 있고 그 어떤 다른 것을 포함할 수도 있다.
+중요한 포인트 한가지는 각 시점에서 처한 state에 따라 agent가 선탣할 수 있는 action들이 제한될 수 있다는 것이다.
+$s%라는 state에서 aegent가 취할 수 있는 모든 가능한 action의 집합을 $\mathscr{A}s$ 혹은 $\mathscr{A}(s)$로 나타내기로 한다.
+모든 state $s$네 대해 $\mathscr{A}_s$는 $\mathscr{A}$의 부분집합임을 알 수 있다.
+
+
+
 Sutton과 Barto의 텍스트에서는 집합 $\mathscr{A}, \mathscr{S}, \mathscr{R}$이 모두 유한집합인 finite MDP만을 다루고 있는데,
-우리도 이것에 따르기로 한다.
+우리도 이를 따르기로 한다.
 
 #### 3. 확률변수 $A_t, S_t, R_t$
 
@@ -168,6 +177,7 @@ $$
 
 #### 5. 그리드 월드 (Grid world) - optional
 
+아주 간단한 MDP의 예를 하나 생각해보고 글을 마치고자 한다.
 
 
 #### 참고자료
