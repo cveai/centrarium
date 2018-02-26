@@ -102,7 +102,7 @@ Action의 경우와 마찬가지로 시점 $t$에 environment가 내놓게 되�
 시점 $t$이전까지의 상황에 의하여 현시점 $t$에 agent는 $s$라는 state에 "처해"있다.
 여기서 state는 실제 문제에 따라 agent의 공간적 위치일 수도 있고 그 어떤 다른 것을 포함할 수도 있다.
 중요한 포인트 한가지는 각 시점에서 처한 state에 따라 agent가 선탣할 수 있는 action들이 제한될 수 있다는 것이다.
-$s%라는 state에서 aegent가 취할 수 있는 모든 가능한 action의 집합을 $\mathscr{A}s$ 혹은 $\mathscr{A}(s)$로 나타내기로 한다.
+$s$라는 state에서 aegent가 취할 수 있는 모든 가능한 action의 집합을 $\mathscr{A}s$ 혹은 $\mathscr{A}(s)$로 나타내기로 한다.
 모든 state $s$네 대해 $\mathscr{A}_s$는 $\mathscr{A}$의 부분집합임을 알 수 있다.
 
 
