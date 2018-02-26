@@ -224,7 +224,7 @@ agent가 취한 action에 따라 기댓값이 $q_*(i)$이고 분산이 $1$인 �
 [2] Khan Academy, *Origin of Markov chains* [유튜브 동영상](https://youtu.be/Ws63I3F7Moc)
 [3] D. Silver, *RL Course, Lecture 2: Markov Decision Process* ([유튜브 동영상](https://youtu.be/lfHX2hHRMVQ))   
 [4] Mathematical monk, *Probability primer* ([유튜브 동영상](https://www.youtube.com/watch?v=Tk4ubu7BlSk&list=PL17567A1A3F5DB5E4)).  
-[5] Quora, [*How was the term "Q-learning" coined?*](https://www.quora.com/How-was-the-term-Q-learning-coined)
+[5] [Quora](https://www.quora.com/), [*How was the term "Q-learning" coined?*](https://www.quora.com/How-was-the-term-Q-learning-coined)
 
 ---
 
