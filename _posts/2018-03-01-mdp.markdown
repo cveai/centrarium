@@ -120,7 +120,7 @@ Sutton과 Barto의 텍스트에서는 집합 $\mathscr{A}, \mathscr{S}, \mathscr
 #### 3. 확률변수 $A_t, S_t, R_t$
 
 이제까지 전개한 내용에서 각 시점에 agent가 action을 선택할 때, 그리고 environment가 state과 reward를 선택할 떄 확률적 요소가 포함되어 있으므로,
-모든 $t \in \\{0, 1, 2, \ldots \\}$에 대해 $A_t, S,t, R,t$는 확륩변수로 생각할 수 있음을 알 수 있다.
+모든 $t \in \\{0, 1, 2, \ldots \\}$에 대해 $A_t, S,t, R,t$는 확률변수로 생각할 수 있음을 알 수 있다.
 따라서 다음과 같은 일련의 확률변수들로 MDP가 모델링되어있음을 알게 된다.
 
 $$
