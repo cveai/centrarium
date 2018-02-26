@@ -97,14 +97,20 @@ Agent가 게임에서 취할 수 있는 모든 가능한 action을 다 모아놓
 반면, 각 시점에서 environment는 두가지 반응으로 agent의 action에 대응하는데 그것이 각각 state와 reward이다.
 Action의 경우와 마찬가지로 시점 $t$에 environment가 내놓게 되는 state를 $S_t$, reward를 $R_t$로 표시한다.
 마찬가지로 $\mathscr{S}$와 $\mathscr{R}$는 각각 가능한 state와 reward의 집합을 나타낸다.
+보통 $\mathscr{R}$는 실수의 집합 $\mathbb{R}$의 부분집합으로 선택하게 된다.
 
-임의의 시점 $t$에서의 agent와 environment 간의 상호작용이 어떤식으로 진행되는지 로컬하게 살펴보자.
+임의의 시점 $t$에서 agent와 environment 간의 상호작용이 어떤식으로 진행되는지 로컬하게 살펴보자.
 시점 $t$이전까지의 상황에 의하여 현시점 $t$에 agent는 $s$라는 state에 "처해"있다.
-여기서 state는 실제 문제에 따라 agent의 공간적 위치일 수도 있고 그 어떤 다른 것을 포함할 수도 있다.
-중요한 포인트 한가지는 각 시점에서 처한 state에 따라 agent가 선탣할 수 있는 action들이 제한될 수 있다는 것이다.
-$s$라는 state에서 aegent가 취할 수 있는 모든 가능한 action의 집합을 $\mathscr{A}_s$ 혹은 $\mathscr{A}(s)$로 나타내기로 한다.
+즉, $S_t= a$가 된다.
+여기서 state는 실제 문제에 따라 agent의 공간적 위치일 수도 있고 그 어떤 다른 데이터를 포함할 수도 있다.
+중요한 포인트 한가지는 각 시점에서 처한 state에 따라 agent가 선택할 수 있는 action이 제한될 수 있다는 것이다.
+$s$라는 state에서 agent가 취할 수 있는 모든 가능한 action의 집합을 $\mathscr{A}_s$ 혹은 $\mathscr{A}(s)$로 나타내기로 한다.
 모든 state $s$에 대해 $\mathscr{A}_s$는 $\mathscr{A}$의 부분집합임을 알 수 있다.
 
+Agent는 시점 $t$에 처한 $s$라는 state 위에서 허용된 action $a$를 $\mathscr{A_s}$로 부터 선택한다.
+Agent가 $A_t = a$라는 결정을 한 순간 environment는 이에 대응하여 agent를 다음 시점에 해당하는 state $S_{t+1} = s'$에 처하도록 확률적으로 $s'$을 선택하고 
+해당하는 reward $R_{t+1}=r'$을 agent에게 제시한다.
+시점 $t+1$에서 처한 state $s'$과 제공받은 reward $r'$을 관할한 agent는 그 시점에서의 action $A_{t+1} = a'$을 취하게 되고 ... 
 
 
 Sutton과 Barto의 텍스트에서는 집합 $\mathscr{A}, \mathscr{S}, \mathscr{R}$이 모두 유한집합인 finite MDP만을 다루고 있는데,
