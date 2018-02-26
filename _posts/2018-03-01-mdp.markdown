@@ -153,7 +153,7 @@ $$
  는 확률분포함수(확률질량함수)가 된다.
  즉, $\sum_{s \in \mathscr{S}} \pi(a \vert s) = 1$.
 여기서 한가지 주의해야 할 점은 state $s$에서 선택가능하지 않은 action, 
-즉 $a \in \mathscr{A} - \mathscr{A}_s$에 대해서는 policy의 함숫값이 $\pi(a \ \ver) = 0$이 되어야 한다는 사실이다.
+즉 $a \in \mathscr{A} - \mathscr{A}_s$에 대해서는 policy의 함숫값이 $\pi(a \vert s) = 0$이 되어야 한다는 사실이다.
 
 이렇게 특정 MDP에 대한 policy가 존재하면 이 모델 하에서 agent가 어떻게 행동해나갈지 완전히 확률적으로 결정된다.
 MDP 모델을 통한 강화학습 문제의 일반적인 목표는 agent가 이 모델을 통해 행동하면서 얻게되는 reward의 총합을 초대화 하는 policy를 찾아내는 것으로 정의하게 된다.
