@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "MDP (Markov Decision Process)"
-date:   2018-02-27 00:00:00
+date:   2018-03-01 00:00:00
 author: 장승환
 categories: 기계학습
 tags: 강화학습 RL MDP
