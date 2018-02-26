@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "MDP (Markov Decision Process)"
-date:   2018-03-01 00:00:00
+date:   2018-02-27 00:00:00
 author: 장승환
 categories: 기계학습
-tags: 강화학습 RL
+tags: 강화학습 RL MDP
 ---
 
 논의를 시작하기 전에 지난번 살펴보았던 확률변수의 개념에 대해 몇 가지 언급해야 할 사항이 있다.
