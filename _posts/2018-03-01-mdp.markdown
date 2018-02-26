@@ -39,10 +39,11 @@ tags: 강화학습 RL MDP
 
 마지막으로, 확률변수에 다른 함수를 합성하는 것이 새로운 확률변수를 만드는 자연스러운 방법의 하나다.
 (정의구역이 표본공간인 함수는 모두 확률변수라는 점을 상기하자!)
+임의의 집합 $A, B$에 대해서
 $X : \Omega \rightarrow A$가 확률변수이고 $f:A \rightarrow B$가 임의의 함수일 때,
 
 $$
-f(X) := f\circ X : \Omega \rightarrow B$
+f(X) := f\circ X : \Omega \rightarrow B
 $$
 
 는 새로운 확률변수이다.
@@ -195,7 +196,7 @@ $$
 자세한 내용은 다음 포스트에서 다루기로 한다. 
 
 
-#### 10-amred bandit revisited
+#### 10-armed bandit revisited
 
 이전 포스트 [/열 개의 팔을 가진 강도/](https://cveai.github.io/%EA%B8%B0%EA%B3%84%ED%95%99%EC%8A%B5/2018/01/31/mab.html)에서
 다루었던 10-armed bandit 문제를 MDP 모델로 기술하는 것으로 이 글을 마치고자 한다.
@@ -220,10 +221,10 @@ agent가 취한 action에 따라 기댓값이 $q_*(i)$이고 분산이 $1$인 �
 
 #### 참고자료
 
-[1] R. Sutton, A. Barto, *Reinforcement leaning: an introduction*, second edition ([final draft](http://incompleteideas.net/book/the-book-2nd.html)).
-[2] Khan Academy, *Origin of Markov chains* ([유튜브 동영상](https://youtu.be/Ws63I3F7Moc)).  
-[3] D. Silver, *RL Course, Lecture 2: Markov Decision Process* ([유튜브 동영상](https://youtu.be/lfHX2hHRMVQ)).   
-[4] Mathematical monk, *Machine learning, 14.1--14.5* ([유튜브 동영상](https://youtu.be/7KGdE2AK_MQ)).  
+[1] R. Sutton, A. Barto, *Reinforcement leaning: an introduction*, second edition ([final draft](http://incompleteideas.net/book/the-book-2nd.html)).  
+[2] Khan Academy, [*Origin of Markov chains*](https://youtu.be/Ws63I3F7Moc).  
+[3] D. Silver, [*RL Course, Lecture 2: Markov Decision Process*](https://youtu.be/lfHX2hHRMVQ).     
+[4] Mathematical monk, [*Machine learning, 14.1--14.5*](https://youtu.be/7KGdE2AK_MQ).  
 [5] [Quora](https://www.quora.com/), [*How was the term "Q-learning" coined?*](https://www.quora.com/How-was-the-term-Q-learning-coined)
 
 ---
