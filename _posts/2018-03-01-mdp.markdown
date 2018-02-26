@@ -221,8 +221,8 @@ agent가 취한 action에 따라 기댓값이 $q_*(i)$이고 분산이 $1$인 �
 #### 참고자료
 
 [1] R. Sutton, A. Barto, *Reinforcement leaning: an introduction*, second edition ([final draft](http://incompleteideas.net/book/the-book-2nd.html)).
-[2] Khan Academy, *Origin of Markov chains* [유튜브 동영상](https://youtu.be/Ws63I3F7Moc)
-[3] D. Silver, *RL Course, Lecture 2: Markov Decision Process* ([유튜브 동영상](https://youtu.be/lfHX2hHRMVQ))   
+[2] Khan Academy, *Origin of Markov chains* ([유튜브 동영상](https://youtu.be/Ws63I3F7Moc)).  
+[3] D. Silver, *RL Course, Lecture 2: Markov Decision Process* ([유튜브 동영상](https://youtu.be/lfHX2hHRMVQ)).   
 [4] Mathematical monk, *Machine learning, 14.1--14.5* ([유튜브 동영상](https://youtu.be/7KGdE2AK_MQ)).  
 [5] [Quora](https://www.quora.com/), [*How was the term "Q-learning" coined?*](https://www.quora.com/How-was-the-term-Q-learning-coined)
 
