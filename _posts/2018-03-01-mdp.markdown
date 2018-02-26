@@ -116,18 +116,25 @@ Agent가 $A_t = a$라는 결정을 한 순간 environment는 이에 대응하여
 Sutton과 Barto의 텍스트에서는 집합 $\mathscr{A}, \mathscr{S}, \mathscr{R}$이 모두 유한집합인 finite MDP만을 다루고 있는데,
 우리도 이를 따르기로 한다.
 
+
 #### 3. 확률변수 $A_t, S_t, R_t$
 
-이제까지 살펴본 내용을 확률변수의 관점에서 정리해보자.
+이제까지 전개한 내용에서 각 시점에 agent가 action을 선택할 때, 그리고 environment가 state과 reward를 선택할 떄 확률적 요소가 포함되어 있으므로,
+모든 $t \in \\{0, 1, 2, \ldots$\\}에 대해 $A_t, S,t, R,t$는 확륩변수로 생각할 수 있음을 알 수 있다.
+따라서 다음과 같은 일련의 확률변수들로 MDP가 모델링되어있음을 알게 된다.
 
-확률적인 과정 (stochastic process) 시점 $t$가 지남에 따라 어떤 데이터들이 확률적으로 생성
+$$
+\begin{aligned}
+S_0, S_1, S_2, \ldots 
+\end{aligned}
+$$  
 
-
+여기서 이 모델을 "Markov" decision process로 규정하는 중요한 성질은 위의 일련의 확률변수가 Markov chain을 이룬다는 것이다.
 
 
 #### 4. Policy, value function 그리고 MDP에 기반한 강화학습 문제
 
-이제 MDP 라는 프레임웍을 가지고 어떤 문제를 제시하고 해결할 수 있는지 살펴보자.
+이제 MDP 라는 프레임웍을 가지고 어떤 문제를 제시하고 해결할 수 있는지 살펴보는 작업을 시작해보자.
 어떤 MDP가 주어져있다고 할 떄, 이 모델 하에서 agent가 어떤 특정한 방식으로 행동할 것인지를 확률적으로 기술한 것이 policy의 개념이다.
 수학적으로 엄밀하게 말하면 policy는 가능한 각 state에서 어떤 action을 확률적으로 선택할 것인지를 지정해주는 함수이다.
 
@@ -181,7 +188,7 @@ $$
 자세한 내용은 다음 포스트에서 다루기로 한다. 
 
 
-#### 5. 그리드 월드 (Grid world) - optional
+#### 5. 10-amred bandit revisited
 
 아주 간단한 MDP의 예를 하나 생각해보고 글을 마치고자 한다.
 
