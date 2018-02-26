@@ -147,6 +147,7 @@ $$
  \begin{aligned}
  \pi(\,\cdot \, \vert s) : & \mathscr{S} \rightarrow [0, 1] \\
  s & \mapsto \pi(a \vert s)
+ \end{aligned}
  $$
   
  는 확률분포함수(확률질량함수)가 된다.
