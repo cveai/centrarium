@@ -157,20 +157,19 @@ $$
 
 이렇게 특정 MDP에 대한 policy가 존재하면 이 모델 하에서 agent가 어떻게 행동해나갈지 완전히 확률적으로 결정된다.
 MDP 모델을 통한 강화학습 문제의 일반적인 목표는 agent가 이 모델을 통해 행동하면서 얻게되는 reward의 총합을 초대화 하는 policy를 찾아내는 것으로 정의하게 된다.
+즉, reward 총합의 관점에서 "최적의" 혹은 "최선의" policy를 찾아내야 하는 것이다.
+그렇다면 최적의 policy는 어떻게 수학적으로 정의할 수 있을까?
 
-
-"최적의" 혹은 "최선의" policy를 찾아내는 것이다.
-그렇다면 최적의 policy는 어떻게 정의해야 하는가?
-
-현실에서의 어떤 문제를 해결하기 위하여 MDP로 모델링을 하였다고 할 때, 우리는 agent가 어떤 방식으로 행동하여 어떤 목적을 달성하기를 바랄 것이다.
-그러면 우리가 원하는 행동방식을 agent가 MDP 모델을 통해 "스스로" 배워나갈 수 있게 할 것인지가 강화학습이 추구하는 목표다.
 이 목표를 달성하기위한 한가지 중요한 방법론이 value 함수를 도입하는 것이다.
 Value 함수에는 중요한 두가지 종류가 존재하는데, state value 함수와 action value 함수가 그것이다.
 
 State value 함수는 
 
 $$
-v: \mathscr{S} \rightarrow \mathbb{R}
+\begin{aligned}
+v: \mathscr{S} & \rightarrow \mathbb{R} \\
+s & \mapsto v(s)
+\end{aligned}
 $$
 
 형태의 함수인데 $v$는 $s$라는 state의 value(가치 혹은 값어치)를 의미한다.
@@ -179,11 +178,14 @@ $$
 Action value 함수는 
 
 $$
-q: \mathscr{S}\times \mathscr{A} \rightarrow \mathbb{R}
+\begin{aligned}
+q: \mathscr{S}\times \mathscr{A} & \rightarrow \mathbb{R} \\
+(s, a) & \mapsto q(s, a)
+\end{aligned}
 $$
 
 의 형태인데 agent가 $s$라는 state에 위치에 있는 경우 $a$라는 구체적인 action을 취하는 것의 가치를 나타낸다.
-다른 말로 하면 $q$는 state $s$에서의 action $a$의 quality를 나타내는 수치다.
+다른 말로 하면 $q$는 state $s$에서의 action $a$의 quality를 나타내는 수치다 [5](https://www.quora.com/How-was-the-term-Q-learning-coined).
 
 그렇다면 대체 이 가치를 어떻게 평가할 것인가?
 이에 대해서 optimal ontrol 이론에서 기인한 잘 정리된 방법론으로 최적의 가치함수와 최적의 policy의 개념을 도입할 수 있는데,
@@ -219,7 +221,7 @@ agent가 취한 action에 따라 기댓값이 $q_*(i)$이고 분산이 $1$인 �
 [2] Khan Academy, *Origin of Markov chains* [유튜브 동영상](https://youtu.be/Ws63I3F7Moc)
 [3] D. Silver, *RL Course, Lecture 2: Markov Decision Process* ([유튜브 동영상](https://youtu.be/lfHX2hHRMVQ))   
 [4] Mathematical monk, *Probability primer* ([유튜브 동영상](https://www.youtube.com/watch?v=Tk4ubu7BlSk&list=PL17567A1A3F5DB5E4)).  
-
+[5] Quora, [*How was the term "Q-learning" coined?*](https://www.quora.com/How-was-the-term-Q-learning-coined)
 
 ---
 
