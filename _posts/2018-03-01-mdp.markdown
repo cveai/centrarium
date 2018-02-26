@@ -145,7 +145,7 @@ $$
 
  $$
  \begin{aligned}
- \pi(\,\cdot \, \vert s) : & \mathscr{S} \rightarrow [0, 1] \\
+ \pi(\,\cdot \, \vert s) : \mathscr{S} & \rightarrow [0, 1] \\
  s & \mapsto \pi(a \vert s)
  \end{aligned}
  $$
