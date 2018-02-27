@@ -10,7 +10,7 @@ tags: 강화학습 RL MDP
 논의를 시작하기 전에 지난번 살펴보았던 확률변수의 개념에 대해 몇 가지 언급해야 할 사항이 있다.
 
 
-첫째, 지난 포스트 [/확률변수를 이해하다/](https://cveai.github.io/%EA%B8%B0%EA%B3%84%ED%95%99%EC%8A%B5/2018/02/14/rvariable.html)에서는 
+첫째, 지난 포스트 [/확률변수를 이해하다/](https://cveai.github.io/%EA%B8%B0%EA%B3%84%ED%95%99%EC%8A%B5/2018/02/14/rvariable.html){:target="_blank"}에서는 
 이산 확률변수 중에서도 표본공간이 **유한**(finite)한 경우만을 다루었다. 
 유한인 경우의 모든 내용이 무한이면서 이산인 경우로 일반화되는데, 달라지는 거의 유일한 포인트는 **극한** 개념을 도입해야 한다는 것이다. 
 극한의 개념이 요구되는 이유를 두 가지로 생각해볼 수 있다. 
@@ -71,7 +71,7 @@ $X_0, X_1, \ldots$ 라는 일련의 확률변수를 얻게 된다.
 즉 $\ldots, X_{t-2}, X_{t-1}$과 독립이다.
 이와 같은 모델을 Markov chain이라고 한다.
 (같은 문맥에서 시간이 이산적인 대신 연속적으로 파라미터화 되는 경우를 Markov process라고 부른다.)
-Markov chain의 기원에 관한 흥미로운 이야기를 담은 다음 영상을 시청해보기를 권한다: [[2](https://youtu.be/Ws63I3F7Moc)].
+Markov chain의 기원에 관한 흥미로운 이야기를 담은 다음 영상을 시청해보기를 권한다: [[2](https://youtu.be/Ws63I3F7Moc){:target="_blank"}].
 
 Markov chain의 개념에 action과 reward라는 개념을 추가하면 오늘의 주제인 MDP(Markov Decision Process)의 모델을 얻게된다.
 
@@ -186,7 +186,7 @@ $$
 
 의 형태인데 agent가 $s$라는 state에 위치에 있는 경우 $a$라는 구체적인 action을 취하는 것의 가치를 나타낸다.
 다른 말로 하면 $q$는 state $s$에서의 action $a$의 <span style="color:red">q</span>uality를 나타내는 수치다
-[[5](https://www.quora.com/How-was-the-term-Q-learning-coined)].
+[[5](https://www.quora.com/How-was-the-term-Q-learning-coined){:target="_blank"}].
 
 
 
@@ -220,11 +220,11 @@ agent가 취한 action에 따라 기댓값이 $q_*(i)$이고 분산이 $1$인 �
 
 #### 참고자료
 
-[1] R. Sutton, A. Barto, *Reinforcement leaning: an introduction*, second edition ([final draft](http://incompleteideas.net/book/the-book-2nd.html)).  
-[2] Khan Academy, [*Origin of Markov chains*](https://youtu.be/Ws63I3F7Moc).  
-[3] D. Silver, [*RL Course, Lecture 2: Markov Decision Process*](https://youtu.be/lfHX2hHRMVQ).     
-[4] Mathematical monk, [*Machine learning, 14.1--14.5*](https://youtu.be/7KGdE2AK_MQ).  
-[5] [Quora](https://www.quora.com/), [*How was the term "Q-learning" coined?*](https://www.quora.com/How-was-the-term-Q-learning-coined)
+[1] R. Sutton, A. Barto, *Reinforcement leaning: an introduction*, second edition ([final draft](http://incompleteideas.net/book/the-book-2nd.html){:target="_blank"}).  
+[2] Khan Academy, [*Origin of Markov chains*](https://youtu.be/Ws63I3F7Moc){:target="_blank"}.  
+[3] D. Silver, [*RL Course, Lecture 2: Markov Decision Process*](https://youtu.be/lfHX2hHRMVQ){:target="_blank"}.     
+[4] Mathematical monk, [*Machine learning, 14.1--14.5*](https://youtu.be/7KGdE2AK_MQ){:target="_blank"}.  
+[5] [Quora](https://www.quora.com/), [*How was the term "Q-learning" coined?*](https://www.quora.com/How-was-the-term-Q-learning-coined){:target="_blank"}.
 
 ---
 
