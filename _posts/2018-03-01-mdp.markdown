@@ -197,7 +197,7 @@ $$
 
 #### 10-armed bandit revisited
 
-이전 포스트 [/열 개의 팔을 가진 강도/](https://cveai.github.io/%EA%B8%B0%EA%B3%84%ED%95%99%EC%8A%B5/2018/01/31/mab.html)에서
+이전 포스트 [/열 개의 팔을 가진 강도/](https://cveai.github.io/%EA%B8%B0%EA%B3%84%ED%95%99%EC%8A%B5/2018/01/31/mab.html){:target="_blank"}에서
 다루었던 10-armed bandit 문제를 MDP 모델로 기술하는 것으로 이 글을 마치고자 한다.
 
 10-armded bandit 문제에 대한 기억을 떠올려보면 agent가 처한 상황과 그 상황에서 선택할 수 있는 action은 고정되어 있었다.
