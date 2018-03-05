@@ -148,7 +148,7 @@ $$\mu_n = \color{blue}{\mu_{n-1}} + \frac{1}{n}(\color{green}{x_n} - \color{blue
 
 $$\mu_n = \mu_{n-1} + \color{red}{\alpha}(x_n - \mu_{n-1}).$$
 
-여기서 $\alpha$는 step size라고 불리는 상수로 시간 $t$에 무관하며, 수렴의 문제를 고려하여 $0<\alpha<1$인 값을 선택하게 된다. 
+여기서 $\alpha$는 step-size parameter라고 불리는 상수로 시간 $t$에 무관하며, 수렴의 문제를 고려하여 $0<\alpha<1$인 값을 선택하게 된다. 
 또한, 많은 경우 새로운 데이터 $x_n$을 그대로 이용하지 않고 상황에 따라 적절히 변형한 $\tilde{x}_n$을 이용하여 업데이트하게 된다.
 
 
