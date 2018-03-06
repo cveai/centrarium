@@ -153,7 +153,7 @@ $$\mu_n = \mu_{n-1} + \color{red}{\alpha}(x_n - \mu_{n-1}).$$
 
 $$\mu_n = \mu_{n-1} + \alpha(\tilde{x}_n - \mu_{n-1}).$$
 
-변수 $\mu, \tilde{x}$를 이용한 Pseudocode에서는 보통 다음과 같은 형태로 표시된다.
+변수 $\mu, \tilde{x}$를 이용한 pseudocode에서는 보통 다음과 같은 형태로 표시된다.
 
 $$\mu \leftarrow \mu + \alpha(\tilde{x} - \mu).$$
 
