@@ -160,7 +160,7 @@ $$\mu \leftarrow \mu + \alpha(\tilde{x} - \mu).$$
 
 #### 참고자료
 
-[1] R. Sutton, A. Barto, *Reinforcement leaning: an introduction*, second edition ([final draft](http://incompleteideas.net/book/the-book-2nd.html)){:target="_blank"}   
+[1] R. Sutton, A. Barto, *Reinforcement leaning: an introduction*, second edition ([final draft](http://incompleteideas.net/book/the-book-2nd.html){:target="_blank"}).  
 [2] D. Silver, [*RL Course, Lecture 4: Model-free Prediction*](https://youtu.be/PnHCvfgC_ZA){:target="_blank"}.     
 
 ---
