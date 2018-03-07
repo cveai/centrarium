@@ -44,8 +44,8 @@ Got to read an interesting article [Machine Learning vs. Statistics](https://svd
  
 **Supervised**: Given $(x^{(1)}, y^{(1)}), \ldots, (x^{(n)}, y^{(n)})$ choose a *function* $f(x) = y$.
 
-> $x^{(i)}$ : data points
-> $y^{(i)}$ : class/value/label
+ > $x^{(i)}$ : data points
+ > $y^{(i)}$ : class/value/label
 
  * Classification: $y^{(i)} \in \\{$finite set$\\}$
  * Regression: $y^{(i)} \in \mathbb{R}$ or $y^{(i)} \in \mathbb{R}^d$
