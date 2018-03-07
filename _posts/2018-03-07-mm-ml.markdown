@@ -12,7 +12,7 @@ tags: ML
 
 ---
 
-Acronyms
+**Acronyms**
 * MM: Mathematical Monk
 * ML: Machine Learning
 
@@ -22,7 +22,7 @@ Acronyms
 
 "Designing *algorithms* for inferring what is unknown from knowns."
 
-MM (Mathematical Monk) considers ML as a subfield of statistics, with emphasis on algorithms.
+MM considers ML as a subfield of statistics, with emphasis on algorithms.
 
 Got to read an interesting article [Machine Learning vs. Statistics](https://svds.com/machine-learning-vs-statistics/){:target="_blank"}, thanks to [Whi Kwon](https://whikwon.github.io/){:target="_blank"}.
 
