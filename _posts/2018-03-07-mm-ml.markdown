@@ -12,6 +12,12 @@ tags: ML
 
 ---
 
+Acronyms
+* MM: Mathematical Monk
+* ML: Machine Learning
+
+---
+
 #### (ML 1.1) What is machine learning?
 
 "Designing *algorithms* for inferring what is unknown from knowns."
