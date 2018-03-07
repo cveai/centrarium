@@ -1,0 +1,36 @@
+---
+layout: post
+title:  "Machine Leaning (Mathematical Monk)"
+date:   2018-03-08 00:00:00
+author: 장승환
+categories: Notes
+tags: ML
+---
+
+I this page I summarize in a straighforwad fashion what I learn from Machine Learning course by Mathematical Monk.
+I will keep update this page frequently, like every other day, until it's complete.
+
+#### (ML 1.1) What is maachine learning?
+
+"Designing algorithms for inferring what is unknown from knowns."
+
+##### Applications
+ * Spam (filtering out)
+ * Handwriting (recognition)
+ * Google streetview
+ * Netflix (recommendation systems)
+ * Navigation
+ * Climate modelling
+
+ #### (ML 1.2) What is supervied learning?
+
+ Classification of LM problems:
+ * Supervised
+ 
+$$ $$
+
+To be added..
+
+---
+
+
