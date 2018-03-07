@@ -29,6 +29,10 @@ A bit more detailed explanations on the Banach-Tarski paradox here: [The Banachâ
 
 ---
 
+#### (PP 1.2) Measure theory: $\sigma$-algebras
+
+---
+
 $$ $$
 
 *To be added..*
