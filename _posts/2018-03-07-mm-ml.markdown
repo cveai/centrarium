@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Notes on Machine Leaning"
+title:  "Notes on Machine Learning"
 date:   2018-03-08 00:00:00
 author: 장승환
 categories: Notes
