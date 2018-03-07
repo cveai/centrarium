@@ -22,14 +22,14 @@ tags: ML
  * Navigation
  * Climate modelling
 
- #### (ML 1.2) What is supervied learning?
+#### (ML 1.2) What is supervied learning?
 
  Classification of LM problems:
  * Supervised
  
 $$ $$
 
-To be added..
+*To be added..*
 
 ---
 
