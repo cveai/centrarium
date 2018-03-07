@@ -32,7 +32,7 @@ A bit more detailed explanations on the Banach-Tarski paradox here: [The Banachâ
 #### (PP 1.2) Measure theory: $\sigma$-algebras
 
 **Definition.** 
-Given a set $\Omega$, a \emph{$\sigma$-algebra} on $\Omega$ is a nonempty collection $\mathcal{A} \subset 2^{\Omega}$ s.t.
+Given a set $\Omega$, a *$\sigma$-algebra* on $\Omega$ is a nonempty collection $\mathcal{A} \subset 2^{\Omega}$ s.t.
 1. closed under complements
 2. closed under countable unions
 
