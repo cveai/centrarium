@@ -19,6 +19,12 @@ tags: Probability
 
 #### (PP 1.1) Measure theory: Why measure theory - The Banach-Tarski Paradox
 
+<figure>
+<img src="/assets/pics/mm-pp/banach-tarski.png" alt="Why measure" style="width: 30%; height: 30%">
+<figcaption>Why measure theory?
+</figcaption>
+</figure>
+
 A bit more detailed explanations on the Banach-Tarski paradox here: [The Banach–Tarski Paradox](https://youtu.be/s86-Z-CbaHA){:target="_blank"}.
 
 ---
