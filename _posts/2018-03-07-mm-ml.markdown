@@ -12,7 +12,7 @@ tags: ML
 
 ---
 
-#### (ML 1.1) What is maachine learning?
+#### (ML 1.1) What is machine learning?
 
 "Designing *algorithms* for inferring what is unknown from knowns."
 
