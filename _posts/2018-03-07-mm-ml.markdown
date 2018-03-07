@@ -58,7 +58,7 @@ Got to read an interesting article [Machine Learning vs. Statistics](https://svd
 </figcaption>
 </figure>
 
-* $x^{(i)}$ : data points
+* $x^{(i)}$ : data point
 * $y^{(i)}$ : class/value/label
 
 ---
