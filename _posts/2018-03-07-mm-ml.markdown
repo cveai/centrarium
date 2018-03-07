@@ -28,6 +28,8 @@ Got to read an interesting article [Machine Learning vs. Statistics](https://svd
  * Navigation
  * Climate modelling
 
+---
+
 #### (ML 1.2) What is supervied learning?
 
  Classification of LM problems:
