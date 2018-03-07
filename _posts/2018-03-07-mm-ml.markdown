@@ -7,7 +7,7 @@ categories: Notes
 tags: ML
 ---
 
-*In this page I summarize in a straighforwad fashion what I learn from Machine Learning course by Mathematical Monk.*
+*In this page I summarize in a straighforward fashion what I learn from [Machine Learning](https://www.youtube.com/watch?v=yDLKJtOVx5c&list=PLD0F06AA0D2E8FFBA) course by Mathematical Monk.*
 *I will update this page frequently, like every other day, until it's complete.*
 
 #### (ML 1.1) What is maachine learning?
