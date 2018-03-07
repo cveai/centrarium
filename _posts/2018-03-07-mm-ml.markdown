@@ -56,7 +56,7 @@ Got to read an interesting article [Machine Learning vs. Statistics](https://svd
 * Dimensionality reduction
 
 <figure>
-<img src="/assets/pics/incremental/classification.png" alt="Classification" style="width: 40%; height: 40%">
+<img src="/assets/pics/mm-ml/classification.png" alt="Classification" style="width: 40%; height: 40%">
 <figcaption>Classification
 </figcaption>
 </figure>
