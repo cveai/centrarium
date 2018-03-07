@@ -53,7 +53,7 @@ Got to read an interesting article [Machine Learning vs. Statistics](https://svd
 </figure>
 
 <figure>
-<img src="/assets/pics/mm-ml/regression.png" alt="Regression" style="width: 40%; height: 40%">
+<img src="/assets/pics/mm-ml/regression.png" alt="Regression" style="width: 70%; height: 70%">
 <figcaption>Regression
 </figcaption>
 </figure>
