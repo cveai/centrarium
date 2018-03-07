@@ -42,7 +42,7 @@ Got to read an interesting article [Machine Learning vs. Statistics](https://svd
 
  Classification of ML problems: Supervised vs. Unsupervised
  
- **Supervised**: Given $(x^{(1)}, y^{(1)}), \ldots, (x^{(n)}, y^{(n)})$ choose a *function* $f(x) = y$.
+**Supervised**: Given $(x^{(1)}, y^{(1)}), \ldots, (x^{(n)}, y^{(n)})$ choose a *function* $f(x) = y$.
 > $x^{(i)}$ : data points
 > $y^{(i)}$ : class/value/label
 
