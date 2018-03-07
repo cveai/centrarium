@@ -1,0 +1,32 @@
+---
+layout: post
+title:  "Notes on Probability Primer"
+date:   2018-03-08 00:00:00
+author: 장승환
+categories: Notes
+tags: Probability
+---
+
+*In this page I summarize in a succinct and straighforward fashion what I learn from [Probability Primer](https://www.youtube.com/watch?v=Tk4ubu7BlSk&list=PL17567A1A3F5DB5E4){:target="_blank"} course by Mathematical Monk, along with my own thoughts and related resources.*
+*I will update this page frequently, like every other day, until it's complete.*
+
+---
+
+**Acronyms**
+* RV: random variable
+
+---
+
+#### (PP 1.1) Measure theory: Why measure theory - The Banach-Tarski Paradox
+
+A bit more detailed explanations on the Banach-Tarski paradox here: [The Banach–Tarski Paradox]{https://youtu.be/s86-Z-CbaHA}{:target="_blank"}.
+
+---
+
+$$ $$
+
+*To be added..*
+
+---
+
+
