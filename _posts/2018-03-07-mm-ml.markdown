@@ -7,7 +7,7 @@ categories: Notes
 tags: ML
 ---
 
-*In this page I summarize in a succinct and straighforward fashion what I learn from [Machine Learning](https://www.youtube.com/watch?v=yDLKJtOVx5c&list=PLD0F06AA0D2E8FFBA) course by Mathematical Monk along with my own thoughts and related resources.*
+*In this page I summarize in a succinct and straighforward fashion what I learn from [Machine Learning](https://www.youtube.com/watch?v=yDLKJtOVx5c&list=PLD0F06AA0D2E8FFBA) course by Mathematical Monk, along with my own thoughts and related resources.*
 *I will update this page frequently, like every other day, until it's complete.*
 
 #### (ML 1.1) What is maachine learning?
@@ -16,7 +16,7 @@ tags: ML
 
 MM (Mathematical Monk) considers ML as a subfield of statistics, with emphasis on algorithms.
 
-Got to read an interesting article [Machine Learning vs. Statistics](https://svds.com/machine-learning-vs-statistics/), thanks to [Whi Kwon](https://whikwon.github.io/).
+Got to read an interesting article [Machine Learning vs. Statistics](https://svds.com/machine-learning-vs-statistics/){:target="_blank"}, thanks to [Whi Kwon](https://whikwon.github.io/){:target="_blank"}.
 
 **Applications**
  * Spam (filtering out)
