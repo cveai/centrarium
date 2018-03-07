@@ -31,7 +31,8 @@ A bit more detailed explanations on the Banach-Tarski paradox here: [The Banachâ
 
 #### (PP 1.2) Measure theory: $\sigma$-algebras
 
-**Definitiion.** Given a set $\Omega$, a $\sigma$-algebra on $\Omega$ is a collection $\mathcal{A} \subset 2^{\Omega}$ s.t.
+**Definitiion.** 
+Given a set $\Omega$, a $\sigma$-algebra on $\Omega$ is a collection $\mathcal{A} \subset 2^{\Omega}$ s.t.
 ---
 
 $$ $$
