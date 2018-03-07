@@ -47,7 +47,7 @@ Got to read an interesting article [Machine Learning vs. Statistics](https://svd
  * Regression: $y^{(i)} \in \mathbb{R}$ or $y^{(i)} \in \mathbb{R}^d$
 
 <figure>
-<img src="/assets/pics/mm-ml/classification.png" alt="Classification" style="width: 40%; height: 40%">
+<img src="/assets/pics/mm-ml/classification.png" alt="Classification" style="width: 35%; height: 35%">
 <figcaption>Classification
 </figcaption>
 </figure>
