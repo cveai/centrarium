@@ -1,0 +1,44 @@
+---
+layout: post
+title:  "Notes on Convex Optimization"
+date:   2018-03-09 00:00:00
+author: 장승환
+categories: Notes
+tags: Convex Optimization
+---
+
+*In this page I summarize in a succinct and straighforward fashion what I learn from [Convex Optimization](https://www.youtube.com/watch?v=Tk4ubu7BlSk&list=PL17567A1A3F5DB5E4){:target="_blank"} course by Stephen Boyd, along with my own thoughts and related resources.*
+*I will update this page frequently, like every week, until it's complete.*
+
+---
+
+**Acronyms**
+* LA: Linear Algebra
+
+---
+
+Previous materials to be added..
+
+---
+
+#### (Lecxture 9) Numerical linear algebra background
+
+The main goral of the third and the last section (Lectures 9--12) of the course is to *demystify* how is is to solve these convex optimization problems.
+
+It is very important for everyone to know a little bit about how these problems are solved, and specifically the link between problem structure and how fast we can solve it.
+
+**Matrix structure and algorithm complexity**
+
+Cost of solving $Ax = b$ (A \in \mathbb{R}^{n\times n})
+* $n^3$, for general methods
+* less, if $A$ is structured (banded, sparse, Toeplitz, ...)
+
+---
+
+$$ $$
+
+*To be added..*
+
+---
+
+
