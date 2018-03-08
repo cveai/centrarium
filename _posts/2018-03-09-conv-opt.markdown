@@ -17,19 +17,19 @@ tags: Convex Optimization
 
 ---
 
-Previous materials to be added..
+Preceding materials to be added..
 
 ---
 
-#### (Lecxture 9) Numerical linear algebra background
+#### (Lecture 9) Numerical linear algebra background
 
-The main goral of the third and the last section (Lectures 9--12) of the course is to *demystify* how is is to solve these convex optimization problems.
+The main goal of the third and the last section (Lectures 9--12) of the course is to *demystify* how it is that we solve these convex optimization problems.
 
 It is very important for everyone to know a little bit about how these problems are solved, and specifically the link between problem structure and how fast we can solve it.
 
 **Matrix structure and algorithm complexity**
 
-Cost of solving $Ax = b$ (A \in \mathbb{R}^{n\times n})
+Cost of solving $Ax = b$ ($A \in \mathbb{R}^{n\times n})$
 * $n^3$, for general methods
 * less, if $A$ is structured (banded, sparse, Toeplitz, ...)
 
