@@ -29,7 +29,7 @@ It is very important for everyone to know a little bit about how these problems 
 
 **Matrix structure and algorithm complexity**
 
-Cost of solving linear system $Ax = b$ ($A \in \mathbb{R}^{n\times n})$:
+Cost of solving linear system $Ax = b$ ($A \in \mathbb{R}^{n\times n})$ :
 * $n^3$, for general methods
 * less, if $A$ is structured (banded, [sparse](https://www.quora.com/What-is-a-sparse-matrix-What-are-the-advantages-and-disadvantages-of-a-sparse-matrix){:target="_blank"}, Toeplitz, ...)
 
