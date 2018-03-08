@@ -31,7 +31,33 @@ It is very important for everyone to know a little bit about how these problems 
 
 Cost of solving linear system $Ax = b$ ($A \in \mathbb{R}^{n\times n})$ :
 * $n^3$, for general methods
-* less, if $A$ is structured (banded, [sparse](https://www.quora.com/What-is-a-sparse-matrix-What-are-the-advantages-and-disadvantages-of-a-sparse-matrix){:target="_blank"}, Toeplitz, ...)
+* less, if $A$ is structured (banded, [sparse](https://www.quora.com/What-is-a-sparse-matrix-What-are-the-advantages-and-disadvantages-of-a-sparse-matrix){:target="_blank"}, Toeplitz, etc)
+
+FLOP counts
+
+**Linear equations that are easy to solve**
+* Diagonal : $n$ flops 
+* Lower triangular : $n^2$ flops via forward substitution
+* Upper triangular : $n^2$ flops via backward substitution
+* Orthogonal : $2n^n$ flops
+* Permutation : $0$ flops
+
+**The factor-solve method for solving $Ax = b$**
+* Factor
+* Solve
+
+"Factorization dominates everything!"
+
+**$LU$ facorization**
+Completely equivalent to *Gaussian elimination*
+
+**Cholesky factorization**
+
+**$LDL^{\rm T}$ factorization**
+
+**Equations with structured sub-blocks**
+
+**Structured matrix plus low rank term**
 
 ---
 
