@@ -7,7 +7,7 @@ categories: Notes
 tags: Convex Optimization
 ---
 
-*In this page I summarize in a succinct and straighforward fashion what I learn from [Convex Optimization](https://www.youtube.com/watch?v=Tk4ubu7BlSk&list=PL17567A1A3F5DB5E4){:target="_blank"} course by Stephen Boyd, along with my own thoughts and related resources.*
+*In this page I summarize in a succinct and straighforward fashion what I learn from [Convex Optimization](https://lagunita.stanford.edu/courses/Engineering/CVX101/Winter2014/info){:target="_blank"} course by Stephen Boyd, along with my own thoughts and related resources.*
 *I will update this page frequently, like every week, until it's complete.*
 
 ---
