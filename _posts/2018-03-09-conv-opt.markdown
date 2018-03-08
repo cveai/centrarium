@@ -49,7 +49,7 @@ FLOP counts
 "Factorization dominates everything!"
 
 **$LU$ facorization**
-Completely equivalent to *Gaussian elimination*
+: completely equivalent to *Gaussian elimination*
 
 **Cholesky factorization**
 
