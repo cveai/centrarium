@@ -136,9 +136,16 @@ $$p(y\vert x, D) = \int p(y\vert x, \theta, x, D) p(\theta\vert x, D) d\theta$$
 ---
 
 #### (ML 3.6) The Big Picture (part 2)
-
-
-
+1. Exact inference (usually not possible)
+> * Multivariate Gaussian (very nice)
+> * Conjugate priors
+> * Graphical models (us DP)
+2. Point estimate of $\theta$ (simplest)
+> * MLE, MAP (Maximum A Posteriori)  
+> * Optimization, EM (Expectation Maximization) / Empirical Bayes
+3. Deterministic Approximation
+> * Laplace Approximation, Variational methods, Expextation Propagation
+4. 
 
 ---
 
