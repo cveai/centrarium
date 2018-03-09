@@ -18,6 +18,8 @@ tags: ML
 * SL: Supervised Learning
 * UL: Unsupervised Learning
 
+* MCTC: Markov Chain Monte Carlo
+
 ---
 
 #### (ML 1.1) What is machine learning?
@@ -93,6 +95,91 @@ Much less well-defined.
 * Decision theory
 * Reinforcement Learning
  
+---
+
+$\cdots$
+
+---
+
+#### (ML 3.5) The Big Picture (part 1)
+
+**Problem:** Minimize 
+
+$${\rm EL}(Y, f(X))$$
+
+using the obsrved $p(y\vert x)$ as the key quantity.
+
+* EL: Expected Loss
+* $y$: true value
+* $f(x)$: our prediction
+
+Core concepts and methods in ML fall out naturally from trying to solve this problem.
+
+Data: $D = ((x_1, y_), \ldots, (x_n, y_n))$
+
+**Discriminative** Estimate $p(y\vert x)$ directly using $D$.
+* $k$NN
+* Trees
+* SVM
+
+**Generative** Estimate $p(y, x)$ using $D$, and then recover $p(y\vert x) = \frac{p(x, y)}{p(x)}$.
+
+**Parameters / Latent variables** $\theta$, consider $p_\theta(x, y) = p(x, y \vert \theta)$
+
+$$p(y\vert x, D) = \int p(y\vert x, \theta, x, D) p(\theta\vert x, D) d\theta$$
+
+<figure>
+<img src="/assets/pics/mm-ml/big-picture.png" alt="Big picture" style="width: 80%; height: 80%">
+<figcaption>Big picture
+</figcaption>
+</figure>
+
+
+---
+
+#### (ML 3.6) The Big Picture (part 2)
+1. Exact inference (usually not possible)
+* Multivariate Gaussian (very nice), Conjugate priors, Graphical models (us DP)
+2. Point estimate of $\theta$ (simplest)
+* MLE, MAP (Maximum A Posteriori)  
+* Optimization, EM (Expectation Maximization) / Empirical Bayes
+3. Deterministic Approximation
+* Laplace Approximation, Variational methods, Expextation Propagation
+4. Stochastic Approximation
+* MCTC (Gibbs sampling, MH), Importance Sampling (Particle filter)
+
+---
+
+#### (ML 3.7) The Big Picture (part 3)
+
+**Density estimation** (Unsupervised)
+
+$D = (X_1, \ldots, X_n), X_i \in \mathbb{R}^d$, iid.
+
+Goal: Estimate the distribution.
+
+---
+
+#### (ML 4.1) Maximum Likelihood Estimation (MLE) (part 1)
+
+Setup: Given data $D = (x_1, \ldots, x_n), x_i \in \mathbb{R}^d$.
+ 
+Assume a set distributions $\\{p_\theta : \theta \in Theta \\}$ on $\mathbb{R}^d$. ()
+
+Assume $D$ is a sample from $X_1, \ldots, X_n ~ p_\theta$, iid for some $\theta \in \Theta$.
+
+Goal: Estimate the true $\theta$ that $D$ comes from.
+
+**Definition.** $\theta_{\rm MLE}$ for $\theta$ if $\theta_{\rm MLE} = \arg \max_{\theta \in \Theta} p(D\vert \theta).$
+
+(more precisely, $p(D \vert \theta_{\rm MLE}) = \max_{\theta \in \Theta}p(D \vert \theta)$)
+
+$p(D \vert \theta) := p(x_1, \ldots, x_n \vert \theta) = \prod_{i = 1}^n p(x_i \vert \theta) = \prod_{i = 1}^n P[X_i = x_i \vert \theta]$
+
+**Remark**  
+(1) MLE might not be unique.  
+(2) MLE may fail to exist.  
+
 ---
 
 $$ $$
