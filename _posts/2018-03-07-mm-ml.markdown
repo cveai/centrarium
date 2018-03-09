@@ -176,9 +176,9 @@ Goal: Estimate the true $\theta$ that $D$ comes from.
 
 $p(D \vert \theta) := p(x_1, \ldots, x_n \vert \theta) = \prod_{i = 1}^n p(x_i \vert \theta) = \prod_{i = 1}^n P[X_i = x_i \vert \theta]$
 
-**Remark**
-(1) MLE might not be unique.
-(2) MLE may fail to exist.
+**Remark**  
+(1) MLE might not be unique.  
+(2) MLE may fail to exist.  
 
 ---
 
