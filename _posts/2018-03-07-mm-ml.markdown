@@ -65,12 +65,33 @@ Got to read an interesting article [Machine Learning vs. Statistics](https://svd
 
 #### (ML 1.3) What is unsupervised learning?
 
+Much less well-defined.
+
 **Unsupervised**: Given $x^{(1)}, \ldots, x^{(n)}$, find *patterns* in the data.
-* Clustering
-* Density estimation
+* Clustering (typical UL)
+* Density estimation (much more well-defined)
 * Dimensionality reduction
+* $\cdots$
 
+<figure>
+<img src="/assets/pics/mm-ml/clustering.png" alt="Clustering" style="width: 30%; height: 30%">
+<figcaption>Clustering
+</figcaption>
+</figure>
 
+<figure>
+<img src="/assets/pics/mm-ml/de-dr.png" alt="Density estimation and Dimensinality reduction" style="width: 30%; height: 30%">
+<figcaption>Density estimation and Dimensinality reduction
+</figcaption>
+</figure>
+
+---
+
+#### (ML 1.4) Variations on supervised and unsupervised
+* Semi-supervised
+* Active Learning
+* Decision theory
+* Reinforcement Learning
 
 ---
 
