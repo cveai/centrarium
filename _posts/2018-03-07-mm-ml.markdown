@@ -102,7 +102,7 @@ $\cdots$
 #### (ML 3.5) The Big Picture (part 1)
 
 Wanted to solve the  
-**Problem*.* Minimize 
+**Problem*.** Minimize 
 
 $${\rm }(Y, f(X))$$
 
