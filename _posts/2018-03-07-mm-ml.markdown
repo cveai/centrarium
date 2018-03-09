@@ -139,17 +139,40 @@ $$p(y\vert x, D) = \int p(y\vert x, \theta, x, D) p(\theta\vert x, D) d\theta$$
 
 #### (ML 3.6) The Big Picture (part 2)
 1. Exact inference (usually not possible)
-> * Multivariate Gaussian (very nice)
-> * Conjugate priors
-> * Graphical models (us DP)
+* Multivariate Gaussian (very nice), Conjugate priors, Graphical models (us DP)
 2. Point estimate of $\theta$ (simplest)
-> * MLE, MAP (Maximum A Posteriori)  
-> * Optimization, EM (Expectation Maximization) / Empirical Bayes
+* MLE, MAP (Maximum A Posteriori)  
+* Optimization, EM (Expectation Maximization) / Empirical Bayes
 3. Deterministic Approximation
-> * Laplace Approximation, Variational methods, Expextation Propagation
+* Laplace Approximation, Variational methods, Expextation Propagation
 4. Stochastic Approximation
-* MCTC (Gibbs sampling, MH), Importance Sampling
+* MCTC (Gibbs sampling, MH), Importance Sampling (Particle filter)
 
+---
+
+#### (ML 3.7) The Big Picture (part 3)
+
+**Density estimation** (Unsupervised)
+
+$D = (X_1, \ldots, X_n), X_i \in \mathbb{R}^d$, iid.
+
+Goal: Estimate the distribution.
+
+---
+
+#### (ML 4.1) Maximum Likelihood Estimation (MLE) (part 1)
+
+Setup: Given data $D = (x_1, \ldots, x_n), x_i \in \mathbb{R}^d$.
+ 
+Assume a set distributions $\\{p_\theta : \theta \in Theta \\}$ on $\mathbb{R}^d$. ()
+
+Assume $D$ is a sample from $X_1, \ldots, X_n ~ p_\theta$, iid for some $\theta \in \Theta$.
+
+Goal: Estimate the true $\theta$ that $D$ comes from.
+
+**Definition.** $\theta_{\rm MLE}$ for $\theta$ if $\theta_{\rm MLE} = \arg \max_{\theta \in \Theta} p(D\vert \theta).$
+
+(more precisely, $p(D \ver \theta_{\rm MLE})$)
 ---
 
 $$ $$
