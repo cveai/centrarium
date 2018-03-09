@@ -18,6 +18,8 @@ tags: ML
 * SL: Supervised Learning
 * UL: Unsupervised Learning
 
+* MCTC: Markov Chain Monte Carlo
+
 ---
 
 #### (ML 1.1) What is machine learning?
@@ -145,7 +147,8 @@ $$p(y\vert x, D) = \int p(y\vert x, \theta, x, D) p(\theta\vert x, D) d\theta$$
 > * Optimization, EM (Expectation Maximization) / Empirical Bayes
 3. Deterministic Approximation
 > * Laplace Approximation, Variational methods, Expextation Propagation
-4. 
+4. Stochastic Approximation
+* MCTC (Gibbs sampling, MH), Importance Sampling
 
 ---
 
