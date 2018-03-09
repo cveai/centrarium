@@ -95,6 +95,27 @@ Much less well-defined.
  
 ---
 
+$\cdots$
+
+---
+
+#### (ML 3.5) The Big Picture (part 1)
+
+Wanted to solve the  
+**Problem*.* Minimize 
+
+$${\rm }(Y, f(X))$$
+
+using the obsrved $p(y\vert x)$ as the key quantity.
+
+* EL: Expected Loss
+* $y$: true value
+* $f(x)$: our prediction
+
+Core concepts and methods in ML fall out naturally from trying to solve this problem.
+
+---
+
 $$ $$
 
 *To be added..*
