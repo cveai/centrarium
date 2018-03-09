@@ -113,6 +113,19 @@ using the obsrved $p(y\vert x)$ as the key quantity.
 
 Core concepts and methods in ML fall out naturally from trying to solve this problem.
 
+Data: $D = ((x_1, y_), \ldots, (x_n, y_n))$
+
+**Discriminatiev** Estimate $p(y\vert x)$ directly using $D$.
+* $k$NN
+* Trees
+* SVM
+
+**Genrative** Estimate $p(y, x)$ using $D$, and then recover $p(y\vert x) = \frac{p(x, y)}{p(x)}$.
+
+**Parameters / Latent variables** $\theta$, consider $p_\theta(x, y) = p(x, y \vert \theta)$
+
+$$p(y\vert x, D) = \int p(y\vert x, \theta, x, D) p(\theta\vert x, D) d\theta$$
+
 ---
 
 $$ $$
