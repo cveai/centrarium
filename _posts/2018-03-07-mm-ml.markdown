@@ -74,7 +74,7 @@ Much less well-defined.
 * many more
 
 <figure>
-<img src="/assets/pics/mm-ml/clustering.png" alt="Clustering" style="width: 50%; height: 50%">
+<img src="/assets/pics/mm-ml/clustering.png" alt="Clustering" style="width: 45%; height: 45%">
 <figcaption>Clustering
 </figcaption>
 </figure>
