@@ -80,7 +80,7 @@ Much less well-defined.
 </figure>
 
 <figure>
-<img src="/assets/pics/mm-ml/de-dr.png" alt="Density estimation and Dimensinality reduction" style="width: 60%; height: 60%">
+<img src="/assets/pics/mm-ml/de-dr.png" alt="Density estimation and Dimensinality reduction" style="width: 80%; height: 80%">
 <figcaption>Density estimation and Dimensinality reduction
 </figcaption>
 </figure>
