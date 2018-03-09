@@ -71,7 +71,7 @@ Much less well-defined.
 * Clustering (typical UL)
 * Density estimation (much more well-defined)
 * Dimensionality reduction
-* $\cdots$
+* many more
 
 <figure>
 <img src="/assets/pics/mm-ml/clustering.png" alt="Clustering" style="width: 30%; height: 30%">
