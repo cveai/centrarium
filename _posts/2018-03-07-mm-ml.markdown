@@ -172,7 +172,13 @@ Goal: Estimate the true $\theta$ that $D$ comes from.
 
 **Definition.** $\theta_{\rm MLE}$ for $\theta$ if $\theta_{\rm MLE} = \arg \max_{\theta \in \Theta} p(D\vert \theta).$
 
-(more precisely, $p(D \ver \theta_{\rm MLE})$)
+(more precisely, $p(D \vert \theta_{\rm MLE}) = \max_{\theta \in \Theta}p(D \vert \theta)$)
+
+$p(D \vert \theta) := p(x_1, \ldots, x_n \vert \theta) = \prod_{i = 1}^n p(x_i \vert \theta) = \prod_{i = 1}^n P[X_i = x_i \vert \theta]$
+
+**Remrak**
+1. MLE might not be unique.
+2. MLE may fail to exist.
 ---
 
 $$ $$
