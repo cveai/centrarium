@@ -103,7 +103,7 @@ $\cdots$
 
 **Problem:** Minimize 
 
-$${\rm }(Y, f(X))$$
+$${\rm EL}(Y, f(X))$$
 
 using the obsrved $p(y\vert x)$ as the key quantity.
 
