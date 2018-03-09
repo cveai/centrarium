@@ -126,6 +126,20 @@ Data: $D = ((x_1, y_), \ldots, (x_n, y_n))$
 
 $$p(y\vert x, D) = \int p(y\vert x, \theta, x, D) p(\theta\vert x, D) d\theta$$
 
+<figure>
+<img src="/assets/pics/mm-ml/big-picture.png" alt="Big picture" style="width: 80%; height: 80%">
+<figcaption>Big picture
+</figcaption>
+</figure>
+
+
+---
+
+#### (ML 3.6) The Big Picture (part 2)
+
+
+
+
 ---
 
 $$ $$
