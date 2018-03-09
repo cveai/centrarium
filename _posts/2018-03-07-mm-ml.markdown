@@ -74,13 +74,13 @@ Much less well-defined.
 * many more
 
 <figure>
-<img src="/assets/pics/mm-ml/clustering.png" alt="Clustering" style="width: 30%; height: 30%">
+<img src="/assets/pics/mm-ml/clustering.png" alt="Clustering" style="width: 50%; height: 50%">
 <figcaption>Clustering
 </figcaption>
 </figure>
 
 <figure>
-<img src="/assets/pics/mm-ml/de-dr.png" alt="Density estimation and Dimensinality reduction" style="width: 30%; height: 30%">
+<img src="/assets/pics/mm-ml/de-dr.png" alt="Density estimation and Dimensinality reduction" style="width: 60%; height: 60%">
 <figcaption>Density estimation and Dimensinality reduction
 </figcaption>
 </figure>
