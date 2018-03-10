@@ -187,11 +187,24 @@ $p(D \vert \theta) := p(x_1, \ldots, x_n \vert \theta) = \prod_{i = 1}^n p(x_i \
 
 It can be though of as a variant of MC estimation.
 
-Recall MC estimation (by sample mean): 
+Recall: MC estimation (by sample mean): 
 
 $$E[f(X)] \approx \frac{1}{n}\sum_{i=1}^nf(X_i)$$
 
-where $X \sim p$ and $X_i \sim p$.
+under the BIG assumtion that $X \sim p$ and $X_i \sim p$.
+
+Can we do something simailar by drawing samples from an alternative distribution $q$?
+
+Yes, and in some cases you can do much much better!
+
+($p$ density case)
+
+$$E[f(X)] = \int f(x)p(x)dx = \int f(x)\frac{p(x)}{q(x)}p(x)dx \approx \frac{1}{n}\sum_{i=1}^nf(X_i)\frac{p(X_i)}{q(X_i)}$$
+
+holds for all (pdf) $q$ s.t. $q(x)= 0 \Rightarrow p(x) = 0$, i.e., $p$ is absolutely continuous w.r.t. $q$.
+
+
+
 
 ---
 
