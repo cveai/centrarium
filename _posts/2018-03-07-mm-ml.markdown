@@ -184,7 +184,33 @@ $p(D \vert \theta) := p(x_1, \ldots, x_n \vert \theta) = \prod_{i = 1}^n p(x_i \
 
 #### (ML 17.1) Sampling methods - why sampling, pros and cons
 
+Why sampling?
+* For approximate expectations (estimate statistics / posterior infernce i.e. computing probability)
+* For visualization
 
+Why expectations?
+* Any probability is an expectation: $P[X \in A] = E[I(X \in A)]$.
+* Approximation is needed for intractable sums/integrals (can be expressed as expectations)
+
+Pros.
+* Easy (both to implement and understand)
+* General purpose
+
+Cons.
+* Too easy - used inappropriately
+* Slow
+* Getting "good" samples may be dificult
+* Difficult to assess
+
+---
+
+#### (ML 17.2) Monte Carlo methods - A little history
+
+<figure>
+<img src="/assets/pics/mm-ml/mc-history.png" alt="A little history of MC" style="width: 80%; height: 80%">
+<figcaption>A little history of MC
+</figcaption>
+</figure>
 
 
 ---
@@ -200,7 +226,7 @@ $$E[f(X)] \approx \frac{1}{n}\sum_{i=1}^nf(X_i)$$
 
 under the BIG assumtion that $X \sim p$ and $X_i \sim p$.
 
-Can we do something simailar by drawing samples from an alternative distribution $q$?
+Can we do something similar by drawing samples from an alternative distribution $q$?
 
 Yes, and in some cases you can do much much better!
 
@@ -215,7 +241,6 @@ holds for all (pdf) $q$ s.t. $q(x)= 0 \Rightarrow p(x) = 0$, i.e., $p$ is absolu
 <figcaption>Importance sampling
 </figcaption>
 </figure>
-
 
 ---
 
