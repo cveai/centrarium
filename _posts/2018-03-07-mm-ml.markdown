@@ -216,14 +216,17 @@ Cons.
 
 #### (ML 17.3) Monte Carlo approximation
 
-Goal: Aprroximate E[f(X)], when intractable.
+Goal: Aprroximate $E[f(X)]$, when intractable.
 
 Definition (Monte Carlo estimator): If $X_1, \ldots, X_n \sim p$ iid then 
 
 $$\hat{\mu}_n = \frac{1}{n}\sum_{i=1}^nf(X_i)$$
 
-is a (basic) *Monte Carlo estimator* of $E[f(X)]$. (sample mean)
+is a (basic) *Monte Carlo estimator* of $E[f(X)]$ where $X \sim p$. (sample mean)
 
+Remark  
+(1) $E[\hat{\mu}_n] = E[f(X)]$ ($\Rightarrow$ $\hat{\mu}_n$ is an unbiased estimator)  
+(2) 
 
 ---
 
