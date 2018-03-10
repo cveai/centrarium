@@ -183,7 +183,7 @@ $p(D \vert \theta) := p(x_1, \ldots, x_n \vert \theta) = \prod_{i = 1}^n p(x_i \
 ---
 
 #### (ML 17.5) Importance sampling - introduction
-{\color{red} It's not a sampling method but an estimation technique!}
+<span style="color:red">It's not a sampling method but an estimation technique!</span>
 
 ---
 
