@@ -208,9 +208,21 @@ Cons.
 
 <figure>
 <img src="/assets/pics/mm-ml/mc-history.png" alt="A little history of MC" style="width: 80%; height: 80%">
-<figcaption>A little history of MC
+<figcaption>A little history of Mnte Carlo methods
 </figcaption>
 </figure>
+
+---
+
+#### (ML 17.3) Monte Carlo approximation
+
+Goal: Aprroximate E[f(X)], when intractable.
+
+Definition (Monte Carlo estimator): If $X_1, \ldots, X_n \sim p$ iid then 
+
+$$\hat{\mu}_n = \frac{1}{n}\sum_{i=1}^nf(X_i)$$
+
+is a (basic) *Monte Carlo estimator* of $E[f(X)]$. (sample mean)
 
 
 ---
