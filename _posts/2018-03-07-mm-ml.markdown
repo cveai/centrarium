@@ -208,7 +208,7 @@ Cons.
 
 <figure>
 <img src="/assets/pics/mm-ml/mc-history.png" alt="A little history of MC" style="width: 80%; height: 80%">
-<figcaption>A little history of Mnte Carlo methods
+<figcaption>A little history of Monte Carlo methods
 </figcaption>
 </figure>
 
@@ -225,7 +225,7 @@ $$\hat{\mu}_n = \frac{1}{n}\sum_{i=1}^nf(X_i)$$
 is a (basic) *Monte Carlo estimator* of $E[f(X)]$ where $X \sim p$. (sample mean)
 
 Remark  
-(1) $E[\hat{\mu}_n] = E[f(X)]$ ($\Rightarrow$ $\hat{\mu}_n$ is an unbiased estimator)  
+(1) $E[\hat{\mu}_n] = E[f(X)]$ (i.e. $\hat{\mu}_n$ is an unbiased estimator)  
 (2) 
 
 ---
