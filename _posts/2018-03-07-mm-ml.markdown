@@ -185,6 +185,14 @@ $p(D \vert \theta) := p(x_1, \ldots, x_n \vert \theta) = \prod_{i = 1}^n p(x_i \
 #### (ML 17.5) Importance sampling - introduction
 <span style="color:red">It's not a sampling method but an estimation technique!</span>
 
+It can be though of as a variant of MC estimation.
+
+Recall MC estimation (by sample mean): 
+
+$$E[f(X)] \approx \frac{1}{n}\sum_{i=1}^nf(X_i)$$
+
+where $X \sim p$ and $X_i \sim p$.
+
 ---
 
 $$ $$
