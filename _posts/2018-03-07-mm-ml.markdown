@@ -73,6 +73,7 @@ Much less well-defined.
 * Clustering (typical UL)
 * Density estimation (much more well-defined)
 * Dimensionality reduction
+* Feature leraning
 * many more
 
 <figure>
@@ -179,6 +180,83 @@ $p(D \vert \theta) := p(x_1, \ldots, x_n \vert \theta) = \prod_{i = 1}^n p(x_i \
 **Remark**  
 (1) MLE might not be unique.  
 (2) MLE may fail to exist.  
+
+---
+
+#### (ML 17.1) Sampling methods - why sampling, pros and cons
+
+Why sampling?
+* For approximate expectations (estimate statistics / posterior infernce i.e. computing probability)
+* For visualization
+
+Why expectations?
+* Any probability is an expectation: $P[X \in A] = E[I(X \in A)]$.
+* Approximation is needed for intractable sums/integrals (can be expressed as expectations)
+
+Pros.
+* Easy (both to implement and understand)
+* General purpose
+
+Cons.
+* Too easy - used inappropriately
+* Slow
+* Getting "good" samples may be dificult
+* Difficult to assess
+
+---
+
+#### (ML 17.2) Monte Carlo methods - A little history
+
+<figure>
+<img src="/assets/pics/mm-ml/mc-history.png" alt="A little history of MC" style="width: 80%; height: 80%">
+<figcaption>A little history of Monte Carlo methods
+</figcaption>
+</figure>
+
+---
+
+#### (ML 17.3) Monte Carlo approximation
+
+Goal: Aprroximate $E[f(X)]$, when intractable.
+
+Definition (Monte Carlo estimator): If $X_1, \ldots, X_n \sim p$ iid then 
+
+$$\hat{\mu}_n = \frac{1}{n}\sum_{i=1}^nf(X_i)$$
+
+is a (basic) *Monte Carlo estimator* of $E[f(X)]$ where $X \sim p$. (sample mean)
+
+Remark  
+(1) $E[\hat{\mu}_n] = E[f(X)]$ (i.e. $\hat{\mu}_n$ is an unbiased estimator)  
+(2) 
+
+---
+
+#### (ML 17.5) Importance sampling - introduction
+<span style="color:red">It's not a sampling method but an estimation technique!</span>
+
+It can be though of as a variant of MC estimation.
+
+Recall: MC estimation (by sample mean): 
+
+$$E[f(X)] \approx \frac{1}{n}\sum_{i=1}^nf(X_i)$$
+
+under the BIG assumtion that $X \sim p$ and $X_i \sim p$.
+
+Can we do something similar by drawing samples from an alternative distribution $q$?
+
+Yes, and in some cases you can do much much better!
+
+($p$ density case)
+
+$$E[f(X)] = \int f(x)p(x)dx = \int f(x)\frac{p(x)}{q(x)}p(x)dx \approx \frac{1}{n}\sum_{i=1}^nf(X_i)\frac{p(X_i)}{q(X_i)}$$
+
+holds for all (pdf) $q$ s.t. $q(x)= 0 \Rightarrow p(x) = 0$, i.e., $p$ is absolutely continuous w.r.t. $q$.
+
+<figure>
+<img src="/assets/pics/mm-ml/importance-sampling.png" alt="Importance sampling" style="width: 80%; height: 80%">
+<figcaption>Importance sampling
+</figcaption>
+</figure>
 
 ---
 
