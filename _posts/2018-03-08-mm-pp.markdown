@@ -62,6 +62,34 @@ $$P(A \vert B) = \frac{P(A \cap B)}{P(B)}.$$
 
 ---
 
+#### (PP 2.2) Independence
+
+**Definition**
+Eventa $A< B$ are *independent* if $P(A \cap B) = P(A)P(B)$.
+
+<figure>
+<img src="/assets/pics/mm-pp/independence.png" alt="Independence" style="width: 80%; height: 80%">
+<figcaption>Independence
+</figcaption>
+</figure>
+
+**Definition**
+Eventa $A_1, \ldots, A_n$ are *(mutually) independent* if for any $S \subset \{1, \ldots, n\}$,
+
+$$P(\cap_{i \in S} A_i) = \prod_{i \in S} P(A_i).$$
+
+**Remark** Mutual independence $\Rightarrow$ pairwise independence
+
+**Warning!** Pairwise independence $\notRightarrow$ mutual independence
+
+<figure>
+<img src="/assets/pics/mm-pp/mutual.png" alt="Mutual independence" style="width: 80%; height: 80%">
+<figcaption>Pairwise independence $\notRightarrow$ mutual independence
+</figcaption>
+</figure>
+
+---
+
 $$ $$
 
 *To be added..*
