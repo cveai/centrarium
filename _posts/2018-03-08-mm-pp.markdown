@@ -93,7 +93,7 @@ $$P(\cap_{i \in S} A_i) = \prod_{i \in S} P(A_i).$$
 $$P(A\cap B \vert C) = P(A \vert C)P(B \vert).$$
 
 <figure>
-<img src="/assets/pics/mm-pp/cond-ind.png" alt="Conditional independence" style="width: 40%; height: 40%">
+<img src="/assets/pics/mm-pp/cond-ind.png" alt="Conditional independence" style="width: 60%; height: 60%">
 <figcaption>Conditional independence
 </figcaption>
 </figure>
