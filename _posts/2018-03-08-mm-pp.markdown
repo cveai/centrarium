@@ -43,12 +43,16 @@ Given a set $\Omega$, a *$\sigma$-algebra* on $\Omega$ is a nonempty collection 
 
 Conditinoal probability and independence are critical topics in applications of probability.
 
-**Notation** "Suppress" $(\Omega, \mathscr{A})$.
+**Notation** "Suppress" $(\Omega, \mathcal{A})$.
 Whenever write $P(E)$ is implicitly assmung underlying some ptobability measure sapce $\Omega$ and some $\sigma$-algebra $\mathscr{A}$ with some measure $p$ defined on these.
 
 **Terminology**
 * event = measureable set = set in $\mathcal{A}$
 * sample space = $\Omega$
+
+**Definition** Assuming $P(B) > 0 $, define the *conditional probability of $A$ giveb $B$* as
+
+$$P(A \vert B) = \frac{P(A \cap B)}{P(B)}.$$
 
 <figure>
 <img src="/assets/pics/mm-pp/conditional.png" alt="Conditional probability" style="width: 80%; height: 80%">
