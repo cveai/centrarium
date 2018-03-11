@@ -73,6 +73,7 @@ Much less well-defined.
 * Clustering (typical UL)
 * Density estimation (much more well-defined)
 * Dimensionality reduction
+* Feature leraning
 * many more
 
 <figure>
