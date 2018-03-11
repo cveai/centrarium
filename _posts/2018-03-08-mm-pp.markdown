@@ -120,7 +120,7 @@ $$P(\cap_{i \in S} A_i\vert C) = \prod_{i \in S} P(A_i\vert C).$$
 <figcaption>Proof
 </figcaption>
 </figure>
-
+ 
 **Exercise.**
 <figure>
 <img src="/assets/pics/mm-pp/exercise-ind.png" alt="Exercise: independence" style="width: 90%; height: 90%">
