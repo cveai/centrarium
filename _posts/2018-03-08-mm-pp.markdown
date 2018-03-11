@@ -50,7 +50,7 @@ Whenever write $P(E)$ is implicitly assmung underlying some ptobability measure 
 * event = measureable set = set in $\mathcal{A}$
 * sample space = $\Omega$
 
-**Definition** Assuming $P(B) > 0 $, define the *conditional probability of $A$ giveb $B$* as
+**Definition** Assuming $P(B) > 0 $, define the *conditional probability of $A$ given $B$* as
 
 $$P(A \vert B) = \frac{P(A \cap B)}{P(B)}.$$
 
