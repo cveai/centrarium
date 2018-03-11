@@ -68,7 +68,7 @@ $$P(A \vert B) = \frac{P(A \cap B)}{P(B)}.$$
 Eventa $A< B$ are *independent* if $P(A \cap B) = P(A)P(B)$.
 
 <figure>
-<img src="/assets/pics/mm-pp/independence.png" alt="Independence" style="width: 80%; height: 80%">
+<img src="/assets/pics/mm-pp/independence.png" alt="Independence" style="width: 50%; height: 50%">
 <figcaption>Independence
 </figcaption>
 </figure>
@@ -83,7 +83,7 @@ $$P(\cap_{i \in S} A_i) = \prod_{i \in S} P(A_i).$$
 **Warning!** Pairwise independence $\notRightarrow$ mutual independence
 
 <figure>
-<img src="/assets/pics/mm-pp/mutual.png" alt="Mutual independence" style="width: 80%; height: 80%">
+<img src="/assets/pics/mm-pp/mutual.png" alt="Mutual independence" style="width: 50%; height: 50%">
 <figcaption>Pairwise independence $\notRightarrow$ mutual independence
 </figcaption>
 </figure>
