@@ -39,6 +39,102 @@ Given a set $\Omega$, a *$\sigma$-algebra* on $\Omega$ is a nonempty collection 
 
 ---
 
+#### (PP 2.1) Conditional Probability
+
+Conditinoal probability and independence are critical topics in applications of probability.
+
+**Notation** "Suppress" $(\Omega, \mathcal{A})$.
+Whenever write $P(E)$ is implicitly assmung underlying some ptobability measure sapce $\Omega$ and some $\sigma$-algebra $\mathscr{A}$ with some measure $p$ defined on these.
+
+**Terminology**
+* event = measureable set = set in $\mathcal{A}$
+* sample space = $\Omega$
+
+**Definition** Assuming $P(B) > 0 $, define the *conditional probability of $A$ given $B$* as
+
+$$P(A \vert B) = \frac{P(A \cap B)}{P(B)}.$$
+
+<figure>
+<img src="/assets/pics/mm-pp/conditional.png" alt="Conditional probability" style="width: 80%; height: 80%">
+<figcaption>Conditional probability
+</figcaption>
+</figure>
+
+---
+
+#### (PP 2.2) Independence
+
+**Definition.**
+Eventa $A< B$ are *independent* if $P(A \cap B) = P(A)P(B)$.
+
+<figure>
+<img src="/assets/pics/mm-pp/independence.png" alt="Independence" style="width: 30%; height: 30%">
+<figcaption>Independence
+</figcaption>
+</figure>
+
+**Definition.**
+Eventa $A_1, \ldots, A_n$ are *(mutually) independent* if for any $S \subset \\{1, \ldots, n\\}$,
+
+$$P(\cap_{i \in S} A_i) = \prod_{i \in S} P(A_i).$$
+
+**Remark.** Mutual independence $\Rightarrow$ pairwise independence
+
+**Warning!** Pairwise independence $\nRightarrow$ mutual independence
+
+<figure>
+<img src="/assets/pics/mm-pp/mutual.png" alt="Mutual independence" style="width: 40%; height: 40%">
+<figcaption>Pairwise independence $\nRightarrow$ mutual independence
+</figcaption>
+</figure>
+
+**Definition.** $A, B$ are *conditionally independent given $C$* (where $P(C) >0$) if 
+
+$$P(A\cap B \vert C) = P(A \vert C)P(B \vert).$$
+
+<figure>
+<img src="/assets/pics/mm-pp/cond-ind.png" alt="Conditional independence" style="width: 60%; height: 60%">
+<figcaption>Conditional independence
+</figcaption>
+</figure>
+
+**Remark.** Independence $\nRightarrow$ conditional independence
+
+---
+
+#### (PP 2.3) Independence (continued)
+
+**Definition.**
+Eventa $A_1, A_n, \ldots$ are *(mutually) independent* if for any finite $S \subset \\{1, \ldots, n\\}$,
+
+$$P(\cap_{i \in S} A_i) = \prod_{i \in S} P(A_i).$$
+
+**Definition.** $A_1, \ldots, A_n$ are *conditionally independent given $C$* (where $P(C) >0$) if 
+
+$$P(\cap_{i \in S} A_i\vert C) = \prod_{i \in S} P(A_i\vert C).$$
+
+**Proposition.** Suppose $P(B)>0$. Then $A, B$ are independent iff $P(A\vert B) = P(A)$.
+
+<figure>
+<img src="/assets/pics/mm-pp/proof-ind.png" alt="Proof of independence" style="width: 90%; height: 90%">
+<figcaption>Proof
+</figcaption>
+</figure>
+ 
+**Exercise.**
+<figure>
+<img src="/assets/pics/mm-pp/exercise-ind.png" alt="Exercise: independence" style="width: 90%; height: 90%">
+<figcaption>
+</figcaption>
+</figure>
+
+---
+
+#### (PP 2.4) Bayes' rule and the Chain rule
+
+
+---
+
 $$ $$
 
 *To be added..*
