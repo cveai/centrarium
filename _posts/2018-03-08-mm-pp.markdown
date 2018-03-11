@@ -47,7 +47,7 @@ Conditinoal probability and independence are critical topics in applications of 
 Whenever write $P(E)$ is implicitly assmung underlying some ptobability measure sapce $\Omega$ and some $\sigma$-algebra $\mathscr{A}$ with some measure $p$ defined on these.
 
 **Terminology**
-* event = measureable set = set in $\mathscr{A}$
+* event = measureable set = set in $\mathcal{A}$
 * sample space = $\Omega$
 
 <figure>
