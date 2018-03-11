@@ -74,7 +74,7 @@ Eventa $A< B$ are *independent* if $P(A \cap B) = P(A)P(B)$.
 </figure>
 
 **Definition.**
-Eventa $A_1, \ldots, A_n$ are *(mutually) independent* if for any $S \subset \{1, \ldots, n\}$,
+Eventa $A_1, \ldots, A_n$ are *(mutually) independent* if for any $S \subset \\{1, \ldots, n\\}$,
 
 $$P(\cap_{i \in S} A_i) = \prod_{i \in S} P(A_i).$$
 
@@ -105,7 +105,7 @@ $$P(A\cap B \vert C) = P(A \vert C)P(B \vert).$$
 #### (PP 2.3) Independence (continued)
 
 **Definition.**
-Eventa $A_1, A_n, \ldots$ are *(mutually) independent* if for any finite $S \subset \{1, \ldots, n\}$,
+Eventa $A_1, A_n, \ldots$ are *(mutually) independent* if for any finite $S \subset \\{1, \ldots, n\\}$,
 
 $$P(\cap_{i \in S} A_i) = \prod_{i \in S} P(A_i).$$
 
