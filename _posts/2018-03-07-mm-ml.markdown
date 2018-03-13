@@ -106,6 +106,7 @@ Denote $(x, y)$ by a prototypical (data point, label) pair.
 **Discriminative:** model $p(y\vert x)$ 
 
 **Generative:** model the joint distribution 
+
 $$
 \begin{aligned}
 p(x, y) &= f(x\vert y)p(y) \\
