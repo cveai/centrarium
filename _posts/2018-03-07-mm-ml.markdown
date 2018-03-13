@@ -100,7 +100,9 @@ Much less well-defined.
 
 #### (ML 1.5) Generative vs discriminative models
 
-Given data $(x^{(1)}, y^{(1)}), \ldots, (x^{(1)}, y^{(1)})$, and denote $(x, y)$ by a prototypical (data point, label) pair.
+Given data $(x^{(1)}, y^{(1)}), \ldots, (x^{(1)}, y^{(1)})$.
+
+Denote $(x, y)$ by a prototypical (data point, label) pair.
 
 **Discriminative:** model $p(y\vert x)$ 
 
