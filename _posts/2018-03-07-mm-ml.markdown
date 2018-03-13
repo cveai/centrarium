@@ -98,6 +98,23 @@ Much less well-defined.
  
 ---
 
+#### (ML 1.5) Generative vs discriminative models
+
+Given data $(x^{(1)}, y^{(1)}), \ldots, (x^{(1)}, y^{(1)})$, and denote $(x, y)$ by a prototypical (data point, label) pair.
+
+**Discriminative:** model $p(y\vert x)$ 
+
+**Generative:** model the joint distribution 
+$$
+\begin{aligned}
+p(x, y) &= f(x\vert y)p(y)
+        &= p(y\vert x)f(x)
+\end{aligned}$$
+
+Some good reasons to use discriminative model: 
+
+---
+
 $\cdots$
 
 ---
