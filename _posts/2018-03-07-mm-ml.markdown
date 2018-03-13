@@ -114,6 +114,9 @@ p(x, y) &= f(x\vert y)p(y) \\
 \end{aligned}$$
 
 Some good reasons to use discriminative model: 
+* Statistically, it's very hard to estimate either $f(x\vert y)$ or $f(x)$ because it take a lotof data. (You're inclined to make mistakes.)
+
+Generative process: 
 
 ---
 
