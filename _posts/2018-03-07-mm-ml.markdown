@@ -136,7 +136,7 @@ Classify by deciding on what is $y$ corresponding to $x$ according to the majori
 
 **Probabilistic formulation** Fix $D$ and fix $x$. Fix $k$.
 
-Find a RV $Y \sim p$ where $p(y) = \\{x_i \in N_k(x) : y_i = y \\}/k$ 
+Find a RV $Y \sim p$ where $p(y) = #\\{x_i \in N_k(x) : y_i = y \\}/k$ 
 
 ---
 
