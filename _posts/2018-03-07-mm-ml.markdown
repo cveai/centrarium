@@ -122,15 +122,21 @@ Generative process:
 
 #### (ML 1.6) $k$-Nearest Neighbor (kNN) classification algorithm 
 
-Given (a training) data (set) $(x_1, y_1), \ldots, (x_n, y_n)$, $x_i \in \mathbb{R}, y_i \in \\{0, 1\\}$ and given a new data point.
+Given (a training) data (set) $D = ((x_1, y_1), \ldots, (x_n, y_n))$, $x_i \in \mathbb{R}, y_i \in \\{0, 1\\}$ and given a new data point.
 
 Classify by deciding on what is $y$ corresponding to $x$ according to the majority vote from the $k$-nearest points in the training data.
 
+(*Nearest* in terms of a pre-determined metric.)
+
 <figure>
 <img src="/assets/pics/mm-ml/knn.png" alt="3NN" style="width: 50%; height: 50%">
-<figcaption>3NN
+<figcaption>3NN in Euclidean metric
 </figcaption>
 </figure>
+
+**Probabilistic formulation** Fix $k$.
+
+Find a RV $Y \sim p$ where $p(y) = #\\{x_i \in N_k(x) : y_i = y \\}/k$ 
 
 ---
 
