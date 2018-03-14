@@ -134,7 +134,7 @@ Classify by deciding on what is $y$ corresponding to $x$ according to the majori
 </figcaption>
 </figure>
 
-**Probabilistic formulation** (<span style="color:red">Discrimitive model!</span>) Fix $D$ and fix $x$. Fix $k$.
+**Probabilistic formulation** (<span style="color:red">Discrimitive model!</span>) Fix $D$, $x$, $k$.
 
 Find a RV $Y \sim p$ where $p(y) =$ #$\\{x_i \in N_k(x) : y_i = y \\}/k$ 
 
@@ -143,6 +143,8 @@ Sometimes people write $p(y\vert y, D)$ for $p(y)$.h
 The estimate (or prediction) is giveb by 
 
 $$\hat{y} = \arg\max_y p(y\vert y, D).$$
+
+How does one choose $k$? $\rightarrow$ Important problem of choosing parameters. (Bias-variance trade-off)
 
 ---
 
