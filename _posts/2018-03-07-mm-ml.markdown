@@ -122,7 +122,7 @@ Generative process:
 
 #### (ML 1.6) $k$-Nearest Neighbor (kNN) classification algorithm 
 
-Given (a training) data (set) $D = ((x_1, y_1), \ldots, (x_n, y_n))$, $x_i \in \mathbb{R}, y_i \in \\{0, 1\\}$ and given a new data point.
+Given (a training) data (set) $D = \\{(x_1, y_1), \ldots, (x_n, y_n)\\}$, $x_i \in \mathbb{R}, y_i \in \\{0, 1\\}$ and given a new data point.
 
 Classify by deciding on what is $y$ corresponding to $x$ according to the majority vote from the $k$-nearest points in the training data.
 
@@ -134,9 +134,11 @@ Classify by deciding on what is $y$ corresponding to $x$ according to the majori
 </figcaption>
 </figure>
 
-**Probabilistic formulation** Fix $D$ and fix $x$. Fix $k$.
+**Probabilistic formulation** (Discrimitive model!) Fix $D$ and fix $x$. Fix $k$.
 
-Find a RV $Y \sim p$ where $p(y) = $#$\\{x_i \in N_k(x) : y_i = y \\}/k$ 
+Find a RV $Y \sim p$ where $p(y) =$ #$\\{x_i \in N_k(x) : y_i = y \\}/k$ 
+
+Sometimes people write $p(y\vert y, D)$ for $p(y)$.
 
 ---
 
