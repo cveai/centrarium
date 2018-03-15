@@ -1,0 +1,45 @@
+---
+layout: post
+title:  "Notes on "Deep Learning Book""
+date:   2018-03-15 00:00:00
+author: 장승환
+categories: Notes
+tags: DL
+---
+
+*In this page I summarize in a succinct and straighforward fashion what I learn from the book [Deep Learning](http://www.deeplearningbook.org/lecture_slides.html){:target="_blank"} by Ian Goodfellow, Yoshua Bengio and Aaron Courville, along with my own thoughts and related resources.*
+*I will update this page frequently, like every week, until it's complete.*
+
+---
+
+**Acronyms**
+* DL: Deep Learning
+
+---
+
+Ch. 6 Deep Feedforward Networks
+
+---
+
+#### (6.1) Example: Learning XOR
+
+**Target function:**
+
+$$y = f^*(x) = f^*(x_1, x_2)^T = XOR(x_1, x_2) = x_1^x_2$$
+
+where $x = (x_1, x_2)^T \in \\{0, 1\\}^2.
+
+**Linear Esimator:**
+
+$$\hat{y} = f(x: \theta) = f(x; (w, b)) = x^T + b$$  
+where $w = (w_1, w_2)^T \in \mathbb{R}^2$ and $b \in \mathbb{R}$.
+
+---
+
+$$ $$
+
+*To be added..*
+
+---
+
+
