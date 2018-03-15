@@ -160,6 +160,10 @@ Can be extremely powerful, specially coupled with some randomizaiton technique, 
 
 **Example.** (Classification tree)
 
+Data set: $D = ((x_1, y_1), \ldots, (x_n, y_n))$ ($x_i \in \mathbb{R}^2, y \in \\{0, 1\\}$. 
+
+New data point: <span style="color:green">$x$</span>
+
 <figure>
 <img src="/assets/pics/mm-ml/bin-split.png" alt="Binary splits for classitication tree" style="width: 50%; height: 50%">
 <figcaption>Binary splits for classitication tree
@@ -173,6 +177,30 @@ Can be extremely powerful, specially coupled with some randomizaiton technique, 
 </figure>
 
 The process defines a function <span style="color:green">$y = f(x)$</span> that is *constant* on each of the petitioned regions.
+
+---
+
+#### (ML 2.2) Regression trees (CART)
+
+Regression tree ($x_i \in \mathbb{R}, y_i \in \mathbb{R}$)
+
+<figure>
+<img src="/assets/pics/mm-ml/bin-reg-split.png" alt="Binary splits for regression tree" style="width: 50%; height: 50%">
+<figcaption>Binary splits for regression tree
+</figcaption>
+</figure>
+
+$\hat{y} = \arg\max_y \sum_{i \in R_1}(y - y_i)^2$
+
+$\Rightarrow \hat{y} =$ average of the $y_i$'s
+
+<figure>
+<img src="/assets/pics/mm-ml/bin-reg-tree.png" alt="Binary regression tree" style="width: 35%; height: 35%">
+<figcaption>Binary regression tree
+</figcaption>
+</figure>
+
+The process defines a function <span style="color:green">$y = f(x)$</span> that is *piecewise constant*.
 
 ---
 
