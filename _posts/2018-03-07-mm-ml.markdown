@@ -195,7 +195,7 @@ $$\hat{y} = \arg\max_y \sum_{i \in R_1}(y - y_i)^2$$
 $\Rightarrow \hat{y} =$ average of the $y_i$'s
 
 <figure>
-<img src="/assets/pics/mm-ml/bin-reg-tree.png" alt="Binary regression tree" style="width: 30%; height: 30%">
+<img src="/assets/pics/mm-ml/bin-reg-tree.png" alt="Binary regression tree" style="width: 35%; height: 35%">
 <figcaption>Binary regression tree
 </figcaption>
 </figure>
