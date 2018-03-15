@@ -150,7 +150,7 @@ How does one choose $k$? $\rightarrow$ Important problem of choosing parameters.
 
 #### (ML 2.1) Classification trees (CART)
 
-CART ([Classification And Regression Trees](https://books.google.co.kr/books/about/Classification_and_Regression_Trees.html?id=JwQx-WOmSyQC&redir_esc=y)) by Breiman et. al. (see: https://rafalab.github.io/pages/649/section-11.pdf)
+CART ([Classification And Regression Trees](https://books.google.co.kr/books/about/Classification_and_Regression_Trees.html?id=JwQx-WOmSyQC&redir_esc=y)) by Breiman et. al. (see:https://rafalab.github.io/pages/649/section-11.pdf)
 
 
 ---
