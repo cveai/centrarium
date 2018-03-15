@@ -47,7 +47,8 @@ where $X = \\{[0,0]^T, [0,1]^T, [1,0]^T, [1,1]^T\\}.$
 $\cdots$
 
 $w = [0, 0]^T$ and $b = \frac{1}{2}$.  
-(Meaning that linear model significantly lacks capacity for representing this particular function.)
+(Meaning that linear model significantly lacks capacity in estimating/representing this particular function.)
+
 ---
 
 $$ $$
