@@ -153,6 +153,10 @@ How does one choose $k$? $\rightarrow$ Important problem of choosing parameters.
 CART ([Classification And Regression Trees](https://books.google.co.kr/books/about/Classification_and_Regression_Trees.html?id=JwQx-WOmSyQC&redir_esc=y)) by Breiman et. al.   
 (see: https://rafalab.github.io/pages/649/section-11.pdf)
 
+Conceptually very simple approach to classification and regression.  
+Can be extremely powerful, specially coupled with some randomizaiton technique, and essentially give the best performance.
+
+**Main idea:** Form a *binary tree* (by binary splits), and *minimize error* in each leaf.
 
 ---
 
