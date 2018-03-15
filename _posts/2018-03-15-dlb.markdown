@@ -25,7 +25,7 @@ Ch. 6 Deep Feedforward Networks
 
 **Target function:**
 
-$$y = f^*(x) = f^*(x_1, x_2)^T = (x_1, x_2)$$
+$$y = f^*(x) = f^*([x_1, x_2]^T) = XOR(x_1, x_2)$$
 
 where $x = (x_1, x_2)^T \in \\{0, 1\\}^2.
 
