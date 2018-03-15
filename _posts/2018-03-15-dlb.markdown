@@ -27,7 +27,7 @@ Ch. 6 Deep Feedforward Networks
 
 $$y = f^*(x) = f^*([x_1, x_2]^T) = XOR(x_1, x_2)$$
 
-where $x = (x_1, x_2)^T \in \\{0, 1\\}^2.
+where $x = (x_1, x_2)^T \in \\{0, 1\\}^2$.
 
 **Linear Esimator:**
 
