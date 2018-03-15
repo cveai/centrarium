@@ -190,7 +190,7 @@ Regression tree ($x_i \in \mathbb{R}, y_i \in \mathbb{R}$)
 </figcaption>
 </figure>
 
-$$\hat{y} = \arg\max_y \sum_{i \in R_1}(y - y_i)^2$$
+$\hat{y} = \arg\max_y \sum_{i \in R_1}(y - y_i)^2$
 
 $\Rightarrow \hat{y} =$ average of the $y_i$'s
 
