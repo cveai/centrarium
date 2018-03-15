@@ -158,6 +158,14 @@ Can be extremely powerful, specially coupled with some randomizaiton technique, 
 
 **Main idea:** Form a *binary tree* (by binary splits), and *minimize error* in each leaf.
 
+**Example.** (Classification tree)
+
+<figure>
+<img src="/assets/pics/mm-ml/bin-split.png" alt="Binary splits for classitication tree" style="width: 50%; height: 50%">
+<figcaption>Binary splits for classitication tree
+</figcaption>
+</figure>
+
 ---
 
 $\cdots$
