@@ -30,7 +30,7 @@ $$y = f^*(x) = f^*([x_1, x_2]^T) = XOR(x_1, x_2)$$
 
 where $x = [x_1, x_2]^T \in \\{0, 1\\}^2$.
 
-**Linear Estimator:**
+**Linear Approximator:**
 
 $$\hat{y} = f(x; \theta) = f(x; (w, b)) = x^T + b$$  
 
@@ -47,7 +47,7 @@ where $X = \\{[0,0]^T, [0,1]^T, [1,0]^T, [1,1]^T\\}.$
 $\cdots$
 
 gives $w = [0, 0]^T, b = \frac{1}{2}$ as the optimizer (minimizer).  
-(Meaning that linear model significantly lacks capacity in estimating/representing this particular function.)
+(Meaning that linear model significantly lacks capacity in representing/approximating this particular function.)
 
 ---
 
