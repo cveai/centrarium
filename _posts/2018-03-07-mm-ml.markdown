@@ -182,6 +182,20 @@ The process defines a function <span style="color:green">$y = f(x)$</span> that 
 
 #### (ML 2.2) Regression trees (CART)
 
+Regression tree ($x_i \in \mathbb{R}, y_i \in \mathbb{R}$)
+
+<figure>
+<img src="/assets/pics/mm-ml/bin-reg-split.png" alt="Binary splits for regression tree" style="width: 50%; height: 50%">
+<figcaption>Binary splits for regression tree
+</figcaption>
+</figure>
+
+<figure>
+<img src="/assets/pics/mm-ml/bin-reg-tree.png" alt="Binary regression tree" style="width: 80%; height: 80%">
+<figcaption>Binary regression tree
+</figcaption>
+</figure>
+
 
 ---
 
