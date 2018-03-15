@@ -166,6 +166,12 @@ Can be extremely powerful, specially coupled with some randomizaiton technique, 
 </figcaption>
 </figure>
 
+<figure>
+<img src="/assets/pics/mm-ml/bin-tree.png" alt="Binary classitication tree" style="width: 50%; height: 50%">
+<figcaption>Binary classitication tree
+</figcaption>
+</figure>
+
 ---
 
 $\cdots$
