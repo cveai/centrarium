@@ -180,6 +180,11 @@ The process defines a function <span style="color:green">$y = f(x)$</span> that 
 
 ---
 
+#### (ML 2.2) Regression trees (CART)
+
+
+---
+
 $\cdots$
 
 ---
