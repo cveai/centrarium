@@ -185,7 +185,7 @@ The process defines a function <span style="color:green">$y = f(x)$</span> that 
 Regression tree ($x_i \in \mathbb{R}, y_i \in \mathbb{R}$)
 
 <figure>
-<img src="/assets/pics/mm-ml/bin-reg-split.png" alt="Binary splits for regression tree" style="width: 50%; height: 50%">
+<img src="/assets/pics/mm-ml/bin-reg-split.png" alt="Binary splits for regression tree" style="width: 60%; height: 60%">
 <figcaption>Binary splits for regression tree
 </figcaption>
 </figure>
@@ -195,7 +195,7 @@ $$\hat{y} = \arg\max_y \sum_{i \in R_1}(y - y_i)^2$$
 $\Rightarrow \hat{y} =$ average of the $y_i$'s
 
 <figure>
-<img src="/assets/pics/mm-ml/bin-reg-tree.png" alt="Binary regression tree" style="width: 80%; height: 80%">
+<img src="/assets/pics/mm-ml/bin-reg-tree.png" alt="Binary regression tree" style="width: 60%; height: 60%">
 <figcaption>Binary regression tree
 </figcaption>
 </figure>
