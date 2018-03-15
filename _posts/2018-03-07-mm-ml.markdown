@@ -160,7 +160,9 @@ Can be extremely powerful, specially coupled with some randomizaiton technique, 
 
 **Example.** (Classification tree)
 
-$D = ((x_1, y_1), \ldots, (x_n, y_n))$ ($x_i \in \mathbb{R}^2, y \in \\{0, 1\\}$. <span style="color:green">x</span>
+Data set: $D = ((x_1, y_1), \ldots, (x_n, y_n))$ ($x_i \in \mathbb{R}^2, y \in \\{0, 1\\}$. 
+
+New data point: <span style="color:green">$x$</span>
 
 <figure>
 <img src="/assets/pics/mm-ml/bin-split.png" alt="Binary splits for classitication tree" style="width: 50%; height: 50%">
