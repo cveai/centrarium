@@ -185,7 +185,7 @@ The process defines a function <span style="color:green">$y = f(x)$</span> that 
 Regression tree ($x_i \in \mathbb{R}, y_i \in \mathbb{R}$)
 
 <figure>
-<img src="/assets/pics/mm-ml/bin-reg-split.png" alt="Binary splits for regression tree" style="width: 60%; height: 60%">
+<img src="/assets/pics/mm-ml/bin-reg-split.png" alt="Binary splits for regression tree" style="width: 50%; height: 50%">
 <figcaption>Binary splits for regression tree
 </figcaption>
 </figure>
