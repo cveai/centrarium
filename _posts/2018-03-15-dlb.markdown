@@ -30,9 +30,9 @@ $$y = f^*(x) = f^*([x_1, x_2]^T) = XOR(x_1, x_2)$$
 
 where $x = [x_1, x_2]^T \in \\{0, 1\\}^2$.
 
-**Linear Esimator:**
+**Linear Estimator:**
 
-$$\hat{y} = f(x: \theta) = f(x; (w, b)) = x^T + b$$  
+$$\hat{y} = f(x; \theta) = f(x; (w, b)) = x^T + b$$  
 
 where $w = [w_1, w_2]^T \in \mathbb{R}^2$ and $b \in \mathbb{R}$.
 
@@ -46,6 +46,7 @@ where $X = \\{[0,0]^T, [0,1]^T, [1,0]^T, [1,1]^T\\}.$
 
 ...
 
+$w = [0, 0]^T$ and $b = \frac{1}{2}$. (Meaning that linear model is inappropriate.)
 ---
 
 $$ $$
