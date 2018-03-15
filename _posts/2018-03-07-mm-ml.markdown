@@ -172,7 +172,7 @@ Can be extremely powerful, specially coupled with some randomizaiton technique, 
 </figcaption>
 </figure>
 
-The process defines a function <span style="color:green">$y = f(x)$</span> that is constant on each of the petitioned regions.
+The process defines a function <span style="color:green">$y = f(x)$</span> that is *constant* on each of the petitioned regions.
 
 ---
 
