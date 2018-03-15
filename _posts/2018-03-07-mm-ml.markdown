@@ -148,6 +148,34 @@ How does one choose $k$? $\rightarrow$ Important problem of choosing parameters.
 
 ---
 
+#### (ML 2.1) Classification trees (CART)
+
+CART ([Classification And Regression Trees](https://books.google.co.kr/books/about/Classification_and_Regression_Trees.html?id=JwQx-WOmSyQC&redir_esc=y)) by Breiman et. al.   
+(see: https://rafalab.github.io/pages/649/section-11.pdf)
+
+Conceptually very simple approach to classification and regression.  
+Can be extremely powerful, specially coupled with some randomizaiton technique, and essentially give the best performance.
+
+**Main idea:** Form a *binary tree* (by binary splits), and *minimize error* in each leaf.
+
+**Example.** (Classification tree)
+
+<figure>
+<img src="/assets/pics/mm-ml/bin-split.png" alt="Binary splits for classitication tree" style="width: 50%; height: 50%">
+<figcaption>Binary splits for classitication tree
+</figcaption>
+</figure>
+
+<figure>
+<img src="/assets/pics/mm-ml/bin-tree.png" alt="Binary classitication tree" style="width: 80%; height: 80%">
+<figcaption>Binary classitication tree
+</figcaption>
+</figure>
+
+The process defines a function <span style="color:green">$y = f(x)$</span> that is *constant* on each of the petitioned regions.
+
+---
+
 $\cdots$
 
 ---
