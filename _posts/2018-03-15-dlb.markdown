@@ -47,7 +47,12 @@ where $X = \\{[0,0]^T, [0,1]^T, [1,0]^T, [1,1]^T\\}.$
 $\cdots$
 
 gives $w = [0, 0]^T, b = \frac{1}{2}$ as the optimizer (minimizer).  
-(Meaning that linear model significantly lacks capacity in representing/approximating this particular function.)
+(Meaning that linear model (all by itself) significantly lacks capacity in representing/approximating this particular function.)
+
+<span style="color:green">**Need different approach:**</span>
+
+**Affine feature space transformation:**
+
 
 ---
 
