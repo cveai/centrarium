@@ -59,7 +59,7 @@ x_1  \\
 x_2
 \end{bmatrix}
 \mapsto
-W^Tx = 
+W^Tx +c = 
 \begin{bmatrix}
 1 & 1 \\
 1 & 1
@@ -67,6 +67,11 @@ W^Tx =
 \begin{bmatrix}
 x_1  \\
 x_2
+\end{bmatrix}
++
+\begin{bmatrix}
+1  \\
+-2
 \end{bmatrix}
 $$
 
