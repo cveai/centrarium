@@ -85,7 +85,8 @@ h_1  \\
 h_2
 \end{bmatrix}
 = h
-\end{aligned}$$
+\end{aligned}.$$
+Note that the new feature sapce reside in the hidden layer ``$h$.''
 
 ---
 
