@@ -133,7 +133,7 @@ h_1^\dagger  \\
 h_2^\dagger
 \end{bmatrix}
 + 0 
-= h_1 -2h_2 \\
+= h_1^\dagger -2h_2^\dagger \\
 &= (x_1+x_2)^\dagger - 2(x_1 + x-2 -1)^\dagger = y
 \end{aligned}$$
 
