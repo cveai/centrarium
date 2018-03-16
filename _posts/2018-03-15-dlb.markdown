@@ -73,6 +73,17 @@ x_2
 1  \\
 -2
 \end{bmatrix}
+=
+\begin{bmatrix}
+x_1 + x_2 + 1  \\
+x_1 + x_2 - 2
+\end{bmatrix}
+=
+\begin{bmatrix}
+h_1  \\
+h_2
+\end{bmatrix}
+= h
 $$
 
 ---
