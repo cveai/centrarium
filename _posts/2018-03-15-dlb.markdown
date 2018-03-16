@@ -98,6 +98,15 @@ h_1  \\
 h_2
 \end{bmatrix}
 \mapsto
+\begin{bmatrix}
+{\rm ReLU}(h_1)  \\
+{\rm ReLU}(h_2)
+\end{bmatrix}
+=
+\begin{bmatrix}
+\max(0, h_1)  \\
+\max(0, h_2)
+\end{bmatrix}
 $$
 
 **Feed it forward further using the old linear layer:**
