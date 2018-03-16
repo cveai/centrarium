@@ -109,7 +109,7 @@ h_2
 \end{bmatrix}
 = 
 \begin{bmatrix}
-h_1^~  \\
+h_1\tilde  \\
 \tilde{h_2}
 \end{bmatrix}
 $$
