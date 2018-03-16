@@ -89,15 +89,16 @@ h_2
 
 Note that the new feature sapce resides in the hidden layer ''$h$.''
 
-**Feed it further using the old linear layer:**
+**Feed it forward further using the old linear layer:**
 
-$$h =
+$$\begin{aligned}
+h =
 \begin{bmatrix}
 h_1  \\
 h_2
 \end{bmatrix}
 \mapsto 
-w^Th + b = 
+w^Th + b &= 
 \begin{bmatrix}
 1 & -2
 \end{bmatrix}
@@ -105,8 +106,9 @@ w^Th + b =
 h_1  \\
 h_2
 \end{bmatrix}
-+ 0
-$$
++ 0 \\
+&= h_1 -2h_2 = -x_1 - x_2 +2
+\end{aligned}$$
 
 ---
 
