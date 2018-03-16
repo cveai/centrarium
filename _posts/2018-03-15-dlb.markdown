@@ -32,7 +32,7 @@ where $x = [x_1, x_2]^T \in \\{0, 1\\}^2$.
 
 **Linear Approximator:**
 
-$$\hat{y} = f(x; \theta) = f(x; (w, b)) = x^T + b$$  
+$$\hat{y} = f(x; \theta) = f(x; (w, b)) = w^Tx + b$$  
 
 where $w = [w_1, w_2]^T \in \mathbb{R}^2$ and $b \in \mathbb{R}$.
 
@@ -47,7 +47,95 @@ where $X = \\{[0,0]^T, [0,1]^T, [1,0]^T, [1,1]^T\\}.$
 $\cdots$
 
 gives $w = [0, 0]^T, b = \frac{1}{2}$ as the optimizer (minimizer).  
-(Meaning that linear model significantly lacks capacity in representing/approximating this particular function.)
+(Meaning that linear model (all by itself) significantly lacks capacity in representing/approximating this particular function.)
+
+<span style="color:red">**Need different approach:**</span>
+
+**Affine feature space transformation:**
+
+$$\begin{aligned}
+x= 
+\begin{bmatrix}
+x_1  \\
+x_2
+\end{bmatrix}
+\mapsto
+W^Tx +c &= 
+\begin{bmatrix}
+1 & 1 \\
+1 & 1
+\end{bmatrix} 
+\begin{bmatrix}
+x_1  \\
+x_2
+\end{bmatrix}
++
+\begin{bmatrix}
+0  \\
+-1
+\end{bmatrix} \\
+& =
+\begin{bmatrix}
+x_1 + x_2   \\
+x_1 + x_2 - 1
+\end{bmatrix}
+=
+\begin{bmatrix}
+h_1  \\
+h_2
+\end{bmatrix}
+= h
+\end{aligned}$$
+
+Note that the new feature sapce resides in the hidden layer ''$h$.''
+
+**Componetwise ReLU (Rectified Linear Unit) operation:**
+
+$$
+h =
+\begin{bmatrix}
+h_1  \\
+h_2
+\end{bmatrix}
+\mapsto
+\begin{bmatrix}
+{\rm ReLU}(h_1)  \\
+{\rm ReLU}(h_2)
+\end{bmatrix}
+=
+\begin{bmatrix}
+\max(0, h_1)  \\
+\max(0, h_2)
+\end{bmatrix}
+= 
+\begin{bmatrix}
+h_1^\dagger \\
+h_2^\dagger
+\end{bmatrix}
+= h^\dagger
+$$
+
+**Feed it forward further using the old linear layer:**
+
+$$\begin{aligned}
+h^\dagger =
+\begin{bmatrix}
+h_1^\dagger  \\
+h_2^\dagger
+\end{bmatrix}
+\mapsto 
+w^Th + b &= 
+\begin{bmatrix}
+1 & -2
+\end{bmatrix}
+\begin{bmatrix}
+h_1^\dagger  \\
+h_2^\dagger
+\end{bmatrix}
++ 0 
+= h_1^\dagger -2h_2^\dagger \\
+&= (x_1+x_2)^\dagger - 2(x_1 + x_2 -1)^\dagger = y
+\end{aligned}$$
 
 ---
 
