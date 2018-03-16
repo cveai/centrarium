@@ -85,9 +85,20 @@ h_1  \\
 h_2
 \end{bmatrix}
 = h
-\end{aligned}.$$
+\end{aligned}$$
 
-Note that the new feature sapce reside in the hidden layer ``$h$.''
+Note that the new feature sapce resides in the hidden layer ''$h$.''
+
+**Feed it further using the old linear layer:**
+
+$$h =
+\begin{bmatrix}
+h_1  \\
+h_2
+\end{bmatrix}
+\mapsto 
+
+$$
 
 ---
 
