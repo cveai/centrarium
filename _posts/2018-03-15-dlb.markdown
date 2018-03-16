@@ -107,6 +107,11 @@ h_2
 \max(0, h_1)  \\
 \max(0, h_2)
 \end{bmatrix}
+= 
+\begin{bmatrix}
+\tilde{h_1}  \\
+\tilde{h_2}
+\end{bmatrix}
 $$
 
 **Feed it forward further using the old linear layer:**
