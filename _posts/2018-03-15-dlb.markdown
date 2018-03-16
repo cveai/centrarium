@@ -85,7 +85,7 @@ h_1  \\
 h_2
 \end{bmatrix}
 = h
-$$
+\end{aligned}$$
 
 ---
 
