@@ -53,13 +53,14 @@ gives $w = [0, 0]^T, b = \frac{1}{2}$ as the optimizer (minimizer).
 
 **Affine feature space transformation:**
 
-$$x= 
+$$\begin{aligned}
+x= 
 \begin{bmatrix}
 x_1  \\
 x_2
 \end{bmatrix}
 \mapsto
-W^Tx +c = 
+W^Tx +c &= 
 \begin{bmatrix}
 1 & 1 \\
 1 & 1
@@ -72,8 +73,8 @@ x_2
 \begin{bmatrix}
 1  \\
 -2
-\end{bmatrix}
-=
+\end{bmatrix} \\
+& =
 \begin{bmatrix}
 x_1 + x_2 + 1  \\
 x_1 + x_2 - 2
