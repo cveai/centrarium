@@ -47,9 +47,9 @@ where $X = \\{[0,0]^T, [0,1]^T, [1,0]^T, [1,1]^T\\}.$
 $\cdots$
 
 gives $w = [0, 0]^T, b = \frac{1}{2}$ as the optimizer (minimizer).  
-(Meaning that linear model (all by itself) significantly lacks capacity in representing/approximating this particular function.)
+Meaning that linear model (all by itself) significantly lacks capacity in representing/approximating this particular function.
 
-<span style="color:red">**Need different approach:**</span>
+<span style="color:red">**Need different approach.**</span>
 
 **Affine feature space transformation:**
 
@@ -109,8 +109,8 @@ h_2
 \end{bmatrix}
 = 
 \begin{bmatrix}
-h_1^\dagger \\
-h_2^\dagger
+h_1^+ \\
+h_2^+
 \end{bmatrix}
 = h^\dagger
 $$
@@ -120,8 +120,8 @@ $$
 $$\begin{aligned}
 h^\dagger =
 \begin{bmatrix}
-h_1^\dagger  \\
-h_2^\dagger
+h_1^+ \\
+h_2^+
 \end{bmatrix}
 \mapsto 
 w^Th + b &= 
@@ -129,12 +129,12 @@ w^Th + b &=
 1 & -2
 \end{bmatrix}
 \begin{bmatrix}
-h_1^\dagger  \\
-h_2^\dagger
+h_1^+ \\
+h_2^+
 \end{bmatrix}
 + 0 
-= h_1^\dagger -2h_2^\dagger \\
-&= (x_1+x_2)^\dagger - 2(x_1 + x_2 -1)^\dagger = y
+= h_1^+ -2h_2^+ \\
+&= (x_1+x_2)^+ - 2(x_1 + x_2 -1)^+ = y
 \end{aligned}$$
 
 ---
