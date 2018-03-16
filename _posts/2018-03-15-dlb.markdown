@@ -71,13 +71,13 @@ x_2
 \end{bmatrix}
 +
 \begin{bmatrix}
-1  \\
--2
+0  \\
+-1
 \end{bmatrix} \\
 & =
 \begin{bmatrix}
-x_1 + x_2 + 1  \\
-x_1 + x_2 - 2
+x_1 + x_2   \\
+x_1 + x_2 - 1
 \end{bmatrix}
 =
 \begin{bmatrix}
@@ -97,7 +97,14 @@ h_1  \\
 h_2
 \end{bmatrix}
 \mapsto 
-
+w^Th = 
+\begin{bmatrix}
+1 & -1
+\end{bmatrix}
+\begin{bmatrix}
+h_1  \\
+h_2
+\end{bmatrix}
 $$
 
 ---
