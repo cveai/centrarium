@@ -56,7 +56,8 @@ gives $w = [0, 0]^T, b = \frac{1}{2}$ as the optimizer (minimizer).
 $$\begin{bmatrix}
 x_1  \\
 x_2
-\end{bmatrix}$$
+\end{bmatrix}
+\mapsto $$
 
 ---
 
