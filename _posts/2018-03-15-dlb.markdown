@@ -112,15 +112,16 @@ h_2
 h_1^\dagger \\
 h_2^\dagger
 \end{bmatrix}
+= h^\dagger
 $$
 
 **Feed it forward further using the old linear layer:**
 
 $$\begin{aligned}
-h =
+h^\dagger =
 \begin{bmatrix}
-h_1  \\
-h_2
+h_1^\dagger  \\
+h_2^\dagger
 \end{bmatrix}
 \mapsto 
 w^Th + b &= 
@@ -128,11 +129,11 @@ w^Th + b &=
 1 & -2
 \end{bmatrix}
 \begin{bmatrix}
-h_1  \\
-h_2
+h_1^\dagger  \\
+h_2^\dagger
 \end{bmatrix}
 + 0 \\
-&= h_1 -2h_2 = -x_1 - x_2 +2 = y
+&= h_1 -2h_2 = (x_1+x_2)^\dagger - 2(x_1 + x-2 -1)^\dagger = y
 \end{aligned}$$
 
 ---
