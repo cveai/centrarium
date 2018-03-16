@@ -91,7 +91,14 @@ Note that the new feature sapce resides in the hidden layer ''$h$.''
 
 **Componetwise ReLU (Rectified Linear Unit) operation:**
 
-
+$$
+h =
+\begin{bmatrix}
+h_1  \\
+h_2
+\end{bmatrix}
+\mapsto
+$$
 
 **Feed it forward further using the old linear layer:**
 
