@@ -118,7 +118,7 @@ $$
 **Feed it forward further using the old linear layer:**
 
 $$\begin{aligned}
-h^\dagger =
+h^+ =
 \begin{bmatrix}
 h_1^+ \\
 h_2^+
