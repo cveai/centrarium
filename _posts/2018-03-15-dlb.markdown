@@ -105,6 +105,7 @@ w^Th + b =
 h_1  \\
 h_2
 \end{bmatrix}
++ 0
 $$
 
 ---
