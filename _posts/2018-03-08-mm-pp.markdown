@@ -150,6 +150,9 @@ $$P(A_1 \cap \cdots \cap A_n)
 =  P(A_1)P(A_2 \vert A_1)P(A_3\vert A_1\cap A_2)\cdots P(A_n\vert A_1 \cap \cdots \cap A_{n-1}).$$
 
 
+
+Proof. By induction.
+
 ---
 
 $$ $$
