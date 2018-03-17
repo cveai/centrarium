@@ -90,7 +90,7 @@ $$P(\cap_{i \in S} A_i) = \prod_{i \in S} P(A_i).$$
 
 **Definition.** $A, B$ are *conditionally independent given $C$* (where $P(C) >0$) if 
 
-$$P(A\cap B \vert C) = P(A \vert C)P(B \vert).$$
+$$P(A\cap B \vert C) = P(A \vert C)P(B \vert C).$$
 
 <figure>
 <img src="/assets/pics/mm-pp/cond-ind.png" alt="Conditional independence" style="width: 60%; height: 60%">
@@ -132,6 +132,26 @@ $$P(\cap_{i \in S} A_i\vert C) = \prod_{i \in S} P(A_i\vert C).$$
 
 #### (PP 2.4) Bayes' rule and the Chain rule
 
+<span style="color:orange">**3 rules: Bayes', Chain, Partition**</span>
+
+**Remark.** $P(A \cap B) = P(A \vert B)P(B)$ if $P(B) >0$
+
+**Theorem (Bayes' rule)**
+
+$$P(B \vert A) = \frac{P(A\vert B)P(B)}{P(A)}$$ 
+
+if $P(A), P(B) >0$.
+
+Plays an important role in particulat in Bayesian statistics.
+
+**Theorem (Chain rule)** If $A_1, \ldots, A_n$ satisfy $P(A_1 \cap \cdots \cap A_n) >0$, then
+
+$$P(A_1 \cap \cdots \cap A_n)
+=  P(A_1)P(A_2 \vert A_1)P(A_3\vert A_1\cap A_2)\cdots P(A_n\vert A_1 \cap \cdots \cap A_{n-1}).$$
+
+
+
+Proof. By induction.
 
 ---
 
