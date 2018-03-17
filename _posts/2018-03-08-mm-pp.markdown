@@ -146,7 +146,7 @@ Plays an important role in particulat in Bayesian statistics.
 
 **Theorem (Chain rule)** If $A_1, \ldots, A_n$ satisfy P(A_1 \cap \cdots \cap A_n) >0$, then
 
-$P(A_1 \cap \cdots \cap A_n) = P(A_1)P(A_2 \vert A_1)P(A_3\vert A_1\cap A_2)\cdot P(A_n\vert A_1 \cap \cdots \cap A_{n-1})$
+$$P(A_1 \cap \cdots \cap A_n) = P(A_1)P(A_2 \vert A_1)P(A_3\vert A_1\cap A_2)\cdot P(A_n\vert A_1 \cap \cdots \cap A_{n-1}).$$
 
 
 ---
