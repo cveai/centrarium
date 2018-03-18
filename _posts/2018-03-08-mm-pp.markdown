@@ -184,7 +184,14 @@ $P(A) = P(\cup_i (A\cap B_i)) = \sum_i P(A \cap B_i)$
 
 **Definition.** If $P(B) >0$, then $Q(A) = P(A \vert B)$ defines a probability measure $Q$ (*conditional probability measure given $B$*).
 
+**Execise.**
+* Bayes' rule for cond. prob.:
+* Chain rule for cond. prob.:
+* Partition rule for cond. prob.:
 
+---
+
+#### (PP 3.1) Random Variables - Definition and CDF
 
 ---
 
