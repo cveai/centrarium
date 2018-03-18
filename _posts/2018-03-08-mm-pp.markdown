@@ -39,6 +39,8 @@ Given a set $\Omega$, a *$\sigma$-algebra* on $\Omega$ is a nonempty collection 
 **Remark**
 1. $\Omega \in \mathcal{A}$ (some $E \in \mathcal{A}$. $E^c \in \mathcal{A}$. $\Omega = E \cup E^c \in \mathcal{A}$.)
 2. $\emptyset \in \mathcal{A}$ ($\emptyset = \Omega^c \in \mathcal{A}$)
+
+
 ---
 
 #### (PP 2.1) Conditional Probability
