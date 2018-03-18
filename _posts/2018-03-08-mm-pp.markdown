@@ -39,7 +39,7 @@ Given a set $\Omega$, a *$\sigma$-algebra* on $\Omega$ is a nonempty collection 
 **Remark**
 1. $\Omega \in \mathcal{A}$ (some $E \in \mathcal{A}$. $E^c \in \mathcal{A}$. $\Omega = E \cup E^c \in \mathcal{A}$.)
 2. $\emptyset \in \mathcal{A}$ ($\emptyset = \Omega^c \in \mathcal{A}$)
-3. $\mathcal{A}$ is closed under countable intersections:
+3. $\mathcal{A}$ is closed under countable intersections:  
 Suppose $E_1, E_2, \ldots \in \mathcal{A}$.  
 $$\cap_{i=1}^\infty = \cap (E_i^c)^c = (\cup_{i=1}^\infty)^c \in \mathcal{A}$$
 
