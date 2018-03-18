@@ -34,7 +34,7 @@ A bit more detailed explanations on the Banach-Tarski paradox here: [The Banachâ
 **Definition.** 
 Given a set $\Omega$, a *$\sigma$-algebra* on $\Omega$ is a nonempty collection $\mathcal{A} \subset 2^{\Omega}$ s.t.
 1. closed under complements ($E \in \mathcal{A} \Rightarrow E^c \in \mathcal{A}$)
-2. closed under countable unions ($E_1, E_2, \ldots \in \mathcal{A} \Rightarrow \cup_{i = 1}^\infty \in \mathcal{A} )
+2. closed under countable unions ($E_1, E_2, \ldots \in \mathcal{A} \Rightarrow \cup_{i = 1}^\infty \in \mathcal{A}$)
 
 **Remark**
 
