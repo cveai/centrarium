@@ -163,8 +163,6 @@ $$P(A_1 \cap \cdots \cap A_n)
 =  P(A_1)P(A_2 \vert A_1)P(A_3\vert A_1\cap A_2)\cdots P(A_n\vert A_1 \cap \cdots \cap A_{n-1}).$$
 
 Proof. By induction.
-
-**Exercise.**
 <figure>
 <img src="/assets/pics/mm-pp/proof-chain.png" alt="Proof: The chain rule" style="width: 90%; height: 90%">
 <figcaption>
@@ -175,6 +173,9 @@ Proof. By induction.
 
 #### (PP 2.5) Partition rule, conditional measure
 
+**Definition** A *partition* of $\Omega$ is nonempty (finite or countable) collection $\\{B_i\\} \subset @^\Omega$ s.t.
+1. $\cup_i B_i = \Omega$
+2. $B_i \cap B_j = \emptyset$ if $i \neq j$
 
 
 
