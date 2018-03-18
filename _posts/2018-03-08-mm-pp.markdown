@@ -182,7 +182,7 @@ Proof. By induction.
 Proof: $A = A \cap \Omega = A \cap (\cup_i B_i) = \cup_i (A \cap B_i)$  
 $P(A) = P(\cup_i (A\cap B_i)) = \sum_i P(A \cap B_i)$
 
-
+**Definition.** If $P(B) >0$, then $Q(A) = P(A \vert B)$ defines a probability measure $Q$ (*conditional probability measure given $B$*).
 
 
 
