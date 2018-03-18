@@ -41,6 +41,7 @@ Given a set $\Omega$, a *$\sigma$-algebra* on $\Omega$ is a nonempty collection 
 2. $\emptyset \in \mathcal{A}$ ($\emptyset = \Omega^c \in \mathcal{A}$)
 3. $\mathcal{A}$ is closed under countable intersections:  
 If $E_1, E_2, \ldots \in \mathcal{A}$, then (by De Morgan's laws)
+
 $$\cap_{i=1}^\infty = \cap (E_i^c)^c = (\cup_{i=1}^\infty)^c \in \mathcal{A}$$
 
 
