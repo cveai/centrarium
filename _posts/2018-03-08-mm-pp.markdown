@@ -179,6 +179,12 @@ Proof. By induction.
 
 **Theorem (Partition rule)** $P(A) = \sum_i P(A \cap B_i)$ for any partition $\\{B_i\\}$ of $\Omega$
 
+Proof: $A = A \cap \Omega = A \cap (|caup_i B_i) = \cup_i (A \cap B_i)$  
+$P(A) = P(\cup_i (A\cap B_i)) = \sum_i P(A \cap B_i)$
+
+
+
+
 
 ---
 
