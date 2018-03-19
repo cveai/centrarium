@@ -216,6 +216,14 @@ $$\min_y \sum_{i:x_{ij}>s} (y-y_i)^2 + \min_y \sum_{i:x_{ij}\le s} (y-y_i)^2$$
 
 $$\min_y \sum_{i:x_{ij}>s, x_i \in R} (y-y_i)^2 + \min_y \sum_{i:x_{ij}\le s, x_i \in R} (y-y_i)^2$$
 
+<figure>
+<img src="/assets/pics/mm-ml/grow-regression.png" alt="Growing regression tree" style="width: 35%; height: 35%">
+<figcaption>Growing regression tree
+</figcaption>
+</figure>
+
+
+
 ---
 
 $\cdots$
