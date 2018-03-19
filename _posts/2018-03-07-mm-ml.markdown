@@ -218,11 +218,16 @@ $$\min_y \sum_{i:x_{ij}>s, x_i \in R} (y-y_i)^2 + \min_y \sum_{i:x_{ij}\le s, x_
 
 <figure>
 <img src="/assets/pics/mm-ml/grow-regression.png" alt="Growing regression tree" style="width: 35%; height: 35%">
-<figcaption>Growing regression tree
+<figcaption>Growing a regression tree
 </figcaption>
 </figure>
 
+Stop options:
+1. Stop when only one point in $R$.
+2. Only consider splits resulting in regions with $\ge m$ (say $m=5$) points per region.
 
+Typically people use "pruning" strategy.  
+We're gonna take "random forest" approach instead.
 
 ---
 
