@@ -236,7 +236,7 @@ We're gonna take "random forest" approach instead.
 Datat set: $(x_1, y_1), \ldots, (x_n, y_n)$
 
 $E_R =$ fraction of points $x_i \in R$ misclassified by a majority vote in $R$ 
-$= \min_y \frac{1}{N}\sum_{i: x_i \in R} I(y_i\neq y)$, $N_R = \#\{{i : x_i \in R\}}$
+$= \min_y \frac{1}{N}\sum_{i: x_i \in R} I(y_i\neq y)$, $N_R =$ #$\{{i : x_i \in R\}}$
 
 
 
