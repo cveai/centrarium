@@ -210,7 +210,7 @@ The process defines a function <span style="color:green">$y = f(x)$</span> that 
 
 First split: Choose $j$ and $s$ to minimize the following
 
-$$\min_y \sum_{i:x_{ij}>s} + \min_y \sum_{i:x_{ij}>s}$$
+$$\min_y \sum_{i:x_{ij}>s} (y-y_i)^2 + \min_y \sum_{i:x_{ij}\le s} (y-y_i)^2$$
 
 ---
 
