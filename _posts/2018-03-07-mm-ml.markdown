@@ -208,11 +208,13 @@ The process defines a function <span style="color:green">$y = f(x)$</span> that 
 
 "Greedy" approach.
 
-*First split.* Choose $j$ and $s$ to minimize the following:
+**First split.** Choose $j$ and $s$ to minimize the following:
 
 $$\min_y \sum_{i:x_{ij}>s} (y-y_i)^2 + \min_y \sum_{i:x_{ij}\le s} (y-y_i)^2$$
 
-*Splitting region $R$.* 
+**Splitting region $R$.**  Choose $j$ and $s$ to minimize the following:
+
+$$\min_y \sum_{i:x_{ij}>s, x_i \in R} (y-y_i)^2 + \min_y \sum_{i:x_{ij}\le s, x_i \in R} (y-y_i)^2$$
 
 ---
 
