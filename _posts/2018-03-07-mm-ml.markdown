@@ -204,6 +204,16 @@ The process defines a function <span style="color:green">$y = f(x)$</span> that 
 
 ---
 
+#### (ML 2.3) Growing a regression tree (CART)
+
+"Greedy" approach.
+
+First split: Choose $j$ and $s$ to minimize the following
+
+$$\min_y \sum_{i:x_{ij}>s} + \min_y \sum_{i:x_{ij}>s}$$
+
+---
+
 $\cdots$
 
 ---
