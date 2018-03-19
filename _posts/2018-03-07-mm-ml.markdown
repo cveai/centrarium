@@ -231,6 +231,13 @@ We're gonna take "random forest" approach instead.
 
 ---
 
+#### (ML 2.4) Growing a classification tree (CART)
+
+Datat set: $(x_1, y_1), \ldots, (x_n, y_n)$
+
+$E_R = {\rm  fraction of points $x_i \in R$ misclassified by a majority vote in}$ $R$
+---
+
 $\cdots$
 
 ---
