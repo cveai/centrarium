@@ -222,12 +222,50 @@ $$\min_y \sum_{i:x_{ij}>s, x_i \in R} (y-y_i)^2 + \min_y \sum_{i:x_{ij}\le s, x_
 </figcaption>
 </figure>
 
-Stop options:
+Stopping criteria::
 1. Stop when only one point in $R$.
 2. Only consider splits resulting in regions with $\ge m$ (say $m=5$) points per region.
 
 Typically, people use "pruning" strategy.  
 We're gonna take "random forest" approach instead.
+
+---
+
+#### (ML 2.4) Growing a classification tree (CART)
+
+Datat set: $(x_1, y_1), \ldots, (x_n, y_n)$
+
+$E_R =$ fraction of points $x_i \in R$ misclassified by a majority vote in $R$  
+$\, \, \, \, \, \, \, \, $ $= \min_y \frac{1}{N}\sum_{i: x_i \in R} I(y_i\neq y)$, $N_R = \\{i : x_i \in R\\}$
+
+**First split.** Choose $j$ and $s$ to minimize the following:
+
+$$N_{R_1(j,s)}E_{R_1(j,s)} + N_{R_1'(j,s)}E_{R_1'(j,s)}$$
+
+where $R_1(j, s) = \\{x_i : x_{ij} >s\\}, R_1'(j, s) = \\{x_i : x_{ij} \le s\\}$
+
+Let $R_2 = R_1(j, s), R_3 = R_1'(j,s)$
+
+**Splitting $R_k$.** Choose $j$ and $s$ to minimize the following:
+
+$$N_{R_k(j,s)}E_{R_k(j,s)} + N_{R_k'(j,s)}E_{R_k'(j,s)}$$
+
+where $R_k(j, s) = \\{x_i \in R_k : x_{ij} >s\\}, R_k'(j, s) = \\{x_i \in R_k : x_{ij} \le s\\}$
+
+<figure>
+<img src="/assets/pics/mm-ml/grow-classification.png" alt="Growing classification tree" style="width: 35%; height: 35%">
+<figcaption>Growing a classification tree
+</figcaption>
+</figure>
+
+Stopping criteria:
+1. Stop when only one point in $R$.
+2. Only consider splits resulting in regions with $\ge m$ (say $m=5$) points per region.
+3. Stop when $R_k$ contains only points of one class.
+
+Use when minimizing?
+1. Entropy
+2. Gini index
 
 ---
 
