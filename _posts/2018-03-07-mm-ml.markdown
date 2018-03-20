@@ -261,7 +261,7 @@ where $R_k(j, s) = \\{x_i \in R_k : x_{ij} >s\\}, R_k'(j, s) = \\{x_i \in R_k : 
 Stopping criteria:
 1. Stop when only one point in $R$.
 2. Only consider splits resulting in regions with $\ge m$ (say $m=5$) points per region.
-3. Stopt when $R_k$ contains only points of one class.
+3. Stop when $R_k$ contains only points of one class.
 
 Use when minimizing?
 1. Entropy
