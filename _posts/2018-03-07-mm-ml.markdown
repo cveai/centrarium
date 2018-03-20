@@ -244,11 +244,13 @@ $$N_{R_1(j,s)}E_{R_1(j,s)} + N_{R_1'(j,s)}E_{R_1'(j,s)}$$
 
 where $R_1(j, s) = \\{x_i : x_{ij} >s\\}, R_1'(j, s) = \\{x_i : x_{ij} \le s\\}$
 
+Let $R_2 = R_1(j, s), R_3 = R_1'(j,s)$
+
 **Splitting $R_k$.** Choose $j$ and $s$ to minimize the following:
 
 $$N_{R_k(j,s)}E_{R_k(j,s)} + N_{R_k'(j,s)}E_{R_k'(j,s)}$$
 
-where $R_2 = R_1(j, s), R_3 = R_q'(j,s)$
+
 
 
 ---
