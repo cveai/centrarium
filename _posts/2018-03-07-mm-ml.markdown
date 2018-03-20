@@ -250,6 +250,8 @@ Let $R_2 = R_1(j, s), R_3 = R_1'(j,s)$
 
 $$N_{R_k(j,s)}E_{R_k(j,s)} + N_{R_k'(j,s)}E_{R_k'(j,s)}$$
 
+where $R_k(j, s) = \\{x_i \in R_k : x_{ij} >s\\}, R_k'(j, s) = \\{x_i \in R_k : x_{ij} \le s\\}$
+
 
 
 
