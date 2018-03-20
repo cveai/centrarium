@@ -240,7 +240,15 @@ $= \min_y \frac{1}{N}\sum_{i: x_i \in R} I(y_i\neq y)$, $N_R = \\{i : x_i \in R\
 
 **First split.** Choose $j$ and $s$ to minimize the following:
 
-$$N_{R(j,s)}E_{R(j,s)} + N_{R'(j,s)}E_{R'(j,s)}$$
+$$N_{R_1(j,s)}E_{R_1(j,s)} + N_{R_1'(j,s)}E_{R_1'(j,s)}$$
+
+where $R_1(j, s) = \\{x_i : x_{ij} >s\\}, R_1'(j, s) = \\{x_i : x_{ij} \le s\\}$
+
+**Splitting $R_k$.** Choose $j$ and $s$ to minimize the following:
+
+$$N_{R_k(j,s)}E_{R_k(j,s)} + N_{R_k'(j,s)}E_{R_k'(j,s)}$$
+
+where $R_2 = R_1(j, s), R_3 = R_q'(j,s)$
 
 
 ---
