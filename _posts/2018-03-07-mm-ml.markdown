@@ -222,7 +222,7 @@ $$\min_y \sum_{i:x_{ij}>s, x_i \in R} (y-y_i)^2 + \min_y \sum_{i:x_{ij}\le s, x_
 </figcaption>
 </figure>
 
-Stop options:
+Stopping criteria::
 1. Stop when only one point in $R$.
 2. Only consider splits resulting in regions with $\ge m$ (say $m=5$) points per region.
 
@@ -258,7 +258,7 @@ where $R_k(j, s) = \\{x_i \in R_k : x_{ij} >s\\}, R_k'(j, s) = \\{x_i \in R_k : 
 </figcaption>
 </figure>
 
-Stop options:
+Stopping criteria:
 1. Stop when only one point in $R$.
 2. Only consider splits resulting in regions with $\ge m$ (say $m=5$) points per region.
 3. Stopt when $R_k$ contains only points of one class.
