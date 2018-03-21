@@ -269,6 +269,45 @@ Use when minimizing?
 
 ---
 
+#### (ML 2.5) Generalizations for trees (CART)
+
+**Imputiry measures for classification:**
+1. Misclassification rate $E_R$
+2. Entropy
+
+$$H_R = - \sum_{y \in \mathscr{Y}}p_R(y) \log p_R(y)$$
+
+where $\mathscr{Y}$ is a finite set of (possible) classes and $p_R$ empirical distribution.
+
+The idea of entropy : want to choose splits in which each of the regions are as homogenous as possible.
+
+3. "Gini index" 
+
+$$H_R = \sum_{y \in \mathscr{Y}}p_R(y) (1 - p_R(y))$$
+
+**Remark**
+1. $H_R$ and $G_R$ tend to work better than $E_R$.
+2. $G_R$ has some nice analytical properties that makes it easier to work with.
+
+HTR ([The Elements of 
+Statistical Learning](https://web.stanford.edu/~hastie/ElemStatLearn/) by [Trevor Hastie](http://www-stat.stanford.edu/~hastie/), [Robert Tibshirani](http://statweb.stanford.edu/~tibs/), [Jerome Friedman](http://statweb.stanford.edu/~jhf/))
+
+* Categorical predictors
+* Loss matrix
+* Missing values
+* Linear combinations
+* Instability
+
+---
+
+#### (ML 2.6) Bootstrap aggregation (Bagging)
+
+A fantastic technique for taking a classifier and making it better (By Breiman)
+
+
+
+---
+
 $\cdots$
 
 ---
