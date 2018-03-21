@@ -289,8 +289,8 @@ $$H_R = \sum_{y \in \mathscr{Y}}p_R(y) (1 - p_R(y))$$
 1. $H_R$ and $G_R$ tend to work better than $E_R$.
 2. $G_R$ has some nice analytical properties that makes it easier to work with.
 
-HTR [The Elements of 
-Statistical Learning](https://web.stanford.edu/~hastie/ElemStatLearn/) by [Trevor Hastie](http://www-stat.stanford.edu/~hastie/), [Robert Tibshirani](http://statweb.stanford.edu/~tibs/), [Jerome Friedman](http://statweb.stanford.edu/~jhf/)
+HTR ([The Elements of 
+Statistical Learning](https://web.stanford.edu/~hastie/ElemStatLearn/) by [Trevor Hastie](http://www-stat.stanford.edu/~hastie/), [Robert Tibshirani](http://statweb.stanford.edu/~tibs/), [Jerome Friedman](http://statweb.stanford.edu/~jhf/))
 
 * Categorical predictors
 * Loss matrix
