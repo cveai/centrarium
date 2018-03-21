@@ -272,15 +272,23 @@ Use when minimizing?
 #### (ML 2.5) Generalizations for trees (CART)
 
 **Imputiry measures:**
-1. $E_R$: misclassification rate
-2. $H_R$: entropy
+1. $E_R$  misclassification rate
+2. $H_R$ entropy
 
 $$H_R = - \sum_{y \in \mathscr{Y}}p_R(y) \log p_R(y)$$
 
+3. $G_R$ "Gini index" 
 
-[The Elements of 
+$$H_R = \sum_{y \in \mathscr{Y}}p_R(y) (1 - p_R(y))$$
+
+HTR [The Elements of 
 Statistical Learning](https://web.stanford.edu/~hastie/ElemStatLearn/) by [Trevor Hastie](http://www-stat.stanford.edu/~hastie/), [Robert Tibshirani](http://statweb.stanford.edu/~tibs/), [Jerome Friedman](http://statweb.stanford.edu/~jhf/)
 
+* Categorical predictors
+* Loss matrix
+* Missing values
+* Linear combinations
+* Instability
 
 ---
 
