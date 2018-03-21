@@ -271,11 +271,24 @@ Use when minimizing?
 
 #### (ML 2.5) Generalizations for trees (CART)
 
+**Imputiry measures:**
+1. $E_R$: misclassification rate
+2. $H_R$: entropy
+
+$$H_R = - \sum_{y \in \mathscr{Y}}p_R(y) \log p_R(y)$$
 
 
 [The Elements of 
-Statistical Learning](https://web.stanford.edu/~hastie/ElemStatLearn/) by [Trevor Hastie](http://www-stat.stanford.edu/~hastie/) [Robert Tibshirani](http://statweb.stanford.edu/~tibs/) [Jerome Friedman](http://statweb.stanford.edu/~jhf/)
+Statistical Learning](https://web.stanford.edu/~hastie/ElemStatLearn/) by [Trevor Hastie](http://www-stat.stanford.edu/~hastie/), [Robert Tibshirani](http://statweb.stanford.edu/~tibs/), [Jerome Friedman](http://statweb.stanford.edu/~jhf/)
 
+
+---
+
+#### (ML 2.6) Bootstrap aggregation (Bagging)
+
+A fantastic technique for taking a classifier and making it better (By Breiman)
+
+$$
 
 ---
 
