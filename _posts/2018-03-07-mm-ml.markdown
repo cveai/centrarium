@@ -279,7 +279,7 @@ $$H_R = - \sum_{y \in \mathscr{Y}}p_R(y) \log p_R(y)$$
 
 where $\mathscr{Y}$ is a finite set of (possible) classes and $p_R$ empirical distribution.
 
-The idea of entropy: want to choose splits in which each of the resgions as homogenous as possible.
+The idea of entropy: want to choose splits in which each of the regions are as homogenous as possible.
 
 3. "Gini index" 
 
