@@ -269,6 +269,16 @@ Use when minimizing?
 
 ---
 
+#### (ML 2.5) Generalizations for trees (CART)
+
+
+
+[The Elements of 
+Statistical Learning](https://web.stanford.edu/~hastie/ElemStatLearn/) by [Trevor Hastie](http://www-stat.stanford.edu/~hastie/) [Robert Tibshirani](http://statweb.stanford.edu/~tibs/) [Jerome Friedman](http://statweb.stanford.edu/~jhf/)
+
+
+---
+
 $\cdots$
 
 ---
