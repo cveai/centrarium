@@ -304,7 +304,15 @@ Statistical Learning](https://web.stanford.edu/~hastie/ElemStatLearn/) by [Trevo
 
 A fantastic technique for taking a classifier and making it better (By Breiman)
 
+Regression exmaple
 
+$(X_1^{(1)}, Y_1^{(1)}), \ldots, (X_n^{(1)}, Y_n^{(1)})$ $\sim P$ iid  
+
+$\cdots$
+
+$(X_1^{(m)}, Y_1^{(m)}), \ldots, (X_n^{(m)}, Y_n^{(m)})$
+
+Given a new point $x$, predict $Y$ (<span style="color:red">f(x) = y$</span>$)
 
 ---
 
