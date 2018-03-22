@@ -358,7 +358,11 @@ $$(X_i^{(k)}, Y_i^{(k)}) \sim$$ Uniform$(D)$ iid.
 #### (ML 2.7) Bagging for classification
 
 Two essential approaches:
-1. 
+1. **Majority vote.** For each data set construct a classifier to get a sequence of classifiers $C_1, \ldots, C_n$. Then given a new point $x$, look at the class that each $C_i$ predicted for $x$ and take majority vote.
+2. **Average estimated probabilities.** Th classifiers define $p_x^{(1)}, \ldots, p_x^{(n)}$, (estimated) PMFs on $\mathscr{Y}$. We define
+
+
+$$\hat{p}_x(y) = \frac{1}{m}\sum_{i=1}$$
 
 
 
