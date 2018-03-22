@@ -304,7 +304,7 @@ Statistical Learning](https://web.stanford.edu/~hastie/ElemStatLearn/) by [Trevo
 
 A fantastic technique for taking a classifier and making it better (By Breiman)
 
-Regression exmaple
+**Bagging for Regression.**
 
 $(X_1^{(1)}, Y_1^{(1)}), \ldots, (X_n^{(1)}, Y_n^{(1)})$ $\sim P$ iid  
 
@@ -345,7 +345,7 @@ E((Z-y)^2) &= E((Z-EZ)^2) = \sigma^2(Z) = \sigma^2(\frac{1}{m}\sum Y^{(i)}) \\
 
 Because we just have one data set, we approximae $P$ by the empirical distribution $\hat{P}$ to draw bootstrap samples
 
-$$(X_i^((k), Y^{(k)}) \sim$$ Uniform$(D)$ iid. 
+$$(X_i^{(k)}, Y_i^{(k)}) \sim$$ Uniform$(D)$ iid. 
 
 ---
 
