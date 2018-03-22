@@ -308,7 +308,7 @@ Regression exmaple
 
 $(X_1^{(1)}, Y_1^{(1)}), \ldots, (X_n^{(1)}, Y_n^{(1)})$ $\sim P$ iid  
 
-Given a new point $x$, predict $<span style="color:pink">$Y^{(1)}$</span>$ (<span style="color:red">$f(x) = y$</span>)
+Given a new point $x$, predict $<span style="color:orange">$Y^{(1)}$</span>$ (<span style="color:red">$f(x) = y$</span>)
 
 From the given sample, uniformly sample with replacement to obtain:
 
