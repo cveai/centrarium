@@ -320,7 +320,7 @@ $(X_1^{(m)}, Y_1^{(m)}), \ldots, (X_n^{(m)}, Y_n^{(m)})$ <span style="color:oran
 
 Suppose each esimiator $Y^{(i)}$ has teh correct mean, i.e., 
 
-$$EY^{(i)} = y = f(x)$ for each $i \\{1, \ldots, m\\}$$
+$EY^{(i)} = y = f(x)$ for each $i \\{1, \ldots, m\\}$
 
 In other words, they are "unbiased estimators."
 
