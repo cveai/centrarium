@@ -501,6 +501,20 @@ $p(D \vert \theta) := p(x_1, \ldots, x_n \vert \theta) = \prod_{i = 1}^n p(x_i \
 
 ---
 
+#### (ML 15.2) Newton's method (for optimization) in multiple dimensions
+
+Idea: "Make a 2nd order approximation and minimize tha."
+
+Let $f: \mathbb{R}^n \rightarrow \mathbb{R}$ be (sufficiently) smooth.
+
+**Taylor's theorem:** for $x$ near a, with $g = \nabla f(a)$ and $H = \nabla^2f(a) = \left(\frac{\partial^2}{\partial x_i \partial x_j}f(a)\right)_{ij}$
+
+$$f(x) \approx f(a) + g^T(x-a) +\frac{1}{2}(x-a)^TH(x-a)$$
+
+
+
+---
+
 #### (ML 17.1) Sampling methods - why sampling, pros and cons
 
 Why sampling?
