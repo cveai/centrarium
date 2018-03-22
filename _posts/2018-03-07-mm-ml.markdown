@@ -326,11 +326,11 @@ In other words, they are "unbiased estimators."
 
 Now we measure our error according to the squared distance from the true value $(Y-y)^2$, which is called a *loss function*.
 
-Then the *risk* is given by
+Then the *risk* (i.e. expected loss) is given by
 
 $$E((Y-y)^2) = E((Y-EY)^2) = \sigma^2(y)$$
 
-If we define a new RV (this is whee the *aggregation* comes in!)
+If we define a new RV (this is where the *aggregation* comes in!)
 
 $$Z = \frac{1}{m}\sum_{i=1}^m Y^{(i)}$$
 
@@ -338,7 +338,10 @@ we get $EZ = \frac{1}{m}\sum y = y$. ($Z$ is also an unbiased estimator!)
 
 Then
 
-$$E()$$
+$$\begin{aligned}
+E((Z-y)^2) &= E((Z-EZ)^2) = \sigma^2(Z) = \sigma^2(\frac{1}{m}\sum Y^{(i)}) \\
+           &= (\frac{1}{m})^2\sigma^2(\sum Y^{(i)}) = \frac{1}{m^2}\sum\sigma^2(Y^{(i)}) = \frac{1}{m}\sigma^2(Y)
+\end{aligned}$$
 
 ---
 
