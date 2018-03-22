@@ -375,8 +375,8 @@ Now let's see what we can do by dropping the two assumtions <span style="color:r
 Assume we have a new point $x$ and a RV $W$ (true value).
 
 <figure>
-<img src="/assets/pics/mm-ml/bagging-classification.png" alt="Bagging for classification" style="width: 70%; height: 70%">
-<figcaption>Bagging for classification
+<img src="/assets/pics/mm-ml/bagging-classification.png" alt="Dropping assumtions" style="width: 70%; height: 70%">
+<figcaption>Dropping assumtions
 </figcaption>
 </figure>
 
