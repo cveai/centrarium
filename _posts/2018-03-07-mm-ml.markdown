@@ -349,6 +349,15 @@ $$(X_i^{(k)}, Y_i^{(k)}) \sim$$ Uniform$(D)$ iid.
 
 ---
 
+#### (ML 2.7) Bagging for classification
+
+Two 
+
+
+
+
+---
+
 $\cdots$
 
 ---
