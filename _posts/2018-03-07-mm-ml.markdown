@@ -480,7 +480,7 @@ $p(D \vert \theta) := p(x_1, \ldots, x_n \vert \theta) = \prod_{i = 1}^n p(x_i \
 * zero-finding: $x_{t+1} = x_t - \frac{f(x_t)}{f'(x_t)}$
 
 <figure>
-<img src="/assets/pics/mm-ml/zero-finding.png" alt="zero-finding" style="width: 40%; height: 40%">
+<img src="/assets/pics/mm-ml/zero-finding.png" alt="zero-finding" style="width: 35%; height: 35%">
 <figcaption>
 </figcaption>
 </figure>
