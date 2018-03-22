@@ -469,6 +469,14 @@ $p(D \vert \theta) := p(x_1, \ldots, x_n \vert \theta) = \prod_{i = 1}^n p(x_i \
 
 ---
 
+#### (ML 15.1) Newton's method (for optimization) - intuition
+
+2nd order method!
+
+(Gradient descent $x_{t+1} = x_t - \alpha_t \grad f(x_t)$)
+
+---
+
 #### (ML 17.1) Sampling methods - why sampling, pros and cons
 
 Why sampling?
