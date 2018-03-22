@@ -372,7 +372,13 @@ We classify $x$ as the most likely class according to this estimated probability
 **Genralization**
 Now let's see what we can do by dropping the two assumtions <span style="color:red">$f(x)=y$</span> and <span style="color:red">"unbiasedness of classifiers"</span> and only keeping the <span style="color:blue">iid</span> assumtion.
 
+Assume we have a new point $x$ and a RV $W$ (true value).
 
+<figure>
+<img src="/assets/pics/mm-ml/bagging-classification.png" alt="Bagging for classification" style="width: 35%; height: 35%">
+<figcaption>Bagging for classification
+</figcaption>
+</figure>
 
 
 
