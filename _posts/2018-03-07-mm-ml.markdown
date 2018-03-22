@@ -306,7 +306,7 @@ A fantastic technique for taking a classifier and making it better (By Breiman)
 
 **Bagging for Regression.**
 
-$(X_1^{(1)}, Y_1^{(1)}), \ldots, (X_n^{(1)}, Y_n^{(1)})$ $\sim P$ iid  
+$D = \\{ (X_1^{(1)}, Y_1^{(1)}), \ldots, (X_n^{(1)}, Y_n^{(1)}) \\}$ $\sim P$ iid  
 
 Given a new point $x$, predict <span style="color:orange">$Y^{(1)}$</span> (<span style="color:red">$f(x) = y$</span>)
 
@@ -317,6 +317,12 @@ $(X_1^{(2)}, Y_1^{(2)}), \ldots, (X_n^{(2)}, Y_n^{(2)})$ <span style="color:oran
 $\cdots$
 
 $(X_1^{(m)}, Y_1^{(m)}), \ldots, (X_n^{(m)}, Y_n^{(m)})$ <span style="color:orange">$Y^{(m)}$</span>
+
+<figure>
+<img src="/assets/pics/mm-ml/bagging-regression.png" alt="Growing classification tree" style="width: 35%; height: 35%">
+<figcaption>Growing a classification tree
+</figcaption>
+</figure>
 
 Suppose each esimiator $Y^{(i)}$ has teh correct mean, i.e., 
 
@@ -351,7 +357,8 @@ $$(X_i^{(k)}, Y_i^{(k)}) \sim$$ Uniform$(D)$ iid.
 
 #### (ML 2.7) Bagging for classification
 
-Two 
+Two essential approaches:
+1. 
 
 
 
