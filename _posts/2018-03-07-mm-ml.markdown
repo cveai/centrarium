@@ -318,11 +318,27 @@ $\cdots$
 
 $(X_1^{(m)}, Y_1^{(m)}), \ldots, (X_n^{(m)}, Y_n^{(m)})$ <span style="color:orange">$Y^{(m)}$</span>
 
-Now suppose each esimiator $Y^{(i)}$ has teh correct mean, i.e., 
+Suppose each esimiator $Y^{(i)}$ has teh correct mean, i.e., 
 
 $$EY^{(i)} = y = f(x)$ for each $i \\{1, \ldots, m\\}$$
 
 In other words, they are "unbiased estimators."
+
+Now we measure our error according to the squared distance from the true value $(Y-y)^2$, which is called a *loss function*.
+
+Then the *risk* is given by
+
+$$E((Y-y)^2) = E((Y-EY)^2) = \sigma^2(y)$$
+
+If we define a new RV (this is whee the *aggregation* comes in!)
+
+$$Z = \frac{1}{m}\sum_{i=1}^m Y^{(i)}$$
+
+we get $EZ = \frac{1}{m}\sum y = y$. ($Z$ is also an unbiased estimator!)
+
+Then
+
+$$E()$$
 
 ---
 
