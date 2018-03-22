@@ -343,6 +343,10 @@ E((Z-y)^2) &= E((Z-EZ)^2) = \sigma^2(Z) = \sigma^2(\frac{1}{m}\sum Y^{(i)}) \\
            &= (\frac{1}{m})^2\sigma^2(\sum Y^{(i)}) = \frac{1}{m^2}\sum\sigma^2(Y^{(i)}) = \frac{1}{m}\sigma^2(Y)
 \end{aligned}$$
 
+Because we just have one data set, we approximae $P$ by the empirical distribution $\hat{P}$ to draw bootstrap samples
+
+$$(X_i^((k), Y^{(k)}) \sim$$ Uniform$(D)$ iid. 
+
 ---
 
 $\cdots$
