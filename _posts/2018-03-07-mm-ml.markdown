@@ -312,11 +312,11 @@ Given a new point $x$, predict <span style="color:orange">$Y^{(1)}$</span> (<spa
 
 From the given sample, uniformly sample with replacement to obtain:
 
-$(X_1^{(2)}, Y_1^{(2)}), \ldots, (X_n^{(2)}, Y_n^{(2)})$ $Y^{(2)}$
+$(X_1^{(2)}, Y_1^{(2)}), \ldots, (X_n^{(2)}, Y_n^{(2)})$ <span style="color:orange">$Y^{(2)}$</span>
 
 $\cdots$
 
-$(X_1^{(m)}, Y_1^{(m)}), \ldots, (X_n^{(m)}, Y_n^{(m)})$
+$(X_1^{(m)}, Y_1^{(m)}), \ldots, (X_n^{(m)}, Y_n^{(m)})$ <span style="color:orange">$Y^{(m)}$</span>
 
 
 
