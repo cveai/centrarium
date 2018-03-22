@@ -61,6 +61,18 @@ FLOP counts
 
 ---
 
+#### (Lecture 10) Unconstrained minimization
+
+
+
+**Newton step**
+
+[Newton's method](https://youtu.be/U0xlKuFqCuI) by G. Strang
+[(ML 15.1) Newton's method (for optimization) - intuition](https://youtu.be/28BMpgxn_Ec)
+[(ML 15.2) Newton's method (for optimization) in multiple dimensions](https://youtu.be/42zJ5xrdOqo)
+
+---
+
 $$ $$
 
 *To be added..*
