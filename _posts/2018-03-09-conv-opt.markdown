@@ -118,17 +118,17 @@ $$f(x) -\inf_y \hat{f}(y) =\frac{1}{2}\lambda(x)^2$$
 
 * equal to the norm of the Newton step in the quadratic Hessian form:
 
-$$\lmbda(x) = (\Delta x_{\rm nt}^T \nabla^2 f(x) \Delta x_{\rm nt})^{\frac{1}{2}}$$
+$$\lambda(x) = (\Delta x_{\rm nt}^T \nabla^2 f(x) \Delta x_{\rm nt})^{\frac{1}{2}}$$
 
 * directional derivative in the direction:
 
-$$\nabla f(x)^T \Delta x_{rm nt} = - \lambda(x)^2$$
+$$\nabla f(x)^T \Delta x_{\rm nt} = - \lambda(x)^2$$
 
 * *affine invariant!* (unlike the gradient $\Vert \nabla f(x) \Vert_2$)
 
 Algorithm (Newton's method)
 
-<span style="color:red">given</span> a starting point $x \in \dom f$ and tolerance $\epsilon >0$  
+<span style="color:red">given</span> a starting point $x \in {\rm dom} f$ and tolerance $\epsilon >0$  
 <span style="color:red">repeat</span> 
 $ \,\,\,\,$ 1. compute the Newton step and decrement
 
