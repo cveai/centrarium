@@ -76,25 +76,32 @@ FLOP counts
 [(ML 15.2) Newton's method (for optimization) in multiple dimensions](https://youtu.be/42zJ5xrdOqo)  
 
 Newton step: $\Delta x_{\rm nt} = - \nabla f(x)^{-1}\nabla f(x)$
-* $x + \Delta x_{\rm nt}$ minimizes 2nd order approximation: 
+* $x + \Delta x_{\rm nt}$ minimizes 2nd order approximation (by a quadratic model): 
 
 $$\hat{f}(x + v) = f(x) + \nabla f(x)^T v +\frac{1}{2}v^T \nabla^2f(x)v$$
 
 <figure>
 <img src="/assets/pics/conv-opt/nt1.png" alt="Newton step interpretation 1" style="width: 50%; height: 50%">
-<figcaption>Newton step interpretation 1
+<figcaption>
 </figcaption>
 </figure>
 
-* $x + \Delta x_{\rm nt}$  solves linearized optimality condition:
+* $x + \Delta x_{\rm nt}$ solves linearized optimality condition:
 
 $$\nabla f(x + v) \approx \nabla\hat{f}(x = v) = \nabla f(x) + \nabla^2 f(x)v = 0$$
 
 <figure>
 <img src="/assets/pics/conv-opt/nt1.png" alt="Newton step interpretation 2" style="width: 50%; height: 50%">
-<figcaption>Newton step interpretation 2
+<figcaption>
 </figcaption>
 </figure>
+
+* $x + \Delta x_{\rm nt}$ is steeptest ditection at $x$ in local Hessian norm:
+
+$$\Vert u \Vert_{\nabla^2f(x)} = (u^T \nabla^2 f(x)u)^{\frac{1}{2}}$$
+
+
+
 
 ---
 
