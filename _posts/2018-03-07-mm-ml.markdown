@@ -518,7 +518,7 @@ f(x) &\approx f(a) + g^T(x-a) +\frac{1}{2}(x-a)^TH(x-a) \\
 \end{aligned}$$
 
 <figure>
-<img src="/assets/pics/mm-ml/newton.png" alt="Newton's method" style="width: 60%; height: 60%">
+<img src="/assets/pics/mm-ml/newton.png" alt="Newton's method" style="width: 35%; height: 35%">
 <figcaption> 
 </figcaption>
 </figure>
