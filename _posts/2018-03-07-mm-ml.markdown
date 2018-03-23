@@ -478,13 +478,25 @@ $p(D \vert \theta) := p(x_1, \ldots, x_n \vert \theta) = \prod_{i = 1}^n p(x_i \
 
 Almost trivial identity but extremely handy.
 
-**Definition** Let $D$ be random data. The MSE of an estimator $\hat{\theta} = f(D)$ for $\theta$ is
+**Definition.** Let $D$ be random data. The MSE of an estimator $\hat{\theta} = f(D)$ for $\theta$ is
 
 $${\rm MSE}(\hat(\theta) = E((hat(\theta)- \theta)\vert )\theta$$
 
+Put $\vert \theta$ emphasizing we're not averagning over $\theta$ here  (we don't have a distribution over $\theta$).
+We're just averaging over the data. 
 
+MSE$\theta$ is nothing but the risk $R(\theta, f)$ under square loss, i.e., when the loss function is the square of the deifference.
 
+**Recall.** bias$(\hat{\theta}) = E(\theta) -\theta$.
 
+**Proposition.** MSE$(\theta) = bias(\hat{\theta})^2 + {\rm var}(\hat{\theta})$
+
+Proof:
+<figure>
+<img src="/assets/pics/mm-ml/proof-bias-variance.png" alt="Bias-variance" style="width: 35%; height: 35%">
+<figcaption>
+</figcaption>
+</figure>
 
 ---
 
