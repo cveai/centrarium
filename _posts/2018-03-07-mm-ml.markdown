@@ -480,7 +480,7 @@ Almost trivial identity but extremely handy.
 
 **Definition.** Let $D$ be random data. The MSE of an estimator $\hat{\theta} = f(D)$ for $\theta$ is
 
-$${\rm MSE}(\hat{\theta}) = E((\hat(\theta)- \theta)\vert \theta)$$
+$${\rm MSE}(\hat{\theta}) = E((\hat{\theta}) - \theta)\vert \theta)$$
 
 Put $\vert \theta$ emphasizing we're not averagning over $\theta$ here  (we don't have a distribution over $\theta$).
 We're just averaging over the data. 
