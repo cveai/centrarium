@@ -75,8 +75,26 @@ FLOP counts
 [(ML 15.1) Newton's method (for optimization) - intuition](https://youtu.be/28BMpgxn_Ec)  
 [(ML 15.2) Newton's method (for optimization) in multiple dimensions](https://youtu.be/42zJ5xrdOqo)  
 
-Newton step: $\delta x_{\rm nt} = - \nabla f(x)^{-1}\nabla f(x)$
+Newton step: $\Delta x_{\rm nt} = - \nabla f(x)^{-1}\nabla f(x)$
+* $x + \Delta x_{\rm nt}$ minimizes 2nd order approximation: 
 
+$$\hat{f}(x + v) = f(x) + \nablaf(x)^T v +\frac{1}{2}v^T \nabla^2f(x)v$$
+
+<figure>
+<img src="/assets/pics/conv-opt/nt1.png" alt="Newton step interpretation 1" style="width: 80%; height: 80%">
+<figcaption>Newton step interpretation 1
+</figcaption>
+</figure>
+
+* $x + \Delta x_{\rm nt}$  solves linearized optimality condition:
+
+$$\nabla f(x + v) \approx \nabla\hat{f}(x = v) = \nabla f(x) + \nabla^2 f(x)v = 0$$
+
+<figure>
+<img src="/assets/pics/conv-opt/nt1.png" alt="Newton step interpretation 2" style="width: 80%; height: 80%">
+<figcaption>Newton step interpretation 2
+</figcaption>
+</figure>
 
 ---
 
