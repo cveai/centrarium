@@ -75,7 +75,7 @@ FLOP counts
 [(ML 15.1) Newton's method (for optimization) - intuition](https://youtu.be/28BMpgxn_Ec)  
 [(ML 15.2) Newton's method (for optimization) in multiple dimensions](https://youtu.be/42zJ5xrdOqo)  
 
-<span style="color:green">Newton step</span>: $\Delta x_{\rm nt} = - \nabla f(x)^{-1}\nabla f(x)$
+<span style="color:red">Newton step</span>: $\Delta x_{\rm nt} = - \nabla f(x)^{-1}\nabla f(x)$
 * $x + \Delta x_{\rm nt}$ minimizes 2nd order approximation (by a quadratic model): 
 
 $$\hat{f}(x + v) = f(x) + \nabla f(x)^T v +\frac{1}{2}v^T \nabla^2f(x)v$$
@@ -106,7 +106,7 @@ $$\Vert u \Vert_{\nabla^2f(x)} = (u^T \nabla^2 f(x)u)^{\frac{1}{2}}$$
 </figcaption> Dashed lines are contour lines of $f$, the ellipse is \\{x+v : v^T \nabla^2 f(x)v=1\\}, and the arrow shows the direction of $-\nabla f(x)$.
 </figure>
 
-Newton decrement:
+<span style="color:red">Newton decrement</span>:  a measure of *proximity* of $x$ to $x^*$
 
 ---
 
