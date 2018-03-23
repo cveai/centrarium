@@ -132,7 +132,7 @@ Algorithm (Newton's method)
 $ \,\,\,\,\,\,\,\,$ 1. compute the Newton step and decrement:  
 $ \,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,$ $\Delta x_{\rm nt} = - \nabla f(x)^{-1}\nabla f(x)$  
 $ \,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,$ $\lambda(x) = (\nabla f(x)^T \nabla^2 f(x)^{-1} \nabla f(x))^{\frac{1}{2}}$  
-$ \,\,\,\,\,\,\,\,$ 2. stopping criterion: <span style="color:blue">quit</span> if $\lambda^2/2 \le epsilon$  
+$ \,\,\,\,\,\,\,\,$ 2. stopping criterion: <span style="color:blue">quit</span> if $\lambda^2/2 \le \epsilon$  
 
 ---
 
