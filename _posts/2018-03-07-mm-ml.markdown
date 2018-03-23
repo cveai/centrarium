@@ -491,7 +491,8 @@ MSE$\theta$ is nothing but the risk $R(\theta, f)$ under square loss, i.e., when
 
 **Proposition.** MSE$(\theta) = bias(\hat{\theta})^2 + {\rm var}(\hat{\theta})$
 
-Proof:<figure>
+Proof:
+<figure>
 <img src="/assets/pics/mm-ml/proof-bias-variance.png" alt="Bias-variance" style="width: 70%; height: 70%">
 <figcaption>
 </figcaption>
@@ -504,6 +505,8 @@ $D = X
 
 "Natural" estimate of $\theta$: $\delta_1(D) = X$, bias$^2 = 0$, var$ = 1$, MSE$ =1$  
 "Silly" estimate of $\theta$: $\delta_0(D) = X$, bias$^2 = \theta^2$, var$ = 0$, MSE$ = \theta^2$
+
+cd. Shrinkage, Stein's paradox
 
 ---
 
