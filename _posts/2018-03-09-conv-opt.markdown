@@ -127,7 +127,6 @@ $$\nabla f(x)^T \Delta x_{\rm nt} = - \lambda(x)^2$$
 * *affine invariant!* (unlike the gradient $\Vert \nabla f(x) \Vert_2$)
 
 Algorithm (Newton's method)
-
 <span style="color:red">given</span> a starting point $x \in {\rm dom} f$ and tolerance $\epsilon >0$  
 <span style="color:red">repeat</span>  
 $ \,\,\,\,$ 1. compute the Newton step and decrement
