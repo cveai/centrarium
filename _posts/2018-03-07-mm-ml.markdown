@@ -524,7 +524,7 @@ f(x) &\approx f(a) + g^T(x-a) +\frac{1}{2}(x-a)^TH(x-a) \\
 </figure>
 
 Minimize: 
-$0 = \nablaq = Hx + b \Rightarrow x = -H^{-1}b = a -H^{-1}g$
+$0 = \nabla q = Hx + b \Rightarrow x = -H^{-1}b = a -H^{-1}g$
 
 Critical to check: $\nabla^2 q = H$ $\Rightarrow$ minimum if $H$ is PSD.
 
@@ -535,7 +535,7 @@ Critical to check: $\nabla^2 q = H$ $\Rightarrow$ minimum if $H$ is PSD.
 **Issues.**
 1. $H$ may fail to be PSD. (Option: switch gradient descent. A smart way to do it: Levenberg–Marquardt algorithm) 
 2. Rather than invert $H$, sove $Hy = g$ for $y$, then use $x_{t+1} = x_t - y$. (More robust approach)
-3. $x_{t+1} = x_t - \alpha_t y$. (small "step side" $\alpha>0$)
+3. $x_{t+1} = x_t - \alpha_t y$. (small "step siㅋe" $\alpha_ㅅ>0$)
 
 ---
 
