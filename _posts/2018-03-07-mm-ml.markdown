@@ -472,6 +472,22 @@ $p(D \vert \theta) := p(x_1, \ldots, x_n \vert \theta) = \prod_{i = 1}^n p(x_i \
 
 ---
 
+#### (ML 11.5) Bias-Variance decomposition (MSE $=$ bias$^2$ + var)
+
+"A super impportant port of ML is what's called <span style="color:red">model selection</span> and a tool for model selection is the bias-variance decomposition."
+
+Almost trivial identity but extremely handy.
+
+**Definition** Let $D$ be random data. The MSE of an estimator $\hat{\theta} = f(D)$ for $\theta$ is
+
+$${\rm MSE}(\hat(\theta) = E((hat(\theta)- \theta)\vert )\theta$$
+
+
+
+
+
+---
+
 #### (ML 15.1) Newton's method (for optimization) - intuition
 
 2nd order method!
