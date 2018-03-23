@@ -106,7 +106,13 @@ $$\Vert u \Vert_{\nabla^2f(x)} = (u^T \nabla^2 f(x)u)^{\frac{1}{2}}$$
 </figcaption> Dashed lines are contour lines of $f$, the ellipse is \\{x+v : v^T \nabla^2 f(x)v=1\\}, and the arrow shows the direction of $-\nabla f(x)$.
 </figure>
 
-<span style="color:red">Newton decrement</span>:  a measure of *proximity* of $x$ to $x^*$
+<span style="color:red">Newton decrement</span>:  a measure of the *proximity* of $x$ to $x^*$
+
+$$\lambda(x) = (\nabla f(x)^T \nabla^2 f(x)^{-1} \nabla f(x))^{\frac{1}{1}}$$
+
+* very good estimate, if you're close, of $f(x) - p^*$ using quaratic approximation $\hat{f}$:
+
+$$f(x) -\inf_y \hat{f}(y) =\frac{1}{2}\lambda(x)^2$$
 
 ---
 
