@@ -108,11 +108,30 @@ $$\Vert u \Vert_{\nabla^2f(x)} = (u^T \nabla^2 f(x)u)^{\frac{1}{2}}$$
 
 <span style="color:red">Newton decrement</span>:  a measure of the *proximity* of $x$ to $x^*$
 
-$$\lambda(x) = (\nabla f(x)^T \nabla^2 f(x)^{-1} \nabla f(x))^{\frac{1}{1}}$$
+$$\lambda(x) = (\nabla f(x)^T \nabla^2 f(x)^{-1} \nabla f(x))^{\frac{1}{2}}$$
 
 * very good estimate, if you're close, of $f(x) - p^*$ using quaratic approximation $\hat{f}$:
 
 $$f(x) -\inf_y \hat{f}(y) =\frac{1}{2}\lambda(x)^2$$
+
+(provides way better stopping criteria than gradient!)
+
+* equal to the norm of the Newton step in the quadratic Hessian form:
+
+$$\lmbda(x) = (\Delta x_{\rm nt}^T \nabla^2 f(x) \Delta x_{\rm nt})^{\frac{1}{2}}$$
+
+* directional derivative in the direction:
+
+$$\nabla f(x)^T \Delta x_{rm nt} = - \lambda(x)^2$$
+
+* *affine invariant!* (unlike the gradient $\Vert \nabla f(x) \Vert_2$)
+
+Algorithm (Newton's method)
+
+<span style="color:red">given</span> a starting point $x \in \dom f$ and tolerance $\epsilon >0$  
+<span style="color:red">repeat</span> 
+$ \,\,\,\,$ 1. compute the Newton step and decrement
+
 
 ---
 
