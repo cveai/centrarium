@@ -519,14 +519,14 @@ f(x) &\approx f(a) + g^T(x-a) +\frac{1}{2}(x-a)^TH(x-a) \\
 
 <figure>
 <img src="/assets/pics/mm-ml/newton.png" alt="Newton's method" style="width: 60%; height: 60%">
-<figcaption> Minimizing in 2D
+<figcaption> 
 </figcaption>
 </figure>
 
 Minimize: 
 $0 = \nablaq = Hx + b \Rightarrow x = -H^{-1}b = a -H^{-1}g$
 
-Critical to check: $\nabla^2q = H$ $\Rightarrow$ minimum if $H$ is PSD.
+Critical to check: $\nabla^2 q = H$ $\Rightarrow$ minimum if $H$ is PSD.
 
 **Algorithm.**
 * Initialize $x \in \mathbb{R}^n$
