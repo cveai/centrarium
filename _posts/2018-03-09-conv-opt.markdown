@@ -129,10 +129,10 @@ $$\nabla f(x)^T \Delta x_{\rm nt} = - \lambda(x)^2$$
 Algorithm (Newton's method)  
 <span style="color:blue">given</span> a starting point $x \in {\rm dom} (f)$ and tolerance $\epsilon >0$  
 <span style="color:blue">repeat</span>  
-$ \,\,\,\,\,\,\,\,$ 1. compute the Newton step and decrement  
+$ \,\,\,\,\,\,\,\,$ 1. compute the Newton step and decrement:  
 $ \,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,$ $\Delta x_{\rm nt} = - \nabla f(x)^{-1}\nabla f(x)$  
 $ \,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,$ $\lambda(x) = (\nabla f(x)^T \nabla^2 f(x)^{-1} \nabla f(x))^{\frac{1}{2}}$  h
-
+$ \,\,\,\,\,\,\,\,$ 2. stopping criterion: <span style="color:blue">quit</span> if $\lambda^2/2 \le epsilon$  
 
 ---
 
