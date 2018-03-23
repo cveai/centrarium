@@ -101,7 +101,7 @@ $$\nabla f(x + v) \approx \nabla\hat{f}(x = v) = \nabla f(x) + \nabla^2 f(x)v = 
 $$\Vert u \Vert_{\nabla^2f(x)} = (u^T \nabla^2 f(x)u)^{\frac{1}{2}}$$
 
 <figure>
-<img src="/assets/pics/conv-opt/nt3.png" alt="Newton step interpretation 2" style="width: 50%; height: 50%">
+<img src="/assets/pics/conv-opt/nt3.png" alt="Newton step interpretation 2" style="width: 35%; height: 35%">
 <figcaption>
 </figcaption> Dashed lines are contour lines of $f$, the ellipse is \\{x+v : v^T \nabla^2 f(x)v=1\\}, and the arrow shows the direction of $-\nabla f(x)$.
 </figure>
