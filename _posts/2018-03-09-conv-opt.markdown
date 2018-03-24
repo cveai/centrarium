@@ -63,13 +63,79 @@ FLOP counts
 
 #### (Lecture 10) Unconstrained minimization
 
+**Descent methods**
 
+**Gradient descent**
 
-**Newton step**
+**Steepest descent method**
 
-[Newton's method](https://youtu.be/U0xlKuFqCuI) by G. Strang
-[(ML 15.1) Newton's method (for optimization) - intuition](https://youtu.be/28BMpgxn_Ec)
-[(ML 15.2) Newton's method (for optimization) in multiple dimensions](https://youtu.be/42zJ5xrdOqo)
+**Newton's method**
+
+[Newton's method](https://youtu.be/U0xlKuFqCuI) by G. Strang  
+[(ML 15.1) Newton's method (for optimization) - intuition](https://youtu.be/28BMpgxn_Ec)  
+[(ML 15.2) Newton's method (for optimization) in multiple dimensions](https://youtu.be/42zJ5xrdOqo)  
+
+<span style="color:red">Newton step</span>: $\Delta x_{\rm nt} = - \nabla f(x)^{-1}\nabla f(x)$
+* $x + \Delta x_{\rm nt}$ minimizes 2nd order approximation (by a quadratic model): 
+
+$$\hat{f}(x + v) = f(x) + \nabla f(x)^T v +\frac{1}{2}v^T \nabla^2f(x)v$$
+
+<figure>
+<img src="/assets/pics/conv-opt/nt1.png" alt="Newton step interpretation 1" style="width: 50%; height: 50%">
+<figcaption>
+</figcaption>
+</figure>
+
+* $x + \Delta x_{\rm nt}$ solves linearized optimality condition:
+
+$$\nabla f(x + v) \approx \nabla\hat{f}(x = v) = \nabla f(x) + \nabla^2 f(x)v = 0$$
+
+<figure>
+<img src="/assets/pics/conv-opt/nt2.png" alt="Newton step interpretation 2" style="width: 50%; height: 50%">
+<figcaption>
+</figcaption>
+</figure>
+
+* $x + \Delta x_{\rm nt}$ is steeptest ditection at $x$ in local Hessian norm:
+
+$$\Vert u \Vert_{\nabla^2f(x)} = (u^T \nabla^2 f(x)u)^{\frac{1}{2}}$$
+
+<figure>
+<img src="/assets/pics/conv-opt/nt3.png" alt="Newton step interpretation 2" style="width: 35%; height: 35%">
+<figcaption>
+</figcaption> Dashed lines are contour lines of $f$, the ellipse is \\{x+v : v^T \nabla^2 f(x)v=1\\}, and the arrow shows the direction of $-\nabla f(x)$.
+</figure>
+
+<span style="color:red">Newton decrement</span>:  a measure of the *proximity* of $x$ to $x^*$
+
+$$\lambda(x) = (\nabla f(x)^T \nabla^2 f(x)^{-1} \nabla f(x))^{\frac{1}{2}}$$
+
+* very good estimate, if you're close, of $f(x) - p^*$ using quaratic approximation $\hat{f}$:
+
+$$f(x) -\inf_y \hat{f}(y) =\frac{1}{2}\lambda(x)^2$$
+
+(provides way better stopping criteria than gradient!)
+
+* equal to the norm of the Newton step in the quadratic Hessian form:
+
+$$\lambda(x) = (\Delta x_{\rm nt}^T \nabla^2 f(x) \Delta x_{\rm nt})^{\frac{1}{2}}$$
+
+* directional derivative in the direction:
+
+$$\nabla f(x)^T \Delta x_{\rm nt} = - \lambda(x)^2$$
+
+* *affine invariant!* (unlike the gradient $\Vert \nabla f(x) \Vert_2$)
+
+Algorithm (Newton's method)  
+<span style="color:blue">given</span> a starting point $x \in {\rm dom} (f)$ and tolerance $\epsilon >0$  
+<span style="color:blue">repeat</span>  
+$ \,\,\,\,\,\,\,\,$ 1. compute the Newton step and decrement:  
+$ \,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,$ $\Delta x_{\rm nt} = - \nabla f(x)^{-1}\nabla f(x)$  
+$ \,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,$ $\lambda(x) = (\nabla f(x)^T \nabla^2 f(x)^{-1} \nabla f(x))^{\frac{1}{2}}$  
+$ \,\,\,\,\,\,\,\,$ 2. stopping criterion: <span style="color:blue">quit</span> if $\lambda^2/2 \le \epsilon$  
+$ \,\,\,\,\,\,\,\,$ 3. line search: choose step size $t$ by backtracking line search  
+$ \,\,\,\,\,\,\,\,$ 4. update: $x \leftarrow x + t\Delta x_{\rm nt}$
+
 
 ---
 
