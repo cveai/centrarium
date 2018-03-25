@@ -637,7 +637,7 @@ Turns out <span style="color:purple">$B =$ "complexity parameter"</span>
 Bias-variance trade-off, as they say.  
 MSE $=$ bias$^2 +$ var   
 <figure>
-<img src="/assets/pics/mm-ml/bias-var-convex.png" alt="Bias-variance "trade-off"" style="width: 60%; height: 60%">
+<img src="/assets/pics/mm-ml/bias-var-convex.png" alt="Bias-variance trade-off" style="width: 60%; height: 60%">
 <figcaption>Bias-variance "trade-off"
 </figcaption>
 </figure>
