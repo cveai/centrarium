@@ -541,7 +541,7 @@ $E\hat{\mu} = E\frac{1}{n}\sum_{i=1}^nX_i =\frac{1}{n}\sum_E X_i = \frac{1}{n} =
 
 #### (ML 11.2) Decision theory terminology in different contexts
 
-**General**             | **Estimators**                         | **Regression/Classification**
+**General**             | **Estimators**                         | **$^*$Regression/Classification**
 Decision rule $\delta$  | $^*$Estimator function $g$             | Prediction function $f$
 State $s$ (unknown)     | Parameter $\theta$ (unknown)           | Target value $Y$ (unknown)
 $^*$Data $D$ (observed) | Data $D$ (observed)                    | Point $X$ (observed)
@@ -577,7 +577,7 @@ We wanna minimize the loss but it's an RV! Two option to deal with it:
 
 #### (ML 11.4) Choosing a decision rule - Bayesian and frequentist
 
-**How to choose $f$:**
+**How to choose $f$: assume $\pi$**  
 <span style="color:blue">**Bayesian**</span>  
 <span style="color:blue">Case 1.</span> Know $D$. Choose $f(D)$ to minimize $\rho(\pi, f(D))$
 <span style="color:blue">Case 1.</span> Know $D$. Choose $f(D)$ to minimize $\rho(\pi, f(D))$
