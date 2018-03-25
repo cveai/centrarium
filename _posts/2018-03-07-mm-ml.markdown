@@ -643,8 +643,8 @@ MSE $=$ bias$^2 +$ var  / $\in$MSE $=$ $\int$bias$^2 +$ $\int$var (only applies 
 </figure>
 
 <figure>
-<img src="/assets/pics/mm-ml/bias-var-trade.png" alt="Bias-variance trade-off" style="width: 60%; height: 60%">
-<figcaption>Bias-variance "trade-off"
+<img src="/assets/pics/mm-ml/bias-var-trade.png" alt="Bias-variance trade-off" style="width: 80%; height: 80%">
+<figcaption>
 </figcaption>
 </figure>
 
