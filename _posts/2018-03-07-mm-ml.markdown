@@ -531,7 +531,7 @@ Assume $D = (X_1, \ldots, X_n)$ where the $X_i$ are RVs
 1. The *bias* of an estimator $\hat{\theta}$ is ${\rm bias}(\hat{\theta}) = E\hat{\theta} - \theta$.  
 2. An estimator $\hat{\theta}$ is *unbiased* if ${\rm bias}(\theta) = 0$.  
 
-**Example* 
+**Example**
 1. $\hat{\mu}$ is unbiased:    
 $E\hat{\mu} = E\frac{1}{n}\sum_{i=1}^nX_i =\frac{1}{n}\sum_E X_i = \frac{1}{n} = \mu$  
 2. $\hat{sigma}^2$ is biased. (Exercise)
@@ -541,12 +541,16 @@ $E\hat{\mu} = E\frac{1}{n}\sum_{i=1}^nX_i =\frac{1}{n}\sum_E X_i = \frac{1}{n} =
 
 #### (ML 11.2) Decision theory terminology in different contexts
 
-**General**           | **Estimators**             | **Regression/Classification**
-Decision rule $\delta$| $^*$Estimator function $g$ | Prediction function $f$
+**General**             | **Estimators**                         | **Regression/Classification**
+Decision rule $\delta$  | $^*$Estimator function $g$             | Prediction function $f$
+State $s$ (unknown)     | Parameter $\theta$ (unknown)           |
+$^*$Data $D$ (observed) | Data $D$ (observed)                    |
+Action $a = \delta(D)$  | Estimator/Estimate $\hat{\theta}=g(D)$ |
+Loss $L(s, a)$          | Loss L(\theta, \hat{\theta})           |
 
-| :---:           | :--: | :--: | :--: | :--: | :--: | :--: |
-| $f_p(\square)$  | 1/6  | 1/6  | 1/6  | 1/6  | 1/6  |1/6   |  
-
+**Example**
+Estimator is a RV: $\hat{\mu} = \frac{1}{n} \sum_{i=1}^n X_i$  
+Estimate is a number: $\hat{\mu} = \frac{1}{n} \sum_{i=1}^n x_i = 2.3$  
 
 
 ---
