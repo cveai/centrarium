@@ -510,13 +510,31 @@ cf. Shrinkage, Stein's paradox
 
 ---
 
+####(ML 11.1) Estimators
+
+Assume $D = (X_1, \ldots, X_n)$ where the $X_i$ are RVs
+
+**Definition** A *statistic* is a RV $S$ that is a function of the data $D$. (i.e. S=f(D)
+
+**Terminology** An *estimator* is a statistic intended to approximate a parameter governing the distribution of $D$.
+
+**Notation** 
+1. $\hat{\theta}$ denotes an estimator of $\theta$.
+2. $\hat{\theta}_n$ emphasize $n$
+
+
+---
+
 #### (ML 11.6) Inadmissibility
 
 A way to *reject* certain estimators.
 
 **Recall** the frequentist risk $R(\theta, \delta) = E(L(\theta, \delta(D) \vert \theta)$ for the decition rule $\delta$
 
-**Example** $X \sim N(\theta, 1), \theta \in \mathbb{R}, D=X, L(\theta, \hat{\theta})$
+**Example** $X \sim N(\theta, 1), \theta \in \mathbb{R}, D=X, L(\theta, \hat{\theta})$  
+"Natual estimator": $\delta_1(D) = X$, ${\rm MSE}(\delta) = 1 = R(\theta, \delta_1)  
+"Silly" estimator: $\delta_0(D) = X$, ${\rm MSE}(\delta) = 1 = R(\theta, \delta_1)  
+
 
 
 ---
