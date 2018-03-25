@@ -405,11 +405,12 @@ A study by Caruana & Niculescu-Mizil (2006), [An Empirical Comparison of Supervi
 5. Neural Nets
 $\cdots$
 
-$D = ((x_1, y_1), \ldtos, (x_n, y_n)$
+$D = ((x_1, y_1), \ldots, (x_n, y_n)$
 
-For i in [1, 2, .. , B]:  
-$\,\,\,\,\,\,\,\,\,\,$ Choose bootstrap sample $D_i$ from $D$
-
+For $i$ in [1, 2, .. , B]:  
+$\,\,\,\,\,\,\,\,\,$ Choose bootstrap sample $D_i$ from $D$  
+$\,\,\,\,\,\,\,\,\,$ Construct tree $T_i$ using $D$ s.t.  
+$\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,$ At each note, choose random subset of $m$ features, and only consider splitting on thoese features  
 
 ---
 
