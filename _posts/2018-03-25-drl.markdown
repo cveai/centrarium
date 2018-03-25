@@ -26,7 +26,7 @@ $\mathscr{M} = (\mathscr{S}, \mathscr{T})$
 $\mathscr{S}$ (state space)
 $s \in \mathscr{S}$ (state)
 <figure>
-<img src="/assets/pics/mm-pp/banach-tarski.png" alt="Why measure" style="width: 80%; height: 80%">
+<img src="/assets/pics/drl/pgm-mdp.png" alt="Why measure" style="width: 80%; height: 80%">
 <figcaption>Why measure theory?
 </figcaption>
 </figure>
