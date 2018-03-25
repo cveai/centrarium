@@ -590,7 +590,7 @@ We wanna minimize the loss but it's an RV! Two option to deal with it:
 <span style="color:red">(a) Invariance</span>  
 
 <figure>
-<img src="/assets/pics/mm-ml/frequentist.png" alt="A frequentist approaches" style="width: 50%; height: 50%">
+<img src="/assets/pics/mm-ml/frequentist.png" alt="A frequentist approaches" style="width: 60%; height: 60%">
 <figcaption>A frequentist approach
 </figcaption>
 </figure>
