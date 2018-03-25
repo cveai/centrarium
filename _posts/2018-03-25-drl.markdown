@@ -1,0 +1,65 @@
+---
+layout: post
+title:  "Notes on Deep Reinforcement Learning"
+date:   2018-03-25 00:00:00
+author: 장승환
+categories: Notes
+tags: DRL Deep Reinforcement Learning
+---
+
+*In this page I summarize in a succinct and straighforward fashion what I learn from [Deep Reinforcement Learning](https://www.youtube.com/playlist?list=PLkFD6_40KJIznC9CDbVTjAF2oyt8_VAe3){:target="_blank"} course by Sergey Levine, along with my own thoughts and related resources.*
+*I will update this page frequently, like every week, until it's complete.*
+
+---
+
+**Acronyms**
+* RL: Reinforcement Learning
+* DRL Deep Reinfocement Learning
+
+---
+
+#### (8/23) Introduction to Reinforcement Learning
+
+**Markov chain**
+
+$\mathscr{M} = (\mathscr{S}, \mathscr{T})$  
+* $\mathscr{S}$ (state space)  /  $s \in \mathscr{S}$ (state)  
+* $\mathscr{T} ("= p"): \mathscr{S} \times \mathscr{S} \rightarrow [0,1]$ (transition operator, linear)  
+
+$$\mathscr{T}_{ij} = p[S_{t+1} = i \vert S_t = j]\,\,\,\,\,(S_\bullet: {\rm dummy}\,\,\, {\rm RV})$$
+
+If we set $v_t = (p[S_t = i])\_{i \in \mathscr{S}} \in [0,1]^{\vert \mathscr{S}\vert}$, then $v_{t+1} = \mathscr{T} v_t$.
+
+**Markov Decision Process**  
+Extension of MC to the decision making setting (popularized by Bellman in 1950's)
+
+$\mathscr{M} = (\mathscr{S}, \mathscr{A}, \mathscr{T}, r)$  
+* $\mathscr{S}$ (state space)  /  $s \in \mathscr{S}$ (state)  
+* $\mathscr{A}$ (action space)  /  $a \in \mathscr{A}$ (action)  
+* $\mathscr{T} : \mathscr{S} \times \mathscr{A} \times \mathscr{S} \rightarrow [0,1]$ (transition operator, tensor!)  
+
+$$\mathscr{T}_{ijk} [S_{t+1} = i \vert S_t = j, A_t = k]$$
+
+If we set $v_t = (p[S_t = j])\_{j \in \mathscr{S}} \in [0,1]^{\vert \mathscr{S}\vert}$
+and $v_t = (p[S_t = k])\_{k \in \mathscr{S}} \in [0,1]^{\vert \mathscr{S}\vert}$, then 
+
+$$v_{t+1,i} = \sum_{j,k} \mathscr{T}_{ijk} \,v_{t,j}\,u_{t,k}$$
+
+
+<figure>
+<img src="/assets/pics/drl/pgm-mdp.png" alt="MDP" style="width: 70%; height: 70%">
+<figcaption>
+</figcaption>
+</figure>
+
+
+
+---
+
+$$ $$
+
+*To be added..*
+
+---
+
+
