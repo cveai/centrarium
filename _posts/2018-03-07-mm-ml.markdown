@@ -391,6 +391,24 @@ Assume we have a new point $x$ and a RV $W$ (true value).
 </figcaption>
 </figure>
 
+---
+
+#### (ML 2.8) Random forests
+
+An extremely simple technique with state of the art perfomance
+
+A study by Caruana & Niculescu-Mizil (2006), [An Empirical Comparison of Supervised Learning Algorithms](https://www.cs.cornell.edu/~caruana/ctp/ct.papers/caruana.icml06.pdf), shows:
+1. Boosted decition free (another aggregation tree)
+2. Random forests
+3. Bagged decision tree
+4. SVM
+5. Neural Nets
+$\cdots$
+
+$D = ((x_1, y_1), \ldtos, (x_n, y_n)$
+
+For i in [1, 2, .. , B]:
+$\,\,\,\,\,\,\,$ Choose bootstrap sample $D_i$ from $D$
 
 
 ---
