@@ -597,18 +597,6 @@ cf. Shrinkage, Stein's paradox
 
 ---
 
-#### (ML 11.6) Inadmissibility
-
-A way to *reject* certain estimators.
-
-**Recall** the frequentist risk $R(\theta, \delta) = E(L(\theta, \delta(D) \vert \theta)$ for the decition rule $\delta$
-
-**Example** $X \sim N(\theta, 1), \theta \in \mathbb{R}, D=X, L(\theta, \hat{\theta})$  
-"Natual estimator": $\delta_1(D) = X$, ${\rm MSE}(\delta) = 1 = R(\theta, \delta_1)$  
-"Silly" estimator: $\delta_0(D) = X$, ${\rm MSE}(\delta) = 1 = R(\theta, \delta_1)$   
-
----
-
 #### (ML 15.1) Newton's method (for optimization) - intuition
 
 2nd order method!
