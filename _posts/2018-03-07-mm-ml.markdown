@@ -472,7 +472,7 @@ $p(D \vert \theta) := p(x_1, \ldots, x_n \vert \theta) = \prod_{i = 1}^n p(x_i \
 
 ---
 
-####(ML 11.1) Estimators
+#### (ML 11.1) Estimators
 
 Assume $D = (X_1, \ldots, X_n)$ where the $X_i$ are RVs
 
@@ -594,6 +594,15 @@ $D = X
 "Silly" estimate of $\theta$: $\delta_0(D) = X \leadsto$ bias$^2 = \theta^2$, var$ = 0$, MSE$ = \theta^2$
 
 cf. Shrinkage, Stein's paradox
+
+---
+
+#### (ML 12.1) Model selection - introduction and examples
+
+<span style="color:orange">"Model" selection **</span>  really means "complexity" selection!
+
+
+
 
 ---
 
