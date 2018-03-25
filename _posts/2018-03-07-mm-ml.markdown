@@ -577,12 +577,17 @@ We wanna minimize the loss but it's an RV! Two option to deal with it:
 
 #### (ML 11.4) Choosing a decision rule - Bayesian and frequentist
 
-**How to choose $f$.**  
+<span style="color:orange">**How to choose $f$.**</span>  
 <span style="color:blue">**Bayesian: Assume $\pi$**</span>  
 <span style="color:blue">Case 1. Know $D$. Choose $f(D)$ to minimize $\rho(\pi, f(D))$</span>    
 <span style="color:blue">Case 1. Know $D$. Choose $f(D)$ to minimize $\rho(\pi, f$</span>  
 
-<span style="color:red">Frequentist: </span>  
+<span style="color:red">Frequentist: Introduce a furthere principle to guide your choice.</span>  
+<span style="color:red">(a) Unbiasedness</span>  
+<span style="color:red">(b) Admissibility</span> 
+<span style="color:red">(a) Minimax</span>  
+<span style="color:red">(a) Invariance</span>  
+
 
 ---
 
@@ -593,8 +598,8 @@ A way to *reject* certain estimators.
 **Recall** the frequentist risk $R(\theta, \delta) = E(L(\theta, \delta(D) \vert \theta)$ for the decition rule $\delta$
 
 **Example** $X \sim N(\theta, 1), \theta \in \mathbb{R}, D=X, L(\theta, \hat{\theta})$  
-"Natual estimator": $\delta_1(D) = X$, ${\rm MSE}(\delta) = 1 = R(\theta, \delta_1)  
-"Silly" estimator: $\delta_0(D) = X$, ${\rm MSE}(\delta) = 1 = R(\theta, \delta_1)  
+"Natual estimator": $\delta_1(D) = X$, ${\rm MSE}(\delta) = 1 = R(\theta, \delta_1)$  
+"Silly" estimator: $\delta_0(D) = X$, ${\rm MSE}(\delta) = 1 = R(\theta, \delta_1)$   
 
 ---
 
