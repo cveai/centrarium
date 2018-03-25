@@ -616,7 +616,7 @@ Turns out <span style="color:purple">$B =$ "complexity parameter"</span>
 
 **Example** (Bayesia linear regression or MAP)
 <figure>
-<img src="/assets/pics/mm-ml/bayesian-regression.png" alt="Bayesian linear regression" style="width: 80%; height: 80%">
+<img src="/assets/pics/mm-ml/bayesian-regression.png" alt="Bayesian linear regression" style="width: 100%; height: 100%">
 <figcaption>
 </figcaption>
 </figure>
