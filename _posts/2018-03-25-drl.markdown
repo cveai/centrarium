@@ -1,0 +1,44 @@
+---
+layout: post
+title:  "Notes on Deep Reinforcement Learning"
+date:   2018-03-08 00:00:00
+author: 장승환
+categories: Notes
+tags: DRL Deep Reinforcement Learning
+---
+
+*In this page I summarize in a succinct and straighforward fashion what I learn from [Deep Reinforcement Learning](https://www.youtube.com/playlist?list=PLkFD6_40KJIznC9CDbVTjAF2oyt8_VAe3){:target="_blank"} course by Sergey Levine, along with my own thoughts and related resources.*
+*I will update this page frequently, like every week, until it's complete.*
+
+---
+
+**Acronyms**
+* RL: Reinforcement Learning
+* DRL Deep Reinfocement Learning
+
+---
+
+#### (8/23) Introduction to Reinforcement Learning
+
+**Markov chain**
+
+$\mathscr{M} = (\mathscr{S}, \mathscr{T})$  
+$\mathscr{S}$ (state space)
+$s \in \mathscr{S}$ (state)
+<figure>
+<img src="/assets/pics/mm-pp/banach-tarski.png" alt="Why measure" style="width: 80%; height: 80%">
+<figcaption>Why measure theory?
+</figcaption>
+</figure>
+
+
+
+---
+
+$$ $$
+
+*To be added..*
+
+---
+
+
