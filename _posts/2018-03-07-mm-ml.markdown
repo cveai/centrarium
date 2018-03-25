@@ -627,7 +627,7 @@ Turns out <span style="color:purple">$B =$ "complexity parameter"</span>
 <figcaption>
 </figcaption>
 </figure>
-
+<span style="color:purple">$k$</span> controls decesion boundaties.
 ---
 
 #### (ML 15.1) Newton's method (for optimization) - intuition
