@@ -410,8 +410,9 @@ $D = ((x_1, y_1), \ldots, (x_n, y_n)$, $x_ \in \mathbb{R}$ (parameters: $B$ and 
 For $i$ in [1, 2, .. , B]:  
 $\,\,\,\,\,\,\,\,\,$ Choose bootstrap sample $D_i$ from $D$  
 $\,\,\,\,\,\,\,\,\,$ Construct tree $T_i$ using $D$ s.t.  
-$\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,$ At each note, choose random subset of $m$ features, and only consider splitting on thoese features  
+$\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,$ At each note, choose random subset (called *random subspace*) of $m$ features, and only consider splitting on thoese features  
 
+Given $x$, take majority vote. 
 ---
 
 $\cdots$
