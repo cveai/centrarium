@@ -599,7 +599,15 @@ cf. Shrinkage, Stein's paradox
 
 #### (ML 12.1) Model selection - introduction and examples
 
-<span style="color:orange">"Model" selection **</span>  really means "complexity" selection!
+<span style="color:orange">**"Model" selection**</span> really means "complexity" selection!
+
+Here, $complexity* $\approx$ flexibility to fit/explain data  
+
+**Example** (Linaer regression with MLE)  $f(x) = w^T\varphi(x)$  
+$x \in \mathbb{R}$, polynomial basis $\varphi(x) = x^k$, $\varphi = (\varphi_0, \varphi_1, \ldots, \varphi_B$  
+
+
+
 
 
 
