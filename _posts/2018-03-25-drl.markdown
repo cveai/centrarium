@@ -28,7 +28,7 @@ $\mathscr{M} = (\mathscr{S}, \mathscr{T})$
 
 $$\mathscr{T}_{ij} = p[S_{t+1} = i \vert S_t = j]\,\,\,\,\,(S_\bullet: {\rm dummy}\,\,\, {\rm RV})$$
 
-If we set $v_t = (p[S_t = i]) _{i}$, then $v_{t+1} = \mathscr{T} v_t$.
+If we set $v_t = (p[S_t = i])_{i}$, then $v_{t+1} = \mathscr{T} v_t$.
 
 **Markov Decision Process**
 
