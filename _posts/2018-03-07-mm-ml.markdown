@@ -629,6 +629,21 @@ Turns out <span style="color:purple">$B =$ "complexity parameter"</span>
 </figure>
 <span style="color:purple">$k$</span> "controls" decesion boundaties.
 
+
+---
+
+#### (ML 12.2) Bias-variance in model selection
+
+Bias-variance trade-off, as they say.  
+MSE $=$ bias$^2 +$ var   
+<figure>
+<img src="/assets/pics/mm-ml/bias-var-convex.png" alt="Bias-variance "trade-off"" style="width: 60%; height: 60%">
+<figcaption>Bias-variance "trade-off"
+</figcaption>
+</figure>
+
+
+
 ---
 
 #### (ML 15.1) Newton's method (for optimization) - intuition
