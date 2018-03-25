@@ -589,6 +589,11 @@ We wanna minimize the loss but it's an RV! Two option to deal with it:
 <span style="color:red">(a) Minimax</span>  
 <span style="color:red">(a) Invariance</span>  
 
+<figure>
+<img src="/assets/pics/mm-ml/frequntist.png" alt="A frequentist approaches" style="width: 100%; height: 100%">
+<figcaption>A frequentist approach
+</figcaption>
+</figure>
 
 ---
 
