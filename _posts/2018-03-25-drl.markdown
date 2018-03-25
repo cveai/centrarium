@@ -26,7 +26,7 @@ $\mathscr{M} = (\mathscr{S}, \mathscr{T})$
 * $\mathscr{S}$ (state space)  /  $s \in \mathscr{S}$ (state)  
 * $\mathscr{T} ("= p"): \mathscr{S} \times \mathscr{S} \rightarrow [0,1]$ (transition operator, linear)  
 
-$$\mathscr{T}_{ij} = p[S_{t+1} = i \vert S_t = j]\,\,\,\,\,(S_\dot: {\rm dummy}\,\,\, {\rm RV})$$
+$$\mathscr{T}_{ij} = p[S_{t+1} = i \vert S_t = j]\,\,\,\,\,(S_\dot : {\rm dummy}\,\,\, {\rm RV})$$
 
 <figure>
 <img src="/assets/pics/drl/pgm-mdp.png" alt="Why measure" style="width: 60%; height: 60%">
