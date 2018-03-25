@@ -23,12 +23,12 @@ tags: DRL Deep Reinforcement Learning
 **Markov chain**
 
 $\mathscr{M} = (\mathscr{S}, \mathscr{T})$  
-$\mathscr{S}$ (state space)
-$s \in \mathscr{S}$ (state)
-$\mathscr{T} = p: \mathscr{S} \times \mathscr{S} \rightarrow [0,1]$ (transition operator, linear)
+$\mathscr{S}$ (state space)  
+$s \in \mathscr{S}$ (state)  
+$\mathscr{T} = p: \mathscr{S} \times \mathscr{S} \rightarrow [0,1]$ (transition operator, linear)  
 
 <figure>
-<img src="/assets/pics/drl/pgm-mdp.png" alt="Why measure" style="width: 50%; height: 50%">
+<img src="/assets/pics/drl/pgm-mdp.png" alt="Why measure" style="width: 60%; height: 60%">
 <figcaption>Why measure theory?
 </figcaption>
 </figure>
