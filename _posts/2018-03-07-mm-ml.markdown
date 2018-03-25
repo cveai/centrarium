@@ -510,6 +510,14 @@ cf. Shrinkage, Stein's paradox
 
 ---
 
+#### (ML 11.6) Inadmissibility
+
+A way to *reject* certain estimators.
+
+**Recall** the frequentist risk $R(\theta, \delta) = E(L(\theta, \delta(D) \vert \theta)$ fot the decition rule $\delta$
+
+---
+
 #### (ML 15.1) Newton's method (for optimization) - intuition
 
 2nd order method!
