@@ -520,7 +520,11 @@ Assume $D = (X_1, \ldots, X_n)$ where the $X_i$ are RVs
 
 **Notation** 
 1. $\hat{\theta}$ denotes an estimator of $\theta$.
-2. $\hat{\theta}_n$ emphasize $n$
+2. $\hat{\theta}_n$ emphasize (the dependence on) $n$
+
+**Example** $X_1, \ldots, X_n \sim N(\mu, \sigma^2)$ iid  
+(Sample mean) $\hat{\mu} = \hat{\mu}(X_1, \ldots, X_n) \frac{1}{n}\sum_{i=1}^nX_i$  
+("Biased" sample variance) $\sigma^2 = \frac{1}{n}\sum_{i=1}^n(X_i -\bar{X})^2$
 
 
 ---
