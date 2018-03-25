@@ -623,7 +623,7 @@ Turns out <span style="color:purple">$B =$ "complexity parameter"</span>
 
 **Example** ($k$NN)   
 <figure>
-<img src="/assets/pics/mm-ml/knn-model-selection.png" alt="Classification example" style="width: 100%; height: 100%">
+<img src="/assets/pics/mm-ml/knn-model-selection.png" alt="Classification example" style="width: 80%; height: 80%">
 <figcaption>
 </figcaption>
 </figure>
