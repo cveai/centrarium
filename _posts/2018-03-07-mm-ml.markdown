@@ -635,7 +635,7 @@ Turns out <span style="color:purple">$B =$ "complexity parameter"</span>
 #### (ML 12.2) Bias-variance in model selection
 
 Bias-variance trade-off, as they say.  
-MSE $=$ bias$^2 +$ var   
+MSE $=$ bias$^2 +$ var  / $\in$MSE $=$ $\int$bias$^2 +$ $\int$var (only applies for <span style="color:green">square loss</span>)
 <figure>
 <img src="/assets/pics/mm-ml/bias-var-convex.png" alt="Bias-variance trade-off" style="width: 60%; height: 60%">
 <figcaption>Bias-variance "trade-off"
