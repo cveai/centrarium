@@ -25,7 +25,7 @@ tags: ML
 ---
 
 * To understand **bias-variance "trade-off"**, take a quick route:  
-(11.5) $\rightarrow$ (11.1) ~ (11.5) $\rightarrow$ (11.1) (11.2) 
+(11.5) $\leadsto$ (11.1) (11.2) (11.3) (11.4) $\leadsto$ (11.1) (11.2) 
 
 ---
 
