@@ -523,8 +523,19 @@ Assume $D = (X_1, \ldots, X_n)$ where the $X_i$ are RVs
 2. $\hat{\theta}_n$ emphasize (the dependence on) $n$
 
 **Example** $X_1, \ldots, X_n \sim N(\mu, \sigma^2)$ iid  
-(Sample mean) $\hat{\mu} = \hat{\mu}(X_1, \ldots, X_n) \frac{1}{n}\sum_{i=1}^nX_i$  
-("Biased" sample variance) $\sigma^2 = \frac{1}{n}\sum_{i=1}^n(X_i -\bar{X})^2$
+(Sample mean) $\hat{\mu} = \hat{\mu}(X_1, \ldots, X_n) \frac{1}{n}\sum_{i=1}^nX_i$  (cf. $\sigma^2 = E((X - \mu)^2)$)
+("Biased" sample variance) $\sigma^2 = \frac{1}{n}\sum_{i=1}^n(X_i -\bar{X})^2$  
+("unbiased" sample variance) $\sigma^2 = \frac{1}{n-1}\sum_{i=1}^n(X_i -\bar{X})^2$
+
+**Definition**
+1. The *bias* of an estimator $\hat{\theta}$ is ${\rm bias}(\hat{\theta}) = E\hat{\theta} - \theta$.  
+2. An estimator $\hat{\theta}$ is *unbiased* if ${\rm bias}(\theta) = 0$.  
+
+**Example* 
+1. $\hat{\mu}$ is unbiased:    
+$E\hat{\mu} = E\frac{1}{n}\sum_{i=1}^nX_i =\frac{1}{n}\sum_E X_i = \frac{1}{n} = \mu$  
+2. $\hat{sigma}^2$ is biased. (Exercise)
+3. $s^2$ is unbiased. (Exercise)
 
 
 ---
@@ -539,6 +550,15 @@ A way to *reject* certain estimators.
 "Natual estimator": $\delta_1(D) = X$, ${\rm MSE}(\delta) = 1 = R(\theta, \delta_1)  
 "Silly" estimator: $\delta_0(D) = X$, ${\rm MSE}(\delta) = 1 = R(\theta, \delta_1)  
 
+---
+
+#### (ML 11.2) Decision theory terminology in different contexts
+
+**General**           | **Estimators**             | **Regression/Classification**
+Decision rule $\delta$| $^*$Estimator function $g$ | Prediction function $f$
+
+| :---:           | :--: | :--: | :--: | :--: | :--: | :--: |
+| $f_p(\square)$  | 1/6  | 1/6  | 1/6  | 1/6  | 1/6  |1/6   |  
 
 
 ---
