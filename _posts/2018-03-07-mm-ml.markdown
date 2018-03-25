@@ -642,7 +642,11 @@ MSE $=$ bias$^2 +$ var
 </figcaption>
 </figure>
 
-
+<figure>
+<img src="/assets/pics/mm-ml/bias-var-trade.png" alt="Bias-variance trade-off" style="width: 60%; height: 60%">
+<figcaption>Bias-variance "trade-off"
+</figcaption>
+</figure>
 
 ---
 
