@@ -36,7 +36,7 @@ Extension of MC to the decision making setting (popularized by Bellman in 1950's
 $\mathscr{M} = (\mathscr{S}, \mathscr{A}, \mathscr{T}, r)$  
 * $\mathscr{S}$ (state space)  /  $s \in \mathscr{S}$ (state)  
 * $\mathscr{A}$ (action space)  /  $a \in \mathscr{A}$ (action)  
-* $\mathscr{T} : \mathscr{S} \times \mathscr{S} \rightarrow [0,1]$ (transition operator, tensor!)  
+* $\mathscr{T} : \mathscr{S} \times \mathscr{A} \times \mathscr{S} \rightarrow [0,1]$ (transition operator, tensor!)  
 
 $$\mathscr{T}_{ijk} [S_{t+1} = i \vert S_t = j, A_t = k]$$
 
