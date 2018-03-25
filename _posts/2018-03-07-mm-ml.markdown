@@ -405,7 +405,7 @@ A study by Caruana & Niculescu-Mizil (2006), [An Empirical Comparison of Supervi
 5. Neural Nets
 $\cdots$
 
-$D = ((x_1, y_1), \ldots, (x_n, y_n)$
+$D = ((x_1, y_1), \ldots, (x_n, y_n)$, $x_ \in \mathbb{R}$ (parameters: $B$ and $m<d$)
 
 For $i$ in [1, 2, .. , B]:  
 $\,\,\,\,\,\,\,\,\,$ Choose bootstrap sample $D_i$ from $D$  
