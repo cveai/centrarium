@@ -472,44 +472,6 @@ $p(D \vert \theta) := p(x_1, \ldots, x_n \vert \theta) = \prod_{i = 1}^n p(x_i \
 
 ---
 
-#### (ML 11.5) Bias-Variance decomposition (MSE $=$ bias$^2$ + var)
-
-"A super impportant port of ML is what's called <span style="color:red">model selection</span> and a tool for model selection is the bias-variance decomposition."
-
-Almost trivial identity but extremely handy.
-
-**Definition.** Let $D$ be random data. The MSE of an estimator $\hat{\theta} = f(D)$ for $\theta$ is
-
-$${\rm MSE}(\hat{\theta}) = E((\hat{\theta} - \theta)^2\vert \theta)$$
-
-Put $\vert \theta$ emphasizing we're not averagning over $\theta$ here  (we don't have a distribution over $\theta$).
-We're just averaging over the data. 
-
-MSE$\theta$ is nothing but the risk $R(\theta, f)$ under square loss, i.e., when the loss function is the square of the deifference.
-
-**Recall.** bias$(\hat{\theta}) = E(\theta) -\theta$.
-
-**Proposition.** MSE$(\theta) = bias(\hat{\theta})^2 + {\rm var}(\hat{\theta})$
-
-Proof:
-<figure>
-<img src="/assets/pics/mm-ml/proof-bias-variance.png" alt="Bias-variance" style="width: 70%; height: 70%">
-<figcaption>
-</figcaption>
-</figure>
-
-**Silly example.**
-$X \sim N(\theta, 1)$
-$\theta$ nonrandom & unknown
-$D = X
-
-"Natural" estimate of $\theta$: $\delta_1(D) = X \leadsto$ bias$^2 = 0$, var$ = 1$, MSE$ =1$  
-"Silly" estimate of $\theta$: $\delta_0(D) = X \leadsto$ bias$^2 = \theta^2$, var$ = 0$, MSE$ = \theta^2$
-
-cf. Shrinkage, Stein's paradox
-
----
-
 ####(ML 11.1) Estimators
 
 Assume $D = (X_1, \ldots, X_n)$ where the $X_i$ are RVs
@@ -594,6 +556,44 @@ We wanna minimize the loss but it's an RV! Two option to deal with it:
 <figcaption>A frequentist approach
 </figcaption>
 </figure>
+
+---
+
+#### (ML 11.5) Bias-Variance decomposition (MSE $=$ bias$^2$ + var)
+
+"A super impportant port of ML is what's called <span style="color:red">model selection</span> and a tool for model selection is the bias-variance decomposition."
+
+Almost trivial identity but extremely handy.
+
+**Definition.** Let $D$ be random data. The MSE of an estimator $\hat{\theta} = f(D)$ for $\theta$ is
+
+$${\rm MSE}(\hat{\theta}) = E((\hat{\theta} - \theta)^2\vert \theta)$$
+
+Put $\vert \theta$ emphasizing we're not averagning over $\theta$ here  (we don't have a distribution over $\theta$).
+We're just averaging over the data. 
+
+MSE$\theta$ is nothing but the risk $R(\theta, f)$ under square loss, i.e., when the loss function is the square of the deifference.
+
+**Recall.** bias$(\hat{\theta}) = E(\theta) -\theta$.
+
+**Proposition.** MSE$(\theta) = bias(\hat{\theta})^2 + {\rm var}(\hat{\theta})$
+
+Proof:
+<figure>
+<img src="/assets/pics/mm-ml/proof-bias-variance.png" alt="Bias-variance" style="width: 70%; height: 70%">
+<figcaption>
+</figcaption>
+</figure>
+
+**Silly example.**
+$X \sim N(\theta, 1)$
+$\theta$ nonrandom & unknown
+$D = X
+
+"Natural" estimate of $\theta$: $\delta_1(D) = X \leadsto$ bias$^2 = 0$, var$ = 1$, MSE$ =1$  
+"Silly" estimate of $\theta$: $\delta_0(D) = X \leadsto$ bias$^2 = \theta^2$, var$ = 0$, MSE$ = \theta^2$
+
+cf. Shrinkage, Stein's paradox
 
 ---
 
