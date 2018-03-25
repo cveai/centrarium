@@ -579,9 +579,9 @@ We wanna minimize the loss but it's an RV! Two option to deal with it:
 
 **How to choose $f$: assume $\pi$**  
 <span style="color:blue">**Bayesian**</span>  
-<span style="color:blue">Case 1.</span> Know $D$. Choose $f(D)$ to minimize $\rho(\pi, f(D))$
-<span style="color:blue">Case 1.</span> Know $D$. Choose $f(D)$ to minimize $\rho(\pi, f(D))$
-<span style="color:red">(Frequentist) risk</span>
+<span style="color:blue">Case 1.</span> Know $D$. Choose $f(D)$ to minimize $\rho(\pi, f(D))$  
+<span style="color:blue">Case 1.</span> Know $D$. Choose $f(D)$ to minimize $\rho(\pi, f(D))$  
+<span style="color:red">(Frequentist) risk</span>  
 
 ---
 
