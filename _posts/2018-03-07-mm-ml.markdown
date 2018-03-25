@@ -601,12 +601,12 @@ cf. Shrinkage, Stein's paradox
 
 <span style="color:orange">**"Model" selection**</span> really means "complexity" selection!
 
-Here, $complexity* $\approx$ flexibility to fit/explain data  
+Here, *complexity* $\approx$ flexibility to fit/explain data  
 
 **Example** (Linaer regression with MLE for $w$)  $f(x) = w^T\varphi(x)$  
 Given data $x \in \mathbb{R}$, consider polynomial basis $\varphi(x) = x^k$, $\varphi = (\varphi_0, \varphi_1, \ldots, \varphi_B)$
 
-
+Turns out $B =$ *complexity parameter*
 
 
 
