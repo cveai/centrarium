@@ -43,7 +43,7 @@ $$\mathscr{T}_{ijk} [S_{t+1} = i \vert S_t = j, A_t = k]$$
 If we set $v_t = (p[S_t = j])\_{j \in \mathscr{S}} \in [0,1]^{\vert \mathscr{S}\vert}$
 and $v_t = (p[S_t = k])\_{k \in \mathscr{S}} \in [0,1]^{\vert \mathscr{S}\vert}$, then 
 
-$$v_{t+1,i} = \sum_{j,k} \mathscr{T}\_{ijk} v_{t,j}u_{t,k}$$
+$$v_{t+1,i} = \sum_{j,k} \mathscr{T}_{ijk} v_{t,j}u_{t,k}$$
 
 
 <figure>
