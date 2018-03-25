@@ -395,6 +395,8 @@ Assume we have a new point $x$ and a RV $W$ (true value).
 
 #### (ML 2.8) Random forests
 
+Also by Breiman
+
 An extremely simple technique with state of the art perfomance
 
 A study by Caruana & Niculescu-Mizil (2006), [An Empirical Comparison of Supervised Learning Algorithms](https://www.cs.cornell.edu/~caruana/ctp/ct.papers/caruana.icml06.pdf), shows:
@@ -412,7 +414,16 @@ $\,\,\,\,\,\,\,\,\,$ Choose bootstrap sample $D_i$ from $D$
 $\,\,\,\,\,\,\,\,\,$ Construct tree $T_i$ using $D$ s.t.  
 $\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,$ At each note, choose random subset (called *random subspace*) of $m$ features, and only consider splitting on thoese features  
 
-Given $x$, take majority vote. 
+Given $x$, take majority vote (for classification) or average (for regression).
+
+Works essentialy for the same reasonas bagging, except that this time averaging over features (called *ensemble*) reduces the variance of the overall final estimator.
+
+---
+
+#### (ML 3.1) Decision theory (Basic Framework)
+
+"Minimize expected loss"
+
 ---
 
 $\cdots$
