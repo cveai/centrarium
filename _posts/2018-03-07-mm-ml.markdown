@@ -563,11 +563,15 @@ $D = (X_1, \ldots, X_n)$, $D \sim p_\theta$, $\hat{\theta} = f(D) = \delta(D)$
 $\theta \sim \pi$ (the parameter $\theta$ is a RV)  
 Everything begins with : Loss $=L(\theta, f(D))$
 We wanna minimize the loss but it's an RV! Two option to deal with it:  
-1. Averaging over $\theta$ gieve the data: $E(L(\theta, f(D)) \vert D =:\rho(\pi, f(D)$ (<span style="color:blue">Bayesian expected loss</span>) 
+1. Averaging over $\theta$ gieve the data: $E(L(\theta, f(D)) \vert D =:\rho(\pi, f(D))$ (<span style="color:blue">Bayesian expected loss</span>) 
 2. Averaging over the data gieve $\theta$: $E(L(\theta, f(D)) \vert \theta =: R(\theta, f)$ (<span style="color:red">(Frequentist) risk</span>) 
 
 
-
+<figure>
+<img src="/assets/pics/mm-ml/bayes-risk.png" alt="Bayes Risk" style="width: 80%; height: 80%">
+<figcaption>
+</figcaption>
+</figure>
 
 ---
 
