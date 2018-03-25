@@ -543,15 +543,15 @@ $E\hat{\mu} = E\frac{1}{n}\sum_{i=1}^nX_i =\frac{1}{n}\sum_E X_i = \frac{1}{n} =
 
 **General**             | **Estimators**                         | **Regression/Classification**
 Decision rule $\delta$  | $^*$Estimator function $g$             | Prediction function $f$
-State $s$ (unknown)     | Parameter $\theta$ (unknown)           |
-$^*$Data $D$ (observed) | Data $D$ (observed)                    |
-Action $a = \delta(D)$  | Estimator/Estimate $\hat{\theta}=g(D)$ |
-Loss $L(s, a)$          | Loss L(\theta, \hat{\theta})           |
+State $s$ (unknown)     | Parameter $\theta$ (unknown)           | Target value $Y$ (unknown)
+$^*$Data $D$ (observed) | Data $D$ (observed)                    | Point $X$ (observed)
+Action $a = \delta(D)$  | Estimator/Estimate $\hat{\theta}=g(D)$ | Prediction $\hat{Y} = f(X)$
+Loss $L(s, a)$          | Loss L(\theta, \hat{\theta})           | Loss $L(Y, \hat{Y})$
 
 **Example**
 Estimator is a RV: $\hat{\mu} = \frac{1}{n} \sum_{i=1}^n X_i$  
 Estimate is a number: $\hat{\mu} = \frac{1}{n} \sum_{i=1}^n x_i = 2.3$  
-
+SIn some situation the procedure $g$ is refered to as an estimator!
 
 ---
 
