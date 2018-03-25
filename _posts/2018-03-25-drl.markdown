@@ -38,7 +38,7 @@ $\mathscr{M} = (\mathscr{S}, \mathscr{A}, \mathscr{T}, r)$
 * $\mathscr{A}$ (action space)  /  $a \in \mathscr{A}$ (action)  
 * $\mathscr{T} : \mathscr{S} \times \mathscr{S} \rightarrow [0,1]$ (transition operator, tensor!)  
 
-$$\mathscr{T}\_{ijk} [S_{t+1} = i \vert S_t = j, A_t = k]$$
+$$\mathscr{T}_{ijk} [S_{t+1} = i \vert S_t = j, A_t = k]$$
 
 If we set $v_t = (p[S_t = j])\_{j \in \mathscr{S}} \in [0,1]^{\vert \mathscr{S}\vert}$
 and $v_t = (p[S_t = k])\_{k \in \mathscr{S}} \in [0,1]^{\vert \mathscr{S}\vert}$, then 
