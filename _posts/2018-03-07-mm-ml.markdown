@@ -22,14 +22,6 @@ tags: ML
 
 * MCTC: Markov Chain Monte Carlo
 
-<<<<<<< HEAD
-<<<<<<< HEAD
----
-
-* To understand **bias-variance "trade-off"**, take a quick route:  
-(11.5) $\leadsto$ (11.1) (11.2) (11.3) (11.4) $\leadsto$ (11.1) (11.2) 
-||||||| merged common ancestors
-=======
 ---
 
 * To understand **bias-variance "trade-off"**, take a quick route:  
@@ -38,18 +30,6 @@ tags: ML
 Some other helpful resources:
 * [Lecture 08 - Bias-Variance Tradeoff](https://youtu.be/zrEyxfl2-a8) of Caltech's Machine Learning Course - CS 156 (Spring 2012) by Professor Yaser Abu-Mostafa
 
->>>>>>> notes
-||||||| merged common ancestors
-=======
----
-
-* To understand **bias-variance "trade-off"**, take a quick route:  
-(11.5) $\leadsto$ (11.1) (11.2) (11.3) (11.4) $\leadsto$ (11.1) (11.2) 
-
-Some other helpful resources:
-* [Lecture 08 - Bias-Variance Tradeoff](https://youtu.be/zrEyxfl2-a8) of Caltech's Machine Learning Course - CS 156 (Spring 2012) by Professor Yaser Abu-Mostafa
-
->>>>>>> notes
 
 ---
 
