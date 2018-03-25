@@ -22,6 +22,10 @@ tags: ML
 
 * MCTC: Markov Chain Monte Carlo
 
+---
+
+* To understand **bias-variance "trade-off"**, take a quick route:  
+(11.5) $\rightarrow$ (11.1) ~ (11.5) $\rightarrow$ (11.1) (11.2) 
 
 ---
 
