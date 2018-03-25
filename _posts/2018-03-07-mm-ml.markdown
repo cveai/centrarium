@@ -514,7 +514,10 @@ cf. Shrinkage, Stein's paradox
 
 A way to *reject* certain estimators.
 
-**Recall** the frequentist risk $R(\theta, \delta) = E(L(\theta, \delta(D) \vert \theta)$ fot the decition rule $\delta$
+**Recall** the frequentist risk $R(\theta, \delta) = E(L(\theta, \delta(D) \vert \theta)$ for the decition rule $\delta$
+
+**Example** $X \sim N(\theta, 1), \theta \in \mathbb{R}, D=X, L(\theta, \hat{\theta})$
+
 
 ---
 
