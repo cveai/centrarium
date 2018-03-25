@@ -578,6 +578,7 @@ We wanna minimize the loss but it's an RV! Two option to deal with it:
 #### (ML 11.4) Choosing a decision rule - Bayesian and frequentist
 
 <span style="color:orange">**How to choose $f$.**</span>  
+
 <span style="color:blue">**Bayesian:** Assume $\pi$</span>  
 <span style="color:blue">Case 1. Know $D$. Choose $f(D)$ to minimize $\rho(\pi, f(D))$</span>    
 <span style="color:blue">Case 1. Know $D$. Choose $f(D)$ to minimize $\rho(\pi, f$</span>  
