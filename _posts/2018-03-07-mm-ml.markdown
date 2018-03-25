@@ -575,6 +575,16 @@ We wanna minimize the loss but it's an RV! Two option to deal with it:
 
 ---
 
+#### (ML 11.4) Choosing a decision rule - Bayesian and frequentist
+
+**How to choose $f$:**
+<span style="color:blue">**Bayesian**</span>  
+<span style="color:blue">Case 1.</span> Know $D$. Choose $f(D)$ to minimize $\rho(\pi, f(D))$
+<span style="color:blue">Case 1.</span> Know $D$. Choose $f(D)$ to minimize $\rho(\pi, f(D))$
+<span style="color:red">(Frequentist) risk</span>
+
+---
+
 #### (ML 11.6) Inadmissibility
 
 A way to *reject* certain estimators.
