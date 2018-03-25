@@ -609,7 +609,7 @@ Given data $x \in \mathbb{R}$, consider polynomial basis $\varphi(x) = x^k$, $\v
 Turns out $B =$ "complexity parameter"
 
 <figure>
-<img src="/assets/pics/mm-ml/model-selection.png" alt="Model selection illustration" style="width: 70%; height: 70%">
+<img src="/assets/pics/mm-ml/model-selection.png" alt="Model selection illustration" style="width: 80%; height: 80%">
 <figcaption>Model (in fact complexity) selection illustration
 </figcaption>
 </figure>
