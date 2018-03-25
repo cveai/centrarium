@@ -30,7 +30,18 @@ $$\mathscr{T}_{ij} = p[S_{t+1} = i \vert S_t = j]\,\,\,\,\,(S_\bullet: {\rm dumm
 
 If we set $v_t = (p[S_t = i])\_{i \in \mathscr{S}} \in [0,1]^{\vert \mathscr{S}\vert}$, then $v_{t+1} = \mathscr{T} v_t$.
 
-**Markov Decision Process**
+**Markov Decision Process**  
+Extension of MC to the decision making setting (popularized by Bellman in 1950's)
+
+$\mathscr{M} = (\mathscr{S}, \mathsct{A}, \mathscr{T}, r)$  
+* $\mathscr{S}$ (state space)  /  $s \in \mathscr{S}$ (state)  
+* $\mathscr{A}$ (action space)  /  $a \in \mathscr{A}$ (action)  
+* $\mathscr{T} ("= p"): \mathscr{S} \times \mathscr{S} \rightarrow [0,1]$ (transition operator, tensor!)  
+
+$$\mathscr{T}_{ij} = p[S_{t+1} = i \vert S_t = j]\,\,\,\,\,(S_\bullet: {\rm dummy}\,\,\, {\rm RV})$$
+
+If we set $v_t = (p[S_t = i])\_{i \in \mathscr{S}} \in [0,1]^{\vert \mathscr{S}\vert}$, then $v_{t+1} = \mathscr{T} v_t$.
+
 
 <figure>
 <img src="/assets/pics/drl/pgm-mdp.png" alt="MDP" style="width: 70%; height: 70%">
