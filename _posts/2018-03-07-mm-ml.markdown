@@ -407,8 +407,8 @@ $\cdots$
 
 $D = ((x_1, y_1), \ldtos, (x_n, y_n)$
 
-For i in [1, 2, .. , B]:
-$\,\,\,\,\,\,\,$ Choose bootstrap sample $D_i$ from $D$
+For i in [1, 2, .. , B]:  
+$\,\,\,\,\,\,\,\,\,\,$ Choose bootstrap sample $D_i$ from $D$
 
 
 ---
