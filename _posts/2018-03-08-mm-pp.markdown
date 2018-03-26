@@ -80,7 +80,7 @@ $P(\\{1, 2, 4\\}) = P(\\{1\\} \cup \\{2\\} \cup \\{4\\})) = P(1) + P(2) + P(4)$
 $P(k) =$ probability it takes $k$ coinflips to get heads $=\alpha(1-\alpha)^{k-1} = \frac{1}{2}(1-\frac{1}{2})^{k-1}$  
 (gives *gemetric distribution*)
 3. (Uncountable) $\Omega = [0, \infty)$, $\mathcal{A} = \mathcal{B}([0, \infty \)])$  
-$P([0, x)) = 1-e^{-x} \forall x>0$ (gives *exponential distribution*)  
+$P([0, x)) = 1-e^{-x}$ $\forall x>0$ (gives *exponential distribution*)  
 Note: $P(\\{x\\})$ $\forall x>0$ (a symptom of continuous distributions)
 
 ---
