@@ -59,11 +59,13 @@ is the "smallest" $\sigma$-algebra containing $\mathscr{C}$. (That is, $\sigma(\
 1. $\mathcal{A} = \\{\emptyset, \Omega\\}$
 2. $\mathcal{A} = \\{\emptyset, E, E^c, \Omega\\}$
 3. If $\Omega = \mathbb{R}$ then the *Borel $\sigma$-algebra* is $\mathcal{B} = \sigma(\mathscr{T})$ 
-where $\mathscr{T} =$ $\\{$ open sets of $\mathbb{R} \\}$
+where $\mathscr{T} =$ $\\{$open sets of $\mathbb{R} \\}$
 
+**Definition.** A measure $\mu$ on $\Omega$ with $\sigma$-algebra $\mathcal{A}$ is a function $\mu : \mathcal{A} \rightarrwo [0, \infty]$ s.t.
+1. $\mu(\emptyset) = 0$
+2. $\mu(\cup_{i=1}^\infty E_i) = \sum_{i=1}^\infty \mu(E_i)$ for any sequence $E_1, E_2, \ldotsm \in \mathcal{A}$ of pairwise disjoint sets (*coultable additivity*)
 
-
-
+**Definition.** A probability measure is a measure $P$ s.t. $P(\Omega)= 1$
 
 ---
 
