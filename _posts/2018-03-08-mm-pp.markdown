@@ -61,9 +61,9 @@ is the "smallest" $\sigma$-algebra containing $\mathscr{C}$. (That is, $\sigma(\
 3. If $\Omega = \mathbb{R}$ then the *Borel $\sigma$-algebra* is $\mathcal{B} = \sigma(\mathscr{T})$ 
 where $\mathscr{T} =$ $\\{$open sets of $\mathbb{R} \\}$
 
-**Definition.** A measure $\mu$ on $\Omega$ with $\sigma$-algebra $\mathcal{A}$ is a function $\mu : \mathcal{A} \rightarrwo [0, \infty]$ s.t.
+**Definition.** A measure $\mu$ on $\Omega$ with $\sigma$-algebra $\mathcal{A}$ is a function $\mu : \mathcal{A} \rightarrow [0, \infty]$ s.t.
 1. $\mu(\emptyset) = 0$
-2. $\mu(\cup_{i=1}^\infty E_i) = \sum_{i=1}^\infty \mu(E_i)$ for any sequence $E_1, E_2, \ldotsm \in \mathcal{A}$ of pairwise disjoint sets (*coultable additivity*)
+2. $\mu(\cup_{i=1}^\infty E_i) = \sum_{i=1}^\infty \mu(E_i)$ for any sequence $E_1, E_2, \ldots \in \mathcal{A}$ of pairwise disjoint sets (*coultable additivity*)
 
 **Definition.** A *probability measure* is a measure $P$ s.t. $P(\Omega)= 1$
 
@@ -74,8 +74,8 @@ where $\mathscr{T} =$ $\\{$open sets of $\mathbb{R} \\}$
 The defining conditions of a probability measure is called the Kolmogorov's axioms. (father of modern probability theory)
 
 **Examples.**
-1. (Finite set) $\Omega = \\{1, \ldots, n\\}, \mathcal{A} = 2^\Omega$, $P(\{k\}) = P(k) = \frac{1}{n}$ (gives uniform distribution)  
-$P(\\{1, 2, 4\\} = P(\\{1\\} \\{2\\} \\{4\\})) = P(1) + P2() + P(4)$
+1. (Finite set) $\Omega = \\{1, \ldots, n\\}, \mathcal{A} = 2^\Omega$, $P(\{k\}) = P(k) = \frac{1}{n}$ (gives *uniform distribution*)  
+$P(\\{1, 2, 4\\}) = P(\\{1\\} \cup \\{2\\} \cup \\{4\\})) = P(1) + P(2) + P(4)$
 2. (Countably infinite) $\Omega = \\{1, 2, 3, \ldots \\}, \mathcal{A} = 2^\Omega$  
 $P(k) =$ probability it takes $k$ coinflips to get heads $=\alpha(1-\alpha)^{k-1} = \frac{1}{2}(1-\frac{1}{2})^{k-1}$  
 (gives *gemetric distribution*)
