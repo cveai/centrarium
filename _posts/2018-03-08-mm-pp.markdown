@@ -53,7 +53,7 @@ is the "smallest" $\sigma$-algebra containing $\mathscr{C}$. (That is, $sigma(\m
 
 **Remark.** $sigma(\mathscr{C})$ always exists because:  
 1. $2^\Omaga$ is a $\sigma$-algebra
-2. any intersection of $\sigma$-algebras is a $\sigma$-algebra$  
+2. any intersection of $\sigma$-algebras is a $\sigma$-algebra  
 
 **Examples.**  
 1. $\mathcal{A} = \\{\emptyset, \Omega\\}$
