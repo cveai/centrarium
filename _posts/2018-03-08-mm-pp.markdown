@@ -77,7 +77,8 @@ The defining conditions of a probability measure is called the Kolmogorov's axio
 1. (Finite set) $\Omega = \\{1, \ldots, n\\}, \mathcal{A} = 2^\Omega$, $P(\{k\}) = P(k) = \frac{1}{n}$ (gives uniform distribution)  
 $P(\\{1, 2, 4\\} = P(\\{1\\} \\{2\\} \\{4\\})) = P(1) + P2() + P(4)$
 2. (Countably infinite) $\Omega = \\{1, 2, 3, \ldots \\}, \mathcal{A} = 2^\Omega$  
-$P(k) =$ probability it takes $k$ coinflips to get heads $=\alpha(1-\alpha)^{k-1} = \frac{1}{2}(1-\frac{1}{2})^{k-1}$ (gives *gemetric distribution*)
+$P(k) =$ probability it takes $k$ coinflips to get heads $=\alpha(1-\alpha)^{k-1} = \frac{1}{2}(1-\frac{1}{2})^{k-1}$  
+(gives *gemetric distribution*)
 3. (Uncountable) $\Omega = [0, \infty)$, $\mathcal{A} = \mathcal{B}([0, \infty \)])$  
 $P([0, x)) = 1-e^{-x}, \forall x>0$ (gives *exponential distribution*)
 
