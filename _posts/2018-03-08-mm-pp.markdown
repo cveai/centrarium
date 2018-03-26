@@ -52,7 +52,7 @@ $$\cap_{i=1}^\infty = \cap (E_i^c)^c = (\cup_{i=1}^\infty)^c \in \mathcal{A}$$
 is the "smallest" $\sigma$-algebra containing $\mathscr{C}$. (That is, $\sigma(\mathscr{C}) = \cap_{\mathcal{A} \supset \mathscr{C}} \mathcal{A}$)
 
 **Remark.** $sigma(\mathscr{C})$ always exists because:  
-1. $2^\Omaga$ is a $\sigma$-algebra
+1. $2^\Omega$ is a $\sigma$-algebra
 2. any intersection of $\sigma$-algebras is a $\sigma$-algebra  
 
 **Examples.**  
