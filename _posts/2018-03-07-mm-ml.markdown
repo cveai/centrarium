@@ -448,7 +448,7 @@ $L(y, \hat{y}) = I(y\neq \hat{y}) =
 x(n-1), otherwise
 \end{cases}$ 
 
-**"Square loss":** $L(y, \hat{y}) = (y-\hat(y))^2$
+**"Square loss":** $L(y, \hat{y}) = (y-\hat{y})^2$
 
 ---
 
