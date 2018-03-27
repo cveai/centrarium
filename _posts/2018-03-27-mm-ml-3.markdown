@@ -80,7 +80,7 @@ Put a probability distribution on thses: $(X, Y) \sim p$
 "0-1" loss:  
 $E(L(Y, \hat{y})\vert X= x) = \sum_{y \neq \hat{y}} p(y\vert x)) = 1 - p(\hat{y}\vert x)$  
 
-$\hat{y} = \arg_y \min E() = $
+$\hat{y} = \argmin E() = $
 ---
 
 $\cdots$
