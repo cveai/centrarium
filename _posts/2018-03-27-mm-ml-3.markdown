@@ -75,8 +75,12 @@ Both are ill-posed!
 
 **Small loss on average** (Probability will come to the rescue!)  
 Put a probability distribution on thses: $(X, Y) \sim p$  
-1. $E(L(Y, \hat{y})\vert X= x) = \sum_{y \in Y} L(y, \hat{y}p(y\vert x))$
+1. $E(L(Y, \hat{y})\vert X= x) = \sum_{y \in Y} L(y, \hat{y})p(y\vert x))$ (a well-posed problem)
 
+"0-1" loss:  
+$E(L(Y, \hat{y})\vert X= x) = \sum_{y \neq \hat{y}} p(y\vert x)) = 1 - p(\hat{y}\vert x)$  
+
+$\hat{y} = \arg_y \min E() = $
 ---
 
 $\cdots$
