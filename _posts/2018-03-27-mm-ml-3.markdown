@@ -75,7 +75,7 @@ Both are ill-posed!
 
 **Small loss on average** (Probability will come to the rescue!)  
 Put a probability distribution on thses: $(X, Y) \sim p$  
-1. $E(L(Y, \hat{y})\vert X= x) = \sum_{y \in Y} L(y, \hat{y}p(y\vet x))$
+1. $E(L(Y, \hat{y})\vert X= x) = \sum_{y \in Y} L(y, \hat{y}p(y\vert x))$
 
 ---
 
