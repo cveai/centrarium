@@ -7,10 +7,6 @@ categories: Notes
 tags: ML
 ---
 
-*In this page I summarize in a succinct and straighforward fashion what I learn from [Machine Learning](https://www.youtube.com/watch?v=yDLKJtOVx5c&list=PLD0F06AA0D2E8FFBA){:target="_blank"} course by Mathematical Monk, along with my own thoughts and related resources.*
-
----
-
 #### (ML 1.1) What is machine learning?
 
 "Designing *algorithms* for inferring what is unknown from knowns."
