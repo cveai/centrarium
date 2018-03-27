@@ -12,8 +12,8 @@ tags: ML
 ---
 
 
-* [Notes on Machine Learning 1: What is machine learning?](https://cveai.github.io/notes/2018/03/08/mm-ml-1.html)  
-* [Notes on Machine Learning 2: Decision trees](https://cveai.github.io/notes/2018/03/16/mm-ml.html)  
+* Notes on Machine Learning 1: [What is machine learning?](https://cveai.github.io/notes/2018/03/08/mm-ml-1.html)  
+* Notes on Machine Learning 2: [Decision trees](https://cveai.github.io/notes/2018/03/16/mm-ml.html)  
 
 *To be added..*
 
