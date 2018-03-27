@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Notes on Machine Learning 1: What is machine learning?"
-date:   2018-03-16 00:00:00
+date:   2018-03-08 00:00:00
 author: 장승환
 categories: Notes
 tags: ML
