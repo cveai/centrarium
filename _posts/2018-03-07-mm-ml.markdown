@@ -444,8 +444,8 @@ Loss can be thought of as *reward* or *utility* depending on the sign of the val
 **"$0$-$1$ loss":** 
 $$L(y, \hat{y}) = I(y\neq \hat{y}) = 
 \begin{cases}
-0, {\rm if} y=\hat{y}\\
-x(n-1), otherwise
+1, {\rm if} \, y=\hat{y}\\
+0, {\rm otherwise
 \end{cases}$$
 
 **"Square loss":** $L(y, \hat{y}) = (y-\hat{y})^2$
