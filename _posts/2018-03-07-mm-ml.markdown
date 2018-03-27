@@ -11,6 +11,14 @@ tags: ML
 
 ---
 
+
+* [Notes on Machine Learning 1: What is machine learning?](https://cveai.github.io/notes/2018/03/08/mm-ml-1.html)  
+* [Notes on Machine Learning 2: Decision trees](https://cveai.github.io/notes/2018/03/16/mm-ml.html)  
+
+*To be added..*
+
+---
+
 **Acronyms**
 * MM: Mathematical Monk
 * ML: Machine Learning
@@ -28,13 +36,6 @@ tags: ML
 
 Some other helpful resources:
 * [Lecture 08 - Bias-Variance Tradeoff](https://youtu.be/zrEyxfl2-a8) of Caltech's Machine Learning Course - CS 156 (Spring 2012) by Professor Yaser Abu-Mostafa
-
----
-
-[Notes on Machine Learning 1: What is machine learning?](https://cveai.github.io/notes/2018/03/08/mm-ml-1.html)  
-[Notes on Machine Learning 2: Decision trees](https://cveai.github.io/notes/2018/03/16/mm-ml.html)  
-
-*To be added..*
 
 ---
 
