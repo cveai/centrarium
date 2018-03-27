@@ -422,7 +422,37 @@ Works essentialy for the same reasonas bagging, except that this time averaging 
 
 #### (ML 3.1) Decision theory (Basic Framework)
 
-"Minimize expected loss"
+Idea: "Minimize expected loss"
+
+**Example.** Spam (classification): $x, y, \hat{y}$ 
+
+Loss function $L(y, \hat{y}) \in \mathbb{R}$
+
+<figure>
+<img src="/assets/pics/mm-ml/spam.png" alt="Spam classification" style="width: 50%; height: 50%">
+<figcaption>
+</figcaption>
+</figure>
+
+Loss can be thought of as *reward* or *utility* depending on the sign of the value.
+
+**General framework:**  
+* State $s$ (unknown)  
+* Actoin $a$  
+* Loss $L(s, a)$
+
+**"$0$-$1$ loss":** 
+$$L(y, \hat{y}) = I(y\neq \hat{y}) = 
+\begin{cases}
+1, \, {\rm if} \,\,\, y=\hat{y}\\
+0, \, {\rm otherwise}
+\end{cases}$$
+
+**"Square loss":** $L(y, \hat{y}) = (y-\hat{y})^2$
+
+---
+
+#### (ML 3.2) Minimizing conditional expected loss
 
 ---
 
