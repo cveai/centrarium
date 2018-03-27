@@ -437,9 +437,9 @@ Loss function $L(y, \hat{y}) \in \mathbb{R}$
 Loss can be thought of as *reward* or *utility* depending on the sign of the value.
 
 **General framework:**  
-State $s$ (unknown)  
-Actoin $a$  
-Loss $L(s, a)$
+* State $s$ (unknown)  
+* Actoin $a$  
+* Loss $L(s, a)$
 
 **"$0$-$1$ loss":** 
 $L(y, \hat{y}) = I(y\neq \hat{y}) = 
