@@ -442,11 +442,11 @@ Loss can be thought of as *reward* or *utility* depending on the sign of the val
 * Loss $L(s, a)$
 
 **"$0$-$1$ loss":** 
-$L(y, \hat{y}) = I(y\neq \hat{y}) = 
+$$L(y, \hat{y}) = I(y\neq \hat{y}) = 
 \begin{cases}
 0, {\rm if} y=\hat{y}\\
 x(n-1), otherwise
-\end{cases}$ 
+\end{cases}$$
 
 **"Square loss":** $L(y, \hat{y}) = (y-\hat{y})^2$
 
