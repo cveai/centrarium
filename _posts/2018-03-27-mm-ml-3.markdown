@@ -80,7 +80,16 @@ Put a probability distribution on thses: $(X, Y) \sim p$
 "0-1" loss:  
 $E(L(Y, \hat{y})\vert X= x) = \sum_{y \neq \hat{y}} p(y\vert x)) = 1 - p(\hat{y}\vert x)$  
 
-$\hat{y} = \argmin E() = $
+$\hat{y} = \arg\min_y E(L(Y, y)\vert X = x) = \arg\max_y p(y\vert x)$
+
+<span style="color:orange">$p(y\vert x)$</span> is the key quantity that we need to solve the problem!
+
+---
+
+#### (ML 3.3) Choosing f to minimize expected loss
+
+2. 
+
 ---
 
 $\cdots$
