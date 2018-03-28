@@ -84,18 +84,6 @@ $\hat{y} = \arg\min_y E(L(Y, y)\vert X = x) = \arg\max_y p(y\vert x)$
 
 <span style="color:orange">$p(y\vert x)$</span> is the key quantity that we need to solve the problem!
 
----
-
-#### (ML 3.3) Choosing f to minimize expected loss
-
-(2) $\hat{Y} = f(X)$
-
-$$\begin{aligned}
-{\rm EL}(Y, \hat{Y}) &= {\rm EL}(Y, f(X)) = \sum_{x, y}L(y, f(x))p(x, y) \\
-&= \sum_x\left(\sum_y L(y, f(x))p(y\vert x)\right)p(x)
-\end{aligned}$$
-
-factoring $p(x, y) = p(y\vert x)p(x)$ and letting $g(x) = $
 
 ---
 
