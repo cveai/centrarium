@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Notes on Machine Learning 3: Decision theory"
+title:  "Notes on Machine Learning: 3. Decision theory"
 date:   2018-03-27 00:00:00
 author: 장승환
 categories: Notes
