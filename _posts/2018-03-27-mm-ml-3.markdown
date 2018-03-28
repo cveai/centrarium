@@ -66,6 +66,25 @@ $$L(y, \hat{y}) = I(y\neq \hat{y}) =
 
 #### (ML 3.2) Minimizing conditional expected loss
 
+**Decision theory for supervised learning:** $D = ((x_1, y_1), \ldots, (x_n, y_n))$, $x, y, \hat{y}$ 
+
+1. Given $x$, minimize $L(y, \hat{y}) \ldots$ but we don't know $y$!
+2. Choose $f$ ($f(x)=y$) to minimize $L(y, f(x)) \ldots$ but don't knw $x$ or $y$.
+
+Both are ill-posed!
+
+**Small loss on average** (Probability will come to the rescue!)  
+Put a probability distribution on thses: $(X, Y) \sim p$  
+(1) $E(L(Y, \hat{y})\vert X= x) = \sum_{y \in Y} L(y, \hat{y})p(y\vert x))$ (a well-posed problem)
+
+"0-1" loss:  
+$E(L(Y, \hat{y})\vert X= x) = \sum_{y \neq \hat{y}} p(y\vert x)) = 1 - p(\hat{y}\vert x)$  
+
+$\hat{y} = \arg\min_y E(L(Y, y)\vert X = x) = \arg\max_y p(y\vert x)$
+
+<span style="color:orange">$p(y\vert x)$</span> is the key quantity that we need to solve the problem!
+
+
 ---
 
 $\cdots$
