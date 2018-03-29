@@ -95,7 +95,8 @@ Want to minimize:
 $$\begin{aligned}
 E(L(Y, \hat{Y})) &= E(L((Y, f(X)) = \sum_{x, y}L(y, f(x))p(x, y) \\
 &= \sum_x\left(\sum_y L(y, f(x))p(y\vert x)\right)p(x) \\
-&= \sum_{x}g(x, f(x))p(x) = E^Xg(X, f(X)).
+&= \sum_{x}g(x, f(x))p(x) \\
+&= E^Xg(X, f(X)).
 \end{aligned}$$
 
 factoring $p(x, y) = p(y\vert x)p(x)$ and letting $g(x) = \sum_y L(y, f(x))p(y\vert x)$
