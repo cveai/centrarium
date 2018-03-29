@@ -102,11 +102,16 @@ E(L(Y, \hat{Y})) &= E(L((Y, f(X)) = \sum_{x, y}L(y, f(x))p(x, y) \\
 which is the expecteation for the marginal distribution
 (by factoring $p(x, y) = p(y\vert x)p(x)$ and letting $g(x) = \sum_y L(y, f(x))p(y\vert x)$).
 
-Suppose for some $x', t$: $$
+Suppose for some $x_0, t$ we have $g(x_0, f(x_0)) > g(x_1, t)$.
+
+Define $f_0(x) = \begin{cases}
+1, \, {\rm if} \,\,\, y=\hat{y}\\
+0, \, {\rm otherwise}
+\end{cases}$
 
 A nice observation that is called the *law of iterated expectation* (LIE):  
 
-<span style="color:blue">$$E(L(Y, \hat{Y})) = E^X(E(L(Y, \hat{Y})\vert X))$$  </span>
+<span style="color:blue">$$E(L(Y, \hat{Y})) = E^X(E(L(Y, \hat{Y})\vert X))$$</span>
 
 
 
