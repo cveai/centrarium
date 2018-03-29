@@ -109,7 +109,11 @@ f(x), \, {\rm if} \,\,\, x \neq x_0 \\
 t, \, {\rm if} \,\,\, x = x_0.
 \end{cases}$$
 
-Then we have $g(x, f(x)) \ge g(x, f_0(x))$ for all $x$. 
+Note that $g(x, f(x)) \ge g(x, f_0(x))$ for all $x$. 
+
+Then we have
+
+$$E(L(Y, \hat{Y})) = E^X(g(x, f(x))) \ge E^X(g(x, f_0(x))) \ge E^X(g(x, f^*(x)))$$
 
 A nice observation that is called the *law of iterated expectation* (LIE):  
 
