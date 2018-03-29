@@ -129,7 +129,6 @@ A nice observation that is called the *law of iterated expectation* (LIE):
 
 For LIE in general, see: [Law of Iterated Expectations](http://guillemriambau.com/Law%20of%20Iterated%20Expectations.pdf).
 
->>>>>>> master
 ---
 
 $\cdots$
