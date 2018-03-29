@@ -117,9 +117,11 @@ $$E(L(Y, \hat{Y})) = E^X(g(x, f(x))) \ge E^X(g(x, f_0(x))) \ge E^X(g(x, f^*(x)))
 
 Now let's just go ahead and choose $f^*$ to minimize $g(x, f(x))$:
 
-<span style="color:purple">$$f^* = \arg\min_t g(x, t),$$</span>
+<span style="color:purple">$$f^*(x) = \arg\min_t g(x, t),$$</span>
 
 so tht $E(L(Y, \hat{Y})) \ge E^X(g(X, f^*(X)))$.
+
+Again <span style="color:blue">$p(y\vert x)$</span> is the key quantity.
 
 A nice observation that is called the *law of iterated expectation* (LIE):  
 
