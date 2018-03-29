@@ -105,8 +105,8 @@ which is the expecteation for the marginal distribution
 Suppose for some $x_0, t$ we have $g(x_0, f(x_0)) > g(x_1, t)$.
 
 Define $$f_0(x) = \begin{cases}
-1, \, {\rm if} \,\,\, y=\hat{y}\\
-0, \, {\rm otherwise}
+f(x), \, {\rm if} \,\,\, x \neq x'\\
+t, \, {\rm if} \,\,\, x = x'.
 \end{cases}$$
 
 A nice observation that is called the *law of iterated expectation* (LIE):  
