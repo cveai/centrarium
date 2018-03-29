@@ -113,7 +113,7 @@ Note that $g(x, f(x)) \ge g(x, f_0(x))$ for all $x$.
 
 Then we have
 
-$$E(L(Y, \hat{Y})) = E^X(g(x, f(x))) \ge E^X(g(x, f_0(x))) \ge E^X(g(x, f^*(x)))$$
+$$E(L(Y, \hat{Y})) = E^X(g(X, f(X))) \ge E^X(g(X, f_0(X))) \ge E^X(g(X, f^*(X)))$$
 
 Now let's just go ahead and choose $f^*$ to minimize $g(x, f(x))$:
 
