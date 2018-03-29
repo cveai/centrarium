@@ -119,7 +119,7 @@ Now let's just go ahead and choose $f^*$ to minimize $g(x, f(x))$:
 
 <span style="color:purple">$$f^*(x) = \arg\min_t g(x, t),$$</span>
 
-so that $E^Xg(X, f(X)) \ge E^X(g(X, f^*(X)))$ for all $f$.
+so that $E^X(g(X, f(X))) \ge E^X(g(X, f^*(X)))$ for all $f$.
 
 Again <span style="color:orange">$p(y\vert x)$</span> is the key quantity.
 
