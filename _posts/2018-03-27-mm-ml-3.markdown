@@ -106,7 +106,7 @@ Suppose for some $x', t$: $$
 
 A nice observation that is called the *law of iterated expectation* (LIE):
 
-$$E(L(Y, \hat{Y})) = E^X(E(L(Y, \hat{Y}(X))$$
+$$E(L(Y, \hat{Y})) = E^X(E(L(Y, \hat{Y}\vert X)$$
 
 
 
