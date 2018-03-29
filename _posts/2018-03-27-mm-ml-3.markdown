@@ -127,7 +127,7 @@ A nice observation that is called the *law of iterated expectation* (LIE):
 
 <span style="color:blue">$$E(L(Y, \hat{Y})) = E^X(E(L(Y, \hat{Y})\vert X))$$</span>
 
-
+For LIE in general, see: [Law of Iterated Expectations](http://guillemriambau.com/Law%20of%20Iterated%20Expectations.pdf).
 
 ---
 
