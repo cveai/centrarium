@@ -75,7 +75,7 @@ Both are ill-posed!
 
 **Small loss on average** (Probability will come to the rescue!)  
 Put a probability distribution on thses: $(X, Y) \sim p$  
-(1) $E(L(Y, \hat{y})\vert X= x) = \sum_{y \in Y} L(y, \hat{y})p(y\vert x))$ (a well-posed problem)
+(1) $E(L(Y, \hat{y})\vert X= x)) = \sum_{y \in Y} L(y, \hat{y})p(y\vert x)$ (a well-posed problem)
 
 "0-1" loss:  
 $E(L(Y, \hat{y})\vert X= x) = \sum_{y \neq \hat{y}} p(y\vert x)) = 1 - p(\hat{y}\vert x)$  
@@ -96,10 +96,11 @@ $$\begin{aligned}
 E(L(Y, \hat{Y})) &= E(L((Y, f(X)) = \sum_{x, y}L(y, f(x))p(x, y) \\
 &= \sum_x\left(\sum_y L(y, f(x))p(y\vert x)\right)p(x) \\
 &= \sum_{x}g(x, f(x))p(x) \\
-&= E^Xg(X, f(X)).
+&= E^Xg(X, f(X)),
 \end{aligned}$$
 
-factoring $p(x, y) = p(y\vert x)p(x)$ and letting $g(x) = \sum_y L(y, f(x))p(y\vert x)$
+which is the expecteation for the marginal distribution
+(by factoring $p(x, y) = p(y\vert x)p(x)$ and letting $g(x) = \sum_y L(y, f(x))p(y\vert x)$).
 
 Suppose for some $x', t$: $$
 
