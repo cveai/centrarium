@@ -121,7 +121,7 @@ Now let's just go ahead and choose $f^*$ to minimize $g(x, f(x))$:
 
 so tht $E(L(Y, \hat{Y})) \ge E^X(g(X, f^*(X)))$.
 
-Again <span style="color:blue">$p(y\vert x)$</span> is the key quantity.
+Again <span style="color:orange">$p(y\vert x)$</span> is the key quantity.
 
 A nice observation that is called the *law of iterated expectation* (LIE):  
 
