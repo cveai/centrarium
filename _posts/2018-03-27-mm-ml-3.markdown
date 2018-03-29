@@ -84,6 +84,70 @@ $\hat{y} = \arg\min_y E(L(Y, y)\vert X = x) = \arg\max_y p(y\vert x)$
 
 <span style="color:orange">$p(y\vert x)$</span> is the key quantity that we need to solve the problem!
 
+--- 
+
+**Decision theory for supervised learning:** $D = ((x_1, y_1), \ldots, (x_n, y_n))$, $x, y, \hat{y}$ 
+
+1. Given $x$, minimize $L(y, \hat{y}) \ldots$ but we don't know $y$!
+2. Choose $f$ ($f(x)=y$) to minimize $L(y, f(x)) \ldots$ but don't knw $x$ or $y$.
+
+Both are ill-posed!
+
+**Small loss on average** (Probability will come to the rescue!)  
+Put a probability distribution on thses: $(X, Y) \sim p$  
+(1) $E(L(Y, \hat{y})\vert X= x)) = \sum_{y \in Y} L(y, \hat{y})p(y\vert x)$ (a well-posed problem)
+
+"0-1" loss:  
+$E(L(Y, \hat{y})\vert X= x)) = \sum_{y \neq \hat{y}} p(y\vert x)) = 1 - p(\hat{y}\vert x)$  
+
+$\hat{y} = \arg\min_y E(L(Y, y)\vert X = x)) = \arg\max_y p(y\vert x)$
+
+<span style="color:orange">$p(y\vert x)$</span> is the key quantity that we need to solve the problem!
+
+---
+
+#### (ML 3.3) Choosing $f$ to minimize expected loss
+
+(2) $\hat{Y} = f(X)$ (classification, discrete for now)
+
+Want to minimize:
+
+$$\begin{aligned}
+E(L(Y, \hat{Y})) &= E(L((Y, f(X)) = \sum_{x, y}L(y, f(x))p(x, y) \\
+&= \sum_x\left(\sum_y L(y, f(x))p(y\vert x)\right)p(x) \\
+&= \sum_{x}g(x, f(x))p(x) \\
+&= E^Xg(X, f(X)),
+\end{aligned}$$
+
+which is the expecteation for the marginal distribution
+(by factoring $p(x, y) = p(y\vert x)p(x)$ and letting $g(x) = \sum_y L(y, f(x))p(y\vert x)$).
+
+Suppose for some $x_0, t$ we have $g(x_0, f(x_0)) > g(x_1, t)$.
+
+Define $$f_0(x) = \begin{cases}
+f(x), \, {\rm if} \,\,\, x \neq x_0 \\
+t, \, {\rm if} \,\,\, x = x_0.
+\end{cases}$$
+
+Note that $g(x, f(x)) \ge g(x, f_0(x))$ for all $x$. 
+
+Then we have
+
+$$E(L(Y, \hat{Y})) = E^X(g(x, f(x))) \ge E^X(g(x, f_0(x))) \ge E^X(g(x, f^*(x)))$$
+
+Now let's just go ahead and choose $f^*$ to minimize $g(x, f(x))$:
+
+<span style="color:purple">$$f^*(x) = \arg\min_t g(x, t),$$</span>
+
+so tht $E(L(Y, \hat{Y})) \ge E^X(g(X, f^*(X)))$.
+
+Again <span style="color:orange">$p(y\vert x)$</span> is the key quantity.
+
+A nice observation that is called the *law of iterated expectation* (LIE):  
+
+<span style="color:blue">$$E(L(Y, \hat{Y})) = E^X(E(L(Y, \hat{Y})\vert X))$$</span>
+
+For LIE in general, see: [Law of Iterated Expectations](http://guillemriambau.com/Law%20of%20Iterated%20Expectations.pdf).
 
 ---
 
