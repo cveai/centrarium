@@ -104,6 +104,11 @@ which is the expecteation for the marginal distribution
 
 Suppose for some $x', t$: $$
 
+A nice observation:
+
+$$E(L(Y, \hat{Y})) = E^X(E(L(Y, \hat{Y}\vert X)),$$
+
+which is called the *law of iterated expectation* (LIE)
 
 ---
 
