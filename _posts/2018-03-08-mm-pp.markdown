@@ -85,6 +85,11 @@ Note: $P(\\{x\\})$ $\forall x>0$ (a symptom of continuous distributions)
 
 ---
 
+#### (PP 1.5) Measure theory: Basic Properties of Measures
+
+4. 
+---
+
 #### (PP 2.1) Conditional Probability
 
 Conditinoal probability and independence are critical topics in applications of probability.
