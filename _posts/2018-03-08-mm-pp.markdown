@@ -85,6 +85,33 @@ Note: $P(\\{x\\})$ $\forall x>0$ (a symptom of continuous distributions)
 
 ---
 
+#### (PP 1.5) Measure theory: Basic Properties of Measures
+
+(4) Lebesgue measure (on $\mathbb{R}$). $\Omega, \mathcal{A = \mathcal{B}(\mathbb{R})$
+
+$$\mu((a, b)) = b-1$$
+
+for any $a, b \in \mathbb{R}, a< b$.
+
+**Theorem (Basic properties of measures).** Let $(\Omega, \mathcal{A}, \mu)$ be a measure space.
+1. Monoronicity: If $E, F \in \mathcal{A}$ and $E \subset F$, then $\mu(E) \le \mu(F)$.
+2. Subadditivity (handy!): If $E_1, E_2, \cdots \in \mathcal{A}$, then $\mu(\cup_{i=1}^\infty E_i) \le \sum_{i=1}^\infty E_i$
+
+---
+
+#### (PP 1.6) Measure theory: Basic Properties of Measures (continued)
+
+1. 
+2. 
+3. Continuity from below: If $E_1, E_2, \cdots \in \mathcal{A}$ and $E_1 \subset E_2 \subset \cdots$,
+then $\mu(\cup_{i=1}^\infty E_i) = \lim_{i \rightarrow \infty} \mu(E_i)$
+4. Continuity from above: If $E_1, E_2, \cdots \in \mathcal{A}$ and $E_1 \supset E_2 \supset \cdots$ and $\mu(E_1) < \infty$,
+then mu(\cap_{i=1}^\infty E_i) = \lim_{i \rightarrow \infty} \mu(E_i)$
+
+Properties 3 and 4 are very innocent looking but are essential in proving pretty nontrivial theorems!
+
+---
+
 #### (PP 2.1) Conditional Probability
 
 Conditinoal probability and independence are critical topics in applications of probability.
