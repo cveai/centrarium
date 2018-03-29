@@ -97,8 +97,16 @@ for any $a, b \in \mathbb{R}, a< b$.
 1. Monoronicity: If $E, F \in \mathcal{A}$ and $E \subset F$, then $\mu(E) \le \mu(F)$.
 2. Subadditivity (handy!): If $E_1, E_2, \cdots \in \mathcal{A}$, then $\mu(\cup_{i=1}^\infty E_i) \le \sum_{i=1}^\infty E_i$
 
+---
 
+#### (PP 1.6) Measure theory: Basic Properties of Measures (continued)
 
+1. 
+2. 
+3. Continuity from below: If $E_1, E_2, \cdots \in \mathcal{A}$ and $E_1 \subset E_2 \subset \cdots$,
+then $\mu(\cup_{i=1}^\infty E_i) = \lim_{i \rightarrow \infty} \mu(E_i)$
+4. Continuity from above: If $E_1, E_2, \cdots \in \mathcal{A}$ and $E_1 \supset E_2 \supset \cdots$ and $\mu(E_1) < \infty$,
+then mu(\cap_{i=1}^\infty E_i) = \lim_{i \rightarrow \infty} \mu(E_i)$
 
 ---
 
