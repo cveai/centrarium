@@ -140,8 +140,10 @@ Wanna minimize $E(L(Y, \hat{y})\vert X = x) = \int L(Y, \hat{y}) p(y\vert x) dy 
 Assuming enough smoothness of the integrand, 
 
 $$\begin{aligned} 
-0 = \frac{\partial}{\partial y} E(L(Y, \hat{y})\vert X = x) \\
-& = \int \frac{\partial}{\partial y} (y-\hat{y})^2 p(y\vert x) dy 
+0 &= \frac{\partial}{\partial y} E(L(Y, \hat{y})\vert X = x) \\
+& = \int \frac{\partial}{\partial y} (y-\hat{y})^2 p(y\vert x) dy \\
+& = \int  2(y-\hat{y})p(y\vert x) dy \\
+& = 2\hat{y} \int p(y\vert x)dy - 2\int y p(y \ver x) dy
 \end{aligned}$$
 
 ---
