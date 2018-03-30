@@ -108,7 +108,25 @@ then $\mu(\cup_{i=1}^\infty E_i) = \lim_{i \rightarrow \infty} \mu(E_i)$
 4. Continuity from above: If $E_1, E_2, \cdots \in \mathcal{A}$ and $E_1 \supset E_2 \supset \cdots$ and $\mu(E_1) < \infty$,
 then mu(\cap_{i=1}^\infty E_i) = \lim_{i \rightarrow \infty} \mu(E_i)$
 
+<figure>
+<img src="/assets/pics/mm-pp/continuity-from-above.png" alt="Continuity from below" style="width: 80%; height: 80%">
+<figcaption>Continuity from below
+</figcaption>
+</figure>
+
+<figure>
+<img src="/assets/pics/mm-pp/continuity-from-below.png" alt="Continuity from above" style="width: 80%; height: 80%">
+<figcaption>Continuity from above
+</figcaption>
+</figure>
+
 Properties 3 and 4 are very innocent looking but are essential in proving pretty nontrivial theorems!
+
+---
+
+#### (PP 1.7) Measure theory: More Properties of Probability Measures
+
+
 
 ---
 
