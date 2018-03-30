@@ -87,7 +87,7 @@ Note: $P(\\{x\\})$ $\forall x>0$ (a symptom of continuous distributions)
 
 #### (PP 1.5) Measure theory: Basic Properties of Measures
 
-(4) Lebesgue measure (on $\mathbb{R}$). $\Omega, \mathcal{A = \mathcal{B}(\mathbb{R})$
+(4) Lebesgue measure (on $\mathbb{R}$). $\Omega, \mathcal{A} = \mathcal{B}(\mathbb{R})$
 
 $$\mu((a, b)) = b-1$$
 
