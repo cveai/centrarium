@@ -16,8 +16,8 @@ tags: Probability
 
 ---
 
-* Notes on Machine Learning 1: [Measure theory](https://cveai.github.io/notes/2018/03/08/mm-pp-1.html)  
-* Notes on Machine Learning 2: [Conditional probability](https://cveai.github.io/notes/2018/03/30/mm-pp-2.html)  
+* Notes on Probability Primer 1: [Measure theory](https://cveai.github.io/notes/2018/03/08/mm-pp-1.html)  
+* Notes on Probability Primer 2: [Conditional probability](https://cveai.github.io/notes/2018/03/30/mm-pp-2.html)  
 
 ---
 
