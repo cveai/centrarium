@@ -152,7 +152,7 @@ gives the only critical point $\hat{y} = E(Y \vert X = x)$ and it tunrs out to g
 Thus, $E(Y \vert X= x) = \arg\min_y E(L(Y, \hat{y}) \vert X = x)$
 
 <figure>
-<img src="/assets/pics/mm-ml/square-loss.png" alt="Square loss" style="width: 35%; height: 35%">
+<img src="/assets/pics/mm-ml/square-loss.png" alt="Square loss" style="width: 40%; height: 40%">
 <figcaption>
 </figcaption>
 </figure>
