@@ -156,7 +156,7 @@ $\mathbb{R}, \mathcal{B}(\mathbb{R})$, $(a, b)$
 That is, there is an equivalence between CDFs and Borel probability measures.
 
 <figure>
-<img src="/assets/pics/mm-pp/cdf.png" alt="CDF" style="width: 35%; height: 35%">
+<img src="/assets/pics/mm-pp/cdf.png" alt="CDF" style="width: 50%; height: 50%">
 <figcaption>CDF
 </figcaption>
 </figure>
