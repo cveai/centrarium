@@ -109,13 +109,13 @@ then $\mu(\cup_{i=1}^\infty E_i) = \lim_{i \rightarrow \infty} \mu(E_i)$
 then mu(\cap_{i=1}^\infty E_i) = \lim_{i \rightarrow \infty} \mu(E_i)$
 
 <figure>
-<img src="/assets/pics/mm-pp/continuity-from-above.png" alt="Continuity from below" style="width: 80%; height: 80%">
+<img src="/assets/pics/mm-pp/continuity-from-above.png" alt="Continuity from below" style="width: 35%; height: 35%">
 <figcaption>Continuity from below
 </figcaption>
 </figure>
 
 <figure>
-<img src="/assets/pics/mm-pp/continuity-from-below.png" alt="Continuity from above" style="width: 80%; height: 80%">
+<img src="/assets/pics/mm-pp/continuity-from-below.png" alt="Continuity from above" style="width: 35%; height: 35%">
 <figcaption>Continuity from above
 </figcaption>
 </figure>
@@ -126,6 +126,15 @@ Properties 3 and 4 are very innocent looking but are essential in proving pretty
 
 #### (PP 1.7) Measure theory: More Properties of Probability Measures
 
+**Facts.** Let $(\Omega, \mathcal{A}, P)$ be a probabilistic measure space with $E, F, E_i \in \mathcal{A}$.
+1. $P(E \cup F) = P(E) + P(F)$ if $E \cap F = \emptyset$
+2. $P(E cup F) = P(E) + P(F) - P(E \cap F)$
+3. $P(E) = 1 - P(E)$
+4. $P(E \cap F^c) = P(E) - P(E \cap F)$
+5. (Inclusion-Exclusion formula) 
+$P(\cup_{i=1}^n E_i) = \sum_{i} P(E_i) - \sum_{i<j}P(E_i \cap E_j) + \sum_{i<j<k}P(E_i \cap E_j \cap E_k) - \cdots 
++(-1)P(E_1 \cap E_2 \cap \cdots E_n)$
+6. 
 
 
 ---
