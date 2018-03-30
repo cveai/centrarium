@@ -136,6 +136,21 @@ $P(\cup_{i=1}^n E_i) = \sum_{i} P(E_i) - \sum_{i<j}P(E_i \cap E_j) + \sum_{i<j<k
 +(-1)P(E_1 \cap E_2 \cap \cdots E_n)$
 6. P(\cup_{i=1}^n E_i) \le \sum_{i=1}^n P(E_i)$ and $P(\cup_{i=1}^\infty E_i) \le \sum_{i=1}^\infty P(E_i)$
 
+---
+
+#### (PP 1.8) Measure theory: CDFs and Borel Probability Measures
+
+$\mathbb{R}, \mathcal{B}(\mathbb{R})$, $(a, b)$
+
+**Definition.** A Borel measure on $\mathbb{R}$ is a measure on $(\mathbb{R}, \mathcal{B}(\mathbb{R}))$
+
+**Definition.** A CDF (cumulative distribution function) is a function $F : \mathbb{R} \rightarrow \mathbb{R}$ s.t. 
+1. $F$ is nondecreasing ($x \le y \Rightarrow F(x) \le F(y)$)
+2. $F$ is right continuous (\lim_{x \searrow a})
+
+---
+
+
 
 ---
 
