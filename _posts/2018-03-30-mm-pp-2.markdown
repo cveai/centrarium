@@ -1,0 +1,169 @@
+---
+layout: post
+title:  "Notes on Probability Primer 2: Conditional probability"
+date:   2018-03-30 00:00:00
+author: 장승환
+categories: Notes
+tags: Probability
+---
+
+*In this page I summarize in a succinct and straighforward fashion what I learn from [Probability Primer](https://www.youtube.com/watch?v=Tk4ubu7BlSk&list=PL17567A1A3F5DB5E4){:target="_blank"} course by Mathematical Monk, along with my own thoughts and related resources.*
+*I will update this page frequently, like every other day, until it's complete.*
+
+---
+
+**Acronyms**
+* RV: random variable
+
+---
+
+#### (PP 2.1) Conditional Probability
+
+Conditinoal probability and independence are critical topics in applications of probability.
+
+**Notation** "Suppress" $(\Omega, \mathcal{A})$.
+Whenever write $P(E)$ is implicitly assmung underlying some ptobability measure sapce $\Omega$ and some $\sigma$-algebra $\mathscr{A}$ with some measure $p$ defined on these.
+
+**Terminology**
+* event = measureable set = set in $\mathcal{A}$
+* sample space = $\Omega$
+
+**Definition** Assuming $P(B) > 0 $, define the *conditional probability of $A$ given $B$* as
+
+$$P(A \vert B) = \frac{P(A \cap B)}{P(B)}.$$
+
+<figure>
+<img src="/assets/pics/mm-pp/conditional.png" alt="Conditional probability" style="width: 80%; height: 80%">
+<figcaption>Conditional probability
+</figcaption>
+</figure>
+
+---
+
+#### (PP 2.2) Independence
+
+**Definition.**
+Eventa $A< B$ are *independent* if $P(A \cap B) = P(A)P(B)$.
+
+<figure>
+<img src="/assets/pics/mm-pp/independence.png" alt="Independence" style="width: 30%; height: 30%">
+<figcaption>Independence
+</figcaption>
+</figure>
+
+**Definition.**
+Eventa $A_1, \ldots, A_n$ are *(mutually) independent* if for any $S \subset \\{1, \ldots, n\\}$,
+
+$$P(\cap_{i \in S} A_i) = \prod_{i \in S} P(A_i).$$
+
+**Remark.** Mutual independence $\Rightarrow$ pairwise independence
+
+**Warning!** Pairwise independence $\nRightarrow$ mutual independence
+
+<figure>
+<img src="/assets/pics/mm-pp/mutual.png" alt="Mutual independence" style="width: 40%; height: 40%">
+<figcaption>Pairwise independence $\nRightarrow$ mutual independence
+</figcaption>
+</figure>
+
+**Definition.** $A, B$ are *conditionally independent given $C$* (where $P(C) >0$) if 
+
+$$P(A\cap B \vert C) = P(A \vert C)P(B \vert C).$$
+
+<figure>
+<img src="/assets/pics/mm-pp/cond-ind.png" alt="Conditional independence" style="width: 60%; height: 60%">
+<figcaption>Conditional independence
+</figcaption>
+</figure>
+
+**Remark.** Independence $\nRightarrow$ conditional independence
+
+---
+
+#### (PP 2.3) Independence (continued)
+
+**Definition.**
+Eventa $A_1, A_n, \ldots$ are *(mutually) independent* if for any finite $S \subset \\{1, \ldots, n\\}$,
+
+$$P(\cap_{i \in S} A_i) = \prod_{i \in S} P(A_i).$$
+
+**Definition.** $A_1, \ldots, A_n$ are *conditionally independent given $C$* (where $P(C) >0$) if 
+
+$$P(\cap_{i \in S} A_i\vert C) = \prod_{i \in S} P(A_i\vert C).$$
+
+**Proposition.** Suppose $P(B)>0$. Then $A, B$ are independent iff $P(A\vert B) = P(A)$.
+
+<figure>
+<img src="/assets/pics/mm-pp/proof-ind.png" alt="Proof of independence" style="width: 90%; height: 90%">
+<figcaption>Proof
+</figcaption>
+</figure>
+ 
+**Exercise.**
+<figure>
+<img src="/assets/pics/mm-pp/exercise-ind.png" alt="Exercise: independence" style="width: 90%; height: 90%">
+<figcaption>
+</figcaption>
+</figure>
+
+---
+
+#### (PP 2.4) Bayes' rule and the Chain rule
+
+<span style="color:orange">**3 rules: Bayes', Chain, Partition**</span>
+
+**Remark.** $P(A \cap B) = P(A \vert B)P(B)$ if $P(B) >0$
+
+**Theorem (Bayes' rule)**
+
+$$P(B \vert A) = \frac{P(A\vert B)P(B)}{P(A)}$$ 
+
+if $P(A), P(B) >0$.
+
+Plays an important role in particulat in Bayesian statistics.
+
+**Theorem (Chain rule)** If $A_1, \ldots, A_n$ satisfy $P(A_1 \cap \cdots \cap A_n) >0$, then
+
+$$P(A_1 \cap \cdots \cap A_n)
+=  P(A_1)P(A_2 \vert A_1)P(A_3\vert A_1\cap A_2)\cdots P(A_n\vert A_1 \cap \cdots \cap A_{n-1}).$$
+
+Proof. By induction.
+<figure>
+<img src="/assets/pics/mm-pp/proof-chain.png" alt="Proof: The chain rule" style="width: 90%; height: 90%">
+<figcaption>
+</figcaption>
+</figure>
+
+---
+
+#### (PP 2.5) Partition rule, conditional measure
+
+**Definition** A *partition* of $\Omega$ is a nonempty (finite or countable) collection $\\{B_i\\} \subset 2^\Omega$ s.t.
+1. $\cup_i B_i = \Omega$
+2. $B_i \cap B_j = \emptyset$ if $i \neq j$
+
+**Theorem (Partition rule)** $P(A) = \sum_i P(A \cap B_i)$ for any partition $\\{B_i\\}$ of $\Omega$
+
+Proof: $A = A \cap \Omega = A \cap (\cup_i B_i) = \cup_i (A \cap B_i)$  
+$P(A) = P(\cup_i (A\cap B_i)) = \sum_i P(A \cap B_i)$
+
+**Definition.** If $P(B) >0$, then $Q(A) = P(A \vert B)$ defines a probability measure $Q$ (*conditional probability measure given $B$*).
+
+**Exercise.**
+* Bayes' rule for cond. prob. meas.:
+* Chain rule for cond. prob. meas.:
+* Partition rule for cond. prob. meas.:
+
+---
+
+#### (PP 3.1) Random Variables - Definition and CDF
+
+---
+
+$$ $$
+
+*To be added..*
+
+---
+
+
