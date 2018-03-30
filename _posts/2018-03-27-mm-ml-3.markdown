@@ -131,7 +131,11 @@ For LIE in general, see: [Law of Iterated Expectations](http://guillemriambau.co
 
 ---
 
-$\cdots$
+#### (ML 3.4) Square loss
+
+$L(y, \hat{y} = (y-\hat{y})^2$, $(X, Y) \approx p$, $x$
+
+Wanna minimize $E(L(Y, \hay{y})\vert X = x)$
 
 ---
 
