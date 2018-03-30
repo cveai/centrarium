@@ -152,7 +152,11 @@ $\mathbb{R}, \mathcal{B}(\mathbb{R})$, $(a, b)$
 
 **Theorem.**
 1. If $F$ is a CDF, then there is a unique Borel probability measure on $\mathbb{R}$ s.t. $P((-\infty, x]) = F(x)$ $\forall x \in \mathbb{R}$
-2. If $P$ is a Borel probability measure on $\mathbb{R}$, then there is a unique CDF $F$ s.t. $F(x) = P((-\infty, x])$ $\forall x \in \mathbb{R}$
+2. If $P$ is a Borel probability measure on $\mathbb{R}$, then there is a unique CDF $F$ s.t. $F(x) = P((-\infty, x])$ $\forall x \in \mathbb{R}$  
+That is, there is an equivalence between CDFs and Borel probability neasures.
+
+
+
 
 ---
 
