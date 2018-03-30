@@ -128,7 +128,7 @@ Properties 3 and 4 are very innocent looking but are essential in proving pretty
 
 **Facts.** Let $(\Omega, \mathcal{A}, P)$ be a probabilistic measure space with $E, F, E_i \in \mathcal{A}$.
 1. $P(E \cup F) = P(E) + P(F)$ if $E \cap F = \emptyset$
-2. $P(E cup F) = P(E) + P(F) - P(E \cap F)$
+2. $P(E \cup F) = P(E) + P(F) - P(E \cap F)$
 3. $P(E) = 1 - P(E)$
 4. $P(E \cap F^c) = P(E) - P(E \cap F)$
 5. (Inclusion-Exclusion formula) 
