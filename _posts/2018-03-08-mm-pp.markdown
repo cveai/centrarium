@@ -163,7 +163,11 @@ That is, there is an equivalence between CDFs and Borel probability measures.
 
 ---
 
+#### (PP 1.R) References for Probability and Measure theory
 
+**Comment.**
+* Excellent text -- right level
+* Do the exercises
 
 ---
 
