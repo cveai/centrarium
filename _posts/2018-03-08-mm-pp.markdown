@@ -151,8 +151,8 @@ $\mathbb{R}, \mathcal{B}(\mathbb{R})$, $(a, b)$
 4. $\lim_{x \rightarrow -\infty} F(x) = 0$
 
 **Theorem.**
-1. If $F$ is a CDF, then there is a unique Borel probability measure on $\mathbb{R}$ s.t. $P((-\infty, x])) = F(x)$ $\forall x \in \mathbb{R}$
-2. If $P$ is a Borel probability measure on $\mathbb{R}$, then there is a unique CDF $F$ s.t. $F(x) = P((-\infty, x]))$ $\forall x \in \mathbb{R}$
+1. If $F$ is a CDF, then there is a unique Borel probability measure on $\mathbb{R}$ s.t. $P((-\infty, x]) = F(x)$ $\forall x \in \mathbb{R}$
+2. If $P$ is a Borel probability measure on $\mathbb{R}$, then there is a unique CDF $F$ s.t. $F(x) = P((-\infty, x])$ $\forall x \in \mathbb{R}$
 
 ---
 
