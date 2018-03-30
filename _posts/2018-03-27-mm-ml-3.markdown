@@ -147,7 +147,7 @@ $$\begin{aligned}
 & = 2\left( \hat{y} - E(Y \vert X = x) \right)
 \end{aligned}$$
 
-gives the only critical point $\hat{y} = E(Y \vert X = x)$ and it tunrs out to give the minimum by looking at the second derivative, which is $2@.
+gives the only critical point $\hat{y} = E(Y \vert X = x)$ and it tunrs out to give the minimum by looking at the second derivative, which is $2$.
 
 Thus, $E(Y \vert X= x) = \arg\min_y E(L(Y, \hat{y}) \vert X = x)$
 
