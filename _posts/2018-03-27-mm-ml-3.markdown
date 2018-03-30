@@ -133,7 +133,7 @@ For LIE in general, see: [Law of Iterated Expectations](http://guillemriambau.co
 
 #### (ML 3.4) Square loss
 
-$L(y, \hat{y} = (y-\hat{y})^2$, $(X, Y) \approx p$, $x$
+$L(y, \hat{y}) = (y-\hat{y})^2$, $(X, Y) \sim p$, $x$ (regression)
 
 Wanna minimize $E(L(Y, \hat{y})\vert X = x) = \int L(Y, \hat{y}) p(y\vert x) dy = \int (y-\hat{y})^2 p(y\vert x) dy$
 
@@ -147,7 +147,17 @@ $$\begin{aligned}
 & = 2\left( \hat{y} - E(Y \vert X = x) \right)
 \end{aligned}$$
 
-givea a critical point $\hat{y} = E(Y \vert X = x)$ 
+gives the only critical point $\hat{y} = E(Y \vert X = x)$ and it tunrs out to give the minimum by looking at the second derivative, which is $2@.
+
+Thus, $E(Y \vert X= x) = \arg\min_y E(L(Y, \hat{y}) \vert X = x)$
+
+<figure>
+<img src="/assets/pics/mm-ml/square-loss.png" alt="Square loss" style="width: 80%; height: 80%">
+<figcaption>
+</figcaption>
+</figure>
+
+$$f(x) = E(Y \vert X = x)$$
 
 ---
 
