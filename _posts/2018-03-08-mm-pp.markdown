@@ -106,7 +106,7 @@ for any $a, b \in \mathbb{R}, a< b$.
 3. Continuity from below: If $E_1, E_2, \cdots \in \mathcal{A}$ and $E_1 \subset E_2 \subset \cdots$,
 then $\mu(\cup_{i=1}^\infty E_i) = \lim_{i \rightarrow \infty} \mu(E_i)$
 4. Continuity from above: If $E_1, E_2, \cdots \in \mathcal{A}$ and $E_1 \supset E_2 \supset \cdots$ and $\mu(E_1) < \infty$,
-then $mu(\cap_{i=1}^\infty E_i) = \lim_{i \rightarrow \infty} \mu(E_i)$
+then $\mu(\cap_{i=1}^\infty E_i) = \lim_{i \rightarrow \infty} \mu(E_i)$
 
 <figure>
 <img src="/assets/pics/mm-pp/continuity-from-above.png" alt="Continuity from below" style="width: 35%; height: 35%">
