@@ -135,7 +135,13 @@ For LIE in general, see: [Law of Iterated Expectations](http://guillemriambau.co
 
 $L(y, \hat{y} = (y-\hat{y})^2$, $(X, Y) \approx p$, $x$
 
-Wanna minimize $E(L(Y, \hay{y})\vert X = x)$
+Wanna minimize $E(L(Y, \hat{y})\vert X = x) = \int L(Y, \hat{y}) p(y\vert x) dy = \int (y-\hat{y})^2 p(y\vert x) dy$
+
+Assuming enough smoothness of the integrand, 
+
+$$/begin{aligned} 
+0 = \frac{\partial}{\partial y} E(L(Y, \hat{y})\vert X = x) = \int \frac{\partial}{\partial y} (y-\hat{y})^2 p(y\vert x) dy \\
+\end{aligned}$$
 
 ---
 
