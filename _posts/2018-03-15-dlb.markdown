@@ -161,7 +161,9 @@ $$\frac{\partial z}{\partial x_j}= \sum_{i}\frac{\partial z}{\partial y_i} \frac
 
 In matrix form:
 
-$$\nabla_x z = \left(\frac{\partial y}{\partial x}\right)^T \nabla_y Z$$
+$$\nabla_x z = \left(\frac{\partial y}{\partial x}\right)^T \nabla_y z$$
+
+In shot, gradient $=$ Jacobian$^T\cdot$ gradient 
 
 
 ---
