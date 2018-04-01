@@ -155,7 +155,11 @@ $$\frac{dz}{dx} = \frac{dz}{dy}\frac{dy}{dx}$$
 
 Now assume that $x \in \mathbb{R}^m, y \in \mathbb{R}^n, z \in \mathbb{R}$.
 
+By the chai rule again, we have 
 
+$$\frac{\partial z}\{\partial x_j}= \sum_{i = 1}^n\frac{\partial z}{\partial y_i} \frac{\partial y_i}{\partial x_j}$$
+
+for all $j \in \\{1, \ldots, m\\}$
 
 ---
 
