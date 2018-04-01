@@ -139,6 +139,37 @@ h_2^+
 
 ---
 
+$\cdots$
+
+---
+
+#### (6.5) Back-Propagation and Other Differentiation Algorithms
+
+Consider variables $x, y, z$ that are related by the functions $f, g$ :
+
+$$x \overset{f}{\mapsto} y \overset{g}{\mapsto} z$$
+
+If $x, y, x \in \mathbb{R}$, the chain rule says
+
+$$\frac{dz}{dx} = \frac{dz}{dy}\frac{dy}{dx}$$
+
+Now assume that $x \in \mathbb{R}^m, y \in \mathbb{R}^n, z \in \mathbb{R}$.
+
+By the chain rule again, for all $j \in \\{1, \ldots, m\\}$ we have
+
+$$\frac{\partial z}{\partial x_j}= \sum_{i}\frac{\partial z}{\partial y_i} \frac{\partial y_i}{\partial x_j}$$
+
+In matrix form:
+
+$$\nabla_x z = \left(\frac{\partial y}{\partial x}\right)^T \nabla_y z$$
+
+where $\frac{\partial y}{\partial x} = \left( \frac{\partial y_i}{\partial x_j} \right) = $
+
+In short, $\,\,\,$ <span style="color:red">gradient $=$ Jacobian$^T\cdot$ gradient</span>
+
+
+---
+
 $$ $$
 
 *To be added..*
