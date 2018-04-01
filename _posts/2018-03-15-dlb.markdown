@@ -139,6 +139,19 @@ h_2^+
 
 ---
 
+$\cdots$
+
+---
+
+#### (6.5) Back-Propagation and Other Differentiation Algorithms
+
+Consider variables $x, y, z$ that are related by the functions $f, g$:
+
+$$x \overset{x}{\mapsto} y \mapsto z$$
+
+
+---
+
 $$ $$
 
 *To be added..*
