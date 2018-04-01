@@ -145,7 +145,7 @@ $\cdots$
 
 #### (6.5) Back-Propagation and Other Differentiation Algorithms
 
-Consider variables $x, y, z$ that are related by the functions $f, g$:
+Consider variables $x, y, z$ that are related by the functions $f, g$ :
 
 $$x \overset{f}{\mapsto} y \overset{g}{\mapsto} z$$
 
