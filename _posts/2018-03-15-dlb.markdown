@@ -161,6 +161,11 @@ $$\frac{\partial z}{\partial x_j}= \sum_{i}\frac{\partial z}{\partial y_i} \frac
 
 for all $j \in \\{1, \ldots, m\\}$
 
+In matrix form:
+
+$$\nabla_x z = \left(\frac{\partial y}{\partial x}\right)^T \nabla_y Z$$
+
+
 ---
 
 $$ $$
