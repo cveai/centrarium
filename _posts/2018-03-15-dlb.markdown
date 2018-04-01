@@ -149,7 +149,12 @@ Consider variables $x, y, z$ that are related by the functions $f, g$:
 
 $$x \overset{f}{\mapsto} y \overset{g}{\mapsto} z$$
 
-Assume that $x \in \mathbb{R}^m, y \in \mathbb{R}^n, z \in \mathbb{R}$.
+If $x, y, x \in \mathbb{R}$, the chain rule says
+
+$$\frac{dz}{dx} = \frac{dz}{dy}\frac{dy}{dx}$$
+
+Now assume that $x \in \mathbb{R}^m, y \in \mathbb{R}^n, z \in \mathbb{R}$.
+
 
 
 ---
