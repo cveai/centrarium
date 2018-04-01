@@ -163,7 +163,7 @@ In matrix form:
 
 $$\nabla_x z = \left(\frac{\partial y}{\partial x}\right)^T \nabla_y z$$
 
-In short, <span style="color:red">gradient $=$ Jacobian$^T\cdot$ gradient</span>gradient $=$ Jacobian$^T\cdot$ gradient
+In short, $\,\,\,$ <span style="color:red">gradient $=$ Jacobian$^T\cdot$ gradient</span>
 
 
 ---
