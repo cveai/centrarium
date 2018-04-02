@@ -204,8 +204,8 @@ teating data $D$ as RVs.
 * $p(\theta\vert x, D)$ : often times nasty  
 * $\int /\sum$ : nasty  
 
-**As a whole computing $p(y \vert x, D)$ is often intratible.
-Many of the techniques in ML come in the course of different ways to solve this problem or parts of this problem of computation.**
+**As a whole computing $p(y \vert x, D)$ is often intractible.
+Many of the techniques in ML come in the course of different ways to solve (parts of) this problem of computation.**
 
 ---
 
