@@ -200,7 +200,7 @@ teating data $D$ as RVs.
 </figcaption>
 </figure>
 
-* $p(y\vert x, \theta, x, D)$ : nice in the sense that a closrd form expression can be obtained  
+* $p(y\vert x, \theta, x, D)$ : nice in the sense that a closed form expression can be obtained  
 * $p(\theta\vert x, D)$ : often times nasty  
 * $\int /\sum$ : nasty  
 
