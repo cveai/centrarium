@@ -179,7 +179,7 @@ Core concepts and methods in ML fall out naturally from trying to achieving this
 
 Data: $D = ((x_1, y_), \ldots, (x_n, y_n))$
 
-**Discriminative** Estimate $p(y\vert x)$ directly using $D$.
+<span style="color:blue">**Discriminative**</span> Estimate $p(y\vert x)$ directly using $D$.
 * $k$NN
 * Trees
 * SVM
