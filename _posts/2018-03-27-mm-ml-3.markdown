@@ -184,7 +184,7 @@ Data: $D = ((x_1, y_), \ldots, (x_n, y_n))$
 * Trees
 * SVM
 
-**Generative** Estimate $p(y, x)$ using $D$, and then recover $p(y\vert x) = \frac{p(x, y)}{p(x)}$.
+<span style="color:green">**Generative**</span> Estimate $p(y, x)$ using $D$, and then recover $p(y\vert x) = \frac{p(x, y)}{p(x)}$.
 
 **Parameters / Latent variables** $\theta$, consider $p_\theta(x, y) = p(x, y \vert \theta)$
 
