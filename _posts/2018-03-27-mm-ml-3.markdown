@@ -75,11 +75,11 @@ Both are ill-posed!
 
 **Small loss on average** (Probability will come to the rescue!)  
 Put a probability distribution on thses: $(X, Y) \sim p$  
-<span style="color:red">(1) Minimizing 
+<span style="color:red">(1) Minimizing</span> 
 
-$$E(L(Y, \hat{y})\vert X= x) = \sum_{y \in Y} L(y, \hat{y})p(y\vert x)$$
+<span style="color:red">$$E(L(Y, \hat{y})\vert X= x) = \sum_{y \in Y} L(y, \hat{y})p(y\vert x)$$</span> 
 
-is now a well-posed problem!</span> 
+<span style="color:red">is now a well-posed problem!</span> 
 
 "0-1" loss:  
 $E(L(Y, \hat{y})\vert X= x)) = \sum_{y \neq \hat{y}} p(y\vert x)) = 1 - p(\hat{y}\vert x)$  
