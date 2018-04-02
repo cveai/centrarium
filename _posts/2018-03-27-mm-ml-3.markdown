@@ -224,11 +224,7 @@ An interesting read I encountered while searching for related resources:
 * Multivariate Gaussian (very nice) / Conjugate priors / Graphical models (use DP)
 2. Point estimates of $\theta$ (simplest)
 * MLE / MAP (Maximum A Posteriori)  
-<figure>
-<img src="/assets/pics/mm-ml/big-picture.png" alt="Big picture" style="width: 80%; height: 80%">
-<figcaption>Big picture
-</figcaption>
-</figure>
+($\theta_{rm MAP} = \arg\max_\theta p(\theta \vert x, D), p(y \vert x, D) \approx p(y \vert D, \theta_{\rm MAP})$)
 * Optimization, EM (Expectation Maximization) / Empirical Bayes
 3. Deterministic Approximation
 * Laplace Approximation, Variational methods, Expextation Propagation
