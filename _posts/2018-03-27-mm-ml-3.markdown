@@ -208,7 +208,7 @@ teating data $D$ as RVs.
 Many of the techniques in ML come in the course of different ways to solve (parts of) this problem of computation.**
 
 An interesting read I found while searching for related resources:  
-[What landmarks are, and why they are important](https://people.eng.unimelb.edu.au/winter/pubs/book-landmarks-sample-(ch-1).pdf)
+[What landmarks are, and why they are important](https://people.eng.unimelb.edu.au/winter/pubs/book-landmarks-sample-(ch-1).pdf){:target="_blank"} 
 
 ---
 
