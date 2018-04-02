@@ -217,6 +217,9 @@ An interesting read I encountered while searching for related resources:
 ---
 
 #### (ML 3.6) The Big Picture (part 2)
+
+**Core ideas & methods of ML:**
+
 1. Exact inference (usually not possible)
 * Multivariate Gaussian (very nice), Conjugate priors, Graphical models (us DP)
 2. Point estimate of $\theta$ (simplest)
