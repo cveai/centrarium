@@ -190,7 +190,7 @@ Data: $D = ((x_1, y_), \ldots, (x_n, y_n))$
 
 <span style="color:purple">**Parameters / Latent variables $\theta$**</span> introduced, and then consider $p_\theta(x, y) = p(x, y \vert \theta)$
 
-$$p(y\vert x, D) = \int p(y\vert x, \theta, x, D) p(\theta\vert x, D) d\theta$$
+$$p(y\vert x, D) = \int p(y\vert x, D, \theta) p(\theta\vert x, D) d\theta$$
 
 teating data $D$ as RVs.
 
@@ -207,7 +207,7 @@ teating data $D$ as RVs.
 **As a whole computing $p(y \vert x, D)$ is often intractible.
 Many of the techniques in ML come in the course of different ways to solve (parts of) this problem of computation.**
 
-An interesting read I found while searching for related resources:  
+An interesting read I encountered while searching for related resources:  
 [What landmarks are, and why they are important](https://people.eng.unimelb.edu.au/winter/pubs/book-landmarks-sample-(ch-1).pdf){:target="_blank"} 
 
 ---
