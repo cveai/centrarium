@@ -221,7 +221,7 @@ An interesting read I encountered while searching for related resources:
 **Core ideas & methods of ML:**
 
 1. Exact inference (usually not possible)
-* Multivariate Gaussian (very nice), Conjugate priors, Graphical models (us DP)
+* Multivariate Gaussian (very nice) / Conjugate priors / Graphical models (use DP)
 2. Point estimate of $\theta$ (simplest)
 * MLE, MAP (Maximum A Posteriori)  
 * Optimization, EM (Expectation Maximization) / Empirical Bayes
