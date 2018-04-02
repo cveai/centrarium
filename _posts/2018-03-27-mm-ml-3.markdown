@@ -225,7 +225,7 @@ An interesting read I encountered while searching for related resources:
 2. Point estimates of $\theta$ (simplest)
 * MLE / MAP (Maximum A Posteriori)  
 [$\theta_{\rm MAP} = \arg\max_\theta p(\theta \vert x, D), p(y \vert x, D) \approx p(y \vert D, \theta_{\rm MAP})$]
-* Optimization, EM (Expectation Maximization) / Empirical Bayes
+* Optimization / EM (Expectation Maximization) / Empirical Bayes
 3. Deterministic Approximation
 * Laplace Approximation, Variational methods, Expextation Propagation
 4. Stochastic Approximation
