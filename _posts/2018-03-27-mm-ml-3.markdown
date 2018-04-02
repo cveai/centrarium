@@ -92,7 +92,7 @@ $\hat{y} = \arg\min_y E(L(Y, y)\vert X = x)) = \arg\max_y p(y\vert x)$
 
 #### (ML 3.3) Choosing $f$ to minimize expected loss
 
-(2) $\hat{Y} = f(X)$ (classification, discrete for now)
+<span style="color:blue">2. $\hat{Y} = f(X)$ (classification, discrete for now)</span>  
 
 Want to minimize:
 
