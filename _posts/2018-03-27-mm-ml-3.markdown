@@ -188,7 +188,7 @@ Data: $D = ((x_1, y_), \ldots, (x_n, y_n))$
 
 **Remark** While it is much easier to estimate $p(y \vert x)$ than $p(x, y)$ from a statistical perspective, $p(x, y)$ is a richer sort of model.
 
-**Parameters / Latent variables** $\theta$, consider $p_\theta(x, y) = p(x, y \vert \theta)$
+<span style="color:purple">**Parameters / Latent variables**</span> $\theta$, consider $p_\theta(x, y) = p(x, y \vert \theta)$
 
 $$p(y\vert x, D) = \int p(y\vert x, \theta, x, D) p(\theta\vert x, D) d\theta$$
 
