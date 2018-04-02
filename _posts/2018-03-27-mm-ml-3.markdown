@@ -77,7 +77,7 @@ Both are ill-posed!
 Put a probability distribution on thses: $(X, Y) \sim p$  
 <span style="color:red">(1) Minimizing</span> 
 
-<span style="color:red">$$E(L(Y, \hat{y})\vert X= x) = \sum_{y \in Y} L(y, \hat{y})p(y\vert x)$$</span> 
+$$<span style="color:red">E(L(Y, \hat{y})\vert X= x) = \sum_{y \in Y} L(y, \hat{y})p(y\vert x)</span> $$
 
 <span style="color:red">is now a well-posed problem!</span> 
 
