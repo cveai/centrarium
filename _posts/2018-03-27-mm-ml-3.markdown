@@ -165,11 +165,11 @@ $$f(x) = E(Y \vert X = x)$$
 
 #### (ML 3.5) The Big Picture (part 1)
 
-**Problem:** Minimize 
+**Goal:** Minimize 
 
-$${\rm EL}(Y, f(X))$$
+$$E(L(Y, f(X)))$$
 
-using the obsrved $p(y\vert x)$ as the key quantity.
+using the obsrved $p(y\vert x)$ as the key quantity. (Decision theoretic idea)
 
 * EL: Expected Loss
 * $y$: true value
