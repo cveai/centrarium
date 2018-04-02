@@ -169,7 +169,7 @@ $$f(x) = E(Y \vert X = x)$$
 
 $$E(L(Y, f(X)))$$
 
-using the obsrved $p(y\vert x)$ as the key quantity. (Decision theoretic idea)
+using the obsrved <span style="color:orange">$p(y\vert x)$</span> as the key quantity. (Decision theoretic idea)
 
 * EL: Expected Loss
 * $y$: true value
