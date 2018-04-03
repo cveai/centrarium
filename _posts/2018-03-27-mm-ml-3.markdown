@@ -271,11 +271,11 @@ $p(D \vert \theta) := p(x_1, \ldots, x_n \vert \theta) = \prod_{i = 1}^n p(x_i \
 
 Assume the data $D = (X_1, \ldots, X_n)$ are given as RVs.
 
-**Definition** A *statistic* is a RV $S$ that is a function of the data $D$. (i.e. $S=f(D)$)
+**Definition.** A *statistic* is a RV $S$ that is a function of the data $D$. (i.e. $S=f(D)$)
 
-**Terminology** An *estimator* is a statistic intended to approximate a parameter governing the distribution of $D$.
+**Terminology.** An *estimator* is a statistic intended to approximate a parameter governing the distribution of $D$.
 
-**Notation** 
+**Notation.** 
 1. $\hat{\theta}$ denotes an estimator of a parameter $\theta$.
 2. $\hat{\theta}_n$ emphasize (the dependence on) $n$
 
@@ -284,11 +284,11 @@ Assume the data $D = (X_1, \ldots, X_n)$ are given as RVs.
 ("Biased" sample variance) $\,\,$  $\hat{\sigma}^2 = \frac{1}{n}\sum_{i=1}^n(X_i -\bar{X})^2$  
 ("unbiased" sample variance) $\,\,$  $s^2 = \frac{1}{n-1}\sum_{i=1}^n(X_i -\bar{X})^2$
 
-**Definition**
+**Definition.**
 1. The *bias* of an estimator $\hat{\theta}$ is $\,$ ${\rm bias}(\hat{\theta}) = E(\hat{\theta}) - \theta$.  
 2. An estimator $\hat{\theta}$ is *unbiased* if $\,$ ${\rm bias}(\theta) = 0$.  
 
-**Example**
+**Example.**
 1. $\hat{\mu}$ is unbiased: $E(\hat{\mu}) = E(\frac{1}{n}\sum_{i=1}^nX_i) =\frac{1}{n}\sum E(X_i) = \frac{1}{n}\sum \mu = \mu$  
 2. $\hat{\sigma}^2$ is biased. (Exercise)
 3. $s^2$ is unbiased. (Exercise)
