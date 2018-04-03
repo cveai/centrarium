@@ -245,7 +245,7 @@ Data: $D = (X_1, \ldots, X_n), X_i \in \mathbb{R}^d$, iid.
 
 **Goal:** Estimate the distribution.
 
-Paramaters $\theta$ as RVs parametrizing $p_\theta$
+Introduce paramaters $\theta$ as RVs parametrizing $p_\theta$
 
 ---
 
