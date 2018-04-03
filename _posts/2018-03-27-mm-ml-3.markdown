@@ -276,7 +276,7 @@ Assume the data $D = (X_1, \ldots, X_n)$ are given as RVs.
 **Terminology** An *estimator* is a statistic intended to approximate a parameter governing the distribution of $D$.
 
 **Notation** 
-1. $\hat{\theta}$ denotes an estimator of $\theta$.
+1. $\hat{\theta}$ denotes an estimator of a parameter $\theta$.
 2. $\hat{\theta}_n$ emphasize (the dependence on) $n$
 
 **Example** $X_1, \ldots, X_n \sim N(\mu, \sigma^2)$ iid  
