@@ -345,8 +345,8 @@ Two option to deal with it:
 <span style="color:red">**Frequentist:** Introduce a furthere principle to guide your choice.</span>  
 <span style="color:red">(a) Unbiasedness</span>  
 <span style="color:red">(b) Admissibility</span> 
-<span style="color:red">(a) Minimax</span>  
-<span style="color:red">(a) Invariance</span>  
+<span style="color:red">(c) Minimax</span>  
+<span style="color:red">(d) Invariance</span>  
 
 <figure>
 <img src="/assets/pics/mm-ml/frequentist.png" alt="A frequentist approaches" style="width: 70%; height: 70%">
