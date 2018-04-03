@@ -280,7 +280,7 @@ Assume the data $D = (X_1, \ldots, X_n)$ are given as RVs.
 2. $\hat{\theta}_n$ emphasize (the dependence on) $n$
 
 **Example.** $X_1, \ldots, X_n \sim N(\mu, \sigma^2)$ iid  
-(Sample mean) $\,\,$  $\hat{\mu} = \bar{X} = \frac{1}{n}\sum_{i=1}^nX_i$ $\,\,$ (cf. $\sigma^2 = E((X - \mu)^2)$)  
+(Sample mean) $\,\,$  $\hat{\mu} = \bar{X} = \frac{1}{n}\sum_{i=1}^nX_i$ $\,\,$ /cf. $\sigma^2 = E((X - \mu)^2)$
 ("Biased" sample variance) $\,\,$  $\hat{\sigma}^2 = \frac{1}{n}\sum_{i=1}^n(X_i -\bar{X})^2$  
 ("unbiased" sample variance) $\,\,$  $s^2 = \frac{1}{n-1}\sum_{i=1}^n(X_i -\bar{X})^2$
 
