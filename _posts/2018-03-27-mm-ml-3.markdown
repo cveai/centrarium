@@ -247,6 +247,13 @@ Data: $D = (X_1, \ldots, X_n), X_i \in \mathbb{R}^d$, iid.
 
 Introduce paramaters $\theta$ as RVs parametrizing $p_\theta$
 
+Then 
+
+$$\begin{aligned}
+\p(x \vert D) & = \int p(x, \theta \vert D)d\theta \\
+              & = \int p(x \vert \theta, D) p(\theta \vert D)d\theta \\
+              & = \int p(x \vert \theta) p(\theta \vert D)d\theta \\ 
+
 ---
 
 #### (ML 4.1) Maximum Likelihood Estimation (MLE) (part 1)
