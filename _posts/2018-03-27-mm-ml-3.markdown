@@ -248,7 +248,7 @@ Data: $D = (X_1, \ldots, X_n), X_i \in \mathbb{R}^d$, iid.
 Introduce paramaters $\theta$ as RVs parametrizing $p_\theta$ ($p_\theta(x) = p(x \vert \theta)$)
 
 <figure>
-<img src="/assets/pics/mm-ml/density-est-1.png" alt="Parametrizing iid RVs" style="width: 25%; height: 25%">
+<img src="/assets/pics/mm-ml/density-est-1.png" alt="Parametrizing iid RVs" style="width: 20%; height: 20%">
 <figcaption>
 </figcaption>
 </figure>
