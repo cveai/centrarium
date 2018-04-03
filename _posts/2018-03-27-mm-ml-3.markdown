@@ -316,7 +316,7 @@ SIn some situation the procedure $g$ is refered to as an estimator!
 Exciting session to clear up all the mud!
 
 **Data:** $\,$ $D = (X_1, \ldots, X_n)$, $D \sim p_\theta$  
-**Parameter:** $\,$ $\theta \sim \pi$ (the parameter $\theta$ is a RV)  
+**Parameter:** $\,$ $\theta \sim \pi$ $\,$ (the parameter $\theta$ is a RV)  
 **Estimator:** $\,$ $\hat{\theta} = f(D) = \delta(D)$  
 Everything begins with : Loss $=L(\theta, f(D))$
 We wanna minimize the loss but it's an RV! Two option to deal with it:  
