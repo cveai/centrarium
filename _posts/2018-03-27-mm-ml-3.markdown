@@ -269,9 +269,9 @@ $p(D \vert \theta) := p(x_1, \ldots, x_n \vert \theta) = \prod_{i = 1}^n p(x_i \
 
 #### (ML 11.1) Estimators
 
-Assume $D = (X_1, \ldots, X_n)$ where the $X_i$ are RVs
+Assume the data $D = (X_1, \ldots, X_n)$ are given as RVs.
 
-**Definition** A *statistic* is a RV $S$ that is a function of the data $D$. (i.e. S=f(D)
+**Definition** A *statistic* is a RV $S$ that is a function of the data $D$. (i.e. $S=f(D)$)
 
 **Terminology** An *estimator* is a statistic intended to approximate a parameter governing the distribution of $D$.
 
