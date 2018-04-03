@@ -214,6 +214,10 @@ Many of the techniques in ML come in the course of different ways to solve (part
 An interesting read I encountered while searching for related resources:  
 [What landmarks are, and why they are important](https://people.eng.unimelb.edu.au/winter/pubs/book-landmarks-sample-(ch-1).pdf){:target="_blank"} 
 
+
+
+
+
 ---
 
 #### (ML 3.6) The Big Picture (part 2)
@@ -331,6 +335,9 @@ Two option to deal with it:
 <figcaption>
 </figcaption>
 </figure>
+
+
+[Bayesians vs. frequentists](http://planning.cs.uiuc.edu/node471.html){:target="_blank"}
 
 ---
 
