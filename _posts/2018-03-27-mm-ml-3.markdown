@@ -340,7 +340,7 @@ Two option to deal with it:
 
 <span style="color:blue">**Bayesian:** Assume $\pi$</span>  
 <span style="color:blue">Case 1. Know $D$. Choose $f(D)$ to minimize $\rho(\pi, f(D))$</span>    
-<span style="color:blue">Case 2. Don't know $D$. Choose $f$ to minimize $\r(\pi, f)$</span>  
+<span style="color:blue">Case 2. Don't know $D$. Choose $f$ to minimize $r(\pi, f)$</span>  
 
 <span style="color:red">**Frequentist:** Introduce a furthere principle to guide your choice.</span>  
 <span style="color:red">(a) Unbiasedness</span>  
