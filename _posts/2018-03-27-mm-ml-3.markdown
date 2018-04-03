@@ -241,7 +241,7 @@ An interesting read I encountered while searching for related resources:
 
 The problem of **Density estimation** (Unsupervised)
 
-$D = (X_1, \ldots, X_n), X_i \in \mathbb{R}^d$, iid.
+Data: $D = (X_1, \ldots, X_n), X_i \in \mathbb{R}^d$, iid.
 
 **Goal:** Estimate the distribution.
 
