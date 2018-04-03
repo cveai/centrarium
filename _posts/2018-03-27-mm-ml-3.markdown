@@ -289,7 +289,7 @@ Assume the data $D = (X_1, \ldots, X_n)$ are given as RVs.
 2. An estimator $\hat{\theta}$ is *unbiased* if ${\rm bias}(\theta) = 0$.  
 
 **Example**
-1. $\hat{\mu}$ is unbiased: $E\hat{\mu} = E\frac{1}{n}\sum_{i=1}^nX_i =\frac{1}{n}\sum_E X_i = \frac{1}{n} = \mu$  
+1. $\hat{\mu}$ is unbiased: $E(\hat{\mu}) = E(\frac{1}{n}\sum_{i=1}^nX_i) =\frac{1}{n}\sum_E X_i = \frac{1}{n} = \mu$  
 2. $\hat{\sigma}^2$ is biased. (Exercise)
 3. $s^2$ is unbiased. (Exercise)
 
