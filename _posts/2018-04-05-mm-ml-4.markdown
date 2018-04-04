@@ -32,7 +32,7 @@ Note: $p(D\vert \theta)$ is called the *likelihood function*
 $\,\,\,$ - Consistent (converges to the true value with probability $1$ when $n \rightarrow \infty$)  
 $\,\,\,$ - Normal  
 $\,\,\,$ - Efficient (lowest asymptotic variance)  
-* Invariant under reparametrization: $g(\theta_{\rm MLE}) is a MLE for g(\theta)$
+* Invariant under reparametrization: $g(\theta_{\rm MLE})$ is a MLE for $g(\theta)$
 
 **Cons:**
 * Point estimate, so no representation of uncertainty
