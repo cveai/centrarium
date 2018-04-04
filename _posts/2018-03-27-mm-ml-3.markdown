@@ -259,7 +259,7 @@ $p(x \vert D) = \int p(x, \theta \vert D)d\theta
                = \int p(x \vert \theta) p(\theta \vert D)d\theta$
 
 <figure>
-<img src="/assets/pics/mm-ml/density-est-2.png" alt="Densitiy estimation" style="width: 80%; height: 80%">
+<img src="/assets/pics/mm-ml/density-est-2.png" alt="Densitiy estimation" style="width: 70%; height: 70%">
 <figcaption>
 </figcaption>
 </figure>
