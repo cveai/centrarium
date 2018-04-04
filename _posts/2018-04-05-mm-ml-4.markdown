@@ -64,7 +64,7 @@ $\log p(D \vert \theta) = -\frac{1}{n}\log(2\pi\sigma^2) - \frac{1}{2\sigma^2} \
 
 $0 = \frac{\partial}{\partial \theta} \log p(D \vert \theta) = \frac{1}{2\sigma^2}\sum_{i=1}^n2(x_i-\theta) = \frac{1}{\sigma^2}(\sum x_i -n\theta)$
 
-gives $\theta_{\rm MLE} = \frac{1}{n}\sum_{i=1}^n x_i$ since $\frac{\partial^2}{\partial\theta^2} \frac{\partial}{\partial \theta} \log p(D \vert \theta) 
+gives $\theta_{\rm MLE} = \frac{1}{n}\sum_{i=1}^n x_i$ since $\frac{\partial^2}{\partial\theta^2} \log p(D \vert \theta) 
 = -\frac{n}{\sigma^2} < 0$
 
 ---
