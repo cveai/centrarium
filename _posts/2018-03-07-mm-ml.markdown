@@ -15,7 +15,8 @@ tags: ML
 * Notes on Machine Learning 1: [What is machine learning?](https://cveai.github.io/notes/2018/03/08/mm-ml-1.html){:target="_blank"}  
 * Notes on Machine Learning 2: [Decision trees](https://cveai.github.io/notes/2018/03/16/mm-ml-2.html){:target="_blank"}  
 * Notes on Machine Learning 3: [Decision theory](https://cveai.github.io/notes/2018/03/27/mm-ml-3.html){:target="_blank"}  
-* Notes on Machine Learning 4: [Maximum Likelihood Estimation](https://cveai.github.io/notes/2018/04/05/mm-ml-4.html){:target="_blank"}  
+* Notes on Machine Learning 4: [Maximum Likelihood Estimation](https://cveai.github.io/notes/2018/04/03h
+/mm-ml-4.html){:target="_blank"}  
 
 *To be added..*
 
