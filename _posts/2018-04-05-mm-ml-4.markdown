@@ -83,6 +83,10 @@ $P[X= i\vert \theta] = p(i\vert \theta) = \theta_i = p(i)$, $\sum_{i=1}^m p(i) =
 
 $\theta_{\rm MLE} = \arg\max_\theta p(D \vert \theta)$ where $p(D \vert \theta) = p(X_1=x_1, \ldots, X_n=x_N\vert \theta)$
 
+Noting $p(x\vert \theta) = \theta_x = \prod_{j=1}&n \theta_j^{I(x = j)}$
+
+$p(D \vert \theta) = p(x_1, \ldots, x_n\vert D) = \prod_{i=1}^n p(x_i \vert \theta) = \prod_{i=1}^n \prod_{j=1}&n \theta_j^{I(x = j)}$
+
 ---
 
 #### (ML 11.1) Estimators
