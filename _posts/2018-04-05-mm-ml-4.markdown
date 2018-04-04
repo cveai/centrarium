@@ -23,6 +23,15 @@ where $p(D\vert \theta) = p(x_1, \ldots, x_n \vert \theta) = \prod_{i=1}^np(x_i\
 1. MLE might not be unique.  
 2. MLE may fail to exist.
 
+**Pros :**
+* Easy
+* Interpretable
+* Asymptotic properties 
+$\,\,\,\,$ - Consistent 
+
+Normal / 
+
+
 ---
 
 #### (ML 11.1) Estimators
