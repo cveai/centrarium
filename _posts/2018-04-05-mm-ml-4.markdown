@@ -46,15 +46,54 @@ $\,\,\,$ - Black swan "paradox"
 
 #### (ML 4.3) MLE for univariate Gaussian mean
 
-$X \sim N(\theta, \sigma^2)$
+Target distribution family $(N(\theta, \sigma^2))_{\theta \in \Theta}$
+
+$X \sim N(\theta, \sigma^2)$ 
 
 $p(x \vert \theta) = \frac{1}{\sqrt{2\pi\sigma^2}}\exp\left(-\frac{1}{2\sigma^2}(x - \theta)^2 \right)$  
 
 $D = (x_1, \ldots, x_n), X_i \sim N(\theta, \sigma^2)$ iid ($X_i = x_i$)
 
-For MLE, we wanna maximize, over $\theta$, the following:
+For MLE, wanna maximize, over $\theta$, the following:
 
-$p(D \vert \theta) = p(x_1, \ldots, x_b \vert \theta) = \prod_{i=1}^n p(x_i \vert \theta) = (\frac{1}{\sqrt{2\pi\sigma^2}})^n\exp\left(-\frac{1}{2\sigma}\sum_{i=1}^n(x - \theta)^2 \right)$ 
+$p(D \vert \theta) = p(x_1, \ldots, x_n \vert \theta) = \prod_{i=1}^n p(x_i \vert \theta) = (\frac{1}{\sqrt{2\pi\sigma^2}})^n\exp\left(-\frac{1}{2\sigma}\sum_{i=1}^n(x - \theta)^2 \right)$ 
+
+Euqivalently, can minimize its log instead:
+
+$\log p(D \vert \theta) = -\frac{1}{n}\log(2\pi\sigma^2) - \frac{1}{2\sigma^2} \sum_{i=1}^n (x_i -\theta)^2$
+
+$0 = \frac{\partial}{\partial \theta} \log p(D \vert \theta) = \frac{1}{2\sigma^2}\sum_{i=1}^n2(x_i-\theta) = \frac{1}{\sigma^2}(\sum x_i -n\theta)$
+
+gives $\theta_{\rm MLE} = \frac{1}{n}\sum_{i=1}^n x_i$ since $\frac{\partial^2}{\partial\theta^2} \log p(D \vert \theta) 
+= -\frac{n}{\sigma^2} < 0$
+
+In sum, we target $\theta_{\rm MLE}$ from distributoins $(N(\theta, \sigma^2))\_{\theta \in \Theta}$
+and the sample mean $\frac{1}{n}\sum_{i=1}^n X_i$ provides an effective estimator of it.
+
+---
+
+#### (ML 4.4) MLE for a PMF on a finite set (part 1)
+
+$X \sim p_\theta$, $X \in \\{1, \ldots, m\\}$
+
+$D= (x_1, \ldots, x_n), $X_1, \ldots, X_n \sim p$ 
+
+Set $\theta = (\theta_1, \ldots, \theta_m)$ where 
+$P[X= i\vert \theta] = p(i\vert \theta) = \theta_i = p(i)$, $\sum_{i=1}^m p(i) = 1$ 
+
+$\theta_{\rm MLE} = \arg\max_\theta p(D \vert \theta)$ where $p(D \vert \theta) = p(X_1=x_1, \ldots, X_n=x_N\vert \theta)$
+
+Noting $p(x\vert \theta) = \theta_x = \prod_{j=1}^n \theta_j^{I(x = j)}$
+
+$$\begin{aligned}
+p(D \vert \theta) &= p(x_1, \ldots, x_n\vert D) = \prod_{i=1}^n p(x_i \vert \theta) \\
+                  &= \prod_{i=1}^n \prod_{j=1}^n \theta_j^{I(x = j)}$ \\
+                  &= \prod_{j=1}^m \theta_j^{\sum_{i=1}^nI(x_i=j)} = \prod_{i=1}^m \theta_j^{n_j}
+\end{aligned}$$
+
+where $n_j =$ #$\\{i : x_i = j\\}$
+
+(To be continued..)
 
 ---
 
