@@ -1,0 +1,34 @@
+---
+layout: post
+title:  "Notes on Machine Learning 1: Information theory and Coding"
+date:   2018-04-06 00:00:01
+author: 장승환
+categories: Notes
+tags: ML
+---
+
+#### (IC 1.1) Information theory and Coding - Outline of topics
+
+<figure>
+<img src="/assets/pics/mm-ic/info-outline.png" alt="Information theory & coding" style="width: 80%; height: 80%">
+<figcaption>Information theory & coding
+</figcaption>
+</figure>
+
+Closely related fields:
+* Cryptography & Cryptanalysis
+* Algorithmic information theory (Kolmogorov complexity & minimum description length)
+* Network information theory
+* (less closely) Statistics & Machine learning
+* (also) Portfolio theorry
+* (also) Gambling
+
+---
+
+$$ $$
+
+*To be added..*
+
+---
+
+

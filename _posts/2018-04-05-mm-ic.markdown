@@ -1,0 +1,25 @@
+---
+layout: post
+title:  "Notes on Information Theory (master page)"
+date:   2018-04-06 00:00:00
+author: 장승환
+categories: Notes
+tags: ML
+---
+
+*This is the master page for Notes on Machine Learning posts, in which I summarize in a succinct and straighforward fashion what I learn from [Information Theory](https://www.youtube.com/watch?v=UrefKMSEuAI&list=PLE125425EC837021F){:target="_blank"} course by Mathematical Monk, along with my own thoughts and related resources.*
+
+---
+
+
+* Notes on Machine Learning 1: [Information theory and Coding](https://cveai.github.io/notes/2018/04/06/mm-ic-1.html){:target="_blank"}  
+
+
+
+*To be added..*
+
+---
+
+
+
+
