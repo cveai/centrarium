@@ -19,16 +19,23 @@ Assume $D$ is a sample from $X_1, \ldots, X_n \sim p_\theta$ iid for some $\thet
 More precisely, <span style="color:red">$p(D \vert \theta_{\rm MLE}) = \max_{\theta\in \Theta} p(D\vert \theta)$</span>,  
 where $p(D\vert \theta) = p(x_1, \ldots, x_n \vert \theta) = \prod_{i=1}^np(x_i\vert \theta) = \prod_{i=1}^nP[X=x_i\vert \theta]$.
 
+Note: $p(D\vert \theta)$ is called the likelihood function.
+
 **Remark.**
 1. MLE might not be unique.  
 2. MLE may fail to exist.
 
-**Pros :**
+**Pros:**
 * Easy
 * Interpretable
 * Asymptotic properties  
-$\,\,\,$ - Consistent (converges to the true value with probability $1$ when $n \rightarrow \infty$)
-$\,\,\,$ - Normal 
+$\,\,\,$ - Consistent (converges to the true value with probability $1$ when $n \rightarrow \infty$)  
+$\,\,\,$ - Normal  
+$\,\,\,$ - Efficient (lowest asymptotic variance)  
+* Invariant under reparametrization: $g(\theta_{\rm MLE}) is a MLE for g(\theta)$
+
+**Cons:**
+* Point estimate, so no representation of uncertainty
 
 
 ---
