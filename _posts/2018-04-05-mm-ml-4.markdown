@@ -81,6 +81,8 @@ $D= (x_1, \ldots, x_n), $X_1, \ldots, X_n \sim p$
 Set $\theta = (\theta_1, \ldots, \theta_m)$ where 
 $P[X= i\vert \theta] = p(i\vert \theta) = \theta_i = p(i)$, $\sum_{i=1}^m p(i) = 1$ 
 
+$\theta_{\rm MLE} = \arg\max_\theta p(D \vert D)$ where $p(D \vert \theta) = p(X_1=x_i, \ldots, X_n=x_N\vert \theta)$
+
 ---
 
 #### (ML 11.1) Estimators
