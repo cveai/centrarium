@@ -46,15 +46,26 @@ $\,\,\,$ - Black swan "paradox"
 
 #### (ML 4.3) MLE for univariate Gaussian mean
 
-$X \sim N(\theta, \sigma^2)$, i.e., target distribution fanily $(N(\theta, \sigma^2))_{\theta \in \Theta}$
+Target distribution family $(N(\theta, \sigma^2))_{\theta \in \Theta}$
+
+$X \sim N(\theta, \sigma^2)$ 
 
 $p(x \vert \theta) = \frac{1}{\sqrt{2\pi\sigma^2}}\exp\left(-\frac{1}{2\sigma^2}(x - \theta)^2 \right)$  
 
 $D = (x_1, \ldots, x_n), X_i \sim N(\theta, \sigma^2)$ iid ($X_i = x_i$)
 
-For MLE, we wanna maximize, over $\theta$, the following:
+For MLE, wanna maximize, over $\theta$, the following:
 
-$p(D \vert \theta) = p(x_1, \ldots, x_b \vert \theta) = \prod_{i=1}^n p(x_i \vert \theta) = (\frac{1}{\sqrt{2\pi\sigma^2}})^n\exp\left(-\frac{1}{2\sigma}\sum_{i=1}^n(x - \theta)^2 \right)$ 
+$p(D \vert \theta) = p(x_1, \ldots, x_n \vert \theta) = \prod_{i=1}^n p(x_i \vert \theta) = (\frac{1}{\sqrt{2\pi\sigma^2}})^n\exp\left(-\frac{1}{2\sigma}\sum_{i=1}^n(x - \theta)^2 \right)$ 
+
+Euqivalently, can minimize its log instead:
+
+$\log p(D \vert \theta) = -\frac{1}{n}\log(2\pi\sigma^2) - \frac{1}{2\sigma^2} \sum_{i=1}^n (x_i -\theta)^2$
+
+$0 = \frac{\partial}{\partial \theta} \log p(D \vert \theta) = \frac{1}{2\sigma^2}\sum_{i=1}^n2(x_i-\theta) = \frac{1}{\sigma^2}(\sum x_i -n\theta)$
+
+gives $\theta_{\rm MLE} = \frac{1}{n}\sum_{i=1}^n x_i$ since $\frac{\partial^2}{\partial\theta^2} \frac{\partial}{\partial \theta} \log p(D \vert \theta) 
+= -\frac{n}{\sigma^2} < 0$
 
 ---
 
