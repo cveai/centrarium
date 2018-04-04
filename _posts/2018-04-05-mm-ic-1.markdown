@@ -10,10 +10,14 @@ tags: ML
 #### (IC 1.1) Information theory and Coding - Outline of topics
 
 <figure>
-<img src="/assets/pics/mm-ml/bin-split.png" alt="Information theory & coding" style="width: 50%; height: 50%">
+<img src="/assets/pics/mm-ic/info-outline.png" alt="Information theory & coding" style="width: 50%; height: 50%">
 <figcaption>Information theory & coding
 </figcaption>
 </figure>
+
+Closely related fields:
+* Cryptography & Cryptanalysis
+* 
 
 ---
 
