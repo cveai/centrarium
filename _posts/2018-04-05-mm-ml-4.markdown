@@ -68,7 +68,18 @@ gives $\theta_{\rm MLE} = \frac{1}{n}\sum_{i=1}^n x_i$ since $\frac{\partial^2}{
 = -\frac{n}{\sigma^2} < 0$
 
 In sum, we target $\theta_{\rm MLE}$ from distributoins $(N(\theta, \sigma^2))\_{\theta \in \Theta}$
-and the sample mean $\frac{1}{n}\sum_{i=1}^n X_i$ is an effective estimator of it.
+and the sample mean $\frac{1}{n}\sum_{i=1}^n X_i$ provides an effective estimator of it.
+
+---
+
+#### (ML 4.4) MLE for a PMF on a finite set (part 1)
+
+$X \sim p_\theta$, $X \in \\{1, \ldots, m\\}$
+
+$D= (x_1, \ldots, x_n), $X_1, \ldots, X_n \sim p$ 
+
+Set $\theta = (\theta_1, \ldots, \theta_m)$ where 
+$P[X= i\vert \theta] = p(i\vert \theta) = \theta_i = p(i)$, $\sum_{i=1}^m p(i) = 1$ 
 
 ---
 
