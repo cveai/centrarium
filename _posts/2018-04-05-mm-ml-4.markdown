@@ -7,32 +7,10 @@ categories: Notes
 tags: ML
 ---
 
-*In this page I summarize in a succinct and straighforward fashion what I learn from [Machine Learning](https://www.youtube.com/watch?v=yDLKJtOVx5c&list=PLD0F06AA0D2E8FFBA){:target="_blank"} course by Mathematical Monk, along with my own thoughts and related resources.*
-*I will update this page frequently, like every other day, until it's complete.*
-
----
-
-**Acronyms**
-* MM: Mathematical Monk
-* ML: Machine Learning
-* SL: Supervised Learning
-* UL: Unsupervised Learning
-
-* PSD: Positive Semi-Definite
-
-* MCTC: Markov Chain Monte Carlo
-
----
-
-* To understand **bias-variance "trade-off"**, take a quick route:  
-(11.5) $\leadsto$ (11.1) (11.2) (11.3) (11.4) $\leadsto$ (11.1) (11.2) 
-
-Some other helpful resources:
-* [Lecture 08 - Bias-Variance Tradeoff](https://youtu.be/zrEyxfl2-a8) of Caltech's Machine Learning Course - CS 156 (Spring 2012) by Professor Yaser Abu-Mostafa
-
----
-
 #### (ML 4.1) Maximum Likelihood Estimation (MLE) (part 1)
+
+**Setup.** Given data $D = (x_1, \ldots, x_n)$ where $x_i \in \mathbb{R}^d$.  
+Assume a family of distributions $\\{p_\theta : \theta \in \Theta\\}$.
 
 ---
 
