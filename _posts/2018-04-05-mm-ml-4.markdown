@@ -67,7 +67,7 @@ $0 = \frac{\partial}{\partial \theta} \log p(D \vert \theta) = \frac{1}{2\sigma^
 gives $\theta_{\rm MLE} = \frac{1}{n}\sum_{i=1}^n x_i$ since $\frac{\partial^2}{\partial\theta^2} \log p(D \vert \theta) 
 = -\frac{n}{\sigma^2} < 0$
 
-In sum, we target $\theta_{\rm MLE}$ from distributoins 
+In sum, we target $\theta_{\rm MLE}$ from distributoins $(N(\theta, \sigma^2))_{\theta \in \Theta}$
 and the sample mean $\frac{1}{n}\sum_{i=1}^n X_i$ is an effective estimator of it.
 
 ---
