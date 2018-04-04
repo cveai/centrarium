@@ -54,8 +54,7 @@ $D = (x_1, \ldots, x_n), X_i \sim N(\theta, \sigma^2)$ iid ($X_i = x_i$)
 
 For MLE, we wanna maximize, over $\theta$, the following:
 
-$p(D \vert \theta) = p(x_1, \ldots, x_b \vert \theta) = \prod_{i=1}^n p(x_i \vert \theta) 
-= \left(\frac{1}{\sqrt{2\pi\sigma^2}}\right)^n\exp\left(-\frac{1}{2\sigma}\sum_{i=1}^n(x - \theta)^2 \right)$ 
+$p(D \vert \theta) = p(x_1, \ldots, x_b \vert \theta) = \prod_{i=1}^n p(x_i \vert \theta) = \left(\frac{1}{\sqrt{2\pi\sigma^2}}\right)^n\exp\left(-\frac{1}{2\sigma}\sum_{i=1}^n(x - \theta)^2 \right)$ 
 
 ---
 
