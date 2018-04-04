@@ -35,7 +35,7 @@ $\,\,\,$ - Efficient (lowest asymptotic variance)
 * Invariant under reparametrization: $g(\theta_{\rm MLE})$ is a MLE for $g(\theta)$
 
 **Cons:**
-* Point estimate, so no representation of uncertainty. $p(x \vert D \approx p(x \vert \theta_{\rm MLE}))$
+* Point estimate, so no representation of uncertainty. $p(x \vert D)\approx p(x \vert \theta_{\rm MLE})$
 * Overfitting (severe problem)  
 $\,\,\,$ - Regression 
 $\,\,\,$ - Black swan "paradox"  
