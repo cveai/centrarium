@@ -10,13 +10,14 @@ tags: ML
 #### (ML 4.1) Maximum Likelihood Estimation (MLE) (part 1)
 
 **Setup.** Given data $D = (x_1, \ldots, x_n)$ where $x_i \in \mathbb{R}^d$.  
-Assume a family of distributions $\\{p_\theta : \theta \in \Theta\\}$ on $\mathbb{R}^d$. $\,$ <span style="color:red">$p_\theta(x) = p(x \vert \theta)  $</span>
+Assume a family of distributions $\\{p_\theta : \theta \in \Theta\\}$ on $\mathbb{R}^d$. $\,$ <span style="color:red">$p_\theta(x) = p(x \vert \theta)  $</span>  
 Assume $D$ is a sample from $X_1, \ldots, X_n \sim p_\theta$ iid for some $\theta \in \Theta$.
 
 **Goal.** Estimate the true $\theta$ that $D$ comes from.
 
 **Definition.** $\theta_{\rm MLE}$ is a *MLE* for $\theta$ if $\theta_{\rm MLE} "=" \arg\max_{\theta \in \Theta p(D\vert \theta)}$.  
-More precisely, $p(D \vert \theta_{\rm MLE}) = \max_{\theta\in \Theta p(D\vert \theta)}$.
+More precisely, $p(D \vert \theta_{\rm MLE}) = \max_{\theta\in \Theta p(D\vert \theta)}$,  
+where $p(D\vert \theta) = p(x_1, \ldots, x_n \vert \theta) = \prod_{i=1}^np(x_i\vert \theta) = \prod_{i=1}^nP[X=x_i\vert \theta]$.
 
 ---
 
