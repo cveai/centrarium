@@ -11,6 +11,9 @@ tags: ML
 
 **Setup.** Given data $D = (x_1, \ldots, x_n)$ where $x_i \in \mathbb{R}^d$.  
 Assume a family of distributions $\\{p_\theta : \theta \in \Theta\\}$ on $\mathbb{R}^d$.
+Assume $D$ is a sample from $X_1, \ldots, X_n \sim p_\theta$ iid for some $\theta \in \Theta$.
+
+**Goal.** Estimate the true $\theta$ that $D$ comes from.
 
 ---
 
