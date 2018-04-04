@@ -17,7 +17,11 @@ tags: ML
 
 Closely related fields:
 * Cryptography & Cryptanalysis
-* 
+* Algorithmic information theory (Kolmogorov complexity & minimum description length)
+* Network information theory
+* (less closely) Statistics & Machine learning
+* (also) Portfolio theorry
+* (also) Gambling
 
 ---
 
