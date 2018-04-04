@@ -19,6 +19,10 @@ Assume $D$ is a sample from $X_1, \ldots, X_n \sim p_\theta$ iid for some $\thet
 More precisely, $p(D \vert \theta_{\rm MLE}) = \max_{\theta\in \Theta} p(D\vert \theta)$,  
 where $p(D\vert \theta) = p(x_1, \ldots, x_n \vert \theta) = \prod_{i=1}^np(x_i\vert \theta) = \prod_{i=1}^nP[X=x_i\vert \theta]$.
 
+**Remark.**
+1. MLE might not be unique.  
+2. MLE may fail to exist.
+
 ---
 
 #### (ML 11.1) Estimators
