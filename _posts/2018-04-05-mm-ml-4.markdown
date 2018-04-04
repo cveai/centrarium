@@ -39,7 +39,8 @@ $\,\,\,$ - Efficient (lowest asymptotic variance)
 * Overfitting (severe problem)  
 $\,\,\,$ - Regression 
 $\,\,\,$ - Black swan "paradox"  
-* Wrong objective? - Disregards loss 
+* Wrong objective? - Disregards loss  
+* Existence & uniqueness is not guaranteed.
 
 ---
 
