@@ -10,7 +10,7 @@ tags: ML
 #### (ML 4.1) Maximum Likelihood Estimation (MLE) (part 1)
 
 **Setup.** Given data $D = (x_1, \ldots, x_n)$ where $x_i \in \mathbb{R}^d$.  
-Assume a family of distributions $\\{p_\theta : \theta \in \Theta\\}$.
+Assume a family of distributions $\\{p_\theta : \theta \in \Theta\\}$ on $\mathbb{R}^d$.
 
 ---
 
