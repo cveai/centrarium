@@ -93,7 +93,7 @@ p(D \vert \theta) &= p(x_1, \ldots, x_n\vert D) = \prod_{i=1}^n p(x_i \vert \the
 
 where $n_j =$ #$\\{i : x_i = j\\}$
 
-
+(To be continued..)
 
 ---
 
