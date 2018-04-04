@@ -15,7 +15,7 @@ Assume $D$ is a sample from $X_1, \ldots, X_n \sim p_\theta$ iid for some $\thet
 
 **Goal.** Estimate the true $\theta$ that $D$ comes from.
 
-**Definition.** $\theta_{\rm MLE}$ is a *MLE* for $\theta$ if 
+**Definition.** $\theta_{\rm MLE}$ is a *MLE* for $\theta$ if $\theta_{\rm MLE} = \arg\max_{\theta \in \Theta p(D\vert \theta)}$.
 
 ---
 
