@@ -85,7 +85,15 @@ $\theta_{\rm MLE} = \arg\max_\theta p(D \vert \theta)$ where $p(D \vert \theta) 
 
 Noting $p(x\vert \theta) = \theta_x = \prod_{j=1}^n \theta_j^{I(x = j)}$
 
-$p(D \vert \theta) = p(x_1, \ldots, x_n\vert D) = \prod_{i=1}^n p(x_i \vert \theta) = \prod_{i=1}^n \prod_{j=1}^n \theta_j^{I(x = j)}$
+$$\begin{aligned}
+p(D \vert \theta) &= p(x_1, \ldots, x_n\vert D) = \prod_{i=1}^n p(x_i \vert \theta) \\
+                  &= \prod_{i=1}^n \prod_{j=1}^n \theta_j^{I(x = j)}$ \\
+                  &= \prod_{j=1}^m \theta_j^{\sum_{i=1}^nI(x_i=j)} = \prod_{i=1}^m \theta_j^{n_j}
+\end{aligned}$$
+
+where $n_j =$ #$\\{i : x_i = j\\}$
+
+
 
 ---
 
