@@ -46,7 +46,7 @@ $\,\,\,$ - Black swan "paradox"
 
 #### (ML 4.3) MLE for univariate Gaussian mean
 
-$X \sim N(\theta, \sigma^2)$
+$X \sim N(\theta, \sigma^2)$, i.e., target distribution fanily $(N(\theta, \sigma^2))_{\theta \in \Theta}$
 
 $p(x \vert \theta) = \frac{1}{\sqrt{2\pi\sigma^2}}\exp\left(-\frac{1}{2\sigma^2}(x - \theta)^2 \right)$  
 
