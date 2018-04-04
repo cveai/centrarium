@@ -44,6 +44,12 @@ $\,\,\,$ - Black swan "paradox"
 
 ---
 
+#### (ML 4.3) MLE for univariate Gaussian mean
+
+
+
+---
+
 #### (ML 11.1) Estimators
 
 Assume the data $D = (X_1, \ldots, X_n)$ are given as RVs.
