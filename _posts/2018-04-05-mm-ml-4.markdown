@@ -27,7 +27,7 @@ where $p(D\vert \theta) = p(x_1, \ldots, x_n \vert \theta) = \prod_{i=1}^np(x_i\
 * Easy
 * Interpretable
 * Asymptotic properties  
-$\,\,\,$ - Consistent 
+$\,\,\,$ - Consistent (converges to the true value with probability $1$ when $n \rightarrow \infty$)
 $\,\,\,$ - Normal 
 
 
