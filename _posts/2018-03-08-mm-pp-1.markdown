@@ -51,7 +51,7 @@ is the "smallest" $\sigma$-algebra containing $\mathscr{C}$. (That is, $\sigma(\
 3. If $\Omega = \mathbb{R}$ then the <span style="color:red">*Borel $\sigma$-algebra*</span> is $\mathcal{B} = \sigma(\mathscr{T})$ 
 where $\mathscr{T} =$ $\\{$open sets of $\mathbb{R} \\}$
 
-**Definition.** A measure $\mu$ on $\Omega$ with $\sigma$-algebra $\mathcal{A}$ is a function $\mu : \mathcal{A} \rightarrow [0, \infty]$ s.t.
+**Definition.** A <span style="color:red">*measure*</span> $\mu$ on $\Omega$ with $\sigma$-algebra $\mathcal{A}$ is a function $\mu : \mathcal{A} \rightarrow [0, \infty]$ s.t.
 1. $\mu(\emptyset) = 0$
 2. $\mu(\cup_{i=1}^\infty E_i) = \sum_{i=1}^\infty \mu(E_i)$ for any sequence $E_1, E_2, \ldots \in \mathcal{A}$ of pairwise disjoint sets (*coultable additivity*)
 
