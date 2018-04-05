@@ -48,7 +48,7 @@ is the "smallest" $\sigma$-algebra containing $\mathscr{C}$. (That is, $\sigma(\
 **Examples.**  
 1. $\mathcal{A} = \\{\emptyset, \Omega\\}$
 2. $\mathcal{A} = \\{\emptyset, E, E^c, \Omega\\}$
-3. If $\Omega = \mathbb{R}$ then the *Borel $\sigma$-algebra* is $\mathcal{B} = \sigma(\mathscr{T})$ 
+3. If $\Omega = \mathbb{R}$ then the <span style="color:red">*Borel $\sigma$-algebra*</span> is $\mathcal{B} = \sigma(\mathscr{T})$ 
 where $\mathscr{T} =$ $\\{$open sets of $\mathbb{R} \\}$
 
 **Definition.** A measure $\mu$ on $\Omega$ with $\sigma$-algebra $\mathcal{A}$ is a function $\mu : \mathcal{A} \rightarrow [0, \infty]$ s.t.
