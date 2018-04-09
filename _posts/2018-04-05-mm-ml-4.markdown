@@ -101,7 +101,7 @@ where we put $n_j =$ #$\\{i: x_i =j\\}$.
 
 In other words, we are maximizing the function $p(D \vert \cdot): \mathbb{R}^m \rightarrow [0,1]$ given by
 
-$$p(D \vert (\theta_1, \ldots, \theta_m) = \prod_{j=1}^m \theta_j^{nj}$$
+$$p(D \vert (\theta_1, \ldots, \theta_m))) = \prod_{j=1}^m \theta_j^{nj}$$
 
 under the constraint $\sum_{i=1}^m \theta_i = 1$.
 
