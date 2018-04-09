@@ -77,24 +77,35 @@ and the *sample mean* <span style="color:red">$\frac{1}{n}\sum_{i=1}^n X_i$</spa
 
 #### (ML 4.4) MLE for a PMF on a finite set (part 1)
 
-$X \sim p_\theta$, $X \in \\{1, \ldots, m\\}$
+Suppose we want to estimate a RV $X \sim p$ where the PMF $p: \\{1, \ldots, m\\} \rightarrow [0,1]$ is unknown.
 
-$D= (x_1, \ldots, x_n), $X_1, \ldots, X_n \sim p$ 
+Assume the data $D = (x_1, \ldots, x_n)$ gotten via $X_1, \ldots, X_n \sim p$ iid.
 
-Set $\theta = (\theta_1, \ldots, \theta_m)$ where 
-$P[X= i\vert \theta] = p(i\vert \theta) = \theta_i = p(i)$, $\sum_{i=1}^m p(i) = 1$ 
+Set the parameter $\theta = (\theta_1, \ldots, \theta_m) = (p_\theta(1), \ldots, p_\theta(m)) \in \Theta$  
+where $\Theta=\\{\theta = (\theta_1, \ldots, \theta_m) : \sum_{i=1}^m \theta_i =1\\}$.
 
-$\theta_{\rm MLE} = \arg\max_\theta p(D \vert \theta)$ where $p(D \vert \theta) = p(X_1=x_1, \ldots, X_n=x_N\vert \theta)$
+That is, $\,$ $p_\theta(i) = \theta_i = p(i\vert \theta) = P[X= i\vert \theta]$ $\,$ and $\,$ $\sum_{i=1}^m p_\theta(i) = 1$.
 
-Noting $p(x\vert \theta) = \theta_x = \prod_{j=1}^n \theta_j^{I(x = j)}$
+Now $\,$ $p(D \vert \theta_{\rm MLE}) \ge p(D \vert \theta)$ for all $\theta \in \Theta$ where 
 
 $$\begin{aligned}
-p(D \vert \theta) &= p(x_1, \ldots, x_n\vert D) = \prod_{i=1}^n p(x_i \vert \theta) \\
-                  &= \prod_{i=1}^n \prod_{j=1}^n \theta_j^{I(x = j)}$ \\
-                  &= \prod_{j=1}^m \theta_j^{\sum_{i=1}^nI(x_i=j)} = \prod_{i=1}^m \theta_j^{n_j}
+p(D \vert \theta) &= p[X_1=x_1, \ldots, X_n=x_n\vert \theta] \\
+                  &= p[x_1, \ldots, x_n \vert \theta] \\
+                  &= \prod_{i=1}^n p[x_i \vert \theta] \\
+                  &= \prod_{i=1}^n \theta_{x_i} \\
+                  &= \prod_{i=1}^n \prod_{j=1}^m \theta_j^{I(x_i=j)} \\
+                  &= \prod_{j=1}^m \theta_j^{\sum_{i=1}^nI(x_i=j)} \\
+                  &= \prod_{j=1}^m \theta_j^{nj}
 \end{aligned}$$
 
-where $n_j =$ #$\\{i : x_i = j\\}$
+where we put $n_j =$ #$\\{i: x_i =j\\}$.
+
+In other words, we are maximizing the function $p(D \vert \cdot): \mathbb{R}^m \rightarrow [0,1]$ given by
+
+$$p(D \vert (\theta_1, \ldots, \theta_m))) = \prod_{j=1}^m \theta_j^{nj}$$
+
+under the constraint $\sum_{i=1}^m \theta_i = 1$.
+
 
 (To be continued..)
 
