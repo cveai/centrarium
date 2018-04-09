@@ -88,7 +88,9 @@ That is, $\,$ $p_\theta(i) = \theta_i = p(i\vert \theta) = P[X= i\vert \theta] $
 Now $\,$ $p(D \vert \theta_{\rm MLE}) \ge p(D \vert \theta)$ for all $\theta \in \Theta$ where 
 
 $$\begin{aligned}
-p(D \vert \theta) &= p(X_1=x_1, \ldots, X_n=x_N\vert \theta)
+p(D \vert \theta) &= p[X_1=x_1, \ldots, X_n=x_n\vert \theta] \\
+                  &= p[x_1, \ldots, x_n \vert \theta] \\
+                  &= \prod_{i=1}^n p[x_i \theta] = \prod_{i=1}^n \theta_{x_i}
 \end{aligned}$$
 
 Noting $p(x\vert \theta) = \theta_x = \prod_{j=1}^n \theta_j^{I(x = j)}$
