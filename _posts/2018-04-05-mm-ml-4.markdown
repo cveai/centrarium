@@ -90,10 +90,14 @@ Now $\,$ $p(D \vert \theta_{\rm MLE}) \ge p(D \vert \theta)$ for all $\theta \in
 $$\begin{aligned}
 p(D \vert \theta) &= p[X_1=x_1, \ldots, X_n=x_n\vert \theta] \\
                   &= p[x_1, \ldots, x_n \vert \theta] \\
-                  &= \prod_{i=1}^n p[x_i \theta] = \prod_{i=1}^n \theta_{x_i}
+                  &= \prod_{i=1}^n p[x_i \vert \theta] \\
+                  &= \prod_{i=1}^n \theta_{x_i} \\
+                  &= \prod_{i=1}^n \prod_{j=1}^m \theta_j^{I(x_i=j)} \\
+                  &= \prod_{j=1}^m \theta_j^{\sum_{i=1}^nI(x_i=j)} \\
+                  &= \prod_{j=1}^m \theta_j^{nj}
 \end{aligned}$$
 
-Noting $p(x\vert \theta) = \theta_x = \prod_{j=1}^n \theta_j^{I(x = j)}$
+where we put $n_j =$ #$\\{i: x_i =j\\}$
 
 $$\begin{aligned}
 p(D \vert \theta) &= p(x_1, \ldots, x_n\vert D) = \prod_{i=1}^n p(x_i \vert \theta) \\
