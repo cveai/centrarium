@@ -108,8 +108,8 @@ under the constraint $\sum_{i=1}^m \theta_i = 1$.
 
 In sum.
 
-* minimize: $\prod_{j=1}^m \theta_j^{n_j}$
-* subject to: $\sum_{i=1}^m \theta_i = 1$
+* minimize: $\,\,\,$ $\prod_{j=1}^m \theta_j^{n_j}$
+* subject to: $\,\,$ $\sum_{i=1}^m \theta_i = 1$
 
 
 
