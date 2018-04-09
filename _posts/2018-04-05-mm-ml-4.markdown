@@ -99,19 +99,12 @@ p(D \vert \theta) &= p[X_1=x_1, \ldots, X_n=x_n\vert \theta] \\
 
 where we put $n_j =$ #$\\{i: x_i =j\\}$.
 
-In other words, we are maximizing the function
+In other words, we are maximizing the function $p(D \vert \cdot): \mathbb{R}^m \rightarrow [0,1]$ given by
 
-$$p(D \vert \cdot): \mathbb{R}^m \rightarrow [0,1], \, p(D \vert (\theta_1, \ldots, \theta_m) = \prod_{j=1}^m \theta_j^{nj}$$
+$$p(D \vert (\theta_1, \ldots, \theta_m) = \prod_{j=1}^m \theta_j^{nj}$$
 
 under the constraint $\sum_{i=1}^m \theta_i = 1$.
 
-$$\begin{aligned}
-p(D \vert \theta) &= p(x_1, \ldots, x_n\vert D) = \prod_{i=1}^n p(x_i \vert \theta) \\
-                  &= \prod_{i=1}^n \prod_{j=1}^n \theta_j^{I(x = j)}$ \\
-                  &= \prod_{j=1}^m \theta_j^{\sum_{i=1}^nI(x_i=j)} = \prod_{i=1}^m \theta_j^{n_j}
-\end{aligned}$$
-
-where $n_j =$ #$\\{i : x_i = j\\}$
 
 (To be continued..)
 
