@@ -97,7 +97,10 @@ p(D \vert \theta) &= p[X_1=x_1, \ldots, X_n=x_n\vert \theta] \\
                   &= \prod_{j=1}^m \theta_j^{nj}
 \end{aligned}$$
 
-where we put $n_j =$ #$\\{i: x_i =j\\}$
+where we put $n_j =$ #$\\{i: x_i =j\\}$.
+
+In other words, we are maximizing the function
+$p(D \vert \cdot): \mathbb{R}^m \rightarrow [0,1], p(D \vert \theta) = \prod_{j=1}^m \theta_j^{nj}$ under the 
 
 $$\begin{aligned}
 p(D \vert \theta) &= p(x_1, \ldots, x_n\vert D) = \prod_{i=1}^n p(x_i \vert \theta) \\
