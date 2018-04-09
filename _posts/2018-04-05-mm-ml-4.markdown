@@ -52,13 +52,13 @@ The only information we have is that the parameter $\theta$ comes form a distrib
 
 We have the density $\,$ $p(x \vert \theta) = \frac{1}{\sqrt{2\pi\sigma^2}}\exp\left(-\frac{1}{2\sigma^2}(x - \theta)^2 \right)$.  
 
-$D = (x_1, \ldots, x_n), X_i \sim N(\theta, \sigma^2)$ iid ($X_i = x_i$)
+Assume that we have data $D = (x_1, \ldots, x_n)$ gotten via $X_i \sim N(\theta, \sigma^2)$ iid ($X_i = x_i$)
 
 For MLE, wanna maximize, over $\theta$, the following:
 
 $p(D \vert \theta) = p(x_1, \ldots, x_n \vert \theta) = \prod_{i=1}^n p(x_i \vert \theta) = (\frac{1}{\sqrt{2\pi\sigma^2}})^n\exp\left(-\frac{1}{2\sigma}\sum_{i=1}^n(x - \theta)^2 \right)$ 
 
-Euqivalently, can minimize its log instead:
+Euqivalently, can maximize its log instead:
 
 $\log p(D \vert \theta) = -\frac{1}{n}\log(2\pi\sigma^2) - \frac{1}{2\sigma^2} \sum_{i=1}^n (x_i -\theta)^2$
 
