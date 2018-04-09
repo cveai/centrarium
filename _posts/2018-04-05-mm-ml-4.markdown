@@ -108,10 +108,9 @@ under the constraint $\sum_{i=1}^m \theta_i = 1$.
 
 In sum.
 
-$$\begin{aligned}
-& {\rm minimize:} \,\, \prod_{j=1}^m \theta_j^{n_j} \\
-& {\rm constraints:} \,\, \sum_{i=1}^m \theta_i = 1
-\end{aligned}$$
+* minimize: $\prod_{j=1}^m \theta_j^{n_j}$
+* constraints: $\sum_{i=1}^m \theta_i = 1$
+
 
 
 (To be continued..)
