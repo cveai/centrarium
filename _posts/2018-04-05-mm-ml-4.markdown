@@ -50,7 +50,7 @@ Suppsose we want to estimate a RV $X \sim N(\theta, \sigma^2)$, where $\theta$ i
 
 The only information we have is that the parameter $\theta$ comes form a distribution on $\Theta$, i.e., $\theta \in \Theta$.
 
-We have the density $p(x \vert \theta) = \frac{1}{\sqrt{2\pi\sigma^2}}\exp\left(-\frac{1}{2\sigma^2}(x - \theta)^2 \right)$  
+We have the density $\,$ $p(x \vert \theta) = \frac{1}{\sqrt{2\pi\sigma^2}}\exp\left(-\frac{1}{2\sigma^2}(x - \theta)^2 \right)$.  
 
 $D = (x_1, \ldots, x_n), X_i \sim N(\theta, \sigma^2)$ iid ($X_i = x_i$)
 
