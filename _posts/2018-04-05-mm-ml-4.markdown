@@ -56,7 +56,10 @@ Assume that we have data $D = (x_1, \ldots, x_n)$ gotten via $X_i \sim N(\theta,
 
 For MLE, wanna maximize, over $\theta$, the following:
 
-$p(D \vert \theta) = p(x_1, \ldots, x_n \vert \theta) = \prod_{i=1}^n p(x_i \vert \theta) = (\frac{1}{\sqrt{2\pi\sigma^2}})^n\exp\left(-\frac{1}{2\sigma}\sum_{i=1}^n(x - \theta)^2 \right)$ 
+$$\begin{aligned}
+p(D \vert \theta) &= p(x_1, \ldots, x_n \vert \theta) = \prod_{i=1}^n p(x_i \vert \theta) \\
+& = (\frac{1}{\sqrt{2\pi\sigma^2}})^n\exp\left(-\frac{1}{2\sigma}\sum_{i=1}^n(x - \theta)^2 \right)
+\end{aligned}$$ 
 
 Euqivalently, can maximize its log instead:
 
