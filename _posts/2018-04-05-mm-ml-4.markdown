@@ -98,6 +98,7 @@ p(D \vert \theta) &= p[X_1=x_1, \ldots, X_n=x_n\vert \theta] \\
                   &= \prod_{j=1}^m \theta_j^{nj}
 \end{aligned}$$
 
+<<<<<<< HEAD
 where we put $n_j =$ #$\\{i: x_i =j\\}$.
 
 In other words, we are maximizing the function $p(D \vert \cdot): \mathbb{R}^m \rightarrow [0,1]$ given by
@@ -106,6 +107,24 @@ $$p(D \vert (\theta_1, \ldots, \theta_m))) = \prod_{j=1}^m \theta_j^{nj}$$
 
 under the constraint $\sum_{i=1}^m \theta_i = 1$.
 
+||||||| merged common ancestors
+where $n_j =$ #$\\{i : x_i = j\\}$
+=======
+where we put $n_j =$ #$\\{i: x_i =j\\}$.
+
+In other words, we are maximizing the function $p(D \vert \cdot): \mathbb{R}^m \rightarrow [0,1]$ given by
+
+$$p(D \vert (\theta_1, \ldots, \theta_m))) = \prod_{j=1}^m \theta_j^{n_j}$$
+
+under the constraint $\sum_{i=1}^m \theta_i = 1$.
+
+In sum,
+
+* minimize: $\,\,\,$ $\prod_{j=1}^m \theta_j^{n_j}$
+* subject to: $\,\,$ $\sum_{i=1}^m \theta_i = 1$
+
+
+>>>>>>> notes
 
 (To be continued..)
 
