@@ -83,9 +83,10 @@ Assume the data $D = (x_1, \ldots, x_n)$ gotten via $X_1, \ldots, X_n \sim p$ ii
 
 Set the parameter $\theta = (\theta_1, \ldots, \theta_m) = (p_\theta(1), \ldots, p_\theta(m)) \in \Theta$.
 
-That is $p_\theta(i) = \theta_i = p(i\vert \theta) = P[X= i\vert \theta] $ and $\sum_{i=1}^m p_\theta(i) = 1$.
+That is,  $p_\theta(i) = \theta_i = p(i\vert \theta) = P[X= i\vert \theta] $ and $\sum_{i=1}^m p_\theta(i) = 1$.
 
-$\theta_{\rm MLE} = \arg\max_\theta p(D \vert \theta)$ where $p(D \vert \theta) = p(X_1=x_1, \ldots, X_n=x_N\vert \theta)$
+Now $p(D \vert \theta_{\rm MLE} \ge \p(D \vert \theta)$ for all $\theta \in \Theta$,  
+where $p(D \vert \theta) = p(X_1=x_1, \ldots, X_n=x_N\vert \theta)$.
 
 Noting $p(x\vert \theta) = \theta_x = \prod_{j=1}^n \theta_j^{I(x = j)}$
 
