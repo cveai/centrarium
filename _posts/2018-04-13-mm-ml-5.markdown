@@ -15,8 +15,14 @@ $$p_\theta = \exp\left( \sum_{i=1}^m \eta_i(\theta) s_i(\theta)  \right) h(x)/z(
 
 * $\theta \in \mathbb{R}^k$: parameter
 * $x \in \mathbb{R}^d$: "distritution variable"
+* $\eta_i : \Thets \rightarrow \mathbb{R}$ 
+* $s_i : \mathbb{R}^d \rightarrow \mathbb{R}$ ([sufficient statistics](https://slack-redir.net/link?url=https%3A%2F%2Fonlinecourses.science.psu.edu%2Fstat414%2Fnode%2F244)) 
+* $h : \mathbb{R}^d \rightarrow [0, \infty)$ (support & scaling)
+* $z : \Theta \rightarrow [0, \infty)$ (partition function: sort of normaizing constant but having very special properties)
 
+$$p_\theta(x) = e^{\eta(\theta)^Ts(x)}h(x)/z(\theta)$$
 
+($\eta = (\eta_1, \ldots, \eta_m)$, $\s = (\s_1, \ldots, \s_m)$)
 
 ---
 
