@@ -117,7 +117,20 @@ Equivalently we can minimize its log:
 * subject to: $\,\,$ $\sum_{i=1}^m \theta_i = 1$
 
 Let's define a PMF $q$ by $q_j = \frac{n_j}{n}$; note $\sum_{j= 1}^m = 1$.  
-Now we have $\frac{1}{n}\log(D\vert \theta) = \sum_{j=1}^m \frac{n_j}{n} \log \theta_j$.  
+Now we have 
+
+$$\begin{aligned}
+\frac{1}{n}\log(D\vert \theta) = \sum_{j=1}^m \frac{n_j}{n} \log \theta_j \\
+&= \sum_{j=1}^m q_j\log \theta_j \\
+&= \sum_{j=1}^m q_j\log \frac{\theta_j}{q_j} + \sum_{j=1}^m q_j\log q_j \\
+& = -D(q \Vert \theta) - H(q)
+\end{aligned}$$ 
+
+ Notes on relative entrpy:
+* $D(q \Vert \theta) = \sum_{j=1}^m q_j \log \frac{q_j}{\theta_j}$
+* $D(q \Vert \theta) \ge 0$
+* $D(q \Vert \theta) = 0$ if and only if $q = \theta$
+ 
 
 ---
 
