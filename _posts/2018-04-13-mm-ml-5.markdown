@@ -1,119 +1,20 @@
 ---
 layout: post
-title:  "Notes on Machine Learning 4: Maximum Likelihood Estimation"
-date:   2018-04-05 00:00:00
+title:  "Notes on Machine Learning 5: MLE for Exponential Families"
+date:   2018-04-13 00:00:00
 author: 장승환
 categories: Notes
 tags: ML
 ---
 
-#### (ML 4.1) (ML 4.2) Maximum Likelihood Estimation (MLE) (part 1, 2)
+#### (ML 5.1) (ML 5.2) Exponential families 
 
-**Setup.** Given data $D = (x_1, \ldots, x_n)$ where $x_i \in \mathbb{R}^d$.  
-Assume a family of distributions $\\{p_\theta : \theta \in \Theta\\}$ on $\mathbb{R}^d$. $\,$ <span style="color:red">$p_\theta(x) = p(x \vert \theta)  $</span>  
-Assume $D$ is a sample from $X_1, \ldots, X_n \sim p_\theta$ iid for some $\theta \in \Theta$.
+**Definition** Let $\Theta \subset \mathbb{R}^k$ An *exponential family* is a set $\\{p_\theta : \theta \in \Theta\\}$ of MPFs/MDFs on $\mathbb{R}$ s.t.
 
-**Goal.** Estimate the true $\theta$ that $D$ comes from.
-
-**Definition.** $\theta_{\rm MLE}$ is a *MLE* for $\theta$ if $\theta_{\rm MLE} "=" \arg\max_{\theta \in \Theta p(D\vert \theta)}$.  
-More precisely, <span style="color:red">$p(D \vert \theta_{\rm MLE}) = \max_{\theta\in \Theta} p(D\vert \theta)$</span>,  
-where $p(D\vert \theta) = p(x_1, \ldots, x_n \vert \theta) = \prod_{i=1}^np(x_i\vert \theta) = \prod_{i=1}^nP[X=x_i\vert \theta]$.
-
-Note: $p(D\vert \theta)$ is called the *likelihood function*
-
-**Remark.**
-1. MLE might not be unique.  
-2. MLE may fail to exist.
-
-**Pros:**
-* Easy
-* Interpretable
-* Asymptotic properties  
-$\,\,\,$ - Consistent (converges to the true value with probability $1$ when $n \rightarrow \infty$)  
-$\,\,\,$ - Normal  
-$\,\,\,$ - Efficient (lowest asymptotic variance)  
-* Invariant under reparametrization: $g(\theta_{\rm MLE})$ is a MLE for $g(\theta)$
-
-**Cons:**
-* Point estimate, so no representation of uncertainty. $p(x \vert D)\approx p(x \vert \theta_{\rm MLE})$
-* Overfitting (severe problem)  
-$\,\,\,$ - Regression 
-$\,\,\,$ - Black swan "paradox"  
-* Wrong objective? - Disregards loss  
-* Existence & uniqueness is not guaranteed.
-
----
-
-#### (ML 4.3) MLE for univariate Gaussian mean
-
-Suppsose we want to estimate a RV $X \sim N(\theta, \sigma^2)$, where $\theta$ is unknown.
-
-The only information we have is that the parameter $\theta$ comes form a distribution on $\Theta$, i.e., $\theta \in \Theta$.
-
-We have the density $\,$ $p(x \vert \theta) = \frac{1}{\sqrt{2\pi\sigma^2}}\exp\left(-\frac{1}{2\sigma^2}(x - \theta)^2 \right)$.  
-
-Assume that we have data $D = (x_1, \ldots, x_n)$ gotten via $X_i \sim N(\theta, \sigma^2)$ iid ($X_i = x_i$)
-
-For MLE, wanna maximize, over $\theta$, the following:
-
-$$\begin{aligned}
-p(D \vert \theta) &= p(x_1, \ldots, x_n \vert \theta) = \prod_{i=1}^n p(x_i \vert \theta) \\
-& = (\frac{1}{\sqrt{2\pi\sigma^2}})^n\exp\left(-\frac{1}{2\sigma}\sum_{i=1}^n(x - \theta)^2 \right)
-\end{aligned}$$ 
-
-Euqivalently, can maximize its log instead:
-
-$$\log p(D \vert \theta) = -\frac{1}{n}\log(2\pi\sigma^2) - \frac{1}{2\sigma^2} \sum_{i=1}^n (x_i -\theta)^2$$
-
-$$0 = \frac{\partial}{\partial \theta} \log p(D \vert \theta) = \frac{1}{2\sigma^2}\sum_{i=1}^n2(x_i-\theta) = \frac{1}{\sigma^2}(\sum x_i -n\theta)$$
-
-gives $\theta_{\rm MLE}$ $= \frac{1}{n}\sum_{i=1}^n x_i$ since $\frac{\partial^2}{\partial\theta^2} \log p(D \vert \theta) 
-= -\frac{n}{\sigma^2} < 0$
-
-In sum, we target <span style="color:red">$\theta_{\rm MLE}$</span> from distributoins $(N(\theta, \sigma^2))\_{\theta \in \Theta}$,  
-and the *sample mean* <span style="color:red">$\frac{1}{n}\sum_{i=1}^n X_i$</span> provides an effective estimator of it.
-
----
-
-#### (ML 4.4) MLE for a PMF on a finite set (part 1)
-
-Suppose we want to estimate a RV $X \sim p$ where the PMF $p: \\{1, \ldots, m\\} \rightarrow [0,1]$ is unknown.
-
-Assume the data $D = (x_1, \ldots, x_n)$ gotten via $X_1, \ldots, X_n \sim p$ iid.
-
-Set the parameter $\theta = (\theta_1, \ldots, \theta_m) = (p_\theta(1), \ldots, p_\theta(m)) \in \Theta$  
-where $\Theta=\\{\theta = (\theta_1, \ldots, \theta_m) : \sum_{i=1}^m \theta_i =1\\}$.
-
-That is, $\,$ $p_\theta(i) = \theta_i = p(i\vert \theta) = P[X= i\vert \theta]$ $\,$ and $\,$ $\sum_{i=1}^m p_\theta(i) = 1$.
-
-Now $\,$ $p(D \vert \theta_{\rm MLE}) \ge p(D \vert \theta)$ for all $\theta \in \Theta$ where 
-
-$$\begin{aligned}
-p(D \vert \theta) &= p[X_1=x_1, \ldots, X_n=x_n\vert \theta] \\
-                  &= p[x_1, \ldots, x_n \vert \theta] \\
-                  &= \prod_{i=1}^n p[x_i \vert \theta] \\
-                  &= \prod_{i=1}^n \theta_{x_i} \\
-                  &= \prod_{i=1}^n \prod_{j=1}^m \theta_j^{I(x_i=j)} \\
-                  &= \prod_{j=1}^m \theta_j^{\sum_{i=1}^nI(x_i=j)} \\
-                  &= \prod_{j=1}^m \theta_j^{nj}
-\end{aligned}$$
-
-where we put $n_j =$ #$\\{i: x_i =j\\}$.
-
-In other words, we are maximizing the function $p(D \vert \cdot): \mathbb{R}^m \rightarrow [0,1]$ given by
-
-$$p(D \vert (\theta_1, \ldots, \theta_m))) = \prod_{j=1}^m \theta_j^{n_j}$$
-
-under the constraint $\sum_{i=1}^m \theta_i = 1$.
-
-In sum,
-
-* minimize: $\,\,\,$ $\prod_{j=1}^m \theta_j^{n_j}$
-* subject to: $\,\,$ $\sum_{i=1}^m \theta_i = 1$
+$$p_\theta = \exp\left( \sum_{i=1}^m \eta_i(\theta) s_i(\theta)  \right) h(x)/z(x).$$
 
 
 
-(To be continued..)
 
 ---
 
