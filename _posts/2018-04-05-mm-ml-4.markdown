@@ -133,7 +133,7 @@ $$\begin{aligned}
 &= \arg\max \frac{1}{n}\log p(D \vert \theta) \\
 &= \arg\min D(q\Vert \theta) \\
 &= q 
-\end{aligned}
+\end{aligned}$$
 
 Thus, $\theta_{\rm MLE} = \left(\frac{n_1}n{}, \ldots, \frac{n_m}{n}\right)$, the *empirical distribution*!
 
