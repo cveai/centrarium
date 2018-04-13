@@ -111,8 +111,12 @@ In sum,
 * minimize: $\,\,\,$ $\prod_{j=1}^m \theta_j^{n_j}$
 * subject to: $\,\,$ $\sum_{i=1}^m \theta_i = 1$
 
+Equivalently we can minimize its log:
 
-(To be continued..)
+* minimize: $\,\,\,$ $\log(D\vert \theta) = \sum_{j=1}^m n_j \log \theta_j$
+* subject to: $\,\,$ $\sum_{i=1}^m \theta_i = 1$
+
+
 
 ---
 
