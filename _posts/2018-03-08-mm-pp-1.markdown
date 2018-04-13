@@ -126,7 +126,7 @@ Properties 3 and 4 are very innocent looking but are essential in proving pretty
 5. (Inclusion-Exclusion formula) 
 $P(\cup_{i=1}^n E_i) = \sum_{i} P(E_i) - \sum_{i<j}P(E_i \cap E_j) + \sum_{i<j<k}P(E_i \cap E_j \cap E_k) - \cdots 
 +(-1)P(E_1 \cap E_2 \cap \cdots E_n)$
-6. P(\cup_{i=1}^n E_i) \le \sum_{i=1}^n P(E_i)$ and $P(\cup_{i=1}^\infty E_i) \le \sum_{i=1}^\infty P(E_i)$
+6. $P(\cup_{i=1}^n E_i) \le \sum_{i=1}^n P(E_i)$ and $P(\cup_{i=1}^\infty E_i) \le \sum_{i=1}^\infty P(E_i)$
 
 ---
 
