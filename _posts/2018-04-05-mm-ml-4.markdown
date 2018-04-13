@@ -111,7 +111,7 @@ In sum,
 * maximize: $\,\,\,$ $\prod_{j=1}^m \theta_j^{n_j}$
 * subject to: $\,\,$ $\sum_{i=1}^m \theta_i = 1$
 
-Equivalently we can maximize its log:
+Equivalently, we can maximize its log:
 
 * maximize: $\,\,\,$ $\log(D\vert \theta) = \sum_{j=1}^m n_j \log \theta_j$
 * subject to: $\,\,$ $\sum_{i=1}^m \theta_i = 1$
