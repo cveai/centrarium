@@ -59,7 +59,7 @@ p_\theta &=
 Not necessarily unique representation!:
 
 $$\begin{aligned}
-p_\theta = \theta^{I(x=1)(1-\theta)^{I(x=0)}h(x)} \\
+p_\theta &= \theta^{I(x=1)(1-\theta)^{I(x=0)}h(x)} \\
 &= h(x)\exp \log \left( \theta^{I(x=1)(1-\theta)^{I(x=0)}h(x)} \right) \\
 &= h(x)\exp \left( I(x=1)\log \theta + I(x=0)\log(1-\theta) \right) \\
 \end{aligned}$$
