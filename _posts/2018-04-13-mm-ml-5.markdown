@@ -9,7 +9,7 @@ tags: ML
 
 #### (ML 5.1) (ML 5.2) Exponential families 
 
-**Definition** Let $\Theta \subset \mathbb{R}^k$ An *exponential family* is a set $\\{p_\theta : \theta \in \Theta\\}$ of MPFs/MDFs on $\mathbb{R}$ s.t.
+**Definition** Let $\Theta \subset \mathbb{R}^k$. An *exponential family* is a set $\\{p_\theta : \theta \in \Theta\\}$ of MPFs/MDFs on $\mathbb{R}$ s.t.
 
 $$p_\theta = \exp\left( \sum_{i=1}^m \eta_i(\theta) s_i(\theta)  \right) h(x)/z(x).$$
 
