@@ -120,7 +120,7 @@ Let's define a PMF $q$ by $q_j = \frac{n_j}{n}$; note $\sum_{j= 1}^m = 1$.
 Now we have 
 
 $$\begin{aligned}
-\frac{1}{n}\log(D\vert \theta) = \sum_{j=1}^m \frac{n_j}{n} \log \theta_j \\
+\frac{1}{n}\log(D\vert \theta) &= \sum_{j=1}^m \frac{n_j}{n} \log \theta_j \\
 &= \sum_{j=1}^m q_j\log \theta_j \\
 &= \sum_{j=1}^m q_j\log \frac{\theta_j}{q_j} + \sum_{j=1}^m q_j\log q_j \\
 & = -D(q \Vert \theta) - H(q)
