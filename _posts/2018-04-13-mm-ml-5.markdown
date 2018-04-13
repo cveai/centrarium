@@ -25,7 +25,7 @@ $$p_\theta(x) = e^{\eta(\theta)^Ts(x)}h(x)/z(\theta)$$
 ($\eta = (\eta_1, \ldots, \eta_m)$, $s = (s_1, \ldots, s_m)$)
 
 **Example.** Exponential distribution (PDF)
-Exponential(\theta$), $\theta \in \Theta = [0, \infty}$
+Exponential($\theta$), $\theta \in \Theta = [0, \infty}$
 
 
 ---
