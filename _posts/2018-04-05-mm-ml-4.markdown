@@ -137,7 +137,7 @@ $$\begin{aligned}
 
 Thus, $\theta_{\rm MLE} = \left(\frac{n_1}n{}, \ldots, \frac{n_m}{n}\right)$, the *empirical distribution*!
 
- Notes on relative entrpy:
+**Notes on relative entrpy:**
 * $D(q \Vert \theta) = \sum_{j=1}^m q_j \log \frac{q_j}{\theta_j}$
 * $D(q \Vert \theta) \ge 0$
 * $D(q \Vert \theta) = 0$ if and only if $q = \theta$
