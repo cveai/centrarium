@@ -63,7 +63,7 @@ where $\mathscr{T} =$ $\\{$open sets of $\mathbb{R} \\}$
 
 #### (PP 1.4) Measure theory: Examples of Measures
 
-The defining conditions of a probability measure is called the **Kolmogorov's axioms**. (father of modern probability theory)
+The defining conditions of a probability measure is called the [**Kolmogorov's axioms**](http://mathworld.wolfram.com/KolmogorovsAxioms.html). (father of modern probability theory)
 
 **Examples.**
 1. (Finite set) $\Omega = \\{1, \ldots, n\\}, \mathcal{A} = 2^\Omega$, $P(\{k\}) = P(k) = \frac{1}{n}$ (gives *uniform distribution*)  
