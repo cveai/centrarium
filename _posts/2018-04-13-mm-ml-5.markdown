@@ -46,9 +46,16 @@ p_\theta &=
 0, \, {\rm else}
 \end{cases} \\
 &= \theta^{I(x=1)(1-\theta)^{I(x=0)}h(x)} \\
-&= h(x)\exp \log \left( \theta^{I(x=1)(1-\theta)^{I(x=0)}h(x)} \right) ]\\
-&= 
+&= h(x)\exp \log \left( \theta^{I(x=1)(1-\theta)^{I(x=0)}h(x)} \right)] \\
+&= h(x)\exp \left( I(x=1)\log \theta + I(x=0)\log(1-\theta) \right)] \\
 \end{aligned}$$
+
+* $\eta_1(\theta) = \log \theta$
+* $\eta_2(\theta) = \log (1-\theta)$
+* $s_1(x) = I(x=1)$
+* $s_2(x) = I(x=0)$
+* $h(x) = I_{\\{0, 1\\}}(x) = I(x \in \\{0,1\\})$
+
 
 
 
