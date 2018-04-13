@@ -45,7 +45,9 @@ p_\theta &=
 1-\theta, \, {\rm if} \,\,\, x=0 \\
 0, \, {\rm else}
 \end{cases} \\
-&=
+&= \theta^{I(x=1)(1-\theta)^{I(x=0)}h(x)} \\
+&= h(x)\exp \log \left( \theta^{I(x=1)(1-\theta)^{I(x=0)}h(x)} \right) ]\\
+&= 
 \end{aligned}$$
 
 
