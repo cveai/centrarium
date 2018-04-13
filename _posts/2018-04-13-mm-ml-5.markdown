@@ -27,7 +27,12 @@ $$p_\theta(x) = e^{\eta(\theta)^Ts(x)}h(x)/z(\theta)$$
 **Example.** Exponential distribution (PDF)
 Exponential($\theta$), $\theta \in \Theta = [0, \infty)$
 
-$$p_\theta(x) = e^{\eta(\theta)^Ts(x)}h(x)/z(\theta)$$
+$$p_\theta(x) = \theta e^{-\theta x}I(x\ge 0)$$
+
+* $\eta(\theta) = \theta$
+* $s(x) = -x$
+* $h(x) = I(x\ge 0)$
+* $z(\theta) 1/\theta$ 
 
 
 ---
