@@ -63,7 +63,7 @@ where $\mathscr{T} =$ $\\{$open sets of $\mathbb{R} \\}$
 
 #### (PP 1.4) Measure theory: Examples of Measures
 
-The defining conditions of a probability measure is called the **Kolmogorov's axioms**. (father of modern probability theory)
+The defining conditions of a probability measure is called the [**Kolmogorov's axioms**](http://mathworld.wolfram.com/KolmogorovsAxioms.html){:target="_blank"}. (father of modern probability theory)
 
 **Examples.**
 1. (Finite set) $\Omega = \\{1, \ldots, n\\}, \mathcal{A} = 2^\Omega$, $P(\{k\}) = P(k) = \frac{1}{n}$ (gives *uniform distribution*)  
@@ -126,7 +126,7 @@ Properties 3 and 4 are very innocent looking but are essential in proving pretty
 5. (Inclusion-Exclusion formula) 
 $P(\cup_{i=1}^n E_i) = \sum_{i} P(E_i) - \sum_{i<j}P(E_i \cap E_j) + \sum_{i<j<k}P(E_i \cap E_j \cap E_k) - \cdots 
 +(-1)P(E_1 \cap E_2 \cap \cdots E_n)$
-6. P(\cup_{i=1}^n E_i) \le \sum_{i=1}^n P(E_i)$ and $P(\cup_{i=1}^\infty E_i) \le \sum_{i=1}^\infty P(E_i)$
+6. $P(\cup_{i=1}^n E_i) \le \sum_{i=1}^n P(E_i)$ and $P(\cup_{i=1}^\infty E_i) \le \sum_{i=1}^\infty P(E_i)$
 
 ---
 
@@ -138,7 +138,7 @@ $\mathbb{R}, \mathcal{B}(\mathbb{R})$, $(a, b)$
 
 **Definition.** A CDF (cumulative distribution function) is a function $F : \mathbb{R} \rightarrow \mathbb{R}$ s.t. 
 1. $F$ is nondecreasing ($x \le y \Rightarrow F(x) \le F(y)$)
-2. $F$ is right continuous (\lim_{x \rightarrow a^+} = F(a))
+2. $F$ is right continuous ($\lim_{x \rightarrow a^+} = F(a)$)
 3. $\lim_{x \rightarrow \infty} F(x) = 1$
 4. $\lim_{x \rightarrow -\infty} F(x) = 0$
 
