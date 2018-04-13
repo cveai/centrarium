@@ -68,6 +68,23 @@ p_\theta &= \theta^{I(x=1)}(1-\theta)^{1-I(x=1)}h(x) \\
 * s(x) = I(x=1)
 * $z(\theta) \frac{1}{1-\theta}$
 
+*Natural/Canonical form*  
+* $\eta(\theta) = \theta$ $\,$ ($m= k$) 
+* $\eta_1(\theta) = \theta_1, \ldots, \eta_k(\theta) = \theta_k$
+
+**Example.**
+1. (PDF) Exponential, Normal, Beta, Gamma, Chi-square
+2. (PMF) Bernoulli, Binomial, Poisson, Geometric, Multinomial
+
+Properties of exponential families:
+* Conjugate prior
+* Maximum entropy
+
+**Example (NOT an exponential )family.**  
+* Uniform$(0, \theta)$
+
+cf. Uniform$(0,a) = \frac{1}{a}I(x \in (0,a))$, for a fixed $a \in (0, \infty)$, gives an exponential family (trivially).
+
 
 
 
