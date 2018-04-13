@@ -61,7 +61,7 @@ Not necessarily unique representation! :
 $$\begin{aligned}
 p_\theta &= \theta^{I(x=1)}(1-\theta)^{1-I(x=1)}h(x) \\
 &= (1-\theta)\left(\frac{\theta}{1-\theta}\right)^{I(x=1)}h(x) \\
-&= h(x)(1-\theta) \exp(I(x=1)\log \left(\frac{\theta}{1-\theta}\right) )
+&= h(x)(1-\theta) \exp\left(I(x=1)\log \left(\frac{\theta}{1-\theta}\right) \right)
 \end{aligned}$$
 
 
