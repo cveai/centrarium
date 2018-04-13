@@ -129,7 +129,7 @@ $$\begin{aligned}
 Note 
 
 $$\begin{aligned}
-\theta_{\rm MLE} &= \arg\max_{\theta: \sum \thet_i=1} p(D\vert \theta) \\
+\theta_{\rm MLE} &= \arg\max_{\theta: \sum \theta_i=1} p(D\vert \theta) \\
 &= \arg\max \frac{1}{n}\log p(D \vert \theta) \\
 &= \arg\min D(q\Vert \theta) \\
 &= q 
