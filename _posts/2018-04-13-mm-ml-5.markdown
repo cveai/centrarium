@@ -46,8 +46,8 @@ p_\theta &=
 0, \, {\rm else}
 \end{cases} \\
 &= \theta^{I(x=1)(1-\theta)^{I(x=0)}h(x)} \\
-&= h(x)\exp \log \left( \theta^{I(x=1)(1-\theta)^{I(x=0)}h(x)} \right)] \\
-&= h(x)\exp \left( I(x=1)\log \theta + I(x=0)\log(1-\theta) \right)] \\
+&= h(x)\exp \log \left( \theta^{I(x=1)(1-\theta)^{I(x=0)}h(x)} \right) \\
+&= h(x)\exp \left( I(x=1)\log \theta + I(x=0)\log(1-\theta) \right) \\
 \end{aligned}$$
 
 * $\eta_1(\theta) = \log \theta$
