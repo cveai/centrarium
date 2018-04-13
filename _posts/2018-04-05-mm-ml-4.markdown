@@ -108,12 +108,12 @@ under the constraint $\sum_{i=1}^m \theta_i = 1$.
 
 In sum,
 
-* minimize: $\,\,\,$ $\prod_{j=1}^m \theta_j^{n_j}$
+* maximize: $\,\,\,$ $\prod_{j=1}^m \theta_j^{n_j}$
 * subject to: $\,\,$ $\sum_{i=1}^m \theta_i = 1$
 
-Equivalently we can minimize its log:
+Equivalently we can maximize its log:
 
-* minimize: $\,\,\,$ $\log(D\vert \theta) = \sum_{j=1}^m n_j \log \theta_j$
+* maximize: $\,\,\,$ $\log(D\vert \theta) = \sum_{j=1}^m n_j \log \theta_j$
 * subject to: $\,\,$ $\sum_{i=1}^m \theta_i = 1$
 
 Let's define a PMF $q$ by $q_j = \frac{n_j}{n}$; note $\sum_{j= 1}^m = 1$.  
@@ -125,6 +125,17 @@ $$\begin{aligned}
 &= \sum_{j=1}^m q_j\log \frac{\theta_j}{q_j} + \sum_{j=1}^m q_j\log q_j \\
 & = -D(q \Vert \theta) - H(q)
 \end{aligned}$$ 
+
+Note 
+
+$$\begin{aligned}
+\theta_{\rm MLE} &= \arg\max_{\theta: \sum \thet_i=1} p(D\vert \theta) \\
+&= \arg\max \frac{1}{n}\log p(D \vert \theta) \\
+&= \arg\min D(q\Vert \theta) \\
+&= q 
+\end{aligned}
+
+Thus, $\theta_{\rm MLE} = \left(\frac{n_1}n{}, \ldots, \frac{n_m}{n}\right)$, the *empirical distribution*!
 
  Notes on relative entrpy:
 * $D(q \Vert \theta) = \sum_{j=1}^m q_j \log \frac{q_j}{\theta_j}$
