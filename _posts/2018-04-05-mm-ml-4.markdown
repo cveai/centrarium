@@ -75,9 +75,8 @@ and the *sample mean* <span style="color:red">$\frac{1}{n}\sum_{i=1}^n X_i$</spa
 
 ---
 
-#### (ML 4.4) MLE for a PMF on a finite set (part 1)
+#### (ML 4.4) (ML 4.5) MLE for a PMF on a finite set
 
-<<<<<<< HEAD
 Suppose we want to estimate a RV $X \sim p$ where the PMF $p: \\{1, \ldots, m\\} \rightarrow [0,1]$ is unknown.
 
 Assume the data $D = (x_1, \ldots, x_n)$ gotten via $X_1, \ldots, X_n \sim p$ iid.
@@ -99,7 +98,6 @@ p(D \vert \theta) &= p[X_1=x_1, \ldots, X_n=x_n\vert \theta] \\
                   &= \prod_{j=1}^m \theta_j^{nj}
 \end{aligned}$$
 
-<<<<<<< HEAD
 where we put $n_j =$ #$\\{i: x_i =j\\}$.
 
 In other words, we are maximizing the function $p(D \vert \cdot): \mathbb{R}^m \rightarrow [0,1]$ given by
@@ -108,24 +106,42 @@ $$p(D \vert (\theta_1, \ldots, \theta_m))) = \prod_{j=1}^m \theta_j^{nj}$$
 
 under the constraint $\sum_{i=1}^m \theta_i = 1$.
 
-||||||| merged common ancestors
-where $n_j =$ #$\\{i : x_i = j\\}$
-=======
-where we put $n_j =$ #$\\{i: x_i =j\\}$.
-
-In other words, we are maximizing the function $p(D \vert \cdot): \mathbb{R}^m \rightarrow [0,1]$ given by
-
-$$p(D \vert (\theta_1, \ldots, \theta_m))) = \prod_{j=1}^m \theta_j^{n_j}$$
-
-under the constraint $\sum_{i=1}^m \theta_i = 1$.
-
 In sum,
 
-* minimize: $\,\,\,$ $\prod_{j=1}^m \theta_j^{n_j}$
+* maximize: $\,\,\,$ $\prod_{j=1}^m \theta_j^{n_j}$
 * subject to: $\,\,$ $\sum_{i=1}^m \theta_i = 1$
 
+Equivalently, we can maximize its log:
 
-(To be continued..)
+* maximize: $\,\,\,$ $\log(D\vert \theta) = \sum_{j=1}^m n_j \log \theta_j$
+* subject to: $\,\,$ $\sum_{i=1}^m \theta_i = 1$
+
+Let's define a PMF $q$ by $q_j = \frac{n_j}{n}$; note $\sum_{j= 1}^m = 1$.  
+Now we have 
+
+$$\begin{aligned}
+\frac{1}{n}\log(D\vert \theta) &= \sum_{j=1}^m \frac{n_j}{n} \log \theta_j \\
+&= \sum_{j=1}^m q_j\log \theta_j \\
+&= \sum_{j=1}^m q_j\log \frac{\theta_j}{q_j} + \sum_{j=1}^m q_j\log q_j \\
+& = -D(q \Vert \theta) - H(q)
+\end{aligned}$$ 
+
+Note 
+
+$$\begin{aligned}
+\theta_{\rm MLE} &= \arg\max_{\theta: \sum \theta_i=1} p(D\vert \theta) \\
+&= \arg\max \frac{1}{n}\log p(D \vert \theta) \\
+&= \arg\min D(q\Vert \theta) \\
+&= q 
+\end{aligned}$$
+
+Thus, $\theta_{\rm MLE} = \left(\frac{n_1}n{}, \ldots, \frac{n_m}{n}\right)$, the *empirical distribution*!
+
+**Notes on relative entrpy:**
+* $D(q \Vert \theta) = \sum_{j=1}^m q_j \log \frac{q_j}{\theta_j}$
+* $D(q \Vert \theta) \ge 0$
+* $D(q \Vert \theta) = 0$ if and only if $q = \theta$
+ 
 
 ---
 
