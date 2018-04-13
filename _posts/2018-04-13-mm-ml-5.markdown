@@ -24,15 +24,27 @@ $$p_\theta(x) = e^{\eta(\theta)^Ts(x)}h(x)/z(\theta)$$
 
 ($\eta = (\eta_1, \ldots, \eta_m)$, $s = (s_1, \ldots, s_m)$)
 
-**Example.** Exponential distribution (PDF)  
-Exponential($\theta$), $\theta \in \Theta = [0, \infty)$
+**Example (Exponential distribution.** (PDF)  
+Exponential($\theta$), $\theta \in \Theta = [0, \infty)$ 
 
 $$p_\theta(x) = \theta e^{-\theta x}I(x\ge 0)$$
 
 * $\eta(\theta) = \theta$
 * $s(x) = -x$
 * $h(x) = I(x\ge 0)$
-* $z(\theta) 1/\theta$ 
+* $z(\theta) = 1/\theta$ 
+* $k = d= 1$
+
+**Example (Bernoulli distribution).** (PMF)  
+Bernoulli($\theta$), $\theta \in \Theta = (0, 1)$
+
+$$p_\theta =
+\begin{cases}
+\theta, \, {\rm if} \,\,\, x=1 \\
+1-\theta, \, {\rm if} \,\,\, x=0 \\
+0, \, {\rm else}$$
+
+
 
 
 ---
