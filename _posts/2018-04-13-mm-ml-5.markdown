@@ -42,7 +42,8 @@ $$p_\theta =
 \begin{cases}
 \theta, \, {\rm if} \,\,\, x=1 \\
 1-\theta, \, {\rm if} \,\,\, x=0 \\
-0, \, {\rm else}$$
+0, \, {\rm else}
+\end{cases}$$
 
 
 
