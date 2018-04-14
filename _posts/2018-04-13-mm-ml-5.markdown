@@ -85,6 +85,25 @@ Properties of exponential families:
 
 cf. Uniform$(0,a) = \frac{1}{a}I(x \in (0,a))$, for a fixed $a \in (0, \infty)$, gives an exponential family (trivially).
 
+---
+
+#### (ML 6.1) Maximum a posteriori (MAP) estimation
+
+**Setup.**
+* Given data $D = (x_1, \ldots, x_n)$, $x_i \in \mathbb{R}^d$.
+* Assume a jont distribution $p(D, \theta)$ where $\theta$ is a RV.
+* Goal: choose a good value of $\theta$ for $D$.
+* Choose <span style="color:orange">$\theta_{\rm MAP} = \arg\max_\theta p(\theta\vert D)$</span>. $\,$ 
+cf. <span style="color:blue">$\theta_{\rm MLE} = \arg\max_\theta p(\theta\vert D)$</span>.
+
+
+---
+
+
+#### (ML 7.1) Bayesian inference - A simple example
+
+"Put distributions on everything, and then use rules of probability."
+
 
 
 
