@@ -91,11 +91,25 @@ cf. Uniform$(0,a) = \frac{1}{a}I(x \in (0,a))$, for a fixed $a \in (0, \infty)$,
 
 **Setup.**
 * Given data $D = (x_1, \ldots, x_n)$, $x_i \in \mathbb{R}^d$.
-* Assume a jont distribution $p(D, \theta)$ where $\theta$ is a RV.
+* Assume a jont distribution $p(D, \theta) = p(D\vert \theta)p(\theta)$ where $\theta$ is a RV.
 * Goal: choose a good value of $\theta$ for $D$.
 * Choose <span style="color:red">$\theta_{\rm MAP} = \arg\max_\theta p(\theta\vert D)$</span>. $\,$ 
 cf. <span style="color:blue">$\theta_{\rm MLE} = \arg\max_\theta p(\theta\vert D)$</span>.
 
+<figure>
+<img src="/assets/pics/mm-ml/likelihood-prior-posterior.png" alt="likelihood-prior-posterior" style="width: 50%; height: 50%">
+<figcaption>Comparison among likelihood, prior and posterior
+</figcaption>
+</figure>
+
+**Pros.**
+* Easy to compute & interpretable
+* Avoid overfitting, closely connected with "*regularization*"/"*shrinkage*"
+* Tends to look like MLE asymptotically ($n \rightarrow \infty$)
+
+**Cons.**
+* Point estimate - no representation of uncertainty in $\theta$
+* Not invariant under reparametrization (cf. $\mathscr{T} = g(\theta) \Rightarrow \mathscr{T}_{\rm MLE} = g(\mathscr{T}_{\rm MLE})$)
 
 ---
 
