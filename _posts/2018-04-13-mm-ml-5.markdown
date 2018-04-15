@@ -114,12 +114,13 @@ cf. <span style="color:blue">$\theta_{\rm MLE} = \arg\max_\theta p(\theta\vert D
 
 ---
 
-
 #### (ML 7.1) Bayesian inference - A simple example
 
 "Put distributions on everything, and then use rules of probability."
 
+---
 
+#### (ML 7.2) Aspects of Bayesian inference
 
 
 ---
