@@ -115,7 +115,8 @@ Then
 
 $$\begin{aligned}
 \frac{\partial}{\partial \theta_j} \log z(\theta) &= \frac{1}{z(\theta)} \frac{\partial}{\partial \theta_j} z(\theta) \\
-&= \frac{1}{z(\theta)} \int s_j(x)e^{\theta^Ts(x)}
+&= \frac{1}{z(\theta)} \int s_j(x)e^{\theta^Ts(x)}h(x)dx \\
+&= \int s_j(x) p_theta(x)dx = E_\theta s_j(X)
 \end{aligned}$$
 
 
