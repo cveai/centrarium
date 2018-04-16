@@ -134,6 +134,7 @@ $n E_\theta s(x) = s(D) = \sum_{i=1}^n s(x_i)$
 implies 
 
 <span style="color:red">$E_\theta s(x) = \frac{1}{n}\sum_{i=1}^n s(x_i)$</span>
+if MLE exists and $\theta_{\rm MLE} \in {\rm Int} \Theta$.
 
 ---
 
