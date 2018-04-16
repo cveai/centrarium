@@ -142,7 +142,7 @@ $z(\theta) = \frac{1}{\theta}$, $s(x) = - x$, $\eta(\theta) = \theta$.
 $$\begin{aligned}
 \frac{\partial}{\partial \theta} \log z(\theta) &= \frac{\partial}{\partial \theta} -\log \theta \\
 &= -\frac{1}{\theta} = E (s(X)) = -E(X)
-\end{algined}$$
+\end{aligned}$$
 
 implies $E(X \frac{1}{\theta})$.
 
