@@ -85,6 +85,7 @@ Properties of exponential families:
 
 cf. Uniform$(0,a) = \frac{1}{a}I(x \in (0,a))$, for a fixed $a \in (0, \infty)$, gives an exponential family (trivially).
 
+<<<<<<< HEAD
 ---
 
 #### (ML 5.3) (ML 5.4) MLE for an exponential family
@@ -491,31 +492,43 @@ Remark
 ---
 
 #### (ML 17.5) Importance sampling - introduction
-<span style="color:red">It's not a sampling method but an estimation technique!</span>
+<span style="color:red">*It's not a sampling method but an estimation technique!*</span>
 
-It can be though of as a variant of MC estimation.
+It can be thought of as a variant of MC estimation.
 
-Recall: MC estimation (by sample mean): 
+**Recall.** MC estimation (by sample mean): 
 
-$$E[f(X)] \approx \frac{1}{n}\sum_{i=1}^nf(X_i)$$
+$$\mathbb{E}(f(X)) \approx \frac{1}{n}\sum_{i=1}^nf(X_i)$$
 
 under the BIG assumtion that $X \sim p$ and $X_i \sim p$.
 
 Can we do something similar by drawing samples from an alternative distribution $q$?
 
-Yes, and in some cases you can do much much better!
+*Yes*, and in some cases you can do much much better!
 
-($p$ density case)
+**Density $p$ case.**
 
-$$E[f(X)] = \int f(x)p(x)dx = \int f(x)\frac{p(x)}{q(x)}p(x)dx \approx \frac{1}{n}\sum_{i=1}^nf(X_i)\frac{p(X_i)}{q(X_i)}$$
+$$\begin{aligned}
+\mathbb{E}(f(X)) &= \int f(x)p(x)dx \\
+&= \int f(x)\frac{p(x)}{q(x)}p(x)dx \\ 
+&\approx \frac{1}{n}\sum_{i=1}^nf(X_i)\frac{p(X_i)}{q(X_i)}
+\end{aligned}$$
 
-holds for all (pdf) $q$ s.t. $q(x)= 0 \Rightarrow p(x) = 0$, i.e., $p$ is absolutely continuous w.r.t. $q$.
+holds for all pdf $q$ with respect to wchi $q$ is *absolutely continuous*, i.e., $p(x) = 0$ whenever $q(x)= 0$.
 
 <figure>
 <img src="/assets/pics/mm-ml/importance-sampling.png" alt="Importance sampling" style="width: 80%; height: 80%">
 <figcaption>Importance sampling
 </figcaption>
 </figure>
+
+---
+
+#### (ML 17.6) Importance sampling - intuition
+
+What makes a good/bad choice of the *proposal distrubution* $q$?
+
+
 
 ---
 
