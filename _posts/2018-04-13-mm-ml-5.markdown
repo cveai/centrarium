@@ -149,7 +149,7 @@ implies $E(X \frac{1}{\theta}$.
 Now $-\frac{1}{\theta} = E_\theta s(X) = \frac{1}{n}\sum_{i=1}^n (-x_i)$ implies  
 $\frac{1}{\theta} = \frac{1}{n}\sum_{i=1}^n x_i$ implies  
 
-$\theta_{\rm MLE} =1 /\frac{1}{n}\sum_{i=1}^nx_i$
+$\theta_{\rm MLE} =\frac{1}{\frac{1}{n}\sum_{i=1}^nx_i}$
 
 
 ---
