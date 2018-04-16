@@ -513,7 +513,7 @@ $$\begin{aligned}
 &\approx \frac{1}{n}\sum_{i=1}^nf(X_i)\frac{p(X_i)}{q(X_i)}
 \end{aligned}$$
 
-holds for all (pdf) $q$ s.t. $q(x)= 0 \Rightarrow p(x) = 0$, i.e., $p$ is absolutely continuous w.r.t. $q$.
+holds for all pdf $q$ with respect to wchi $q$ is *absolutely continuous*, i.e., $p(x) = 0$ whenever $q(x)= 0$.
 
 <figure>
 <img src="/assets/pics/mm-ml/importance-sampling.png" alt="Importance sampling" style="width: 80%; height: 80%">
