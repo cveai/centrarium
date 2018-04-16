@@ -503,14 +503,14 @@ under the BIG assumtion that $X \sim p$ and $X_i \sim p$.
 
 Can we do something similar by drawing samples from an alternative distribution $q$?
 
-Yes, and in some cases you can do much much better!
+*Yes*, and in some cases you can do much much better!
 
 **Density $p$ case.**
 
 $$\begin{aligned}
 \mathbb{E}(f(X)) &= \int f(x)p(x)dx \\
 &= \int f(x)\frac{p(x)}{q(x)}p(x)dx \\ 
-\approx \frac{1}{n}\sum_{i=1}^nf(X_i)\frac{p(X_i)}{q(X_i)}
+&\approx \frac{1}{n}\sum_{i=1}^nf(X_i)\frac{p(X_i)}{q(X_i)}
 \end{aligned}$$
 
 holds for all (pdf) $q$ s.t. $q(x)= 0 \Rightarrow p(x) = 0$, i.e., $p$ is absolutely continuous w.r.t. $q$.
