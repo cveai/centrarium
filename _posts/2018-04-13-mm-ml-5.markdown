@@ -495,7 +495,7 @@ Remark
 
 It can be thought of as a variant of MC estimation.
 
-***Recall.** MC estimation (by sample mean): 
+**Recall.** MC estimation (by sample mean): 
 
 $$\mathbb{E}(f(X)) \approx \frac{1}{n}\sum_{i=1}^nf(X_i)$$
 
