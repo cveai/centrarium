@@ -85,7 +85,109 @@ Properties of exponential families:
 
 cf. Uniform$(0,a) = \frac{1}{a}I(x \in (0,a))$, for a fixed $a \in (0, \infty)$, gives an exponential family (trivially).
 
+---
 
+#### (ML 5.3) (ML 5.4) MLE for an exponential family
+
+$p_\theta(x) = e^ h(x)/z(\theta)$
+
+Given data $D = (x_1, \ldots, x_n)$ with $x_i \in \mathbb{R}^d$ gotten via $X_1, \ldots, X_n \sim p_\theta$ iid.
+
+Wanna compute $\theta_{\rm MLE} = \arg\max_{\theta \in \Theta} p(D \vert \theta)$.
+
+$$\begin{aligned}
+p(D\vert \theta) &= \prod_{i=1}^n p(x_i \vert \theta) \\
+&= \prod_{i=1}^n e^{\theta^T s(x_i)}h(x_i)/z(\theta) \\
+&= z(\theta)^{-n} e^{\theta^T \sum_{i=1}^ns(x_i)} \\
+&= z(\theta)^{-n} e^{\theta^T s(D)} \prod_{i=1}^n h(x_i) 
+\end{aligned}$$
+
+$\log p(D \vert \theta) = -n\log z(\theta) + \theta^T s(D) + \sum_{i=1}^n \log h(x_i)$
+
+$0 = \frac{\partial}{\partial \theta_j} \log p(D|vert\theta) 
+= -n\frac{\partial}{\partial \theta_j} \log z(\theta) + s_j(D)$
+
+where $\theta^Ts(D = \sum_{j=1}^k \theta_j s_j(D)$, $s_j(D) = \sum_{i=1}^n s_j(x_i)$ and $s=(s_i,\ldots, s_k)$.
+
+Note $z(\theta) = \int_{\mathbb{R}^d} e^{\theta^T s(x)}h(x)dx$.
+
+Then 
+
+$$\begin{aligned}
+\frac{\partial}{\partial \theta_j} \log z(\theta) &= \frac{1}{z(\theta)} \frac{\partial}{\partial \theta_j} z(\theta) \\
+&= \frac{1}{z(\theta)} \int s_j(x)e^{\theta^Ts(x)}h(x)dx \\
+&= \int s_j(x) p_\theta(x)dx = E_\theta s_j(X)
+\end{aligned}$$
+
+<figure>
+<img src="/assets/pics/mm-ml/mle-exp-fam.png" alt="MLE for an exponential family" style="width: 50%; height: 50%">
+<figcaption>MLE for an exponential family
+</figcaption>
+</figure>
+
+$\log p(D \vert \theta) = -n\log z(\theta) + \theta^T s(D) + \sum_{i=1}^n \log h(x_i) = -nE_\theta s_j(x) +s_j(D)$
+
+implies
+
+$n E_\theta s(X) = s(D) = \sum_{i=1}^n s(x_i)$ 
+
+implies 
+
+<span style="color:red">$E_{\theta_{\rm MLE}} s(x) = \frac{1}{n}\sum_{i=1}^n s(x_i)$</span>
+if MLE exists and $\theta_{\rm MLE} \in {\rm Int} \Theta$.
+
+**Example.** $p_\theta(x) = \theta e^{-\theta x} I(x \ge 0)$  
+$z(\theta) = \frac{1}{\theta}$, $s(x) = - x$, $\eta(\theta) = \theta$.  
+
+$$\begin{aligned}
+\frac{\partial}{\partial \theta} \log z(\theta) &= \frac{\partial}{\partial \theta} -\log \theta \\
+&= -\frac{1}{\theta} = E (s(X)) = -E(X)
+\end{aligned}$$
+
+implies $E(X \frac{1}{\theta})$.
+
+Now $-\frac{1}{\theta} = E_\theta s(X) = \frac{1}{n}\sum_{i=1}^n (-x_i)$ implies  
+$\frac{1}{\theta} = \frac{1}{n}\sum_{i=1}^n x_i$ implies  
+
+$\theta_{\rm MLE} =\frac{1}{\frac{1}{n}\sum_{i=1}^nx_i}$
+
+
+---
+
+#### (ML 6.1) Maximum a posteriori (MAP) estimation
+
+**Setup.**
+* Given data $D = (x_1, \ldots, x_n)$, $x_i \in \mathbb{R}^d$.
+* Assume a jont distribution $p(D, \theta) = p(D\vert \theta)p(\theta)$ where $\theta$ is a RV.
+* Goal: choose a good value of $\theta$ for $D$.
+* Choose <span style="color:red">$\theta_{\rm MAP} = \arg\max_\theta p(\theta\vert D)$</span>. $\,$ 
+cf. <span style="color:blue">$\theta_{\rm MLE} = \arg\max_\theta p(\theta\vert D)$</span>.
+
+<figure>
+<img src="/assets/pics/mm-ml/likelihood-prior-posterior.png" alt="likelihood-prior-posterior" style="width: 50%; height: 50%">
+<figcaption>Comparison among likelihood, prior and posterior
+</figcaption>
+</figure>
+
+**Pros.**
+* Easy to compute & interpretable
+* Avoid overfitting, closely connected with "*regularization*"/"*shrinkage*"
+* Tends to look like MLE asymptotically ($n \rightarrow \infty$)
+
+**Cons.**
+* Point estimate - no representation of uncertainty in $\theta$
+* Not invariant under reparametrization (cf. $\mathscr{T} = g(\theta) \Rightarrow \mathscr{T}_{\rm MLE} = g(\mathscr{T}_{\rm MLE})$)
+* Must assume prior on $\theta$
+
+---
+
+#### (ML 7.1) Bayesian inference - A simple example
+
+"Put distributions on everything, and then use rules of probability."
+
+---
+
+#### (ML 7.2) Aspects of Bayesian inference
 
 
 ---
