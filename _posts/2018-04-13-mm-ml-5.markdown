@@ -119,7 +119,11 @@ $$\begin{aligned}
 &= \int s_j(x) p_\theta(x)dx = E_\theta s_j(X)
 \end{aligned}$$
 
-
+<figure>
+<img src="/assets/pics/mm-ml/mle-exp-fam.png" alt="MLE for an exponential family" style="width: 50%; height: 50%">
+<figcaption>MLE for an exponential family
+</figcaption>
+</figure>
 
 ---
 
