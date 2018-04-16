@@ -523,6 +523,12 @@ holds for all pdf $q$ with respect to wchi $q$ is *absolutely continuous*, i.e.,
 
 ---
 
+#### (ML 17.6) Importance sampling - intuition
+
+
+
+---
+
 $$ $$
 
 *To be added..*
