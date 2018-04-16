@@ -91,14 +91,15 @@ cf. Uniform$(0,a) = \frac{1}{a}I(x \in (0,a))$, for a fixed $a \in (0, \infty)$,
 
 $p_\theta(x) = e^ h(x)/z(\theta)$
 
-Given data $D = ()
+Given data $D = (x_1, \ldots, x_n)$ with $x_i \in \mathbb{R}^d$ gotten via $X_1, \ldots, X_n \sim p_\theta$ iid.
 
 Wanna compute  
 
 $$\begin{aligned}
 p(D\vert \theta) &= \prod_{i=1}^n p(x_i \vert \theta) \\
 &= \prod_{i=1}^n e^{\theta^T s(x_i)}h(x_i)/z(\theta) \\
-&= z(\theta)^{-n} e^{\theta^T \sum_{i=1}^ns(x_i)}/z(\theta) \\
+&= z(\theta)^{-n} e^{\theta^T \sum_{i=1}^ns(x_i)} \\
+&= z(\theta)^{-n} e^{\theta^T s(D)} \prod_{i=1}^n h(x_i) \\
 &= 
 \end{aligned}$$
 
