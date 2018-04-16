@@ -114,7 +114,7 @@ Note $z(\theta) = \in_{\mathbb{R}^d} e^{\theta^T s(x)}h(x)dx$.
 Then 
 
 $$\begin{aligned}
-\frac{\partial}{\partial \theta_j} \log z(\theta) &= \frac{1}{z(\theta)} $\frac{\partial}{\partial \theta_j} z(\theta) \\
+\frac{\partial}{\partial \theta_j} \log z(\theta) &= \frac{1}{z(\theta)} \frac{\partial}{\partial \theta_j} z(\theta) \\
 &= \frac{1}{z(\theta)} \int s_j(x)e^{\theta^Ts(x)}
 \end{aligned}$$
 
