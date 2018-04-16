@@ -129,12 +129,22 @@ $\log p(D \vert \theta) = -n\log z(\theta) + \theta^T s(D) + \sum_{i=1}^n \log h
 
 implies
 
-$n E_\theta s(x) = s(D) = \sum_{i=1}^n s(x_i)$ 
+$n E_\theta s(X) = s(D) = \sum_{i=1}^n s(x_i)$ 
 
 implies 
 
 <span style="color:red">$E_{\theta_{\rm MLE}} s(x) = \frac{1}{n}\sum_{i=1}^n s(x_i)$</span>
 if MLE exists and $\theta_{\rm MLE} \in {\rm Int} \Theta$.
+
+**Example.** $p_\theta(x) = \theta e^{-\theta x} I(x \ge 0)$  
+$z(\theta) = \frac{1}{\theta}$, $s(x) = - x$, $\eta(\theta) = \theta$.  
+
+$$\begin{aligned}
+\frac{\partia}{\partial \theta} \log z(\theta) &= \frac{\partial}{\partial \theta} -\log \theta \\
+&= -\frac{1}{\theta} = E (s(X)) = -E(X)
+\end{algined}$$
+
+implies $E(X \frac{1}{\theta}$.
 
 ---
 
