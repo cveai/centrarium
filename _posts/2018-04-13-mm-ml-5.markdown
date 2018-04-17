@@ -85,7 +85,6 @@ Properties of exponential families:
 
 cf. Uniform$(0,a) = \frac{1}{a}I(x \in (0,a))$, for a fixed $a \in (0, \infty)$, gives an exponential family (trivially).
 
-<<<<<<< HEAD
 ---
 
 #### (ML 5.3) (ML 5.4) MLE for an exponential family
