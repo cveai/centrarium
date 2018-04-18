@@ -14,7 +14,7 @@ tags: ML
 * Assume a jont distribution $p(D, \theta) = p(D\vert \theta)p(\theta)$ where $\theta$ is a RV.
 * Goal: choose a good value of $\theta$ for $D$.
 * Choose <span style="color:red">$\theta_{\rm MAP} = \arg\max_\theta p(\theta\vert D)$</span>. $\,$ 
-cf. <span style="color:blue">$\theta_{\rm MLE} = \arg\max_\theta p(\theta\vert D)$</span>.
+cf. <span style="color:blue">$\theta_{\rm MLE} = \arg\max_\theta p(D\vert \theta)$</span>.
 
 <figure>
 <img src="/assets/pics/mm-ml/likelihood-prior-posterior.png" alt="likelihood-prior-posterior" style="width: 50%; height: 50%">
