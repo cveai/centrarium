@@ -29,7 +29,7 @@ cf. <span style="color:blue">$\theta_{\rm MLE} = \arg\max_\theta p(\theta\vert D
 
 **Cons.**
 * Point estimate - no representation of uncertainty in $\theta$
-* Not invariant under reparametrization (cf. $\mathscr{T}  = g(\theta) \Rightarrow$  $\mathscr{T}_\{\rm MLE} = g(\mathscr{T}_{\rm MLE})$)
+* Not invariant under reparametrization (cf. $\mathcal{T}  = g(\theta) \Rightarrow$  $\mathcal{T}_{\rm MLE} = g(\mathscr{T}_{\rm MLE})$)
 * Must assume prior on $\theta$
 
 ---
