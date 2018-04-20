@@ -58,7 +58,9 @@ $$\begin{aligned}
 &= \left(\sum \frac{x_i}{\sigma^2} +\mu\right) - \left(\frac{n}{\sigma^2} + 1\right)\theta
 \end{aligned}$$
 
-to obtain $\theta = \frac{\sum \frac{x_i}{\sigma^2} +\mu}{\frac{n}{\sigma^2} + 1}$
+to obtain 
+$\theta = \frac{\sum \frac{x_i}{\sigma^2} +\mu}{\frac{n}{\sigma^2} + 1}
+= \frac{\sum x_i -\sigma^2\mu}{n + \sigma^2}$.
 
 
 
