@@ -7,6 +7,10 @@ categories: 기계학습
 tags: 강화학습 RL 
 ---
 
+ 다음의 RLPG 멤버들간의 토론을 통해 이 노트가 만들어지고 있습니다:
+
+권휘, 김경환(부랩짱, 윈짱), 김민지(맥짱), 류주영, 박창규, 백병인, 이규복, 이승재, 전효정, 조동헌(우짱), 이일구(코짱), 정재윤, 최윤규.
+
 #### Bellman equation
 
  Bellman equation 은 MDP 형태로 주어진 강화학습 문제에서 임의의 policy $\pi$ 가 주어졌을 때, 이에 해당하는 value 함수 
@@ -15,10 +19,14 @@ tags: 강화학습 RL
 
 먼저 state value 함수 $v_\pi$ 의 경우:
 
-$$v_\pi(s) = \mathbb{E}(G_t \vert S_t = s)$$
+$$\begin{aligned}
+v_\pi(s) &= \mathbb{E}(G_t \vert S_t = s) \\
+\end{aligned}$$
 
 
-#### $Q$-leaning
+#### $Q$-leaning as a off-policy TD learning
+
+
 
 
 
