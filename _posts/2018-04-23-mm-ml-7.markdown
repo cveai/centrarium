@@ -10,13 +10,13 @@ tags: ML
 #### (ML 7.1) Bayesian inference - A simple example
 
 <figure>
-<img src="/assets/pics/mm-ml/bayes.gif" alt="Thomas Bayes" style="width: 100%; height: 100%">
+<img src="/assets/pics/mm-ml/bayes.gif" alt="Thomas Bayes" style="width: 35%; height: 35%">
 <figcaption>Thomas Bayes
 </figcaption>
 </figure>
 
 <figure>
-<img src="/assets/pics/mm-ml/bayes-rule.jpg" alt="Bayes' rule" style="width: 100%; height: 100%">
+<img src="/assets/pics/mm-ml/bayes-rule.jpg" alt="Bayes' rule" style="width: 50%; height: 50%">
 <figcaption>Bayes' rule
 </figcaption>
 </figure>
