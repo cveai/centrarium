@@ -43,7 +43,7 @@ So we have $p(x_1, \ldots, x_n \vert \theta) = \prod_{i=1}^n p(x_i\vert \theta)$
 
 Then 
 
-$$\begin{aligend}
+$$\begin{aligned}
 \theta_{\rm MAP} &= \arg\max_\theta p(\theta\ver D) \\
 &= \arg\max_\theta \frac{p(D \vert \theta)p(\theta)}{p(D)}\\
 &= \arg\max_\theta p(D \vert \theta)p(\theta) \\
