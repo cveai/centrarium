@@ -36,7 +36,7 @@ q_\pi(s, a) &= \mathbb{E}(G_t \vert S_t = s, A_t = a) \\
 &= \mathbb{E}(R_{t+1} \vert S_t = s, A_t = a) + \gamma \,\mathbb{E}_{S_t = s, A_t = a} \, q_\pi(S_{t+1}, A_{t+1})
 \end{aligned}$$
 
-따라서 transition probability 가 알려져있는 경우 DP (Dynamic Programming) 을 이용하여 효율적인 알고리즘을 디자인할 수 있자.
+따라서 transition probability 가 알려져있는 경우 DP (Dynamic Programming) 을 이용하여 효율적인 알고리즘을 디자인할 수 있다.
 
 #### $Q$-learning as an off-policy TD learning
 
