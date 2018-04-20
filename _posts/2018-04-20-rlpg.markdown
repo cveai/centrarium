@@ -42,8 +42,9 @@ q_\pi(s, a) &= \mathbb{E}(G_t \vert S_t = s, A_t = a) \\
 
 #### $Q$-learning as an off-policy TD learning
 
+Q-learning 은 action value 함수 q(s, a) 를 off-polity TD update 방식으로 업데이트 해나간다.
 
-
+#### Experience replay
 
 
 
