@@ -13,7 +13,7 @@ tags: 강화학습 RL
  $v_\pi: \mathscr{S} \rightarrow \mathbb{R}$ 와 $q_\pi: \mathscr{S} \times \mathscr{A} \rightarrow \mathbb{R}$
  이 각각 만족하게 되는 방정식이다.
 
-먼저 state valeu 함수 $v_\pi$ 의 경우:
+먼저 state value 함수 $v_\pi$ 의 경우:
 
 $$v_\pi(s) = \mathbb{E}(G_t \vert S_t = s)$$
 
