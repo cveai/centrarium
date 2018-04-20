@@ -28,7 +28,7 @@ $p(\theta \vert D) = \frac{p(D\vert theta)p(\theta)}{p(D)} = \frac{\prod_{i=1}^n
 
 
 (predictive)  
-$p(D \vert \theta) = \int p(x, \theta\vert D) d theta = \int p(x\vert\theta)p(\theta\vert D) d \theta$ 
+$p(D \vert \theta) = \int p(x, \theta \vert D) d \theta = \int p(x\vert\theta)p(\theta \vert D) d \theta$ 
 
 ---
 
