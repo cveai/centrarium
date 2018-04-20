@@ -55,7 +55,7 @@ To find extreme point, we set
 $$\begin{aligned}
 0 &= \frac{\partial}{\partial \theta} (\log p(D\vert \theta) + \log p(\theta)) \\
 &= \frac{1}{\sigma^2}\left(\sum_{i=1}^n x_i - n\theta\right) + (\mu -\theta) \\
-&= 
+&= \left(\sum \frac{x_i}{\sigma^2} +\mu\right) - \left(\frac{n}{\sigma^2}\right)\theta
 \end{aligned}$$
 
 
