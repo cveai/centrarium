@@ -17,7 +17,7 @@ tags: ML
 cf. <span style="color:blue">$\theta_{\rm MLE} = \arg\max_\theta p(D\vert \theta)$</span>.
 
 <figure>
-<img src="/assets/pics/mm-ml/likelihood-prior-posterior.png" alt="likelihood-prior-posterior" style="width: 40%; height: 40%">
+<img src="/assets/pics/mm-ml/likelihood-prior-posterior.png" alt="likelihood-prior-posterior" style="width: 35%; height: 35%">
 <figcaption>Comparison among likelihood, prior and posterior
 </figcaption>
 </figure>
