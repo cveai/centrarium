@@ -1,73 +1,10 @@
 ---
 layout: post
-title:  "Notes on Machine Learning 6: Maximum a posteriori (MAP) estimation"
-date:   2018-04-18 00:00:00
+title:  "Notes on Machine Learning 7: Bayesian Inference"
+date:   2018-04-23 00:00:00
 author: 장승환
 categories: Notes
 tags: ML
----
-
-#### (ML 6.1) Maximum a posteriori (MAP) estimation
-
-**Setup.**
-* Given data $D = (x_1, \ldots, x_n)$, $x_i \in \mathbb{R}^d$.
-* Assume a jont distribution $p(D, \theta) = p(D\vert \theta)p(\theta)$ where $\theta$ is a RV.
-* Goal: choose a good value of $\theta$ for $D$.
-* Choose <span style="color:red">$\theta_{\rm MAP} = \arg\max_\theta p(\theta\vert D)$</span>. $\,$ 
-cf. <span style="color:blue">$\theta_{\rm MLE} = \arg\max_\theta p(D\vert \theta)$</span>.
-
-<figure>
-<img src="/assets/pics/mm-ml/likelihood-prior-posterior.png" alt="likelihood-prior-posterior" style="width: 35%; height: 35%">
-<figcaption>Comparison among likelihood, prior and posterior
-</figcaption>
-</figure>
-
-**Pros.**
-* Easy to compute & interpretable
-* Avoid overfitting, closely connected with "*regularization*"/"*shrinkage*"
-* Tends to look like MLE asymptotically ($n \rightarrow \infty$)
-
-**Cons.**
-* Point estimate - no representation of uncertainty in $\theta$
-* Not invariant under reparametrization (cf. $T  = g(\theta) \Rightarrow T_{\rm MLE} = g(T_{\rm MLE})$)
-* Must assume prior on $\theta$
-
----
-
-#### (ML 6.2) MAP for univariate Gaussian mean
-
-Given data $D = (x_1, \ldots, x_n)$ with $x_i \in \mathbb{R}$.  
-Suppose $\theta$ is a RV $\sim N(\mu, 1)$ (<span style="color:red">prior!</span>) and  
-RVs $X_1, \ldots, X_n \sim N(\theta, \sigma^2)$ are conditionally independent given $\theta$.
-So we have $p(x_1, \ldots, x_n \vert \theta) = \prod_{i=1}^n p(x_i\vert \theta)$.
-
-Then 
-
-$$\begin{aligned}
-\theta_{\rm MAP} &= \arg\max_\theta p(\theta\vert D) \\
-&= \arg\max_\theta \frac{p(D \vert \theta)p(\theta)}{p(D)}\\
-&= \arg\max_\theta p(D \vert \theta)p(\theta) \\
-&= \arg\max_\theta (\log p(D\vert \theta) + \log p(\theta))
-\end{aligned}$$
-
-To find extreme point, we set
-
-$$\begin{aligned}
-0 &= \frac{\partial}{\partial \theta} (\log p(D\vert \theta) + \log p(\theta)) \\
-&= \frac{1}{\sigma^2}\left(\sum_{i=1}^n x_i - n\theta\right) + (\mu -\theta) \\
-&= \left(\sum \frac{x_i}{\sigma^2} +\mu\right) - \left(\frac{n}{\sigma^2} + 1\right)\theta
-\end{aligned}$$
-
-to obtain 
-$\theta = \frac{\sum \frac{x_i}{\sigma^2} +\mu}{\frac{n}{\sigma^2} + 1}
-= \frac{\sum x_i -\sigma^2\mu}{n + \sigma^2}$.
-
-Then $\,$ <span style="color:red">$\theta_{\rm MAP} = \frac{n}{n+\sigma^2}\bar{x} + \frac{\sigma^2}{n+\sigma^2}\mu$</span>.
-
----
-
-#### (ML 6.3) Interpretation of MAP as convex combination
-
 ---
 
 #### (ML 7.1) Bayesian inference - A simple example
