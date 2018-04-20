@@ -26,7 +26,7 @@ v_\pi(s) &= \mathbb{E}(G_t \vert S_t = s) \\
 \end{aligned}$$
 
 
-#### $Q$-learning as a off-policy TD learning
+#### $Q$-learning as an off-policy TD learning
 
 
 
