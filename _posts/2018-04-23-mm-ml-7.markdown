@@ -23,7 +23,9 @@ tags: ML
 </figcaption>
 </figure>
 
-$p(\theta \vert D) = \frac{p(D\vert theta)p(\theta)}{p(D)}$ 
+(posterior)  
+$p(\theta \vert D) = \frac{p(D\vert theta)p(\theta)}{p(D)} = \frac{\prod_{i=1}^np(x_i \vert \theta) p(\theta)}{p(D)}$ 
+
 
 ---
 
