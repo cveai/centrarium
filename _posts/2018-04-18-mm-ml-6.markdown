@@ -39,7 +39,7 @@ cf. <span style="color:blue">$\theta_{\rm MLE} = \arg\max_\theta p(D\vert \theta
 Given data $D = (x_1, \ldots, x_n)$ with $x_i \in \mathbb{R}$.  
 Suppose $\theta$ is a RV $\sim N(\mu, 1)$, and  
 RVs $X_1, \ldots, X_n \sim N(\theta, \sigma^2)$ are conditionally independent given $\theta$.
-So we have $p(x_1, \ldos, x_n \vert \theta) = \prod_{i=1}^n p(x_i\vert \theta).
+So we have $p(x_1, \ldots, x_n \vert \theta) = \prod_{i=1}^n p(x_i\vert \theta).
 
 
 
