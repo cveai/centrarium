@@ -23,6 +23,8 @@ tags: ML
 </figcaption>
 </figure>
 
+$p(\theta \vert D) = \frac{p(D\vert theta)p(\theta)}{p(D)}$ 
+
 ---
 
 #### (ML 7.2) Aspects of Bayesian inference
