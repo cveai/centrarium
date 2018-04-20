@@ -23,7 +23,8 @@ tags: 강화학습 RL
 $$\begin{aligned}
 v_\pi(s) &= \mathbb{E}(G_t \vert S_t = s) \\
 &= \mathbb{E}(R_{t+1} + \gamma G_{t+1} \vert S_t = s) \\
-&= \mathbb{E}(R_{t+1} \vert S_t = s) + \gamma\mathbb{E}_{S_t = s}(G_{t+1}\vert S_{t+1})
+&= \mathbb{E}(R_{t+1} \vert S_t = s) + \gamma\mathbb{E}_{S_t = s}(G_{t+1}\vert S_{t+1}) \\
+&= \mathbb{E}(R_{t+1} \vert S_t = s) + \gamma\mathbb{E}_{S_t = s} v_\pi(S_{t+1})
 \end{aligned}$$
 
 
