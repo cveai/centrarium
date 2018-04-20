@@ -13,8 +13,8 @@ tags: 강화학습 RL
 
 #### Bellman equation
 
- Bellman equation 은 MDP 형태로 주어진 강화학습 문제에서 임의의 policy $\pi$ 가 주어졌을 때, 이에 해당하는 state value 함수 
- $v_\pi: \mathscr{S} \rightarrow \mathbb{R}$ 와 state-action value 함수 
+ Bellman equation 은 MDP 형태로 주어진 강화학습 문제에서 임의의 policy $\pi$ 가 주어졌을 때, 이에 해당하는 value 함수 
+ $v_\pi: \mathscr{S} \rightarrow \mathbb{R}$ 와 
  $q_\pi: \mathscr{S} \times \mathscr{A} \rightarrow \mathbb{R}$
  가 각각 만족하게 되는 방정식이다.
 
