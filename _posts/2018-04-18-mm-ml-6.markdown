@@ -69,7 +69,7 @@ Then $\,$ <span style="color:red">$\theta_{\rm MAP} = \frac{n}{n+\sigma^2}\bar{x
 #### (ML 6.3) Interpretation of MAP as convex combination
 
 <figure>
-<img src="/assets/pics/mm-ml/map-conv-comb.png" alt="MAP as a convex combination of prior and sample means" style="width: 35%; height: 35%">
+<img src="/assets/pics/mm-ml/map-conv-comb.png" alt="MAP as a convex combination of prior and sample means" style="width: 70%; height: 70%">
 <figcaption>MAP as a convex combination of prior and sample means
 </figcaption>
 </figure>
