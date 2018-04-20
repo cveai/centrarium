@@ -46,7 +46,7 @@ Q-learning 은 action value 함수 q(s, a) 를 off-polity TD update 방식으로
 
 #### Experience replay
 
-
+Replay memory buffer
 
 #### 참고자료
 
