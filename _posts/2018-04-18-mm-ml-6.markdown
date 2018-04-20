@@ -62,7 +62,7 @@ to obtain
 $\theta = \frac{\sum \frac{x_i}{\sigma^2} +\mu}{\frac{n}{\sigma^2} + 1}
 = \frac{\sum x_i -\sigma^2\mu}{n + \sigma^2}$.
 
-Then <span style="color:red">$\theta_{\rm MAP} = \frac{n}{n+\sigma^2}\bar{x} + \frac{\sigma^2}{n+\sigma^2}\mu$</span>.
+Then $\,$ <span style="color:red">$\theta_{\rm MAP} = \frac{n}{n+\sigma^2}\bar{x} + \frac{\sigma^2}{n+\sigma^2}\mu$</span>.
 
 ---
 
