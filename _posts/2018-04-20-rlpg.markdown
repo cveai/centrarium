@@ -32,8 +32,8 @@ action-value 함수 $q_\pi(s, a)$ 의 경우도 마찬가지로:
 $$\begin{aligned}
 q_\pi(s, a) &= \mathbb{E}(G_t \vert S_t = s, A_t = a) \\
 &= \mathbb{E}(R_{t+1} + \gamma G_{t+1} \vert S_t = s, A_t = a) \\
-&= \mathbb{E}(R_{t+1} \vert S_t = s, A_t = a) + \gamma \,\mathbb{E}_{S_t = s}(G_{t+1}\vert S_{t+1}) \\
-&= \mathbb{E}(R_{t+1} \vert S_t = s, A_t = a) + \gamma \,\mathbb{E}_{S_t = s} \, v_\pi(S_{t+1})
+&= \mathbb{E}(R_{t+1} \vert S_t = s, A_t = a) + \gamma \,\mathbb{E}_{S_t = s, A_t = a}(G_{t+1}\vert S_{t+1}) \\
+&= \mathbb{E}(R_{t+1} \vert S_t = s, A_t = a) + \gamma \,\mathbb{E}_{S_t = s, A_t = a} \, v_\pi(S_{t+1})
 \end{aligned}$$
 
 #### $Q$-learning as an off-policy TD learning
