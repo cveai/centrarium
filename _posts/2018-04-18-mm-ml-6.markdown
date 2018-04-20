@@ -50,6 +50,16 @@ $$\begin{aligned}
 &= \arg\max_\theta (\log p(D\vert \theta) + \log p(\theta))
 \end{aligned}$$
 
+To find extreme point, we set
+
+$$\begin{aligned}
+0 &= \frac{\partial}{\partial \theta} (\log p(D\vert \theta) + \log p(\theta)) \\
+&= \frac{1}{\sigma^2}\left(\sum_{i=1}^n x_i - n\theta\right) + (\mu -\theta) \\
+&= 
+\end{aligned}$$
+
+
+
 ---
 
 #### (ML 6.3) Interpretation of MAP as convex combination
