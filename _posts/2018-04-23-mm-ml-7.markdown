@@ -15,6 +15,12 @@ tags: ML
 </figcaption>
 </figure>
 
+<figure>
+<img src="/assets/pics/mm-ml/bayes-rule.jpg" alt="Bayes' rule" style="width: 100%; height: 100%">
+<figcaption>Bayes' rule
+</figcaption>
+</figure>
+
 "Put distributions on everything, and then use rules of probability."
 
 
