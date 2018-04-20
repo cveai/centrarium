@@ -41,7 +41,14 @@ Suppose $\theta$ is a RV $\sim N(\mu, 1)$, and
 RVs $X_1, \ldots, X_n \sim N(\theta, \sigma^2)$ are conditionally independent given $\theta$.
 So we have $p(x_1, \ldots, x_n \vert \theta) = \prod_{i=1}^n p(x_i\vert \theta)$.
 
+Then 
 
+$$\begin{aligend}
+\theta_{\rm MAP} &= \arg\max_\theta p(\theta\ver D) \\
+&= \arg\max_\theta \frac{p(D \vert \theta)p(\theta)}{p(D)}\\
+&= \arg\max_\theta p(D \vert \theta)p(\theta) \\
+&= \arg\max_\theta (\log p(D\vert \theta) + \log p(\theta))
+\end{aligned}$$
 
 ---
 
