@@ -33,7 +33,7 @@ $$P(A \vert B) = \frac{P(A \cap B)}{P(B)}.$$
 #### (PP 2.2) Independence
 
 **Definition.**
-Eventa $A< B$ are *independent* if $P(A \cap B) = P(A)P(B)$.
+Eventa $A< B$ are <span style="color:red">*independent*</span> if $P(A \cap B) = P(A)P(B)$.
 
 <figure>
 <img src="/assets/pics/mm-pp/independence.png" alt="Independence" style="width: 30%; height: 30%">
