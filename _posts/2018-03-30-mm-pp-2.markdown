@@ -1,20 +1,10 @@
 ---
 layout: post
-title:  "Notes on Probability Primer 2: Conditional probability"
+title:  "Notes on Probability Primer 2: Conditional probability & independence"
 date:   2018-03-30 00:00:00
 author: 장승환
 categories: Notes
 tags: Probability
----
-
-*In this page I summarize in a succinct and straighforward fashion what I learn from [Probability Primer](https://www.youtube.com/watch?v=Tk4ubu7BlSk&list=PL17567A1A3F5DB5E4){:target="_blank"} course by Mathematical Monk, along with my own thoughts and related resources.*
-*I will update this page frequently, like every other day, until it's complete.*
-
----
-
-**Acronyms**
-* RV: random variable
-
 ---
 
 #### (PP 2.1) Conditional Probability
@@ -22,13 +12,13 @@ tags: Probability
 Conditinoal probability and independence are critical topics in applications of probability.
 
 **Notation** "Suppress" $(\Omega, \mathcal{A})$.
-Whenever write $P(E)$ is implicitly assmung underlying some ptobability measure sapce $\Omega$ and some $\sigma$-algebra $\mathscr{A}$ with some measure $p$ defined on these.
+Whenever write $P(E)$, we are implicitly assuming some underlying <span style="color:red">*probability measure sapce*</span> ($\Omega$, $\mathscr{A}$ $p$).
 
 **Terminology**
 * event = measureable set = set in $\mathcal{A}$
 * sample space = $\Omega$
 
-**Definition** Assuming $P(B) > 0 $, define the *conditional probability of $A$ given $B$* as
+**Definition** Assuming $P(B) > 0 $, define the <span style="color:red">*conditional probability of $A$ given $B$*</span> as
 
 $$P(A \vert B) = \frac{P(A \cap B)}{P(B)}.$$
 
@@ -43,7 +33,7 @@ $$P(A \vert B) = \frac{P(A \cap B)}{P(B)}.$$
 #### (PP 2.2) Independence
 
 **Definition.**
-Eventa $A< B$ are *independent* if $P(A \cap B) = P(A)P(B)$.
+Eventa $A< B$ are <span style="color:red">*independent*</span> if $P(A \cap B) = P(A)P(B)$.
 
 <figure>
 <img src="/assets/pics/mm-pp/independence.png" alt="Independence" style="width: 30%; height: 30%">

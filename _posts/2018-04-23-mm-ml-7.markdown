@@ -24,11 +24,11 @@ tags: ML
 </figure>
 
 (posterior)  
-$p(\theta \vert D) = \frac{p(D\vert theta)p(\theta)}{p(D)} = \frac{\prod_{i=1}^np(x_i \vert \theta) p(\theta)}{p(D)}$ 
+$p(\theta \vert D) = \frac{p(D\vert \theta)p(\theta)}{p(D)} = \frac{\prod_{i=1}^np(x_i \vert \theta) p(\theta)}{p(D)}$ 
 
 
 (predictive)  
-$p(x \vert D) = \int p(x, \theta \vert D) d \theta = \int p(x\vert\theta)p(\theta \vert D) d \theta$ : computable analytically!
+$p(x \vert D) = \int p(x, \theta \vert D) d \theta = \int p(x\vert\theta)p(\theta \vert D) d \theta$ : analytically computable!
 
 ---
 

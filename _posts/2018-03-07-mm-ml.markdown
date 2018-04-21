@@ -16,7 +16,9 @@ tags: ML
 * Notes on Machine Learning 2: [Decision trees](https://cveai.github.io/notes/2018/03/16/mm-ml-2.html){:target="_blank"}  
 * Notes on Machine Learning 3: [Decision theory](https://cveai.github.io/notes/2018/03/27/mm-ml-3.html){:target="_blank"}  
 * Notes on Machine Learning 4: [Maximum Likelihood Estimation](https://cveai.github.io/notes/2018/04/05/mm-ml-4.html){:target="_blank"} 
-
+* Notes on Machine Learning 5: [MLE for Exponential Families](https://cveai.github.io/notes/2018/04/13/mm-ml-5.html){:target="_blank"} 
+* Notes on Machine Learning 6: [Maximum a posteriori (MAP) estimation](https://cveai.github.io/notes/2018/04/18/mm-ml-6.html){:target="_blank"} 
+* Notes on Machine Learning 7: [Bayesian Inference](https://cveai.github.io/notes/2018/04/23/mm-ml-7.html){:target="_blank"} 
 
 *To be added..*
 
