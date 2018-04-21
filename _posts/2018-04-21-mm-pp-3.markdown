@@ -25,13 +25,33 @@ s.t. $[X \le x] := \\{\omega \in \Omega : X(\omega) \le x\\} \in \mathscr{A}$ fo
 1. "measurable function"
 2. Notation: $X, Y$ RVs, $x, y$ values
 
-**Definition.** The CDF of a RV $X$ is the function 
+**Definition.** The <span style="color:red">*CDF of a RV $X$*</span> is the function 
 
 $$F = F_X : \mathbb{R} \rightarrow [0,1]$$
 
 given by $F(x) = P[X \le x]$.
 
+**Exercise.** Prove that $F_X$ is indeed a CDF.
+
+**Definition.** The distribution of $X$ is the probability measure $P_X$ on $\mathbb{R}$ s.t.
+
+$$P_X(A) = P[X \in A]$$
+
+for all $A \in \mathbb{B}(\mathbb{R})$.
+
+**Exercise.** $P_X$ is a Borel probability measure.
+
+**Claim.** $P_X$ is the probability measure induced by $F$.
+
+Proof: If we denote by $Q$ the probability measure corresponding to $F$, then
+
+$$Q((-\infty, x)]) = F(x) = P[X \le x] = P[X \in (-\infty, x])] = P_X((-\infty, x]).$$
+
+Thus, $Q = P_X$.
+
 ---
+
+#### (PP 3.2) Types of Random Variables
 
 $$ $$
 
