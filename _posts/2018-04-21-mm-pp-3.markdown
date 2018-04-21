@@ -12,7 +12,7 @@ tags: Probability
 "Random variables are where the rubber meets the road in probability." -- Mathematical Monk
 
 "Random variable is not necessarily random and it's not necesaarily a variable."   
--- [David Duvenaud](https://www.cs.toronto.edu/~duvenaud/) in
+-- [David Duvenaud](https://www.cs.toronto.edu/~duvenaud/) /
 [Composing Graphical Models With Neural Networks](https://twimlai.com/twiml-talk-96-composing-graphical-models-neural-networks-david-duvenaud/)
 
 
