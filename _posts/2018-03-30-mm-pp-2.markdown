@@ -12,7 +12,7 @@ tags: Probability
 Conditinoal probability and independence are critical topics in applications of probability.
 
 **Notation** "Suppress" $(\Omega, \mathcal{A})$.
-Whenever write $P(E)$ is implicitly assmung underlying some ptobability measure sapce $\Omega$ and some $\sigma$-algebra $\mathscr{A}$ with some measure $p$ defined on these.
+Whenever write $P(E)$ we are implicitly assuming some underlying probability measure sapce ($\Omega$, $\mathscr{A}$ $p$).
 
 **Terminology**
 * event = measureable set = set in $\mathcal{A}$
