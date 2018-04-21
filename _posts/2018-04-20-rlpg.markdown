@@ -52,7 +52,14 @@ Q-learning 은 action value 함수 $q(s, a)$ 를 off-polity TD update 방식으�
 
 Off-policy control 방법은 behavior policy $b$ 와 tatget policy $\pi$ 를 구분하여 운용한다. 
 학습을 위한 experience 를 획득하기 위한 action의 선택은 $b$ 를 통하여 한다. 
-그리고 optimal policy 로 수렴시키기 위해 policy $\pi$ 를 업데이트 한다.
+그리고 학습된 내용으로 policy $\pi$ 를 업데이트 하여 optimal policy 로 수렴되도록 한다.
+
+그러면 target policy 를 업데이트 한다는 것은 어떤 의미인가? 본질적으로 optimal policy $\pi^\star$ 로 수렴시킬
+목적으로 정의된 "target variable" $Q(s, a)$ 를 각 $(s, a)$ 마다 업데이트 하는 것을 의미한다.
+즉, $Q \rightarrow q^\star$ 의 수렴성을 얻기 위한 업데이트이다.
+
+ 
+
 
 
 #### Algoritm: Deep Q-learning with experience reply
