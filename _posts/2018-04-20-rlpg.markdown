@@ -43,7 +43,7 @@ $v_\pi^\star$ 와 $q_\pi^\star$ 를 정의할 수 있는데 이 optimal value �
 따라서 transition probability 가 알려져있는 경우 DP (Dynamic Programming) 을 이용하여 optimal policy $\pi^\star$ 로 수렴하는 
 policy 의 수열을 생성하는 효율적인 알고리즘을 디자인할 수 있다.
 
- DP 를 이용한 알고리즘의 수렴성을 이용하여 transition probability 를 이용하지 않고 "optimal policy 로 수렴하는 알고리즘"을 생각할 수 있는데
+ DP 를 이용한 알고리즘의 수렴성을 이용하여 transition probability 를 이용하지 않고 "optimal policy 로 수렴하는 알고리즘"을 디자인할 수 있는데
  sampling 을 이용한 통계학적인 접근이 그것이다. Sampling 을 이용한 방법은 bootstrapping 여부에 따라 Monte Carlo 와 Temporal Difference 두 가지가 있다.   
 
 #### $Q$-learning as an off-policy TD learning
