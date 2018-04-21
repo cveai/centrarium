@@ -56,7 +56,7 @@ Off-policy control 방법은 behavior policy $\beta$ 와 tatget policy $\pi$ 를
 목적으로 정의된 "target variable" $Q(s, a)$ 를 각 $(s, a)$ 마다 업데이트 하는 것을 의미한다.
 즉, $Q \rightarrow q^\star$ 의 수렴성을 얻기 위한 업데이트이다.
 
-Policy 보통 주어진 state 에서 가능한 action 들에 대한 확률함수로 주어지지만, 여기서는 편의상 behavoir policy 를 다음과 같은 형태의 함수로 정의하자.
+Policy 는 보통 주어진 state 에서 가능한 action 들에 대한 확률함수로 주어지지만, 여기서는 편의상 behavoir policy 를 다음과 같은 형태의 함수로 정의하자.
 
 $$\beta : \mathscr{S} \rightarrow \mathscr{A}.$$
 
