@@ -25,7 +25,11 @@ s.t. $[X \le x] := \\{\omega \in \Omega : X(\omega) \le x\\} \in \mathscr{A}$ fo
 1. "measurable function"
 2. Notation: $X, Y$ RVs, $x, y$ values
 
+**Definition.** The CDF of a RV $X$ is the function 
 
+$$F = F_X : \mathbb{R} \rightarrow [0,1]$$
+
+given by $F(x) = P[X \le x]$.
 
 ---
 
