@@ -153,7 +153,7 @@ That is, there is an equivalence between CDFs and Borel probability measures.
 </figcaption>
 </figure>
 
-In sum, CDFs "parametrize" Borel probability measures!
+<span style="color:red">In sum, CDFs "parametrize" Borel probability measures!</span>
 
 ---
 
