@@ -15,7 +15,7 @@ tags: Probability
 -- [David Duvenaud](https://www.cs.toronto.edu/~duvenaud/)
 (TWiML&AI: [Composing Graphical Models With Neural Networks](https://twimlai.com/twiml-talk-96-composing-graphical-models-neural-networks-david-duvenaud/))
 
-**Definition.** Given $(\Omaga, \mathscr{A}, P)$, a *random variable* is a function 
+**Definition.** Given $(\Omega, \mathscr{A}, P)$, a *random variable* is a function 
 
 $$X: \Omega \rightarrow \mathbb{R}$$
 
