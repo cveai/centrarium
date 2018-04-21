@@ -48,8 +48,6 @@ policy 의 수열을 생성하는 효율적인 알고리즘을 디자인할 수 
 
 #### $Q$-learning as an off-policy TD learning
 
-Q-learning 은 action value 함수 $q(s, a)$ 를 off-polity TD update 방식으로 업데이트 해나간다.
-
 Off-policy control 방법은 behavior policy $b$ 와 tatget policy $\pi$ 를 구분하여 운용한다. 
 학습을 위한 experience 를 획득하기 위한 action의 선택은 $b$ 를 통하여 한다. 
 그리고 학습된 내용으로 policy $\pi$ 를 업데이트 하여 optimal policy 로 수렴되도록 한다.
@@ -62,7 +60,7 @@ Policy 보통 주어진 state 에서 가능한 action 들에 대한 확률함수
 
 $$b : \mathscr{S} \rightarrow \mathscr{A}.$$
 
-즉, 주어진 state $s$ 에 대한 함숫값 $b(s) \in \mathscr{A}$ 는 $s$ 에서 policy "$b$" 가 선택하는 action 이 된다.
+즉, 주어진 state $s$ 에 대한 함숫값 $b(s) \in \mathscr{A}$ 는 $s$ 에서 policy $b$ 가 선택하는 action 이 된다.
 
 
 
