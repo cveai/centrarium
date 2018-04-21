@@ -49,7 +49,7 @@ policy 의 수열을 생성하는 효율적인 알고리즘을 디자인할 수 
 #### $Q$-learning as an off-policy TD learning
 
 Off-policy control 방법은 behavior policy $\beta$ 와 tatget policy $\pi$ 를 구분하여 운용한다. 
-학습을 위한 experience 를 획득하기 위한 action의 선택은 $b$ 를 통하여 한다. 
+학습을 위한 experience 를 획득하기 위한 action의 선택은 $\beta$ 를 통하여 한다. 
 그리고 학습된 내용으로 policy $\pi$ 를 업데이트 하여 optimal policy 로 수렴되도록 한다.
 
 그러면 target policy 를 업데이트 한다는 것은 어떤 의미인가? 본질적으로 optimal policy $\pi^\star$ 로 수렴시킬
