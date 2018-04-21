@@ -7,16 +7,6 @@ categories: Notes
 tags: Probability
 ---
 
-*In this page I summarize in a succinct and straighforward fashion what I learn from [Probability Primer](https://www.youtube.com/watch?v=Tk4ubu7BlSk&list=PL17567A1A3F5DB5E4){:target="_blank"} course by Mathematical Monk, along with my own thoughts and related resources.*
-*I will update this page frequently, like every other day, until it's complete.*
-
----
-
-**Acronyms**
-* RV: random variable
-
----
-
 #### (PP 2.1) Conditional Probability
 
 Conditinoal probability and independence are critical topics in applications of probability.
