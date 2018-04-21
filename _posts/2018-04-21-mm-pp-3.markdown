@@ -15,13 +15,11 @@ tags: Probability
 -- [David Duvenaud](https://www.cs.toronto.edu/~duvenaud/)
 (TWiML&AI: [Composing Graphical Models With Neural Networks](https://twimlai.com/twiml-talk-96-composing-graphical-models-neural-networks-david-duvenaud/))
 
-**Definition.** Given $(\Omega, \mathscr{A}, P)$, a *random variable* is a function 
+**Definition.** Given $(\Omega, \mathscr{A}, P)$, a <span style="color:red">*random variable*</span> is a function 
 
 $$X: \Omega \rightarrow \mathbb{R}$$
 
-s.t. 
-
-
+s.t. $\\{\omeaga \in \Omega : X(\omega) \le x\\} \in \mathscr{A}$ for all $x \in \mathbb{R}$.
 
 ---
 
