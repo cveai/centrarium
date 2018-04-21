@@ -13,7 +13,7 @@ tags: Probability
 
 "Random variable is not necessarily random and it's not necesaarily a variable."   
 -- [David Duvenaud](https://www.cs.toronto.edu/~duvenaud/)
-/[Composing Graphical Models With Neural Networks](https://twimlai.com/twiml-talk-96-composing-graphical-models-neural-networks-david-duvenaud/)
+/TWiML&AI: [Composing Graphical Models With Neural Networks](https://twimlai.com/twiml-talk-96-composing-graphical-models-neural-networks-david-duvenaud/)
 
 
 
