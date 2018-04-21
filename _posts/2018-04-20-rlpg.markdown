@@ -63,7 +63,7 @@ $$\beta : \mathscr{S} \rightarrow \mathscr{A}.$$
 즉, 주어진 state $s$ 에 대한 함숫값 $\beta(s) \in \mathscr{A}$ 는 $s$ 에서 policy $b$ 가 선택하는 action 이 된다.
 다시한번 강조하자면 off-policy control 은 behavior policy $\beta$ 의 선택을 통하여 진행된 경험으로 얻은 reward 를 바탕으로 target policy $\pi$ 의 action value 함수에 해당하는 target variable $Q(s, a)$ 를 업데이트한다. 구체적으로 target policy 의 업데이트는 다음의 형태를 듸게 된다
 
-$$Q(S_t, A_t) \leftarrow Q(S_t, A_t) + \alpga\left(R_{t+1} + \gamma \max_{a} Q(S_{t+1},a) - Q(S_t, A_t)\right).$$
+$$Q(S_t, A_t) \leftarrow Q(S_t, A_t) + \alpha\left(R_{t+1} + \gamma \max_{a} Q(S_{t+1},a) - Q(S_t, A_t)\right).$$
 
 
 
