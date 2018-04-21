@@ -50,7 +50,7 @@ policy 의 수열을 생성하는 효율적인 알고리즘을 디자인할 수 
 
 Q-learning 은 action value 함수 $q(s, a)$ 를 off-polity TD update 방식으로 업데이트 해나간다.
 
-#### Experience replay
+#### Deep Q-learning with experience reply
 
 Replay memory buffer
 
