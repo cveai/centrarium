@@ -19,7 +19,7 @@ tags: Probability
 
 $$X: \Omega \rightarrow \mathbb{R}$$
 
-s.t. $\\{\omeaga \in \Omega : X(\omega) \le x\\} \in \mathscr{A}$ for all $x \in \mathbb{R}$.
+s.t. $\\{\omega \in \Omega : X(\omega) \le x\\} \in \mathscr{A}$ for all $x \in \mathbb{R}$.
 
 ---
 
