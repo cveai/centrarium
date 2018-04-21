@@ -61,7 +61,8 @@ Policy 보통 주어진 state 에서 가능한 action 들에 대한 확률함수
 $$b : \mathscr{S} \rightarrow \mathscr{A}.$$
 
 즉, 주어진 state $s$ 에 대한 함숫값 $b(s) \in \mathscr{A}$ 는 $s$ 에서 policy $b$ 가 선택하는 action 이 된다.
-
+다시한번 강조하자면 off-policy control 은 behavior policy $b$ 의 선택을 통하여 진행된 경험으로 얻은 reward 를 바탕으로 target policy $pi$ 의 q 함수에 해당하는
+target variable $Q(s, a)$ 를 업데이트한다. 
 
 
 
