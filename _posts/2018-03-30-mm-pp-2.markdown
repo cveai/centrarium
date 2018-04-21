@@ -18,7 +18,7 @@ Whenever write $P(E)$, we are implicitly assuming some underlying <span style="c
 * event = measureable set = set in $\mathcal{A}$
 * sample space = $\Omega$
 
-**Definition** Assuming $P(B) > 0 $, define the *conditional probability of $A$ given $B$* as
+**Definition** Assuming $P(B) > 0 $, define the <span style="color:red">*conditional probability of $A$ given $B$*</span> as
 
 $$P(A \vert B) = \frac{P(A \cap B)}{P(B)}.$$
 
