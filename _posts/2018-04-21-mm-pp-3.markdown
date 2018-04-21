@@ -1,0 +1,62 @@
+---
+layout: post
+title:  "Notes on Probability Primer 3: Random variables"
+date:   2018-04-21 00:00:00
+author: 장승환
+categories: Notes
+tags: Probability
+---
+
+#### (PP 3.1) Random Variables - Definition and CDF
+
+"Random variables are where the rubber meets the road in probability." -- Mathematical Monk
+
+"Random variable is not necessarily random and it's not necesaarily a variable."   
+-- [David Duvenaud](https://www.cs.toronto.edu/~duvenaud/)
+(TWiML&AI: [Composing Graphical Models With Neural Networks](https://twimlai.com/twiml-talk-96-composing-graphical-models-neural-networks-david-duvenaud/))
+
+**Definition.** Given $(\Omega, \mathscr{A}, P)$, a <span style="color:red">*random variable*</span> is a <span style="color:blue">function(!!!)</span> 
+
+$$X: \Omega \rightarrow \mathbb{R}$$
+
+s.t. $[X \le x] := \\{\omega \in \Omega : X(\omega) \le x\\} \in \mathscr{A}$ for all $x \in \mathbb{R}$.
+
+**Remark.**
+1. "measurable function"
+2. Notation: $X, Y$ RVs, $x, y$ values
+
+**Definition.** The <span style="color:red">*CDF of a RV $X$*</span> is the function 
+
+$$F = F_X : \mathbb{R} \rightarrow [0,1]$$
+
+given by $F(x) = P[X \le x]$.
+
+**Exercise.** Prove that $F_X$ is indeed a CDF.
+
+**Definition.** The distribution of $X$ is the probability measure $P_X$ on $\mathbb{R}$ s.t.
+
+$$P_X(A) = P[X \in A]$$
+
+for all $A \in \mathbb{B}(\mathbb{R})$.
+
+**Exercise.** $P_X$ is a Borel probability measure.
+
+**Claim.** $P_X$ is the probability measure induced by $F$.
+
+Proof: If we denote by $Q$ the probability measure corresponding to $F$, then
+
+$$Q((-\infty, x)]) = F(x) = P[X \le x] = P[X \in (-\infty, x])] = P_X((-\infty, x]).$$
+
+Thus, $Q = P_X$.
+
+---
+
+#### (PP 3.2) Types of Random Variables
+
+$$ $$
+
+*To be added..*
+
+---
+
+
