@@ -45,7 +45,7 @@ for all $A \in \mathbb{B}(\mathbb{R})$.
 
 Proof: If we denote by $Q$ the probability measure corresponding to $F$, then
 
-$$Q((-\infty, x)]) = F(x) = P[X \le x] = P[X \in (-\infty, x])] = P_X((-\infty, x]).$$
+$$Q((-\infty, x]) = F(x) = P[X \le x] = P[X \in (-\infty, x]] = P_X((-\infty, x]).$$
 
 Thus, $Q = P_X$.
 
