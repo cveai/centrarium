@@ -115,8 +115,7 @@ $$Q(S_t, A_t) \leftarrow Q(S_t, A_t) + \alpha\left(R_{t+1} + \gamma \max_{a'} Q(
 
 ### Deep Q-learning with experience reply
 
-**Algoritm.** 
-
+**Algoritm.**  
 Initialize $D$ to capacity $N$  
 Initialize $Q$ with random weights $\theta$  
 Initialize $\hat{Q}$ with weights $\theta^- = \theta$  
