@@ -111,7 +111,7 @@ $$Q(S_t, A_t) \leftarrow Q(S_t, A_t) + \alpha\left(R_{t+1} + \gamma \max_{a'} Q(
 
 를 얻게된다.
 
-#### Algoritm: Deep Q-learning with experience reply
+### Algoritm: Deep Q-learning with experience reply
 
 
 
