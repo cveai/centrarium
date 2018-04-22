@@ -137,7 +137,7 @@ $\,\,\,\,\,$ $\,\,\,\,\,$ $\texttt{if}$ episode terminates at step $j+1$:
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\,\,\,\,\,$ $y_j = r_j$  
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\texttt{else}$:  
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\,\,\,\,\,$ $y_j = r_j + \gamma \max_{a'} \hat{Q}(\phi_{j+1}, a'; \theta^-)$  
-$\,\,\,\,\,$ $\,\,\,\,\,$ perform a gradient descent step on  with respect to the network parameters θ  
+$\,\,\,\,\,$ $\,\,\,\,\,$ gradient descent on $(y_j - Q(\phi_j, a_j; \theta))^2$   
 $\,\,\,\,\,$ $\,\,\,\,\,$ every $C$ steps reset $\hat{Q} = Q$  
 
 $ $
