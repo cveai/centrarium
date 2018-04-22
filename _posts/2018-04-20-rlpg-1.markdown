@@ -116,10 +116,10 @@ $$Q(S_t, A_t) \leftarrow Q(S_t, A_t) + \alpha\left(R_{t+1} + \gamma \max_{a'} Q(
 ### Deep Q-learning with experience reply
 
 **Algorithm.**  
-Initialize $D$ to capacity $N$  
-Initialize $Q$ with random weights $\theta$  
-Initialize $\hat{Q}$ with weights $\theta^- = \theta$  
-$\texttt{for}$ episode in $\texttt{range}(1, M)$:  
+initialize $D$ to capacity $N$  
+initialize $Q$ with random weights $\theta$  
+initialize $\hat{Q}$ with weights $\theta^- = \theta$  
+$\texttt{for}$ $episode$ in $\texttt{range}(1, M)$:  
 $\,\,\,\,\,$ Initialize $s_1 = \\{x_1\\}$  
 $\,\,\,\,\,$ Initialize $\phi_1 = \phi(s_1)$  
 $\,\,\,\,\,$ $\texttt{for}$ $t$ in $\texttt{range}(1,T)$:  
@@ -127,7 +127,8 @@ $\,\,\,\,\,$ $\,\,\,\,\,$ $\texttt{if} \, coin_\varepsilon == 0$:
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\,\,\,\,\,$ select a random $a_t \in \mathscr{A}$  
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\texttt{else}$:  
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\,\,\,\,\,$ $a_t = \arg\max Q_\theta(\phi(s_i),a)$  
-$\,\,\,\,\,$ $\,\,\,\,\,$ Execute action at in emulator and observe reward rt and image xt + 1  
+$\,\,\,\,\,$ $\,\,\,\,\,$ execute action at in emulator and   
+$\,\,\,\,\,$ $\,\,\,\,\,$ observe $r_t$ and $x_{t+1}$
 $\,\,\,\,\,$ $\,\,\,\,\,$ Set  and preprocess     
 $\,\,\,\,\,$ $\,\,\,\,\,$ Store transition  in D  
 $\,\,\,\,\,$ $\,\,\,\,\,$ Sample random minibatch of transitions  from D  
