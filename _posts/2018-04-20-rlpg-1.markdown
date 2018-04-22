@@ -147,7 +147,7 @@ Deep reinforcement learning 이 tabular reinforcement learning 과 구별되는 
 state, action 에 더해 하나 더 추가된다는 것이다. Q-learning 의 경우 네트워크를 구성하는 CNN 파라미터 $\theta$ 가 그것이다.
 구체적으로 CNN 은 $theta$ 에 대한 다음과 같은 함수를 생성하는 역할을 한다.
 
-$$\theta \mapsto Q(\bullet, \bullet; \theta) : \mathscr{S} \times \mathscr{A} \rightarrow \mathbb{R}.$$
+$$\theta \mapsto Q(\cdot, \cdot; \theta) : \mathscr{S} \times \mathscr{A} \rightarrow \mathbb{R}.$$
 
 
 
