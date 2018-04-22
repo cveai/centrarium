@@ -46,7 +46,7 @@ policy 의 수열을 생성하는 효율적인 알고리즘을 디자인할 수 
  DP 를 이용한 알고리즘의 수렴성을 이용하여 transition probability 를 이용하지 않고 "optimal policy 로 수렴하는 알고리즘"을 디자인할 수 있는데
  sampling 을 이용한 통계학적인 접근이 그것이다. Sampling 을 이용한 방법은 bootstrapping 여부에 따라 Monte Carlo 와 Temporal Difference 두 가지가 있다.   
 
-#### $Q$-learning as an off-policy TD learning
+### $Q$-learning as an off-policy TD learning
 
 Off-policy control 방법은 behavior policy $\beta$ 와 tatget policy $\pi$ 를 구분하여 운용한다. 
 학습을 위한 experience 를 획득하기 위한 action의 선택은 $\beta$ 를 통하여 한다. 
