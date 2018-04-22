@@ -61,11 +61,13 @@ Policy 는 보통 주어진 state 에서 가능한 action 들에 대한 확률�
 $$\beta : \mathscr{S} \rightarrow \mathscr{A}.$$
 
 즉, 주어진 state $s$ 에 대한 함숫값 $\beta(s) \in \mathscr{A}$ 는 $s$ 에서 policy $\beta$ 가 선택하는 action 이 된다.
-다시한번 강조하자면 off-policy control 은 behavior policy $\beta$ 의 선택을 통하여 진행된 경험으로 얻은 reward 를 바탕으로 target policy $\pi$ 의 action value 함수에 해당하는 target variable $Q(s, a)$ 를 업데이트한다. 구체적으로 target policy 의 업데이트는 다음과 같이 이루어진다.
+다시한번 강조하자면 off-policy control 은 behavior policy $\beta$ 의 선택을 통하여 진행된 경험으로 얻은 reward 를 바탕으로 target policy $\pi$ 의 action value 함수에 해당하는 target variable $Q(s, a)$ 를 업데이트한다. 구체적으로 target policy 의 업데이트는 다음과 같은 형태로 이루어진다.
 
-$$Q(S_t, A_t) \leftarrow Q(S_t, A_t) + \alpha\left(R_{t+1} + \gamma \max_{a} Q(S_{t+1},a) - Q(S_t, A_t)\right).$$
+$$Q(S_t, A_t) \leftarrow Q(S_t, A_t) + \alpha\left(R_{t+1} + \gamma \max_{a'} Q(S_{t+1},a') - Q(S_t, A_t)\right).$$
 
-
+Behavior policy $\beta$ 에 의해 생성된 에피소드에서 timestep $t$ 에서의 state 가 $S_t = s$, 선택된 action 이 $a$ 라고 할 때 $Q(s, a)$ 의 값을 
+좀더 optimal 에 가까운 값으로 업데이트 하려는 것인데, 그 방법이 현재의 값과 실제로 얻을 수 있는 값과의 차이를 계산해서 이를 반영하게 다는 것이다.
+즉 련재 시점에서의 (tempoal) 차이 (difference) 를 근거로 삼아 업데이트 한다는 전략이다. 
 
 #### Algoritm: Deep Q-learning with experience reply
 
