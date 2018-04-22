@@ -126,15 +126,15 @@ $\,\,\,\,\,$ Initialize $\phi_1 = \phi(s_1)$
 $\texttt{For}$ $t$ in [1,T] do:  
 $\,\,\,\,\,$ $\,\,\,\,\,$ With probability ε select a random action at  
 $\,\,\,\,\,$ $\,\,\,\,\,$ otherwise select  
-$\,\,\,\,\,$ $\,\,\,\,\,$ Execute action at in emulator and observe reward rt and image xt + 1
-$\,\,\,\,\,$ $\,\,\,\,\,$ Set  and preprocess 
-$\,\,\,\,\,$ $\,\,\,\,\,$ Store transition  in D
-$\,\,\,\,\,$ $\,\,\,\,\,$ Sample random minibatch of transitions  from D
-$\,\,\,\,\,$ $\,\,\,\,\,$ Set 
-$\,\,\,\,\,$ $\,\,\,\,\,$ Perform a gradient descent step on  with respect to the network parameters θ
-$\,\,\,\,\,$ $\,\,\,\,\,$ Every C steps reset 
-$\,\,\,\,\,$ End For
-End For
+$\,\,\,\,\,$ $\,\,\,\,\,$ Execute action at in emulator and observe reward rt and image xt + 1  
+$\,\,\,\,\,$ $\,\,\,\,\,$ Set  and preprocess     
+$\,\,\,\,\,$ $\,\,\,\,\,$ Store transition  in D  
+$\,\,\,\,\,$ $\,\,\,\,\,$ Sample random minibatch of transitions  from D  
+$\,\,\,\,\,$ $\,\,\,\,\,$ Set   
+$\,\,\,\,\,$ $\,\,\,\,\,$ Perform a gradient descent step on  with respect to the network parameters θ  
+$\,\,\,\,\,$ $\,\,\,\,\,$ Every C steps reset   
+$\,\,\,\,\,$ End For  
+End For  
 
 ---
 
