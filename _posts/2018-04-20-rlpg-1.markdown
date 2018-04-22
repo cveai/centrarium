@@ -126,7 +126,7 @@ $\,\,\,\,\,$ $\texttt{for}$ $t$ in $\texttt{range}(1,T)$:
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\texttt{if}$ coin$_\varepsilon$ == 0:  
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\,\,\,\,\,$ select a random $a_t \in \mathscr{A}$  
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\texttt{else}$:  
-$\,\,\,\,\,$ $\,\,\,\,\,$ $\,\,\,\,\,$ $a_t = \arg\max_\{a'\}Q_\theta(\phi(s_i),a)$
+$\,\,\,\,\,$ $\,\,\,\,\,$ $\,\,\,\,\,$ $a_t = \arg\max Q_\theta(\phi(s_i),a)$
 $\,\,\,\,\,$ $\,\,\,\,\,$ Execute action at in emulator and observe reward rt and image xt + 1  
 $\,\,\,\,\,$ $\,\,\,\,\,$ Set  and preprocess     
 $\,\,\,\,\,$ $\,\,\,\,\,$ Store transition  in D  
