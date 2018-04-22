@@ -139,9 +139,9 @@ $\,\,\,\,\,$ $\,\,\,\,\,$ every $C$ steps reset $\hat{Q} = Q$
 
 $ $
 
-*Why experience replay?*
+**Why experience replay?**
 
-*Why two networks?*
+**Why two networks?**
 
 
 ---
