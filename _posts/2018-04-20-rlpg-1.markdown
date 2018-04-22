@@ -125,7 +125,7 @@ $\,\,\,\,\,$ Initialize $\phi_1 = \phi(s_1)$
 $\,\,\,\,\,$ $\texttt{for}$ $t$ in $\texttt{range}(1,T)$ do:  
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\texttt{if}$ coin$_\varepsilon$ == 0:  
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\,\,\,\,\,$ select a random $a_t \in \mathscr{A}$  
-$\,\,\,\,\,$ $\,\,\,\,\,$ Else:  
+$\,\,\,\,\,$ $\,\,\,\,\,$ $\textt{Else}$:  
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\,\,\,\,\,$ select  
 $\,\,\,\,\,$ $\,\,\,\,\,$ Execute action at in emulator and observe reward rt and image xt + 1  
 $\,\,\,\,\,$ $\,\,\,\,\,$ Set  and preprocess     
