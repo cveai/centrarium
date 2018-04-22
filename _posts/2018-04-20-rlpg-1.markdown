@@ -121,7 +121,7 @@ Initialize $D$ to capacity $N$
 Initialize $Q$ with random weights $\theta$  
 Initialize $\hat{Q}$ with weights $\theta^- = \theta$  
 $\texttt{For}$ episode in [1, M] do:  
-$\,\,\,\,$ Initialize sequence  and preprocessed sequence 
+$\,\,\,\,\,$ Initialize sequence  and preprocessed sequence 
 For t = 1,T do
 With probability ε select a random action at
 otherwise select 
