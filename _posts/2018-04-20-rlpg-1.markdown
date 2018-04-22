@@ -140,7 +140,7 @@ $\,\,\,\,\,$ $\,\,\,\,\,$ $\,\,\,\,\,$ $y_j = r_j + \gamma \max_{a'} \hat{Q}(\ph
 $\,\,\,\,\,$ $\,\,\,\,\,$ gradient descent on $(y_j - Q(\phi_j, a_j; \theta))^2$   
 $\,\,\,\,\,$ $\,\,\,\,\,$ every $C$ steps reset $\hat{Q} = Q$  
 
-#**Why experience replay?** 
+# **Why experience replay?** 
 
 **Why double networks?**
 
