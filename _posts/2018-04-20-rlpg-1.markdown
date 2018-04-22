@@ -137,7 +137,7 @@ $\,\,\,\,\,$ $\,\,\,\,\,$ set
 $\,\,\,\,\,$ $\,\,\,\,\,$ perform a gradient descent step on  with respect to the network parameters θ  
 $\,\,\,\,\,$ $\,\,\,\,\,$ every $C$ steps reset $\hat{Q} = Q$  
 
-*Why experience replay?*
+* *Why experience replay?*
 
 *Why two networks?*
 
