@@ -67,7 +67,9 @@ $$Q(S_t, A_t) \leftarrow Q(S_t, A_t) + \alpha\left(R_{t+1} + \gamma \max_{a'} Q(
 
 Behavior policy $\beta$ 에 의해 생성된 에피소드에서 timestep $t$ 에서의 state 가 $S_t = s$, 선택된 action 이 $A_t = a$ 라고 할 때 $Q(s, a)$ 의 값을 
 좀 더 optimal 에 가까운 값으로 업데이트 하려는 의도인데, 그 방법이 현재의 값과 실제로 얻을 수 있는 값과의 차이를 계산해서 이를 반영하게 다는 것이다.
-즉 현시점에서의 (tempoal) 차이 (difference) 를 근거로 삼아 업데이트 한다는 전략이다. 
+즉 현시점에서의 (tempoal) 차이 (difference) 를 근거로 삼아 업데이트 한다는 전략이다.
+
+그러면 실제 optimal 한 acion value 는 어떤 값일까? 모델을 안다고 가정해서 상상해보면 $q^\star(s, a) = \sum_{i|ge 0} \gamma^iR_{i+1}$
 
 #### Algoritm: Deep Q-learning with experience reply
 
