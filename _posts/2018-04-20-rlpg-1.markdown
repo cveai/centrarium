@@ -138,7 +138,7 @@ $\,\,\,\,\,$ $\,\,\,\,\,$ $\,\,\,\,\,$ $y_j = r_j$
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\texttt{else}$:  
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\,\,\,\,\,$ $y_j = r_j + \gamma \max_{a'} Q^-_\eta(\phi_{j+1}, a')$  
 $\,\,\,\,\,$ $\,\,\,\,\,$ gradient descent on $(y_j - Q_\theta(\phi_j, a_j))^2$   
-$\,\,\,\,\,$ $\,\,\,\,\,$ every $C$ steps reset $\hat{Q} = Q$  
+$\,\,\,\,\,$ $\,\,\,\,\,$ every $C$ steps reset $Q^- = Q$  
 
 **Why experience replay?** 
 
