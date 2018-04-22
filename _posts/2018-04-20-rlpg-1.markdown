@@ -120,8 +120,8 @@ $$Q(S_t, A_t) \leftarrow Q(S_t, A_t) + \alpha\left(R_{t+1} + \gamma \max_{a'} Q(
 Initialize $D$ to capacity $N$  
 Initialize $Q$ with random weights $\theta$  
 Initialize $\hat{Q}$ with weights $\theta^- = \theta$  
-$\texttt{For}$ episode = 1, M do
-Initialize sequence  and preprocessed sequence 
+$\texttt{For}$ episode in [1, M] do:  
+$\,\,\,\,$ Initialize sequence  and preprocessed sequence 
 For t = 1,T do
 With probability ε select a random action at
 otherwise select 
