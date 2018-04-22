@@ -123,7 +123,7 @@ $\texttt{for}$ episode in $\texttt{range}(1, M)$:
 $\,\,\,\,\,$ Initialize $s_1 = \\{x_1\\}$  
 $\,\,\,\,\,$ Initialize $\phi_1 = \phi(s_1)$  
 $\,\,\,\,\,$ $\texttt{for}$ $t$ in $\texttt{range}(1,T)$:  
-$\,\,\,\,\,$ $\,\,\,\,\,$ $\texttt{if}$ coin$_\varepsilon$ == 0:  
+$\,\,\,\,\,$ $\,\,\,\,\,$ $\texttt{if}$ coin$_\varepsilon == 0$:  
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\,\,\,\,\,$ select a random $a_t \in \mathscr{A}$  
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\texttt{else}$:  
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\,\,\,\,\,$ $a_t = \arg\max Q_\theta(\phi(s_i),a)$
