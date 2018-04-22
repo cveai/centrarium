@@ -90,7 +90,7 @@ $$\gamma R_{t+2} + \gamma^2 R_{t+3} + \cdots = \gamma (R_{t+2} + \gamma R_{t+3} 
 $$R_{t+1} + \gamma Q(S_{t+1}, A_{t+1}) \approx R_{t+1}+ \gamma R_{t+2} + \gamma^2 R_{t+3} + \cdots$$
 
 일거라는 예상을 할 수 있다. 즉, $\bata$ 를 통한 sampling 로 얻은 값 $R_{t+1}$ 에 직전까지 업데이트 되어있던 값 $Q(S_{t+1}, A_{t+1})$ 로
-bootstrapping 을 하자는 것이다.
+bootstrapping 을 하면 될 것 같다.
 
 
 #### Algoritm: Deep Q-learning with experience reply
