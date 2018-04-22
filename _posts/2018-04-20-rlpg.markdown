@@ -73,7 +73,7 @@ Behavior policy $\beta$ 에 의해 생성된 에피소드에서 timestep $t$ 에
 
 $$q^\star(s, a) = \mathbb{E}_{\pi}(R_{t+1}+ \gamma R_{t+2} + \gamma^2 R_{t+3} + \cdots \vert S_t=s, A_t = a)$$ 
 
-임을 알 수 있다. 하지만 우리는 모델을 이용하지 않고 smpling 을 통해 이 값에 가까운 값으로 대신하려고 한다.
+임을 알 수 있다. 하지만 우리는 모델을 이용하지 않고 smpling 을 통해 이 값에 가까운 값으로 최선을 다해보려고 한다.
 
 
 
