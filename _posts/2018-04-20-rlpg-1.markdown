@@ -3,7 +3,7 @@ layout: post
 title:  "RLPG discussions #1"
 date:   2018-04-20 00:00:00
 author: 장승환
-categories: RL Playig Games
+categories: R-L-P-G
 tags: 강화학습 RL 
 ---
 
