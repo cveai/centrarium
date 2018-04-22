@@ -125,7 +125,7 @@ $\,\,\,\,\,$ Initialize $\phi_1 = \phi(s_1)$
 $\,\,\,\,\,$ $\texttt{for}$ $t$ in $\texttt{range}(1,T)$ do:  
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\texttt{if}$ coin$_\varepsilon$ == 0:  
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\,\,\,\,\,$ select a random $a_t \in \mathscr{A}$  
-$\,\,\,\,\,$ $\,\,\,\,\,$ $\texttt{Else}$:  
+$\,\,\,\,\,$ $\,\,\,\,\,$ $\texttt{else}$:  
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\,\,\,\,\,$ select  
 $\,\,\,\,\,$ $\,\,\,\,\,$ Execute action at in emulator and observe reward rt and image xt + 1  
 $\,\,\,\,\,$ $\,\,\,\,\,$ Set  and preprocess     
@@ -134,8 +134,7 @@ $\,\,\,\,\,$ $\,\,\,\,\,$ Sample random minibatch of transitions  from D
 $\,\,\,\,\,$ $\,\,\,\,\,$ Set   
 $\,\,\,\,\,$ $\,\,\,\,\,$ Perform a gradient descent step on  with respect to the network parameters θ  
 $\,\,\,\,\,$ $\,\,\,\,\,$ Every C steps reset   
-$\,\,\,\,\,$ End For  
-End For  
+
 
 ---
 
