@@ -131,11 +131,11 @@ $\,\,\,\,\,$ $\,\,\,\,\,$ execute action at in emulator and
 $\,\,\,\,\,$ $\,\,\,\,\,$ observe $r_t$ and $x_{t+1}$  
 $\,\,\,\,\,$ $\,\,\,\,\,$ $s_{t+1} = s_t a_t x_{t+1}$    
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\phi_{t+1} = \phi(s_{t+1})$   
-$\,\,\,\,\,$ $\,\,\,\,\,$ $D \leftarrow (\phi_i, a_t, r_t, \phi_{t+1})$  
-$\,\,\,\,\,$ $\,\,\,\,\,$ Sample random minibatch of transitions  from D  
-$\,\,\,\,\,$ $\,\,\,\,\,$ Set   
-$\,\,\,\,\,$ $\,\,\,\,\,$ Perform a gradient descent step on  with respect to the network parameters θ  
-$\,\,\,\,\,$ $\,\,\,\,\,$ Every $C$ steps reset $\hat{Q} = Q$  
+$\,\,\,\,\,$ $\,\,\,\,\,$ $D \leftarrow (\phi_t, a_t, r_t, \phi_{t+1})$  
+$\,\,\,\,\,$ $\,\,\,\,\,$ sample random minibatch (\phi_j, a_j, r_j, \phi_{j+1}) from $D$    
+$\,\,\,\,\,$ $\,\,\,\,\,$ set   
+$\,\,\,\,\,$ $\,\,\,\,\,$ perform a gradient descent step on  with respect to the network parameters θ  
+$\,\,\,\,\,$ $\,\,\,\,\,$ every $C$ steps reset $\hat{Q} = Q$  
 
 
 ---
