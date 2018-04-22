@@ -103,7 +103,7 @@ target policy $\pi$ 는 이용할 수 없다. 그렇다고 behavior policy $\bet
 $$R_{t+1} + \gamma Q(S_{t+1}, \max_{a' \in \mathscr{A}} Q(s', a')) \approx R_{t+1}+ \gamma R_{t+2} + \gamma^2 R_{t+3} + \cdots$$
 
 의 선택을 하겠다는 것이다. 
-(참고로 최대값 대신 평균을 취하는 선택을 하는 전략은 Expected Sarsa 라고 불리운다.)
+(참고로 최대값 대신 평균을 취하는 선택을 하는 전략은 Expected Sarsa 라고 불린다.)
 
 종합하면 처음에 나왔던 업데이트 식
 
@@ -149,7 +149,8 @@ state, action 에 더해 하나 더 추가된다는 것이다. Q-learning 의 �
 
 $$\theta \mapsto Q(\,\cdot \, , \cdot \,; \theta) : \mathscr{S} \times \mathscr{A} \rightarrow \mathbb{R}.$$
 
-즉, 각 $\theta$ 값은 하나의 함수에 대응되는데 이 함수는 임의의 state-action pair $(s, a)$ 에 대한 action value 를 출력한다.
+즉, 각 $\theta$ 값은 하나의 state-action value 함수에 대응되는데 이 함수는 임의의 state-action pair $(s, a)$ 에 대한 action value 를 출력한다.
+당연하게도 $\theat$ 의 값이 달라지면 같은 $(s, a)$ 에 대해서라도 일반적으로 다른 값을 출력하게 된다.
 
 ---
 
