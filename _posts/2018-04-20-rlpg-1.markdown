@@ -149,7 +149,7 @@ state, action 에 더해 하나 더 추가된다는 것이다. Q-learning 의 �
 
 $$\theta \mapsto Q(\,\cdot \, , \cdot \,; \theta) : \mathscr{S} \times \mathscr{A} \rightarrow \mathbb{R}.$$
 
-즉, 각 $\theta$ 값은 
+즉, 각 $\theta$ 값은 하나의 함수에 대응되는데 이 함수는 임의의 state-action pair $(s, a)$ 에 대한 action value 를 출력한다.
 
 ---
 
