@@ -65,7 +65,7 @@ $$\beta : \mathscr{S} \rightarrow \mathscr{A}.$$
 
 $$Q(S_t, A_t) \leftarrow Q(S_t, A_t) + \alpha\left(R_{t+1} + \gamma \max_{a'} Q(S_{t+1},a') - Q(S_t, A_t)\right).$$
 
-Behavior policy $\beta$ 에 의해 생성된 에피소드에서 timestep $t$ 에서의 state 가 $S_t = s$, 선택된 action 이 $a$ 라고 할 때 $Q(s, a)$ 의 값을 
+Behavior policy $\beta$ 에 의해 생성된 에피소드에서 timestep $t$ 에서의 state 가 $S_t = s$, 선택된 action 이 $A_t = a$ 라고 할 때 $Q(s, a)$ 의 값을 
 좀더 optimal 에 가까운 값으로 업데이트 하려는 것인데, 그 방법이 현재의 값과 실제로 얻을 수 있는 값과의 차이를 계산해서 이를 반영하게 다는 것이다.
 즉 련재 시점에서의 (tempoal) 차이 (difference) 를 근거로 삼아 업데이트 한다는 전략이다. 
 
