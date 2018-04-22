@@ -136,7 +136,7 @@ $\,\,\,\,\,$ $\,\,\,\,\,$ sample random minibatch $(\phi_j, a_j, r_j, \phi_{j+1}
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\texttt{if}$ $episode$ terminates at step $j+1$:  
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\,\,\,\,\,$ $y_j = r_j$  
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\texttt{else}$:  
-$\,\,\,\,\,$ $\,\,\,\,\,$ $\,\,\,\,\,$ $y_j = r_j + \gamma \max_{a'} \hat{Q}(\phi_{j+1}, a'; \theta^-)$  
+$\,\,\,\,\,$ $\,\,\,\,\,$ $\,\,\,\,\,$ $y_j = r_j + \gamma \max_{a'} \hat{Q}_\eta(\phi_{j+1}, a'; \theta^-)$  
 $\,\,\,\,\,$ $\,\,\,\,\,$ gradient descent on $(y_j - Q(\phi_j, a_j; \theta))^2$   
 $\,\,\,\,\,$ $\,\,\,\,\,$ every $C$ steps reset $\hat{Q} = Q$  
 
@@ -151,6 +151,8 @@ $$\theta \mapsto Q(\,\cdot \, , \cdot \,; \theta) : \mathscr{S} \times \mathscr{
 
 즉, 각 $\theta$ 값은 하나의 state-action value 함수에 대응되는데 이 함수는 임의의 state-action pair $(s, a)$ 에 대한 action value 를 출력한다.
 일반적으로, $\theta$ 의 값이 달라지면 같은 $(s, a)$ 에 대해서라도 다른 값을 출력하게 된다.
+
+하나의 네트워크로 Q-learning 알고리즘을 구성하는 생각해보자. 
 
 ---
 
