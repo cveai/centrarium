@@ -119,7 +119,7 @@ $$Q(S_t, A_t) \leftarrow Q(S_t, A_t) + \alpha\left(R_{t+1} + \gamma \max_{a'} Q(
 Initialize $D$ to capacity $N$  
 Initialize $Q$ with random weights $\theta$  
 Initialize $\hat{Q}$ with weights $\theta^- = \theta$  
-$\texttt{for}$ episode in range$(1, M)$ do:  
+$\texttt{for}$ episode in $\texttt{range}(1, M)$ do:  
 $\,\,\,\,\,$ Initialize $s_1 = \\{x_1\\}$  
 $\,\,\,\,\,$ Initialize $\phi_1 = \phi(s_1)$  
 $\,\,\,\,\,$ $\texttt{for}$ $t$ in $\texttt{range}(1,T)$ do:  
