@@ -83,7 +83,7 @@ $$R_{t+1}+ \gamma R_{t+2} + \gamma^2 R_{t+3} + \cdots$$
 그렇다면 behavior policy $\beta$ 를 이용하여 acion 을 취해나가면서 reward 를 긁어모아야 하나? 라고 생각할 수 있지만.. TD($0$) 의 아이디어는 
 이 시점에서 bootstapping 을 하자는 것이다. 구체적으로, $\beta$ 에 의해 선택된 $a$ 로 인해 이미 $R_{t+1}$ 의 값은 이미 획득했고, 
 
-$$\gamma R_{t+2} + \gamma^2 R_{t+3} + \cdots = \gamma G_{t+1}$$
+$$\gamma R_{t+2} + \gamma^2 R_{t+3} + \cdots = \gamma (R_{t+2} + \gamma R_{t+3} + \cdots) = \gamma G_{t+1}$$
 
 임을 감안하면
 
