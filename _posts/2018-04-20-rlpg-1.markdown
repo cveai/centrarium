@@ -96,12 +96,18 @@ bootstrapping 을 하면 될 것 같다. 하지만 여기서 한가지 결정적
 target policy $\pi$ 는 이용할 수 없다. 그렇다고 behavior policy $\beta$ 를 이용하면 두 policy 간의 차이로 인한 variance 를 고려해야만 한다.
 결론적으로, Q-leaning 의 선택은 $S_{t+1} = s'$ 에서 취할 수 있는 모든 action $a'$ 각각에 대한 값 $Q(s', a')$ 을 모두 들여다본 후,
 그 중에 제일 큰 값 $\max_{a' \in \mathscr{A}} Q(s', a')$ 를 취하는 것이다.
-종합하면,  
+즉,  
 
 $$R_{t+1} + \gamma Q(S_{t+1}, \max_{a' \in \mathscr{A}} Q(s', a')) \approx R_{t+1}+ \gamma R_{t+2} + \gamma^2 R_{t+3} + \cdots$$
 
 의 선택을 하겠다는 것이다. 
 (참고로 최대값 대신 평균을 취하는 선택을 하는 전략은 Expected Sarsa 라고 불리운다.)
+
+종합하면 처음 나왔던 업데이트 식
+
+$$Q(S_t, A_t) \leftarrow Q(S_t, A_t) + \alpha\left(R_{t+1} + \gamma \max_{a'} Q(S_{t+1},a') - Q(S_t, A_t)\right)$$
+
+를 얻게된다.
 
 #### Algoritm: Deep Q-learning with experience reply
 
