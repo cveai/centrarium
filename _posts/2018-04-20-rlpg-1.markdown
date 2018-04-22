@@ -13,7 +13,7 @@ tags: 강화학습 RL
 
 ---
 
-#### Bellman equation
+### Bellman equation
 
  Bellman equation 은 MDP 형태로 주어진 강화학습 문제에서 임의의 policy $\pi$ 가 주어졌을 때, 이에 해당하는 value 함수 
  $v_\pi: \mathscr{S} \rightarrow \mathbb{R}$ 와 
