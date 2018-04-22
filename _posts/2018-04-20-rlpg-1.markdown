@@ -126,11 +126,12 @@ $\,\,\,\,\,$ $\texttt{for}$ $t$ in $\texttt{range}(1,T)$:
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\texttt{if} \, coin_\varepsilon == 0$:  
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\,\,\,\,\,$ select a random $a_t \in \mathscr{A}$  
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\texttt{else}$:  
-$\,\,\,\,\,$ $\,\,\,\,\,$ $\,\,\,\,\,$ $a_t = \arg\max Q_\theta(\phi(s_i),a)$  
+$\,\,\,\,\,$ $\,\,\,\,\,$ $\,\,\,\,\,$ $a_t = \arg\max Q_\theta(\phi(s_t),a)$  
 $\,\,\,\,\,$ $\,\,\,\,\,$ execute action at in emulator and   
-$\,\,\,\,\,$ $\,\,\,\,\,$ observe $r_t$ and $x_{t+1}$
-$\,\,\,\,\,$ $\,\,\,\,\,$ Set  and preprocess     
-$\,\,\,\,\,$ $\,\,\,\,\,$ Store transition  in D  
+$\,\,\,\,\,$ $\,\,\,\,\,$ observe $r_t$ and $x_{t+1}$  
+$\,\,\,\,\,$ $\,\,\,\,\,$ $s_{t+1} = s_t a_t x_{t+1}$    
+$\,\,\,\,\,$ $\,\,\,\,\,$ $\phi_{t+1} = \phi(s_{t+1})$   
+$\,\,\,\,\,$ $\,\,\,\,\,$ $D \leftarrow (\phi_i, a_t, r_t, \phi_{t+1})$  
 $\,\,\,\,\,$ $\,\,\,\,\,$ Sample random minibatch of transitions  from D  
 $\,\,\,\,\,$ $\,\,\,\,\,$ Set   
 $\,\,\,\,\,$ $\,\,\,\,\,$ Perform a gradient descent step on  with respect to the network parameters θ  
