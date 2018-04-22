@@ -126,7 +126,7 @@ $\,\,\,\,\,$ $\texttt{for}$ $t$ in $\texttt{range}(1,T)$:
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\texttt{if} \, coin_\varepsilon == 0$:  
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\,\,\,\,\,$ select a random $a_t \in \mathscr{A}$  
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\texttt{else}$:  
-$\,\,\,\,\,$ $\,\,\,\,\,$ $\,\,\,\,\,$ $a_t = \arg\max Q(\phi(s_t),a; \theta)$  
+$\,\,\,\,\,$ $\,\,\,\,\,$ $\,\,\,\,\,$ $a_t = \arg\max Q_\theta(\phi(s_t),a)$  
 $\,\,\,\,\,$ $\,\,\,\,\,$ execute action at in emulator and   
 $\,\,\,\,\,$ $\,\,\,\,\,$ observe $r_t$ and $x_{t+1}$  
 $\,\,\,\,\,$ $\,\,\,\,\,$ $s_{t+1} = s_t a_t x_{t+1}$    
@@ -136,8 +136,8 @@ $\,\,\,\,\,$ $\,\,\,\,\,$ sample random minibatch $(\phi_j, a_j, r_j, \phi_{j+1}
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\texttt{if}$ $episode$ terminates at step $j+1$:  
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\,\,\,\,\,$ $y_j = r_j$  
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\texttt{else}$:  
-$\,\,\,\,\,$ $\,\,\,\,\,$ $\,\,\,\,\,$ $y_j = r_j + \gamma \max_{a'} \hat{Q}_\eta(\phi_{j+1}, a'; \theta^-)$  
-$\,\,\,\,\,$ $\,\,\,\,\,$ gradient descent on $(y_j - Q(\phi_j, a_j; \theta))^2$   
+$\,\,\,\,\,$ $\,\,\,\,\,$ $\,\,\,\,\,$ $y_j = r_j + \gamma \max_{a'} QQ_\eta(\phi_{j+1}, a'; \theta^-)$  
+$\,\,\,\,\,$ $\,\,\,\,\,$ gradient descent on $(y_j - Q_theta(\phi_j, a_j))^2$   
 $\,\,\,\,\,$ $\,\,\,\,\,$ every $C$ steps reset $\hat{Q} = Q$  
 
 **Why experience replay?** 
