@@ -136,7 +136,7 @@ $\,\,\,\,\,$ $\,\,\,\,\,$ sample random minibatch $(\phi_j, a_j, r_j, \phi_{j+1}
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\texttt{if}$ episode terminates at step $j+1$:  
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\,\,\,\,\,$ $y_j = r_j$  
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\texttt{else}$:  
-$\,\,\,\,\,$ $\,\,\,\,\,$ $\,\,\,\,\,$ $y_j = r_j + \gamma \max_{a'} \hat{Q}}(\phi_{j+1}, a'; \theta^-)$  
+$\,\,\,\,\,$ $\,\,\,\,\,$ $\,\,\,\,\,$ $y_j = r_j + \gamma \max_{a'} \hat{Q}(\phi_{j+1}, a'; \theta^-)$  
 $\,\,\,\,\,$ $\,\,\,\,\,$ perform a gradient descent step on  with respect to the network parameters θ  
 $\,\,\,\,\,$ $\,\,\,\,\,$ every $C$ steps reset $\hat{Q} = Q$  
 
