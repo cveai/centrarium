@@ -94,7 +94,7 @@ $$R_{t+1} + \gamma Q(S_{t+1}, A_{t+1}) \approx R_{t+1}+ \gamma R_{t+2} + \gamma^
 일거라는 예상을 할 수 있다. 즉, $\beta$ 를 통한 sampling 로 얻은 값 $R_{t+1}$ 에 직전까지 업데이트 되어있던 값 $Q(S_{t+1}, A_{t+1})$ 으로
 bootstrapping 을 하면 될 것 같다. 하지만 여기서 한가지 결정적인 이슈가 발생한다
 
-그 이슈란 바로 state $S_{t+1} = s'$ 에서 다음 action 선택할 것인가의 문제이다. Off-policy control 을 지향하기 떄문에
+그 이슈란 바로 state $S_{t+1} = s'$ 에서 어떻게 다음 action 을 선택할 것인가의 문제이다. Off-policy control 을 지향하기 떄문에
 target policy $\pi$ 는 이용할 수 없다. 그렇다고 behavior policy $\beta$ 를 이용하면 두 policy 간의 차이로 인한 variance 를 고려해야만 한다.
 결론적으로, Q-leaning 의 선택은 $S_{t+1} = s'$ 에서 취할 수 있는 모든 action $a'$ 각각에 대한 값 $Q(s', a')$ 을 모두 들여다본 후,
 그 중에 제일 큰 값 $\max_{a' \in \mathscr{A}} Q(s', a')$ 를 취하는 것이다.
