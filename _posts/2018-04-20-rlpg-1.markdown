@@ -133,7 +133,11 @@ $\,\,\,\,\,$ $\,\,\,\,\,$ $s_{t+1} = s_t a_t x_{t+1}$
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\phi_{t+1} = \phi(s_{t+1})$   
 $\,\,\,\,\,$ $\,\,\,\,\,$ $D \leftarrow (\phi_t, a_t, r_t, \phi_{t+1})$  
 $\,\,\,\,\,$ $\,\,\,\,\,$ sample random minibatch $(\phi_j, a_j, r_j, \phi_{j+1})$ from $D$    
-$\,\,\,\,\,$ $\,\,\,\,\,$ set   
+$\,\,\,\,\,$ $\,\,\,\,\,$ set $y_j = \begin{cases}
+\theta, \, {\rm if} \,\,\, x=1 \\
+1-\theta, \, {\rm if} \,\,\, x=0 \\
+0, \, {\rm else}
+\end{cases} \\$  
 $\,\,\,\,\,$ $\,\,\,\,\,$ perform a gradient descent step on  with respect to the network parameters θ  
 $\,\,\,\,\,$ $\,\,\,\,\,$ every $C$ steps reset $\hat{Q} = Q$  
 
