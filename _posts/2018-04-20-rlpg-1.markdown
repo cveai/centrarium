@@ -119,10 +119,10 @@ $$Q(S_t, A_t) \leftarrow Q(S_t, A_t) + \alpha\left(R_{t+1} + \gamma \max_{a'} Q(
 Initialize $D$ to capacity $N$  
 Initialize $Q$ with random weights $\theta$  
 Initialize $\hat{Q}$ with weights $\theta^- = \theta$  
-$\texttt{for}$ episode in $\texttt{range}(1, M)$ do:  
+$\texttt{for}$ episode in $\texttt{range}(1, M)$:  
 $\,\,\,\,\,$ Initialize $s_1 = \\{x_1\\}$  
 $\,\,\,\,\,$ Initialize $\phi_1 = \phi(s_1)$  
-$\,\,\,\,\,$ $\texttt{for}$ $t$ in $\texttt{range}(1,T)$ do:  
+$\,\,\,\,\,$ $\texttt{for}$ $t$ in $\texttt{range}(1,T)$:  
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\texttt{if}$ coin$_\varepsilon$ == 0:  
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\,\,\,\,\,$ select a random $a_t \in \mathscr{A}$  
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\texttt{else}$:  
@@ -133,7 +133,7 @@ $\,\,\,\,\,$ $\,\,\,\,\,$ Store transition  in D
 $\,\,\,\,\,$ $\,\,\,\,\,$ Sample random minibatch of transitions  from D  
 $\,\,\,\,\,$ $\,\,\,\,\,$ Set   
 $\,\,\,\,\,$ $\,\,\,\,\,$ Perform a gradient descent step on  with respect to the network parameters θ  
-$\,\,\,\,\,$ $\,\,\,\,\,$ Every C steps reset   
+$\,\,\,\,\,$ $\,\,\,\,\,$ Every $C$ steps reset $\hat{Q} = Q$  
 
 
 ---
