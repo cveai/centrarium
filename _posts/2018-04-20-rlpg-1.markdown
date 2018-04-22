@@ -111,9 +111,28 @@ $$Q(S_t, A_t) \leftarrow Q(S_t, A_t) + \alpha\left(R_{t+1} + \gamma \max_{a'} Q(
 
 를 얻게된다.
 
-### Algoritm: Deep Q-learning with experience reply
+---
 
+### Deep Q-learning with experience reply
 
+**Algoritm.** 
+
+For episode = 1, M do
+Initialize sequence  and preprocessed sequence 
+For t = 1,T do
+With probability ε select a random action at
+otherwise select 
+Execute action at in emulator and observe reward rt and image xt + 1
+Set  and preprocess 
+Store transition  in D
+Sample random minibatch of transitions  from D
+Set 
+Perform a gradient descent step on  with respect to the network parameters θ
+Every C steps reset 
+End For
+End For
+
+---
 
 #### 참고자료
 
