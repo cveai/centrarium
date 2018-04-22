@@ -136,9 +136,9 @@ $\,\,\,\,\,$ $\,\,\,\,\,$ sample random minibatch $(\phi_j, a_j, r_j, \phi_{j+1}
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\texttt{if}$ $episode$ terminates at step $j+1$:  
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\,\,\,\,\,$ $y_j = r_j$  
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\texttt{else}$:  
-$\,\,\,\,\,$ $\,\,\,\,\,$ $\,\,\,\,\,$ $y_j = r_j + \gamma \max_{a'} Q^-_{\eta^-}(\phi_{j+1}, a')$  
+$\,\,\,\,\,$ $\,\,\,\,\,$ $\,\,\,\,\,$ $y_j = r_j + \gamma \max_{a'} Q^-_{\theta^-}(\phi_{j+1}, a')$  
 $\,\,\,\,\,$ $\,\,\,\,\,$ gradient descent on $(y_j - Q_\theta(\phi_j, a_j))^2$   
-$\,\,\,\,\,$ $\,\,\,\,\,$ every $C$ steps reset $\eta = \theta$  
+$\,\,\,\,\,$ $\,\,\,\,\,$ every $C$ steps reset $\theta^- = \theta$  
 
 **Why experience replay?** 
 
