@@ -123,7 +123,7 @@ $\texttt{for}$ episode in range$(1, M)$ do:
 $\,\,\,\,\,$ Initialize $s_1 = \\{x_1\\}$  
 $\,\,\,\,\,$ Initialize $\phi_1 = \phi(s_1)$  
 $\,\,\,\,\,$ $\texttt{for}$ $t$ in range$(1,T)$ do:  
-$\,\,\,\,\,$ $\,\,\,\,\,$ \texttt{if} coin$_\varepsilon$ == 0:  
+$\,\,\,\,\,$ $\,\,\,\,\,$ $\texttt{if}$ coin$_\varepsilon$ == 0:  
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\,\,\,\,\,$ select a random $a_t \in \mathscr{A}$  
 $\,\,\,\,\,$ $\,\,\,\,\,$ Else:  
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\,\,\,\,\,$ select  
