@@ -117,6 +117,9 @@ $$Q(S_t, A_t) \leftarrow Q(S_t, A_t) + \alpha\left(R_{t+1} + \gamma \max_{a'} Q(
 
 **Algoritm.** 
 
+Initialize $D$ to capacity $N$  
+Initialize $Q$ with random weights $θ$
+Initialize target action-value function  with weights θ−  = θ
 For episode = 1, M do
 Initialize sequence  and preprocessed sequence 
 For t = 1,T do
