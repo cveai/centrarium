@@ -24,14 +24,14 @@ tags: ML
 </figure>
 
 **Exampl.**
-$D= (x_1, x_2, x_2) = (101, 100.5, 101.5)$ ($n=3$) 
-$X \sim N(\theta, 1)$ ood given $\theta$  
+$D= (x_1, x_2, x_2) = (101, 100.5, 101.5)$ ($n=3$)   
+$X \sim N(\theta, 1)$ iid given $\theta$  
 
-$\theta_{rm MLE} = \overline{x} = \frac{1}{n}\sum_{i=1}^n = 101$  
+$\theta_{\rm MLE} = \overline{x} = \frac{1}{n}\sum_{i=1}^n = 101$  
 
 $ $
 
-$\theta = 100$ prior  
+$\theta = N(100,1)$ prior  
 $\theta_{\rm MAP} = 100.75$  
 To compute $P(\theta < 100 \vert D)$, one needs *posterior* $p(\theta \vert D)$  
 
