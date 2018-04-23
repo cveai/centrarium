@@ -127,7 +127,7 @@ $\,\,\,\,\,$ $\,\,\,\,\,$ $\texttt{if} \, coin_\varepsilon == 0$:
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\,\,\,\,\,$ select a random $a_t \in \mathscr{A}$  
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\texttt{else}$:  
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\,\,\,\,\,$ $a_t = \arg\max Q_\theta(\phi(s_t),a)$  
-$\,\,\,\,\,$ $\,\,\,\,\,$ execute action at in emulator and   
+$\,\,\,\,\,$ $\,\,\,\,\,$ execute $a_t$ in emulator   
 $\,\,\,\,\,$ $\,\,\,\,\,$ observe $r_t$ and $x_{t+1}$  
 $\,\,\,\,\,$ $\,\,\,\,\,$ $s_{t+1} = s_t a_t x_{t+1}$    
 $\,\,\,\,\,$ $\,\,\,\,\,$ $\phi_{t+1} = \phi(s_{t+1})$   
