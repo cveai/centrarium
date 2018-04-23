@@ -35,7 +35,7 @@ $ $
 
 $\theta = 100$ prior  
 $\theta_{\rm MAP} = 100.75$  
-To compute $P(\theta < 100 \vert D)$, need *posterior* $p(\theta \vert D)$  
+To compute $P(\theta < 100 \vert D)$, one needs *posterior* $p(\theta \vert D)$  
 
 
 
