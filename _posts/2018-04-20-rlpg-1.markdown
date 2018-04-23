@@ -100,7 +100,7 @@ target policy $\pi$ 는 이용할 수 없다. 그렇다고 behavior policy $\bet
 그 중에 제일 큰 값 $\max_{a' \in \mathscr{A}} Q(s', a')$ 를 취하는 것이다.
 즉,  
 
-$$R_{t+1} + \gamma Q(S_{t+1}, \arg\max_{a' \in \mathscr{A}} Q(s', a')) \approx R_{t+1}+ \gamma R_{t+2} + \gamma^2 R_{t+3} + \cdots$$
+$$R_{t+1} + \gamma Q(S_{t+1}, \argmax_{a' \in \mathscr{A}} Q(s', a')) \approx R_{t+1}+ \gamma R_{t+2} + \gamma^2 R_{t+3} + \cdots$$
 
 의 선택을 하겠다는 것이다. 
 (참고로 최대값 대신 평균을 취하는 선택을 하는 전략은 Expected Sarsa 라고 불린다.)
