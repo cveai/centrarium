@@ -15,7 +15,7 @@ tags: ML
 </figcaption>
 </figure>
 
-"*Put distributions on everything, and then use rules of probability!*"
+<span style="color:blue">"*Put distributions on everything, and then use rules of probability!*"</span>
 
 <figure>
 <img src="/assets/pics/mm-ml/bayes-rule.jpg" alt="Bayes' rule" style="width: 50%; height: 50%">
@@ -23,16 +23,57 @@ tags: ML
 </figcaption>
 </figure>
 
-(posterior)  
-$p(\theta \vert D) = \frac{p(D\vert \theta)p(\theta)}{p(D)} = \frac{\prod_{i=1}^np(x_i \vert \theta) p(\theta)}{p(D)}$ 
+**Exampl.**
+$D= (x_1, x_2, x_2) = (101, 100.5, 101.5)$ ($n=3$) 
+$X \sim N(\theta, 1)$ ood given $\theta$  
 
+$\theta_{rm MLE} = \overline{x} = \frac{1}{n}\sum_{i=1}^n = 101$  
 
-(predictive)  
-$p(x \vert D) = \int p(x, \theta \vert D) d \theta = \int p(x\vert\theta)p(\theta \vert D) d \theta$ : analytically computable!
+$ $
+
+$\theta = 100$ prior  
+$\theta_{\rm MAP} = 100.75$  
+To compute $P(\theta < 100 \vert D)$, one needs *posterior* $p(\theta \vert D)$  
+
+<span style="color:blue">posterior:</span>  
+$p(\theta \vert D) = \frac{p(D\vert \theta)p(\theta)}{p(D)} = \frac{\prod_{i=1}^np(x_i \vert \theta) p(\theta)}{p(D)}$   
+$\leadsto$ can be desribed as a normal distribution and so analytically computable!
+
+<span style="color:orange">predictive:</span>  
+$p(x \vert D) = \int p(x, \theta \vert D) d \theta = \int p(x\vert\theta)p(\theta \vert D) d \theta$  
+$\leadsto$ analytically integrable!
 
 ---
 
 #### (ML 7.2) Aspects of Bayesian inference
+
+* Bayesian inference: Assume a prior distribution $p(\theta)$ and then use probability rules to work with $p(x\vert \theta)$ to anser questions.  
+* Bayesian procedures: Minimize expected loss (averaging over $\theta$).  
+
+* Objective Bayesiaa: use belief-based priors  
+* Subjective Bayesian: use non-informative priors  
+
+**Pros.** 
+* Directly answer certain questions, e.g., can compute $P(99 < \theta < 101)$  
+* Avoid some pathologies (associated with frequentist approach)  
+* Avoid overfitting  
+* Automatically do medel section ("Occam's razor")  
+* Bayesian procedures are often admissible  
+
+**Cons.**  
+* Must assume a prior  
+* Exact computation (of posterior) can be intractable ($\leads to$ have to use approximation)  
+
+**Priors.**  
+* Non-informative  
+* Improper, e.g., $p(\theta) = 1$ with desity  
+* Conjugate  
+
+---
+
+#### (ML 7.3) Proportionality
+
+
 
 
 ---
