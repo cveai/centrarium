@@ -39,10 +39,12 @@ To compute $P(\theta < 100 \vert D)$, one needs *posterior* $p(\theta \vert D)$
 
 
 
-(posterior) $p(\theta \vert D) = \frac{p(D\vert \theta)p(\theta)}{p(D)} = \frac{\prod_{i=1}^np(x_i \vert \theta) p(\theta)}{p(D)}$ 
+(posterior)  
+$p(\theta \vert D) = \frac{p(D\vert \theta)p(\theta)}{p(D)} = \frac{\prod_{i=1}^np(x_i \vert \theta) p(\theta)}{p(D)}$ : can
+be decsribed as a normal distribution and so analytically computable!
 
-
-(predictive) $p(x \vert D) = \int p(x, \theta \vert D) d \theta = \int p(x\vert\theta)p(\theta \vert D) d \theta$ : analytically computable!
+(predictive)  
+$p(x \vert D) = \int p(x, \theta \vert D) d \theta = \int p(x\vert\theta)p(\theta \vert D) d \theta$ : analytically computable!
 
 ---
 
