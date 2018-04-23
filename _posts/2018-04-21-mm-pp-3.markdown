@@ -56,7 +56,7 @@ Thus, $Q = P_X$.
 **Definition.** A RV $X$ is *discrete* if $X(\Omega) = \\{ X(\omega) : \omega \in \Omega\\}$ is countable.  
 (i.e. $X(\Omega) = \\{x_1, x_2, \ldots \\}$)
 
-**Definition.** A RV *$X$ has density $f$* if $F(x) = \int_{-\infty}^x f(\mu)d\mu$ for all $x \ion \mathbb{R}$  
+**Definition.** A RV *$X$ has density $f$* if $F(x) = \int_{-\infty}^x f(\mu)d\mu$ for all $x \in \mathbb{R}$  
 (for some integrable $f: \mathbb{R} \rightarrow [0, \infty]$).
 
 ---
