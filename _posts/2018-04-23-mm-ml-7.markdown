@@ -54,7 +54,8 @@ $\leadsto$ analytically integrable!
 * Subjective Bayesian: use non-informative priors  
 
 **Pros.** 
-* Directly answer questions, e.g., can compute $P(99 < \theta < 101)$  
+* Directly answer certain questions, e.g., can compute $P(99 < \theta < 101)$  
+* Avoid some pathologies (associated with frequentist approach)  
 
 
 ---
