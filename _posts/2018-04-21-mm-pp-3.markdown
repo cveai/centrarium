@@ -57,7 +57,7 @@ Thus, $Q = P_X$.
 (i.e. $X(\Omega) = \\{x_1, x_2, \ldots \\}$)
 
 **Definition.** A RV *$X$ has density $f$* if $F(x) = \int_{-\infty}^x f(\mu)d\mu$ for all $x \ion \mathbb{R}$  
-(for some integrable $f: \mathbb{R \rightarrow [0, \infty]$).
+(for some integrable $f: \mathbb{R} \rightarrow [0, \infty]$).
 
 ---
 
