@@ -37,7 +37,7 @@ To compute $P(\theta < 100 \vert D)$, one needs *posterior* $p(\theta \vert D)$
 
 <span style="color:blue">posterior:</span>  
 $p(\theta \vert D) = \frac{p(D\vert \theta)p(\theta)}{p(D)} = \frac{\prod_{i=1}^np(x_i \vert \theta) p(\theta)}{p(D)}$   
-$\rightarrow$ can be decsribed as a normal distribution and so analytically computable!
+$\leadsto$ can be decsribed as a normal distribution and so analytically computable!
 
 <span style="color:orange">predictive:</span>  
 $p(x \vert D) = \int p(x, \theta \vert D) d \theta = \int p(x\vert\theta)p(\theta \vert D) d \theta$  
