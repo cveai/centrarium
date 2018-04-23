@@ -23,6 +23,26 @@ tags: ML
 </figcaption>
 </figure>
 
+**Exampl.**
+$D= (x_1, x_2, x_2) = (101, 100.5, 101.5)$ ($n=3$) 
+$X \sim N(\theta, 1)$ ood given $\theta$  
+
+$ $
+
+$\theta_{rm MLE} = \overline{x} = \frac{1}{n}\sum_{i=1}^n = 101$  
+
+$ $
+
+$\theta = 100$ prior  
+$\theta_{\rm MAP} = 100.75$  
+To compute $P(\theta < 100 \vert D)$, need *posterior* $p(\theta \vert D)$  
+
+
+
+
+
+
+
 (posterior)  
 $p(\theta \vert D) = \frac{p(D\vert \theta)p(\theta)}{p(D)} = \frac{\prod_{i=1}^np(x_i \vert \theta) p(\theta)}{p(D)}$ 
 
