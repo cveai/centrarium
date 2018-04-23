@@ -47,11 +47,11 @@ $\leadsto$ analytically integrable!
 
 #### (ML 7.2) Aspects of Bayesian inference
 
-* *Bayesian inference*: Assume a prior distribution $p(\theta)$ and then use probability rules to work with $p(x\vert \theta)$ to anser questions.  
-* Bayesian procedures: Minimize expected loss (averaging over $\theta$).  
+* <span style="color:blue">Bayesian inference</span> : Assume a prior distribution $p(\theta)$ and then use probability rules to work with $p(x\vert \theta)$ to anser questions.  
+* <span style="color:blue">Bayesian procedures</span> : Minimize expected loss (averaging over $\theta$).  
 
-* Objective Bayesian: use belief-based priors  
-* Subjective Bayesian: use non-informative priors  
+* <span style="color:blue">Objective Bayesian</span> : use belief-based priors  
+* <span style="color:blue">Subjective Bayesian</span> : use non-informative priors  
 
 **Pros.** 
 * Directly answer certain questions, e.g., can compute $P(99 < \theta < 101)$  
