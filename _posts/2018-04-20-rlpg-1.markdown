@@ -161,7 +161,7 @@ $${\rm Loss}(\theta)(r_j + \gamma \max_{a'}Q_\theta(\phi_{j+1},a') - Q_\theta(\p
 로 주어진다. Gradient decent 를 적용하기 직전의 파라미터 값을 $\theta = \theta_0$ 라고 하면,
 gradient descent 를 취하는 순간 loss 를 줄이는 방향으로 조금 변화하여 $\theta = \theta_1$ 이 된다.
 이로 인해 아주 높은 확률로 ${\rm Loss}(\theta_0) > {\rm Loss}(\theta_1)$ 이 성립할 것으로 기대할 수 있다.
-즉 
+
 
 ---
 
