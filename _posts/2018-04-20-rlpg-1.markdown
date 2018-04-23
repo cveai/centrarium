@@ -153,7 +153,7 @@ $$\theta \mapsto Q(\,\cdot \, , \cdot \,; \theta) : \mathscr{S} \times \mathscr{
 즉, 각 $\theta$ 값은 하나의 state-action value 함수에 대응되는데 이 함수는 임의의 state-action pair $(s, a)$ 에 대한 action value 를 출력한다.
 일반적으로, $\theta$ 의 값이 달라지면 같은 $(s, a)$ 에 대해서라도 다른 값을 출력하게 된다.
 
-하나의 네트워크로 Q-learning 알고리즘을 구성하는 생각해보자. 
+우선 하나의 네트워크로 Q-learning 알고리즘을 구성하는 경우를 생각해보자. 
 
 ---
 
