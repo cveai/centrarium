@@ -24,14 +24,14 @@ tags: ML
 </figure>
 
 **Exampl.**
-$D= (x_1, x_2, x_2) = (101, 100.5, 101.5)$ ($n=3$) 
-$X \sim N(\theta, 1)$ ood given $\theta$  
+$D= (x_1, x_2, x_2) = (101, 100.5, 101.5)$ ($n=3$)   
+$X \sim N(\theta, 1)$ iid given $\theta$  
 
-$\theta_{rm MLE} = \overline{x} = \frac{1}{n}\sum_{i=1}^n = 101$  
+$\theta_{\rm MLE} = \overline{x} = \frac{1}{n}\sum_{i=1}^n = 101$  
 
 $ $
 
-$\theta = 100$ prior  
+$\theta = N(100,1)$ prior  
 $\theta_{\rm MAP} = 100.75$  
 To compute $P(\theta < 100 \vert D)$, one needs *posterior* $p(\theta \vert D)$  
 
@@ -47,26 +47,26 @@ $\leadsto$ analytically integrable!
 
 #### (ML 7.2) Aspects of Bayesian inference
 
-* Bayesian inference: Assume a prior distribution $p(\theta)$ and then use probability rules to work with $p(x\vert \theta)$ to anser questions.  
-* Bayesian procedures: Minimize expected loss (averaging over $\theta$).  
+* <span style="color:blue">Bayesian inference</span> : Assume a prior distribution $p(\theta)$ and then use probability rules to work with $p(x\vert \theta)$ to anser questions.  
+* <span style="color:blue">Bayesian procedures</span> : Minimize expected loss (averaging over $\theta$).  
 
-* Objective Bayesiaa: use belief-based priors  
-* Subjective Bayesian: use non-informative priors  
+* <span style="color:blue">Objective Bayesian</span> : use belief-based priors  
+* <span style="color:blue">Subjective Bayesian</span> : use non-informative priors  
 
 **Pros.** 
 * Directly answer certain questions, e.g., can compute $P(99 < \theta < 101)$  
 * Avoid some pathologies (associated with frequentist approach)  
 * Avoid overfitting  
-* Automatically do medel section ("Occam's razor")  
+* Automatically do medel selection ("Occam's razor")  
 * Bayesian procedures are often admissible  
 
 **Cons.**  
 * Must assume a prior  
-* Exact computation (of posterior) can be intractable ($\leads to$ have to use approximation)  
+* Exact computation (of posterior) can be intractable ($\leadsto$ have to use approximation)  
 
 **Priors.**  
 * Non-informative  
-* Improper, e.g., $p(\theta) = 1$ with desity  
+* Improper, e.g., $p(\theta) = 1$ with density  
 * Conjugate  
 
 ---
