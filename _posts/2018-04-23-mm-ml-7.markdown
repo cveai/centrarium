@@ -15,7 +15,7 @@ tags: ML
 </figcaption>
 </figure>
 
-"*Put distributions on everything, and then use rules of probability!*"
+<span style="color:blue">"*Put distributions on everything, and then use rules of probability!*"</span>
 
 <figure>
 <img src="/assets/pics/mm-ml/bayes-rule.jpg" alt="Bayes' rule" style="width: 50%; height: 50%">
