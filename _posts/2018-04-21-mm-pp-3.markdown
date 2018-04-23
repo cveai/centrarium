@@ -61,6 +61,11 @@ Thus, $Q = P_X$.
 
 ---
 
+#### (PP 3.3) Discrete Randome Variables
+
+
+---
+
 $$ $$
 
 *To be added..*
