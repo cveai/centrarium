@@ -56,6 +56,14 @@ $\leadsto$ analytically integrable!
 **Pros.** 
 * Directly answer certain questions, e.g., can compute $P(99 < \theta < 101)$  
 * Avoid some pathologies (associated with frequentist approach)  
+* Avoid overfitting  
+* Automatically do medel section ("Occam's razor")  
+
+**Cons.**  
+* Must assume a prior  
+* Exact computation (of posterior) can be intractable ($\leads to$ have to use approximation)  
+
+
 
 
 ---
