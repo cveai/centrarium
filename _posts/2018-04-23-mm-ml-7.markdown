@@ -62,11 +62,11 @@ $\leadsto$ analytically integrable!
 
 **Cons.**  
 * Must assume a prior  
-* Exact computation (of posterior) can be intractable ($\leads to$ have to use approximation)  
+* Exact computation (of posterior) can be intractable ($\leadsto$ have to use approximation)  
 
 **Priors.**  
 * Non-informative  
-* Improper, e.g., $p(\theta) = 1$ with desity  
+* Improper, e.g., $p(\theta) = 1$ with density  
 * Conjugate  
 
 ---
