@@ -57,7 +57,7 @@ $\leadsto$ analytically integrable!
 * Directly answer certain questions, e.g., can compute $P(99 < \theta < 101)$  
 * Avoid some pathologies (associated with frequentist approach)  
 * Avoid overfitting  
-* Automatically do medel section ("Occam's razor")  
+* Automatically do medel selection ("Occam's razor")  
 * Bayesian procedures are often admissible  
 
 **Cons.**  
