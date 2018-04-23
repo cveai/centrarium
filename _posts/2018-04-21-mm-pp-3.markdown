@@ -53,6 +53,10 @@ Thus, $Q = P_X$.
 
 #### (PP 3.2) Types of Random Variables
 
+**Definition.** A RV $X$ is *discrete* if $X(\Omega) = \{ X(\omega) : \omega \in Omega\}$ is countable.
+
+---
+
 $$ $$
 
 *To be added..*
