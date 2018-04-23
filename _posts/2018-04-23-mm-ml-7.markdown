@@ -58,13 +58,16 @@ $\leadsto$ analytically integrable!
 * Avoid some pathologies (associated with frequentist approach)  
 * Avoid overfitting  
 * Automatically do medel section ("Occam's razor")  
+* Bayesian procedures are often admissible  
 
 **Cons.**  
 * Must assume a prior  
 * Exact computation (of posterior) can be intractable ($\leads to$ have to use approximation)  
 
-
-
+**Priors.**  
+* Non-informative  
+* Improper, e.g., $p(\theta) = 1$ with desity  
+* Conjugate  
 
 ---
 
