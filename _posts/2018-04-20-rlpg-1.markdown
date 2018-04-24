@@ -166,7 +166,9 @@ $$\cdots, S_t = s, A_t = a, R_{t+1} = r', S_{t+1} = s', A_{t+1} = a', R_{t+2} = 
 
 Timestep $t$ 에서 gradient decent 를 적용하기 직전의 파라미터 값을 $\theta = \theta_0$ 라고 하면,
 gradient descent 를 취하는 순간 loss 
-${\rm Loss} _t(\theta) = (r_t + \gamma \max_{a'}Q_\theta(s_{t+1},a') - Q_\theta(s_t, a_t))^2$ 
+
+$$${\rm Loss}_t(\theta) = (r_t + \gamma \max_{a'}Q_\theta(s_{t+1},a') - Q_\theta(s_t, a_t))^2$$ 
+
 를 줄이는 방향으로 조금 변화하여 $\theta = \theta_1$ 이 된다.
 이로 인해 아주 높은 확률로 부등식 ${\rm Loss}(\theta_0) > {\rm Loss}(\theta_1)$ 가 성립할 것으로 기대할 수 있다.
 그 다음 스텝의 업데이트를 진행하면 ${\rm Loss}(\theta_0) > {\rm Loss}(\theta_1) > {\rm Loss}(\theta_2) ...$ 이런 식으로 
