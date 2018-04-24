@@ -80,7 +80,10 @@ Also write $X \sim F$ and $X \sim Q$, which may casue confusion in some situatio
 
 **Example.**
 1. $X \sim$ Bernoulli$(\alpha)$, $\alpha \in [0,1] , p(1) = \alpha, p(0) = 1- \alpha$
-2. $X \sim$ Binomial$(n,\alpha)$, $\alpha \in [0,1], p(k) = \left(\\begin{cases} n \\ k \\end{cases}\right)$
+2. $X \sim$ Binomial$(n,\alpha)$, $\alpha \in [0,1], p(k) = \left({\begin{array}{cc}
+   n \\
+   k \\
+  \end{array} }\right)$
 
 ---
 
