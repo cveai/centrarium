@@ -4,7 +4,7 @@ title:  "RLPG discussions #1 (DQN)"
 date:   2018-04-24 00:00:00
 author: 장승환
 categories: 기계학습
-tags: 강화학습 RL 
+tags: 강화학습 RL RLPG
 ---
 
  RLPG 그룹 멤버들 간의 토론을 통해 이 노트가 만들어지고 있습니다:
