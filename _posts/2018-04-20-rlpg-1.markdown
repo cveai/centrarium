@@ -158,7 +158,14 @@ $$\theta \mapsto Q(\,\cdot \, , \cdot \,; \theta) : \mathscr{S} \times \mathscr{
 
 $${\rm Loss}(\theta):= (r_j + \gamma \max_{a'}Q_\theta(\phi_{j+1},a') - Q_\theta(\phi_j, a_j))^2$$
 
-로 주어진다. Gradient decent 를 적용하기 직전의 파라미터 값을 $\theta = \theta_0$ 라고 하면,
+로 주어진다. 설명의 편의를 위하여 $\phi_t = s_t$ 로 단순화하하고 batch 업데이트를 이용하지 않는 것으로 가정하고 생각을 해보자.
+
+Behavior policy $\beta$ 애 의해 다음과 같이 에피소드가 진행되었다고 하자.
+
+$$S_t = s, A_t = a, R_{t+1} = r', S_{t+1} = s', A_{t+1} = a', R_{t+2} = r'', S_{t+2} = s'', A_{t+2} = a''$$
+
+
+Gradient decent 를 적용하기 직전의 파라미터 값을 $\theta = \theta_0$ 라고 하면,
 gradient descent 를 취하는 순간 loss 를 줄이는 방향으로 조금 변화하여 $\theta = \theta_1$ 이 된다.
 이로 인해 아주 높은 확률로 부등식 ${\rm Loss}(\theta_0) > {\rm Loss}(\theta_1)$ 가 성립할 것으로 기대할 수 있다.
 그 다음 스텝의 업데이트를 진행하면 ${\rm Loss}(\theta_0) > {\rm Loss}(\theta_1) > {\rm Loss}(\theta_2) ...$ 이런 식으로 
@@ -168,8 +175,6 @@ Behavior policy $\beta$ 에 의해 생성된 에피소드가 다음과 같이 �
 
 $$S_t = s, A_t = a, R_{t+1} = r', S_{t+1} = s', A_{t+1} = a', R_{t+2} = r'', S_{t+2} = s'', A_{t+2} = a''$$
 
-
-설명을 위해 batch 를 이용하지 않음.
 
 
 그럼 이번에는 제시된 것과 같이 두 개의 네트워크를 이용하여 업데이트를 하는 경우를 생각해보고 그 차이를 살펴보도록 하자.
