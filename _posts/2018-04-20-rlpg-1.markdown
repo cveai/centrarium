@@ -113,7 +113,7 @@ $$Q(S_t, A_t) \leftarrow Q(S_t, A_t) + \alpha\left(R_{t+1} + \gamma \max_{a'} Q(
 
 ---
 
-### Deep Q-learning with experience reply & "target-stable" updates [2]
+### Deep Q-learning with experience replay & "target-stable" updates [2]
 
 **Algorithm.** [2]
 initialize $D$ to capacity $N$  
@@ -200,7 +200,7 @@ $$R_t+j + \gamma \max_{a'}Q_{\theta_{t+1}}(s_{t+1},a') \, (j \in \{0, \ldots, C-
 
 #### 참고자료
 
-[1] R. Sutton, A. Barto, *Reinforcement leaning: an introduction*, second edition ([final draft](http://incompleteideas.net/book/the-book-2nd.html){:target="_blank"}).  
+[1] R. Sutton, A. Barto, *Reinforcement learning: an introduction*, second edition ([final draft](http://incompleteideas.net/book/the-book-2nd.html){:target="_blank"}).  
 [2] V. Mnih et al., *Human-level control through deep reinforcement learning*, 
 [Nature vol. **518**, 529–533](https://www.nature.com/articles/nature14236){:target="_blank"} (26 February 2015).
 
