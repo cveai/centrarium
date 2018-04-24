@@ -175,7 +175,7 @@ $$L_t(\theta_t) = (r_t + \gamma \max_{a'}Q_{\theta_t}(s_{t+1},a') - Q_{\theta_t}
 
 $$L_{t+1}(\theta_{t+1}) = (r_t + \gamma \max_{a'}Q_{\theta_{t+1}}(s_{t+1},a') - Q_{\theta_{t+1}}(s_t, a_t))^2$$ 
 
-으로 업데이트의 타겟을 주는 함수가 $Q_{\theta_t}$ 에서 $Q_{\theta_{t+1}}$ 로 바뀌어있는 상태이다.
+으로 temporal difference 계산을 위한 타겟을 주는 함수가 $Q_{\theta_t}$ 에서 $Q_{\theta_{t+1}}$ 로 바뀌어있는 상태이다.
 
 진행하면 ${\rm Loss}(\theta_0) > {\rm Loss}(\theta_1) > {\rm Loss}(\theta_2) ...$ 이런 식으로 
 $\theta$ 가 최적화되어가고 있는 것으로 볼 수 있다.
