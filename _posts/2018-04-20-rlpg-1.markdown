@@ -140,7 +140,7 @@ $\,\,\,\,\,$ $\,\,\,\,\,$ $\,\,\,\,\,$ $y_j = r_j + \gamma \max_{a'} Q^-_{\theta
 $\,\,\,\,\,$ $\,\,\,\,\,$ gradient descent on $(y_j - Q_\theta(\phi_j, a_j))^2$   
 $\,\,\,\,\,$ $\,\,\,\,\,$ every $C$ steps reset $\theta^- = \theta$  
 
-**Why experience replay?** 
+
 
 **Why double networks?**
 Deep reinforcement learning 이 tabular reinforcement learning 과 구별되는 중요한 차이 중 하나는 action value 함수는 더 이상  
