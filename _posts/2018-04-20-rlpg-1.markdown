@@ -190,7 +190,7 @@ $$L_t(\theta_t) = (r_t + \gamma \max_{a'}Q^-_{\theta_t^-}(s_{t+1},a') - Q_{\thet
 $$R_t+j + \gamma \max_{a'}Q_{\theta_{t+1}}(s_{t+1},a') \, (j \in \\{0, \ldots, C-1\\})$$
 의 값들 간에 "consistancey" 가 존재하게 된다.
 
-그렇다면 이 사실이 
+그렇다면 이러한 변화가 알고리즈의 성능을 향상시켜줄 것인가 하는 문제가 남았다.
 
 
 ---
