@@ -173,7 +173,7 @@ $$L_t(\theta_t) = (r_t + \gamma \max_{a'}Q_{\theta_t}(s_{t+1},a') - Q_{\theta_t}
 이로 인해 높은 확률로 부등식 $L_t(\theta_t) > L_{t+1}(\theta_{t+1})$ 이 성립할 것으로 기대할 수 있다.
 그 다음 스텝의 업데이트를 위한 loss 는
 
-$$L_{t+1}(\theta_{t+1}) = (r_t + \gamma \max_{a'}Q_{\theta_{t+1}}(s_{t+1},a') - Q_{\theta_{t+1}}(s_t, a_t))^2$$ 
+$$L_{t+1}(\theta_{t+1}) = (r_{t+1} + \gamma \max_{a'}Q_{\theta_{t+1}}(s_{t+1},a') - Q_{\theta_{t+1}}(s_t, a_t))^2$$ 
 
 으로 temporal difference 계산을 위한 타겟을 정의하는 함수가 $Q_{\theta_t}$ 에서 $Q_{\theta_{t+1}}$ 로 바뀌어있는 상태이다.
 
