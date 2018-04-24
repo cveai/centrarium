@@ -63,6 +63,16 @@ Thus, $Q = P_X$.
 
 #### (PP 3.3) Discrete Randome Variables
 
+**Definition.** The probability mass function (PMF) of a discrete random variable $X$ is the function 
+
+$$p: \mathbb{R} \rightarrow [0,1]$$
+
+such that $p(x) = P[X = x]$.
+
+**Remark.** 
+
+If we set $S = X(\Omega)$, 
+$$\sum_{x \in A cap S} p(x)= P[X \in A] = P_X(A) = P_X(A \cap S) + P_X(A \cap S^c) = \sum_{x \in A cap S} P[X = x].$$
 
 ---
 
