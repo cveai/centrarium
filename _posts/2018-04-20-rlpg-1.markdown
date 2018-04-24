@@ -162,7 +162,7 @@ $${\rm Loss}(\theta):= (r_j + \gamma \max_{a'}Q_\theta(\phi_{j+1},a') - Q_\theta
 
 Behavior policy $\beta$ 에 의해 다음과 같이 에피소드가 진행되었다고 하자.
 
-$$\cdots, S_t = s, A_t = a, R_{t+1} = r', S_{t+1} = s', A_{t+1} = a', R_{t+2} = r'', S_{t+2} = s'', A_{t+2} = a'', cdots, $$
+$$\cdots, S_t = s, A_t = a, R_{t+1} = r', S_{t+1} = s', A_{t+1} = a', R_{t+2} = r'', S_{t+2} = s'', \cdots.$$
 
 
 Gradient decent 를 적용하기 직전의 파라미터 값을 $\theta = \theta_0$ 라고 하면,
