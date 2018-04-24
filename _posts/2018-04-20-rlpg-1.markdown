@@ -160,7 +160,7 @@ $${\rm Loss}(\theta):= (r_j + \gamma \max_{a'}Q_\theta(\phi_{j+1},a') - Q_\theta
 
 로 주어진다. 설명의 편의를 위하여 $\phi_t = s_t$ 로 단순화하하고 batch 업데이트를 이용하지 않는 것으로 가정하고 생각을 해보자.
 
-Behavior policy $\beta$ 애 의해 다음과 같이 에피소드가 진행되었다고 하자.
+Behavior policy $\beta$ 에 의해 다음과 같이 에피소드가 진행되었다고 하자.
 
 $$S_t = s, A_t = a, R_{t+1} = r', S_{t+1} = s', A_{t+1} = a', R_{t+2} = r'', S_{t+2} = s'', A_{t+2} = a''$$
 
