@@ -113,7 +113,7 @@ $$Q(S_t, A_t) \leftarrow Q(S_t, A_t) + \alpha\left(R_{t+1} + \gamma \max_{a'} Q(
 
 ---
 
-### Deep Q-learning with experience replay & "target-stable" updates [2]
+### Deep Q-learning with experience replay & "target-stable" updates
 
 **Algorithm.** [2]  
 initialize $D$ to capacity $N$  
