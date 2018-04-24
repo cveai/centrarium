@@ -113,7 +113,7 @@ $$Q(S_t, A_t) \leftarrow Q(S_t, A_t) + \alpha\left(R_{t+1} + \gamma \max_{a'} Q(
 
 ---
 
-### Deep Q-learning with experience reply & "target-stable" updates
+### Deep Q-learning with experience reply & "target-stable" updates [2]
 
 **Algorithm.**  
 initialize $D$ to capacity $N$  
@@ -176,17 +176,9 @@ $$L_t(\theta_t) = (r_t + \gamma \max_{a'}Q_{\theta_t}(s_{t+1},a') - Q_{\theta_t}
 $$L_{t+1}(\theta_{t+1}) = (r_{t+1} + \gamma \max_{a'}Q_{\theta_{t+1}}(s_{t+1},a') - Q_{\theta_{t+1}}(s_t, a_t))^2$$ 
 
 으로 temporal difference 계산을 위한 타겟을 정의하는 함수가 $Q_{\theta_t}$ 에서 $Q_{\theta_{t+1}}$ 로 바뀌어있는 상태이다.
+따라서 업데이트 스텝이 진행될 때마다 타겟이 계속 변화함을 알 수 있다.
 
-진행하면 ${\rm Loss}(\theta_0) > {\rm Loss}(\theta_1) > {\rm Loss}(\theta_2) ...$ 이런 식으로 
-$\theta$ 가 최적화되어가고 있는 것으로 볼 수 있다.
-
-Behavior policy $\beta$ 에 의해 생성된 에피소드가 다음과 같이 진행되었다고 하자.
-
-$$S_t = s, A_t = a, R_{t+1} = r', S_{t+1} = s', A_{t+1} = a', R_{t+2} = r'', S_{t+2} = s'', A_{t+2} = a''$$
-
-
-
-그럼 이번에는 제시된 것과 같이 두 개의 네트워크를 이용하여 업데이트를 하는 경우를 생각해보고 그 차이를 살펴보도록 하자.
+그럼 이번에는 논문에서 제시된 것과 같이 두 개의 네트워크를 이용하여 업데이트를 하는 경우를 생각해보고 그 차이를 살펴보도록 하자.
 
 
 ---
