@@ -158,7 +158,7 @@ $$\theta \mapsto Q(\,\cdot \, , \cdot \,; \theta) : \mathscr{S} \times \mathscr{
 
 $$L_j(\theta):= (r_j + \gamma \max_{a'}Q_\theta(\phi_{j+1},a') - Q_\theta(\phi_j, a_j))^2$$
 
-로 주어진다. 설명의 편의를 위하여 $\phi_t = s_t$ 로 단순화하하고 batch 업데이트를 이용하지 않는 것으로 가정하고 생각을 해보자.
+로 주어진다. 설명의 편의를 위하여 $\phi_t = s_t$ 로 단순화하고 batch 업데이트를 이용하지 않는 것으로 가정하고 생각을 해보자.
 
 Behavior policy $\beta$ 에 의해 다음과 같이 에피소드가 진행되었다고 하자.
 
