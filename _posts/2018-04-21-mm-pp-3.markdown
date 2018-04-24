@@ -80,10 +80,10 @@ Also write $X \sim F$ and $X \sim Q$, which may casue confusion in some situatio
 
 **Example.**
 1. $X \sim$ Bernoulli$(\alpha)$, $\alpha \in [0,1] , p(1) = \alpha, p(0) = 1- \alpha$
-2. $X \sim$ Binomial$(n,\alpha)$, $\alpha \in [0,1], p(k) = \begin{matrix}
+2. $X \sim$ Binomial$(n,\alpha)$, $\alpha \in [0,1], p(k) = \begin{rmatrix}
     n \\\
     k
-  \end{matrix}$
+  \end{rmatrix}$
 
 ---
 
