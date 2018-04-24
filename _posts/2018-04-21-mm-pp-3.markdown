@@ -75,7 +75,7 @@ If we set $S = X(\Omega)$,
 $$\sum_{x \in A \cap S} p(x)= P[X \in A] = P_X(A) = P_X(A \cap S) + P_X(A \cap S^c) = \sum_{x \in A \cap S} P[X = x].$$
 In particular, $P(\mathbb{R}) = \sum_{x \in S} p(x) = 1$.
 
-**Notation.** When we simply write $X \sim p$, we're assuming the underlying PMS $(\Omega, \mathsr{A}, P)$.
+**Notation.** When we simply write $X \sim p$, we're assuming the underlying PMS $(\Omega, \mathsrc{A}, P)$.
 
 ---
 
