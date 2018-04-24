@@ -76,6 +76,11 @@ $$\sum_{x \in A \cap S} p(x)= P[X \in A] = P_X(A) = P_X(A \cap S) + P_X(A \cap S
 In particular, $P(\mathbb{R}) = \sum_{x \in S} p(x) = 1$.
 
 **Notation.** When we simply write $X \sim p$, we're assuming the underlying PMS $(\Omega, \mathscr{A}, P)$.
+Also write $X \sim F$ and $X \sim Q$, which may casue confusion in some situations.
+
+**Example.**
+1. $X \sim$ Bernoulli$(\alpha)$, $\alpha \in [0,1] , p(1) = \alpha, p(0) = 1- \alpha$
+2. $X \sim$ Binomial$(n,\alpha)$, $\alpha \in [0,1], p(k) = \left(\begin{cases} n \\ \end{cases}\right)$
 
 ---
 
