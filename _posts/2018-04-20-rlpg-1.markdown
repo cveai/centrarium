@@ -165,12 +165,12 @@ Behavior policy $\beta$ 에 의해 다음과 같이 에피소드가 진행되었
 $$\cdots, S_t = s_t, A_t = a, R_{t+1} = r_t, S_{t+1} = s_{t+1}, A_{t+1} = a_{t+1}, R_{t+2} = r_{t+2}, S_{t+2} = s_{t+2}, \cdots.$$
 
 Timestep $t$ 에서 gradient decent 를 적용하기 직전의 파라미터 값을 $\theta = \theta_0$ 라고 하면,
-gradient descent 를 취하는 순간 loss 
+gradient descent 를 취하는 순간 $\theta = \theta_t$ 였던 파라미터는 loss 
 
 $$L_t(\theta) = (r_t + \gamma \max_{a'}Q_\theta(s_{t+1},a') - Q_\theta(s_t, a_t))^2$$ 
 
-를 줄이는 방향으로 조금 변화하여 $\theta = \theta_1$ 이 된다.
-이로 인해 높은 확률로 부등식 ${\rm Loss}(\theta_0) > {\rm Loss}(\theta_1)$ 가 성립할 것으로 기대할 수 있다.
+를 줄이는 방향으로 조금 변화하여 $\theta = \theta_{t+1}$ 이 된다.
+이로 인해 높은 확률로 부등식 $L_t(\theta_t) > L_{t+1}(\theta_{t+1})$ 이 성립할 것으로 기대할 수 있다.
 그 다음 스텝의 업데이트를 진행하면 ${\rm Loss}(\theta_0) > {\rm Loss}(\theta_1) > {\rm Loss}(\theta_2) ...$ 이런 식으로 
 $\theta$ 가 최적화되어가고 있는 것으로 볼 수 있다.
 
