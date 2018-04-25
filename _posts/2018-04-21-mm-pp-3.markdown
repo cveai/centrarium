@@ -92,6 +92,10 @@ Also write $X \sim F$ and $X \sim Q$, which may casue confusion in some situatio
 
 ---
 
+#### (PP 3.4) Random Variables with Densities
+
+---
+
 $$ $$
 
 *To be added..*
