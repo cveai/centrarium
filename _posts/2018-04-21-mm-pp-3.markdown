@@ -83,8 +83,12 @@ Also write $X \sim F$ and $X \sim Q$, which may casue confusion in some situatio
 2. $X \sim$ Binomial$(n,\alpha)$, $\alpha \in [0,1], p(k) = \left(\begin{matrix}
     n \\\
     k
-  \end{matrix}\right)\alpha^k(1-\alpha)^{n-k}$ wehre $k \in \\{1, 2, \ldots \\}$
-3. $X \sim $Geometric$(\alpha)$
+  \end{matrix}\right)\alpha^k(1-\alpha)^{n-k}$ wehre $k \in \\{0, 1, \ldots \\}$, $\left(\begin{matrix}
+    n \\\
+    k
+  \end{matrix}\right) = \frac{n!}{k!(n-k)!}$.
+3. $X \sim$ Geometric$(\alpha)$, $\alpha \in [0,1], p(k)=(1-\alpha)^{k-1}\alpha$, $k \in \\{\1, 2, \ldots\\}$.
+4. $X \sim$ Possion$(\lambda)$,  $\lambda \ge 0, p(k) = e^{-\lambda}\frac{\lambda^k}{k!}$, $k \in \\{0, 1, \ldots, \\}$
 
 ---
 
