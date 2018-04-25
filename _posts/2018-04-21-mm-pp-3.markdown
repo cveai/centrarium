@@ -83,7 +83,8 @@ Also write $X \sim F$ and $X \sim Q$, which may casue confusion in some situatio
 2. $X \sim$ Binomial$(n,\alpha)$, $\alpha \in [0,1], p(k) = \left(\begin{matrix}
     n \\\
     k
-  \end{matrix}\right)$
+  \end{matrix}\right)\alpha^k(1-\alpha)^{n-k}$ wehre $k \in \\{1, 2, \ldots \\}$
+3. $X \sim $Geometric$(\alpha)$
 
 ---
 
