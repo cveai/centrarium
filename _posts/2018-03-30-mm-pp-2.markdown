@@ -102,7 +102,8 @@ $$P(\cap_{i \in S} A_i\vert C) = \prod_{i \in S} P(A_i\vert C).$$
 
 <span style="color:orange">**3 rules: Bayes', Chain, Partition**</span>
 
-**Remark.** $P(A \cap B) = P(A \vert B)P(B)$ if $P(B) >0$
+**Remark.** <span style="color:red">$P(A \cap B) = P(A \vert B)P(B)$</span> $\,$ if $P(B) >0$.
+(In fact, the equality holds even when $P(B) = 0$!) 
 
 **Theorem (Bayes' rule)**
 
@@ -110,7 +111,7 @@ $$P(B \vert A) = \frac{P(A\vert B)P(B)}{P(A)}$$
 
 if $P(A), P(B) >0$.
 
-Plays an important role in particulat in Bayesian statistics.
+Plays an important role in particular in Bayesian statistics.
 
 **Theorem (Chain rule)** If $A_1, \ldots, A_n$ satisfy $P(A_1 \cap \cdots \cap A_n) >0$, then
 
@@ -128,7 +129,7 @@ Proof. By induction.
 
 #### (PP 2.5) Partition rule, conditional measure
 
-**Definition** A *partition* of $\Omega$ is a nonempty (finite or countable) collection $\\{B_i\\} \subset 2^\Omega$ s.t.
+**Definition** A <span style="color:red">*partition*</span> of $\Omega$ is a nonempty (finite or countable) collection $\\{B_i\\} \subset 2^\Omega$ s.t.
 1. $\cup_i B_i = \Omega$
 2. $B_i \cap B_j = \emptyset$ if $i \neq j$
 

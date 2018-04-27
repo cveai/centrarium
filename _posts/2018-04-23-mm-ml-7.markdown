@@ -73,8 +73,13 @@ $\leadsto$ analytically integrable!
 
 #### (ML 7.3) Proportionality
 
+"Using proportionality is a extraordinarily handy trick (big time-saver) when doing Bayesian inference."
 
+**Notation.** $f \propto g$ if there exists $c \neq 0$ such that $g(x) = cf(x)$ for all $x$. 
 
+**Claim.** If $f$ is a PDF and $f \propto g$ then $g$ uniquely determine $f$, and $f(x) = \frac{g(x)}{\int g(x)}dx$.
+
+Proof. $\frac{g(x)}{\int g(x)}dx = \frac{cf(x)}{\int cf(x)}dx = f(x)$.
 
 ---
 
