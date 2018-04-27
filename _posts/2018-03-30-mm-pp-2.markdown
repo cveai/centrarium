@@ -111,7 +111,7 @@ $$P(B \vert A) = \frac{P(A\vert B)P(B)}{P(A)}$$
 
 if $P(A), P(B) >0$.
 
-Plays an important role in particulat in Bayesian statistics.
+Plays an important role in particular in Bayesian statistics.
 
 **Theorem (Chain rule)** If $A_1, \ldots, A_n$ satisfy $P(A_1 \cap \cdots \cap A_n) >0$, then
 
