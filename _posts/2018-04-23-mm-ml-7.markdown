@@ -213,6 +213,10 @@ cf. Shrinkage, Stein's paradox
 
 ---
 
+(ML 11.8) Bayesian decision theory
+
+---
+
 #### (ML 12.1) Model selection - introduction and examples
 
 <span style="color:orange">**"Model" selection**</span> really means "complexity" selection!
