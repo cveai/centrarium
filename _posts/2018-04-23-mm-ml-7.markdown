@@ -96,16 +96,16 @@ Assume the data $D = (X_1, \ldots, X_n)$ are given as random variables.
 2. $\hat{\theta}_n$ emphasize (the dependence on) $n$
 
 **Example.** $X_1, \ldots, X_n \sim N(\mu, \sigma^2)$ iid  
-(Sample mean) $\,\,$  $\hat{\mu} = \bar{X} = \frac{1}{n}\sum_{i=1}^nX_i$ $\,\,$ /cf. $\sigma^2 = E((X - \mu)^2)$  
+(Sample mean) $\,\,$  $\hat{\mu} = \bar{X} = \frac{1}{n}\sum_{i=1}^nX_i$ $\,\,$ /cf. $\sigma^2 = \mathbb{E}((X - \mu)^2)$  
 ("Biased" sample variance) $\,\,$  $\hat{\sigma}^2 = \frac{1}{n}\sum_{i=1}^n(X_i -\bar{X})^2$  
 ("unbiased" sample variance) $\,\,$  $s^2 = \frac{1}{n-1}\sum_{i=1}^n(X_i -\bar{X})^2$
 
 **Definition.**
-1. The <span style="color:red">*bias*</span> of an estimator $\hat{\theta}$ is $\,$ ${\rm bias}(\hat{\theta}) = E(\hat{\theta}) - \theta$.  
+1. The <span style="color:red">*bias*</span> of an estimator $\hat{\theta}$ is $\,$ ${\rm bias}(\hat{\theta}) = \mathbb{E}(\hat{\theta}) - \theta$.  
 2. An estimator $\hat{\theta}$ is *unbiased* if $\,$ ${\rm bias}(\theta) = 0$.  
 
 **Example.**
-1. $\hat{\mu}$ is unbiased: $\mathbb{E}(\hat{\mu}) = \mathbb{E}(\frac{1}{n}\sum_{i=1}^nX_i) =\frac{1}{n}\sum E(X_i) = \frac{1}{n}\sum \mu = \mu$  
+1. $\hat{\mu}$ is unbiased: $\mathbb{E}(\hat{\mu}) = \mathbb{E}(\frac{1}{n}\sum_{i=1}^nX_i) =\frac{1}{n}\sum \mathbb{E}(X_i) = \frac{1}{n}\sum \mu = \mu$  
 2. $\hat{\sigma}^2$ is biased. (Exercise)
 3. $s^2$ is unbiased. (Exercise)
 
