@@ -228,7 +228,7 @@ r(\pi, \delta) &= \mathbb{E}(L(\theta, \delta(D))) \\
 
 **Remark**
 * GBR $\Rightarrow$ BR, but BR $\not\Rightarrow$ GBR.
-* If $r(\pi, \delta) = \infty$ for all $\dleta$, then anything is a BR,
+* If $r(\pi, \delta) = \infty$ for all $\delta$, then anything is a BR,
 but a GBR still makes sense.
 * On a set of $\pi$-measure $0$, BR is arbitrary bit GBR is still sensible.
 
