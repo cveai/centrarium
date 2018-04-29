@@ -41,7 +41,7 @@ Closely related fields:
 </figure>
 
 <figure>
-<img src="/assets/pics/mm-ic/Lempel-Ziv.png" alt="Lempel-Ziv" style="width: 80%; height: 80%">
+<img src="/assets/pics/mm-ic/lempel-ziv.png" alt="Lempel-Ziv" style="width: 80%; height: 80%">
 <figcaption>Lempel-Ziv
 </figcaption>
 </figure>
