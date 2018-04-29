@@ -222,6 +222,9 @@ r(\pi, \delta) &= \mathbb{E}(L(\theta, \delta(D))) \\
 &= \mathbb{E} (\mathbb{E}(L(\theta, \delta(D)) \vert D)) )
 \end{aligned}$$
 
+**Terminology.**
+* A *generalized Bayes rule* is a decision rule $\delta$ minimizing $\rho(\pi, \delta(D))$ for each $D$.
+
 ---
 
 #### (ML 12.1) Model selection - introduction and examples
