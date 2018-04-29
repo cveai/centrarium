@@ -29,7 +29,7 @@ Closely related fields:
 (IC 1.2) Applications of Compression codes
 
 <figure>
-<img src="/assets/pics/mm-ic/hufman.png" alt="Huffman codes" style="width: 80%; height: 80%">
+<img src="/assets/pics/mm-ic/huffman.png" alt="Huffman codes" style="width: 80%; height: 80%">
 <figcaption>Huffman codes
 </figcaption>
 </figure>
