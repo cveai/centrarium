@@ -121,8 +121,8 @@ Action $a = \delta(D)$  | Estimator/Estimate $\hat{\theta}=g(D)$ | Prediction $\
 Loss $L(s, a)$          | Loss $L(\theta, \hat{\theta})$           | Loss $L(Y, \hat{Y})$
 
 **Example. (Estimators)**  
-An estimator is a random rariable: $\hat{\mu} = \frac{1}{n} \sum_{i=1}^n X_i$  
-An estimate is a number: $\hat{\mu} = \frac{1}{n} \sum_{i=1}^n x_i = 2.3$  
+An estimator is a random rariable: $\hat{\mu} = \frac{1}{n} \sum_{i=1}^n X_i$.  
+An estimate is a number: $\hat{\mu} = \frac{1}{n} \sum_{i=1}^n x_i = 2.3$.  
 (In some situation, the procedure $g$ is refered to as an estimator!)
 
 ---
