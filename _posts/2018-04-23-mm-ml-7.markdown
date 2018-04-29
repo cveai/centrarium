@@ -89,7 +89,7 @@ Assume the data $D = (X_1, \ldots, X_n)$ are given as random variables.
 
 **Definition.** A <span style="color:red">*statistic*</span> is a random variable $S = f(D)$ that is a function of the data $D$.
 
-**Terminology.** An *estimator* is a statistic intended to approximate a parameter governing the distribution of $D$.
+**Terminology.** An <span style="color:red">*estimator*</span> is a statistic intended to approximate a parameter governing the distribution of $D$.
 
 **Notation.** 
 1. $\hat{\theta}$ denotes an estimator of a parameter $\theta$.
