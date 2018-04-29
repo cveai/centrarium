@@ -118,7 +118,7 @@ Decision rule $\delta$  | $^*$Estimator function $g$             | Prediction fu
 State $s$ (unknown)     | Parameter $\theta$ (unknown)           | Target value $Y$ (unknown)
 $^*$Data $D$ (observed) | Data $D$ (observed)                    | Point $X$ (observed)
 Action $a = \delta(D)$  | Estimator/Estimate $\hat{\theta}=g(D)$ | Prediction $\hat{Y} = f(X)$
-Loss $L(s, a)$          | Loss L(\theta, \hat{\theta})           | Loss $L(Y, \hat{Y})$
+Loss $L(s, a)$          | Loss $L(\theta, \hat{\theta})$           | Loss $L(Y, \hat{Y})$
 
 **Example**  
 Estimator is a RV: $\hat{\mu} = \frac{1}{n} \sum_{i=1}^n X_i$  
