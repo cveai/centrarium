@@ -236,8 +236,9 @@ but a GBR still makes sense.
 1. Every GBR (for a proper $\pi$) is admissible;
 2. Every admissible decision rule is a GBR for some (possibly improper) $\pi$
 
-[Complete Class Theorems for the Simplest Empirical Bayes Decision Problems](https://projecteuclid.org/euclid.aos/1176343749)
-[A Complete Class Theorem for Statistical Problems with Finite Sample Spaces](https://projecteuclid.org/euclid.aos/1176345645)
+*Check out*:  
+* [Complete Class Theorems for the Simplest Empirical Bayes Decision Problems](https://projecteuclid.org/euclid.aos/1176343749)
+* [A Complete Class Theorem for Statistical Problems with Finite Sample Spaces](https://projecteuclid.org/euclid.aos/1176345645)
 
 ---
 
