@@ -101,7 +101,7 @@ Assume the data $D = (X_1, \ldots, X_n)$ are given as random variables.
 ("unbiased" sample variance) $\,\,$  $s^2 = \frac{1}{n-1}\sum_{i=1}^n(X_i -\bar{X})^2$
 
 **Definition.**
-1. The *bias* of an estimator $\hat{\theta}$ is $\,$ ${\rm bias}(\hat{\theta}) = E(\hat{\theta}) - \theta$.  
+1. The <span style="color:red">*bias*</span> of an estimator $\hat{\theta}$ is $\,$ ${\rm bias}(\hat{\theta}) = E(\hat{\theta}) - \theta$.  
 2. An estimator $\hat{\theta}$ is *unbiased* if $\,$ ${\rm bias}(\theta) = 0$.  
 
 **Example.**
