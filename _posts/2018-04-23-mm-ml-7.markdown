@@ -129,6 +129,8 @@ An estimate is a number: $\hat{\mu} = \frac{1}{n} \sum_{i=1}^n x_i = 2.3$.
 
 #### (ML 11.3) Frequentist risk, Bayesian expected loss, and Bayes risk
 
+**Loss and Risk**
+
 Exciting session to clear up all the mud!
 
 **Data:** $\,$ $D = (X_1, \ldots, X_n)$, $D \sim p_\theta$  
