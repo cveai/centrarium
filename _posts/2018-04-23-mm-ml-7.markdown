@@ -85,27 +85,27 @@ Proof. $\frac{g(x)}{\int g(x)}dx = \frac{cf(x)}{\int cf(x)}dx = f(x)$.
 
 #### (ML 11.1) Estimators
 
-Assume the data $D = (X_1, \ldots, X_n)$ are given as RVs.
+Assume the data $D = (X_1, \ldots, X_n)$ are given as random variables.
 
-**Definition.** A *statistic* is a RV $S$ that is a function of the data $D$. (i.e. $S=f(D)$)
+**Definition.** A <span style="color:red">*statistic*</span> is a random variable $S = f(D)$ that is a function of the data $D$.
 
-**Terminology.** An *estimator* is a statistic intended to approximate a parameter governing the distribution of $D$.
+**Terminology.** An <span style="color:red">*estimator*</span> is a statistic intended to approximate a parameter governing the distribution of $D$.
 
 **Notation.** 
 1. $\hat{\theta}$ denotes an estimator of a parameter $\theta$.
 2. $\hat{\theta}_n$ emphasize (the dependence on) $n$
 
 **Example.** $X_1, \ldots, X_n \sim N(\mu, \sigma^2)$ iid  
-(Sample mean) $\,\,$  $\hat{\mu} = \bar{X} = \frac{1}{n}\sum_{i=1}^nX_i$ $\,\,$ /cf. $\sigma^2 = E((X - \mu)^2)$  
+(Sample mean) $\,\,$  $\hat{\mu} = \bar{X} = \frac{1}{n}\sum_{i=1}^nX_i$ $\,\,$ /cf. $\sigma^2 = \mathbb{E}((X - \mu)^2)$  
 ("Biased" sample variance) $\,\,$  $\hat{\sigma}^2 = \frac{1}{n}\sum_{i=1}^n(X_i -\bar{X})^2$  
 ("unbiased" sample variance) $\,\,$  $s^2 = \frac{1}{n-1}\sum_{i=1}^n(X_i -\bar{X})^2$
 
 **Definition.**
-1. The *bias* of an estimator $\hat{\theta}$ is $\,$ ${\rm bias}(\hat{\theta}) = E(\hat{\theta}) - \theta$.  
+1. The <span style="color:red">*bias*</span> of an estimator $\hat{\theta}$ is $\,$ ${\rm bias}(\hat{\theta}) = \mathbb{E}(\hat{\theta}) - \theta$.  
 2. An estimator $\hat{\theta}$ is *unbiased* if $\,$ ${\rm bias}(\theta) = 0$.  
 
 **Example.**
-1. $\hat{\mu}$ is unbiased: $E(\hat{\mu}) = E(\frac{1}{n}\sum_{i=1}^nX_i) =\frac{1}{n}\sum E(X_i) = \frac{1}{n}\sum \mu = \mu$  
+1. $\hat{\mu}$ is unbiased: $\mathbb{E}(\hat{\mu}) = \mathbb{E}(\frac{1}{n}\sum_{i=1}^nX_i) =\frac{1}{n}\sum \mathbb{E}(X_i) = \frac{1}{n}\sum \mu = \mu$  
 2. $\hat{\sigma}^2$ is biased. (Exercise)
 3. $s^2$ is unbiased. (Exercise)
 
@@ -118,24 +118,24 @@ Decision rule $\delta$  | $^*$Estimator function $g$             | Prediction fu
 State $s$ (unknown)     | Parameter $\theta$ (unknown)           | Target value $Y$ (unknown)
 $^*$Data $D$ (observed) | Data $D$ (observed)                    | Point $X$ (observed)
 Action $a = \delta(D)$  | Estimator/Estimate $\hat{\theta}=g(D)$ | Prediction $\hat{Y} = f(X)$
-Loss $L(s, a)$          | Loss L(\theta, \hat{\theta})           | Loss $L(Y, \hat{Y})$
+Loss $L(s, a)$          | Loss $L(\theta, \hat{\theta})$           | Loss $L(Y, \hat{Y})$
 
-**Example**  
-Estimator is a RV: $\hat{\mu} = \frac{1}{n} \sum_{i=1}^n X_i$  
-Estimate is a number: $\hat{\mu} = \frac{1}{n} \sum_{i=1}^n x_i = 2.3$  
-SIn some situation the procedure $g$ is refered to as an estimator!
+**Example. (Estimators)**  
+An estimator is a random rariable: $\hat{\mu} = \frac{1}{n} \sum_{i=1}^n X_i$.  
+An estimate is a number: $\hat{\mu} = \frac{1}{n} \sum_{i=1}^n x_i = 2.3$.  
+(In some situation, the procedure $g$ is refered to as an estimator!)
 
 ---
 
 #### (ML 11.3) Frequentist risk, Bayesian expected loss, and Bayes risk
 
-Exciting session to clear up all the mud!
+**Loss and Risk.** Exciting session to clear up all the mud!  
 
 **Data:** $\,$ $D = (X_1, \ldots, X_n)$, $D \sim p_\theta$  
-**Parameter:** $\,$ $\theta \sim \pi$ $\,$ (the parameter $\theta$ is a RV)  
+**Parameter:** $\,$ $\theta \sim \pi$ $\,$, i.e., the parameter $\theta$ is a random variable.
 **Estimator:** $\,$ $\hat{\theta} = f(D) = \delta(D)$  
 
-Everything begins with : Loss $=L(\theta, f(D))$.  
+Everything begins with : $\,\,\,\,\,$ Loss $=L(\theta, f(D))$.  
 We wanna minimize the loss but it's an RV!  
 Two option to deal with it:  
 1. Averaging over $\theta$ given the data : $E(L(\theta, f(D)) \vert D) =:\rho(\pi, f(D))$ <span style="color:blue">Bayesian expected loss</span> 
@@ -210,6 +210,35 @@ $D = X
 "Silly" estimate of $\theta$: $\delta_0(D) = X \leadsto$ bias$^2 = \theta^2$, var$ = 0$, MSE$ = \theta^2$
 
 cf. Shrinkage, Stein's paradox
+
+---
+
+#### (ML 11.8) Bayesian decision theory
+
+$$\rho(\pi, \delta(D)) = \mathbb{E}(L(\theta, \delta(D)) \vert D)$$  
+
+$$\begin{aligned}
+r(\pi, \delta) &= \mathbb{E}(L(\theta, \delta(D))) \\
+&= \mathbb{E} (\mathbb{E}(L(\theta, \delta(D)) \vert D)) )
+\end{aligned}$$
+
+**Terminology.(Informal)**
+* A *generalized Bayes rule* is a decision rule $\delta$ that minimizes $\rho(\pi, \delta(D))$ for each $D$.
+* A *Bayes rule* minimizes is a decision rule $\delta$ that minimizes $r(\pi, \delta)$.
+
+**Remark**
+* GBR $\Rightarrow$ BR, but BR $\not\Rightarrow$ GBR.
+* If $r(\pi, \delta) = \infty$ for all $\delta$, then anything is a BR,
+but a GBR still makes sense.
+* On a set of $\pi$-measure $0$, BR is arbitrary bit GBR is still sensible.
+
+**Complete Class Theorems.** Under mild conditions:
+1. Every GBR (for a proper $\pi$) is admissible;
+2. Every admissible decision rule is a GBR for some (possibly improper) $\pi$
+
+*Check out*:  
+* [Complete Class Theorems for the Simplest Empirical Bayes Decision Problems](https://projecteuclid.org/euclid.aos/1176343749)
+* [A Complete Class Theorem for Statistical Problems with Finite Sample Spaces](https://projecteuclid.org/euclid.aos/1176345645)
 
 ---
 
