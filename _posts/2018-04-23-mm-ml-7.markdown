@@ -85,9 +85,9 @@ Proof. $\frac{g(x)}{\int g(x)}dx = \frac{cf(x)}{\int cf(x)}dx = f(x)$.
 
 #### (ML 11.1) Estimators
 
-Assume the data $D = (X_1, \ldots, X_n)$ are given as RVs.
+Assume the data $D = (X_1, \ldots, X_n)$ are given as random variables.
 
-**Definition.** A *statistic* is a RV $S$ that is a function of the data $D$. (i.e. $S=f(D)$)
+**Definition.** A <span style="color:red">*statistic*</span> is a RV $S$ that is a function of the data $D$. (i.e. $S=f(D)$)
 
 **Terminology.** An *estimator* is a statistic intended to approximate a parameter governing the distribution of $D$.
 
