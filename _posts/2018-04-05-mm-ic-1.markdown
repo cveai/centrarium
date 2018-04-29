@@ -23,6 +23,30 @@ Closely related fields:
 * (also) Portfolio theorry
 * (also) Gambling
 
+
+---
+
+(IC 1.2) Applications of Compression codes
+
+<figure>
+<img src="/assets/pics/mm-ic/hufman.png" alt="Huffman codes" style="width: 80%; height: 80%">
+<figcaption>Huffman codes
+</figcaption>
+</figure>
+
+<figure>
+<img src="/assets/pics/mm-ic/arithmetic.png" alt="Arithmetic coding" style="width: 80%; height: 80%">
+<figcaption>Arithmetic coding
+</figcaption>
+</figure>
+
+<figure>
+<img src="/assets/pics/mm-ic/Lempel-Ziv.png" alt="Lempel-Ziv" style="width: 80%; height: 80%">
+<figcaption>Lempel-Ziv
+</figcaption>
+</figure>
+
+
 ---
 
 $$ $$
