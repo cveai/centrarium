@@ -53,24 +53,6 @@ Thus, $Q = P_X$.
 
 #### (PP 3.2) Types of Random Variables
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Definition.** A RV $X$ is *discrete* if $X(\Omega) = \\{ X(\omega) : \omega \in \Omega\\}$ is countable.  
-(i.e. $X(\Omega) = \\{x_1, x_2, \ldots \\}$)
-
-**Definition.** A RV *$X$ has density $f$* if $F(x) = \int_{-\infty}^x f(\mu)d\mu$ for all $x \in \mathbb{R}$  
-(for some integrable $f: \mathbb{R} \rightarrow [0, \infty]$).
-
----
-
-#### (PP 3.3) Discrete Randome Variables
-
-
----
-
-||||||| merged common ancestors
-=======
 **Definition.** A RV $X$ is *discrete* if $X(\Omega) = \\{ X(\omega) : \omega \in \Omega\\}$ is countable.  
 (i.e. $X(\Omega) = \\{x_1, x_2, \ldots \\}$)
 
@@ -114,104 +96,9 @@ Also write $X \sim F$ and $X \sim Q$, which may casue confusion in some situatio
 
 ---
 
->>>>>>> notes
-||||||| merged common ancestors
-=======
-**Definition.** A RV $X$ is *discrete* if $X(\Omega) = \\{ X(\omega) : \omega \in \Omega\\}$ is countable.  
-(i.e. $X(\Omega) = \\{x_1, x_2, \ldots \\}$)
-
-**Definition.** A RV *$X$ has density $f$* if $F(x) = \int_{-\infty}^x f(\mu)d\mu$ for all $x \in \mathbb{R}$  
-(for some integrable $f: \mathbb{R} \rightarrow [0, \infty]$).
-
----
-
-#### (PP 3.3) Discrete Randome Variables
-
-**Definition.** The probability mass function (PMF) of a discrete random variable $X$ is the function 
-
-$$p: \mathbb{R} \rightarrow [0,1]$$
-
-such that $p(x) = P[X = x]$.
-
-**Remark.** 
-
-If we set $S = X(\Omega)$, 
-$$\sum_{x \in A \cap S} p(x)= P[X \in A] = P_X(A) = P_X(A \cap S) + P_X(A \cap S^c) = \sum_{x \in A \cap S} P[X = x].$$
-In particular, $P(\mathbb{R}) = \sum_{x \in S} p(x) = 1$.
-
-**Notation.** When we simply write $X \sim p$, we're assuming the underlying PMS $(\Omega, \mathscr{A}, P)$.
-Also write $X \sim F$ and $X \sim Q$, which may casue confusion in some situations.
-
-**Example.**
-1. $X \sim$ Bernoulli$(\alpha)$, $\alpha \in [0,1] , p(1) = \alpha, p(0) = 1- \alpha$
-2. $X \sim$ Binomial$(n,\alpha)$, $\alpha \in [0,1], p(k) = \left(\begin{matrix}
-    n \\\
-    k
-  \end{matrix}\right)\alpha^k(1-\alpha)^{n-k}$ where $k \in \\{0, 1, \ldots \\}$, $\left(\begin{matrix}
-    n \\\
-    k
-  \end{matrix}\right) = \frac{n!}{k!(n-k)!}$.
-3. $X \sim$ Geometric$(\alpha)$, $\alpha \in [0,1], p(k)=(1-\alpha)^{k-1}\alpha$, $k \in \\{1, 2, \ldots\\}$.
-4. $X \sim$ Possion$(\lambda)$,  $\lambda \ge 0, p(k) = e^{-\lambda}\frac{\lambda^k}{k!}$, $k \in \\{0, 1, \ldots, \\}$
-
----
-
-#### (PP 3.4) Random Variables with Densities
-
----
-
->>>>>>> notes
-||||||| merged common ancestors
-=======
-**Definition.** A RV $X$ is *discrete* if $X(\Omega) = \\{ X(\omega) : \omega \in \Omega\\}$ is countable.  
-(i.e. $X(\Omega) = \\{x_1, x_2, \ldots \\}$)
-
-**Definition.** A RV *$X$ has density $f$* if $F(x) = \int_{-\infty}^x f(\mu)d\mu$ for all $x \in \mathbb{R}$  
-(for some integrable $f: \mathbb{R} \rightarrow [0, \infty]$).
-
----
-
-#### (PP 3.3) Discrete Randome Variables
-
-**Definition.** The probability mass function (PMF) of a discrete random variable $X$ is the function 
-
-$$p: \mathbb{R} \rightarrow [0,1]$$
-
-such that $p(x) = P[X = x]$.
-
-**Remark.** 
-
-If we set $S = X(\Omega)$, 
-$$\sum_{x \in A \cap S} p(x)= P[X \in A] = P_X(A) = P_X(A \cap S) + P_X(A \cap S^c) = \sum_{x \in A \cap S} P[X = x].$$
-In particular, $P(\mathbb{R}) = \sum_{x \in S} p(x) = 1$.
-
-**Notation.** When we simply write $X \sim p$, we're assuming the underlying PMS $(\Omega, \mathscr{A}, P)$.
-Also write $X \sim F$ and $X \sim Q$, which may casue confusion in some situations.
-
-**Example.**
-1. $X \sim$ Bernoulli$(\alpha)$, $\alpha \in [0,1] , p(1) = \alpha, p(0) = 1- \alpha$
-2. $X \sim$ Binomial$(n,\alpha)$, $\alpha \in [0,1], p(k) = \left(\begin{matrix}
-    n \\\
-    k
-  \end{matrix}\right)\alpha^k(1-\alpha)^{n-k}$ where $k \in \\{0, 1, \ldots \\}$, $\left(\begin{matrix}
-    n \\\
-    k
-  \end{matrix}\right) = \frac{n!}{k!(n-k)!}$.
-3. $X \sim$ Geometric$(\alpha)$, $\alpha \in [0,1], p(k)=(1-\alpha)^{k-1}\alpha$, $k \in \\{1, 2, \ldots\\}$.
-4. $X \sim$ Possion$(\lambda)$,  $\lambda \ge 0, p(k) = e^{-\lambda}\frac{\lambda^k}{k!}$, $k \in \\{0, 1, \ldots, \\}$
-
----
-
-#### (PP 3.4) Random Variables with Densities
-
----
-
->>>>>>> notes
 $$ $$
 
 *To be added..*
 
 ---
 
-
->>>>>>> notes
