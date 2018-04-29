@@ -213,7 +213,14 @@ cf. Shrinkage, Stein's paradox
 
 ---
 
-(ML 11.8) Bayesian decision theory
+#### (ML 11.8) Bayesian decision theory
+
+$\rho(\pi, \dleta(D)) = \mathbb{E}(L(\theta, \delta(D)) \vert D)$  
+
+$$\begin{aligned}
+r(\pi, \delta) &= \mathbb{E}(L(\theta, \delta(D))) \\
+&= \mathbb{E} (\mathbb{E}(L(\theta, \delta(D)) \vert D)) )
+\end{aligned}$$
 
 ---
 
