@@ -225,6 +225,10 @@ r(\pi, \delta) &= \mathbb{E}(L(\theta, \delta(D))) \\
 **Terminology.(Informal)**
 * A *generalized Bayes rule* is a decision rule $\delta$ minimizing $\rho(\pi, \delta(D))$ for each $D$.
 
+**Complete Class Theorems.** Under mild conditions:
+1. Every GBR (for a proper $\pi$) is admissible;
+2. Every admissible decision rule is a GBR for some (possibly improper) $\pi$
+
 ---
 
 #### (ML 12.1) Model selection - introduction and examples
