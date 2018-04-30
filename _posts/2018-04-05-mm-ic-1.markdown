@@ -54,6 +54,29 @@ Closely related fields:
 
 "Channel coding"
 
+<figure>
+<img src="/assets/pics/mm-ic/hamming.png" alt="Hamming codes" style="width: 80%; height: 80%">
+<figcaption>Hamming codes
+</figcaption>
+</figure>
+
+<figure>
+<img src="/assets/pics/mm-ic/reed-solomon.png" alt="Reed-Solomon codes" style="width: 80%; height: 80%">
+<figcaption>Reed-Solomon codes
+</figcaption>
+</figure>
+
+<figure>
+<img src="/assets/pics/mm-ic/turbo.png" alt="Turbo codes" style="width: 80%; height: 80%">
+<figcaption>Turbo codes
+</figcaption>
+</figure>
+
+<figure>
+<img src="/assets/pics/mm-ic/gallager.png" alt="Gallager (LDPC) codes" style="width: 80%; height: 80%">
+<figcaption>Gallager (LDPC) codes
+</figcaption>
+</figure>
 
 
 ---
