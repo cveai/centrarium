@@ -74,7 +74,7 @@ Closely related fields:
 
 <figure>
 <img src="/assets/pics/mm-ic/gallager.png" alt="Gallager (LDPC) codes" style="width: 80%; height: 80%">
-<figcaption>Gallager (LDPC) codes
+<figcaption>**Gallager (LDPC) codes**
 </figcaption>
 </figure>
 
