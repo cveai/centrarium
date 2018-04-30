@@ -78,6 +78,9 @@ Closely related fields:
 </figcaption>
 </figure>
 
+---
+
+#### (IC 1.4) Source-channel separation
 
 ---
 
