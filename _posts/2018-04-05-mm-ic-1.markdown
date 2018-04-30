@@ -26,7 +26,9 @@ Closely related fields:
 
 ---
 
-(IC 1.2) Applications of Compression codes
+#### (IC 1.2) Applications of Compression codes
+
+"Source coding"
 
 "Source coding"
 
@@ -50,7 +52,7 @@ Closely related fields:
 
 ---
 
-(IC 1.3) Applications of Error-correcting codes 
+#### (IC 1.3) Applications of Error-correcting codes 
 
 "Channel coding"
 
@@ -81,6 +83,7 @@ Closely related fields:
 ---
 
 #### (IC 1.4) Source-channel separation
+
 
 ---
 
