@@ -28,6 +28,8 @@ Closely related fields:
 
 (IC 1.2) Applications of Compression codes
 
+"Source coding"
+
 <figure>
 <img src="/assets/pics/mm-ic/huffman.png" alt="Huffman codes" style="width: 80%; height: 80%">
 <figcaption>Huffman codes
@@ -48,7 +50,37 @@ Closely related fields:
 
 ---
 
-(IC 1.3) Applications of Error-correcting codes
+(IC 1.3) Applications of Error-correcting codes 
+
+"Channel coding"
+
+<figure>
+<img src="/assets/pics/mm-ic/hamming.png" alt="Hamming codes" style="width: 80%; height: 80%">
+<figcaption>Hamming codes
+</figcaption>
+</figure>
+
+<figure>
+<img src="/assets/pics/mm-ic/reed-solomon.png" alt="Reed-Solomon codes" style="width: 80%; height: 80%">
+<figcaption>Reed-Solomon codes
+</figcaption>
+</figure>
+
+<figure>
+<img src="/assets/pics/mm-ic/turbo.png" alt="Turbo codes" style="width: 80%; height: 80%">
+<figcaption>Turbo codes
+</figcaption>
+</figure>
+
+<figure>
+<img src="/assets/pics/mm-ic/gallager.png" alt="Gallager (LDPC) codes" style="width: 80%; height: 80%">
+<figcaption>Gallager (LDPC) codes
+</figcaption>
+</figure>
+
+---
+
+#### (IC 1.4) Source-channel separation
 
 ---
 
