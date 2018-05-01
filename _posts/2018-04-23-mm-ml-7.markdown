@@ -85,8 +85,12 @@ Proof. $\frac{g(x)}{\int g(x)}dx = \frac{cf(x)}{\int cf(x)}dx = f(x)$.
 
 #### (ML 7.4) Conjugate priors
 
-**Definition.** A family $\mathscr{F}$ of (prior) distributions $p(\theta)$ is conjugate to a liklihood $p(D\vert \theta)$
-if the posterior $p(\theta \vert D)$ is in $\macthscr{F}$.
+**Definition.** A family $\mathscr{F}$ of (prior) distributions $p(\theta)$ is 
+<span style="color:red">*conjugate*</span> to a likelihood $p(D\vert \theta)$
+if the posterior $p(\theta \vert D)$ is in $\mathscr{F}$.
+
+**Examples.**
+* 
 
 ---
 
