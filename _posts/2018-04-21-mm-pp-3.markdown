@@ -121,12 +121,14 @@ $p_X(x) = p(x)$
 
 $$P[X \in A] = \sum_{x\in \mathscr{x}, x \in A} p(x)$$
 
-where $\mathscr{X = X(\Omega)$.
+where $\mathscr{X} = X(\Omega)$.
 
 **Reamrk.** $g(X)$ is a random vector if $X \in \mathbb{R}^d$ is a random variable and
 $g: \mathbb{R}^d \rightarrow \mathbb{R}^k$ is measurable.
 
 **Proposition.**
+
+$$\mathbb{E(g(X))$$
 
 ---
 
