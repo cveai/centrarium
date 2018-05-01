@@ -96,6 +96,82 @@ Also write $X \sim F$ and $X \sim Q$, which may casue confusion in some situatio
 
 ---
 
+#### (PP 5.1) Multiple discrete random variables
+
+**Definition.** Given $(\Omega, \mathscr{A}, P)$, a <span style="color:red">*random vector*</span> is a measurable function 
+
+$$X : \Omega \rightarrow \mathbb{R}^d$$
+
+where $d \in \mathbb{N}$.
+
+**Definition.** A *discrete random vector* $X \in \mathbb{R}^d$ is s.t. $X(\Omega)$ is countable.
+
+**Definition.** The (joint) PMF (or joint distribution) of a discrete random vector $X \in \mathbb{R}^d$ is the function
+
+$$p:\mathbb{R}^d \rightarrow [0,1]$$ 
+
+such that $p(x)= P[X=x]$ for all $x \in \mathbb{R}^d$. 
+
+**Notation.** $X = (X_1, \ldots, X_d)$, $x = (x_1, \ldots, x_d)$  
+($X = x$ means $X_i = x_i$ for all $i$)  
+$p(x) = p(x_1, \ldots, x_d)$  
+$p_X(x) = p(x)$  
+
+**Remark.** 
+
+$$P[X \in A] = \sum_{x\in \mathscr{X}, x \in A} p(x)$$
+
+where $\mathscr{X} = X(\Omega)$.
+
+**Reamrk.** $g(X)$ is a random vector if $X \in \mathbb{R}^d$ is a random variable and
+$g: \mathbb{R}^d \rightarrow \mathbb{R}^k$ is measurable.
+
+**Proposition.**
+
+$$\mathbb{E}(g(X)) = \sum_{x\in \mathscr{X}} g(x)p(x)$$
+
+for any measurable $g: \mathbb{R}^d \rightarrow \mathbb{R}$ such that this sum is well-defined.
+
+---
+
+#### (PP 5.2) Marginals and conditionals
+
+Deal with 2-dimensional case only.
+
+Fix $(X, Y) \in \mathbb{R}^2$ with $p(x, y) = P[X=x, Y=y]$.
+
+**Definition.** The *marginal PMF* of $X$ is $p_X(x) = P[X = x]$.
+
+**Proposition.**
+
+$$p_X(x) = \sum_{y \in Y} p(x, y)$$
+
+Proof. $p_X(x) = P[X=x] = \sum_{y \in \mathscr{Y}} P[X=x, Y=y] = \sum_{y \in \mathscr{Y}}p(x,y)$  
+noting $\\{\omega \in \Omega : X(\omega) = x\\} 
+= \cup_{y \in \mathscr{Y}}\\{\omega \in \Omega : X(\omega) = x, Y(\omega) = y\\}$ 
+
+**Notation.** $p(x) = p_X(x)$, $p(y) = p_Y(y)$  
+
+**Definition.** The *conditional PMF* of $X$ given $Y=y$ is 
+
+$$p(x\vert y) = P[X=x \vert Y = y]$$
+
+(when $P[Y=y] > 0$.)
+
+**Remark.** 
+
+$$p(x\vert y) = \frac{P[X=x, Y=y]}{P[Y=y]} = frac{p(x, y)}{p(y)}$$
+
+**Definition.** The conditional expectation of $X$ given $Y=y$ (when $p(y) > 0$) is 
+
+$$\mathbb{E}(X\vert Y=y) = \sum_{x \in \mathscr{X}} xp(x \vert y)$$
+
+when this sum is well-defined.
+
+**Remark.** $\mathbb{E}(X\vert Y)$ is a random variable that depends on the random variable $Y$.
+
+---
+
 $$ $$
 
 *To be added..*

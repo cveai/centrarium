@@ -107,7 +107,8 @@ Generative process:
 
 #### (ML 1.6) $k$-Nearest Neighbor (kNN) classification algorithm 
 
-Given (a training) data (set) $D = \\{(x_1, y_1), \ldots, (x_n, y_n)\\}$, $x_i \in \mathbb{R}, y_i \in \\{0, 1\\}$ and given a new data point.
+Given data $D = ((x_1, y_1), \ldots, (x_n, y_n))$, $x_i \in \mathbb{R}, y_i \in \\{0, 1\\}$.  
+Given a new data point $x$.
 
 Classify by deciding on what is $y$ corresponding to $x$ according to the majority vote from the $k$-nearest points in the training data.
 
@@ -121,15 +122,17 @@ Classify by deciding on what is $y$ corresponding to $x$ according to the majori
 
 **Probabilistic formulation** (<span style="color:red">Discrimitive model!</span>) Fix $D$, $x$, $k$.
 
-Find a RV $Y \sim p$ where $p(y) =$ #$\\{x_i \in N_k(x) : y_i = y \\}/k$ 
+Find a random variable $Y \sim p$ where $p(y) =$ #$\\{x_i \in N_k(x) : y_i = y \\}/k$ 
 
-Sometimes people write $p(y\vert x, D)$ for $p(y)$.
+Sometimes people write $p(y\vert x, D)$ for $p(y)$, even though it's not really a conditional probability.
 
 The estimate (or prediction) is given by 
 
 $$\hat{y} = \arg\max_y p(y\vert x, D).$$
 
-How does one choose $k$? $\rightarrow$ Important problem of choosing parameters. (Bias-variance trade-off)
+How does one choose $k$?   
+$\leadsto$  
+Important problem of choosing parameters. (Cross-validation / Bias-variance trade-off)
 
 ---
 
