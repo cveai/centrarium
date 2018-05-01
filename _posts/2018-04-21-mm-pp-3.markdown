@@ -98,7 +98,7 @@ Also write $X \sim F$ and $X \sim Q$, which may casue confusion in some situatio
 
 #### (PP 5.1) Multiple discrete random variables
 
-**Definition.** Given $(\Omega, \mathscr{A, P)$, a <span style="color:red">*random vector*</span> is a measurable function 
+**Definition.** Given $(\Omega, \mathscr{A}, P)$, a <span style="color:red">*random vector*</span> is a measurable function 
 
 $$X : \Omega \rightarrow \mathbb{R}^d$$
 
