@@ -156,6 +156,13 @@ noting $\\{\omega \in \Omega : X(\omega) = x\\}
 
 $$p(x\vert y) = P[X=x \vert Y = y]$$
 
+(when $P[Y=y] > 0$.)
+
+**Remark.** 
+
+$$p(x\vert y) = $$
+
+
 
 ---
 
