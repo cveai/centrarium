@@ -104,6 +104,13 @@ $$X : \Omega \rightarrow \mathbb{R}^d$$
 
 where $d \in \mathbb{N}$.
 
+**Definition.** A *discrete random vector* $X \in \mathbb{R}^d$ is s.t. $X(\Omega)$ is countable.
+
+**Definition.** The (joint) PMF (or joint distribution) of a discrete random vector $X \in \mathbb{R}^d$ is the function
+
+$$p:\mathbb{R}^d \rightarrow [0,1]$$ 
+
+s.t. $p(x)= P[X=x]$ for all $x \in \mathbb{R}^d$. 
 
 ---
 
