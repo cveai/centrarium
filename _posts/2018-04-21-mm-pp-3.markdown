@@ -164,7 +164,7 @@ $$p(x\vert y) = \frac{P[X=x, Y=y]}{P[Y=y]} = frac{p(x, y)}{p(y)}$$
 
 **Definition.** The conditional expectation of $X$ given $Y=y$ (when $p(y) > 0$) is 
 
-$$\mathbb{E}(X\vert Y=y) = \sum_{x \in \mathscr{X}}} xp(x \vert y)$$
+$$\mathbb{E}(X\vert Y=y) = \sum_{x \in \mathscr{X}} xp(x \vert y)$$
 
 ---
 
