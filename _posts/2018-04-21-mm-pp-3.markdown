@@ -152,7 +152,9 @@ noting $\\{\omega \in \Omega : X(\omega) = x\\}
 
 **Notation.** $p(x) = p_X(x)$, $p(y) = p_Y(y)$  
 
-**Definition.** The *conditional PMF* of $X$ given $Y=y$ 
+**Definition.** The *conditional PMF* of $X$ given $Y=y$ is 
+
+$$p(x\vert y) = P[X=x \vert Y = y]$$
 
 
 ---
