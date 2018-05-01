@@ -168,7 +168,7 @@ $$\mathbb{E}(X\vert Y=y) = \sum_{x \in \mathscr{X}} xp(x \vert y)$$
 
 when this sum is well-defined.
 
-**Remark.** $\mathbb{E}(X\vert Y)$ is a random variable.
+**Remark.** $\mathbb{E}(X\vert Y)$ is a random variable that depends on the random variable $Y$.
 
 ---
 
