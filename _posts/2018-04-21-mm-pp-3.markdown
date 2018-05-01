@@ -119,7 +119,7 @@ $p_X(x) = p(x)$
 
 **Remark.** 
 
-$$P[X \in A] = \sum_{x\in \mathscr{x}, x \in A} p(x)$$
+$$P[X \in A] = \sum_{x\in \mathscr{X}, x \in A} p(x)$$
 
 where $\mathscr{X} = X(\Omega)$.
 
@@ -128,7 +128,9 @@ $g: \mathbb{R}^d \rightarrow \mathbb{R}^k$ is measurable.
 
 **Proposition.**
 
-$$\mathbb{E(g(X))$$
+$$\mathbb{E}(g(X)) = \sum_{x\in \mathscr{X}} g(x)p(x)$$
+
+for any measurable $g: \mathbb{R}^d \rightarrow \mathbb{R}$ such that this sum is well-defined.
 
 ---
 
