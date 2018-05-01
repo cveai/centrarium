@@ -110,7 +110,23 @@ where $d \in \mathbb{N}$.
 
 $$p:\mathbb{R}^d \rightarrow [0,1]$$ 
 
-s.t. $p(x)= P[X=x]$ for all $x \in \mathbb{R}^d$. 
+such that $p(x)= P[X=x]$ for all $x \in \mathbb{R}^d$. 
+
+**Notation.** $X = (X_1, \ldots, X_d)$, $x = (x_1, \ldots, x_d)$  
+($X = x$ means $X_i = x_i$ for all $i$)  
+$p(x) = p(x_1, \ldots, x_d)  
+$p_X(x) = p(x)$  
+
+**Remark.** 
+
+$$P[X \in A] = \sum_{x\in \mathscr{x}, x \in A} p(x)$$
+
+where $\mathscr{X = X(\Omega)$.
+
+**Reamrk.** $g(X)$ is a random vector if $X \in \mathbb{R}^d$ is a random variable and
+$g: \mathbb{R}^d \rightarrow \mathbb{R}^k$ is measurable.
+
+**Proposition.**
 
 ---
 
