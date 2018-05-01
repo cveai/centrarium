@@ -136,6 +136,23 @@ for any measurable $g: \mathbb{R}^d \rightarrow \mathbb{R}$ such that this sum i
 
 #### (PP 5.2) Marginals and conditionals
 
+Deal with 2-dimensional case only.
+
+Fix $(X, Y) \in \mathbb{R}^2$ with $p(x, y) = P[X=x, Y=y]$.
+
+**Definition.** The *marginal PMF* of $X$ is $p_X(x) = P[X = x]$.
+
+**Proposition.**
+
+$$p_X(x) = \sum_{y \in Y} p(x, y)$$
+
+Proof. $p_X(x) = P[X=x] = \sum_{y \in \mathscr{Y}} P[X=x, Y=y] = \sum_{y \in \mathscr{Y}}p(x,y)$  
+noting $\\{\omega \in \Omega : X(\omega) = x\\} 
+= \cup_{y \in \mathscr{Y}}\\{\omega \in \Omega : X(\omega) = x, Y(\omega) = y\\}$ 
+
+**Notation.** $p(x) = p_X(x)$, $p(y) = p_Y(y)$  
+
+**Definition.** The *conditional PMF* of $X$ given $Y=y$ 
 
 
 ---
