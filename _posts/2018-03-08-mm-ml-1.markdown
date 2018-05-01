@@ -107,7 +107,7 @@ Generative process:
 
 #### (ML 1.6) $k$-Nearest Neighbor (kNN) classification algorithm 
 
-Given (a training) data (set) $D = \\{(x_1, y_1), \ldots, (x_n, y_n)\\}$, $x_i \in \mathbb{R}, y_i \in \\{0, 1\\}$ and given a new data point.
+Given data $D = \\{(x_1, y_1), \ldots, (x_n, y_n)\\}$, $x_i \in \mathbb{R}, y_i \in \\{0, 1\\}$ and given a new data point.
 
 Classify by deciding on what is $y$ corresponding to $x$ according to the majority vote from the $k$-nearest points in the training data.
 
