@@ -90,7 +90,9 @@ Proof. $\frac{g(x)}{\int g(x)}dx = \frac{cf(x)}{\int cf(x)}dx = f(x)$.
 if the posterior $p(\theta \vert D)$ is in $\mathscr{F}$.
 
 **Examples.**
-* 
+* Beta is conjugate to Bernoulli.
+* Gaussian is conjugate to Gaussian (mean).
+* Any exponential family has a conjugate prior.
 
 ---
 
