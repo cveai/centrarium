@@ -130,7 +130,9 @@ The estimate (or prediction) is given by
 
 $$\hat{y} = \arg\max_y p(y\vert x, D).$$
 
-How does one choose $k$? $\leadsto$ important problem of choosing parameters. (Bias-variance trade-off)
+How does one choose $k$?   
+$\leadsto$  
+Important problem of choosing parameters. (Bias-variance trade-off)
 
 ---
 
