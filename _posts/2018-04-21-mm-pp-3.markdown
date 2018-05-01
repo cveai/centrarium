@@ -134,6 +134,10 @@ for any measurable $g: \mathbb{R}^d \rightarrow \mathbb{R}$ such that this sum i
 
 ---
 
+(PP 5.2) Marginals and conditionals
+
+---
+
 $$ $$
 
 *To be added..*
