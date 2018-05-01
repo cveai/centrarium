@@ -166,6 +166,10 @@ $$p(x\vert y) = \frac{P[X=x, Y=y]}{P[Y=y]} = frac{p(x, y)}{p(y)}$$
 
 $$\mathbb{E}(X\vert Y=y) = \sum_{x \in \mathscr{X}} xp(x \vert y)$$
 
+when this sum is well-defined.
+
+**Remark.** $\mathbb{E}(X\vert Y)$ is a random variable.
+
 ---
 
 $$ $$
