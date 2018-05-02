@@ -96,6 +96,12 @@ if the posterior $p(\theta \vert D)$ is in $\mathscr{F}$.
 
 ---
 
+#### (ML 7.5) (ML 7.6) Beta-Bernoulli model (part 1)
+
+
+
+---
+
 #### (ML 11.1) Estimators
 
 Assume the data $D = (X_1, \ldots, X_n)$ are given as random variables.
