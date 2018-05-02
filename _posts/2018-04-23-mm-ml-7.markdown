@@ -96,6 +96,14 @@ if the posterior $p(\theta \vert D)$ is in $\mathscr{F}$.
 
 ---
 
+#### (ML 7.5) (ML 7.6) Beta-Bernoulli model
+
+Beta-Bernoulli model.
+
+$P[X = 1\vert \theta] = \theta = \theta^{I(X=1)}(1-\theta)^{I(X=0)}$
+
+---
+
 #### (ML 11.1) Estimators
 
 Assume the data $D = (X_1, \ldots, X_n)$ are given as random variables.
