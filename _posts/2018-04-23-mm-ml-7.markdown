@@ -113,6 +113,9 @@ p(\theta\vert D) & \prop_\theta p(\theta\vert \theta) p(\theta) \\
                  & \prop {\rm Beta}(\theta\vert a+n_1, b+n_0)
 \end{aligned}$$
 
+Thus, $p(\theta\vert D) = {\rm Beta}(\theta\vert a+n_1, b+n_0)$,  
+and so Beta is conjugate to Bernoulli. 
+
 
 ---
 
