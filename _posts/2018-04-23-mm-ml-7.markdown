@@ -102,6 +102,18 @@ Beta-Bernoulli model.
 
 $P[X = 1\vert \theta] = \theta = \theta^{I(X=1)}(1-\theta)^{I(X=0)}$
 
+
+
+$$\begin{aligned}
+p(\theta\vert D) & \prop_\theta p(\theta\vert \theta) p(\theta) \\
+                 & = p(\theta)\prod_{i=1}p(x_i\vert \theta)$ \\
+                 & \prop \theta^{a-1}(1-\theta)^{b-1}\theta^{\sumI(x_i=1)}(1-\theta)^{\sum I(x_i=0)} \\
+                 & = \theta^{a-1}(1-\theta)^{b-1}\theta^{n_1}(1-\theta)^{n_0} \\
+                 & = \theta^{a+n_1-1}(1-\theta)^{b + n_0-1} \\
+                 & \prop {\rm Beta}(\theta\vert a+n_1, b+n_0)
+\end{aligned}$$
+
+
 ---
 
 #### (ML 11.1) Estimators
