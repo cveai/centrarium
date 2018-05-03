@@ -165,7 +165,7 @@ Let's compute now the <span style="color:red">(posterior) predictive distributio
 $$\begin{aligned}
 P(X = 1\vert D) & = \int P(X = 1\vert)p(\theta \vert D) \\
                 & = \int P(X = 1\vert \theta) p(\theta \vert D) \\
-                & = \int \theta {\rm Beta}(\theta \vert a+n_1, b+n_0)d\theta
+                & = \int \theta \cdot {\rm Beta}(\theta \vert a+n_1, b+n_0)d\theta
                 & = \mathbb{E}(\theta \vert D) \\
                 & = \frac{a+n_1}{a+b+n} 
 \end{aligned}$$        
