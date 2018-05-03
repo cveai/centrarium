@@ -125,6 +125,7 @@ p(\theta\vert D) & \propto_\theta p(D \vert \theta) p(\theta) \\
 
 Thus, $p(\theta\vert D) = {\rm Beta}(\theta\vert a+n_1, b+n_0)$, and so Beta is conjugate to Bernoulli. 
 
+See [19 - Beta distribution - an introduction](https://youtu.be/v1uUgTcInQk) by [Ox educ](www.ox-educ.com) for intuition behind Bete prior.
 
 $\theta_{\rm MLE} =$ empirical probability $= \frac{n_1}{n}$  
 $\theta_{\rm MAP} = \frac{a+n_1-1}{a+b+n-2}$ 
