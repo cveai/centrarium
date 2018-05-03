@@ -96,11 +96,82 @@ if the posterior $p(\theta \vert D)$ is in $\mathscr{F}$.
 
 ---
 
-#### (ML 7.5) (ML 7.6) Beta-Bernoulli model (part 1)
+#### (ML 7.5) (ML 7.6) Beta-Bernoulli model
 
+For example, we model a sequence of binary outcomes, like coin flips, as Bernoulli random variables 
+with Beta prior distribution on the probability of the heads.
+In other words, Beta is a conjugate prior for Bernoulli.
 
+Setup: $X_1, \ldots, X_n \sim {\rm Bern}(\theta)$ independen gieven $\theta$ with prior $\theta \sim {\rm Beta}(a,b)$.  
+Here the parameters $a, b$ of the prior are called <span style="color:red">*hyperparameters*</span>.
 
+For generaic $X \sim {\rm Bern}(\theta)$, we have
+
+$$p(1\vert \theta) = P(X = 1 \vert \theta) = \theta = \theta^{I(X=1)}(1-\theta)^{I(X=0)}$$
+
+where
+
+$$\begin{aligned}
+p(\theta) &= \frac{\theta^{a-1}(1-\theta)^{b-1}}{B(a,b)}\cdot I(\theta \in [0, 1]) \\
+& \propto \theta^{a-1}(1-\theta)^{b-1}\cdot I(\theta \in [0, 1])
+\end{aligned}$$
+
+From the setup we generate data $D = (x_1, \ldots, x_n)$. 
+Then it's easy to compute the posterior distribution: 
+
+$$\begin{aligned}
+p(\theta\vert D) & \propto_\theta p(D \vert \theta) p(\theta) \\
+                 & = p(\theta)\prod_{i=1}p(X_i = x_i\vert \theta) \\
+                 & \propto \theta^{a-1}(1-\theta)^{b-1}\theta^{\sum I(x_i=1)}(1-\theta)^{\sum I(x_i=0)} \\
+                 & = \theta^{a-1}(1-\theta)^{b-1}\theta^{n_1}(1-\theta)^{n_0} \\
+                 & = \theta^{a+n_1-1}(1-\theta)^{b + n_0-1} \\
+                 & \propto \cdot {\rm Beta}(\theta\vert a+n_1, b+n_0)
+\end{aligned}$$
+
+where $n_1 := \sum I(x_i=1)$ and $n_0 := \sum I(x_i=0)$.
+
+Thus, $p(\theta\vert D) = {\rm Beta}(\theta\vert a+n_1, b+n_0)$, and so Beta is conjugate to Bernoulli. 
+
+<figure>
+<img src="/assets/pics/mm-ml/beta-prior.png" alt="Beta distributions" style="width: 40%; height: 40%">
+<figcaption>Beta distributions
+</figcaption>
+</figure>
+
+See [Beta distribution - an introduction](https://youtu.be/v1uUgTcInQk){:target="_blank"} by [Ox educ](www.ox-educ.com){:target="_blank"} for intuition behind Beta prior.
+
+If $\theta \sim {\rm Beta}(a, b)$, one has:
+* $\mathbb{E}(\theta) = \frac{a}{a+b}$;
+* $\sigma^2(\theta) = \frac{ab}{(a+b)^2(a+b+1)}$;
+* mode $=\frac{a-1}{a+b-2}$.  
+($a+n_1, b+n_0$ are called <span style="color:red">*pseudocounts*</span>)
+
+For  $\theta \vert D \sim {\rm Beta}(\theta\vert a+n_1, b+n_0)$, on has:
+* $\mathbb{E}(\theta\vert D) = \frac{a+n_1}{a+b+n}$;
+* mode $=\frac{a+n_1-1}{a+b+n-2}$. 
+
+Now let's make a few connections. We know that 
+* $\theta_{\rm MLE} =$ empirical probability $= \frac{n_1}{n}$ /  $\left(\frac{n_0}{n}, \frac{n_1}{n}\right)$
+* $\theta_{\rm MAP} = \frac{a+n_1-1}{a+b+n-2}$ 
+
+posterior mean $=\frac{a+n_1}{a+b+n} = \frac{a+b}{a+b+n}\cdot \frac{a}{a+b} + \frac{n}{a+b+n}\cdot \frac{n_1}{n}$,  
+i.e., a convex combination of prior mean & MLE
+
+* When $n \rightarrow \infty$, posterior mean convergees to the MLE.
+* When $n = 0$, if we have no data, we get back to the prior mean.
+
+Let's compute now the <span style="color:red">(posterior) predictive distribution</span>:  
+
+$$\begin{aligned}
+P(X = 1\vert D) & = \int P(X = 1\vert)p(\theta \vert D) \\
+                & = \int P(X = 1\vert \theta) p(\theta \vert D) \\
+                & = \int \theta \cdot {\rm Beta}(\theta \vert a+n_1, b+n_0)d\theta \\
+                & = \mathbb{E}(\theta \vert D) \\
+                & = \frac{a+n_1}{a+b+n}. 
+\end{aligned}$$        
+        
 ---
+
 
 #### (ML 11.1) Estimators
 
@@ -232,6 +303,7 @@ cf. Shrinkage, Stein's paradox
 
 ---
 
+
 #### (ML 11.8) Bayesian decision theory
 
 $$\rho(\pi, \delta(D)) = \mathbb{E}(L(\theta, \delta(D)) \vert D)$$  
@@ -258,6 +330,36 @@ but a GBR still makes sense.
 *Check out*:  
 * [Complete Class Theorems for the Simplest Empirical Bayes Decision Problems](https://projecteuclid.org/euclid.aos/1176343749)
 * [A Complete Class Theorem for Statistical Problems with Finite Sample Spaces](https://projecteuclid.org/euclid.aos/1176345645)
+
+---
+
+
+#### (ML 11.8) Bayesian decision theory
+
+$$\rho(\pi, \delta(D)) = \mathbb{E}(L(\theta, \delta(D)) \vert D)$$  
+
+$$\begin{aligned}
+r(\pi, \delta) &= \mathbb{E}(L(\theta, \delta(D))) \\
+&= \mathbb{E} (\mathbb{E}(L(\theta, \delta(D)) \vert D)) )
+\end{aligned}$$
+
+**Terminology.(Informal)**
+* A *generalized Bayes rule* is a decision rule $\delta$ that minimizes $\rho(\pi, \delta(D))$ for each $D$.
+* A *Bayes rule* minimizes is a decision rule $\delta$ that minimizes $r(\pi, \delta)$.
+
+**Remark**
+* GBR $\Rightarrow$ BR, but BR $\not\Rightarrow$ GBR.
+* If $r(\pi, \delta) = \infty$ for all $\delta$, then anything is a BR,
+but a GBR still makes sense.
+* On a set of $\pi$-measure $0$, BR is arbitrary bit GBR is still sensible.
+
+**Complete Class Theorems.** Under mild conditions:
+1. Every GBR (for a proper $\pi$) is admissible;
+2. Every admissible decision rule is a GBR for some (possibly improper) $\pi$
+
+*Check out*:  
+* [Complete Class Theorems for the Simplest Empirical Bayes Decision Problems](https://projecteuclid.org/euclid.aos/1176343749){:target="_blank"}
+* [A Complete Class Theorem for Statistical Problems with Finite Sample Spaces](https://projecteuclid.org/euclid.aos/1176345645){:target="_blank"}
 
 ---
 
