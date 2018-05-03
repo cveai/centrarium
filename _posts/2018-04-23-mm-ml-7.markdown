@@ -103,7 +103,7 @@ with Beta prior distribution on the probability of the heads.
 In other words, Beta is a conjugate prior for Bernoulli.
 
 Setup: $X_1, \ldots, X_n \sim {\rm Bern}(\theta)$ with prior $\theta \sim {\rm Beta}(a,b)$.  
-Here the parameters $a, b$ of the prior is called *hyper-parameters*.
+Here the parameters $a, b$ of the prior is called <span style="color:red">*hyperparameters*</span>.
 
 For generaic $X \sim {\rm Bern}(\theta)$, we have
 
