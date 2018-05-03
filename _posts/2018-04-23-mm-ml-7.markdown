@@ -100,7 +100,7 @@ if the posterior $p(\theta \vert D)$ is in $\mathscr{F}$.
 
 For example, we model a sequence of binary outcomes, like coin flips, as Bernoulli random variables 
 with Beta prior distribution on the probability of the heads.
-In other words, Beta is a conjugate prior fro Bernoulli.
+In other words, Beta is a conjugate prior for Bernoulli.
 
 Setup: $X_1, \ldots, X_n \sim {\rm Bern}(\theta)$ with prior $\theta \sim {\rm Beta}(a,b)$.
 
