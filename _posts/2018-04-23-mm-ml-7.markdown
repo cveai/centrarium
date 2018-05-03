@@ -102,9 +102,17 @@ For example, we model a sequence of binary outcomes, like coin flips, as Bernoul
 with Beta prior distribution on the probability of the heads.
 In other words, Beta is a conjugate prior fro Bernoulli.
 
+Setup: $X_1, \ldots, X_n \sim {\rm Bern}(\theta)$ with prior $\theta \sim {\rm Beta}(a,b)$.
 
+For generaic $X \sim {\rm Bern}(\theta)$, we have
 
+$$P(X = \vert \theta)$$
 
+and
+
+$$p(\theta) = \frac{\theta^{a-1}(1-\theta)^{b-1}}{B(a,b)} \propto \theta^{a-1}(1-\theta)^{b-1}$$
+
+From the setup we generate data $D = (x_1, \ldots, x_n)$.
 
 $P[X = 1\vert \theta] = \theta = \theta^{I(X=1)}(1-\theta)^{I(X=0)}$
 
