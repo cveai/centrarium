@@ -157,6 +157,9 @@ Now let's make a few connections. We know that
 posterior mean $=\frac{a+n_1}{a+b+n} = \frac{a+b}{a+b+n}\cdot \frac{a}{a+b} + \frac{n}{a+b+n}\cdot \frac{n_1}{n}$,  
 i.e., a convex combination of prior mean & MLE
 
+* When $n \rightarrow \infty$, posterior mean convergees to the MLE.
+* When $n = 0$, if we have no data, we get back to the prior mean.
+
 Predictive distribution:  
 
 $$\begin{aligned}
