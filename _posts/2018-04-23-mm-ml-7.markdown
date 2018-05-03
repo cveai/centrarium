@@ -151,7 +151,7 @@ For  $\theta \vert D \sim {\rm Beta}(\theta\vert a+n_1, b+n_0)$, on has:
 * mode $=\frac{a+n_1-1}{a+b+n-2}$. 
 
 Now let's make a few connections. We know that 
-* $\theta_{\rm MLE} =$ empirical probability $= \frac{n_1}{n}$ /  $(\frac{n_0}{n}, \frac{n_1}{n})$
+* $\theta_{\rm MLE} =$ empirical probability $= \frac{n_1}{n}$ /  $\left(\frac{n_0}{n}, \frac{n_1}{n}\right)$
 * $\theta_{\rm MAP} = \frac{a+n_1-1}{a+b+n-2}$ 
 
 posterior mean $=\frac{a+n_1}{a+b+n} = \frac{a+b}{a+b+n}\cdot \frac{a}{a+b} + \frac{n}{a+b+n}\cdot \frac{n_1}{n}$,  
