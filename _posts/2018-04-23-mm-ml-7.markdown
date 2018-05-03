@@ -146,9 +146,9 @@ If $\theta \sim {\rm Beta}(a, b)$, one has:
 * mode $=\frac{a-1}{a+b-2}$.  
 ($a+n_1, b+n_0$ are called <span style="color:red">*pseudocounts*</span>)
 
-
-
-$\theta \vert D \sim {\rm Beta}(\theta\vert a+n_1, b+n_0)$
+For  $\theta \vert D \sim {\rm Beta}(\theta\vert a+n_1, b+n_0)$, on has:
+* $\mathbb{E}(\theta\vert D) = \frac{a+n_1}{a+b+n}$;
+* mode $=\frac{a+n_1-1}{a+b+n-2}$. 
 
 $\theta_{\rm MLE} =$ empirical probability $= \frac{n_1}{n}$  
 $\theta_{\rm MAP} = \frac{a+n_1-1}{a+b+n-2}$ 
