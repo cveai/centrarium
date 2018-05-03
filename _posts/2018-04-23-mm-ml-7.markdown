@@ -128,6 +128,12 @@ p(\theta\vert D) & \propto_\theta p(D \vert \theta) p(\theta) \\
 
 Thus, $p(\theta\vert D) = {\rm Beta}(\theta\vert a+n_1, b+n_0)$, and so Beta is conjugate to Bernoulli. 
 
+<figure>
+<img src="/assets/pics/mm-ml/beta-prior.png" alt="Beta distributions" style="width: 100%; height: 100%">
+<figcaption>Beta distributions
+</figcaption>
+</figure>
+
 See [Beta distribution - an introduction](https://youtu.be/v1uUgTcInQk){:target="_blank"} by [Ox educ](www.ox-educ.com){:target="_blank"} for intuition behind Beta prior.
 
 $\theta_{\rm MLE} =$ empirical probability $= \frac{n_1}{n}$  
