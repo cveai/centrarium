@@ -116,7 +116,7 @@ From the setup we generate data $D = (x_1, \ldots, x_n)$. Then
 
 $$\begin{aligned}
 p(\theta\vert D) & \propto_\theta p(D \vert \theta) p(\theta) \\
-                 & = p(\theta)\prod_{i=1}p(x_i\vert \theta)$ \\
+                 & = p(\theta)\prod_{i=1}p(X_i = x_i\vert \theta) \\
                  & \propto \theta^{a-1}(1-\theta)^{b-1}\theta^{\sum I(x_i=1)}(1-\theta)^{\sum I(x_i=0)} \\
                  & = \theta^{a-1}(1-\theta)^{b-1}\theta^{n_1}(1-\theta)^{n_0} \\
                  & = \theta^{a+n_1-1}(1-\theta)^{b + n_0-1} \\
