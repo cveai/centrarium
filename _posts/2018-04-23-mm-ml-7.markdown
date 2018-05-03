@@ -116,7 +116,8 @@ p(\theta) &= \frac{\theta^{a-1}(1-\theta)^{b-1}}{B(a,b)}\cdot I(\theta \in [0, 1
 & \propto \theta^{a-1}(1-\theta)^{b-1}\cdot I(\theta \in [0, 1])
 \end{aligned}$$
 
-From the setup we generate data $D = (x_1, \ldots, x_n)$. Then
+From the setup we generate data $D = (x_1, \ldots, x_n)$. 
+Then it's easy to compute the posterior distribution: 
 
 $$\begin{aligned}
 p(\theta\vert D) & \propto_\theta p(D \vert \theta) p(\theta) \\
@@ -129,7 +130,6 @@ p(\theta\vert D) & \propto_\theta p(D \vert \theta) p(\theta) \\
 
 where $n_1 := \sum I(x_i=1)$ and $n_0 := \sum I(x_i=0)$.
 
-Now it's easy to compute the posterior distribution: 
 $p(\theta\vert D) = {\rm Beta}(\theta\vert a+n_1, b+n_0)$, and so Beta is conjugate to Bernoulli. 
 
 <figure>
