@@ -120,7 +120,7 @@ p(\theta\vert D) & \propto_\theta p(D \vert \theta) p(\theta) \\
                  & \propto \theta^{a-1}(1-\theta)^{b-1}\theta^{\sum I(x_i=1)}(1-\theta)^{\sum I(x_i=0)} \\
                  & = \theta^{a-1}(1-\theta)^{b-1}\theta^{n_1}(1-\theta)^{n_0} \\
                  & = \theta^{a+n_1-1}(1-\theta)^{b + n_0-1} \\
-                 & \propto {\rm Beta}(\theta\vert a+n_1, b+n_0)
+                 & \propto \cdot {\rm Beta}(\theta\vert a+n_1, b+n_0)
 \end{aligned}$$
 
 Thus, $p(\theta\vert D) = {\rm Beta}(\theta\vert a+n_1, b+n_0)$, and so Beta is conjugate to Bernoulli. 
