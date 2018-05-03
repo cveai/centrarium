@@ -136,6 +136,11 @@ Thus, $p(\theta\vert D) = {\rm Beta}(\theta\vert a+n_1, b+n_0)$, and so Beta is 
 
 See [Beta distribution - an introduction](https://youtu.be/v1uUgTcInQk){:target="_blank"} by [Ox educ](www.ox-educ.com){:target="_blank"} for intuition behind Beta prior.
 
+Now if $\theta \sim {\rm Beta}(a, b)$, one has  
+* $\mathbb{E}(\that) = \frac{a}{a+b}$;
+* $\sigma^2(\theta) = \frac{ab}{(a+b)^2(a+b+1)}$;
+* mode $=\frac{a-1}{a+b-2}$. 
+
 $\theta_{\rm MLE} =$ empirical probability $= \frac{n_1}{n}$  
 $\theta_{\rm MAP} = \frac{a+n_1-1}{a+b+n-2}$ 
 
