@@ -130,7 +130,7 @@ p(\theta\vert D) & \propto_\theta p(D \vert \theta) p(\theta) \\
 
 where $n_1 := \sum I(x_i=1)$ and $n_0 := \sum I(x_i=0)$.
 
-$p(\theta\vert D) = {\rm Beta}(\theta\vert a+n_1, b+n_0)$, and so Beta is conjugate to Bernoulli. 
+Thus, $p(\theta\vert D) = {\rm Beta}(\theta\vert a+n_1, b+n_0)$, and so Beta is conjugate to Bernoulli. 
 
 <figure>
 <img src="/assets/pics/mm-ml/beta-prior.png" alt="Beta distributions" style="width: 40%; height: 40%">
