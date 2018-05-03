@@ -154,7 +154,8 @@ Now let's make a few connections. We know that
 * $\theta_{\rm MLE} =$ empirical probability $= \frac{n_1}{n}$  / (\frac{n_0}{n}, \frac{n_1}{n})
 * $\theta_{\rm MAP} = \frac{a+n_1-1}{a+b+n-2}$ 
 
-posterior mean $=\frac{a+n_1}{a+b+n} = \frac{a+b}{a+b+n}\cdot \frac{a}{a+b} + \frac{n}{a+b+n}\cdot \frac{n_1}{n}$
+posterior mean $=\frac{a+n_1}{a+b+n} = \frac{a+b}{a+b+n}\cdot \frac{a}{a+b} + \frac{n}{a+b+n}\cdot \frac{n_1}{n}$,  
+i.e., a convex combination of prior mean & MLE
 
 Predictive distribution:  
 
