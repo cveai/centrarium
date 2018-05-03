@@ -106,9 +106,9 @@ Setup: $X_1, \ldots, X_n \sim {\rm Bern}(\theta)$ with prior $\theta \sim {\rm B
 
 For generaic $X \sim {\rm Bern}(\theta)$, we have
 
-$$P(X = 1 \vert \theta) = \theta.$$
+$$P(X = 1 \vert \theta) = \theta$$
 
-and
+where
 
 $$p(\theta) = \frac{\theta^{a-1}(1-\theta)^{b-1}}{B(a,b)} \propto \theta^{a-1}(1-\theta)^{b-1}$$
 
