@@ -137,7 +137,7 @@ Thus, $p(\theta\vert D) = {\rm Beta}(\theta\vert a+n_1, b+n_0)$, and so Beta is 
 See [Beta distribution - an introduction](https://youtu.be/v1uUgTcInQk){:target="_blank"} by [Ox educ](www.ox-educ.com){:target="_blank"} for intuition behind Beta prior.
 
 Now if $\theta \sim {\rm Beta}(a, b)$, one has  
-* $\mathbb{E}(\thata) = \frac{a}{a+b}$;
+* $\mathbb{E}(\theta) = \frac{a}{a+b}$;
 * $\sigma^2(\theta) = \frac{ab}{(a+b)^2(a+b+1)}$;
 * mode $=\frac{a-1}{a+b-2}$. 
 
