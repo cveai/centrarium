@@ -110,7 +110,10 @@ $$p(1\vert \theta) = P(X = 1 \vert \theta) = \theta = \theta^{I(X=1)}(1-\theta)^
 
 where
 
-$$p(\theta) = \frac{\theta^{a-1}(1-\theta)^{b-1}}{B(a,b)}\cdot I(\theta \in [0, 1]) \propto \theta^{a-1}(1-\theta)^{b-1}\cdot I(\theta \in [0, 1])$$
+$$\begin{aligned}
+p(\theta) &= \frac{\theta^{a-1}(1-\theta)^{b-1}}{B(a,b)}\cdot I(\theta \in [0, 1]) \\
+& \propto \theta^{a-1}(1-\theta)^{b-1}\cdot I(\theta \in [0, 1])
+\end{aligned}$$
 
 From the setup we generate data $D = (x_1, \ldots, x_n)$. Then
 
