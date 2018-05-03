@@ -98,7 +98,14 @@ if the posterior $p(\theta \vert D)$ is in $\mathscr{F}$.
 
 #### (ML 7.5) (ML 7.6) Beta-Bernoulli model
 
-Beta-Bernoulli model.
+Beta-Bernoulli model.  
+E.g., We model a sequence of binary outcomes, like coin flips, as Bernoulli random variables 
+with Beta prior distribution on the probability of the heads.
+In other words, Beta is a conjugate prior fro Bernoulli.
+
+
+
+
 
 $P[X = 1\vert \theta] = \theta = \theta^{I(X=1)}(1-\theta)^{I(X=0)}$
 
