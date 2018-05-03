@@ -106,7 +106,7 @@ Setup: $X_1, \ldots, X_n \sim {\rm Bern}(\theta)$ with prior $\theta \sim {\rm B
 
 For generaic $X \sim {\rm Bern}(\theta)$, we have
 
-$$p(1\vert \theta) = P(X = 1 \vert \theta) = \theta$$
+$$p(1\vert \theta) = P(X = 1 \vert \theta) = \theta = \theta^{I(X=1)}(1-\theta)^{I(X=0)}$$
 
 where
 
@@ -114,7 +114,7 @@ $$p(\theta) = \frac{\theta^{a-1}(1-\theta)^{b-1}}{B(a,b)} \propto \theta^{a-1}(1
 
 From the setup we generate data $D = (x_1, \ldots, x_n)$. Then
 
-$P(X = 1\vert \theta) = \theta = \theta^{I(X=1)}(1-\theta)^{I(X=0)}$
+
 
 
 
