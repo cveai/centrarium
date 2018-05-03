@@ -102,7 +102,7 @@ For example, we model a sequence of binary outcomes, like coin flips, as Bernoul
 with Beta prior distribution on the probability of the heads.
 In other words, Beta is a conjugate prior for Bernoulli.
 
-Setup: $X_1, \ldots, X_n \sim {\rm Bern}(\theta)$ with prior $\theta \sim {\rm Beta}(a,b)$.  
+Setup: $X_1, \ldots, X_n \sim {\rm Bern}(\theta)$ independen gieven $\theta$ with prior $\theta \sim {\rm Beta}(a,b)$.  
 Here the parameters $a, b$ of the prior are called <span style="color:red">*hyperparameters*</span>.
 
 For generaic $X \sim {\rm Bern}(\theta)$, we have
@@ -160,7 +160,7 @@ i.e., a convex combination of prior mean & MLE
 * When $n \rightarrow \infty$, posterior mean convergees to the MLE.
 * When $n = 0$, if we have no data, we get back to the prior mean.
 
-Predictive distribution:  
+Let's comute now the <span style="color:red">(posterior) predictive distribution</span>:  
 
 $$\begin{aligned}
 P(X = 1\vert D) & = \int P(X = 1\vert)p(\theta \vert D) \\
