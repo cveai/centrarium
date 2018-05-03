@@ -123,8 +123,7 @@ p(\theta\vert D) & \propto_\theta p(D \vert \theta) p(\theta) \\
                  & \propto {\rm Beta}(\theta\vert a+n_1, b+n_0)
 \end{aligned}$$
 
-Thus, $p(\theta\vert D) = {\rm Beta}(\theta\vert a+n_1, b+n_0)$,  
-and so Beta is conjugate to Bernoulli. 
+Thus, $p(\theta\vert D) = {\rm Beta}(\theta\vert a+n_1, b+n_0)$, and so Beta is conjugate to Bernoulli. 
 
 
 $\theta_{\rm MLE} =$ empirical probability $= \frac{n_1}{n}$  
