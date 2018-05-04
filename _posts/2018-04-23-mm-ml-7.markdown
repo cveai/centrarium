@@ -187,7 +187,7 @@ $S = \\{x \in \mathbb{R}^n: x_i \ge 0, \sum_{i=1}^n x_n =1 \\}$ is the probabili
 $\frac{1}{B(\alpha)} =\frac{\Gamma(\alpha_0)}{\Gamma(\alpha_1)\cdots\Gamma(\alpha_n)}$.
 
 <figure>
-<img src="/assets/pics/mm-ml/probability-simplex.png" alt="Bayes Risk" style="width: 100%; height: 100%">
+<img src="/assets/pics/mm-ml/probability-simplex.png" alt="Bayes Risk" style="width: 40%; height: 40%">
 <figcaption>
 </figcaption>
 </figure>
