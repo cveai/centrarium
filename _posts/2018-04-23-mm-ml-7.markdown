@@ -198,7 +198,7 @@ $\frac{1}{B(\alpha)} =\frac{\Gamma(\alpha_0)}{\Gamma(\alpha_1)\cdots\Gamma(\alph
 </figcaption>
 </figure>
 
-$E(\theta_i) = \frac{\alpha_i}{}$
+$E(\theta_i) = \frac{\alpha_i}{\alpha_0}$
 
 ${\rm mode} = (\frac{\alpha_1-1}{\alpha_0}, \ldots, \frac{\alpha_n-1}{\alpha_0-n})$
 
