@@ -182,8 +182,9 @@ $\theta = (\theta_1, \ldots, \theta_n) \sim {\rm Dir}(\alpha)$ means:
 
 $$p(\theta) = \frac{1}{B(\alpha)}\prod_{i=1}^n \theta_i^{\alpha_i-1}I(\theta \in S)$$
 
-where $\alpha = (\alpha_1, \ldots, \alpha_n)$, $alpha_i >0$ are parameters and
-$S = \\{x \in \mathbb{R}^n: x_i \ge 0, \sum_{i=1}^n x_n =1 \\}$ is th probability simplex.
+where $\alpha = (\alpha_1, \ldots, \alpha_n)$, $\alpha_i >0$ are the parameters,
+$S = \\{x \in \mathbb{R}^n: x_i \ge 0, \sum_{i=1}^n x_n =1 \\}$ is th probability simplex, and
+$\frac{1}{B(\alpha)} =\frac{\Gamma(\alpha_0)}{\Gamma(\alpha_1)\cdots\Gamma(\alpha_n)}$.
 
 ---
 
