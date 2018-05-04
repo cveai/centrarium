@@ -188,6 +188,10 @@ $\frac{1}{B(\alpha)} =\frac{\Gamma(\alpha_0)}{\Gamma(\alpha_1)\cdots\Gamma(\alph
 
 ---
 
+...
+
+---
+
 #### (ML 11.1) Estimators
 
 Assume the data $D = (X_1, \ldots, X_n)$ are given as random variables.
