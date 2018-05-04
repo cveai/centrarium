@@ -170,7 +170,11 @@ P(X = 1\vert D) & = \int P(X = 1\vert)p(\theta \vert D) \\
                 & = \frac{a+n_1}{a+b+n}. 
 \end{aligned}$$        
         
+---
 
+#### (ML 7.7.A1) Dirichlet distribution
+
+[Dirichlet](https://youtu.be/9f60JyTC6Oc){:target="_blank"}, one of the great mathematicians in 1800s.
 
 ---
 
