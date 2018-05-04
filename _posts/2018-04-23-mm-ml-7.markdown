@@ -176,6 +176,11 @@ P(X = 1\vert D) & = \int P(X = 1\vert)p(\theta \vert D) \\
 
 [Dirichlet](https://youtu.be/9f60JyTC6Oc){:target="_blank"}, one of the great mathematicians in 1800s.
 
+Dirichlet distribution is a distribution on probability distributinos.
+
+$\theta = (\theta_1, \ldots, \theta_n) \sim {\rm Dir}(\alpha)$ means 
+$p()$
+
 ---
 
 #### (ML 11.1) Estimators
