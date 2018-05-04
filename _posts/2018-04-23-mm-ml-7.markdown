@@ -178,8 +178,12 @@ P(X = 1\vert D) & = \int P(X = 1\vert)p(\theta \vert D) \\
 
 Dirichlet distribution is a distribution on probability distributinos.
 
-$\theta = (\theta_1, \ldots, \theta_n) \sim {\rm Dir}(\alpha)$ means 
-$p()$
+$\theta = (\theta_1, \ldots, \theta_n) \sim {\rm Dir}(\alpha)$ means:  
+
+$$p(\theta) = \frac{1}{B(\alpha)}\prod_{i=1}^n \theta_i^{\alpha_i-1}I(\theta \in S)$$
+
+where $\alpha = (\alpha_1, \ldots, \alpha_n)$, $alpha_i >0$ are parameters and
+$S = \\{x \in \mathbb{R}^n: x_i \ge 0, \sum_{i=1}^n x_n =1 \\}$ is th probability simplex.
 
 ---
 
