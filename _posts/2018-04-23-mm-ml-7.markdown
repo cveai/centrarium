@@ -183,8 +183,24 @@ $\theta = (\theta_1, \ldots, \theta_n) \sim {\rm Dir}(\alpha)$ means:
 $$p(\theta) = \frac{1}{B(\alpha)}\prod_{i=1}^n \theta_i^{\alpha_i-1}I(\theta \in S)$$
 
 where $\alpha = (\alpha_1, \ldots, \alpha_n)$, $\alpha_i >0$ are the parameters,
-$S = \\{x \in \mathbb{R}^n: x_i \ge 0, \sum_{i=1}^n x_n =1 \\}$ is th probability simplex, and
+$S = \\{x \in \mathbb{R}^n: x_i \ge 0, \sum_{i=1}^n x_n =1 \\}$ is the probability simplex, and
 $\frac{1}{B(\alpha)} =\frac{\Gamma(\alpha_0)}{\Gamma(\alpha_1)\cdots\Gamma(\alpha_n)}$.
+
+<figure>
+<img src="/assets/pics/mm-ml/probability-simplex.png" alt="Bayes Risk" style="width: 100%; height: 100%">
+<figcaption>
+</figcaption>
+</figure>
+
+<figure>
+<img src="/assets/pics/mm-ml/dirichlet.png" alt="Bayes Risk" style="width: 100%; height: 100%">
+<figcaption>
+</figcaption>
+</figure>
+
+$E(\theta_i) = \frac{\alpha_i}{}$
+
+${\rm mode} = (\frac{\alpha_1-1}{\alpha_0}, \ldots, \frac{\alpha_n-1}{\alpa_0-n})$
 
 ---
 
