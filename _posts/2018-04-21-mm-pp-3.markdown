@@ -15,7 +15,7 @@ tags: Probability
 -- [David Duvenaud](https://www.cs.toronto.edu/~duvenaud/)
 (TWiML&AI: [Composing Graphical Models With Neural Networks](https://twimlai.com/twiml-talk-96-composing-graphical-models-neural-networks-david-duvenaud/))
 
-**Definition.** Given $(\Omega, \mathscr{A}, P)$, a <span style="color:red">*random variable*</span> is a <span style="color:blue">function(!!!)</span> 
+**Definition.** Given $(\Omega, \mathscr{A}, P)$, a <span style="color:red">*random variable*</span> is a <span style="color:blue">(measurable) function</span> 
 
 $$X: \Omega \rightarrow \mathbb{R}$$
 
