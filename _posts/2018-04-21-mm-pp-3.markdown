@@ -23,7 +23,7 @@ s.t. $[X \le x] := \\{\omega \in \Omega : X(\omega) \le x\\} \in \mathscr{A}$ fo
 
 **Remark.**
 1. $X : \Omega \rightarrow \mathbb{R}$ is a "measurable function."
-2. Notation: $X, Y$ random variables, $x, y$ values
+2. Notation: $X, Y$ random variables / $x, y$ values
 
 **Definition.** The <span style="color:red">*CDF of a random variable $X$*</span> is the function 
 
