@@ -109,7 +109,11 @@ $$I_A(x) =
 
 **Examples.**  
 (1) $X \sim {\rm Uniform}(a, b)$ where $a < b$:
-$$f(x) = \frac{1}{b-a}$$ on $[a, b]$.
+$$f(x) = \frac{1}{b-a}$$ on $[a, b]$.  
+(2) $X \sim {\rm Exponential(\lambda)}$ where $\lambda > 0$:
+$$f(x) = \lambda e^{-\lambda x}$$ on $[0, \infty]$ . 
+(3) $X \sim {\rm Beta(\alpha, \betta)}$ where $\alpga, \beta > 0$:
+$$f(x) = \frac{x^{\alpha-1}(1-x)}{B(\alpha, \beta)}$$ on $[0,1]$.
 
 ---
 
