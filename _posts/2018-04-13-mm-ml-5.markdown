@@ -16,7 +16,7 @@ $$p_\theta = \exp\left( \sum_{i=1}^m \eta_i(\theta) s_i(\theta)  \right) h(x)/z(
 * $\theta \in \mathbb{R}^k$: parameter
 * $x \in \mathbb{R}^d$: "distritution variable"
 * $\eta_i : \Theta \rightarrow \mathbb{R}$ 
-* $s_i : \mathbb{R}^d \rightarrow \mathbb{R}$ ([sufficient statistics](https://slack-redir.net/link?url=https%3A%2F%2Fonlinecourses.science.psu.edu%2Fstat414%2Fnode%2F244)) 
+* $s_i : \mathbb{R}^d \rightarrow \mathbb{R}$ ([sufficient statistics](https://slack-redir.net/link?url=https%3A%2F%2Fonlinecourses.science.psu.edu%2Fstat414%2Fnode%2F244){:target="_blank"}) 
 * $h : \mathbb{R}^d \rightarrow [0, \infty)$ (support & scaling)
 * $z : \Theta \rightarrow [0, \infty)$ (partition function: sort of normaizing constant but having very special properties)
 
@@ -143,68 +143,6 @@ $$\begin{aligned}
 \frac{\partial}{\partial \theta} \log z(\theta) &= \frac{\partial}{\partial \theta} -\log \theta \\
 &= -\frac{1}{\theta} = E (s(X)) = -E(X)
 \end{aligned}$$
-||||||| merged common ancestors
-=======
-<<<<<<< HEAD
----
-
-#### (ML 5.3) (ML 5.4) MLE for an exponential family
-
-$p_\theta(x) = e^ h(x)/z(\theta)$
-
-Given data $D = (x_1, \ldots, x_n)$ with $x_i \in \mathbb{R}^d$ gotten via $X_1, \ldots, X_n \sim p_\theta$ iid.
-
-Wanna compute $\theta_{\rm MLE} = \arg\max_{\theta \in \Theta} p(D \vert \theta)$.
-
-$$\begin{aligned}
-p(D\vert \theta) &= \prod_{i=1}^n p(x_i \vert \theta) \\
-&= \prod_{i=1}^n e^{\theta^T s(x_i)}h(x_i)/z(\theta) \\
-&= z(\theta)^{-n} e^{\theta^T \sum_{i=1}^ns(x_i)} \\
-&= z(\theta)^{-n} e^{\theta^T s(D)} \prod_{i=1}^n h(x_i) 
-\end{aligned}$$
-
-$\log p(D \vert \theta) = -n\log z(\theta) + \theta^T s(D) + \sum_{i=1}^n \log h(x_i)$
-
-$0 = \frac{\partial}{\partial \theta_j} \log p(D|vert\theta) 
-= -n\frac{\partial}{\partial \theta_j} \log z(\theta) + s_j(D)$
-
-where $\theta^Ts(D = \sum_{j=1}^k \theta_j s_j(D)$, $s_j(D) = \sum_{i=1}^n s_j(x_i)$ and $s=(s_i,\ldots, s_k)$.
-
-Note $z(\theta) = \int_{\mathbb{R}^d} e^{\theta^T s(x)}h(x)dx$.
-
-Then 
-
-$$\begin{aligned}
-\frac{\partial}{\partial \theta_j} \log z(\theta) &= \frac{1}{z(\theta)} \frac{\partial}{\partial \theta_j} z(\theta) \\
-&= \frac{1}{z(\theta)} \int s_j(x)e^{\theta^Ts(x)}h(x)dx \\
-&= \int s_j(x) p_\theta(x)dx = E_\theta s_j(X)
-\end{aligned}$$
-
-<figure>
-<img src="/assets/pics/mm-ml/mle-exp-fam.png" alt="MLE for an exponential family" style="width: 50%; height: 50%">
-<figcaption>MLE for an exponential family
-</figcaption>
-</figure>
-
-$\log p(D \vert \theta) = -n\log z(\theta) + \theta^T s(D) + \sum_{i=1}^n \log h(x_i) = -nE_\theta s_j(x) +s_j(D)$
-
-implies
-
-$n E_\theta s(X) = s(D) = \sum_{i=1}^n s(x_i)$ 
-
-implies 
-
-<span style="color:red">$E_{\theta_{\rm MLE}} s(x) = \frac{1}{n}\sum_{i=1}^n s(x_i)$</span>
-if MLE exists and $\theta_{\rm MLE} \in {\rm Int} \Theta$.
-
-**Example.** $p_\theta(x) = \theta e^{-\theta x} I(x \ge 0)$  
-$z(\theta) = \frac{1}{\theta}$, $s(x) = - x$, $\eta(\theta) = \theta$.  
-
-$$\begin{aligned}
-\frac{\partial}{\partial \theta} \log z(\theta) &= \frac{\partial}{\partial \theta} -\log \theta \\
-&= -\frac{1}{\theta} = E (s(X)) = -E(X)
-\end{aligned}$$
->>>>>>> master
 
 implies $E(X \frac{1}{\theta})$.
 

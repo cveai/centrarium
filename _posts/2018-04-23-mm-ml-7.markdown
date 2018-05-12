@@ -341,6 +341,7 @@ cf. Shrinkage, Stein's paradox
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #### (ML 11.8) Bayesian decision theory
 
 $$\rho(\pi, \delta(D)) = \mathbb{E}(L(\theta, \delta(D)) \vert D)$$  
@@ -400,6 +401,38 @@ but a GBR still makes sense.
 
 ---
 
+||||||| merged common ancestors
+=======
+#### (ML 11.8) Bayesian decision theory
+
+$$\rho(\pi, \delta(D)) = \mathbb{E}(L(\theta, \delta(D)) \vert D)$$  
+
+$$\begin{aligned}
+r(\pi, \delta) &= \mathbb{E}(L(\theta, \delta(D))) \\
+&= \mathbb{E} (\mathbb{E}(L(\theta, \delta(D)) \vert D)) )
+\end{aligned}$$
+
+**Terminology.(Informal)**
+* A *generalized Bayes rule* is a decision rule $\delta$ that minimizes $\rho(\pi, \delta(D))$ for each $D$.
+* A *Bayes rule* minimizes is a decision rule $\delta$ that minimizes $r(\pi, \delta)$.
+
+**Remark**
+* GBR $\Rightarrow$ BR, but BR $\not\Rightarrow$ GBR.
+* If $r(\pi, \delta) = \infty$ for all $\delta$, then anything is a BR,
+but a GBR still makes sense.
+* On a set of $\pi$-measure $0$, BR is arbitrary bit GBR is still sensible.
+
+**Complete Class Theorems.** Under mild conditions:
+1. Every GBR (for a proper $\pi$) is admissible;
+2. Every admissible decision rule is a GBR for some (possibly improper) $\pi$
+
+*Check out*:  
+* [Complete Class Theorems for the Simplest Empirical Bayes Decision Problems](https://projecteuclid.org/euclid.aos/1176343749){:target="_blank"}
+* [A Complete Class Theorem for Statistical Problems with Finite Sample Spaces](https://projecteuclid.org/euclid.aos/1176345645){:target="_blank"}
+
+---
+
+>>>>>>> notes
 ||||||| merged common ancestors
 =======
 #### (ML 11.8) Bayesian decision theory
