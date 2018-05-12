@@ -94,6 +94,13 @@ Also write $X \sim F$ and $X \sim Q$, which may casue confusion in some situatio
 
 #### (PP 3.4) Random Variables with Densities
 
+$X$ has density if $F(x) = P(X \le x) = \int_{-\infty}^x f(u)du$
+
+**Notation**
+1. We call $f$ the PDF of $X$ and write $X \sim f$.
+2. On "notational chaos"
+3. *Indicator function of $A$*:
+
 ---
 
 #### (PP 5.1) Multiple discrete random variables
