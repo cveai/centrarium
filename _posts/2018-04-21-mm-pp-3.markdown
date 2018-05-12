@@ -96,7 +96,7 @@ Also write $X \sim F$ and $X \sim Q$, which may casue confusion in some situatio
 
 $X$ has density if $F(x) = P(X \le x) = \int_{-\infty}^x f(u)du$
 
-**Notation**
+**Notation.**
 1. We call $f$ the PDF of $X$ and write $X \sim f$.
 2. On "notational chaos"
 3. *Indicator function of $A$*:
@@ -106,6 +106,10 @@ $$I_A(x) =
 1, \, {\rm if} \,\,\, x \in A \\
 0, \, {\rm else.} 
 \end{cases}$$
+
+**Examples.**  
+(1) $X \sim {\rm Uniform}(a, b)$ where $a < b$:
+$$f(x) = \frac{1}{b-a}$$ on $[a, b]$.
 
 ---
 
