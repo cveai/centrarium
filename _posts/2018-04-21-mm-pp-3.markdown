@@ -111,9 +111,12 @@ $$I_A(x) =
 (1) $X \sim {\rm Uniform}(a, b)$ where $a < b$:
 $$f(x) = \frac{1}{b-a}$$ on $[a, b]$.  
 (2) $X \sim {\rm Exponential(\lambda)}$ where $\lambda > 0$:
-$$f(x) = \lambda e^{-\lambda x}$$ on $[0, \infty]$ . 
+$$f(x) = \lambda e^{-\lambda x}$$ on $[0, \infty]$ .   
 (3) $X \sim {\rm Beta(\alpha, \beta)}$ where $\alpha, \beta > 0$:
 $$f(x) = \frac{x^{\alpha-1}(1-x)}{B(\alpha, \beta)}$$ on $[0,1]$.
+
+[Beta-Bernoulli model](https://youtu.be/qpNAXnmy0GU){:target="_blank"}:  
+$X \sim {\rm Bern(\theta)}$ where $\theta$ governed by some Beta prior, i.e., $\theta \sim {\rm Beta}(\alpha, \beta)$ for some $\alpha, \beta$.
 
 ---
 
