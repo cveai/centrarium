@@ -224,8 +224,8 @@ $$\begin{aligned}
 p(\theta\vert D) & = \frac{p(D\vert \theta)p(\theta)}{p(D)} \\
                  & \propto_\mu p(D\vert \theta)p(\theta) \\
                  & = p(\theta)\prod_{i=1}^np(x_i\vert \theta) \\
-                 & \propto_\mu \exp\left(-\frac{1}{2\sigma_)^2}(\theta-\mu_0)^2\right)
-                               \exp\left(-\frac{1}{2\sigma^2}(x_i - \theta)\right)
+                 & \propto_\mu \exp\left(-\frac{1}{2\sigma_0^2}(\theta-\mu_0)^2\right)
+                               \exp\left(-\frac{1}{2\sigma^2}(x_i - \theta)^2\right)
                  & \cdots              
 \end{aligned}$$
 
