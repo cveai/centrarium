@@ -216,7 +216,7 @@ Becasue we do not know $\mu$, we model it as a random variable $\theta$, which i
 
 $$\theta \sim N(\mu_0, \sigma_0^2).$$
 
-
+We assume that $\sigma^2, \mu_0, \sigma_0^2$ ase known to make the problem (more) tractable.
 
 
 ---
