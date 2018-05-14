@@ -222,7 +222,7 @@ Then the postesior distribution is given by
 
 $$\begin{aligned}
 p(\theta\vert D) & = \frac{p(D\vert \theta)p(\theta)}{p(D)} \\
-                 & \propto_\mu p(D\verttheta)p(\theta) \\
+                 & \propto_\mu p(D\vert \theta)p(\theta) \\
                  & = p(\theta)\prod_{i=1}^np(x_i\vert \theta) \\
                  & \propto_\mu  
 \end{aligned}$$
