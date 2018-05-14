@@ -210,7 +210,7 @@ $\sigma^2(\theta) = \frac{\alpha_i(\alpha_0-\alpha_i)}{\alpha_0^2(\alpha_0+1)}$
 
 Given dada $D = (x_1, \ldots, x_n)$ with $x_i \in \mathbb{R}$,  
 want to know from which distribution $D$ might come fomm.  
-Model $D$ as $X_1, \ldots, x_n \sim N(\mu, \sigma^2)$ for some $\mu, \sigma \in \mathbb{R}$,  
+Model $D$ as $X_1, \ldots, X_n \sim N(\mu, \sigma^2)$ for some $\mu, \sigma \in \mathbb{R}$,  
 i.e., $N(\mu, \sigma^2)$ is the "true" distribution wa want.  
 Becasue we do not know $\mu$, we model it as a random variable $\theta$, which itself follows a normal distribution:
 
