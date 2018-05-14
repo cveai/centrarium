@@ -218,6 +218,14 @@ $$\theta \sim N(\mu_0, \sigma_0^2).$$
 
 We assume that $\sigma^2, \mu_0, \sigma_0^2$ are known to make the problem (more) tractable.
 
+Then the postesior distribution is given by
+
+$$\begin{aligned}
+p(\theta\vert D) & = \frac{p(D\vert \theta)p(\theta)}{p(D)} \\
+                 & \propto_\mu p(D\verttheta)p(\theta) \\
+                 & = p(\theta)\prod_{i=1}^np(x_i\vert \theta) \\
+                 & \propto_\mu  
+\end{aligned}$$
 
 ---
 
