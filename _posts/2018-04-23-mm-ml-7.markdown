@@ -206,7 +206,7 @@ $\sigma^2(\theta) = \frac{\alpha_i(\alpha_0-\alpha_i)}{\alpha_0^2(\alpha_0+1)}$
 
 ---
 
-(ML 7.9) Posterior distribution for univariate Gaussian (part 1)
+(ML 7.9) (ML 7.10) Posterior distribution for univariate Gaussian 
 
 Given data $D = (x_1, \ldots, x_n)$ with $x_i \in \mathbb{R}$,  
 want to know from which distribution $D$ might come fomm.  
@@ -224,8 +224,17 @@ $$\begin{aligned}
 p(\theta\vert D) & = \frac{p(D\vert \theta)p(\theta)}{p(D)} \\
                  & \propto_\mu p(D\vert \theta)p(\theta) \\
                  & = p(\theta)\prod_{i=1}^np(x_i\vert \theta) \\
-                 & \propto_\mu  
+                 & \propto_\mu \exp\left(-\frac{1}{2\sigma_)^2}(\theta-\mu_0)^2\right)
+                               \exp\left(-\frac{1}{2\sigma^2}(x_i - \theta)\right)
+                 & \cdots              
 \end{aligned}$$
+
+
+
+
+---
+
+(ML 8.1) Naive Bayes classification
 
 ---
 
