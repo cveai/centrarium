@@ -212,7 +212,7 @@ Given dada $D = (x_1, \ldots, x_n)$ with $x_i \in \mathbb{R}$,
 want to know from which distribution $D$ might come fomm.  
 Model $D$ as $X_1, \ldots, x_n \sim N(\mu, \sigma^2)$ for some $\mu, \sigma \in \mathbb{R}$,  
 i.e., $N(\mu, \sigma^2)$ is the "true" distribution wa want.  
-Becasue we do not know $\mu$, we model it as a random variable $\theta$, which itslef follows a normal distribution:
+Becasue we do not know $\mu$, we model it as a random variable $\theta$, which itself follows a normal distribution:
 
 $$\theta \sim N(\mu_0, \sigma_0^2).$$
 
