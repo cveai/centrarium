@@ -246,7 +246,6 @@ p(\theta\vert D) & = \frac{p(D\vert \theta)p(\theta)}{p(D)} \\
 
 ---
 
->>>>>>> notes
 #### (ML 11.1) Estimators
 
 Assume the data $D = (X_1, \ldots, X_n)$ are given as random variables.
