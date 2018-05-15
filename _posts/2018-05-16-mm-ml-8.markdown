@@ -9,6 +9,8 @@ tags: ML
 
 #### (ML 8.1) Naive Bayes classification
 
+Naive Bayes is a family of models that is not necessarily a "Bayesian" method!
+
 ---
 
 ...
