@@ -230,7 +230,17 @@ p(\theta\vert D) & = \frac{p(D\vert \theta)p(\theta)}{p(D)} \\
                  & = p(\theta)\prod_{i=1}^np(x_i\vert \theta) \\
                  & \propto_\mu \exp\left(-\frac{1}{2\sigma_0^2}(\theta-\mu_0)^2\right)
                                \exp\left(-\frac{1}{2\sigma^2}(x_i - \theta)^2\right) \\
-                 & \cdots              
+                 & = \exp\left(-\frac{1}{2\sigma_0^2}(\theta-\mu_0)^2 
+                     -\frac{1}{2\sigma^2}\sum (x_i - \theta)^2 \right).         
+\end{aligned}$$
+
+Now, 
+
+$$\begin{aligned}
+$ -\frac{1}{2\sigma_0^2}(\theta-\mu_0)^2 -\frac{1}{2\sigma^2}\sum (x_i - \theta)^2 
+= & -\frac{1}{2\sigma_0^2}(\theta^2 - 2\theta\mu_0 + \mu_0^2) \\
+
+& = -\frac{1}{2\sigma_n^2(\theta - m_n)+c'}
 \end{aligned}$$
 
 
