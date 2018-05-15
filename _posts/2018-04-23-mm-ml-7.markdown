@@ -262,7 +262,8 @@ $$m_n = \frac{\sigma_n^2}{\sigma_0^2}\mu_0 + \frac{\sigma_n^2}{\sigma^2}n\mu_{\r
 
 with 
 
-$$\frac{\sigma_n^2}{\sigma_0^2}+ \frac{\sigma_n^2}{\sigma^2}n =1 $$
+$$\frac{\sigma_n^2}{\sigma^2}n + \frac{\sigma_n^2}{\sigma_0^2}n 
+  = \sigma_n^2\laft \frac{n}{\sigma^2} + frac{1}{\sigma_0^2}\right) = 1.$$
 
 <figure>
 <img src="/assets/pics/mm-ml/gaussian-conv-combo.png" alt="Gaussian convex combination" style="width: 70%; height: 70%">
