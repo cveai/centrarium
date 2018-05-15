@@ -237,7 +237,7 @@ p(\theta\vert D) & = \frac{p(D\vert \theta)p(\theta)}{p(D)} \\
 Now, 
 
 $$\begin{aligned}
-$ -\frac{1}{2\sigma_0^2}(\theta-\mu_0)^2 -\frac{1}{2\sigma^2}\sum (x_i - \theta)^2 
+$ -\frac{1}{2\sigma_0^2}(\theta-\mu_0)^2 -\frac{1}{2\sigma^2}\sum (x_i - \theta)^2 \\
 = & -\frac{1}{2\sigma_0^2}(\theta^2 - 2\theta\mu_0 + \mu_0^2) \\
 
 & = -\frac{1}{2\sigma_n^2(\theta - m_n)+c'}
