@@ -251,13 +251,13 @@ $$\begin{aligned}
 
 
 <figure>
-<img src="/assets/pics/mm-ml/gaussian-posterior.png" alt="Gaussian posterior distribution" style="width: 100%; height: 100%">
+<img src="/assets/pics/mm-ml/gaussian-posterior.png" alt="Gaussian posterior distribution" style="width: 70%; height: 70%">
 <figcaption>
 </figcaption>
 </figure>
 
 <figure>
-<img src="/assets/pics/mm-ml/gaussian-conv-combo.png" alt="Gaussian convex combination" style="width: 100%; height: 100%">
+<img src="/assets/pics/mm-ml/gaussian-conv-combo.png" alt="Gaussian convex combination" style="width: 70%; height: 70%">
 <figcaption>
 </figcaption>
 </figure>
