@@ -249,6 +249,7 @@ $$\begin{aligned}
 = & -\frac{1}{2\sigma_n^2}(\theta - m_n)+c'
 \end{aligned}$$
 
+We have:
 
 <figure>
 <img src="/assets/pics/mm-ml/gaussian-posterior.png" alt="Gaussian posterior distribution" style="width: 60%; height: 60%">
