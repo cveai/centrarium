@@ -238,9 +238,13 @@ Now,
 
 $$\begin{aligned}
 & -\frac{1}{2\sigma_0^2}(\theta-\mu_0)^2 -\frac{1}{2\sigma^2}\sum (x_i - \theta)^2 \\
-= & -\frac{1}{2\sigma_0^2}(\theta^2 - 2\theta\mu_0 + \mu_0^2) \\
+= & -\frac{1}{2\sigma_0^2}(\theta^2 - 2\theta\mu_0 + \mu_0^2)
+    -\frac{1}{2\sigma^2}\sum (x_i^2 -2x_i\theta + \theta^2) \\
+= & \left(-\frac{1}{2\sigma_0^2} -\frac{1}{2\sigma^2}\right)\theta^2 
+    + \left(\frac{\mu_0}{\sigma_0^2} + \frac{1}{\sigma^2}\sum x_i} \right)\theta +c \\ 
+= & -\frac{1}{2}\left(\right)\left( \right)
 
-& = -\frac{1}{2\sigma_n^2(\theta - m_n)+c'}
+= & -\frac{1}{2\sigma_n^2(\theta - m_n)+c'}
 \end{aligned}$$
 
 
