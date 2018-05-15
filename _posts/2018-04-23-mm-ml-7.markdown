@@ -240,7 +240,7 @@ $$\begin{aligned}
 & -\frac{1}{2\sigma_0^2}(\theta-\mu_0)^2 -\frac{1}{2\sigma^2}\sum (x_i - \theta)^2 \\
 = & -\frac{1}{2\sigma_0^2}(\theta^2 - 2\theta\mu_0 + \mu_0^2)
     -\frac{1}{2\sigma^2}\sum (x_i^2 -2x_i\theta + \theta^2) \\
-= & \left(-\frac{1}{2\sigma_0^2} -\frac{1}{2\sigma^2}\right)\theta^2 
+= & \left(-\frac{1}{2\sigma_0^2} -\frac{n}{2\sigma^2}\right)\theta^2 
     + \left(\frac{\mu_0}{\sigma_0^2} + \frac{1}{\sigma^2}\sum x_i \right)\theta +c \\ 
 = & -\frac{1}{2}\left(\right)
     \left(\theta^2 - 2\frac{\frac{\mu_0}{\sigma_0^2} 
