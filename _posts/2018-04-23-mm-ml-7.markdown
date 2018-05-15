@@ -256,6 +256,14 @@ We have:
 </figcaption>
 </figure>
 
+and
+
+$$m_n = \frac{\sigma_n^2}{\sigma_0^2}\mu_0 + \frac{\sigma_n^2}{\sigma^2}n\mu_{\rm MLE}$$
+
+with 
+
+$$\frac{\sigma_n^2}{\sigma_0^2}+ \frac{\sigma_n^2}{\sigma^2}n =1 $$
+
 <figure>
 <img src="/assets/pics/mm-ml/gaussian-conv-combo.png" alt="Gaussian convex combination" style="width: 70%; height: 70%">
 <figcaption>
