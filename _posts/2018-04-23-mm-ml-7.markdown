@@ -246,12 +246,12 @@ $$\begin{aligned}
     \left(\theta^2 - 2\frac{\frac{\mu_0}{\sigma_0^2} 
     + \frac{\sum x_i}{\sigma^2}}{\frac{1}{\sigma_0^2} + \frac{n}{\sigma^2}}\theta +m^2 \right) \\
 = & -\frac{1}{2}\left(\frac{1}{\sigma_0^2} + \frac{n}{\sigma^2}\right)(\theta-m)^2 +c' \\
-= & -\frac{1}{2\sigma_n^2(\theta - m_n)+c'}
+= & -\frac{1}{2\sigma_n^2}(\theta - m_n)+c'
 \end{aligned}$$
 
 
 <figure>
-<img src="/assets/pics/mm-ml/dirichlet.png" alt="Dirichlet distributions" style="width: 100%; height: 100%">
+<img src="/assets/pics/mm-ml/gaussian-posterior.png" alt="Gaussian posterior distribution" style="width: 100%; height: 100%">
 <figcaption>
 </figcaption>
 </figure>
