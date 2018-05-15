@@ -250,7 +250,6 @@ $$\begin{aligned}
 \end{aligned}$$
 
 We have:
-
 <figure>
 <img src="/assets/pics/mm-ml/gaussian-posterior.png" alt="Gaussian posterior distribution" style="width: 60%; height: 60%">
 <figcaption>
