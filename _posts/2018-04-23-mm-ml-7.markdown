@@ -265,7 +265,7 @@ with
 $$\frac{\sigma_n^2}{\sigma^2}n + \frac{\sigma_n^2}{\sigma_0^2}n 
   = \sigma_n^2\left( \frac{n}{\sigma^2} + \frac{1}{\sigma_0^2}\right) = 1.$$
 
-The convergence behavior of the posterior when $n$ approaches $\infty$:
+The convergence behavior of the posterior mean (MAP) when $n$ approaches $\infty$:
 
 <figure>
 <img src="/assets/pics/mm-ml/gaussian-conv-combo.png" alt="Gaussian convex combination" style="width: 70%; height: 70%">
