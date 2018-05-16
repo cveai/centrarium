@@ -22,10 +22,15 @@ Let $(X^{(1)}, Y_1) , \ldots, (X^{(n)}, Y_n) \sim p_\theta$, iid, for some $\the
 
 (If $(X, Y) \sim p_\theta$, then $X_1, \ldots, X_d$ are (conditionally) independent given $Y$.)
 
-Goal:
+Goal: For new $x \in \mathbb{R}^d$, pridict it's $y$.
 
-Algorithm:
+Algorithm: 
+* Estimate $\hat{\theta}$ from $D$.
+* Then compute
 
+$$\begin{aligned}
+\hat{y}
+end{aligned}$$
 
 
 ---
