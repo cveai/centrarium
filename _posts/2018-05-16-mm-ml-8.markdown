@@ -11,6 +11,33 @@ tags: ML
 
 Naive Bayes is a family of models that is not necessarily a "Bayesian" method!
 
+Setup: Given data $D = ((x^{(1)}, y_1), \ldots, (x^{(n)}, y_n))$   
+with $x^{(i)} = (x_1^{(1)}, \ldots, x_1^{(d)}) \in \mathbb{R}^d$ and $y_i \in \mathcal{Y} = \\{1, \ldots, m\\}$.
+
+Assume a family of joint distributions $p_\theta$ such that 
+
+$$p_\theta(x, y) = p_\theta(x \vert y) p_\theta(y) = (\prod_{i=1}^n p_\theta(x_i \vert y) )p_\theta(y).$$
+
+Let $(X^{(1)}, Y_1) , \ldots, (X^{(n)}, Y_n) \sim p_\theta$, iid, for some $\theta$.
+
+(If $(X, Y) \sim p_\theta$, then $X_1, \ldots, X_d$ are (conditionally) independent given $Y$.)
+
+Goal: For new $x \in \mathbb{R}^d$, pridict it's $y$.
+
+Algorithm: 
+* Estimate $\hat{\theta}$ from $D$.
+* Then compute
+
+$$\begin{aligned}
+\hat{y} & = {\rm argmax} _{y \in \mathcal{Y}} \, p_{\hat{\theta}}(y\vert x) \\
+        & = {\rm argmax}_y \frac{p_{\hat{\theta}}(x\vert y)p_{\hat{\theta}}(y)}{p_{\hat{\theta}}(x)} \\
+        & = {\rm argmax}_y p_{\hat{\theta}}(x_1\vert y)\cdots p_{\hat{\theta}}(x_n\vert y)p_{\hat{\theta}}(y).
+\end{aligned}$$
+
+---
+
+#### (ML 8.2) More about Naive Bayes
+
 ---
 
 ...
