@@ -34,6 +34,9 @@ $$\begin{aligned}
         & = {\rm argmax}_y p_{\hat{\theta}}(x_1\vert y)\cdots p_{\hat{\theta}}(x_n\vert y)p_{\hat{\theta}}(y).
 \end{aligned}$$
 
+---
+
+#### (ML 8.2) More about Naive Bayes
 
 ---
 
