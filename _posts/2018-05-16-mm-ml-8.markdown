@@ -14,6 +14,10 @@ Naive Bayes is a family of models that is not necessarily a "Bayesian" method!
 Setup: Given data $D = ((x^{(1)}, y_1), \ldots, (x^{(n)}, y_n))$   
 with $x^{(i)} = (x_1^{(1)}, \ldots, x_1^{(d)}) \in \mathbb{R}^d$ and $y_i \in \mathcal{Y} = \\{1, \ldots, m\\}$.
 
+Assume a family of joint distributions $p_\theta$ such that 
+
+$$p_\theta(x, y) = p_\theta(x \vert y) p_\theta(y) = $$
+
 ---
 
 ...
