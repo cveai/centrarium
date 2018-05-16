@@ -30,7 +30,7 @@ Algorithm:
 
 $$\begin{aligned}
 \hat{y} & = {\rm argmax} _{y \in \mathcal{Y}} \, p_{\hat{\theta}}(y\vert x) \\
-        & = {\rm argmax}_y \frac{p_{\hat{\theta}}(x\vert y)}{} 
+        & = {\rm argmax}_y \frac{p_{\hat{\theta}}(x\vert y)p_{\hat{\theta}}(y)}{p_{\hat{\theta}}(x)} 
 \end{aligned}$$
 
 
