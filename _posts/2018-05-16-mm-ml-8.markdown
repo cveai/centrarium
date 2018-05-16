@@ -18,6 +18,10 @@ Assume a family of joint distributions $p_\theta$ such that
 
 $$p_\theta(x, y) = p_\theta(x \vert y) p_\theta(y) = (\prod_{i=1}^n p_\theta(x_i \vert y) )p_\theta(y).$$
 
+Let $(X^{(1)}, Y_1) , \ldots, (X^{(n)}, Y_n) \sim p_\theta$, iid, for some $\theta$.
+
+(If $(X, Y) \sim p_\theta$, then $X_1, \ldots, X_d$ are (conditionally) independent given $Y$.)
+
 ---
 
 ...
