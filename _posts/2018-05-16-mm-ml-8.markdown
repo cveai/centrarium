@@ -29,8 +29,8 @@ Algorithm:
 * Then compute
 
 $$\begin{aligned}
-\hat{y}
-end{aligned}$$
+\hat{y} {\rm argmax}_\{y \in \mathcal{Y}} p_\theta
+\end{aligned}$$
 
 
 ---
