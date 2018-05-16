@@ -16,7 +16,7 @@ with $x^{(i)} = (x_1^{(1)}, \ldots, x_1^{(d)}) \in \mathbb{R}^d$ and $y_i \in \m
 
 Assume a family of joint distributions $p_\theta$ such that 
 
-$$p_\theta(x, y) = p_\theta(x \vert y) p_\theta(y) = \prod_{i=1}^n p_\theta(x_i \vert y) p_\theta(y).$$
+$$p_\theta(x, y) = p_\theta(x \vert y) p_\theta(y) = (\prod_{i=1}^n p_\theta(x_i \vert y) )p_\theta(y).$$
 
 ---
 
