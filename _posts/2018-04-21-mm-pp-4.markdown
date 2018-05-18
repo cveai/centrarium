@@ -11,7 +11,7 @@ tags: Probability
 
 ("Average value")
 
-Let $\mathscr{X = X(\Omega)$.
+Let $\mathscr{X} = X(\Omega)$.
 
 ---
 
