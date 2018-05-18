@@ -81,6 +81,12 @@ $$\mathbb{E}\left(\sum_{i=1}^\infty X_i\right)  = \sum_{i=1}^\infty \mathbb{E}(X
 
 #### (PP 4.5) Mean, variance, and moments
 
+Let $X$ be a random variable.
+
+**Definition.**
+1. The mean $\mu(X = \mathbb{E}(X)$
+2. The variance $\sigma^2(X)$, ${\rm Var}(X)$ is $\mathbb{E}((X-\mathbb{E}(X))^2)$
+
 ---
 
 #### (PP 5.1) Multiple discrete random variables
