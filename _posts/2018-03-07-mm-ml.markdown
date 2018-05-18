@@ -19,6 +19,7 @@ tags: ML
 * Notes on Machine Learning 5: [MLE for Exponential Families](https://cveai.github.io/notes/2018/04/13/mm-ml-5.html){:target="_blank"} 
 * Notes on Machine Learning 6: [Maximum a posteriori (MAP) estimation](https://cveai.github.io/notes/2018/04/18/mm-ml-6.html){:target="_blank"} 
 * Notes on Machine Learning 7: [Bayesian Inference](https://cveai.github.io/notes/2018/04/23/mm-ml-7.html){:target="_blank"} 
+* Notes on Machine Learning 8: [Naive Bayes](https://cveai.github.io/notes/2018/05/16/mm-ml-8.html){:target="_blank"}
 
 *To be added..*
 

@@ -11,6 +11,7 @@ tags: ML
 
 Naive Bayes is a family of models that is not necessarily a "Bayesian" method!
 
+<<<<<<< HEAD
 Setup: Given data $D = ((x^{(1)}, y_1), \ldots, (x^{(n)}, y_n))$   
 with $x^{(i)} = (x_1^{(1)}, \ldots, x_1^{(d)}) \in \mathbb{R}^d$ and $y_i \in \mathcal{Y} = \\{1, \ldots, m\\}$.
 
@@ -38,6 +39,82 @@ $$\begin{aligned}
 
 #### (ML 8.2) More about Naive Bayes
 
+||||||| merged common ancestors
+=======
+Setup: Given data $D = ((x^{(1)}, y_1), \ldots, (x^{(n)}, y_n))$   
+with $x^{(i)} = (x_1^{(1)}, \ldots, x_1^{(d)}) \in \mathbb{R}^d$ and $y_i \in \mathcal{Y} = \\{1, \ldots, m\\}$.
+
+Assume a family of joint distributions $p_\theta$ such that 
+
+$$p_\theta(x, y) = p_\theta(x \vert y) p_\theta(y) = (\prod_{i=1}^n p_\theta(x_i \vert y) )p_\theta(y).$$
+
+Let $(X^{(1)}, Y_1) , \ldots, (X^{(n)}, Y_n) \sim p_\theta$, iid, for some $\theta$.
+
+(If $(X, Y) \sim p_\theta$, then $X_1, \ldots, X_d$ are (conditionally) independent given $Y$.)
+
+Goal: For new $x \in \mathbb{R}^d$, pridict it's $y$.
+
+Algorithm: 
+* Estimate $\hat{\theta}$ from $D$.
+* Then compute
+
+$$\begin{aligned}
+\hat{y} & = {\rm argmax} _{y \in \mathcal{Y}} \, p_{\hat{\theta}}(y\vert x) \\
+        & = {\rm argmax}_y \frac{p_{\hat{\theta}}(x\vert y)p_{\hat{\theta}}(y)}{p_{\hat{\theta}}(x)} \\
+        & = {\rm argmax}_y p_{\hat{\theta}}(x_1\vert y)\cdots p_{\hat{\theta}}(x_n\vert y)p_{\hat{\theta}}(y).
+\end{aligned}$$
+
+---
+
+#### (ML 8.2) More about Naive Bayes
+
+Assume that $(X, Y) \sim p_\theta$ with $Y \in \mathscr{Y} \in \\{1, \ldots, m\\}.$
+
+**How to choose $p_\theta$?**
+* $p_\theta(y) = p_\theta(Y = y) := \pi$ with $\pi = (\pi_1, \ldots, \pi_m)$.
+* $p_\theta(x_i\vert y) = p_\theta(X_i = x \vert Y = y)$
+
+$\theta =$ (all parameters of the distributions)
+
+If $X_i \in \\{1, \ldots, N\\}$ then e.g. $p_\theta(x_i\vert y) := q(x_i, y)$.
+
+If $X_i \in \\{1, 2, \ldots\\}$ then e.g. Poisson or Geometric or whatever.
+
+If $X_i \in \mathbb{R}$ then e.g. Gaussian, Gamma or whatever.
+
+**How to estimate $\theta$?**  
+MLE, or MAP (assuming priro on $\theta$)  
+Another option: "Bayesian" naive Nayes
+
+**Why make *conditional independence* assumption?**
+
+$$p_\theta(x\vert y) = p_\theta(x_1 \vert y)\cdots p_\theta(x_d\vert y)$$
+
+Can estimate $\theta$ more accurately with less data.
+
+"Wrong but simple model can be better than correct but complicated model!"
+
+---
+
+####  (ML 8.3) (ML 8.4) Bayesian Naive Bayes
+
+Assume that $(X, y) \sim p(x,y\vert \theta)$.
+
+$D = ((x^{(1)}, y_1), \ldots, (x^{(n)},y))$ where  
+$x^{(i)}= (x_1^{(i)}, \ldots, x_d^{(i)})$ and *the $j$-th feature* $x_j^{(i)} \in A_j$
+and $y \in \mathscr{Y} = \\{1, \ldots, m\\}$
+
+$(X^{(1)}, Y_1), \ldots, (X^{(n)}, Y_n) \sim p(x,y\vert \theta)$ independent given $\theta = (\pi, \\{r_jy\\})$
+
+Naive Bayes assumption says that the features are independent given the class & the parameter
+
+$$p(x, y\vert \theta) = p(x, y \vert \theta) p(y\vert \theta) = p(y\vert \theta)\prod_{j=1}^dp(x_j\vert y,theta)$$
+
+* $p(y\vert \theta) = \pi(y)$ where $\pi = (\pi(1), \ldots, \pi(m))$
+* $p(x_j\vert y, theta) = P(X_J = x_j\vert Y=y, \theta) = r_{jy}(x_j)$  
+($\sum \pi(y)=1, \sum_{k \in A_j}r_{jy} \forall j, y$)
+
+>>>>>>> notes
 ---
 
 ...
