@@ -75,7 +75,7 @@ If $X is a random variable and $g: \mathbb{R} \rightarrow \mathbb{R}$ is measura
 
 **Theorem.** If $X_1, X_2, \ldots$ is a sequence of random variables such that $X_i \ge 0$ for all $i$, then
 
-$$\mathbb{E}(\sum_{i=1}^\infty X_i)  = \sum_{i=1}^\infty \mathbb{E}(X_i).$$
+$$\mathbb{E}\left(\sum_{i=1}^\infty X_i\right)  = \sum_{i=1}^\infty \mathbb{E}(X_i).$$
 
 ---
 
