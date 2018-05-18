@@ -47,8 +47,27 @@ Otherwise, the expactation does not exist.
 
 **Example.**
 $X \sim {\rm Uniform}(a,b)$  
-$$\mathbb{E}(X) = \int_a^b\frac{x}{b-a}dx = \frac{1}{b-a} \frac{x^2}{2}\vert_a ^b$$
+$$\mathbb{E}(X) = \int_a^b\frac{x}{b-a}dx = \frac{1}{b-a} \frac{x^2}{2}\vert_a ^b=\frac{1}{b-a}\frac{1}{2}(b^2-a^2)=\frac{a+b}{2}$$
 
+---
+
+#### (PP 4.3) Expectation rule
+
+**Fact.** $g(X)$ is a random variable and $g: \mathbb{R} \rightarrow \mathbb{R}$ is measurable.
+
+**Theorem. (Expectation rule)**
+If $X is a random variable and $g: \mathbb{R} \rightarrow \mathbb{R}$ is measurable, then
+1. $\mathbb{E}(g(X)) = \sum_{x \in \mathscr{X}}g(x)p(x)$ if $X$ is discrete with PMF $p$
+2. $\mathbb{E}(g(X)) = \int_{-\infty}^\infty g(x)p(x)$ if $X$ is discrete with PMF $p$  
+(when these quantities are well-defined)
+
+---
+
+#### (PP 4.4) Properties of expectation
+
+---
+
+#### (PP 4.5) Mean, variance, and moments
 
 ---
 
