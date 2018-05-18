@@ -66,6 +66,14 @@ Can estimate $\theta$ more accurately with less data.
 
 ---
 
+####  (ML 8.3) (ML 8.4) Bayesian Naive Bayes
+
+Assume that $(X, y) \sim p(x,y\vert \theta)$.
+
+$D = ((x^{(1)}, y_1), \ldots, (x^{(n)},y))$ where $x^{(i)}= (x_1^{(i)}, \ldots, x_d^{(i)})$ and the *$j$the feature* $x_j^{(i)} \in A_j$
+
+---
+
 ...
 
 ---
