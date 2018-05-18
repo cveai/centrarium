@@ -46,7 +46,23 @@ Assume that $(X, Y) \sim p_\theta$ with $Y \in \mathscr{Y} \in \\{1, \ldots, m\\
 
 $\theta =$ (all parameters of the distributions)
 
+If $X_i \in \\{1, \ldots, N\\}$ then e.g. $p_\theta(x_i\vert y) := q(x_i, y)$.
 
+If $X_i \in \\{1, 2, \ldots\\}$ then e.g. Poisson or Geometric or whatever.
+
+If $X_i \in \mathbb{R}$ then e.g. Gaussian, Gamma or whatever.
+
+**How to estimate $\theta$?**  
+MLE, or MAP (assuming priro on $\theta$)  
+Another option: "Bayesian" naive Nayes
+
+**Whu make conditional independence assumption?**
+
+$$p_\theta(x\vert y) = p_\theta(x_1 \vert y)\cdots p_\theta(x_d\vert y)$$
+
+Can estimate $\theta$ more accurately with less data.
+
+"Wrong but simple model can be better than correct but complicated model!"
 
 ---
 
