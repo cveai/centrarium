@@ -56,7 +56,7 @@ $$\mathbb{E}(X) = \int_a^b\frac{x}{b-a}dx = \frac{1}{b-a} \frac{x^2}{2}\vert_a ^
 **Fact.** $g(X)$ is a random variable and $g: \mathbb{R} \rightarrow \mathbb{R}$ is measurable.
 
 **Theorem. (Expectation rule)**
-If $X is a random variable and $g: \mathbb{R} \rightarrow \mathbb{R}$ is measurable, then
+If $X$ is a random variable and $g: \mathbb{R} \rightarrow \mathbb{R}$ is measurable, then
 1. $\mathbb{E}(g(X)) = \sum_{x \in \mathscr{X}}g(x)p(x)$ if $X$ is discrete with PMF $p$
 2. $\mathbb{E}(g(X)) = \int_{-\infty}^\infty g(x)p(x)$ if $X$ is discrete with PMF $p$  
 (when these quantities are well-defined)
