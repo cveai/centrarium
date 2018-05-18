@@ -22,12 +22,10 @@ Otherwise, the expactation does not exist.
 
 "*Well-defined* means well-deinfed as a sum of infinite sereis."
 
-
 **Definition.**
 Let $a_1, a_2, \ldots \in \mathbb{R}$ and 
 let $\sum_{i=1}^\infty a_i = \sum_{i: a_i \ge 0}a_i + \sum_{i: a_i < 0}a_i = b+c$.  
 $\sum_{i=1}^\infty a_i$ is *well-defined* if either $b$ or $c$ is finite.
-
 
 **Example.**
 Let $c = \sum_{k = 1}^\infty \frac{1}{k^2} < \infty$   
