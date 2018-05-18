@@ -73,6 +73,10 @@ If $X is a random variable and $g: \mathbb{R} \rightarrow \mathbb{R}$ is measura
 5. If $X \le Y$ then $\mathbb{E}(X) \le \mathbb{E}(Y)$
 6. $\mathbb{E}(I_A(X)) = P(X \in A)$
 
+**Theorem.** If $X_1, X_2, \ldots$ is a sequence of random variables such that $X_i \ge 0$ for all $i$, then
+
+$$\mathbb{E}(\sum_{i=1}^\infty) X_i  = \sum_{i=1}^\infty \mathbb{E}(X_i).$$
+
 ---
 
 #### (PP 4.5) Mean, variance, and moments
