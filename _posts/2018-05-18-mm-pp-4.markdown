@@ -15,17 +15,81 @@ Let $\mathscr{X} = X(\Omega)$.
 
 **Definition.** The *expectation* of a random variable $X$ with PMF $p$ is
 
-$$\mathbb{E}(X = \sum_{x \in \mathscr{X}} xp(x)$$
+$$\mathbb{E}(X) = \sum_{x \in \mathscr{X}} xp(x)$$
 
 when this sum is 'well-defined.'
 Otherwise, the expactation does not exist.
 
 "*Well-defined* means well-deinfed as a sum of infinite sereis."
 
+
 **Definition.**
 Let $a_1, a_2, \ldots \in \mathbb{R}$ and 
-let $\sum_{i=1}^\infty a_i = \sum_{i: a_i \ge 0}a_i + \sum_{i: a_i < 0}a_i = b+c$.
+let $\sum_{i=1}^\infty a_i = \sum_{i: a_i \ge 0}a_i + \sum_{i: a_i < 0}a_i = b+c$.  
+$\sum_{i=1}^\infty a_i$ is *well-defined* if either $b$ or $c$ is finite.
 
+
+**Example.**
+Let $c = \sum_{k = 1}^\infty \frac{1}{k^2} < \infty$   
+* $\mathbb{E}(X)$ can be inifinite: let $p(k) = \frac{1}{ck^2}$ for $k \in \\{1, 2, \ldots \\}$  
+$$\mathbb{E}(X) = \sum_{i=1}^\infty \frac{k}{ck^2} = \sum_{k=1}^\infty = \infty$$
+* $\mathbb{E}(X)$ might not exists: $p(k) = \frac{1}{ck^2}$ for $k \in \mathbb{Z} -\\{0\\}$
+$$\mathbb{E}(X) = \sum_{i= 1}^\infty = \sum_{k\ge 0}+ \sum_{<0} = \infty -\infty$$ (undefined)
+
+---
+
+#### (PP 4.2) Expectation for random variables with densities
+
+**Definition.** The *expectation* of a random variable $X$ with density $f$ is
+
+$$\mathbb{E}(X) = \int_{-\infty}^\infty xf(x)dx$$
+
+when this integral is 'well-defined.'
+Otherwise, the expactation does not exist.
+
+**Example.**
+$X \sim {\rm Uniform}(a,b)$  
+$$\mathbb{E}(X) = \int_a^b\frac{x}{b-a}dx = \frac{1}{b-a} \frac{x^2}{2}\vert_a ^b=\frac{1}{b-a}\frac{1}{2}(b^2-a^2)=\frac{a+b}{2}$$
+
+---
+
+#### (PP 4.3) Expectation rule
+
+**Fact.** $g(X)$ is a random variable and $g: \mathbb{R} \rightarrow \mathbb{R}$ is measurable.
+
+**Theorem. (Expectation rule)**
+If $X$ is a random variable and $g: \mathbb{R} \rightarrow \mathbb{R}$ is measurable, then
+1. $\mathbb{E}(g(X)) = \sum_{x \in \mathscr{X}}g(x)p(x)$ if $X$ is discrete with PMF $p$
+2. $\mathbb{E}(g(X)) = \int_{-\infty}^\infty g(x)p(x)$ if $X$ is discrete with PMF $p$  
+(when these quantities are well-defined)
+
+---
+
+#### (PP 4.4) Properties of expectation
+
+**Theorem.** Suppose $X, Y$ are random variables such that $E\vert X\vert, E\vert Y\vert <\infty$.
+1. $\mathbb{E}(a) = a$ for all $a \in \mathbb{R}$
+2. $\mathbb{E}(aX) = a\mathbb{E}(X)$ for all $a \in \mathbb{R}$
+3. $\mathbb{E}(X + Y) = \mathbb{E}(X) + \mathbb{E}(Y)$
+4. If $X \ge 0$ then $\mathbb{E}(X) \ge 0$
+5. If $X \le Y$ then $\mathbb{E}(X) \le \mathbb{E}(Y)$
+6. $\mathbb{E}(I_A(X)) = P(X \in A)$
+
+**Theorem.** If $X_1, X_2, \ldots$ is a sequence of random variables such that $X_i \ge 0$ for all $i$, then
+
+$$\mathbb{E}\left(\sum_{i=1}^\infty X_i\right)  = \sum_{i=1}^\infty \mathbb{E}(X_i).$$
+
+---
+
+#### (PP 4.5) Mean, variance, and moments
+
+Let $X$ be a random variable.
+
+**Definition.**
+1. The mean $\mu(X = \mathbb{E}(X)$
+2. The variance $\sigma^2(X)$, ${\rm Var}(X)$ is $\mathbb{E}((X-\mathbb{E}(X))^2)$
+3. The $k$-the moment $m_k(X)$ is $\mathbb{E}(X^k)$
+4. The $k$-th central moment is $\mathbb{E}((X-\mathbb{E}(X))^k)$
 
 ---
 
@@ -103,7 +167,6 @@ when this sum is well-defined.
 
 **Remark.** $\mathbb{E}(X\vert Y)$ is a random variable that depends on the random variable $Y$.
 
->>>>>>> notes
 ---
 
 $$ $$
