@@ -29,7 +29,25 @@ $\sum_{i=1}^\infty a_i$ is *well-defined* if either $b$ or $c$ is finite.
 
 **Example.**
 et $c = \sum_{k = 1}^\infty \frac{1}{k^2} < \infty$   
-* $\mathbb{E}(X)$ can be inifinite: 
+* $\mathbb{E}(X)$ can be inifinite: let $p(k) = \frac{1}{ck^2}$ for $k \in \\{1, 2, \ldots \\}$  
+$$\mathbb{E}(X) = \sum_{i=1}^\infty \frac{k}{ck^2} = \sum_{k=1}^\infty = \infty$$
+* $\mathbb{E}(X)$ might not exists: $p(k) = \frac{1}{ck^2}$ for $k \in \mathbb{Z} -\\{0\\}$
+$$\mathbb{E}(X) = \sum_{i= 1}^\infty = \sum_{k\ge 0}+ \sum_{<0} = \infty -\infty$$ (undefined)
+
+---
+
+#### (PP 4.2) Expectation for random variables with densities
+
+**Definition.** The *expectation* of a random variable $X$ with density $f$ is
+
+$$\mathbb{E}(X) = \int_{-\infty}^\infty xf(x)dx$$
+
+when this integral is 'well-defined.'
+Otherwise, the expactation does not exist.
+
+**Example.**
+$X \sim {\rm Uniform}(a,b)$
+
 
 ---
 
