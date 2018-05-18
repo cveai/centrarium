@@ -76,7 +76,13 @@ and $y \in \mathscr{Y} = \\{1, \ldots, m\\}$
 
 $(X^{(1)}, Y_1), \ldots, (X^{(n)}, Y_n) \sim p(x,y\vert \theta)$ independent given $\theta = (\pi, \\{r_jy\\})$
 
+Naive Bayes assumption says that the features are independent given the class & the parameter
 
+$$p(x, y\vert \theta) = p(x, y \vert \theta) p(y\vert \theta) = p(y\vert \theta)\prod_{j=1}^dp(x_j\vert y,theta)$$
+
+* $p(y\vert \theta) = \pi(y)$ where $\pi = (\pi(1), \ldots, \pi(m))$
+* $p(x_j\vert y, theta) = P(X_J = x_j\vert Y=y, \theta) = r_{jy}(x_j)$  
+($\sum \pi(y)=1, \sum_{k \in A_j}r_{jy} \forall j, y$)
 
 ---
 
