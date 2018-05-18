@@ -86,6 +86,8 @@ Let $X$ be a random variable.
 **Definition.**
 1. The mean $\mu(X = \mathbb{E}(X)$
 2. The variance $\sigma^2(X)$, ${\rm Var}(X)$ is $\mathbb{E}((X-\mathbb{E}(X))^2)$
+3. The $k$-the moment $m_k(X)$ is $\mathbb{E}(X^k)$
+4. The $k$-th central moment is $\mathbb{E}((X-\mathbb{E}(X))^k)$
 
 ---
 
