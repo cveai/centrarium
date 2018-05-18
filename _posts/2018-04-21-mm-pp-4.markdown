@@ -9,7 +9,9 @@ tags: Probability
 
 #### (PP 4.1) Expectation for discrete random variables
 
+("Average value")
 
+Let $\mathscr{X = X(\Omega)$.
 
 ---
 
