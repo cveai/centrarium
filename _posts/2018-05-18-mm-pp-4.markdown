@@ -46,7 +46,8 @@ when this integral is 'well-defined.'
 Otherwise, the expactation does not exist.
 
 **Example.**
-$X \sim {\rm Uniform}(a,b)$
+$X \sim {\rm Uniform}(a,b)$  
+$$\mathbb{E}(X) = \int_a^b\frac{x}{b-a}dx = \frac{1}{b-a} \frac{x^2}{2}\vert_a ^b$$
 
 
 ---
