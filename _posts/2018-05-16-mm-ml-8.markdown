@@ -56,7 +56,7 @@ If $X_i \in \mathbb{R}$ then e.g. Gaussian, Gamma or whatever.
 MLE, or MAP (assuming priro on $\theta$)  
 Another option: "Bayesian" naive Nayes
 
-**Whu make conditional independence assumption?**
+**Why make *conditional independence* assumption?**
 
 $$p_\theta(x\vert y) = p_\theta(x_1 \vert y)\cdots p_\theta(x_d\vert y)$$
 
