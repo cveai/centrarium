@@ -22,9 +22,9 @@ Otherwise, the expactation does not exist.
 
 "*Well-defined* means well-deinfed as a sum of infinite sereis."
 
-***Definition.*
-Let $a_1, 2_2, \ldots \in \mathbb{R}$ and 
-let $\sum_{i=1}^\infty a_i = \sum_{i: a_i \ge 0}a_i + \sum_{i: a_i < 0}a_i$ = b+c.
+**Definition.**
+Let $a_1, a_2, \ldots \in \mathbb{R}$ and 
+let $\sum_{i=1}^\infty a_i = \sum_{i: a_i \ge 0}a_i + \sum_{i: a_i < 0}a_i = b+c$.
 
 
 ---
