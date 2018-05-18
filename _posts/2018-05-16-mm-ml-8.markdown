@@ -38,8 +38,8 @@ $$\begin{aligned}
 
 #### (ML 8.2) More about Naive Bayes
 
-How to choose $p_\theta$? ($(X,Y) \sim p_\theta)  
-* $$
+How to choose $p_\theta$? ($(X,Y) \sim p_\theta$)  
+* $p_\theta(y) = p_\theta()$
 
 ---
 
