@@ -71,6 +71,7 @@ If $X is a random variable and $g: \mathbb{R} \rightarrow \mathbb{R}$ is measura
 3. $\mathbb{E}(X + Y) = \mathbb{E}(X) + \mathbb{E}(Y)$
 4. If $X \ge 0$ then $\mathbb{E}(X) \ge 0$
 5. If $X \ge Y$ then $\mathbb{E}(X) \ge \mathbb{E}(Y)$
+6. $\mathbb{E}(I_A(X)) = P(X \in A)$
 
 ---
 
