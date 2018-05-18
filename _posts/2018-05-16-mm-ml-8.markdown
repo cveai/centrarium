@@ -38,6 +38,8 @@ $$\begin{aligned}
 
 #### (ML 8.2) More about Naive Bayes
 
+Assume that $(X, Y) \sim p_\theta$ with $Y \in \mathscr{Y} \in \\{1, \ldots, m\\}.$
+
 How to choose $p_\theta$? ($(X,Y) \sim p_\theta$)  
 * $p_\theta(y) = p_\theta()$
 
