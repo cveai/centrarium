@@ -70,7 +70,13 @@ Can estimate $\theta$ more accurately with less data.
 
 Assume that $(X, y) \sim p(x,y\vert \theta)$.
 
-$D = ((x^{(1)}, y_1), \ldots, (x^{(n)},y))$ where $x^{(i)}= (x_1^{(i)}, \ldots, x_d^{(i)})$ and the *$j$the feature* $x_j^{(i)} \in A_j$
+$D = ((x^{(1)}, y_1), \ldots, (x^{(n)},y))$ where  
+$x^{(i)}= (x_1^{(i)}, \ldots, x_d^{(i)})$ and *the $j$-th feature* $x_j^{(i)} \in A_j$
+and $y \in \mathscr{Y} = \\{1, \ldot, m\\}$
+
+$(X^{(1)}, Y_1), \ldots, (X^{(n)}, Y_n) \sim p(x,y\vert \theta)$ independent given $\theta = (\pi, \\{r_jy\\})$
+
+
 
 ---
 
