@@ -13,6 +13,20 @@ tags: Probability
 
 Let $\mathscr{X} = X(\Omega)$.
 
+**Definition.** The *expectation* of a random variable $X$ with PMF $p$ is
+
+$$\mathbb{E}(X = \sum_{x \in \mathscr{X}} xp(x)$$
+
+when this sum is 'well-defined.'
+Otherwise, the expactation does not exist.
+
+"*Well-defined* means well-deinfed as a sum of infinite sereis."
+
+***Definition.*
+Let $a_1, 2_2, \ldots \in \mathbb{R}$ and 
+let $\sum_{i=1}^\infty a_i = \sum_{i: a_i \ge 0}a_i + \sum_{i: a_i < 0}a_i$ = b+c.
+
+
 ---
 
 #### (PP 5.1) Multiple discrete random variables
