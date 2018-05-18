@@ -65,6 +65,13 @@ If $X is a random variable and $g: \mathbb{R} \rightarrow \mathbb{R}$ is measura
 
 #### (PP 4.4) Properties of expectation
 
+**Theorem.** Suppose $X, Y$ are random variables such that $E\vert X\vert, E\vert Y\vert <\infty$.
+1. $\mathbb{E}(a) = a$ for all $a \in \mathbb{R}$
+2. $\mathbb{E}(aX) = a\mathbb{E}(X)$ for all $a \in \mathbb{R}$
+3. $\mathbb{E}(X + Y) = \mathbb{E}(X) + \mathbb{E}(Y)$
+4. If $X \ge 0$ then $\mathbb{E}(X) \ge 0$
+5. If $X \ge Y$ then $\mathbb{E}(X) \ge \mathbb{E}(Y)$
+
 ---
 
 #### (PP 4.5) Mean, variance, and moments
