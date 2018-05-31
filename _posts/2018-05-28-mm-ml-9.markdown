@@ -12,15 +12,15 @@ tags: ML
 "It's truly a workhorse of statistics!"  
 "It's not just about lines & planes!"
 
-*Setup.* Given $D = ((x_1, y_1), \dlots, (x_n, y_n))$ with $x_i \in \mathbb{R}^d$ and $y_i \in \mathbb{R}$.  
+*Setup.* Given $D = ((x_1, y_1), \ldots, (x_n, y_n))$ with $x_i \in \mathbb{R}^d$ and $y_i \in \mathbb{R}$.  
 *Goal.* Select "good" $f : \mathbb{R} \rightarrow \mathbb{R}$ for predicting $y$ for new $x$.
 
 **Basis functions.**
 
-The simplest class of functions $\mathbb{R} \rightarrow \mathbb{R}$ one can think of is linear ones.
-Those are precisely the functions $\mathbb{R} \rightarrow \mathbb{R}$ that is given by 
+The simplest class of functions $\mathbb{R}^d \rightarrow \mathbb{R}$ one can think of is linear ones.
+Those are precisely the functions $\mathbb{R}^d \rightarrow \mathbb{R}$ that is given by 
 
-$$[w] : \mathbb{R} \rightarrow \mathbb{R}$$
+$$[w] : \mathbb{R}^d \rightarrow \mathbb{R}, [W](x) = w^Tx.$$
 
 ---
 
