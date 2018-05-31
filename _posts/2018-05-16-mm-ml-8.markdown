@@ -84,7 +84,6 @@ $$p(x, y\vert \theta) = p(x, y \vert \theta) p(y\vert \theta) = p(y\vert \theta)
 * $p(x_j\vert y, \theta) = P(X_J = x_j\vert Y=y, \theta) = r_{jy}(x_j)$  
 ($\sum \pi(y)=1, \sum_{k \in A_j}r_{jy} \forall j, y$)
 
-<<<<<<< HEAD
 **Let's put some prior: a natural choice is Dirichlet.**  
 (Dirichlet is a conjugate prior for categorical distribution.)
 
@@ -93,11 +92,6 @@ p(\pi) = {\rm Dir}(\pi\vert \alpha) \propto
 \end{aligned}$$
 
 
-
-||||||| merged common ancestors
->>>>>>> notes
-=======
->>>>>>> master
 ---
 
 ...
