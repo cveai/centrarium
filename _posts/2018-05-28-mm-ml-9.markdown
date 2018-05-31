@@ -20,7 +20,9 @@ tags: ML
 The simplest class of functions $\mathbb{R}^d \rightarrow \mathbb{R}$ one can think of is linear ones.
 Those are precisely the functions $\mathbb{R}^d \rightarrow \mathbb{R}$ that is given by 
 
-$$[w] : \mathbb{R}^d \rightarrow \mathbb{R}, \,\,[w](x) = w^Tx.$$
+$$[w] : \mathbb{R}^d \rightarrow \mathbb{R}, \,\,[w](x) = w^Tx$$
+
+for some (fixed) vector $w \in $\mathbb{R}^d.$
 
 ---
 
