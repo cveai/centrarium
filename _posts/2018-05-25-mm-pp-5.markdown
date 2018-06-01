@@ -101,7 +101,18 @@ $\leadsto$ arise joint distributions (for random vectors)
 
 **Definition.** $X_1, \ldots, X_d$ independent if   
 (discrete) $\,\,\,$  $p(x_1, \ldots, x_d) = \prod_{i=1}^d p(x_i)$ for all $x_i \in \mathscr{X}_i$.  
-(density) $\,\,\,$ $p(x, y) = f(x) f(y)$ for all $x \in \mathbb{R}, y \in \mathbb{R}$.
+(density) $\,\,\,$ $f(x_1, \ldots, x_d) = \prod_{i=1}^d f(x_i)$ for all $x_i \in \mathscr{X}_i$. 
+
+**Theorem.** TAFE.
+1. $X, Y$ independent;
+2. $P(X \in A, Y \in B) = P(X \in A)P(Y \in B)$ for all $A, B \in \mathbb{B}(\mathbb{R})$;
+3. $g(X), h(Y)$ independent for all measurable $g, h: \mathbb{R} \rightarrow \mathbb{R}$;
+4. $\mathbb{E}(g(X)h(Y)) = \mathbb{E}(g(X))\mathbb{E}(h(Y))$ for all measurable $g, h: \mathbb{R} \rightarrow \mathbb{R}$;
+5. $\mathbb{E}(g(X)h(Y)) = \mathbb{E}(g(X))\mathbb{E}(h(Y))$ for all measurable $g, h: \mathbb{R} \rightarrow \mathbb{R}_{\ge 0}$;
+
+
+
+
 
 
 ---
