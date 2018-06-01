@@ -79,6 +79,16 @@ minimizes the expectred loss. (cf. Ch.3 Decision theory - 3.4 Square loss)
 
 ---
 
+#### (ML 9.4)(ML 9.5)(ML 9.6) MLE for linear regression
+
+---
+
+#### (ML 9.7) Basis functions MLE
+
+How to model nonlinearity using linear regression.
+
+---
+
 #### (ML 11.1) Estimators
 
 Assume the data $D = (X_1, \ldots, X_n)$ are given as random variables.
