@@ -119,6 +119,11 @@ But not conversely.
 
 $${\rm Cov}(X, Y) = \mathbb{E}((X - \mathbb{E}(X))(Y - \mathbb{E}(Y)))$$
 
+**Remark.**
+1. ${\rm Cov}(X, X) = \sigma^2(X)$
+2. ${\rm Cov}(X, Y) = \mathbb{E}(XY)  - \mathbb{E}(X)\mathbb{E}(Y)$
+3. $X, Y$ independnet $\Rightarrow$ ${\rm Cov}(X, Y) = 0$
+
 ---
 
 #### (PP 5.5) Law of large numbers and Central limit theorem
