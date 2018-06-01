@@ -33,8 +33,22 @@ Instead of aiming to model the target function $f : \mathbb{R}^d \rightarrow \ma
 we take probabilistic approach by modelling the conditional distribution $p(y\vert x)$.
 We start with a parametized family $p_\theta(y\vert x)$ whith $\theta \in \Theta$ and 
 estimate $\theta$ using the data 
-$D = ((x_1, y_1), \ldots, (x_n, y_n))$ with $x_i \in \mathbb{R}^d$ and $y_i \in \mathbb{R}$.
+$D = ((x_1, y_1), \ldots, (x_n, y_n))$.
+In other words, we figure out what $theta$ the datat comes from.
 
+But what parametrized family should we choose?
+
+One natural choice would be a Gaussian family: 
+We set $p_\theta(y\vert x) = N(y\vert \mu(x), \sigma^2(x))$, meaning that for fixed $x$,
+the random variable $Y$ corresponding to $x$ is such that $Y \sim N(\mu(x), \sigma^2(x))$.
+What remains is to decide the dpendency of $\mu(x)$ and $\sigma^2(x)$ upon $\theta$.
+
+We set the parameter to be $\theta = (w, \sigma^2)$ with $w \in \mathbb{R}, \sigma^2 >0$ and 
+take $\mu(x) = w^Tx, \sigma^2(x) = \sigma^2$, so that we have 
+
+$$p_\theta(y\vert x) = N(y\vert w^Tx, \sigma^2).$$
+
+the (Gaussian) linear regression model 
 
 
 ---
