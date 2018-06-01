@@ -48,7 +48,13 @@ take $\mu(x) = w^Tx, \sigma^2(x) = \sigma^2$, so that we have
 
 $$p_\theta(y\vert x) = N(y\vert w^Tx, \sigma^2).$$
 
-the (Gaussian) linear regression model 
+This is called the (Gaussian) linear regression.
+
+In effect, we have modelled the target function $f$ as the random variable
+
+$$Y = w^Tx + \varepsilon$$
+
+wherer $\varepsilon \sim N(0, \sigma^2)$.
 
 
 ---
