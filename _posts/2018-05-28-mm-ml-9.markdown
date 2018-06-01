@@ -54,7 +54,7 @@ This is called the (Gaussian) linear regression.
 
 In effect, we have modelled the target function $f$ as the random variable
 
-$$Y = w^Tx + \Epsilon$$
+$$Y = w^Tx + \varepsilon$$
 
 wherer $\varepsilon \sim N(0, \sigma^2)$. Thus, the term "linear."
 
@@ -71,7 +71,8 @@ For th square loss $L(y, \hat{Y}) = (y-y)^2$, we have
 
 $$\begin{aligned}
 \arg\min_y \mathbb{E}_\theta (L(Y, y)\vert X = x) &= \mathbb{E}_\theta(w^Tx + \varepsilon\vert X=x) \\
-&= w^Tx + \mathbb{E}_\theta()
+&= w^Tx + \mathbb{E}_\theta(\varepsilon\vert X=x) \\
+&= w^Tx
 \end{aligned}$$
 
 minimizes the expectred loss. (cf. Ch.3 Decision theory - 3.4 Square loss)
