@@ -107,8 +107,9 @@ $\leadsto$ arise joint distributions (for random vectors)
 1. $X, Y$ independent;
 2. $P(X \in A, Y \in B) = P(X \in A)P(Y \in B)$ for all $A, B \in \mathbb{B}(\mathbb{R})$;
 3. $g(X), h(Y)$ independent for all measurable $g, h: \mathbb{R} \rightarrow \mathbb{R}$;
-4. $\mathbb{E}(g(X)h(Y)) = \mathbb{E}(g(X))\mathbb{E}(h(Y))$ for all measurable $g, h: \mathbb{R} \rightarrow \mathbb{R}$;
-5. $\mathbb{E}(g(X)h(Y)) = \mathbb{E}(g(X))\mathbb{E}(h(Y))$ for all measurable $g, h: \mathbb{R} \rightarrow \mathbb{R}_{\ge 0}$;
+4. $\mathbb{E}(g(X)h(Y)) = \mathbb{E}(g(X))\mathbb{E}(h(Y))$ for all measurable $g, h: \mathbb{R} \rightarrow \mathbb{R}_{\ge 0}$;
+5. $\mathbb{E}(g(X)h(Y)) = \mathbb{E}(g(X))\mathbb{E}(h(Y))$ for all measurable $g, h: \mathbb{R} \rightarrow \mathbb{R}_{\ge 0}$
+s.t. $\mathbb{E}(\vert g(X)\vert), \mathbb{E}(\vert h(Y)\vert) < \infty$.
 
 
 
