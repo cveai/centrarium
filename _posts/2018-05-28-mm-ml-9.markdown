@@ -29,7 +29,11 @@ for some (fixed) vector $w \in $\mathbb{R}^d.$
 
 *Discrminative approach.*
 
-
+Instead of aiming to model the target function $f : \mathbb{R}^d \rightarrow \mathbb{R}$,
+we take probabilistic approach by modelling the conditional distribution $p(y\vert x)$.
+We start with a parametized family $p_\theta(y\vert x)$ whith $\theta \in \Theta$ and 
+estimate $\theta$ using the data 
+$D = ((x_1, y_1), \ldots, (x_n, y_n))$ with $x_i \in \mathbb{R}^d$ and $y_i \in \mathbb{R}$.
 
 
 
