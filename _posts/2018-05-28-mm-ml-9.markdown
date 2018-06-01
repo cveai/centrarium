@@ -24,6 +24,9 @@ $$[w] : \mathbb{R}^d \rightarrow \mathbb{R}, \,\,[w](x) = w^Tx$$
 
 for some (fixed) vector $w \in $\mathbb{R}^d.$
 
+---
+
+#### (ML 9.2) Linear regression - Definition & Motivation
 
 **Why linear regression is such a natural model for regresession in some sense.**
 
