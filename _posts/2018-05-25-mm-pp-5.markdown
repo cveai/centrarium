@@ -83,9 +83,23 @@ when this sum is well-defined.
 
 ---
 
-$$ $$
+#### (PP 5.3) Multiple random variables with densities
 
-*To be added..*
+Consider random variables $X, Y, Z$ etc on $(\Omega, \mathcal{A}, P)$.
+
+$\leadsto$ arise joint distributions (for random vectors)
+
+**Definition.** $X, Y$ independent if   
+(discrete) $p(x, y) = p(x) p(y)$ for all $x \in \mathscr{X}, y \in \mathscr{Y}$. 
+
+
+---
+
+#### (PP 5.4) Independence, Covariance, and Correlation
+
+---
+
+#### (PP 5.5) Law of large numbers and Central limit theorem
 
 ---
 
