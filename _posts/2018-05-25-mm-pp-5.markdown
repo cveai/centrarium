@@ -111,8 +111,8 @@ $\leadsto$ arise joint distributions (for random vectors)
 5. $\mathbb{E}(g(X)h(Y)) = \mathbb{E}(g(X))\mathbb{E}(h(Y))$ for all measurable $g, h: \mathbb{R} \rightarrow \mathbb{R}_{\ge 0}$
 s.t. $\mathbb{E}(\vert g(X)\vert), \mathbb{E}(\vert h(Y)\vert) < \infty$.
 
-
-
+**Remark.** $X, Y$ independent & $\mathbb{E}(\vert X\vert), \mathbb{E}(\vert Y\vert) < \infty$
+implies $\mathbb{E}(XY) = \mathbb{E}(X)\mathbb{E}(Y)$. But not conversely.
 
 
 
