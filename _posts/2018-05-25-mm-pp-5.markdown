@@ -96,8 +96,8 @@ Consider random variables $X, Y, Z$ etc on $(\Omega, \mathcal{A}, P)$.
 $\leadsto$ arise joint distributions (for random vectors)
 
 **Definition.** $X, Y$ independent if   
-(discrete) \ \ $p(x, y) = p(x) p(y)$ for all $x \in \mathscr{X}, y \in \mathscr{Y}$.   
-(densities) \ \ $p(x, y) = f(x) f(y)$ for all $x \in \mathbb{R}, y \in \mathbb{R}$.
+(discrete) $\,\,\,$  $p(x, y) = p(x) p(y)$ for all $x \in \mathscr{X}, y \in \mathscr{Y}$.   
+(densities) $\,\,\,$ $p(x, y) = f(x) f(y)$ for all $x \in \mathbb{R}, y \in \mathbb{R}$.
 
 
 
