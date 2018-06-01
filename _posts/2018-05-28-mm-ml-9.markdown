@@ -54,7 +54,7 @@ In effect, we have modelled the target function $f$ as the random variable
 
 $$Y = w^Tx + \varepsilon$$
 
-wherer $\varepsilon \sim N(0, \sigma^2)$.
+wherer $\varepsilon \sim N(0, \sigma^2)$. Thus, the term "linear."
 
 
 ---
