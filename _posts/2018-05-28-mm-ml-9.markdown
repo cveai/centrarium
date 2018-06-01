@@ -1,100 +1,91 @@
 ---
 layout: post
-title:  "Notes on Machine Learning 8: Naive Bayes"
-date:   2018-05-16 00:00:00
+title:  "Notes on Machine Learning 9: Linear regression"
+date:   2018-05-28 00:00:00
 author: 장승환
 categories: Notes
 tags: ML
 ---
 
-#### (ML 8.1) Naive Bayes classification
+#### (ML 9.1) Linear regression - Nonlinearity via basis functions
 
-Naive Bayes is a family of models that is not necessarily a "Bayesian" method!
+"It's truly a workhorse of statistics!"  
+"It's not just about lines & planes!"
 
-Setup: Given data $D = ((x^{(1)}, y_1), \ldots, (x^{(n)}, y_n))$   
-with $x^{(i)} = (x_1^{(1)}, \ldots, x_1^{(d)}) \in \mathbb{R}^d$ and $y_i \in \mathcal{Y} = \\{1, \ldots, m\\}$.
+*Setup.* Given $D = ((x_1, y_1), \ldots, (x_n, y_n))$ with $x_i \in \mathbb{R}^d$ and $y_i \in \mathbb{R}$.  
+*Goal.* Select "good" $f : \mathbb{R} \rightarrow \mathbb{R}$ for predicting $y$ for new $x$.
 
-Assume a family of joint distributions $p_\theta$ such that 
+**Basis functions.**
 
-$$p_\theta(x, y) = p_\theta(x \vert y) p_\theta(y) = (\prod_{i=1}^n p_\theta(x_i \vert y) )p_\theta(y).$$
+The simplest class of functions $\mathbb{R}^d \rightarrow \mathbb{R}$ one can think of is linear ones.
+Those are precisely the functions $\mathbb{R}^d \rightarrow \mathbb{R}$ that is given by 
 
-Let $(X^{(1)}, Y_1) , \ldots, (X^{(n)}, Y_n) \sim p_\theta$, iid, for some $\theta$.
+$$[w] : \mathbb{R}^d \rightarrow \mathbb{R}, \,\,[w](x) = w^Tx$$
 
-(If $(X, Y) \sim p_\theta$, then $X_1, \ldots, X_d$ are (conditionally) independent given $Y$.)
+for some (fixed) vector $w \in $\mathbb{R}^d.$
 
-Goal: For new $x \in \mathbb{R}^d$, pridict it's $y$.
+---
 
-Algorithm: 
-* Estimate $\hat{\theta}$ from $D$.
-* Then compute
+#### (ML 9.2) Linear regression - Definition & Motivation
+
+
+*Discrminative approach.*
+
+Instead of aiming to model the target function $f : \mathbb{R}^d \rightarrow \mathbb{R}$,
+we take probabilistic approach by modelling the conditional distribution $p(y\vert x)$.
+We start with a parametized family $p_\theta(y\vert x)$ whith $\theta \in \Theta$ and 
+estimate $\theta$ using the data 
+$D = ((x_1, y_1), \ldots, (x_n, y_n))$.
+In other words, we figure out what $theta$ the datat comes from.
+
+But what parametrized family should we choose?
+
+One natural choice would be a Gaussian family: 
+We set $p_\theta(y\vert x) = N(y\vert \mu(x), \sigma^2(x))$, meaning that for fixed $x$,
+the random variable $Y$ corresponding to $x$ is such that $Y \sim N(\mu(x), \sigma^2(x))$.
+What remains is to decide the dpendency of $\mu(x)$ and $\sigma^2(x)$ upon $\theta$.
+
+We set the parameter to be $\theta = (w, \sigma^2)$ with $w \in \mathbb{R}, \sigma^2 >0$ and 
+take $\mu(x) = w^Tx, \sigma^2(x) = \sigma^2$, so that we have 
+
+$$p_\theta(y\vert x) = N(y\vert w^Tx, \sigma^2).$$
+
+This is called the (Gaussian) linear regression.
+
+In effect, we have modelled the target function $f$ as the random variable
+
+$$Y = w^Tx + \varepsilon$$
+
+wherer $\varepsilon \sim N(0, \sigma^2)$. Thus, the term "linear."
+
+
+---
+
+#### (ML 9.3) Choosing f under linear regression
+
+**Why linear regression is such a natural model for regresession in some sense.**
+
+In other words, why does it make sense to take $\mu(x) = w^Tx$?
+
+For th square loss $L(y, \hat{Y}) = (y-y)^2$, we have 
 
 $$\begin{aligned}
-\hat{y} & = {\rm argmax} _{y \in \mathcal{Y}} \, p_{\hat{\theta}}(y\vert x) \\
-        & = {\rm argmax}_y \frac{p_{\hat{\theta}}(x\vert y)p_{\hat{\theta}}(y)}{p_{\hat{\theta}}(x)} \\
-        & = {\rm argmax}_y p_{\hat{\theta}}(x_1\vert y)\cdots p_{\hat{\theta}}(x_n\vert y)p_{\hat{\theta}}(y).
+\arg\min_y \mathbb{E}_\theta (L(Y, y)\vert X = x) &= \mathbb{E}_\theta(w^Tx + \varepsilon\vert X=x) \\
+&= w^Tx + \mathbb{E}_\theta(\varepsilon\vert X=x) \\
+&= w^Tx
 \end{aligned}$$
 
----
-
-#### (ML 8.2) More about Naive Bayes
-
-Assume that $(X, Y) \sim p_\theta$ with $Y \in \mathscr{Y} \in \\{1, \ldots, m\\}.$
-
-**How to choose $p_\theta$?**
-* $p_\theta(y) = p_\theta(Y = y) := \pi$ with $\pi = (\pi_1, \ldots, \pi_m)$.
-* $p_\theta(x_i\vert y) = p_\theta(X_i = x \vert Y = y)$
-
-$\theta =$ (all parameters of the distributions)
-
-If $X_i \in \\{1, \ldots, N\\}$ then e.g. $p_\theta(x_i\vert y) := q(x_i, y)$.
-
-If $X_i \in \\{1, 2, \ldots\\}$ then e.g. Poisson or Geometric or whatever.
-
-If $X_i \in \mathbb{R}$ then e.g. Gaussian, Gamma or whatever.
-
-**How to estimate $\theta$?**  
-MLE, or MAP (assuming priro on $\theta$)  
-Another option: "Bayesian" naive Nayes
-
-**Why make *conditional independence* assumption?**
-
-$$p_\theta(x\vert y) = p_\theta(x_1 \vert y)\cdots p_\theta(x_d\vert y)$$
-
-Can estimate $\theta$ more accurately with less data.
-
-"Wrong but simple model can be better than correct but complicated model!"
+minimizes the expectred loss. (cf. Ch.3 Decision theory - 3.4 Square loss)
 
 ---
 
-####  (ML 8.3) (ML 8.4) Bayesian Naive Bayes
-
-Assume that $(X, y) \sim p(x,y\vert \theta)$.
-
-$D = ((x^{(1)}, y_1), \ldots, (x^{(n)},y))$ where  
-$x^{(i)}= (x_1^{(i)}, \ldots, x_d^{(i)})$ and *the $j$-th feature* $x_j^{(i)} \in A_j$
-and $y \in \mathscr{Y} = \\{1, \ldots, m\\}$
-
-$(X^{(1)}, Y_1), \ldots, (X^{(n)}, Y_n) \sim p(x,y\vert \theta)$ independent given $\theta = (\pi, \\{r_jy\\})$
-
-Naive Bayes assumption says that the features are independent given the class & the parameter
-
-$$p(x, y\vert \theta) = p(x, y \vert \theta) p(y\vert \theta) = p(y\vert \theta)\prod_{j=1}^dp(x_j\vert y,\theta)$$
-
-* $p(y\vert \theta) = \pi(y)$ where $\pi = (\pi(1), \ldots, \pi(m))$
-* $p(x_j\vert y, \theta) = P(X_J = x_j\vert Y=y, \theta) = r_{jy}(x_j)$  
-($\sum \pi(y)=1, \sum_{k \in A_j}r_{jy} \forall j, y$)
-
-**Let's put some prior: a natural choice is Dirichlet.**  
-(Dirichlet is a conjugate prior for categorical distribution.)
-
-$$\begin{aligned}
-p(\pi) = {\rm Dir}(\pi\vert \alpha) \propto 
-\end{aligned}$$
-
+#### (ML 9.4)(ML 9.5)(ML 9.6) MLE for linear regression
 
 ---
 
-...
+#### (ML 9.7) Basis functions MLE
+
+How to model nonlinearity using linear regression.
 
 ---
 
