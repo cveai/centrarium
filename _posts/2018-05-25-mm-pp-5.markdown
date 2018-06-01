@@ -112,9 +112,12 @@ $\leadsto$ arise joint distributions (for random vectors)
 s.t. $\mathbb{E}(\vert g(X)\vert), \mathbb{E}(\vert h(Y)\vert) < \infty$.
 
 **Remark.** $X, Y$ independent & $\mathbb{E}(\vert X\vert), \mathbb{E}(\vert Y\vert) < \infty$
-implies $\mathbb{E}(XY) = \mathbb{E}(X)\mathbb{E}(Y)$. But not conversely.
+implies $\mathbb{E}(XY) = \mathbb{E}(X)\mathbb{E}(Y)$.   
+But not conversely.
 
+**Definition.** The covariance of $X, Y$ is 
 
+$${\rm Cov}(X, Y) = \mathbb{E}((X - \mathbb{E}(X))(Y - \mathbb{E}(Y)))$$
 
 ---
 
