@@ -126,7 +126,7 @@ $${\rm Cov}(X, Y) = \mathbb{E}((X - \mathbb{E}(X))(Y - \mathbb{E}(Y)))$$
 
 **Definition.** The (Pearson) correlation coefficient of $X, Y$ is 
 
-$$\rho(X, Y) = \frac{{\rm Cov}(X, X)}{\sigma(X)\sigma(Y)}$$
+$$\rho(X, Y) = \frac{\{\rm Cov\}(X, X)}{\sigma(X)\sigma(Y)}$$
 
 ---
 
