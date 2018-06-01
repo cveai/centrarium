@@ -124,6 +124,10 @@ $${\rm Cov}(X, Y) = \mathbb{E}((X - \mathbb{E}(X))(Y - \mathbb{E}(Y)))$$
 2. ${\rm Cov}(X, Y) = \mathbb{E}(XY)  - \mathbb{E}(X)\mathbb{E}(Y)$
 3. $X, Y$ independnet $\Rightarrow$ ${\rm Cov}(X, Y) = 0$
 
+**Definition.** The (Pearson) correlation coefficient of $X, Y$ is 
+
+$$\rho(X, Y) = \frac{{\rm Cov}(X, X)}{\sigma(X)\sigma(Y)}$$
+
 ---
 
 #### (PP 5.5) Law of large numbers and Central limit theorem
