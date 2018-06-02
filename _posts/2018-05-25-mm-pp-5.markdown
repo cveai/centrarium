@@ -132,5 +132,24 @@ $$\rho(X, Y) = \frac{ {\rm Cov} (X, Y)}{\sigma(X)\sigma(Y)}$$
 
 #### (PP 5.5) Law of large numbers and Central limit theorem
 
+**Definition.** $X_1, \ldots, X_n$ iid (independent and identically distributed) if they are independent
+and $p_{X_1} = \cdots = p_{X_n}$ ($f_{X_1} = \cdots = f_{X_n}$)
+
+Let $X_1, \ldots, X_n$ be iid with mean $\mu$ and variance $0< \sigma^2 < \infty$.
+
+**Theorem. (LLN)** "very intuitive result"  
+
+$$\frac{1}{n}\sum_{i=1}^n X_i \rightarrow \mu$$
+
+w.p. $1$ (almost surely).
+
+**Example.** $X \sim$ Bernoulli$(\mu)$, $X_i \in \{0, 1\}$.
+
+**Theorem. (CLT)** "astonishing" (very surprising) 
+
+$$\sqrt{\frac{n}{\sigma^2}}(\frac{1}{n}\sum_{i=1}^n X_i - \mu) \rightarrow^D N(0, 1)$$
+
+in the sense that the cdf of the former converges to tht latter.
+
 ---
 
