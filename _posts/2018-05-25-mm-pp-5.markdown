@@ -152,4 +152,4 @@ $$\sqrt{\frac{n}{\sigma^2}}(\frac{1}{n}\sum_{i=1}^n X_i - \mu) \rightarrow^D N(0
 in the sense that the cdf of the former converges to tht latter.
 
 ---
->>>>>>> master
+
