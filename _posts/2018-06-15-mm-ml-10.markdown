@@ -7,13 +7,15 @@ categories: Notes
 tags: ML
 ---
 
-#### (ML 9) Baeysian linear regression
+#### (ML 10) Baeysian linear regression
 
 Using MLE for ligression often leads to overfitting, which can be a sever problem.
 
 Using MAP can solve the problem of overfitting, but we don't have rpresentation of uncertainty in this case (not only in $w$ but in $y$).
 
 Using Bayesian approach can optimize a appropriate loss function, and gives us the predictive distribution $p(y \vert x, D)$, which is what we really want.
+
+
 
 ---
 
