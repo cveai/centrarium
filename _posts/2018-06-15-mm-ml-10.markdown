@@ -17,7 +17,8 @@ Using Bayesian approach can optimize a appropriate loss function, and gives us t
 
 **Setup.** Given data $D = ((x_1, y_1), \ldots, (x_n, y_n))$, $x_i \in \mathbb{R}^d$, $y_i \in \mathbb{R}$.
 
-**Model.** $Y_1, \ldots, Y_n$ independent given $w$ with $Y_i \sim N(w^Tx_i, a^{-1})$, where $a = \frac{1}{\sigma^2}$ is the *precision* and $w \sim N(0, b^{-1}I)$.
+**Model.** $Y_1, \ldots, Y_n$ independent given $w$ with $Y_i \sim N(w^Tx_i, a^{-1})$, where $a = \frac{1}{\sigma^2} >)$ is the *precision* and $w = (w_1, \ldots, w_d) \sim N(0, b^{-1}I)$ with $B >0$.  
+Assume $a, b$ are known and the parameter is given by $\theta = w$.
 
 ---
 
