@@ -9,7 +9,7 @@ tags: ML
 
 #### (ML 11.1) Estimators
 
-Assume the data $D = (X_1, \ldots, X_n)$ are given as random variables.
+Model the data as random variables: $D = (X_1, \ldots, X_n)$.
 
 **Definition.** A <span style="color:red">*statistic*</span> is a random variable $S = f(D)$ that is a function of the data $D$.
 
@@ -382,5 +382,4 @@ $$ $$
 *To be added..*
 
 ---
-
 
