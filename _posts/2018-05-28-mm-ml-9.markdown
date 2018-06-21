@@ -22,7 +22,7 @@ Those are precisely the functions $\mathbb{R}^d \rightarrow \mathbb{R}$ that is 
 
 $$[w] : \mathbb{R}^d \rightarrow \mathbb{R}, \,\,[w](x) = w^Tx$$
 
-for some (fixed) vector $w \in $\mathbb{R}^d.$
+for some (fixed) vector $w \in \mathbb{R}^d.$
 
 ---
 

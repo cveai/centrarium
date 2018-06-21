@@ -9,6 +9,8 @@ tags: ML
 
 #### (ML 10) Baeysian linear regression
 
+Linear regression is one of the most powerful general purpose tools.
+
 Using MLE for ligression often leads to overfitting, which can be a sever problem.
 
 Using MAP can solve the problem of overfitting, but we don't have rpresentation of uncertainty in this case (not only in $w$ but in $y$).
@@ -23,6 +25,10 @@ Assume $a, b$ are known and the parameter is given by $\theta = w$.
 ---
 
 #### (ML 10.2) (ML 10.3) Posterior for linear regression
+
+**Remark.** Can intoroduce nonlinearity (in $x$) by replacing $x_i$ by $\varphi(x_i) = (\varphi_1(x_i), \ldots, \varphi_m(x_i))$.
+
+**Likelihood.** 
 
 ---
 
