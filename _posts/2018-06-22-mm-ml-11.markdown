@@ -290,12 +290,12 @@ Critical to check: $\nabla^2 q = H$ $\Rightarrow$ minimum if $H$ is PSD.
 
 #### (ML 17.1) Sampling methods - why sampling, pros and cons
 
-Why sampling?
-* For approximate expectations (estimate statistics / posterior infernce i.e. computing probability)
-* For visualization
+Why is sampling so powerful and useful?
+* For approximating expectations ($\leadsto$ estimate statistics / posterior infernce i.e. computing probability)
+* For visualization of typical draws from a distribution of interest
 
 Why expectations?
-* Any probability is an expectation: $P[X \in A] = E[I(X \in A)]$.
+* Any probability is an expectation: $P(X \in A) = E(I_{X \in A})$.
 * Approximation is needed for intractable sums/integrals (can be expressed as expectations)
 
 Pros.
