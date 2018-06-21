@@ -1,0 +1,40 @@
+---
+layout: post
+title:  "Notes on Machine Learning 10: Bayesian linear regression"
+date:   2018-06-15 00:00:00
+author: 장승환
+categories: Notes
+tags: ML
+---
+
+#### (ML 10) Baeysian linear regression
+
+Linear regression is one of the most powerful general purpose tools.
+
+Using MLE for ligression often leads to overfitting, which can be a sever problem.
+
+Using MAP can solve the problem of overfitting, but we don't have rpresentation of uncertainty in this case (not only in $w$ but in $y$).
+
+Using Bayesian approach can optimize a appropriate loss function, and gives us the predictive distribution $p(y \vert x, D)$, which is what we really want.
+
+**Setup.** Given data $D = ((x_1, y_1), \ldots, (x_n, y_n))$, $x_i \in \mathbb{R}^d$, $y_i \in \mathbb{R}$.
+
+**Model.** $Y_1, \ldots, Y_n$ independent given $w$ with $Y_i \sim N(w^Tx_i, a^{-1})$, where $a = \frac{1}{\sigma^2} >0)$ is the *precision* and $w = (w_1, \ldots, w_d) \sim N(0, b^{-1}I)$ with $B >0$.  
+Assume $a, b$ are known and the parameter is given by $\theta = w$.
+
+---
+
+#### (ML 10.2) (ML 10.3) Posterior for linear regression
+
+**Remark.** Can intoroduce nonlinearity (in $x$) by replacing $x_i$ by $\varphi(x_i) = (\varphi_1(x_i), \ldots, \varphi_m(x_i))$.
+
+**Likelihood.** 
+
+---
+
+#### (ML 10.4~7) Predictive distribution for linear regression
+
+---
+
+
+
