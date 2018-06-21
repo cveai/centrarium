@@ -294,15 +294,15 @@ Critical to check: $\nabla^2 q = H$ $\Rightarrow$ minimum if $H$ is PSD.
 * For approximating expectations ($\leadsto$ estimate statistics / posterior infernce i.e. computing probability)
 * For visualization of typical draws from a distribution of interest
 
-Why expectations?
+**Why expectations?**
 * Any probability is an expectation: $P(X \in A) = E(I_{X \in A})$.
 * Approximation is needed for intractable sums/integrals (can be expressed as expectations)
 
-Pros.
+**Pros.**
 * Easy (both to implement and understand)
 * General purpose
 
-Cons.
+**Cons.**
 * Too easy - used inappropriately
 * Slow
 * Getting "good" samples may be dificult
