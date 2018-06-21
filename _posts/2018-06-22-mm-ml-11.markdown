@@ -290,7 +290,7 @@ Critical to check: $\nabla^2 q = H$ $\Rightarrow$ minimum if $H$ is PSD.
 
 #### (ML 17.1) Sampling methods - why sampling, pros and cons
 
-Why is sampling so powerful and useful?
+**Why is sampling so powerful and useful?**
 * For approximating expectations ($\leadsto$ estimate statistics / posterior infernce i.e. computing probability)
 * For visualization of typical draws from a distribution of interest
 
