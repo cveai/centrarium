@@ -299,14 +299,14 @@ Critical to check: $\nabla^2 q = H$ $\Rightarrow$ minimum if $H$ is PSD.
 * Approximation is needed for intractable sums/integrals (can be expressed as expectations)
 
 **Pros.**
-* Easy (both to implement and understand)
-* General purpose
+* Easy (both to implement and to understand)
+* General purpose (widely applicable)
 
 **Cons.**
-* Too easy - used inappropriately
-* Slow
-* Getting "good" samples may be dificult
-* Difficult to assess
+* Too easy (used inappropriately)
+* Slow (usually need lots of samples)
+* <span style="color:red">Getting "good" samples may be dificult</span>
+* Difficult to assess the performance of methods (e.g. MCMC)
 
 ---
 
