@@ -16,17 +16,17 @@ Model the data as random variables: $D = (X_1, \ldots, X_n)$.
 **Terminology.** An <span style="color:red">*estimator*</span> is a statistic intended to approximate a parameter governing the distribution of $D$.
 
 **Notation.** 
-1. $\hat{\theta}$ denotes an estimator of a parameter $\theta$.
+1. $\hat{\theta}$ denotes an estimator for a parameter $\theta$.
 2. $\hat{\theta}_n$ emphasize (the dependence on) $n$
 
-**Example.** $X_1, \ldots, X_n \sim N(\mu, \sigma^2)$ iid  
-(Sample mean) $\,\,$  $\hat{\mu} = \bar{X} = \frac{1}{n}\sum_{i=1}^nX_i$ $\,\,$ /cf. $\sigma^2 = \mathbb{E}((X - \mu)^2)$  
-("Biased" sample variance) $\,\,$  $\hat{\sigma}^2 = \frac{1}{n}\sum_{i=1}^n(X_i -\bar{X})^2$  
-("unbiased" sample variance) $\,\,$  $s^2 = \frac{1}{n-1}\sum_{i=1}^n(X_i -\bar{X})^2$
+**Example.** $X_1, \ldots, X_n \sim N(\mu, \sigma^2)$, iid  
+* Sample mean: $\,\,$  $\hat{\mu} = \bar{X} = \frac{1}{n}\sum_{i=1}^nX_i$ $\,\,$ /cf. $\sigma^2 = \mathbb{E}((X - \mu)^2)$  
+* "Biased" sample variance: $\,\,$  $\hat{\sigma}^2 = \frac{1}{n}\sum_{i=1}^n(X_i -\bar{X})^2$  
+* "unbiased" sample variance: $\,\,$  $s^2 = \frac{1}{n-1}\sum_{i=1}^n(X_i -\bar{X})^2$
 
 **Definition.**
 1. The <span style="color:red">*bias*</span> of an estimator $\hat{\theta}$ is $\,$ ${\rm bias}(\hat{\theta}) = \mathbb{E}(\hat{\theta}) - \theta$.  
-2. An estimator $\hat{\theta}$ is *unbiased* if $\,$ ${\rm bias}(\theta) = 0$.  
+2. An estimator $\hat{\theta}$ is *unbiased* if $\,$ ${\rm bias}(\hat{\theta}) = 0$.  
 
 **Example.**
 1. $\hat{\mu}$ is unbiased: $\mathbb{E}(\hat{\mu}) = \mathbb{E}(\frac{1}{n}\sum_{i=1}^nX_i) =\frac{1}{n}\sum \mathbb{E}(X_i) = \frac{1}{n}\sum \mu = \mu$  
@@ -37,7 +37,7 @@ Model the data as random variables: $D = (X_1, \ldots, X_n)$.
 
 #### (ML 11.2) Decision theory terminology in different contexts
 
-**General**             | **Estimators**                         | **$^*$Regression/Classification**
+**General**             | **Estimators**                         | **$^*$Regression/Classification (SL)**
 Decision rule $\delta$  | $^*$Estimator function $g$             | Prediction function $f$
 State $s$ (unknown)     | Parameter $\theta$ (unknown)           | Target value $Y$ (unknown)
 $^*$Data $D$ (observed) | Data $D$ (observed)                    | Point $X$ (observed)
@@ -290,23 +290,23 @@ Critical to check: $\nabla^2 q = H$ $\Rightarrow$ minimum if $H$ is PSD.
 
 #### (ML 17.1) Sampling methods - why sampling, pros and cons
 
-Why sampling?
-* For approximate expectations (estimate statistics / posterior infernce i.e. computing probability)
-* For visualization
+**Why is sampling so powerful and useful?**
+* For approximating expectations ($\leadsto$ estimate statistics / posterior infernce i.e. computing probability)
+* For visualization of typical draws from a distribution of interest
 
-Why expectations?
-* Any probability is an expectation: $P[X \in A] = E[I(X \in A)]$.
+**Why expectations?**
+* Any probability is an expectation: $P(X \in A) = E(I_{X \in A})$.
 * Approximation is needed for intractable sums/integrals (can be expressed as expectations)
 
-Pros.
-* Easy (both to implement and understand)
-* General purpose
+**Pros.**
+* Easy (both to implement and to understand)
+* General purpose (widely applicable)
 
-Cons.
-* Too easy - used inappropriately
-* Slow
-* Getting "good" samples may be dificult
-* Difficult to assess
+**Cons.**
+* Too easy (used inappropriately)
+* Slow (usually need lots of samples)
+* <span style="color:red">Getting "good" samples may be dificult</span>
+* Difficult to assess the performance of methods (e.g. MCMC)
 
 ---
 
@@ -322,17 +322,27 @@ Cons.
 
 #### (ML 17.3) Monte Carlo approximation
 
-Goal: Aprroximate $E[f(X)]$, when intractable.
+**Goal.** Aprroximate $\mathbb{E}(f(X))$, when intractable to compute exactly.
 
-Definition (Monte Carlo estimator): If $X_1, \ldots, X_n \sim p$ iid then 
+**Definition (Monte Carlo estimator).** If $X_1, \ldots, X_n \sim p$, iid, then 
 
 $$\hat{\mu}_n = \frac{1}{n}\sum_{i=1}^nf(X_i)$$
 
-is a (basic) *Monte Carlo estimator* of $E[f(X)]$ where $X \sim p$. (sample mean)
+is a (basic) *Monte Carlo estimator* of $\mathbb{E}(f(X))$ where $X \sim p$. (sample mean)
 
-Remark  
-(1) $E[\hat{\mu}_n] = E[f(X)]$ (i.e. $\hat{\mu}_n$ is an unbiased estimator)  
-(2) 
+**Remark**  
+(1) $\mathbb{E}(\hat{\mu}_n) = \mathbb{E}(f(X))$ (i.e. $\hat{\mu}_n$ is an unbiased estimator)  
+(2) $\hat{\mu}_n \rightarrow^{\rm P} \mathbb{E}(f(X))$ as $n \rightarrow \infty$ $\Rightarrow$ consistenct estimator (assuming $\sigma^2(f(X))< \infty$)
+(i.e. $\forall \varepsilon >0, P(\vert \hat{\mu}_n - \mathbb{E}(f(X)) \vert < \varepsilon) \rightarrow 1$)  
+(3) $\sigma^2(\hat{\mu}_n) = \frac{1}{n}\sigma^(f(X)) \rightsrrow 0 \Rightarrow$ converges at a rate of $\frac{1}{\sqrt{n}}$ (regardless of dimension of $X$).  
+${\rm MSE}(\hat{\mu}_n = {\rm bias}^2 + {\rm var}) = \frac{1}{n}\sigma^(f(X)) \rightarrow 0$.
+
+---
+
+#### (ML 17.4) Examples of Monte Carlo approximation
+
+1. Area of Mandelbrot set (Gamelin)
+2. Expected return (investment)
 
 ---
 
@@ -383,3 +393,5 @@ $$ $$
 
 ---
 
+
+>>>>>>> notes
