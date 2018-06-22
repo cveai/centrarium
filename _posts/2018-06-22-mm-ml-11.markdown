@@ -37,7 +37,7 @@ Model the data as random variables: $D = (X_1, \ldots, X_n)$.
 
 #### (ML 11.2) Decision theory terminology in different contexts
 
-**General**             | **Estimators**                         | **$^*$Regression/Classification**
+**General**             | **Estimators**                         | **$^*$Regression/Classification (SL)**
 Decision rule $\delta$  | $^*$Estimator function $g$             | Prediction function $f$
 State $s$ (unknown)     | Parameter $\theta$ (unknown)           | Target value $Y$ (unknown)
 $^*$Data $D$ (observed) | Data $D$ (observed)                    | Point $X$ (observed)
