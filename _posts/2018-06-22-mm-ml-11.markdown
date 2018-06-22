@@ -322,17 +322,18 @@ Critical to check: $\nabla^2 q = H$ $\Rightarrow$ minimum if $H$ is PSD.
 
 #### (ML 17.3) Monte Carlo approximation
 
-Goal: Aprroximate $\mathbb{E}(f(X))$, when intractable to compute exactly.
+**Goal.** Aprroximate $\mathbb{E}(f(X))$, when intractable to compute exactly.
 
-**Definition (Monte Carlo estimator).** If $X_1, \ldots, X_n \sim p$ iid then 
+**Definition (Monte Carlo estimator).** If $X_1, \ldots, X_n \sim p$, iid, then 
 
 $$\hat{\mu}_n = \frac{1}{n}\sum_{i=1}^nf(X_i)$$
 
-is a (basic) *Monte Carlo estimator* of $E[f(X)]$ where $X \sim p$. (sample mean)
+is a (basic) *Monte Carlo estimator* of $\mathbb{E}(f(X))$ where $X \sim p$. (sample mean)
 
-Remark  
-(1) $E[\hat{\mu}_n] = E[f(X)]$ (i.e. $\hat{\mu}_n$ is an unbiased estimator)  
-(2) 
+**Remark**  
+(1) $\mathbb{E}(\hat{\mu}_n) = \mathbb{E}(f(X))$ (i.e. $\hat{\mu}_n$ is an unbiased estimator)  
+(2) $\hat{\mu}_n \rightarrow^{\rm P} \mathbb{E}(f(X))$ as $n \rightarrow \infty$ $\Rightarrow$ consistenct estimator (assuming $\sigma^2(f(X))< \infty$)
+($\forall \varepsilon >0, P(\vert \hat{\mu}_n - \mathbb{E}(f(X)) \vert < \varepsilon)$ \rightarrow 1$)
 
 ---
 
