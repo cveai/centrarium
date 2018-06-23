@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "Notes on Probability Primer 6: Multivariate Gaussian distribution"
+date:   2018-06-23 00:00:00
+author: 장승환
+categories: Notes
+tags: Probability
+---
+
+#### (PP 6.8) Marginal distributions of a Gaussian
+
+One of the weird and wonderful things is: the family of Gaussians is preserved under many different operations.
+
+---
+
+#### (PP 6.9) Conditional distributions of a Gaussian
+
+
+---
+
+#### (PP 6.10) Sum of independent Gaussians
+
+**Proposition.** If $X \sim N(\mu_X, C_X)$ and $X \sim N(\mu_X, C_X)$, then $X+Y \sim N(\mu_X + \mu_Y, C_X + C_y)$. 
+
+**Remark.**
+* $$E(X+y) = E(X) + X(Y)$$
+* $${\rm Cov}(X+Y) = {\rm Cov}(X) + {\rm Cov}(Y)$$
+
+---
+
