@@ -132,7 +132,13 @@ $X \sim N(\theta, 1)$ where $\theta$ nonrandom & unknown and $D = X$
 
 cf. Shrinkage, Stein's paradox
 
+---
 
+#### (ML 11.6) Inadmissibility
+
+---
+
+#### (ML 11.7) A fun exercise on inadmissibility
 
 ---
 
