@@ -10,7 +10,7 @@ tags: ML
 
 #### (ML 3.1) Decision theory (Basic Framework)
 
-Idea: "Minimize expected loss"
+**Idea.** "Minimize expected loss"
 
 **Example.** Spam (classification): $x, y, \hat{y}$ 
 
@@ -25,7 +25,8 @@ Loss function $L(y, \hat{y}) \in \mathbb{R}$
 Loss can be thought of as *reward* or *utility* depending on the sign of the value.
 
 **General framework:**  
-* State $s$ (unknown)  
+* State $s$ (unknown) 
+* Observation (known) e.g, $x$ 
 * Actoin $a$  
 * Loss $L(s, a)$
 

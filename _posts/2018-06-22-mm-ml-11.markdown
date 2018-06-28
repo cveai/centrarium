@@ -109,14 +109,14 @@ Almost trivial identity but extremely handy.
 
 $${\rm MSE}(\hat{\theta}) = E((\hat{\theta} - \theta)^2\vert \theta)$$
 
-Put $\vert \theta$ emphasizing we're not averagning over $\theta$ here  (we don't have a distribution over $\theta$).
-We're just averaging over the data. 
+Put $\vert \theta$ to emphasize we're not averaging over $\theta$ here  (we don't have a distribution over $\theta$).  
+*We're averaging over the data!*
 
-MSE$\theta$ is nothing but the risk $R(\theta, f)$ under square loss, i.e., when the loss function is the square of the deifference.
+${\rm MSE}(\theta)$ is nothing but the risk $R(\theta, f(D))$ under square loss, i.e., when the loss function is the square of the deifference.
 
-**Recall.** bias$(\hat{\theta}) = E(\theta) -\theta$.
+**Recall.** ${\rm bias}(\hat{\theta}) = \mathbb{E}(\theta) -\theta$.
 
-**Proposition.** MSE$(\theta) = bias(\hat{\theta})^2 + {\rm var}(\hat{\theta})$
+**Proposition.** MSE$(\theta) = {\rm bias}(\hat{\theta})^2 + {\rm var}(\hat{\theta})$
 
 Proof:
 <figure>
@@ -126,16 +126,19 @@ Proof:
 </figure>
 
 **Silly example.**
-$X \sim N(\theta, 1)$
-$\theta$ nonrandom & unknown
-$D = X
-
-"Natural" estimate of $\theta$: $\delta_1(D) = X \leadsto$ bias$^2 = 0$, var$ = 1$, MSE$ =1$  
-"Silly" estimate of $\theta$: $\delta_0(D) = X \leadsto$ bias$^2 = \theta^2$, var$ = 0$, MSE$ = \theta^2$
+$X \sim N(\theta, 1)$ where $\theta$ nonrandom & unknown and $D = X$
+* **"Natural" estimate of $\theta$ :** $\delta_1(D) = X \leadsto$ bias$^2 = 0$, var$ = 1$, MSE$ =1$  
+* **"Silly" estimate of $\theta$ :** $\delta_0(D) = 0 \leadsto$ bias$^2 = \theta^2$, var$ = 0$, MSE$ = \theta^2$
 
 cf. Shrinkage, Stein's paradox
 
+---
 
+#### (ML 11.6) Inadmissibility
+
+---
+
+#### (ML 11.7) A fun exercise on inadmissibility
 
 ---
 
