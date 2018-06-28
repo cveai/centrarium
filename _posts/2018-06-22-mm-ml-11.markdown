@@ -109,8 +109,8 @@ Almost trivial identity but extremely handy.
 
 $${\rm MSE}(\hat{\theta}) = E((\hat{\theta} - \theta)^2\vert \theta)$$
 
-Put $\vert \theta$ emphasizing we're not averagning over $\theta$ here  (we don't have a distribution over $\theta$).
-We're just averaging over the data. 
+Put $\vert \theta$ to emphasize we're not averaging over $\theta$ here  (we don't have a distribution over $\theta$).  
+*We're averaging over the data!*
 
 MSE$\theta$ is nothing but the risk $R(\theta, f)$ under square loss, i.e., when the loss function is the square of the deifference.
 
