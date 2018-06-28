@@ -128,7 +128,7 @@ Proof:
 **Silly example.**
 $X \sim N(\theta, 1)$ where $\theta$ nonrandom & unknown and $D = X$
 * **"Natural" estimate of $\theta$ :** $\delta_1(D) = X \leadsto$ bias$^2 = 0$, var$ = 1$, MSE$ =1$  
-* **"Silly" estimate of $\theta$ :** $\delta_0(D) = X \leadsto$ bias$^2 = \theta^2$, var$ = 0$, MSE$ = \theta^2$
+* **"Silly" estimate of $\theta$ :** $\delta_0(D) = 0 \leadsto$ bias$^2 = \theta^2$, var$ = 0$, MSE$ = \theta^2$
 
 cf. Shrinkage, Stein's paradox
 
