@@ -136,6 +136,30 @@ cf. Shrinkage, Stein's paradox
 
 #### (ML 11.6) Inadmissibility
 
+**Recall.** $R(\theta, \delta) = \mathbb{E}(L(\theta, \delta(D) \vert \theta)$.
+
+**Example.** Target: $N(\theta, 1)$ where $\theta \in \mathbb{R}$.  
+Data: $D = (X_1, \ldots, X_n)$ where $X_i \sim (\theta, 1)$, iid.  
+Risk: $L(\theta, \delta) = (\theta - \delta)$.  
+* **"Natural" :** $\delta^{(1)}_n(D) = X_n \leadsto$ $R(\theta, \delta^{(1)}) = 1$. 
+* **"Silly" :** $\delta^{(0)}_n(D) = 0 \leadsto$ $R(\theta, \delta^{(0)}) = \theta^2$. 
+
+<figure>
+<img src="/assets/pics/mm-ml/inadm.png" alt="Inadmissibility" style="width: 60%; height: 60%">
+<figcaption>
+</figcaption>
+</figure>
+
+**Definition.** Given decision rules $\delta, \delta'$, we say $\delta$ *dominates* $\delta'$
+if $R(\theta, \delta) \le R(\theta, \delta')$ for all $\theta \in \Theta$ 
+and $R(\theta, \delta) < R(\theta, \delta')$ for some $\theta \in \Theta$.
+
+**Definition.** A decision rule $\delta$ is <span style="color:red">*inadmissible*</span> if
+there is another decision rule that dominates $\delta$.
+Otherwise, $\delta$ is admissible.
+
+**Fact.** Both $\delta_1$ and $\delta_0$ are admissible.
+
 ---
 
 #### (ML 11.7) A fun exercise on inadmissibility
@@ -397,3 +421,5 @@ $$ $$
 ---
 
 
+>>>>>>> notes
+>>>>>>> master
