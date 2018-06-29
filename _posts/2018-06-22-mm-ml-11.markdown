@@ -141,8 +141,8 @@ cf. Shrinkage, Stein's paradox
 **Example.** Target: $N(\theta, 1)$ where $\theta \in \mathbb{R}$.  
 Data: $D = (X_1, \ldots, X_n)$ where $X_i \sim (\theta, 1)$, iid.  
 Risk: $L(\theta, \delta) = (\theta - \delta)$.  
-* **"Natural" :** $\delta^{(1)}(D) = X_n \leadsto$ bias$^2 = 0$, var$ = 1$, MSE$ =1$  
-* **"Silly" :** $\delta^{(0)}(D) = 0 \leadsto$ bias$^2 = \theta^2$, var$ = 0$, MSE$ = \theta^2$
+* **"Natural" :** $\delta^{(1)}_n(D) = X_n \leadsto$ bias$^2 = 0$, var$ = 1$, MSE$ =1$  
+* **"Silly" :** $\delta^{(0)}_n(D) = 0 \leadsto$ bias$^2 = \theta^2$, var$ = 0$, MSE$ = \theta^2$
 
 
 
