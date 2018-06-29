@@ -144,11 +144,12 @@ Risk: $L(\theta, \delta) = (\theta - \delta)$.
 * **"Natural" :** $\delta^{(1)}_n(D) = X_n \leadsto$ $R(\theta, \delta^{(1)}) = 1$. 
 * **"Silly" :** $\delta^{(0)}_n(D) = 0 \leadsto$ $R(\theta, \delta^{(0)}) = \theta^2$. 
 
-**Definition.** Given decision rules $\delta, \delta'$, we say $\dlta$ dominates $\delta'$
+**Definition.** Given decision rules $\delta, \delta'$, we say $\delta$ *dominates* $\delta'$
 if $R(\theta, \delta) \le R(\theta, \delta')$ for all $\theta \in \Theta$ 
 and $R(\theta, \delta) < R(\theta, \delta')$ for some $\theta \in \Theta$.
 
-
+**Definition.** A decision rule $\dleta$ is <span style="color:red">*inadmissible*</span> if
+there is another decision rule that dominates $\delta$.
 
 
 ---
