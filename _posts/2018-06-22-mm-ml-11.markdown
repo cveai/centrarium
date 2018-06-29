@@ -136,6 +136,11 @@ cf. Shrinkage, Stein's paradox
 
 #### (ML 11.6) Inadmissibility
 
+**Recall.** $R(\theta, \delta) = \mathbb{E}(L(\theta, \delta(D) \vert \theta)$.
+
+**Example.** Target: $N(\theta, 1)$ where $\theta \in \mathbb{R}$.
+
+
 ---
 
 #### (ML 11.7) A fun exercise on inadmissibility
