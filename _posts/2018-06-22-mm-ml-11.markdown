@@ -145,7 +145,7 @@ Risk: $L(\theta, \delta) = (\theta - \delta)$.
 * **"Silly" :** $\delta^{(0)}_n(D) = 0 \leadsto$ $R(\theta, \delta^{(0)}) = \theta^2$. 
 
 <figure>
-<img src="/assets/pics/mm-ml/inadm.png" alt="Inadmissibility" style="width: 80%; height: 80%">
+<img src="/assets/pics/mm-ml/inadm.png" alt="Inadmissibility" style="width: 60%; height: 60%">
 <figcaption>
 </figcaption>
 </figure>
