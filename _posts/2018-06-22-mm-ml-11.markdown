@@ -154,7 +154,7 @@ Risk: $L(\theta, \delta) = (\theta - \delta)$.
 if $R(\theta, \delta) \le R(\theta, \delta')$ for all $\theta \in \Theta$ 
 and $R(\theta, \delta) < R(\theta, \delta')$ for some $\theta \in \Theta$.
 
-**Definition.** A decision rule $\dleta$ is <span style="color:red">*inadmissible*</span> if
+**Definition.** A decision rule $\delta$ is <span style="color:red">*inadmissible*</span> if
 there is another decision rule that dominates $\delta$.
 Otherwise, $\delta$ is admissible.
 
