@@ -164,6 +164,11 @@ Otherwise, $\delta$ is admissible.
 
 #### (ML 11.7) A fun exercise on inadmissibility
 
+**Exercise.** $X_1, \ldots, X_n \sim N(\mu, \sigma^2)$.  
+Assume $\mu$ is known.
+Loss: $L(\sigma_1^2, \sigma_2^2) = (\sigma_1^2 - \sigma_2^2)^@$.  
+$\hat{\sigam}^2$
+
 ---
 
 #### (ML 11.8) Bayesian decision theory
