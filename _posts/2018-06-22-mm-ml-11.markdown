@@ -164,6 +164,18 @@ Otherwise, $\delta$ is admissible.
 
 #### (ML 11.7) A fun exercise on inadmissibility
 
+**Exercise.** $X_1, \ldots, X_n \sim N(\mu, \sigma^2)$.  
+Assume $\mu$ is known.  
+Loss: $L(\sigma_1^2, \sigma_2^2) = (\sigma_1^2 - \sigma_2^2)^2$.  
+$\hat{\sigma}^2 = \frac{1}{n}\sum_{i=1}^n(X_i-\bar{x})^2$.  
+$s^2 = \frac{n}{n-1}\hat{\sigma}^2$  
+$s_c^2 = c\hat{\sigma}^2$, $c \ge 0$.  
+
+1. Does $\hat{\sigma}^2$ dominates $s^2$? Or vice versa?
+2. Are $\hat{\sigma}^2$ and $s^2$ admissible?
+3. Is there a "best" $s_c^2$ for some $c \ge 0$?
+
+
 ---
 
 #### (ML 11.8) Bayesian decision theory
@@ -422,3 +434,4 @@ $$ $$
 
 
 >>>>>>> notes
+>>>>>>> master
