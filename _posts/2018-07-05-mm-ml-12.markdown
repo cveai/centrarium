@@ -71,20 +71,20 @@ Everything that you would want to know to predict the futute is alraedy encoded 
 * Applications: speech recognition, music composition, (Mark V. Shaney)
 
 <figure>
-<img src="/assets/pics/mm-ml/co2.png" alt="CO2 level" style="width: 80%; height: 80%">
+<img src="/assets/pics/mm-ml/co2.png" alt="CO2 level" style="width: 60%; height: 60%">
 <figcaption>CO2 level
 </figcaption>
 </figure>
 
 <figure>
-<img src="/assets/pics/mm-ml/gps.png" alt="GPS" style="width: 80%; height: 80%">
+<img src="/assets/pics/mm-ml/gps.png" alt="GPS" style="width: 60%; height: 60%">
 <figcaption>Track GPS location
 </figcaption>
 </figure>
 
 <figure>
-<img src="/assets/pics/mm-ml/sentence.png" alt="Complete a sentence" style="width: 80%; height: 80%">
-<figcaption>Complete a sentence
+<img src="/assets/pics/mm-ml/sentence.png" alt="Sentence completion" style="width: 80%; height: 80%">
+<figcaption>Sentence completion
 </figcaption>
 </figure>
 
