@@ -91,7 +91,7 @@ Everything that you would want to know to predict the futute is alraedy encoded 
 (Sequential) Data: $D = (x_1, \ldots, x_n)$.  
 Model data as random variables: $X_1, \ldots, X_n$
 * iid? No
-* Everything depends on everything else. $\laeadsto$ intractable
+* Everything depends on everything else. $\leadsto$ intractable problem
 * $X_t$ depends on $X_{t-1}, X_{t-2}, $
 
 ---
