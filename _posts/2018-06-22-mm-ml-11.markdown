@@ -184,7 +184,8 @@ $$\rho(\pi, \delta(D)) = \mathbb{E}(L(\theta, \delta(D)) \vert D)$$
 
 $$\begin{aligned}
 r(\pi, \delta) &= \mathbb{E}(L(\theta, \delta(D))) \\
-&= \mathbb{E} (\mathbb{E}(L(\theta, \delta(D)) \vert D)) )
+&= \mathbb{E} (\mathbb{E}(L(\theta, \delta(D)) \vert D))) \\
+&= \mathbb{E} \rho(\pi, \delta(D))
 \end{aligned}$$
 
 **Terminology.(Informal)**
