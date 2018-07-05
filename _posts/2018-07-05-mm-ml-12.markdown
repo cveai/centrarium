@@ -64,6 +64,14 @@ Can do the same for intervals: $\int$MSE $=$ $\int$bias$^2 +$ $\int$var
 
 #### (ML 12.3) Model complexity parameters
 
+**Complexitycontrolling parameters**
+* not parameters used to fit the data
+* In Bayesian models, tend to be "hyperparameters" (i.e. parameters of the prior)
+
+---
+
+#### (ML 12.4) Bayesian model selection
+
 ---
 
 #### (ML 14.1) Markov models - motivating examples
