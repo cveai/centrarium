@@ -45,7 +45,9 @@ Turns out <span style="color:purple">$B =$ "complexity parameter"</span>
 #### (ML 12.2) Bias-variance in model selection
 
 Bias-variance trade-off, as they say.  
-MSE $=$ bias$^2 +$ var  / $\in$MSE $=$ $\int$bias$^2 +$ $\int$var (only applies for <span style="color:green">square loss</span>)
+MSE $=$ bias$^2 +$ var  
+Can do the same for intervals: $\int$MSE $=$ $\int$bias$^2 +$ $\int$var  
+(only applies for <span style="color:green">square loss</span>)
 <figure>
 <img src="/assets/pics/mm-ml/bias-var-convex.png" alt="Bias-variance trade-off" style="width: 60%; height: 60%">
 <figcaption>Bias-variance "trade-off"
@@ -57,6 +59,18 @@ MSE $=$ bias$^2 +$ var  / $\in$MSE $=$ $\int$bias$^2 +$ $\int$var (only applies 
 <figcaption>
 </figcaption>
 </figure>
+
+---
+
+#### (ML 12.3) Model complexity parameters
+
+**Complexitycontrolling parameters**
+* not parameters used to fit the data
+* In Bayesian models, tend to be "hyperparameters" (i.e. parameters of the prior)
+
+---
+
+#### (ML 12.4) Bayesian model selection
 
 ---
 
@@ -277,3 +291,4 @@ $$ $$
 
 >>>>>>> notes
 >>>>>>> master
+>>>>>>> notes
