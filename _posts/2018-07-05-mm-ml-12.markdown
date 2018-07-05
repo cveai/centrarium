@@ -62,6 +62,10 @@ Can do the same for intervals: $\int$MSE $=$ $\int$bias$^2 +$ $\int$var
 
 ---
 
+#### (ML 12.3) Model complexity parameters
+
+---
+
 #### (ML 14.1) Markov models - motivating examples
 
 "The future is independent from the past, given the present."
