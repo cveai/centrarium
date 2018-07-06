@@ -185,7 +185,7 @@ Critical to check: $\nabla^2 q = H$ $\Rightarrow$ minimum if $H$ is PSD.
 
 #### (ML 16.6) Gaussian mixture model (Mixture of Gaussians)
 
-$Z \in \\{e_1, \ldots, e_m\\}$, standard vectors in $\mathbb{R^m$ ($Z$ is "latent" variable)  
+$Z \in \\{e_1, \ldots, e_m\\}$, standard vectors in $\mathbb{R}^m$ ($Z$ is "latent" variable)  
 $P(Z = e)k = \alpha_k$  
 Given $Z = e_k$, $X \sim N(\mu_k, C_k)$  
 where $\mu_1, \ldots, \mu_m \in \mathbb{R}^d$ and $C_1, \ldots, C_m$ $d\times d$ cov. matrices. 
