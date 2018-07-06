@@ -209,8 +209,9 @@ where $z = (z_1, \ldots, z_m)$
 
 On the other hand,
 
-$$\mathbb{E}(I(Z=e_k)\vert X=x) = P(Z = e_k \vert x) = \frac{p(x\vert e_k)p(e_k)}{p(x)} = \frac{N(x \vert \mu_k, C_k)}{\sum_{\ell = 1}^m N(x \vert \mu_\ell, C_\ell)}$$
+$$ P(Z = e_k \vert x) = \frac{p(x\vert e_k)p(e_k)}{p(x)} = \frac{N(x \vert \mu_k, C_k)}{\sum_{\ell = 1}^m N(x \vert \mu_\ell, C_\ell)}$$
 
+Note that $\mathbb{E}(I(Z=e_k)\vert X=x) = P(Z = e_k \vert x)$.
 
 ---
 
