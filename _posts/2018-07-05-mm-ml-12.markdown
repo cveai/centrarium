@@ -183,6 +183,38 @@ Critical to check: $\nabla^2 q = H$ $\Rightarrow$ minimum if $H$ is PSD.
 
 ---
 
+#### (ML 16.6) Gaussian mixture model (Mixture of Gaussians)
+
+$Z \in \\{e_1, \ldots, e_m\\}$, standard vectors in $\mathbb{R}^m$ ($Z$ is "latent" variable)  
+$P(Z = e)k = \alpha_k$  
+Given $Z = e_k$,    
+$X \sim N(\mu_k, C_k)$  
+where $\mu_1, \ldots, \mu_m \in \mathbb{R}^d$ and $C_1, \ldots, C_m$ $d\times d$ cov. matrices. 
+
+
+Marginal distribution:  
+$$\begin{aligned} 
+p(x) & = \sum_z p(x\vert z)p(z) \\
+& = \sum_{k=1}^m P(Z = e_k) P(x \vert Z = e_k) \\
+& = \sum_{k=1}^m \alpha_k N(x \vert \mu_k, C_k)
+\end{aligned}$$
+
+The $\alpha_k$ are called the mixing coefficients.
+
+Joint distribution:
+
+$$p(x, z) = \prod_{k=1}^m \alpha_k^{z_k} N(x \vert \mu_k, C_k)$$
+
+where $z = (z_1, \ldots, z_m)$
+
+On the other hand,
+
+$$ P(Z = e_k \vert x) = \frac{p(x\vert e_k)p(e_k)}{p(x)} = \frac{N(x \vert \mu_k, C_k)}{\sum_{\ell = 1}^m N(x \vert \mu_\ell, C_\ell)}$$
+
+Note that $P(Z = e_k \vert x) = \mathbb{E}(I(Z=e_k)\vert X=x)$.
+
+---
+
 #### (ML 17.1) Sampling methods - why sampling, pros and cons
 
 **Why is sampling so powerful and useful?**
@@ -278,8 +310,6 @@ holds for all pdf $q$ with respect to wchi $q$ is *absolutely continuous*, i.e.,
 
 What makes a good/bad choice of the *proposal distrubution* $q$?
 
-
-
 ---
 
 $$ $$
@@ -287,8 +317,3 @@ $$ $$
 *To be added..*
 
 ---
-
-
->>>>>>> notes
->>>>>>> master
->>>>>>> notes
