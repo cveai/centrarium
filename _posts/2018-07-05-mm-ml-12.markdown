@@ -212,7 +212,7 @@ On the other hand,
 $$\begin{aligned}
 \mathbb{E}(I(Z=e_k)\vert X=x) &= P(Z = e_k \vert x) \\
 & = \frac{p(x\vert e_k)p(e_k)}{p(x)} \\
-& = \frac{N(x \vert \mu_k, C_k)}{\sum_{\ell = 1}^mN(x \vert \mu_\ell, C_\ell)}
+& = \frac{N(x \vert \mu_k, C_k)}{\sum_{l = 1}^mN(x \vert \mu_l, C_l)}
 \end{aligned}$$
 
 
