@@ -183,6 +183,21 @@ Critical to check: $\nabla^2 q = H$ $\Rightarrow$ minimum if $H$ is PSD.
 
 ---
 
+#### (ML 16.6) Gaussian mixture model (Mixture of Gaussians)
+
+$Z \in \\{e_1, \ldots, e_m\\}$, standard vectors in $\mathbb{R^m$ ($Z$ is "latent" variable)  
+$P(Z = e)k = \alpha_k$  
+Given $Z = e_k$, $X \sim N(\mu_k, C_k)$  
+where $\mu_1, \ldots, \mu_m \in \mathbb{R}^d$ and $C_1, \ldots, C_m$ $d\times d$ cov. matrices. 
+
+$$\begin{aligned} 
+p(x) & = \sum_z p(x\vert z)p(z) \\
+& = \sum_{k=1}^m P(Z = e_k) P(x \vert Z = e_k) \\
+& = \sum_{k=1}^m alpha_k N(x \vert \mu_k, C_k)
+\end{aligned}$
+
+---
+
 #### (ML 17.1) Sampling methods - why sampling, pros and cons
 
 **Why is sampling so powerful and useful?**
