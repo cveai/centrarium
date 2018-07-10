@@ -94,6 +94,10 @@ where $p(D\vert m)$ is called the marginal likelihood
 
 ---
 
+(ML 12.5) (ML 12.4) (ML 12.5) Cross-validation
+
+---
+
 #### (ML 14.1) Markov models - motivating examples
 
 "The future is independent from the past, given the present."
