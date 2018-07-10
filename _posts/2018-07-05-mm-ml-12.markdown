@@ -86,7 +86,7 @@ $p(y\vert x, D) \approx p(y\vert x, D, m^\*)$ where $m^* \in \arg\max_mp(m\vert 
 
 $p(m\vert D) \propto p(D\vert m)p(m)$
 
-**Type II ML/Evidence Approximation/Empirical Bayes :**
+**cf. Type II ML/Evidence Approximation/Empirical Bayes :**
 
 $p(y\vert x, D) \approx p(y\vert x, D, m^\*)$ where $m^* \in \arg\max_mp(D\vert m)$
 
