@@ -82,7 +82,7 @@ where $p(y\vert x, D, m) = \int p(y\vert x, \theta, m)p(\theta \vert D, m)d\thet
 
 **Alternative: "Type II MAP$^\star$"**
 
-$p(y\vert x, D) \approx p(y\vert x, D, m^\asterisk)$ where $m^* \in \arg\max_mp(m\vert D)$
+$p(y\vert x, D) \approx p(y\vert x, D, m^\*)$ where $m^* \in \arg\max_mp(m\vert D)$
 
 $p(m\vert D) \propto p(D\vert m)p(m)$
 
