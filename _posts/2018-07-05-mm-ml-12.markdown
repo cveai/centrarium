@@ -88,7 +88,7 @@ $p(m\vert D) \propto p(D\vert m)p(m)$
 
 **Type II ML/Evidence Approximation/Empirical Bayes :**
 
-$p(y\vert x, D) \approx p(y\vert x, D, m^*)$ where $m^* \in \arg\max_mp(D\vert m)$
+$p(y\vert x, D) \approx p(y\vert x, D, m^\*)$ where $m^* \in \arg\max_mp(D\vert m)$
 
 where $p(D\vert m)$ is called the marginal likelihood
 
