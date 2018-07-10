@@ -80,7 +80,7 @@ $p(y\vert x, D) = \inf p(y\vert x, \theta, m)p(m\vert x, D)dm$
 
 where $p(y\vert x, D, m) = \int p(y\vert x, \theta, m)p(\theta \vert D, m)d\theta$
 
-**Alternative: "Type II MAP$^*$"**
+**Alternative: "Type II MAP(*)"**
 
 $p(y\vert x, D) \approx p(y\vert x, D, m^*)$ where $m^*$ \in \arg\max_mp(m\vert D)
 
