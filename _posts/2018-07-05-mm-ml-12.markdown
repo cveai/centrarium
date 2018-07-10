@@ -72,6 +72,30 @@ Can do the same for intervals: $\int$MSE $=$ $\int$bias$^2 +$ $\int$var
 
 #### (ML 12.4) Bayesian model selection
 
+**Bayesian Model Averaging (BMA)** (just being fully Bayesian)
+
+$p(y\vert x, \theta, m)$ where $\theta$ and $m$ are random variables
+
+$p(y\vert x, D) = \inf p(y\vert x, \theta, m)p(m\vert x, D)dm$
+
+where $p(y\vert x, D, m) = \int p(y\vert x, \theta, m)p(\theta \vert D, m)d\theta$
+
+**Alternative: "Type II MAP$^\star$"**
+
+$p(y\vert x, D) \approx p(y\vert x, D, m^\*)$ where $m^* \in \arg\max_mp(m\vert D)$
+
+$p(m\vert D) \propto p(D\vert m)p(m)$
+
+**cf. Type II ML/Evidence Approximation/Empirical Bayes :**
+
+$p(y\vert x, D) \approx p(y\vert x, D, m^\*)$ where $m^* \in \arg\max_mp(D\vert m)$
+
+where $p(D\vert m)$ is called the marginal likelihood
+
+---
+
+#### (ML 12.5) (ML 12.4) (ML 12.5) Cross-validation
+
 ---
 
 #### (ML 14.1) Markov models - motivating examples
