@@ -94,7 +94,7 @@ where $p(D\vert m)$ is called the marginal likelihood
 
 ---
 
-(ML 12.5) (ML 12.4) (ML 12.5) Cross-validation
+#### (ML 12.5) (ML 12.4) (ML 12.5) Cross-validation
 
 ---
 
