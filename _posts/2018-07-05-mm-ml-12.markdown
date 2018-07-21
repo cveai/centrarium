@@ -112,7 +112,7 @@ B. Cross-validation
 <figure>
 <img src="/assets/pics/mm-ml/cv-2.png" alt="Cross-Validation" style="width: 80%; height: 60%">
 </figure>
-5. Retrain using $m^*$ on all of $D$.
+(5) Retrain using $m^*$ on all of $D$.
 
 C. LOOCV (Leave-One-Out CV) $k = n$
 
