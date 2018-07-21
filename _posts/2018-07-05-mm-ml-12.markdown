@@ -94,7 +94,7 @@ where $p(D\vert m)$ is called the marginal likelihood
 
 ---
 
-#### (ML 12.5) (ML 12.4) (ML 12.5) Cross-validation
+#### (ML 12.5) (ML 12.6) (ML 12.7) Cross-validation
 
 Data: $D = ((x_1, y_1), \ldots, (x_n, y_n))$ iid\\
 Models: $m \in \\{1, \ldots, C\\}$ \\
@@ -113,6 +113,18 @@ B. Cross-validation
 <img src="/assets/pics/mm-ml/cv-2.png" alt="Cross-Validation" style="width: 80%; height: 60%">
 </figure>
 5. Retrain using $m^*$ on all of $D$.
+
+C. LOOCV (Leave-One-Out CV) $k = n$
+
+D. Random Subsamples
+<figure>
+<img src="/assets/pics/mm-ml/random-sub.png" alt="Random Subsampling" style="width: 80%; height: 60%">
+</figure>
+
+<figure>
+<img src="/assets/pics/mm-ml/k.png" alt="Random Subsampling" style="width: 80%; height: 60%">
+</figure>
+
 ---
 
 #### (ML 12.8) Other approaches to model selection
