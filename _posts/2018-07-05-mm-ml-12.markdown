@@ -107,8 +107,7 @@ where $p(D\vert m)$ is called the marginal likelihood
 All three of these share a lot with the one of the Baeysain approaches (Type 2 MAP):
 
 <figure>
-<img src="/assets/pics/mm-ml/occam.png" alt="Occamß" style="width: 60%; height: 60%">
-<figcaption>
+<img src="/assets/pics/mm-ml/occam.png" alt="Occam's razor" style="width: 60%; height: 60%">
 </figure>
 
 ---
