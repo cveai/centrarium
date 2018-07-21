@@ -96,7 +96,10 @@ where $p(D\vert m)$ is called the marginal likelihood
 
 #### (ML 12.5) (ML 12.4) (ML 12.5) Cross-validation
 
-$D = ((x_1, y_1), \ldots, (x_n, y_n))$, $m \in \{1, \ldots, C\}$
+Data: $D = ((x_1, y_1), \ldots, (x_n, y_n))$ \\
+Models: $m \in \\{1, \ldots, C\\}$ \\
+Error: $\varepsilon_m = {\rm EL}(Y, f_m(X))$ where $(X, Y) \sim p$ (true unknown distribution)
+
 
 ---
 
