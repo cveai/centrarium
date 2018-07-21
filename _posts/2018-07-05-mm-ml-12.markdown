@@ -99,10 +99,20 @@ where $p(D\vert m)$ is called the marginal likelihood
 Data: $D = ((x_1, y_1), \ldots, (x_n, y_n))$ iid\\
 Models: $m \in \\{1, \ldots, C\\}$ \\
 Error: $\varepsilon_m = {\rm EL}(Y, f_m(X))$ where $(X, Y) \sim p$ (true unknown distribution)
+
+A. Validation
 <figure>
-<img src="/assets/pics/mm-ml/cross-validation.png" alt="Cross validation" style="width: 80%; height: 60%">
+<img src="/assets/pics/mm-ml/validation.png" alt="Validation" style="width: 80%; height: 60%">
 </figure>
 
+B. Cross-validation
+<figure>
+<img src="/assets/pics/mm-ml/cv-1.png" alt="Cross-Validation" style="width: 80%; height: 60%">
+</figure>
+<figure>
+<img src="/assets/pics/mm-ml/cv-2.png" alt="Cross-Validation" style="width: 80%; height: 60%">
+</figure>
+5. Retrain using $m^*$ on all of $D$.
 ---
 
 #### (ML 12.8) Other approaches to model selection
