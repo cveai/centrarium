@@ -110,6 +110,8 @@ All three of these share a lot with the one of the Baeysain approaches (Type 2 M
 <img src="/assets/pics/mm-ml/occam.png" alt="Occam's razor" style="width: 60%; height: 60%">
 </figure>
 
+* VC (Vapnik–Chervonenkis) dimension : for classification
+
 ---
 
 #### (ML 14.1) Markov models - motivating examples
