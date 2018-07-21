@@ -96,10 +96,12 @@ where $p(D\vert m)$ is called the marginal likelihood
 
 #### (ML 12.5) (ML 12.4) (ML 12.5) Cross-validation
 
-Data: $D = ((x_1, y_1), \ldots, (x_n, y_n))$ \\
+Data: $D = ((x_1, y_1), \ldots, (x_n, y_n))$ iid\\
 Models: $m \in \\{1, \ldots, C\\}$ \\
 Error: $\varepsilon_m = {\rm EL}(Y, f_m(X))$ where $(X, Y) \sim p$ (true unknown distribution)
-
+<figure>
+<img src="/assets/pics/mm-ml/cross-validation.png" alt="Cross validation" style="width: 60%; height: 60%">
+</figure>
 
 ---
 
