@@ -39,7 +39,9 @@ If $B$ and $C are independent given $A$, then $p(c\vert a, b) = p(c\vert a)$.
 <img src="/assets/pics/mm-ml/dag-5.png" alt="DAG" style="width: 80%; height: 60%"> 
 </figure>
 
-
+<figure>
+<img src="/assets/pics/mm-ml/dag-6.png" alt="DAG" style="width: 80%; height: 60%"> 
+</figure>
 
 
 
