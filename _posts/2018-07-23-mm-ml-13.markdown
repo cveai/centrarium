@@ -7,7 +7,42 @@ categories: Notes
 tags: ML
 ---
 
-#### (ML 13.1) Directed graphical models - introductory examples (part 1)
+#### (ML 13.1) (ML 13.2) Directed graphical models - introductory examples
+
+(Directed) Graphica "Models" aka "Bayesian" networks
+
+Better name would be "conditional independence diagrams" of probability distributions
+
+Key notions:
+
+* factorization of probability distributions
+* notational device
+* useful for visualization of 
+(a) conditional independence properties \\
+(b) inference algorithms (DP, MCMC)
+
+Why **conditional independence** important? Tractable inference
+
+Thnking "Graphically"
+
+Let $A, B, C$ be random variables.
+
+$p(a, b,c) = p(c\vert a, b)p(a, b) = p(c\vert a, b)p(b\vert a)p(a)$
+
+<figure>
+<img src="/assets/pics/mm-ml/dag.png" alt="DAG" style="width: 25%; height: 60%"> 
+</figure>
+
+If $B$ and $C$ are independent given $A$, then $p(c\vert a, b) = p(c\vert a)$.
+
+<figure>
+<img src="/assets/pics/mm-ml/dag-5.png" alt="DAG" style="width: 80%; height: 60%"> 
+</figure>
+
+<figure>
+<img src="/assets/pics/mm-ml/dag-6.png" alt="DAG" style="width: 80%; height: 60%"> 
+</figure>
+
 
 
 
