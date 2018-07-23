@@ -29,7 +29,11 @@ Let $A, B, C$ be random variables.
 
 $p(a, b,c) = p(c\vert a, b)p(a, b) = p(c\vert a, b)p(b\vert a)p(a)$
 
-
+<figure>
+<img src="/assets/pics/mm-ml/dag.png" alt="DAG" style="width: 60%; height: 60%">
+<figcaption>CO2 level
+</figcaption>
+</figure>
 
 
 
