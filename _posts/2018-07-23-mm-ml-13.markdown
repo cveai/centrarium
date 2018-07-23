@@ -25,6 +25,10 @@ Why **conditional independence** important? Tractable inference
 
 Thnking "Graphically"
 
+Let $A, B, C$ be random variables.
+
+$p(a, b,c) = p(c\vert a, b)p(a, b) = p(c\vert a, b)p(b\vert a)p(a)$
+
 
 
 
