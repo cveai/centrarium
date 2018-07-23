@@ -7,7 +7,7 @@ categories: Notes
 tags: ML
 ---
 
-#### (ML 13.1) (ML 13.2) Directed graphical models - introductory examples (part 1)
+#### (ML 13.1) (ML 13.2) Directed graphical models - introductory examples
 
 (Directed) Graphica "Models" aka "Bayesian" networks
 
@@ -30,7 +30,7 @@ Let $A, B, C$ be random variables.
 $p(a, b,c) = p(c\vert a, b)p(a, b) = p(c\vert a, b)p(b\vert a)p(a)$
 
 <figure>
-<img src="/assets/pics/mm-ml/dag.png" alt="DAG" style="width: 60%; height: 60%"> 
+<img src="/assets/pics/mm-ml/dag.png" alt="DAG" style="width: 35%; height: 60%"> 
 </figure>
 
 
