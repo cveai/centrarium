@@ -7,7 +7,7 @@ categories: Notes
 tags: ML
 ---
 
-#### (ML 13.1) Directed graphical models - introductory examples (part 1)
+#### (ML 13.1) (ML 13.2) Directed graphical models - introductory examples (part 1)
 
 (Directed) Graphica "Models" aka "Bayesian" networks
 
