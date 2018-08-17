@@ -50,7 +50,7 @@ If $B$ and $C$ are independent given $A$, then $p(c\vert a, b) = p(c\vert a)$.
 **Definition** Given $(X_1, \ldots, X_n) \sim p$ (pmf or odf) and an ordered DAG $G$ on $n$ vertices, 
 we say $X$ respects $G$ (or $p$ respects $G$) if 
 
-$$p(x_1, \ldots, x_n) = \prod_{i=1}^n p(x_i\vert x_{{\rm pa}(i)})$$
+$$p(x_1, \ldots, x_n) = \prod_{i=1}^n p(x_i\vert x_{pa(i)})$$
 
 ---
 
