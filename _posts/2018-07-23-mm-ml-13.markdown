@@ -43,8 +43,14 @@ If $B$ and $C$ are independent given $A$, then $p(c\vert a, b) = p(c\vert a)$.
 <img src="/assets/pics/mm-ml/dag-6.png" alt="DAG" style="width: 80%; height: 60%"> 
 </figure>
 
+---
 
+#### (ML 13.3) (ML 13.4) Directed graphical models - formalism
 
+**Definition** Given $(X_1, \ldots, X_n) \sim p$ (pmf or odf) and an ordered DAG $G$ on $n$ vertices, 
+we say $X$ respects $G$ (or $p$ respects $G$) if 
+
+$$p(x_1, \ldots, x_n) = \prod_{i=1}^n p(x_i\vert x_{{\rm pa}(i)})$$
 
 ---
 
