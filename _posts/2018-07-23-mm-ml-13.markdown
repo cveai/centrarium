@@ -47,10 +47,25 @@ If $B$ and $C$ are independent given $A$, then $p(c\vert a, b) = p(c\vert a)$.
 
 #### (ML 13.3) (ML 13.4) Directed graphical models - formalism
 
-**Definition** Given $(X_1, \ldots, X_n) \sim p$ (pmf or odf) and an ordered DAG $G$ on $n$ vertices, 
+**Notation.**   
+* DAG (Directed Acyclic Graph) : no directed cycles  
+* $pa(i) =$ parents of vertex
+
+**Definition.** Given $(X_1, \ldots, X_n) \sim p$ (pmf or odf) and an ordered DAG $G$ on $n$ vertices, 
 we say $X$ respects $G$ (or $p$ respects $G$) if 
 
 $$p(x_1, \ldots, x_n) = \prod_{i=1}^n p(x_i\vert x_{pa(i)})$$
+
+**Remark.** This does not imply that any particular random variables are conditionally dependent.
+
+**Example.** $X = (X_1, X_2, X_3)$ mutually independent  
+Then $p(x_1, x_2, x_3) = p(x_1)p(x_2)p(x_3)$
+
+**Terminology.** A *Complete* directed graph.
+
+**Example.** Any distribution respects any complete DAG.
+
+
 
 ---
 
