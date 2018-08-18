@@ -63,11 +63,15 @@ Then $p(x_1, x_2, x_3) = p(x_1)p(x_2)p(x_3)$
 
 **Terminology.** A *Complete* directed graph.
 
-**Example.** Any distribution respects any complete DAG.
+**Example.** Any distribution respects any complete DAG. 
 
 **Remark.** 
 * Can combine random variables into vectors
 * If the factors are normalized conditional distributions, then the product is normalized also. (Exercise)
+
+---
+
+#### (ML 13.5) Generative process specification
 
 ---
 
