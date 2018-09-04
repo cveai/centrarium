@@ -81,13 +81,16 @@ $$X_5 = \begin{cases}
 0, \, \text{else}.
 \end{cases}$$
 
-$X = (X_1, \ldots, X_5)$ respects the followinf graph:
+$X = (X_1, \ldots, X_5)$ respects the following graph:
 
 <figure>
 <img src="/assets/pics/mm-ml/specification.png" alt="GPS" style="width: 40%; height: 60%">
 <figcaption>
 </figcaption>
 </figure>
+
+We have the following factorization:
+$p(x_1, \ldots, x_5) = p(x_1)p(x_2)p(x_3\vert x_1, x_2)p(x_4\vert x_2)p(x_5\vert x_4)$.
 
 ---
 
