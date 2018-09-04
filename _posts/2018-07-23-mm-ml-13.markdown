@@ -77,8 +77,8 @@ $X_1, X_2 \sim {\tex Bernoulli}(1/2)$ independent
 $X_3 \sim N(X_1 + X_2, \sigma^2)$  
 $X_4 \sim N(aX_2 + b, 1)$  
 $$X_5 = \begin{cases}
-1, \text{if} X_4 \ge 0,\\
-0, \text{else}.
+1, \, \text{if} \,X_4 \ge 0,\\
+0, \, \text{else}.
 \end{cases}$$
 
 
