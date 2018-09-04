@@ -73,7 +73,7 @@ Then $p(x_1, x_2, x_3) = p(x_1)p(x_2)p(x_3)$
 
 #### (ML 13.5) Generative process specification ("a handy convention")
 
-$X_1, X_2 \sim \text{Bernoulli}(1/2)$ independent  
+$X_1, X_2 \sim \text{Bernoulli}(1/2)$, independent  
 $X_3 \sim N(X_1 + X_2, \sigma^2)$  
 $X_4 \sim N(aX_2 + b, 1)$  
 $$X_5 = \begin{cases}
@@ -81,7 +81,13 @@ $$X_5 = \begin{cases}
 0, \, \text{else}.
 \end{cases}$$
 
+$X = (X_1, \ldots, X_5)$ respects the followinf graph:
 
+<figure>
+<img src="/assets/pics/mm-ml/specification.png" alt="GPS" style="width: 60%; height: 60%">
+<figcaption>
+</figcaption>
+</figure>
 
 ---
 
