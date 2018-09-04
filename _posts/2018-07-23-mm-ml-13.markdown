@@ -84,7 +84,7 @@ $$X_5 = \begin{cases}
 $X = (X_1, \ldots, X_5)$ respects the followinf graph:
 
 <figure>
-<img src="/assets/pics/mm-ml/specification.png" alt="GPS" style="width: 60%; height: 60%">
+<img src="/assets/pics/mm-ml/specification.png" alt="GPS" style="width: 40%; height: 60%">
 <figcaption>
 </figcaption>
 </figure>
