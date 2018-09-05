@@ -84,7 +84,7 @@ $$X_5 = \begin{cases}
 $X = (X_1, \ldots, X_5)$ respects the following graph
 
 <figure>
-<img src="/assets/pics/mm-ml/specification.png" alt="GPS" style="width: 40%; height: 60%">
+<img src="/assets/pics/mm-ml/specification.png" alt="GPS" style="width: 35%; height: 60%">
 <figcaption>
 </figcaption>
 </figure>
@@ -93,6 +93,35 @@ and wee have the following factorization
 $p(x_1, \ldots, x_5) = p(x_1)p(x_2)p(x_3\vert x_1, x_2)p(x_4\vert x_2)p(x_5\vert x_4)$.
 
 Nice sampleing and visualization.
+
+---
+
+### Examples of (Directed) Graphical Models
+
+#### (ML 13.6) Graphical model for Bayesian linear regression
+
+$D = ((x_1, y_1), \ldots, (x_n, y_n)), x_i \in \mathbb{R}^d, y_i \in \mathbb{R}$  
+$f(x) = w^T\varphi(x)$  
+$w \sim N(0, \sigma_0^2I)$  
+$Y_i \sim N(w^T\varphi(x_i), \sigma^2)$, independent given $w$
+
+<figure>
+<img src="/assets/pics/mm-ml/graphical_bayesian.png" alt="Linear regression" style="width: 35%; height: 60%">
+<figcaption>
+</figcaption>
+</figure>
+
+$p(w, y_1, \ldots, y_n) = p(w)\prod_{i=1}^n p(y_i\vert w)$
+
+**Plate notation.**
+
+<figure>
+<img src="/assets/pics/mm-ml/plate.png" alt="Plate" style="width: 70%; height: 60%">
+<figcaption>
+</figcaption>
+</figure>
+  
+>>>>>>> notes
 
 ---
 
