@@ -84,7 +84,7 @@ $$X_5 = \begin{cases}
 $X = (X_1, \ldots, X_5)$ respects the following graph
 
 <figure>
-<img src="/assets/pics/mm-ml/specification.png" alt="GPS" style="width: 40%; height: 60%">
+<img src="/assets/pics/mm-ml/specification.png" alt="GPS" style="width: 35%; height: 60%">
 <figcaption>
 </figcaption>
 </figure>
@@ -99,6 +99,10 @@ Nice sampleing and visualization.
 ### Examples of (Directed) Graphical Models
 
 #### (ML 13.6) Graphical model for Bayesian linear regression
+
+$D = ((x_1, y_1), \ldots, (x_n, y_n)), x_i \in \mathbb{R}^d, y_i \in \mathbb{R}$  
+$f(x) = w^T\varphi(x)$  
+$w \sim N(0, \sigma^2I)$
 
 ---
 
