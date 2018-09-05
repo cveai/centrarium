@@ -96,6 +96,12 @@ Nice sampleing and visualization.
 
 ---
 
+### Examples of (Directed) Graphical Models
+
+#### (ML 13.6) Graphical model for Bayesian linear regression
+
+---
+
 #### (ML 14.1) Markov models - motivating examples
 
 "The future is independent from the past, given the present."
