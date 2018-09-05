@@ -120,7 +120,7 @@ $p(w, y_1, \ldots, y_n) = p(w)\prod_{i=1}^n p(y_i\vert w)$
 <figcaption>
 </figcaption>
 </figure>
- 
+  
 
 ---
 
