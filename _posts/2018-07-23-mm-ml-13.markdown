@@ -113,7 +113,7 @@ $Y_i \sim N(w^T\varphi(x_i), \sigma^2)$, independent given $w$
 
 $p(w, y_1, \ldots, y_n) = p(w)\prod_{i=1}^n p(y_i\vert w)$
 
-**Plate notation**
+**Plate notation.**
 
 <figure>
 <img src="/assets/pics/mm-ml/plate.png" alt="Plate" style="width: 70%; height: 60%">
