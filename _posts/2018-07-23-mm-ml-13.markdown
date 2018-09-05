@@ -106,7 +106,7 @@ $w \sim N(0, \sigma^2I)$
 $Y_i \sim N(w^T\varphi(x_i), \sigma^2)$, independent given $w$
 
 <figure>
-<img src="/assets/pics/mm-ml/graphical_bayesian.png" alt="Linear regression" style="width: 50%; height: 60%">
+<img src="/assets/pics/mm-ml/graphical_bayesian.png" alt="Linear regression" style="width: 35%; height: 60%">
 <figcaption>
 </figcaption>
 </figure>
