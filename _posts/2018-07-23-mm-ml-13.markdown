@@ -116,7 +116,7 @@ $p(w, y_1, \ldots, y_n) = p(w)\prod_{i=1}^n p(y_i\vert w)$
 **Plate notation**
 
 <figure>
-<img src="/assets/pics/mm-ml/plate.png" alt="Plate" style="width: 35%; height: 60%">
+<img src="/assets/pics/mm-ml/plate.png" alt="Plate" style="width: 60%; height: 60%">
 <figcaption>
 </figcaption>
 </figure>
