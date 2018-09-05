@@ -102,7 +102,7 @@ Nice sampleing and visualization.
 
 $D = ((x_1, y_1), \ldots, (x_n, y_n)), x_i \in \mathbb{R}^d, y_i \in \mathbb{R}$  
 $f(x) = w^T\varphi(x)$  
-$w \sim N(0, \sigma^2I)$  
+$w \sim N(0, \sigma_0^2I)$  
 $Y_i \sim N(w^T\varphi(x_i), \sigma^2)$, independent given $w$
 
 <figure>
