@@ -124,8 +124,12 @@ $p(w, y_1, \ldots, y_n) = p(w)\prod_{i=1}^n p(y_i\vert w)$
 
 #### (ML 13.7) Graphical model for Bayesian Naive Bayes
 
-$D = ((x_1, y_1), \ldots, (x_n, y_n)), x_i \in \mathbb{R}^d, y_i \in \\{1, \ldots, m\\}$  
-$\pi \sim \text{Dir}(\alpha)$
+$D = ((x^{(1)}, y_1), \ldots, (x^{(n)}, y_n)), x^{(i)} \in \mathbb{R}^d, y_i \in \\{1, \ldots, m\\}$  
+$\pi \sim \text{Dir}(\alpha)$  
+$r_{jy} \sim \text{Dir}(\beta)$ for $j = \\{1, \ldots, d\\}, y \in \\{1, \ldots, m\\}$  
+$Y \sim \pi, Y_i \sim \pi$  
+$X_j \sim r_{jY}, X_j^{(i)} \sim r_{jY_i}$    
+
 
 
 ---
