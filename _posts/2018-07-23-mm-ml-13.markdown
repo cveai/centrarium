@@ -122,6 +122,12 @@ $p(w, y_1, \ldots, y_n) = p(w)\prod_{i=1}^n p(y_i\vert w)$
 </figure>
   
 
+#### (ML 13.7) Graphical model for Bayesian Naive Bayes
+
+$D = ((x_1, y_1), \ldots, (x_n, y_n)), x_i \in \mathbb{R}^d, y_i \in \{1, \ldots, m\}$  
+
+
+
 ---
 
 #### (ML 14.1) Markov models - motivating examples
