@@ -130,7 +130,17 @@ $r_{jy} \sim \text{Dir}(\beta)$ for $j = \\{1, \ldots, d\\}, y \in \\{1, \ldots,
 $Y \sim \pi, Y_i \sim \pi$  
 $X_j \sim r_{jY}, X_j^{(i)} \sim r_{jY_i}$    
 
+<figure>
+<img src="/assets/pics/mm-ml/gm_bnb.png" alt="Bayesian naive Bayes" style="width: 60%; height: 60%">
+<figcaption>
+</figcaption>
+</figure>
 
+<figure>
+<img src="/assets/pics/mm-ml/gm_bnb_plated.png" alt="Bayesian naive Bayes" style="width: 60%; height: 60%">
+<figcaption>
+</figcaption>
+</figure>
 
 ---
 
