@@ -148,12 +148,9 @@ $X_j \sim r_{jY}, X_j^{(i)} \sim r_{jY_i}$
 
 <figure>
 <img src="/assets/pics/mm-ml/tail-tail.png" alt="Tail-tail" style="width: 60%; height: 60%">
-<figcaption>
 </figure>
 
 ---
-
-
 
 #### (ML 14.1) Markov models - motivating examples
 
