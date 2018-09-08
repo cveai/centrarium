@@ -152,7 +152,7 @@ $X_j \sim r_{jY}, X_j^{(i)} \sim r_{jY_i}$
 <img src="/assets/pics/mm-ml/tail-tail.png" alt="Tail-tail" style="width: 80%; height: 60%">
 </figure>
 
-2. "Head-tail"
+2. "Head-tail" (or "Tail-head")
 <figure>
 <img src="/assets/pics/mm-ml/head-tail.png" alt="Head-tail" style="width: 80%; height: 60%">
 </figure>
