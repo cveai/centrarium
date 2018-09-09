@@ -156,8 +156,10 @@ $X_j \sim r_{jY}, X_j^{(i)} \sim r_{jY_i}$
 <img src="/assets/pics/mm-ml/head-tail.png" alt="Head-tail" style="width: 80%; height: 60%">
 </figure>
   
-
-
+3 "Head-head"
+<figure>
+<img src="/assets/pics/mm-ml/head-head.png" alt="Head-head" style="width: 80%; height: 60%">
+</figure>
 
 --- 
 
