@@ -146,16 +146,19 @@ $X_j \sim r_{jY}, X_j^{(i)} \sim r_{jY_i}$
 
 #### (ML 13.8) (ML 13.9) Conditional independence in (directed) graphical models - basic examples
 
-1. "Tail-tail"
+1 "Tail-tail"
 <figure>
 <img src="/assets/pics/mm-ml/tail-tail.png" alt="Tail-tail" style="width: 80%; height: 60%">
 </figure>
 
-2. "Head-tail" (or "Tail-head")
+2 "Head-tail" (or "Tail-head")
 <figure>
 <img src="/assets/pics/mm-ml/head-tail.png" alt="Head-tail" style="width: 80%; height: 60%">
 </figure>
   
+
+
+
 --- 
 
 #### (ML 14.1) Markov models - motivating examples
