@@ -96,6 +96,8 @@ Nice sampleing and visualization.
 
 ---
 
+### Examples of (Directed) Graphical Models
+
 #### (ML 13.6) Graphical model for Bayesian linear regression
 
 $D = ((x_1, y_1), \ldots, (x_n, y_n)), x_i \in \mathbb{R}^d, y_i \in \mathbb{R}$  
@@ -158,6 +160,30 @@ $X_j \sim r_{jY}, X_j^{(i)} \sim r_{jY_i}$
 <figure>
 <img src="/assets/pics/mm-ml/head-head.png" alt="Head-head" style="width: 80%; height: 60%">
 </figure>
+
+---
+
+#### (ML 13.10) (ML 13.10) D-separation
+
+"The whole point of graphical models is to express the conditional independence properties of a probability distribution.
+And the D-separation criterion gives you a way to read off those conditional independence properties from 
+the graphocal model for a probability distribution."
+
+D-separation is a vast generalization of these:
+<figure>
+<img src="/assets/pics/mm-ml/tt-ht-hh.png" alt="Tail-tail, head-tail, head-head" style="width: 80%; height: 60%">
+</figure>
+
+**Terminology.**
+Descendents
+
+Let $G$ be a DAG. Let $A, B, C$ be disjoint subsets of vertices.  
+($A \cup B \cup C$ is not necessarily all of the vertices.)
+
+$$Definition.$$ A path (not necessarily directed) between two vertices is *blocked* (w.r.t. $C$)
+if it passes through a vertex $v$ s.t. either (a) the arrows are head-tail or tail-tail, and $v \in C$
+or (b) the arrows are head-head and $v \not\in C$ and none of the descendents of $v$ are in $C$.
+ 
 
 --- 
 
