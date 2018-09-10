@@ -174,6 +174,12 @@ D-separation is a vast generalization of these:
 <img src="/assets/pics/mm-ml/tt-ht-hh.png" alt="Tail-tail, head-tail, head-head" style="width: 80%; height: 60%">
 </figure>
 
+**Terminology.**
+Descendents
+
+Let $G$ be a DAG. Let $A, B, C$ be disjoint subsets of vertices.  
+($A \cup B \cup C$ is not necessarily all of the vertices.)
+
 --- 
 
 #### (ML 14.1) Markov models - motivating examples
