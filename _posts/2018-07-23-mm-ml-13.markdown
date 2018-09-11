@@ -163,7 +163,7 @@ $X_j \sim r_{jY}, X_j^{(i)} \sim r_{jY_i}$
 
 ---
 
-#### (ML 13.10) (ML 13.10) D-separation
+#### (ML 13.10) (ML 13.11) D-separation
 
 "The whole point of graphical models is to express the conditional independence properties of a probability distribution.
 And the D-separation criterion gives you a way to read off those conditional independence properties from 
@@ -188,6 +188,10 @@ or (b) the arrows are head-head and $v \not\in C$ and none of the descendents of
 are blocked (w.r.t. $C$).
 
 **Theorem (d-separation).** If $A$ and $B$ are d-separated by $C$ then $A$ and $B$ are conditionally independent given $C$.
+
+---
+
+#### (ML 13.12) (ML 13.13) How to use D-separation - illustrative examples
 
 --- 
 
