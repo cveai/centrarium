@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Notes on Machine Learning 13: Graphical Models"
-date:   2018-07-23 00:00:00
+title:  "Notes on Machine Learning 14: Markov Models"
+date:   2018-09-14 00:00:00
 author: 장승환
 categories: Notes
 tags: ML
