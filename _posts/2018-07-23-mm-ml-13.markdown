@@ -193,7 +193,11 @@ are blocked (w.r.t. $C$).
 
 #### (ML 13.12) (ML 13.13) How to use D-separation - illustrative examples
 
-**Example.**  $C = \{3\}$
+**Example.**  $C = \\{3\\}$ Are $X_i$ and $X_j$ independent given $X_3$?
+
+<figure>
+<img src="/assets/pics/mm-ml/d-sep-ex1.png" alt="Example 1" style="width: 80%; height: 60%">
+</figure>
 
 
 --- 
