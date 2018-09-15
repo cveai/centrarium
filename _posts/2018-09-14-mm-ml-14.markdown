@@ -609,5 +609,10 @@ $$ $$
 *To be added..*
 
 ---
+<<<<<<< HEAD
 >>>>>>> notes
+>>>>>>> master
+||||||| merged common ancestors
+>>>>>>> notes
+=======
 >>>>>>> master
