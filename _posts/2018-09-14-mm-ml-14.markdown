@@ -87,8 +87,11 @@ e.g. Brownian motion
 </figcaption>
 </figure>
 
-**Example(Random walk on $\mathbb{Z}$).**
-
+**Example<figure>
+<img src="/assets/pics/mm-ml/random-walk.png" alt="Random walk" style="width: 50%; height: 80%">
+<figcaption>
+</figcaption>
+</figure>
 ---
 
 #### (ML 15.1) Newton's method (for optimization) - intuition
