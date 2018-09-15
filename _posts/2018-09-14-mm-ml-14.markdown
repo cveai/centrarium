@@ -52,7 +52,7 @@ The simplest case $m=1$ (for the last line) leads to the notion of Markov chain
 **Definition.** Discrete ranndom variables $X_1, \ldots, X_n$ form a (discrete-time) Markov chain
 if they respecs the following graphical model
 <figure>
-<img src="/assets/pics/mm-ml/markov-graph.png" alt="Markov" style="width: 35%; height: 80%">
+<img src="/assets/pics/mm-ml/markov-graph.png" alt="Markov" style="width: 50%; height: 80%">
 <figcaption>
 </figcaption>
 </figure>
