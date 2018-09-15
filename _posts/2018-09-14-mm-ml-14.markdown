@@ -65,15 +65,11 @@ $$p(x_1, \ldots, x_n) = p(x_1)p(x_2\vert x_1)p(x_3\vert x_2) \cdots p(x_n \vert 
 **2nd order Markov chain.**
 <figure>
 <img src="/assets/pics/mm-ml/markov-graph.png" alt="2nd order Markov chain" style="width: 50%; height: 80%">
-<figcaption>
-</figcaption>
 </figure>
 
 **Continuous-time Markov chain.**
 <figure>
 <img src="/assets/pics/mm-ml/cont-time.png" alt="Continuous-time Markov chain" style="width: 50%; height: 80%">
-<figcaption>
-</figcaption>
 </figure>
 
 **Continuous-space Markov chain.**  
@@ -83,14 +79,11 @@ e.g. 1st order autoregressive model
 e.g. Brownian motion
 <figure>
 <img src="/assets/pics/mm-ml/brownian.png" alt="Brownian motion" style="width: 50%; height: 80%">
-<figcaption>
-</figcaption>
 </figure>
 
-**Example<figure>
+**Example(continuous-time and continuous-space Markov chain).**
+<figure>
 <img src="/assets/pics/mm-ml/random-walk.png" alt="Random walk" style="width: 50%; height: 80%">
-<figcaption>
-</figcaption>
 </figure>
  
 ---
