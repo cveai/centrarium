@@ -81,7 +81,7 @@ e.g. Brownian motion
 <img src="/assets/pics/mm-ml/brownian.png" alt="Brownian motion" style="width: 50%; height: 80%">
 </figure>
 
-**Example(discret-time and discrete-space Markov chain).**
+**Example (discret-time and discrete-space Markov chain).**
 <figure>
 <img src="/assets/pics/mm-ml/random-walk.png" alt="Random walk" style="width: 70%; height: 80%">
 </figure>
