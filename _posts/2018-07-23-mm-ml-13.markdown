@@ -210,5 +210,5 @@ are blocked (w.r.t. $C$).
 <figure>
 <img src="/assets/pics/mm-ml/d-sep-ex3.png" alt="Example 3" style="width: 80%; height: 60%">
 </figure>
- 
+
 --- 

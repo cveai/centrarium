@@ -294,7 +294,6 @@ holds for all pdf $q$ with respect to wchi $q$ is *absolutely continuous*, i.e.,
 What makes a good/bad choice of the *proposal distrubution* $q$?
 
 
-
 ---
 
 $$ $$
