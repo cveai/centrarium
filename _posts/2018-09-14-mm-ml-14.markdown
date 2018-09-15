@@ -83,7 +83,7 @@ e.g. Brownian motion
 
 **Example(continuous-time and continuous-space Markov chain).**
 <figure>
-<img src="/assets/pics/mm-ml/random-walk.png" alt="Random walk" style="width: 50%; height: 80%">
+<img src="/assets/pics/mm-ml/random-walk.png" alt="Random walk" style="width: 70%; height: 80%">
 </figure>
  
 ---
