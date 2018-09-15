@@ -58,6 +58,10 @@ if they respecs the following graphical model
 </figure>
 i.e., $p(x_t \vert x_1, \ldots, x_{t-1}) = p(x_t \vert x_{t-1})$.
 
+Implication:
+
+$$p(x_1, \ldots, x_n) = p(x_1)p(x_2\vert x_1)p(x_3\vert x_1) \cdots p(x_n \vert x_{n-1})$$
+
 ---
 
 #### (ML 15.1) Newton's method (for optimization) - intuition
