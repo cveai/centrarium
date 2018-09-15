@@ -56,6 +56,7 @@ if they respecs the following graphical model
 <figcaption>
 </figcaption>
 </figure>
+i.e., $p(x_t \vert x_1, \ldots, x_{t-1}) = p(x_t \vert x_{t-1})$.
 
 ---
 
