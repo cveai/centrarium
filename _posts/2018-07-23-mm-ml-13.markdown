@@ -1,304 +1,214 @@
 ---
 layout: post
-title:  "Notes on Machine Learning 14: Markov Models"
-date:   2018-09-14 00:00:00
+title:  "Notes on Machine Learning 13: Graphical Models"
+date:   2018-07-23 00:00:00
 author: 장승환
 categories: Notes
 tags: ML
 ---
 
-#### (ML 14.1) Markov models - motivating examples
+#### (ML 13.1) (ML 13.2) Directed graphical models - introductory examples
 
-"The future is independent from the past, given the present."
+(Directed) Graphica "Models" aka "Bayesian" networks
 
-Everything that you would want to know to predict the futute is alraedy encoded in the current state of the world.
+Better name would be "conditional independence diagrams" of probability distributions
 
-* Temporal data (sequence of data): e.g. weather, finance, language, music, etc.
+Key notions:
 
-* Applications: speech recognition, music composition, (Mark V. Shaney)
+* factorization of probability distributions
+* notational device
+* useful for visualization of 
+(a) conditional independence properties \\
+(b) inference algorithms (DP, MCMC)
+
+Why **conditional independence** important? Tractable inference
+
+Thnking "Graphically"
+
+Let $A, B, C$ be random variables.
+
+$p(a, b,c) = p(c\vert a, b)p(a, b) = p(c\vert a, b)p(b\vert a)p(a)$
 
 <figure>
-<img src="/assets/pics/mm-ml/co2.png" alt="CO2 level" style="width: 60%; height: 60%">
-<figcaption>CO2 level
-</figcaption>
+<img src="/assets/pics/mm-ml/dag.png" alt="DAG" style="width: 25%; height: 60%"> 
+</figure>
+
+If $B$ and $C$ are independent given $A$, then $p(c\vert a, b) = p(c\vert a)$.
+
+<figure>
+<img src="/assets/pics/mm-ml/dag-5.png" alt="DAG" style="width: 80%; height: 60%"> 
 </figure>
 
 <figure>
-<img src="/assets/pics/mm-ml/gps.png" alt="GPS" style="width: 60%; height: 60%">
-<figcaption>Track GPS location
-</figcaption>
+<img src="/assets/pics/mm-ml/dag-6.png" alt="DAG" style="width: 80%; height: 60%"> 
 </figure>
-
-<figure>
-<img src="/assets/pics/mm-ml/sentence.png" alt="Sentence completion" style="width: 80%; height: 80%">
-<figcaption>Sentence completion
-</figcaption>
-</figure>
-
-(Sequential) Data: $D = (x_1, \ldots, x_n)$.  
-Model data as random variables: $X_1, \ldots, X_n$
-* iid? No
-* Everything depends on everything else. $\leadsto$ intractable problem
-* $X_t$ depends on $X_{t-1}, X_{t-2}, \ldots, X_{t-m}$ for fixed $m$
-
-The simplest case $m=1$ (for the last line) leads to the notion of Markov chain
 
 ---
 
-#### (ML 14.2) (ML 14.3) Markov chains (discrete-time)
+#### (ML 13.3) (ML 13.4) Directed graphical models - formalism
 
-**Simplifying assumptions:** Discrete time and discrete space.
+**Notation.**   
+* DAG (Directed Acyclic Graph) : no directed cycles  
+* $pa(i) =$ parents of vertex
 
-**Definition.** Discrete ranndom variables $X_1, \ldots, X_n$ form a (discrete-time) Markov chain
-if they respecs the following graphical model
+**Definition.** Given $(X_1, \ldots, X_n) \sim p$ (pmf or odf) and an ordered DAG $G$ on $n$ vertices, 
+we say $X$ respects $G$ (or $p$ respects $G$) if 
+
+$$p(x_1, \ldots, x_n) = \prod_{i=1}^n p(x_i\vert x_{pa(i)})$$
+
+**Remark.** This does not imply that any particular random variables are conditionally dependent.
+
+**Example.** $X = (X_1, X_2, X_3)$ mutually independent  
+Then $p(x_1, x_2, x_3) = p(x_1)p(x_2)p(x_3)$
+
+**Terminology.** A *Complete* directed graph.
+
+**Example.** Any distribution respects any complete DAG. 
+
+**Remark.** 
+* Can combine random variables into vectors
+* If the factors are normalized conditional distributions, then the product is normalized also. (Exercise)
+
+---
+
+#### (ML 13.5) Generative process specification ("a handy convention")
+
+$X_1, X_2 \sim \text{Bernoulli}(1/2)$, independent  
+$X_3 \sim N(X_1 + X_2, \sigma^2)$  
+$X_4 \sim N(aX_2 + b, 1)$  
+$$X_5 = \begin{cases}
+1, \, \text{if} \,X_4 \ge 0,\\
+0, \, \text{else}.
+\end{cases}$$
+
+$X = (X_1, \ldots, X_5)$ respects the following graph
+
 <figure>
-<img src="/assets/pics/mm-ml/markov-graph.png" alt="Markov" style="width: 50%; height: 80%">
+<img src="/assets/pics/mm-ml/specification.png" alt="GPS" style="width: 35%; height: 60%">
 <figcaption>
 </figcaption>
 </figure>
-i.e., $p(x_t \vert x_1, \ldots, x_{t-1}) = p(x_t \vert x_{t-1})$.
 
-Implication:
+and wee have the following factorization
+$p(x_1, \ldots, x_5) = p(x_1)p(x_2)p(x_3\vert x_1, x_2)p(x_4\vert x_2)p(x_5\vert x_4)$.
 
-$$p(x_1, \ldots, x_n) = p(x_1)p(x_2\vert x_1)p(x_3\vert x_2) \cdots p(x_n \vert x_{n-1})$$
+Nice sampleing and visualization.
 
-**2nd order Markov chain.**
+---
+
+### Examples of (Directed) Graphical Models
+
+#### (ML 13.6) Graphical model for Bayesian linear regression
+
+$D = ((x_1, y_1), \ldots, (x_n, y_n)), x_i \in \mathbb{R}^d, y_i \in \mathbb{R}$  
+$f(x) = w^T\varphi(x)$  
+$w \sim N(0, \sigma_0^2I)$  
+$Y_i \sim N(w^T\varphi(x_i), \sigma^2)$, independent given $w$
+
 <figure>
-<img src="/assets/pics/mm-ml/markov-graph.png" alt="2nd order Markov chain" style="width: 50%; height: 80%">
+<img src="/assets/pics/mm-ml/graphical_bayesian.png" alt="Linear regression" style="width: 35%; height: 60%">
+<figcaption>
+</figcaption>
 </figure>
 
-**Continuous-time Markov chain.**
+$p(w, y_1, \ldots, y_n) = p(w)\prod_{i=1}^n p(y_i\vert w)$
+
+**Plate notation.**
+
 <figure>
-<img src="/assets/pics/mm-ml/cont-time.png" alt="Continuous-time Markov chain" style="width: 50%; height: 80%">
+<img src="/assets/pics/mm-ml/plate.png" alt="Plate" style="width: 70%; height: 60%">
+<figcaption>
+</figcaption>
+</figure>
+  
+
+#### (ML 13.7) Graphical model for Bayesian Naive Bayes
+
+$D = ((x^{(1)}, y_1), \ldots, (x^{(n)}, y_n)), x^{(i)} \in \mathbb{R}^d, y_i \in \\{1, \ldots, m\\}$  
+$\pi \sim \text{Dir}(\alpha)$  
+$r_{jy} \sim \text{Dir}(\beta)$ for $j = \\{1, \ldots, d\\}, y \in \\{1, \ldots, m\\}$  
+$Y \sim \pi, Y_i \sim \pi$  
+$X_j \sim r_{jY}, X_j^{(i)} \sim r_{jY_i}$    
+
+<figure>
+<img src="/assets/pics/mm-ml/gm_bnb.png" alt="Bayesian naive Bayes" style="width: 60%; height: 60%">
+<figcaption>
+</figcaption>
 </figure>
 
-**Continuous-space Markov chain.**  
-e.g. 1st order autoregressive model
-
-**Continuous-time and continuous-space Markov model.**  
-e.g. Brownian motion
 <figure>
-<img src="/assets/pics/mm-ml/brownian.png" alt="Brownian motion" style="width: 50%; height: 80%">
+<img src="/assets/pics/mm-ml/gm_bnb_plated.png" alt="Bayesian naive Bayes" style="width: 60%; height: 60%">
+<figcaption>
+</figcaption>
 </figure>
 
-**Example (discret-time and discrete-space Markov chain).**
+---
+
+#### (ML 13.8) (ML 13.9) Conditional independence in (directed) graphical models - basic examples
+
+1 "Tail-tail"
 <figure>
-<img src="/assets/pics/mm-ml/random-walk.png" alt="Random walk" style="width: 70%; height: 80%">
+<img src="/assets/pics/mm-ml/tail-tail.png" alt="Tail-tail" style="width: 80%; height: 60%">
 </figure>
+
+2 "Head-tail" (or "Tail-head")
+<figure>
+<img src="/assets/pics/mm-ml/head-tail.png" alt="Head-tail" style="width: 80%; height: 60%">
+</figure>
+  
+3 "Head-head"
+<figure>
+<img src="/assets/pics/mm-ml/head-head.png" alt="Head-head" style="width: 80%; height: 60%">
+</figure>
+
+---
+
+#### (ML 13.10) (ML 13.11) D-separation
+
+"The whole point of graphical models is to express the conditional independence properties of a probability distribution.
+And the D-separation criterion gives you a way to read off those conditional independence properties from 
+the graphocal model for a probability distribution."
+
+D-separation is a vast generalization of these:
+<figure>
+<img src="/assets/pics/mm-ml/tt-ht-hh.png" alt="Tail-tail, head-tail, head-head" style="width: 80%; height: 60%">
+</figure>
+
+**Terminology.**
+Descendents
+
+Let $G$ be a DAG. Let $A, B, C$ be disjoint subsets of vertices.  
+($A \cup B \cup C$ is not necessarily all of the vertices.)
+
+**Definition.** A path (not necessarily directed) between two vertices is *blocked* (w.r.t. $C$)
+if it passes through a vertex $v$ s.t. either (a) the arrows are head-tail or tail-tail, and $v \in C$
+or (b) the arrows are head-head and $v \not\in C$ and none of the descendents of $v$ are in $C$.
  
+**Definition.** $A$ and $B$ are *d-separated* by $C$ if all paths from a vertex of $A$ to a vertex of $B$
+are blocked (w.r.t. $C$).
+
+**Theorem (d-separation).** If $A$ and $B$ are d-separated by $C$ then $A$ and $B$ are conditionally independent given $C$.
+
 ---
 
-#### (ML 15.1) Newton's method (for optimization) - intuition
+#### (ML 13.12) (ML 13.13) How to use D-separation - illustrative examples
 
-2nd order method!
-
-(Gradient descent $x_{t+1} = x_t - \alpha_t \nabla f(x_t)$ : 1st order method)
-
-**Analogy (1D).**
-
-* zero-finding: $x_{t+1} = x_t - \frac{f(x_t)}{f'(x_t)}$
+**Example 1.**  $C = \\{3\\}$ Are $X_i$ and $X_j$ independent given $X_3$?
 
 <figure>
-<img src="/assets/pics/mm-ml/zero-finding.png" alt="zero-finding" style="width: 35%; height: 35%">
-<figcaption>
-</figcaption>
+<img src="/assets/pics/mm-ml/d-sep-ex1.png" alt="Example 1" style="width: 80%; height: 60%">
 </figure>
 
-* min./maximizing: $x_{t+1} = x_t - \frac{f'(x_t)}{f''(x_t)}$
+**Example 2.**
 
 <figure>
-<img src="/assets/pics/mm-ml/minimizing.png" alt="minimizing" style="width: 60%; height: 60%">
-<figcaption> Minimizing in 1D
-</figcaption>
+<img src="/assets/pics/mm-ml/d-sep-ex2.png" alt="Example 2" style="width: 80%; height: 60%">
 </figure>
+
+**Example 3.**
 
 <figure>
-<img src="/assets/pics/mm-ml/2d.png" alt="minimizing in 2D" style="width: 60%; height: 60%">
-<figcaption> Minimizing in 2D
-</figcaption>
+<img src="/assets/pics/mm-ml/d-sep-ex3.png" alt="Example 3" style="width: 80%; height: 60%">
 </figure>
 
----
-
-#### (ML 15.2) Newton's method (for optimization) in multiple dimensions
-
-Idea: "Make a 2nd order approximation and minimize tha."
-
-Let $f: \mathbb{R}^n \rightarrow \mathbb{R}$ be (sufficiently) smooth.
-
-**Taylor's theorem:** for $x$ near a, letting $g = \nabla f(a)$ and $H = \nabla^2f(a) = \left(\frac{\partial^2}{\partial x_i \partial x_j}f(a)\right)_{ij}$,
-
-$$\begin{aligned}
-f(x) &\approx f(a) + g^T(x-a) +\frac{1}{2}(x-a)^TH(x-a) \\
-     &= \frac{1}{2}x^THx + b^Tx +c =:q(x)
-\end{aligned}$$
-
-<figure>
-<img src="/assets/pics/mm-ml/newton.png" alt="Newton's method" style="width: 35%; height: 35%">
-<figcaption> 
-</figcaption>
-</figure>
-
-Minimize: 
-$0 = \nabla q = Hx + b \Rightarrow x = -H^{-1}b = a -H^{-1}g$
-
-Critical to check: $\nabla^2 q = H$ $\Rightarrow$ minimum if $H$ is PSD.
-
-**Algorithm.**
-* Initialize $x \in \mathbb{R}^n$
-* Iterate: $x_{t+1} = x_t - H^{-1}g$ where $g = \nabla f(x_t), H = \nabla^2 f(x_t)$
-
-**Issues.**
-1. $H$ may fail to be PSD. (Option: switch gradient descent. A smart way to do it: Levenberg–Marquardt algorithm) 
-2. Rather than invert $H$, sove $Hy = g$ for $y$, then use $x_{t+1} = x_t - y$. (More robust approach)
-3. $x_{t+1} = x_t - \alpha_t y$. (small "step size" $\alpha_t>0$)
-
----
-
-#### (ML 16.6) Gaussian mixture model (Mixture of Gaussians)
-
-<figure>
-<img src="/assets/pics/mm-ml/gaussian-mix.png" alt="Gaussian mixture model" style="width: 35%; height: 35%">
-<figcaption> 
-</figcaption>
-</figure>
-
-$Z \in \\{e_1, \ldots, e_m\\}$, standard vectors in $\mathbb{R}^m$ ($Z$ is "latent" variable)  
-$P(Z = e)k = \alpha_k$  
-Given $Z = e_k$,    
-$X \sim N(\mu_k, C_k)$  
-where $\mu_1, \ldots, \mu_m \in \mathbb{R}^d$ and $C_1, \ldots, C_m$ $d\times d$ cov. matrices. 
-
-<figure>
-<img src="/assets/pics/mm-ml/gaussian-mixture.png" alt="Gaussian mixture model" style="width: 35%; height: 35%">
-<figcaption> 
-</figcaption>
-</figure>
-
-Marginal distribution:  
-$$\begin{aligned} 
-p(x) & = \sum_z p(x\vert z)p(z) \\
-& = \sum_{k=1}^m P(Z = e_k) P(x \vert Z = e_k) \\
-& = \sum_{k=1}^m \alpha_k N(x \vert \mu_k, C_k)
-\end{aligned}$$
-
-The $\alpha_k$ are called the mixing coefficients.
-
-Joint distribution:
-
-$$p(x, z) = \prod_{k=1}^m \alpha_k^{z_k} N(x \vert \mu_k, C_k)$$
-
-where $z = (z_1, \ldots, z_m)$
-
-On the other hand,
-
-$$ P(Z = e_k \vert x) = \frac{p(x\vert e_k)p(e_k)}{p(x)} = \frac{N(x \vert \mu_k, C_k)}{\sum_{\ell = 1}^m N(x \vert \mu_\ell, C_\ell)}$$
-
-Note that $P(Z = e_k \vert x) = \mathbb{E}(I(Z=e_k)\vert X=x)$.
-
----
-
-#### (ML 17.1) Sampling methods - why sampling, pros and cons
-
-**Why is sampling so powerful and useful?**
-* For approximating expectations ($\leadsto$ estimate statistics / posterior infernce i.e. computing probability)
-* For visualization of typical draws from a distribution of interest
-
-**Why expectations?**
-* Any probability is an expectation: $P(X \in A) = E(I_{X \in A})$.
-* Approximation is needed for intractable sums/integrals (can be expressed as expectations)
-
-**Pros.**
-* Easy (both to implement and to understand)
-* General purpose (widely applicable)
-
-**Cons.**
-* Too easy (used inappropriately)
-* Slow (usually need lots of samples)
-* <span style="color:red">Getting "good" samples may be dificult</span>
-* Difficult to assess the performance of methods (e.g. MCMC)
-
----
-
-#### (ML 17.2) Monte Carlo methods - A little history
-
-<figure>
-<img src="/assets/pics/mm-ml/mc-history.png" alt="A little history of MC" style="width: 80%; height: 80%">
-<figcaption>A little history of Monte Carlo methods
-</figcaption>
-</figure>
-
----
-
-#### (ML 17.3) Monte Carlo approximation
-
-**Goal.** Aprroximate $\mathbb{E}(f(X))$, when intractable to compute exactly.
-
-**Definition (Monte Carlo estimator).** If $X_1, \ldots, X_n \sim p$, iid, then 
-
-$$\hat{\mu}_n = \frac{1}{n}\sum_{i=1}^nf(X_i)$$
-
-is a (basic) *Monte Carlo estimator* of $\mathbb{E}(f(X))$ where $X \sim p$. (sample mean)
-
-**Remark**  
-(1) $\mathbb{E}(\hat{\mu}_n) = \mathbb{E}(f(X))$ (i.e. $\hat{\mu}_n$ is an unbiased estimator)  
-(2) $\hat{\mu}_n \rightarrow^{\rm P} \mathbb{E}(f(X))$ as $n \rightarrow \infty$ $\Rightarrow$ consistenct estimator (assuming $\sigma^2(f(X))< \infty$)
-(i.e. $\forall \varepsilon >0, P(\vert \hat{\mu}_n - \mathbb{E}(f(X)) \vert < \varepsilon) \rightarrow 1$)  
-(3) $\sigma^2(\hat{\mu}_n) = \frac{1}{n}\sigma^2(f(X)) \rightarrow 0 \Rightarrow$ converges at a rate of $\frac{1}{\sqrt{n}}$ (regardless of dimension of $X$).  
-${\rm MSE}(\hat{\mu}_n = {\rm bias}^2 + {\rm var}) = \frac{1}{n}\sigma^(f(X)) \rightarrow 0$.
-
----
-
-#### (ML 17.4) Examples of Monte Carlo approximation
-
-1. Area of Mandelbrot set (Gamelin)
-2. Expected return (investment)
-
----
-
-#### (ML 17.5) Importance sampling - introduction
-<span style="color:red">*It's not a sampling method but an estimation technique!*</span>
-
-It can be thought of as a variant of MC estimation.
-
-**Recall.** MC estimation (by sample mean): 
-
-$$\mathbb{E}(f(X)) \approx \frac{1}{n}\sum_{i=1}^nf(X_i)$$
-
-under the BIG assumtion that $X \sim p$ and $X_i \sim p$.
-
-Can we do something similar by drawing samples from an alternative distribution $q$?
-
-*Yes*, and in some cases you can do much much better!
-
-**Density $p$ case.**
-
-$$\begin{aligned}
-\mathbb{E}(f(X)) &= \int f(x)p(x)dx \\
-&= \int f(x)\frac{p(x)}{q(x)}p(x)dx \\ 
-&\approx \frac{1}{n}\sum_{i=1}^nf(X_i)\frac{p(X_i)}{q(X_i)}
-\end{aligned}$$
-
-holds for all pdf $q$ with respect to wchi $q$ is *absolutely continuous*, i.e., $p(x) = 0$ whenever $q(x)= 0$.
-
-<figure>
-<img src="/assets/pics/mm-ml/importance-sampling.png" alt="Importance sampling" style="width: 80%; height: 80%">
-<figcaption>Importance sampling
-</figcaption>
-</figure>
-
----
-
-#### (ML 17.6) Importance sampling - intuition
-
-What makes a good/bad choice of the *proposal distrubution* $q$?
-
-
-
----
-
-$$ $$
-
-*To be added..*
-
----
+--- 
