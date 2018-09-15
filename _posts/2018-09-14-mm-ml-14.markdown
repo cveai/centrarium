@@ -87,7 +87,7 @@ e.g. Brownian motion
 </figcaption>
 </figure>
 
-**Example (random walk on $\mathbb{Z}$)**
+**Example(Random walk on $\mathbb{Z}$).**
 
 ---
 
