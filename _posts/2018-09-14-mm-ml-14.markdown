@@ -96,6 +96,10 @@ Answe: There is hidden info. Model with hidden/latent variables. $\leadsto$ HMM
 
 ---
 
+#### (ML 14.4) (ML 14.5) Hidden Markov models
+
+---
+
 #### (ML 15.1) Newton's method (for optimization) - intuition
 
 2nd order method!
