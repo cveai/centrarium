@@ -87,7 +87,12 @@ e.g. Brownian motion
 </figure>
 
 **Example 2 (discret-time and discrete-space Markov chain).**
+<figure>
+<img src="/assets/pics/mm-ml/weather.png" alt="Weather forecast" style="width: 70%; height: 80%">
+</figure>
 
+BUT, can't expect to perfectly observe complete true state of the system!  
+Answe: There is hidden info. Model with hidden/latent variables. $\leadsto$ HMM
 
 ---
 
