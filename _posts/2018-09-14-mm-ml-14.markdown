@@ -98,6 +98,24 @@ Answe: There is hidden info. Model with hidden/latent variables. $\leadsto$ HMM
 
 #### (ML 14.4) (ML 14.5) Hidden Markov models
 
+**Model.**  
+$Z_1, \ldots, \in \\{1, \ldots, m\\}$  
+$X_1, \ldots, X_n \in \mathscr{X}$ (e.g. discrete, $\mathbb{R}, \mathbb{R}^d$)  
+$D = (x_1, \ldots, x_n)$
+<figure>
+<img src="/assets/pics/mm-ml/trellis.png" alt="HMM" style="width: 45%; height: 80%">
+</figure>
+
+$p(x_1, \ldots, x_n, z_1, \ldots, z_m) = p(z_1)p(x_1\vert z_1)\prod_{k=2}^np(z_k\vert z_{k-1})p(x_k\vert z_k)$
+
+An application of HMM could be *hand writing recognition*. 
+
+**Parameters.**
+* Transition probabilities: $T(i, j) = P(Z_{k+1} = j \vert Z_k = i)$ ($i,j \in \\{1, \ldots, m\\}$)
+* Emission probabilities: $E_i(x) = p(x \vert Z_k=i)$ for $i \in \\{1,\ldots, m\\}$, $x \in \mathscr{X}$ (pdf)  
+or $E_i(x) = P(X_k = x \vert Z_k=i)$ (pmf)
+* Initial distribution: $\pi(i)=P(Z_1= i)$, $i \in \\{1, \ldots, m\\}$ 
+
 ---
 
 #### (ML 15.1) Newton's method (for optimization) - intuition
