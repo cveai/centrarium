@@ -116,6 +116,20 @@ An application of HMM could be *hand writing recognition*.
 or $E_i(x) = P(X_k = x \vert Z_k=i)$ (pmf)
 * Initial distribution: $\pi(i)=P(Z_1= i)$, $i \in \\{1, \ldots, m\\}$ 
 
+$p(x_,\ldots, x_n, z_1, \ldots, z_M) = \pi(z_1)E_{Z_1}(x_1)\prod_{k=2}^n T(z_{k-1}, z_k)E_{Z_k}(x_k)$
+
+**Remark.** $E_i$'s pretty arbitrary.
+
+**Example.**
+<figure>
+<img src="/assets/pics/mm-ml/hmm-ex.png" alt="Example" style="width: 90%; height: 80%">
+</figure>
+
+---
+
+#### (ML 14.6) Forward-Backward algorithm for HMMs
+
+
 ---
 
 #### (ML 15.1) Newton's method (for optimization) - intuition
