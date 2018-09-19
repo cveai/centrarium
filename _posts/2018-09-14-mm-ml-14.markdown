@@ -129,6 +129,28 @@ $p(x_,\ldots, x_n, z_1, \ldots, z_M) = \pi(z_1)E_{Z_1}(x_1)\prod_{k=2}^n T(z_{k-
 
 #### (ML 14.6) Forward-Backward algorithm for HMMs
 
+"Dynamic Programming" introduced by Richard Bellman
+
+Assume $p(x_k \vert z_k), p(z_k\vert z_{k-1}), p(z_1)$ known.
+
+Let $x = (x_1, \ldots, x_n)$, $x_{i:j} = (x_i, x_{i+1}, \ldots, x_j)$, $x=x_{1:n}$, $x_{k+1:n}=(x_{k+1},\ldots, x_n)$
+
+F/B: Compute $p(z_k \vert x)$
+
+Forward algorithm: Compute $p(z_k, x_{1:k})$ $\forall k \in \\{1, \ldots, n\\}$
+
+Backward algorithm: Compute $p(x_{k+1:n}\vert z_k)$ $\forall k \in \\{1, \ldots, n\\}$
+
+$p(z_k\vert x) \propto_{z_k} p(z_k, x) = p(x_{k+1:n \vert z_k, x_{1:k}})p(z_k,x_{1:k})$
+
+<figure>
+<img src="/assets/pics/mm-ml/fb.png" alt="F/B" style="width: 50%; height: 35%">
+</figure>
+
+**What you can do:**
+* Inference: $P(Z_k \neq Z_{k+1} \vert x)$ "change detection"
+* Estimate parameters ("Baum-Welch")
+* Sampling from posterior distribution $z \vert x$
 
 ---
 
