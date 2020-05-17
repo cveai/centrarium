@@ -14,6 +14,13 @@ tags:
 
 <hr>
 
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Kevin_Kelly%2C_Wired_%2825163989050%29.jpg/979px-Kevin_Kelly%2C_Wired_%2825163989050%29.jpg" alt="Kevin Kelly">
+<figcaption>케빈 켈리 (사진 출처: <a href="https://commons.wikimedia.org/wiki/File:Kevin_Kelly,_Wired_(25163989050).jpg">Wikimedia Commons</a>)
+</figcaption>
+</figure>
+
+
 오늘은 제 생일입니다. 예순여덟이 되었네요. 흔들의자에 앉아 젊은이들에게 조언하는 모습이 멋있을 것 같아, 생일을 빌미로 68개의 돌직구 조언을 날려봅니다.
 
 - 의견이 다르거나 열 받게 만드는 사람한테서도 뭔가 배울 수 있는 방법을 찾으세요. 그들 생각 중에 옳은 점은 없는지.
