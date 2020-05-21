@@ -3,7 +3,7 @@ layout: post
 title:  케빈 켈리의 68가지 조언
 date:   2020-05-17 00:00:00
 author: 장승환
-categories: 옵티멀라이프
+categories: 기타
 tags: 
 ---
 
