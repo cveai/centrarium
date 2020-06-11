@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  일차함수와 직선의 방정식
-date:   2020-05-28 00:00:00
+date:   2020-06-11 00:00:00
 author: 장승환
 categories: 수학
 tags: 일차함수 일차 함수 직선의방정식 직선 방정식 평면
